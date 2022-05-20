@@ -92,5 +92,39 @@
   * [Supabase](008_dev_saas/supabase.md)
 * 運用ツール
   * [インフラ監視](009_ops_tool/infra_monitor.md)
-* 設計
-  - [継承](./010_design/design.md)
+* 設計開発全般
+  * [記事            ](010_design/article.md)
+  * [継承            ](010_design/design.md)
+  * [マネジメント    ](010_design/manage.md)
+  * [個人開発スタック](010_design/stack.md)
+* ML
+  * [augmentation](100_ML/augmentation.md)
+  * [AutoML      ](100_ML/auto_ml.md)
+  * [データセット](100_ML/dataset.md)
+  * [評価指標    ](100_ML/evaluation.md)
+  * フレームワーク
+    * [PyTorch          ](100_ML/framework_001_pytorch.md)
+    * [PyTorchメモリ対策](100_ML/framework_002_pytorch_memory_opt.md)
+    * [Tensroflow       ](100_ML/framework_100_tensorflow.md)
+  * Kaggle
+    * [Kaggleチュートリアル](100_ML/kaggle_001_tutorial.md)
+    * [Kaggleコンペ一覧    ](100_ML/kaggle_002_competition.md)
+    * [コードコンペ(時系列)](100_ML/kaggle_003_code_compe_time_series.md)
+  * ライブラリ
+    * [sklearn](100_ML/library_001_sklearn.md)
+    * [PyMC3  ](100_ML/library_002_pymc3.md)
+  - 設計
+    - [機械学習システム設計](100_ML/ml_system_design.md)
+    - [MLOps               ](100_ML/ml_ops.md)
+* CV
+  * [ほとんどこちらにお引越し](https://github.com/cm-nakamura-shogo/git-book-ml-wiki)
+  * [その他メモ              ](101_CV/cv_999_scrapbox.md)
+* NLP
+  * [MeCab](102_NLP/mecab.md)
+* 時系列データ
+  * [全般](103_time_series/time_series.md)
+* データ分析
+  * [全般](104_data_analytics/data_analytics.md)
+* 学習コンテンツ
+  * [学習媒体](300_training/training.md)
+  * [書籍    ](300_training/book.md)
