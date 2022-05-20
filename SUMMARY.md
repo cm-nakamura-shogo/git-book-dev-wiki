@@ -94,6 +94,3 @@
   * [インフラ監視](009_ops_tool/infra_monitor.md)
 * 設計
   - [継承](./010_design/design.md)
-
-
-
