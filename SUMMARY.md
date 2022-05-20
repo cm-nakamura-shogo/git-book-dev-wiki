@@ -8,6 +8,7 @@
   * [TypeScript](001_frontend/typescript.md)
   * [Vue       ](001_frontend/vue.md)
 * Python
+  * [anaconda  ](002_python/anaconda.md)
   * [assert    ](002_python/assert.md)
   * [base64    ](002_python/base64.md)
   * [celery    ](002_python/celery.md)
@@ -70,3 +71,29 @@
   * [データベース設計](005_db/db_design.md)
   * [MySQL           ](005_db/mysql.md)
   * [SQL             ](005_db/sql.md)
+* 開発用インフラ
+  * Docker
+    * [Dockerチュートリアル](006_dev_infra/docker_001_tutorial.md)
+    * [Docker on WSL2      ](006_dev_infra/docker_002_wsl.md)
+    * [Dockerノウハウ      ](006_dev_infra/docker_003_knowhow.md)
+  * [GitBook  ](006_dev_infra/git_book.md)
+  * [Git      ](006_dev_infra/git.md)
+  * [GitHub   ](006_dev_infra/github.md)
+  * [npm, yarn](006_dev_infra/npm_yarn.md)
+  * [WSL      ](006_dev_infra/wsl.md)
+  * [VSCode   ](006_dev_infra/vscode.md)
+* 開発ツール
+  * [E2Eテスト   ](007_dev_tool/e2e.md)
+  * [PlantUML    ](007_dev_tool/plantuml.md)
+  * [Software    ](007_dev_tool/software.md)
+  * [ウェブツール](007_dev_tool/web_tool.md)
+* 開発用SaaS
+  * [Hasura  ](008_dev_saas/hasura.md)
+  * [Supabase](008_dev_saas/supabase.md)
+* 運用ツール
+  * [インフラ監視](009_ops_tool/infra_monitor.md)
+* 設計
+  - [継承](./010_design/design.md)
+
+
+
