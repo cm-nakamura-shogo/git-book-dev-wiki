@@ -63,3 +63,53 @@ server {
 
 - 参考
   - https://qiita.com/inakadegaebal/items/29d21d1f5a904a6ba92d
+
+
+## nginxルーティング例
+
+- パスでルーティングする場合はこのようにする。
+  - localhost以外に転送することも可能。
+  - 下記は別コンテナのmlflowに転送する例。
+  - コンテナの場合、コンテナ内のポート番号にすること。
+
+```conf
+server {
+    listen 80;
+    server_name localhost;
+
+    access_log /var/log/nginx/access.log;
+    error_log  /var/log/nginx/error.log;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+    }
+
+    location /mlflow {
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host http://mlflow:5000/;
+        proxy_pass http://mlflow:5000/;
+        proxy_redirect off;
+    }
+}
+```
+
+- クライアントからsshでポートフォワーディングする場合は、パスルーティングできない。
+- そういう場合は、別のポートで待ち受け、それを別のサービスにすべて転送すればよい。
+
+```conf
+server {
+    listen 5000;
+    server_name localhost;
+
+    access_log /var/log/nginx/access.log;
+    error_log  /var/log/nginx/error.log;
+
+    location / {
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host http://mlflow:5000/;
+        proxy_pass http://mlflow:5000/;
+        proxy_redirect off;
+    }
+}
+```
