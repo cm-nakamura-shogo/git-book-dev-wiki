@@ -117,7 +117,7 @@
     - [機械学習システム設計](100_ML/ml_system_design.md)
     - [MLOps               ](100_ML/ml_ops.md)
 * CV
-  * [ほとんどこちらにお引越し](https://github.com/cm-nakamura-shogo/git-book-ml-wiki)
+  * [ほとんどこちらにお引越し](https://nakamura-shogo.gitbook.io/git-book-ml-wiki)
   * [その他メモ              ](101_CV/cv_999_scrapbox.md)
 * NLP
   * [MeCab](102_NLP/mecab.md)

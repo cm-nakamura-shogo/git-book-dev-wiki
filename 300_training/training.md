@@ -1,88 +1,151 @@
 # training
 
-## lecture
+## 開発
 
-- ニューヨーク大学データの深層学習講義
-  - https://atcold.github.io/pytorch-Deep-Learning/ja/
+### 設計・エンジニアリング
 
-- ハーバード大学のコンピュータサイエンスとプログラミング技術コース
-  - https://cs50.jp/
+- [Googleのソフトウェアエンジニアリング](https://www.oreilly.co.jp//books/9784873119656/)
+- [良いコード/悪いコードで学ぶ設計入門](https://www.amazon.co.jp/dp/4297127830)
 
-- 東京工業大学の機械学習講義ノート
-  - https://chokkan.github.io/mlnote/
+### インフラ
 
+- [Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
+
+### コンピュータサイエンス
+
+- [ハーバード大学のコンピュータサイエンスとプログラミング技術コース](https://cs50.jp/)
 - 京都大学 プログラミング演習 Python 2021 (PDF形式の教科書)
-  - 本編
-    - https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/1/Version2021_10_08_01.pdf
-  - コラム編
-    - https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/2/Version2021_10_08_02.pdf
+  - [本編](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/1/Version2021_10_08_01.pdf)
+  - [コラム編](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/2/Version2021_10_08_02.pdf)
+- [東京大学 Pythonプログラミング入門](https://sites.google.com/view/ut-python/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0)
 
-- 東京大学 Pythonプログラミング入門
-  - https://sites.google.com/view/ut-python/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0
+### 開発スタック
 
-- 数理・データサイエンス教育強化拠点コンソーシアム
-  - http://www.mi.u-tokyo.ac.jp/consortium/e-learning.html
+- [GraphQL スターターパック | Prisma + NestJS + Next.JS製 個人ブログサイトをCloud Runで運用しよう](https://zenn.dev/waddy/books/graphql-nestjs-nextjs-bootcamp)
+- [HAKODATE Developer Conference＠函館 でGraphQLの話をしてきました](https://dev.classmethod.jp/articles/hakodate-developer-conference-graphql/)
+  
+### データベース
 
-- AWSのML講座
-  - Machine Learning University
-  - https://www.youtube.com/channel/UC12LqyqTQYbXatYS9AA7Nuw/playlists
+- [理論から学ぶデータベース実践入門](https://www.amazon.co.jp/dp/4774171972)
+  - 社内で流れていた
 
-- 数学カフェ 確率・統計・機械学習回 「速習 確率・統計」
-  - https://www.slideshare.net/matsukenbook/rev012
+### セキュリティ
 
-- nnabla SonyのMLチャンネル
-  - https://www.youtube.com/channel/UCOELxR-yS2EbjBxQ0hx4yBw
+- [全員がOAuth2.0を理解しているチームの作り方](https://dev.classmethod.jp/articles/devio2021-learning-oauth/)
 
-## 解析ハンズオン
+### MLOps
 
-- u++さんによるアクセスログ解析
-  - https://speakerdeck.com/upura/tutorial-on-access-log-analysis-by-python
-
-- SIGNATE: BERTで医療論文を分類する
-  - https://zenn.dev/kuboko/articles/signate-srwspsg-pytorch
-
-- YOLOXので自作データの学習
-  - https://zenn.dev/opamp/articles/d3878b189ea256
-
-- MobileNetV2の転移学習
-  - https://dev.classmethod.jp/articles/introduce-to-transfer-learning-by-tensorflow-for-beginner/
-
-## article
-
-- 統計・機械学習の理論を学ぶ手順
-  - https://qiita.com/kueda_cs/items/28008db6491c71ac5659
-
-- 統計フローチャート
-  - https://www.hello-statisticians.com/explain-terms-cat/flow_chart_stat1.html
-
-## Udemy
-
-- 米国データサイエンティストが教える統計学超入門講座【Pythonで実践】
-  - https://www.udemy.com/course/python-stats/?referralCode=87191168D7F6D6843F13
+- [機械学習デザインパターン――データ準備、モデル構築、MLOpsの実践上の問題と解決](https://www.oreilly.co.jp/books/9784873119564/)
 
 
-## excercise
+## データ処理
 
-- データサイエンス100本ノック前処理編
-  - https://github.com/The-Japan-DataScientist-Society/100knocks-preprocess
+### 前処理
 
-- NumPy221本ノックの本書いた
-  - https://zenn.dev/koshian2/articles/786253ece74408
+- [データ前処理大全](https://www.amazon.co.jp/dp/4774196479)
+- [データサイエンス100本ノック前処理編](https://github.com/The-Japan-DataScientist-Society/100knocks-preprocess)
+- [NumPy221本ノックの本書いた](https://zenn.dev/koshian2/articles/786253ece74408)
+- [Python実践データ分析100本ノック (秀和システム)](https://www.shuwasystem.co.jp/support/7980html/5875.html)
+- [Python実践 データ加工/可視化 100本ノック (秀和システム)](https://www.shuwasystem.co.jp/support/7980html/6439.html)
 
-- GraphQL スターターパック | Prisma + NestJS + Next.JS製 個人ブログサイトをCloud Runで運用しよう
-  - https://zenn.dev/waddy/books/graphql-nestjs-nextjs-bootcamp
+### 可視化
 
-- HAKODATE Developer Conference＠函館 でGraphQLの話をしてきました
-  - https://dev.classmethod.jp/articles/hakodate-developer-conference-graphql/
+- [データビジュアライゼーションの基礎 (オライリー)](https://www.oreilly.co.jp/books/9784873119533/)
+  - 社内で流れていた
+  - Rなので少しやる気が
+- [実践Data Scienceシリーズ データ分析のためのデータ可視化入門](https://www.amazon.co.jp/dp/4065164044)
+  - 社内で流れていた
 
-- 全員がOAuth2.0を理解しているチームの作り方
-  - https://dev.classmethod.jp/articles/devio2021-learning-oauth/
+## ML
 
-- 競馬予想で始める機械学習〜完全版〜
-  - https://zenn.dev/dijzpeb/books/848d4d8e47001193f3fb
+### 解析ハンズオン
 
-- 100本ノックシリーズのnotebook
-  - https://twitter.com/developer_quant/status/1505461889996066817
+- [u++さんによるアクセスログ解析](https://speakerdeck.com/upura/tutorial-on-access-log-analysis-by-python)
+- [SIGNATE: BERTで医療論文を分類する](https://zenn.dev/kuboko/articles/signate-srwspsg-pytorch)
+- [YOLOXので自作データの学習](https://zenn.dev/opamp/articles/d3878b189ea256)
+- [MobileNetV2の転移学習](https://dev.classmethod.jp/articles/introduce-to-transfer-learning-by-tensorflow-for-beginner/)
 
-- レコメンドの演習問題
-  - https://recsyslab.github.io/recsys-python/
+### 機械学習一般
+
+- 講義
+  - [ニューヨーク大学データの深層学習講義](https://atcold.github.io/pytorch-Deep-Learning/ja/)
+  - [東京工業大学の機械学習講義ノート](https://chokkan.github.io/mlnote/)
+  - [AWSのML講座](https://www.youtube.com/channel/UC12LqyqTQYbXatYS9AA7Nuw/playlists)
+  - [nnabla SonyのMLチャンネル](https://www.youtube.com/channel/UCOELxR-yS2EbjBxQ0hx4yBw)
+
+- コンテンツ
+  - [数理・データサイエンス教育強化拠点コンソーシアム](http://www.mi.u-tokyo.ac.jp/consortium/e-learning.html)
+    - コンテンツがまとめられている。
+  - [Python実践機械学習システム100本ノック (秀和システム)](https://www.shuwasystem.co.jp/support/7980html/6341.html)
+  - [Python 実践AIモデル構築 100本ノック (秀和システム)](https://www.shuwasystem.co.jp/support/7980html/6440.html)
+  - [Wantedlyの社内有志による勉強会](https://github.com/wantedly/machine-learning-round-table)
+
+- 書籍
+  - [ゼロからつくるPython機械学習プログラミング入門](https://www.kspub.co.jp/book/detail/5206126.html)
+    - 機械学習の中身を網羅的に理解できる書籍
+  - [DLを支える技術](https://hillbig.github.io/deeplearning-techbooksplus/)
+    - PFN岡野原氏のNN解説本
+  - [Kaggle Grandmasterに学ぶ 機械学習 実践アプローチ](https://www.amazon.co.jp/dp/4839974985)
+    - 基礎的で結構良いらしい
+
+### 画像
+
+- BrainPad社の異常検知まとめ
+  - [【連載⓪】 工業製品画像のデータセットで不良品検知手法の検証をする【不良品検知ブログ】（目次）](https://blog.brainpad.co.jp/entry/2020/12/04/113000)
+  - [【連載①】画像に対する教師なし深層異常検知の基本手法【不良品検知ブログ】](https://blog.brainpad.co.jp/entry/2020/12/11/110000)
+  - [【連載②】パラメータを自動調整する深層距離学習 -Adacos-【不良品検知ブログ】](https://blog.brainpad.co.jp/entry/2020/12/24/123000)
+  - [【連載③】少量の学習データで機能する異常検知手法 -DifferNet-【不良品検知ブログ】](https://blog.brainpad.co.jp/entry/2021/01/15/110000)
+
+### NLP
+
+- [実践・自然言語処理シリーズ2　形態素解析の理論と実装](https://www.amazon.co.jp/dp/B07J1NBNYW)
+  - 形態素解析の仕組みを理解するために
+  - MeCabなどの開発者の書籍
+- [Transformerによる自然言語処理](https://www.amazon.co.jp/dp/4254122659/)
+  - Transformerについての日本語解説本として貴重
+
+### レコメンド
+
+- [まとめ](https://note.com/masa_kazama/n/n586d0e2d49d2)
+- [レコメンドの演習問題](https://recsyslab.github.io/recsys-python/)
+- [推薦システム実践入門 ―仕事で使える導入ガイド (オライリー)](https://www.amazon.co.jp/dp/4873119669/)
+
+### 異常検知
+
+- [入門 機械学習による異常検知―Rによる実践ガイド](https://www.amazon.co.jp/dp/4339024910)
+  - 異常検知の中では評判がよさそう。Rだが。
+
+### 機械学習その他
+
+- [競馬予想で始める機械学習〜完全版〜](https://zenn.dev/dijzpeb/books/848d4d8e47001193f3fb)
+- [Pythonからはじめるアルゴリズムトレード (オライリー)](https://www.oreilly.co.jp/books/9784873119793)
+- [自動レジシステムについての論文](https://dl.acm.org/doi/pdf/10.1145/3478086)
+
+### 強化学習
+
+- ゼロから作るDeep Learning ❹— 強化学習編
+  - [書籍](https://www.amazon.co.jp/dp/4873119758)
+  - [コード](https://github.com/oreilly-japan/deep-learning-from-scratch-4)
+ 
+## 数学
+
+### 統計
+
+- [数学カフェ 確率・統計・機械学習回 「速習 確率・統計」](https://www.slideshare.net/matsukenbook/rev012)
+- [統計・機械学習の理論を学ぶ手順](https://qiita.com/kueda_cs/items/28008db6491c71ac5659)
+- [統計フローチャート](https://www.hello-statisticians.com/explain-terms-cat/flow_chart_stat1.html)
+- [米国データサイエンティストが教える統計学超入門講座【Pythonで実践】](https://www.udemy.com/course/python-stats/?referralCode=87191168D7F6D6843F13)
+- [入門 情報幾何―統計的モデルをひもとく微分幾何学― ](https://www.kyoritsu-pub.co.jp/bookdetail/9784320114456)
+  - 社内で流れていた
+  - 機械学習の数理を知るための良書らしい
+- [回帰分析(新装版) (統計ライブラリー)](https://www.amazon.co.jp/dp/4254122462/)
+  - 社内で流れていた
+- [統計的機械学習の数理100問 with Python](https://www.amazon.co.jp/dp/432012507X)
+
+### 数理最適化
+
+- まとめ
+  1. [60分で学ぶ数理最適化](https://speakerdeck.com/umepon/mathematical-optimization-in-60-minutes)
+  2. [最適化超入門](https://slideshare.net/tkm2261/ss-42149384)
+  3. [数理最適化ことはじめ](https://speakerdeck.com/e869120/introduction-to-mathematical-optimization-5cdef842-50f6-4e46-ab2d-549cf85c1b81)
+  4. [東工大　数理計画法テキスト](http://me.titech.ac.jp/~mizu_lab/text.html)
