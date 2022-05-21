@@ -87,6 +87,12 @@
     - PFN岡野原氏のNN解説本
   - [Kaggle Grandmasterに学ぶ 機械学習 実践アプローチ](https://www.amazon.co.jp/dp/4839974985)
     - 基礎的で結構良いらしい
+  - [scikit-learn、Keras、TensorFlowによる実践機械学習 第2版](https://www.amazon.co.jp/dp/4873119286)
+    - 英語では第3版があるらしい
+    - GitHubでノートブック等が公開されている
+      - [https://github.com/ageron/handson-ml](https://github.com/ageron/handson-ml)
+      - [https://github.com/ageron/handson-ml2](https://github.com/ageron/handson-ml2)
+      - [https://github.com/ageron/handson-ml3](https://github.com/ageron/handson-ml3)
 
 ### 画像
 
