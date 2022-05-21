@@ -35,3 +35,10 @@
 
 - DBT活用
   - https://dev.classmethod.jp/articles/hajime-ippo-dbt-20220310/
+
+## Base
+
+- Adansons社が開発しているデータセット作成ツール。
+- 非構造化データをデータセットに変換できる。
+- 平たく言うとパスの命名規則に沿ってメタデータを作成し、最終的な画像ファイル等との紐づけができる。
+- [https://qiita.com/KenichiHiguchi/items/82a4431610fce9c5fe2a](https://qiita.com/KenichiHiguchi/items/82a4431610fce9c5fe2a)
