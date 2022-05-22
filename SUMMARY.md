@@ -4,6 +4,7 @@
   * [CSS       ](001_frontend/css.md)
   * [HTML      ](001_frontend/html.md)
   * [JavaScript](001_frontend/javascript.md)
+  * [Next.js   ](001_frontend/nextjs.md)
   * [React     ](001_frontend/react.md)
   * [TypeScript](001_frontend/typescript.md)
   * [Vue       ](001_frontend/vue.md)
@@ -62,6 +63,7 @@
     * [SAP Blackbelt](004_cloud/aws_certified_005_sap_blackbelt.md)
     * [SAPノート    ](004_cloud/aws_certified_006_sap_note.md)
     * サービス別
+      * [概要           ](004_cloud/aws_service_overall)
       * [AWS IAM        ](004_cloud/aws_service_iam.md)
       * [AWS Personalize](004_cloud/aws_service_personalize.md)
       * [AWS Tips       ](004_cloud/aws_service_tips.md)
@@ -97,6 +99,8 @@
   * [継承            ](010_design/design.md)
   * [マネジメント    ](010_design/manage.md)
   * [個人開発スタック](010_design/stack.md)
+* セキュリティ
+  * [認証認可](011_security/auth.md)
 * ML
   * [augmentation](100_ML/augmentation.md)
   * [AutoML      ](100_ML/auto_ml.md)

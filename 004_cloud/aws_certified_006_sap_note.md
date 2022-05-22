@@ -71,6 +71,20 @@
   - バケット作成時ではなくとも、後から設定することが可能。
   - Storage GatewayやGlacierは、デフォルト設定で暗号化が有効となる。
 
+- 暗号化のタイプとヘッダ
+  - SSE-KMS/SSE-S3
+    - x-amz-server-side-encryption
+      - AES256で固定
+  - SSE-C
+    - x-amz-server-side​-encryption​-customer-algorithm
+      - AES256で固定
+    - x-amz-server-side​-encryption​-customer-key	
+      - base64エンコードされた暗号化キー
+    - x-amz-server-side​-encryption​-customer-key-MD5
+      - エラーチェック用の整合性チェック用のMD5ダイジェスト
+  - CSE
+    - AWS SDKにより実施される。
+
 - Vault lock (Glacier)
   - ロックにより変更禁止とすることにより、コンプライアンス管理を実施することが可能。
 
@@ -93,6 +107,10 @@
     - EBSはライフサイクル設定できない(DLM定期スナップショットのみ)
     - EFSはIAに移動させる管理しか対応できない。
   - Glacierも一番最初の保存先選択した場合は、一定期間後に削除するポリシーなどを設定はできない。
+
+- 参考
+  - [Amazon S3における「フォルダ」という幻想をぶち壊し、その実体を明らかにする](https://dev.classmethod.jp/articles/amazon-s3-folders/)
+    - S3は単純なKey-Value型データストアであり、フォルダは実体がない。
 
 ### EBS
 
@@ -270,6 +288,9 @@
   - レプリカ間の変更の伝搬は、DynamoDB Streamsを使用して行われる。
   - 参考
     - https://aws.amazon.com/jp/blogs/news/how-to-use-amazon-dynamodb-global-tables-to-power-multiregion-architectures/
+
+- 参考
+  - [コンセプトから学ぶAmazon DynamoDB](https://dev.classmethod.jp/referencecat/conceptual-learning-about-dynamodb/)
 
 ### RDS
 
@@ -482,15 +503,18 @@
 
 ### IPv6への対応
 
-- IPv6 CIDRブロックをVPC, subnetに関連付ける。
-- IPv6トラフィック用のルートテーブル更新
-  - public subnetは、subnetからInternet Gateway(IGC)にIPv6トラフィックをルーティングする。
-  - private subnetは、subnetからEgress-only Internet Gateway(EIGW)にIPv6トラフィックをルーティングする。
-- SGをIPv6を含めるように更新する。
-- ACLで制限されている場合、ACLのルールもIPv6に対応するように更新する。
-- インスタンスタイプをIPv6対応のものに変更する。
-- IPv6アドレスをインスタンスに割り当てる。
-- インスタンスの設定がIPv6に対応していない場合、設定を変更する。
+- 手順
+  - IPv6 CIDRブロックをVPC, subnetに関連付ける。
+  - IPv6トラフィック用のルートテーブル更新
+    - public subnetは、subnetからInternet Gateway(IGC)にIPv6トラフィックをルーティングする。
+    - private subnetは、subnetからEgress-only Internet Gateway(EIGW)にIPv6トラフィックをルーティングする。
+  - SGをIPv6を含めるように更新する。
+  - ACLで制限されている場合、ACLのルールもIPv6に対応するように更新する。
+  - インスタンスタイプをIPv6対応のものに変更する。
+  - IPv6アドレスをインスタンスに割り当てる。
+  - インスタンスの設定がIPv6に対応していない場合、設定を変更する。
+
+- IPv6のCIDR範囲は、/56固定でありユーザーが指定することはできません。
 
 ### ACL
 
@@ -549,6 +573,8 @@
   - CloudFrontのOrigin Access Identify(OAI)を使い、特定のdistributionのみをS3のBucket Policyで許可
     - OAIは特別なユーザーであり、そのユーザーに限定してBucket Policyを設定
   - CloudFrontにWAF ACLを設定し、特定のIPアドレスのみを許可
+  - OAIを使用したテンプレートはこちら
+    - [CloudFormation で OAI を使った CloudFront + S3 の静的コンテンツ配信インフラを作る](https://dev.classmethod.jp/articles/s3-cloudfront-with-oai-by-cloudformation/)
 
 - CloudFrontそのもので、Referer制限はできない。WAFを利用する必要がある。
 
@@ -571,6 +597,22 @@
   - Viewer Protocol PolicyでHTTPS Onlyを設定
   - Viewer Protocol PolicyでRedirect HTTP to HTTPSを設定
   - Viewer Protocol PolicyでSSL/TLS証明書を利用できる設定
+
+- クエリ文字列の転送設定
+  - オリジンが一意のオブジェクトを返すクエリ文字列パラメータのみを転送するように設定することでキャッシュを改善できます。
+  - CloudFrontは、デフォルトではクエリ文字列パラメータの転送とキャッシュを行わない。
+  - 以下が設定のパターンとなる。
+    - None (Improves Caching)
+      - オリジンがクエリ文字列パラメータの値に関係なくオブジェクトの同じバージョンを返す場合、このオプションを選択します。
+      - これにより、CloudFront がキャッシュからリクエストを処理できる可能性が高くなり、パフォーマンスが向上し、オリジンの負荷が低下します。
+    - Forward all, cache based on whitelist
+      - オリジンサーバーが 1 つ以上のクエリ文字列パラメータに基づいてオブジェクトの異なるバージョンを返す場合、このオプションを選択します。
+      - 次に、キャッシュ条件として CloudFront が使用するパラメータを [クエリ文字列のホワイトリスト] フィールドで指定します。
+    - Forward all, cache based on all
+      - オリジンサーバーがすべてのクエリ文字列パラメータについてオブジェクトの異なるバージョンを返す場合、このオプションを選択します。
+  - 参考
+    - [CloudFront でクエリ文字列パラメータを転送するには](https://oji-cloud.net/2020/05/27/post-5040/)
+  
 
 ### オンプレIP移行
 
@@ -694,7 +736,14 @@
 ### AWS SAM
 
 - サーバレスアプリケーション構築のデプロイツール。
+- CloudFormationのサーバレス拡張という位置づけ
+  - [https://dev.classmethod.jp/articles/aws-serverless-application-model/](https://dev.classmethod.jp/articles/aws-serverless-application-model/)
 - CloudFormationと連携し、SAMがSAM構文をCloudFormation構文に変換する。
+- テンプレートに以下のように記述する。
+
+```yaml
+Transform: AWS::Serverless-2016-10-31
+```
 
 ### AWS AppSync
 
@@ -744,6 +793,10 @@
 
 - カスタムIDブローカ
   - LDAPなどのローカル認証システムを用いてAWSのリソースにアクセスするための方法
+
+- 参考
+  - [IAMロール徹底理解 〜 AssumeRoleの正体](https://dev.classmethod.jp/articles/iam-role-and-assumerole/)
+    - STSを使ったAssumeRoleの仕組みが良く分かる。
 
 ### AWS Organizations
 
@@ -926,6 +979,33 @@
   - 登録解除の待ち時間として、タイムタイムアウトを設定できる(1～3600秒、デフォルト300秒)。
   - タイムアウトを過ぎると強制的に停止する。
 
+- ステータスコードについて
+  - [https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
+  - HTTPCode_Backend_2XX, HTTPCode_Backend_4XX, HTTPCode_Backend_5XX
+    - EC2インスタンスに基づくステータスコード
+  - HTTPCode_ELB_4XX
+    - 解釈不能なHTTPの場合、ELB時点でエラーとなる
+  - HTTPCode_ELB_5XX
+    - 502: 解釈不能なレスポンスがEC2インスタンスから来た場合、このエラーとなる。
+    - 503: 様々な要因が考えられる。
+      - ELBに登録されたインスタンスが無い場合
+      - ELBに登録されたインスタンスがあるが、healthyなものがない場合
+      - スケールアップ中で送信先インスタンスが切り替わり中の場合
+      - 突発的な負荷増加でELBの待ち行列(surge queue)があふれた場合
+
+- メトリクス
+  - RequestCount
+    - HTTPCode_Backend_XXXの合計数
+  - SurgeQueueLength
+    - ELB内の待ち行列にたまっているリクエスト数
+    - 突発的なリクエスト増がない場合0を維持
+  - SpilloverCount
+    - HTTPCode_ELB_5XXが返った数
+
+- 参考
+  - [ELBの挙動とCloudWatchメトリクスの読み方を徹底的に理解する](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
+
+
 ### Lambda
 
 - 制限
@@ -1064,6 +1144,12 @@
 - ELBなどと組み合わせてよく出題される。
 - CloudFrontに設定することも可能。
 
+- ACMがサポートされていないリージョンでは、IAMをCertificate Managerとして使用する必要があります。
+  - 具体的には以下の手順で行います。
+    1. SSL証明書をIAMにアップロードする。
+    2. `get-server-certificate`コマンドにより証明書のARNを取得する。
+    3. `set-load-balancer-listener-ssl-certificate`コマンドにより証明書を設定する。
+
 ### AWS Shield
 
 - DDoS攻撃を緩和するサービス。
@@ -1111,6 +1197,9 @@
 - push型の通知サービス
 - リソース間のイベント通知、モバイルへのプッシュ通知などが用途となる。
 - SNSからSQS, SES, Lambdaへの通知も行う用途で使用する。
+
+- SQSを直接使わずにSNSを使用すると拡張性が高くなったりするというノウハウもある。
+  - [【AWS】SQSキューの前には難しいこと考えずにSNSトピックを挟むと良いよ、という話](https://dev.classmethod.jp/articles/sns-topic-should-be-placed-behind-sqs-queue/)
 
 ### Amazon SES
 
