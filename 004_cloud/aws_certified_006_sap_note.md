@@ -812,6 +812,9 @@ Transform: AWS::Serverless-2016-10-31
 - AWS Resource Access Manager (AWS RAM)
   - アカウント間でリソース共有を行うためにはこちらを使用する。
 
+- 組織からメンバーアカウントの削除
+  - 請求情報へのIAMユーザアクセスが有効となっている必要がある。
+
 
 ### AD関連
 
