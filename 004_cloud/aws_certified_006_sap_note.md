@@ -71,6 +71,20 @@
   - バケット作成時ではなくとも、後から設定することが可能。
   - Storage GatewayやGlacierは、デフォルト設定で暗号化が有効となる。
 
+- 暗号化のタイプとヘッダ
+  - SSE-KMS/SSE-S3
+    - x-amz-server-side-encryption
+      - AES256で固定
+  - SSE-C
+    - x-amz-server-side​-encryption​-customer-algorithm
+      - AES256で固定
+    - x-amz-server-side​-encryption​-customer-key	
+      - base64エンコードされた暗号化キー
+    - x-amz-server-side​-encryption​-customer-key-MD5
+      - エラーチェック用の整合性チェック用のMD5ダイジェスト
+  - CSE
+    - AWS SDKにより実施される。
+
 - Vault lock (Glacier)
   - ロックにより変更禁止とすることにより、コンプライアンス管理を実施することが可能。
 
@@ -93,6 +107,10 @@
     - EBSはライフサイクル設定できない(DLM定期スナップショットのみ)
     - EFSはIAに移動させる管理しか対応できない。
   - Glacierも一番最初の保存先選択した場合は、一定期間後に削除するポリシーなどを設定はできない。
+
+- 参考
+  - [Amazon S3における「フォルダ」という幻想をぶち壊し、その実体を明らかにする](https://dev.classmethod.jp/articles/amazon-s3-folders/)
+    - S3は単純なKey-Value型データストアであり、フォルダは実体がない。
 
 ### EBS
 
@@ -271,6 +289,9 @@
   - 参考
     - https://aws.amazon.com/jp/blogs/news/how-to-use-amazon-dynamodb-global-tables-to-power-multiregion-architectures/
 
+- 参考
+  - [コンセプトから学ぶAmazon DynamoDB](https://dev.classmethod.jp/referencecat/conceptual-learning-about-dynamodb/)
+
 ### RDS
 
 - 対応インスタンスタイプ
@@ -326,6 +347,15 @@
 - RDSとの比較
   - 一日のトランザクション数が10,000を超えるなどのケースはAuroraを選択する。
 
+- マルチマスタ構成
+  - Writerを複数別AZにスケーラブルに構築可能
+  - どのノード、AZが落ちてもダウンタイムがゼロとなる
+  - マルチマスタ構成の場合、すべてが読み書き可能なインスタンスのため、リードレプリカは利用できない。
+
+- RDSからの移行
+  - RDSのスナップショットを用いてAuroraに移行をする。
+
+
 ### Redshift
 
 - ノードタイプ
@@ -333,6 +363,7 @@
   - RAはストレージ容量がマネージドである。
 
 - マルチAZ構成は不可。
+  - マルチAZ環境とするためにはぞれぞれにRedshiftを構成し、同じS3入力ファイルセットをロードして構成する必要がある。
 
 - スポットインスタンスは使用不可。
   - オンデマンドおよびリザーブドのみ使用可能。
@@ -444,6 +475,16 @@
 - セカンダリCIDR
   - IPアドレスが枯渇する場合、最大４つのセカンダリCIDARをVPCに追加できる。
 
+- ポート
+  - インバウンドはsshなどのポート番号を指定して解放する。
+  - アウトバウンドも解放が必要で、1024-65536を解放する必要がある。
+    - アウトバウンドはランダムに割り当たる。
+    - その範囲はクライアントによって異なる。
+      - Lambda, NAT-GW, ELBは1024-65536
+      - 多くのLinuxは32768-65536
+      - Windows Server 2003は1025-5000
+      - Windows Server 2008以降は49512-65535
+
 ### DirectConnect
 
 - 準備には数日が必要。
@@ -462,15 +503,18 @@
 
 ### IPv6への対応
 
-- IPv6 CIDRブロックをVPC, subnetに関連付ける。
-- IPv6トラフィック用のルートテーブル更新
-  - public subnetは、subnetからInternet Gateway(IGC)にIPv6トラフィックをルーティングする。
-  - private subnetは、subnetからEgress-only Internet Gateway(EIGW)にIPv6トラフィックをルーティングする。
-- SGをIPv6を含めるように更新する。
-- ACLで制限されている場合、ACLのルールもIPv6に対応するように更新する。
-- インスタンスタイプをIPv6対応のものに変更する。
-- IPv6アドレスをインスタンスに割り当てる。
-- インスタンスの設定がIPv6に対応していない場合、設定を変更する。
+- 手順
+  - IPv6 CIDRブロックをVPC, subnetに関連付ける。
+  - IPv6トラフィック用のルートテーブル更新
+    - public subnetは、subnetからInternet Gateway(IGC)にIPv6トラフィックをルーティングする。
+    - private subnetは、subnetからEgress-only Internet Gateway(EIGW)にIPv6トラフィックをルーティングする。
+  - SGをIPv6を含めるように更新する。
+  - ACLで制限されている場合、ACLのルールもIPv6に対応するように更新する。
+  - インスタンスタイプをIPv6対応のものに変更する。
+  - IPv6アドレスをインスタンスに割り当てる。
+  - インスタンスの設定がIPv6に対応していない場合、設定を変更する。
+
+- IPv6のCIDR範囲は、/56固定でありユーザーが指定することはできません。
 
 ### ACL
 
@@ -529,6 +573,8 @@
   - CloudFrontのOrigin Access Identify(OAI)を使い、特定のdistributionのみをS3のBucket Policyで許可
     - OAIは特別なユーザーであり、そのユーザーに限定してBucket Policyを設定
   - CloudFrontにWAF ACLを設定し、特定のIPアドレスのみを許可
+  - OAIを使用したテンプレートはこちら
+    - [CloudFormation で OAI を使った CloudFront + S3 の静的コンテンツ配信インフラを作る](https://dev.classmethod.jp/articles/s3-cloudfront-with-oai-by-cloudformation/)
 
 - CloudFrontそのもので、Referer制限はできない。WAFを利用する必要がある。
 
@@ -551,6 +597,22 @@
   - Viewer Protocol PolicyでHTTPS Onlyを設定
   - Viewer Protocol PolicyでRedirect HTTP to HTTPSを設定
   - Viewer Protocol PolicyでSSL/TLS証明書を利用できる設定
+
+- クエリ文字列の転送設定
+  - オリジンが一意のオブジェクトを返すクエリ文字列パラメータのみを転送するように設定することでキャッシュを改善できます。
+  - CloudFrontは、デフォルトではクエリ文字列パラメータの転送とキャッシュを行わない。
+  - 以下が設定のパターンとなる。
+    - None (Improves Caching)
+      - オリジンがクエリ文字列パラメータの値に関係なくオブジェクトの同じバージョンを返す場合、このオプションを選択します。
+      - これにより、CloudFront がキャッシュからリクエストを処理できる可能性が高くなり、パフォーマンスが向上し、オリジンの負荷が低下します。
+    - Forward all, cache based on whitelist
+      - オリジンサーバーが 1 つ以上のクエリ文字列パラメータに基づいてオブジェクトの異なるバージョンを返す場合、このオプションを選択します。
+      - 次に、キャッシュ条件として CloudFront が使用するパラメータを [クエリ文字列のホワイトリスト] フィールドで指定します。
+    - Forward all, cache based on all
+      - オリジンサーバーがすべてのクエリ文字列パラメータについてオブジェクトの異なるバージョンを返す場合、このオプションを選択します。
+  - 参考
+    - [CloudFront でクエリ文字列パラメータを転送するには](https://oji-cloud.net/2020/05/27/post-5040/)
+  
 
 ### オンプレIP移行
 
@@ -637,6 +699,10 @@
       - スタックの削除時にリソースと (該当する場合) そのすべてのコンテンツを削除します。
       - この削除ポリシーは、あらゆるリソースタイプに追加することができます。
 
+- CreationPolicy
+  - ResourceSignalパラメータでTimeoutを設定することができる。
+  - これによりタイムアウトを超えるまでは終了しないようになります。
+
 ### CloudWatch
 
 - CloudWatch Logs
@@ -654,6 +720,8 @@
 - CloudWatch Logs Insights
   - ログを解析・可視化するフルマネージドサービス。
 
+- 異なるリージョンからのメトリクスを単一のCloudWatchで取得可能。
+
 ### Amazon API Gateway
 
 - Lambdaなどの前に設置し、公開されたAPIとして利用できる。
@@ -668,7 +736,14 @@
 ### AWS SAM
 
 - サーバレスアプリケーション構築のデプロイツール。
+- CloudFormationのサーバレス拡張という位置づけ
+  - [https://dev.classmethod.jp/articles/aws-serverless-application-model/](https://dev.classmethod.jp/articles/aws-serverless-application-model/)
 - CloudFormationと連携し、SAMがSAM構文をCloudFormation構文に変換する。
+- テンプレートに以下のように記述する。
+
+```yaml
+Transform: AWS::Serverless-2016-10-31
+```
 
 ### AWS AppSync
 
@@ -716,6 +791,13 @@
   - モバイル認証で、Cognitoの代わりに使用されることがある。
   - 認証には、AssumeRoleWithWebIdentity APIを使用する。
 
+- カスタムIDブローカ
+  - LDAPなどのローカル認証システムを用いてAWSのリソースにアクセスするための方法
+
+- 参考
+  - [IAMロール徹底理解 〜 AssumeRoleの正体](https://dev.classmethod.jp/articles/iam-role-and-assumerole/)
+    - STSを使ったAssumeRoleの仕組みが良く分かる。
+
 ### AWS Organizations
 
 - 複数のAWSアカウントを管理するサービス。
@@ -729,6 +811,9 @@
 
 - AWS Resource Access Manager (AWS RAM)
   - アカウント間でリソース共有を行うためにはこちらを使用する。
+
+- 組織からメンバーアカウントの削除
+  - 請求情報へのIAMユーザアクセスが有効となっている必要がある。
 
 
 ### AD関連
@@ -745,6 +830,29 @@
   - SAMLなどのフェデレーションしたり、オンプレとのADの連携も可能。
   - 既存のADワークロードをAWSに移行する場合は、こちらを利用する。
 
+### AWS Service Catalog
+
+- 組織としてのガバナンスが適用されたテンプレートを、AWS利用者であるユーザー部門に利用させることができるサービス。
+- Service Catalogは、CloudFormationテンプレートを製品としてインポートする事が出来ます。
+- CloudFormationテンプレートには、多くのAWSサービスの構成情報を記載できます。
+- これにより、スタンプを押すように統一的な環境を作成する事が出来ます。
+- 参考
+  - https://dev.classmethod.jp/articles/serca/
+
+### AWS Systems Manager
+
+- Systems Manager Automation
+  - メンテナンスやデプロイタスクを自動ワークフロー化できる。
+  - 定義済みのワークフローを使うこともできる。
+    - EC2インスタンスの再起動
+    - AMIの作成、など
+
+- Systems Managerコンソール
+  - ワークフローの進行状況を確認できる。
+
+- AWS Systems Manager エージェント(SSMエージェント)
+  - System Managerがリソースを管理できるようにするためのエージェント。
+  - EC2インスタンス、オンプレサーバーなどにインストールして使用する。
 ---
 ## Computing
 
@@ -837,6 +945,9 @@
   - store-backedはインスタンスストアがroot volumeのもの。
   - 停止すると、インスタンスストアのデータは自動的に削除される揮発型。
 
+- キーペアの管理
+  - AMIの複製では、キーペアはコピーされないため、既存のキーを使う場合には再度インポートが必要となる。
+
 ### ENI
 
 - EC2インスタンスにアタッチするネットワークインターフェース。
@@ -870,6 +981,33 @@
   - 接続をオープンとしたまま、登録解除・異常なインスタンスへの送信を停止できる機能。
   - 登録解除の待ち時間として、タイムタイムアウトを設定できる(1～3600秒、デフォルト300秒)。
   - タイムアウトを過ぎると強制的に停止する。
+
+- ステータスコードについて
+  - [https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
+  - HTTPCode_Backend_2XX, HTTPCode_Backend_4XX, HTTPCode_Backend_5XX
+    - EC2インスタンスに基づくステータスコード
+  - HTTPCode_ELB_4XX
+    - 解釈不能なHTTPの場合、ELB時点でエラーとなる
+  - HTTPCode_ELB_5XX
+    - 502: 解釈不能なレスポンスがEC2インスタンスから来た場合、このエラーとなる。
+    - 503: 様々な要因が考えられる。
+      - ELBに登録されたインスタンスが無い場合
+      - ELBに登録されたインスタンスがあるが、healthyなものがない場合
+      - スケールアップ中で送信先インスタンスが切り替わり中の場合
+      - 突発的な負荷増加でELBの待ち行列(surge queue)があふれた場合
+
+- メトリクス
+  - RequestCount
+    - HTTPCode_Backend_XXXの合計数
+  - SurgeQueueLength
+    - ELB内の待ち行列にたまっているリクエスト数
+    - 突発的なリクエスト増がない場合0を維持
+  - SpilloverCount
+    - HTTPCode_ELB_5XXが返った数
+
+- 参考
+  - [ELBの挙動とCloudWatchメトリクスの読み方を徹底的に理解する](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
+
 
 ### Lambda
 
@@ -1009,6 +1147,12 @@
 - ELBなどと組み合わせてよく出題される。
 - CloudFrontに設定することも可能。
 
+- ACMがサポートされていないリージョンでは、IAMをCertificate Managerとして使用する必要があります。
+  - 具体的には以下の手順で行います。
+    1. SSL証明書をIAMにアップロードする。
+    2. `get-server-certificate`コマンドにより証明書のARNを取得する。
+    3. `set-load-balancer-listener-ssl-certificate`コマンドにより証明書を設定する。
+
 ### AWS Shield
 
 - DDoS攻撃を緩和するサービス。
@@ -1056,6 +1200,9 @@
 - push型の通知サービス
 - リソース間のイベント通知、モバイルへのプッシュ通知などが用途となる。
 - SNSからSQS, SES, Lambdaへの通知も行う用途で使用する。
+
+- SQSを直接使わずにSNSを使用すると拡張性が高くなったりするというノウハウもある。
+  - [【AWS】SQSキューの前には難しいこと考えずにSNSトピックを挟むと良いよ、という話](https://dev.classmethod.jp/articles/sns-topic-should-be-placed-behind-sqs-queue/)
 
 ### Amazon SES
 
