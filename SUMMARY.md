@@ -61,6 +61,7 @@
     * [SAA振り返り  ](004_cloud/aws_certified_004_saa_exam.md)
     * [SAP Blackbelt](004_cloud/aws_certified_005_sap_blackbelt.md)
     * [SAPノート    ](004_cloud/aws_certified_006_sap_note.md)
+    * [AWS CLI      ](004_cloud/aws_cli.md)
     * サービス別
       * [AWS IAM        ](004_cloud/aws_service_iam.md)
       * [AWS Personalize](004_cloud/aws_service_personalize.md)
