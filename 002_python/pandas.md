@@ -81,3 +81,15 @@ df.isnull().sum()
 ```python
 df_receipt.query('`sales ymd` == 20181103')
 ```
+
+## 抽出して新しい列を作る
+
+```python
+df = pd.DataFrame([
+    ['aaa','aaa.pptx'],
+    ['bbb','bbb.pptx'],
+    ['ccc','ccc.pptx'],
+], columns=['name', 'file'])
+
+df['file'].str.extract("(.*)\.pptx")
+```
