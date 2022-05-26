@@ -73,6 +73,7 @@
 * データベース
   * [データベース設計](005_db/db_design.md)
   * [MySQL           ](005_db/mysql.md)
+  * [phpmyadmin      ](005_db/phpmyadmin.md)
   * [SQL             ](005_db/sql.md)
 * 開発用インフラ
   * Docker
