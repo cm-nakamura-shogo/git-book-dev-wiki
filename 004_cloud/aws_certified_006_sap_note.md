@@ -884,6 +884,54 @@ Transform: AWS::Serverless-2016-10-31
 - カスタムIDブローカ
   - LDAPなどのローカル認証システムを用いてAWSのリソースにアクセスするための方法
 
+- Conditionに使われるタグについて
+  - "PrincipalTag"
+    - Principalにアタッチされたタグの条件を定義
+    ```json
+    // PrincipalTag(Principalにアタッチされたタグ)の"job-title"キーの値が"Product-Manager"ではない場合
+    {
+      "StringNotEquals": {
+        "aws:PrincipalTag/job-title": "Product-Manager"
+      }
+    }
+    ```
+  - ResourceTag
+    - 操作対象のResourceにアタッチされたタグの条件を定義
+    ```json
+    // ResourceTagの"Env"キーの値が"test"である場合。StringLikeはワイルドカード(*,?)が使えるマッチング
+    {
+      "StringLike": {
+        "ec2:ResourceTag/Env": "test"
+      }
+    }
+    ```
+  - RequestTag
+    - 操作時に付与するタグが満たすべき条件を定義する。
+    ```json
+    // 操作時に付与するタグに"Env"キーがあり、その値が"Dev", "Prod", "QA"である場合
+    {
+      "StringEquals": {
+        "aws:RequestTag/Env": ["Dev", "Prod", "QA"]
+      }
+    }
+    ```
+  - TagKeys
+    - 操作時に付与するタグのキーについての制限を定義する
+      - `ForAllValues`と`ForAnyValues`は同一キーが何個もありうるような場合に使用する。
+    ```json
+    // 操作時に付与されるタグのキーすべてが["Env", "CostCenter"]に含まれる場合（ただしタグキーがない場合もOK）
+    {
+      "ForAllValues:StringEquals":{
+        "aws:TagKeys": ["Env", "CostCenter"]
+      }
+    }
+    ```
+      - 上記で`ForAnyValues`の場合は、操作時に付与されるタグのキーの１つ以上が["Env", "CostCenter"]に含まれる場合
+  - 参考
+    - [IAM タグベース制限ポリシーを作成する](https://aws.amazon.com/jp/premiumsupport/knowledge-center/iam-tag-based-restriction-policies/)
+    - [Condition Operatorに使える条件一覧](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html)
+    - [複数のキーまたは値による条件の作成](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html)
+
 - 参考
   - [IAMロール徹底理解 〜 AssumeRoleの正体](https://dev.classmethod.jp/articles/iam-role-and-assumerole/)
     - STSを使ったAssumeRoleの仕組みが良く分かる。
