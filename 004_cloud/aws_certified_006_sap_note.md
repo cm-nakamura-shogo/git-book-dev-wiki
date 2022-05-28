@@ -235,23 +235,50 @@
 ---
 ## streaming
 
-- Kinesis Data Stream
-  - データ欠落がなく耐久性があり、重複無し・順序維持をした伝送が可能。
+### Kinesis Data Stream
 
-- Kinesis Data Streamのデータ保持期間
+- 特徴
+  - データ欠落がなく耐久性があり、重複無し・順序維持をした伝送が可能。
+  - データを送信するProducerとデータを処理するConsumerという構成となる。
+
+- データ保持期間
   - 保持期間のデフォルトは24時間。設定によっては365日まで変更可能。
 
-- データに対する分析タスク
-  - KCL(Kinesis Client Library)で実施可能。
-  - Kinesisアプリケーションは、複数のインスタンスを持つことができ、KCLワーカーが各インスタンスに対応する処理ユニットです。
-  - レコードプロセッサはKinesis Data Streamsのシャードからデータを処理するユニットです。
-  - 1つのレコードプロセッサは1つのシャードに対応し、複数のレコードプロセッサがKCLワーカーにマッピングされます。
+- Producer側
+  - Kinesis Agent
+    - データを収集して送信するスタンドアロンのJavaアプリケーション
+  - Kinesis Producer Library (KPL)
+    - データを送信するOSSの補助ライブラリ
+  - Fluent plugin for Amazon Kinesis
+    - OSSのFluentdの出力プラグイン
+  - Kinesis Data Generator (KDG)
+    - テストデータの送信ができる仕組み
 
-- Kinesis Firehose
-  - S3やRedShift、Elasticsearch Serviceにロードできる。
-    - DynamoDBを配送先に指定することができないので注意
-  - lambdaと統合され、データ変換処理をしながら配信することが可能。
+- Consumer側
+  - Kinesis Client Library (KCL)を用いてデータ処理・分析を実施する。
+    - KCLを利用してKinesisアプリケーションを作成する。
+    - EC2インスタンスで動かすことができ、KCL Workerが各インスタンス内の処理ユニット。
+    - Record Processor Factory で Record Processorを作成
+    - 1つの Record Processor は1つのシャードに対応し、複数のRecord ProcessorをKCL Workerにマッピング可能
+  - KCLのステート管理には DynamoDB が使用されている。
+  - またLambdaやEMRでデータを処理することが可能。
+  - 後述のFirehoseおよびAnalyticsをConsumerとして設定することもできる。
 
+### Kinesis Data Firehose
+
+- 保存がメインの用途となる機能。Kinesis Data StreamのConsumerとして指定することで使用する。
+- S3やRedShift、Elasticsearch Serviceにロードできる。
+  - DynamoDBを配送先に指定することができないので注意
+- Lambdaと統合し、データ変換処理をしながらロードすることも可能。
+  - 変換前のソースレコードをバックアップ用S3バケットに保存
+  - 変換済みレコードを中間S3バケットに保存
+  - 中間S3バケットからRedshiftにCOPYなども可能。
+
+### Kinesis Data Analytics
+
+- 標準的なSQLクエリでストリームデータをリアルタイム分析可能
+- SQLクエリの前処理としてLambdaを置くことが可能。
+- ストリームを入力とし、クエリ実行結果を出力ストリームとすることが可能。
 ---
 ## Database
 
@@ -399,24 +426,53 @@
 
 ### EMR
 
-- 動的なスケーリングが可能
-
 - データ集約型のタスクに有用
   - ログ解析
   - データマイニング
   - 科学シミュレーション
 
+- 豊富なオープンソースのアプリケーションに対応 (20種類)
+  - Application
+    - Hive, Pig, Spark SQL/Streaming/ML, Flink, Mahout, Sqoop
+  - Batch
+    - MapReduce
+  - Interactive
+    - Tez
+  - In Memory
+    - Spark
+  - Streaming
+    - Flink
+  - その他
+    - HBase, Phoenix, Presto Tensorflow, MXNetなど
+
 - クラスターとしてEC2インスタンスの集合を扱う
-
-- EMRFSを使用してS3内のデータに直接アクセスすることが可能。
-
-- ノードは３つ種類がある。
-  - コアノード
-  - マスターノード
-  - タスクノード
+  - 動的なスケーリングが可能
+  - リザーブド、スポットインスタンスと組み合わせることができる。
 
 - 低コスト化
   - コアノードとマスターノードをRIとし、タスクノードをスポットとする。
+
+- ノードは３つ種類がある。
+  - Master instance Group
+  - Core instance Group
+  - Task instance Group(s)
+    - Task instance Groupは複数構成できる。
+    - Group毎に異なるインスタンスタイプやスポット入札額を指定可能
+
+- ストレージ
+  - EMRFSを使用してS3内のデータに直接アクセスすることが可能。S3をHDFSと同じように扱える。
+    - 可用性・耐久性をS3と同等にすることができる。
+  - 従来通りにHDFSを直接使用することが可能。
+
+- 他サービスとの連携
+  - Kinesis Connector
+    - ストリームデータにアクセス
+  - Spark Streaming
+    - Kinesis Client Libraryを使用した処理
+  - DynamoDB connector for Hive
+    - DynamoDBへのアクセス
+  - Redshift spark connector
+    - Redshiftへのアクセス
 
 ### AWS Data Pipeline
 
