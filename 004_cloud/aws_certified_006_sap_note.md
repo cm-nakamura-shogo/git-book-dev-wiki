@@ -363,6 +363,12 @@
   - 自動バックアップを有効化する
   - 大きなテーブルのパーティションは16TBを超過しないようにする。
 
+- オンプレとの連携
+  - オンプレの場合、スナップショットなどは使えないため、mysqldumpなどを使用してデータを移行する。
+
+- RDSで実現できない構成の例
+  - OracleデータベースでRAC(Real Application Clusters)を利用したい場合
+
 ### Aurora
 
 - 対応インスタンスタイプ
@@ -398,6 +404,11 @@
 - クロスリージョンスナップショット
   - 障害時、クラスタの復旧に備えるために使用。
   - S3に自動的にスナップショットが保存されるようになる。
+
+- クロスリージョンスナップショットの暗号化
+  - 元リージョンで暗号化されたクラスターのクロスリージョンスナップショットを有効にする。
+  - そして、バックアップ先のリージョンでマスターキーのスナップショットコピー許可を設定する。
+  - このマスターキーによりバックアップ先での暗号化が可能となります。
 
 - 拡張VPCルーティング
   - これを有効にすると、通常のVPCと同様以下の設定が可能になります。
@@ -476,7 +487,7 @@
 
 ### AWS Data Pipeline
 
-- データの移動や変換を自動化するためのサービス。
+- データの移動や変換の定時実行を自動化するためのサービス。
 - DynamoDBなどに設定可能で、定期的なデータ取得タスクを設定可能。
 
 ### Amazon Athena
@@ -506,12 +517,6 @@
 
 - 設定可能なCIDR範囲は`/16 ～ /28`である。
 
-- サイト間VPN
-  - オンプレと接続する場合、それぞれに以下が必要。
-    - カスタマーゲートウェイ(オンプレ側の接続点)
-    - 仮想プライベートゲートウェイ(AWS VPC側の接続点)
-  - VPNへの接続は、Client VPN Endpointから行う。
-
 - VPC内のインスタンスにDNS名を取得するためには、DNSホスト名有効化オプションが必要。
 
 - VPC Peeringはエッジ間ルーティング負荷
@@ -540,6 +545,40 @@
       - 多くのLinuxは32768-65536
       - Windows Server 2003は1025-5000
       - Windows Server 2008以降は49512-65535
+
+### VPN
+
+- サイト間VPN
+  - オンプレと接続する場合、それぞれに以下が必要。
+    - AWS VPC側(下記いずれか)
+      - 仮想プライベートゲートウェイ(VGW)
+      - Transit Gateway(TGW)
+    - オンプレ側
+      - カスタマーゲートウェイ(の接続点)
+  - 端末などからVPNへの接続は、Client VPN Endpointから行う。
+  - 設定手順
+    - 仮想プライベートGWをVPCに関連付ける
+    - カスタムルートテーブルを作成
+    - セキュリティグループを更新
+
+- VPNの接続方式
+  - IPsec-VPNを用いる。
+  - IPsec-VPNはSSL-VPNよりセキュリティが高く、決まった拠点間の通信が多い場合に使用される方式。
+  - またIPsecはネットワーク層での暗号化、SSLはセッション層での暗号化となる。
+  - そのためIPsecは上位プロトコルに依存せずにセキュアな通信が可能となる。
+  - 参考
+    - [IPsec-VPNとは？SSL-VPNとの違いもわかりやすく徹底解説！](https://it-trend.jp/vpn/article/48-0063)
+
+- VPNの冗長化
+  - VGWおよびTGWいずれを使った場合でもAWS側はデュアルトンネルとなり、2つのVPN接続先が用意される。
+  - オンプレ側のカスタマーゲートウェイの冗長化は別途構築が必要。
+    - ルーターに冗長化機能を持つ機器を利用し、Customer Gatewayを設定する。
+    - 上記でも回線はシングル構成のためISP障害には対応できない。その場合は2つのCustomer Gatewayを使用する。
+  - 下記が詳しい。
+    - [[AWS] Site to Site VPN の冗長化を考える | DevelopersIO](https://dev.classmethod.jp/articles/redundancy-of-aws-site-to-site-vpn/)
+
+- SSL VPN
+  - 拠点間ではなく外出先などでインターネット経由でプライベートネットワークにアクセスするためのソリューション
 
 ### DirectConnect
 
@@ -572,6 +611,9 @@
 
 - IPv6のCIDR範囲は、/56固定でありユーザーが指定することはできません。
 
+- インターネットへの接続
+  - IPv6を利用する場合、NATゲートウェイによるアドレス変換の代わりに、Egress-Only インターネットゲートウェイを使用する必要がある。
+
 ### ACL
 
 - アウトバンド・インバウンドの設定
@@ -583,6 +625,16 @@
 - 特定のIPアドレスの攻撃からサブネットを保護するFirewallとしても使用可能。
 
 - ルールは番号の若い順(小さい)に適用される。
+
+### NATゲートウェイ・NATインスタンス
+
+- NATゲートウェイは送信側のIPをパブリックなIPに変換して送信することで、外部との通信を可能にする。
+- またこれ以外でも、裏側に複数のインスタンスが存在する場合で、固定のIPを外部に見せたい場合には、NATゲートウェイが使用できる。
+  - 使用可能なIPに制限数があるAPIなど。
+
+- マルチAZ
+  - AZ障害を高めるためには、NATゲートウェイも異なるAZに立ち上げる。
+  - NATインスタンスも同様だが、適切に処理を引き継ぐためにスクリプトを設定する必要がある。
 
 ### Route53
 
@@ -668,7 +720,12 @@
       - オリジンサーバーがすべてのクエリ文字列パラメータについてオブジェクトの異なるバージョンを返す場合、このオプションを選択します。
   - 参考
     - [CloudFront でクエリ文字列パラメータを転送するには](https://oji-cloud.net/2020/05/27/post-5040/)
-  
+
+- Origin Protocol Polocy
+  - オリジンとの通信プロトコルを以下３種類で設定できる
+    - HTTP Only
+    - HTTPS Only
+    - Match Viewer (HTTP または HTTPS)
 
 ### オンプレIP移行
 
@@ -690,6 +747,13 @@
 ---
 ## Dev and Ops
 
+- [AWS OpsWorks と AWS Elastic Beanstalkの違い](https://awsjp.com/AWS/hikaku/OpsWorks-Elastic_Beanstalk-chigai.html)
+  - Elastic Beanstalk: アプリケーションの管理
+  - OpsWorks: アプリケーションスタックの管理（DBやミドルウェアなど）
+- [AWS CloudFormation と AWS OpsWorksの違い](https://awsjp.com/AWS/hikaku/CloudFormation-OpsWorks-chigai.html)
+  - OpsWorks: アプリケーションスタックの管理
+  - CloudFormation: VPCなどネットワークにわたるAWS全体
+
 ### Beanstalk
 
 - 自動的にデプロイ・スケーリングを行うサービス。
@@ -706,6 +770,32 @@
   - Amazon ECSなどのDockerにホストされたアプリケーションも対象。
 
 - 運用や監視にも使用することができる。
+
+- デプロイポリシー
+  - デプロイポリシーの種類は以下の通り。
+    - All at Once
+      - すべてのインスタンスをアップデートする
+      - ダウンタイムが一瞬発生するが、最も早い。ただし失敗した場合は全滅する。
+    - Rolling
+      - バッチ毎に新しくする。バッチ50%であれば、半分を新しくする。
+      - 更新中は使用可能なインスタンス数が減る。
+      - ダウンタイムは発生しないが、古いものと新しいものが混在する。
+    - Rolling with additional batch
+      - バッチ単位で新しいインスタンスを起動して、新しくする。
+      - Rollingと違い、使用可能なインスタンス数が減らない。
+      - ただし古いものと新しいものの混在する状態は変わらない。
+    - Immutable
+      - 新しいAutoScalingグループを作成してそこで１つの新しいインスタンスを起動して、新しいものを動かす。
+      - そしてそのAutoScalingグループをELBにアタッチしてうまく動くか確認する。
+      - OKであれば残りのインスタンをまた新規に立ち上げて、新しいものを動かす。
+      - その後、もともとのAutoScalingグループをELBから削除する。
+      - Immutableでも古いものと新しいものの混在する状態は変わらない。
+  - 単一インスタンスの場合、All at OnceもしくはImmutableしか選択できない。
+  - 混在を避けたい場合は、Blue/Greenデプロイを実施する。ただしこれは、Beanstalkのデプロイポリシーには含まれない
+    - Blue/Greenデプロイでは、ELBごと環境をクローンしてAll at Onceでデプロイすればよい。
+    - その後、ELBに割り当たっているDNS名をスワップする。
+  - 以下を参考。
+    - [https://dev.classmethod.jp/articles/elastic-beanstalk-deploy-policy/](https://dev.classmethod.jp/articles/elastic-beanstalk-deploy-policy/)
 
 ### OpsWorks
 
@@ -850,6 +940,54 @@ Transform: AWS::Serverless-2016-10-31
 - カスタムIDブローカ
   - LDAPなどのローカル認証システムを用いてAWSのリソースにアクセスするための方法
 
+- Conditionに使われるタグについて
+  - "PrincipalTag"
+    - Principalにアタッチされたタグの条件を定義
+    ```json
+    // PrincipalTag(Principalにアタッチされたタグ)の"job-title"キーの値が"Product-Manager"ではない場合
+    {
+      "StringNotEquals": {
+        "aws:PrincipalTag/job-title": "Product-Manager"
+      }
+    }
+    ```
+  - ResourceTag
+    - 操作対象のResourceにアタッチされたタグの条件を定義
+    ```json
+    // ResourceTagの"Env"キーの値が"test"である場合。StringLikeはワイルドカード(*,?)が使えるマッチング
+    {
+      "StringLike": {
+        "ec2:ResourceTag/Env": "test"
+      }
+    }
+    ```
+  - RequestTag
+    - 操作時に付与するタグが満たすべき条件を定義する。
+    ```json
+    // 操作時に付与するタグに"Env"キーがあり、その値が"Dev", "Prod", "QA"である場合
+    {
+      "StringEquals": {
+        "aws:RequestTag/Env": ["Dev", "Prod", "QA"]
+      }
+    }
+    ```
+  - TagKeys
+    - 操作時に付与するタグのキーについての制限を定義する
+      - `ForAllValues`と`ForAnyValues`は同一キーが何個もありうるような場合に使用する。
+    ```json
+    // 操作時に付与されるタグのキーすべてが["Env", "CostCenter"]に含まれる場合（ただしタグキーがない場合もOK）
+    {
+      "ForAllValues:StringEquals":{
+        "aws:TagKeys": ["Env", "CostCenter"]
+      }
+    }
+    ```
+      - 上記で`ForAnyValues`の場合は、操作時に付与されるタグのキーの１つ以上が["Env", "CostCenter"]に含まれる場合
+  - 参考
+    - [IAM タグベース制限ポリシーを作成する](https://aws.amazon.com/jp/premiumsupport/knowledge-center/iam-tag-based-restriction-policies/)
+    - [Condition Operatorに使える条件一覧](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html)
+    - [複数のキーまたは値による条件の作成](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html)
+
 - 参考
   - [IAMロール徹底理解 〜 AssumeRoleの正体](https://dev.classmethod.jp/articles/iam-role-and-assumerole/)
     - STSを使ったAssumeRoleの仕組みが良く分かる。
@@ -978,6 +1116,11 @@ Transform: AWS::Serverless-2016-10-31
 - インスタンス間のネットワーク高速化
   - クラスタープレイスメントグループを設定する。
   - 拡張ネットワーキングをサポートするインスタンスタイプを選択
+  - 拡張ネットワーキングの種類は以下の通り
+    - ENA (Elastic Network Adapter)
+      - 最大100Gbpsを実現するための拡張ネットワーク
+    - Intel 82599 Virtual Function (VF) インターフェイス
+      - 最大10Gbpsを実現するための拡張ネットワーク
 
 - プレイスメントグループ
   - プレイスメントグループは設定後に、起動するという手順となる。
@@ -1196,12 +1339,13 @@ Transform: AWS::Serverless-2016-10-31
 ### AWS CloudTrail
 
 - アカウントのガバナンス、コンプライアンス、運用監査、リスク監査を行うサービス。
+- AWS Organizationを利用中の場合、すべてのAWSアカウントのログをまとめて取得することが可能。
+  - 組織の証跡を使うことで、すべてのアカウントのCroudTrailイベントを同じS3バケット、CloudWatch Logs、CloudWatchイベントに配信できる。
 
 ### AWS Certificate Manager (ACM)
 
 - SSL証明書を集中管理するためのサービス。
-- ELBなどと組み合わせてよく出題される。
-- CloudFrontに設定することも可能。
+- ELB、Route53、CloudFrontなどとの組み合わせとしてよく出題される。
 
 - ACMがサポートされていないリージョンでは、IAMをCertificate Managerとして使用する必要があります。
   - 具体的には以下の手順で行います。
@@ -1280,7 +1424,7 @@ Transform: AWS::Serverless-2016-10-31
 - 最長１年間実行可能。
 - プロセスに親子関係がある場合は、SWFを選択する。(Step FUnctionsで対応できない)
 
-### Amazon SWF
+### Amazon SWF (Simple Workflow)
 
 - 旧型のワークフローシステム。
 - 利用が水使用されていないため、ほぼ正解の選択肢にはならない(Step Functionsがない場合は選択肢になるかも)
@@ -1301,3 +1445,14 @@ Transform: AWS::Serverless-2016-10-31
 ### Amazon Macie
 
 - S3内の機密データを検出・分類・保護できるフルマネージド型サービス
+
+---
+## CV
+
+### Elastic Transcoder
+
+- 動画データを様々な形式にトランスコーディングできる(MP4、HLS: HTTP Live Streaming)
+
+### Amazon Video Streaming
+
+- 動画をストリーミング配信するためのサービス

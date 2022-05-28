@@ -62,6 +62,7 @@
     * [SAA振り返り  ](004_cloud/aws_certified_004_saa_exam.md)
     * [SAP Blackbelt](004_cloud/aws_certified_005_sap_blackbelt.md)
     * [SAPノート    ](004_cloud/aws_certified_006_sap_note.md)
+    * [AWS CLI      ](004_cloud/aws_cli.md)
     * サービス別
       * [概要           ](004_cloud/aws_service_overall)
       * [AWS IAM        ](004_cloud/aws_service_iam.md)
@@ -72,6 +73,7 @@
 * データベース
   * [データベース設計](005_db/db_design.md)
   * [MySQL           ](005_db/mysql.md)
+  * [phpmyadmin      ](005_db/phpmyadmin.md)
   * [SQL             ](005_db/sql.md)
 * 開発用インフラ
   * Docker
