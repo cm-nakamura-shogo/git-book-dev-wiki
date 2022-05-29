@@ -265,6 +265,9 @@
   - またLambdaやEMRでデータを処理することが可能。
   - 後述のFirehoseおよびAnalyticsをConsumerとして設定することもできる。
 
+- 参考
+  - [Amazon Kinesis | AWS Black Belt Online Seminar](https://d1.awsstatic.com/webinars/jp/pdf/services/20180110_AWS-BlackBelt-Kinesis.pdf)
+
 ### Kinesis Data Firehose
 
 - 保存がメインの用途となる機能。Kinesis Data StreamのConsumerとして指定することで使用する。
@@ -519,6 +522,9 @@
     - DynamoDBへのアクセス
   - Redshift spark connector
     - Redshiftへのアクセス
+
+- 参考
+  - [Amazon EMR | AWS Black Belt Online Seminar](https://d1.awsstatic.com/webinars/jp/pdf/services/20191023_AWS-Blackbelt_EMR.pdf)
 
 ### AWS Data Pipeline
 
