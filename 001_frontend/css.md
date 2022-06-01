@@ -73,3 +73,9 @@ border-radius: 10px 10px 0 0;
 - Web・アプリ開発のエンジニアが知っておきたい、デザインツール「Figma」の基本 
   - https://techblog.jmdc.co.jp/entry/how-to-use-figma-for-engineers
 
+## Emotion
+
+- CSS in JSのモジュール
+- 社内勉強会ででてきたのでメモ。
+- [【Next.js & TypeScript】Emotionの導入が大変だったので手順をまとめておく](https://zenn.dev/iwakin999/articles/7a5e11e62ba668)
+

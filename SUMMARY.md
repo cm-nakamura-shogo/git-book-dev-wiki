@@ -4,8 +4,10 @@
   * [CSS       ](001_frontend/css.md)
   * [HTML      ](001_frontend/html.md)
   * [JavaScript](001_frontend/javascript.md)
+  * [MSW       ](001_frontend/msw.md)
   * [Next.js   ](001_frontend/nextjs.md)
   * [React     ](001_frontend/react.md)
+  * [Storybook ](001_frontend/storybook.md)
   * [TypeScript](001_frontend/typescript.md)
   * [Vue       ](001_frontend/vue.md)
 * Python
@@ -68,6 +70,8 @@
       * [AWS IAM        ](004_cloud/aws_service_iam.md)
       * [AWS Personalize](004_cloud/aws_service_personalize.md)
       * [AWS Tips       ](004_cloud/aws_service_tips.md)
+      * [AWS Lambda     ](004_cloud/aws_service_lambda.md)
+      * [Amazon Redshift](004_cloud/aws_service_redshift.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
 * データベース
@@ -103,6 +107,8 @@
   * [個人開発スタック](010_design/stack.md)
 * セキュリティ
   * [認証認可](011_security/auth.md)
+* ワークフロー
+  * [Digdag](012_workflow/digdag.md)
 * ML
   * [augmentation](100_ML/augmentation.md)
   * [AutoML      ](100_ML/auto_ml.md)

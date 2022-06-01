@@ -1,5 +1,9 @@
 # syntax(文法)
 
+## チートシート
+
+- [Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
+
 ## リスト内包表記とif
 
 - 普通のリスト内包表記

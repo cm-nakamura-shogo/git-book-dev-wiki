@@ -471,6 +471,8 @@
   - インターネットを介さずにAWSリソースにアクセスできる。
   - S3とDynamoDBのみ、ゲートウェイ型
   - それ以外のリソースはプライベートリンク型
+  - ゲートウェイ型とプライベートリンク型の違い
+    - [2つのVPCエンドポイントの違いを知る | DevelopersIO](https://dev.classmethod.jp/articles/vpc-endpoint-gateway-type/)
 
 - Bastionホストとは
   - EC2などで構成する踏み台サーバーのこと。
