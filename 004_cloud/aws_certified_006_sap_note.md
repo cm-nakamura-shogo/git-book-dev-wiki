@@ -101,6 +101,7 @@
 
 - バージョニング
   - バージョニング可能なのはS3のみ。(EBSやEFSはバージョニングできない)
+  - バージョニング開始時に既にあるオブジェクトは、バージョンIDがnullとなる。その後変更された時点でバージョンIDが付与され始める。
 
 - ライフサイクル管理
   - S3は一定期間後のクラス変更や削除など様々なライフサイクルポリシーを設定可能。
@@ -235,23 +236,71 @@
 ---
 ## streaming
 
-- Kinesis Data Stream
-  - データ欠落がなく耐久性があり、重複無し・順序維持をした伝送が可能。
+### Kinesis Data Stream
 
-- Kinesis Data Streamのデータ保持期間
+- 特徴
+  - データ欠落がなく耐久性があり、重複無し・順序維持をした伝送が可能。
+  - データを送信するProducerとデータを処理するConsumerという構成となる。
+
+- データ保持期間
   - 保持期間のデフォルトは24時間。設定によっては365日まで変更可能。
 
-- データに対する分析タスク
-  - KCL(Kinesis Client Library)で実施可能。
-  - Kinesisアプリケーションは、複数のインスタンスを持つことができ、KCLワーカーが各インスタンスに対応する処理ユニットです。
-  - レコードプロセッサはKinesis Data Streamsのシャードからデータを処理するユニットです。
-  - 1つのレコードプロセッサは1つのシャードに対応し、複数のレコードプロセッサがKCLワーカーにマッピングされます。
+- Producer側
+  - Kinesis Agent
+    - データを収集して送信するスタンドアロンのJavaアプリケーション
+  - Kinesis Producer Library (KPL)
+    - データを送信するOSSの補助ライブラリ
+  - Fluent plugin for Amazon Kinesis
+    - OSSのFluentdの出力プラグイン
+  - Kinesis Data Generator (KDG)
+    - テストデータの送信ができる仕組み
 
-- Kinesis Firehose
-  - S3やRedShift、Elasticsearch Serviceにロードできる。
-    - DynamoDBを配送先に指定することができないので注意
-  - lambdaと統合され、データ変換処理をしながら配信することが可能。
+- Consumer側
+  - Kinesis Client Library (KCL)を用いてデータ処理・分析を実施する。
+    - KCLを利用してKinesisアプリケーションを作成する。
+    - EC2インスタンスで動かすことができ、KCL Workerが各インスタンス内の処理ユニット。
+    - Record Processor Factory で Record Processorを作成
+    - 1つの Record Processor は1つのシャードに対応し、複数のRecord ProcessorをKCL Workerにマッピング可能
+  - KCLのステート管理には DynamoDB が使用されている。
+  - またLambdaやEMRでデータを処理することが可能。
+  - 後述のFirehoseおよびAnalyticsをConsumerとして設定することもできる。
 
+- 参考
+  - [Amazon Kinesis | AWS Black Belt Online Seminar](https://d1.awsstatic.com/webinars/jp/pdf/services/20180110_AWS-BlackBelt-Kinesis.pdf)
+
+### Kinesis Data Firehose
+
+- 保存がメインの用途となる機能。Kinesis Data StreamのConsumerとして指定することで使用する。
+- S3やRedShift、Elasticsearch Serviceにロードできる。
+  - DynamoDBを配送先に指定することができないので注意
+- Lambdaと統合し、データ変換処理をしながらロードすることも可能。
+  - 変換前のソースレコードをバックアップ用S3バケットに保存
+  - 変換済みレコードを中間S3バケットに保存
+  - 中間S3バケットからRedshiftにCOPYなども可能。
+
+### Kinesis Data Analytics
+
+- 標準的なSQLクエリでストリームデータをリアルタイム分析可能
+- SQLクエリの前処理としてLambdaを置くことが可能。
+- ストリームを入力とし、クエリ実行結果を出力ストリームとすることが可能。
+
+
+### Kinesis Video Streams
+
+- 動画データ専用のストリーミングサービス
+- Producerは以下の方法でアップロードを実行する。
+  - PutMedia API, Amazon Kinesis Video Streams Producer SDK(推奨)
+- Consumerとしては以下が使用される
+  - EC2, ECS, SageMaker, Rekognition Video
+
+- ストリーミング方法に２種類ある。
+  - メディア形式
+    - 取り込み、保存、再生、取得・分析が可能
+  - WebRTC
+    - 双方向の低遅延通信が可能
+
+- 参考
+  - [AWS IoT 再入門ブログリレー Amazon Kinesis Video Streams編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-iot-2021-amazon-kinesis-video-streams/)
 ---
 ## Database
 
@@ -341,6 +390,8 @@
 
 - RDSで実現できない構成の例
   - OracleデータベースでRAC(Real Application Clusters)を利用したい場合
+  - Oracle Recovery Managerでバックアップを使用したい場合(DBへのシェルアクセスが必要)
+  - DBへのシェルアクセスが必要な場合
 
 ### Aurora
 
@@ -389,14 +440,17 @@
   - 設定による料金は発生しません。
   - 逆に設定しない場合は、その他のAWSサービスなどへのトラフィックが、インターネット経由でルーティングされます。
 
-- WLM (Work Load Management)
+- ワークロード管理 (Work Load Management: WLM)
+  - ワークロードに応じてキューを設定し、スロットでCPUやメモリを割り当てる。
   - クエリに対して割り当てるRedshiftのリソースを指定することができる。
   - WLMによりクエリ処理をキューとして実行順序を定義可能。
+
 
 ### ElastiCache
 
 - 高速データ処理が可能なNoSQL型のデータベース
-- 単純に高速化したいなどの場合は、シンプルなMemcachedを選択する。
+- 単純なセッションデータ管理などの場合は、シンプルなMemcachedを選択する。
+- 計算処理がある場合はRedisを選択する。
 - レプリケーションや自動フェイルオーバー、データの永続性という面ではredisを選択する。
 
 ### AWS Database Migration Service
@@ -405,29 +459,72 @@
 
 - DMSコンソールを利用して、移行対象のテーブル、以降方式をタスクとしてJSONファイルにより設定できる。
 
+- 手順は以下の通り
+  - DMSコンソールで、以降に必要となるCPUなどを設定したレプリケーション用インスタンスを配置する。
+  - ソースとターゲットのエンドポイントを選択する
+  - 移行タイプは以下の３つから選択するが、新しく実施する場合は通常"migrate existing data and replicate ongoing changes"を選ぶと考えられる。
+    - migrate existing data and replicate ongoing changes(初期転送後、差分転送開始)
+    - migrate existing data(初期転送のみ)
+    - replicate data changes only(差分転送のみ)
+
+- ネットワーク接続方法
+  - NATゲートウェイを介した通信, VPN, Direct Connectなどが選択肢としてある。
+
 ---
 ## Data Processing
 
 ### EMR
-
-- 動的なスケーリングが可能
 
 - データ集約型のタスクに有用
   - ログ解析
   - データマイニング
   - 科学シミュレーション
 
+- 豊富なオープンソースのアプリケーションに対応 (20種類)
+  - Application
+    - Hive, Pig, Spark SQL/Streaming/ML, Flink, Mahout, Sqoop
+  - Batch
+    - MapReduce
+  - Interactive
+    - Tez
+  - In Memory
+    - Spark
+  - Streaming
+    - Flink
+  - その他
+    - HBase, Phoenix, Presto Tensorflow, MXNetなど
+
 - クラスターとしてEC2インスタンスの集合を扱う
-
-- EMRFSを使用してS3内のデータに直接アクセスすることが可能。
-
-- ノードは３つ種類がある。
-  - コアノード
-  - マスターノード
-  - タスクノード
+  - 動的なスケーリングが可能
+  - リザーブド、スポットインスタンスと組み合わせることができる。
 
 - 低コスト化
   - コアノードとマスターノードをRIとし、タスクノードをスポットとする。
+
+- ノードは３つ種類がある。
+  - Master instance Group
+  - Core instance Group
+  - Task instance Group(s)
+    - Task instance Groupは複数構成できる。
+    - Group毎に異なるインスタンスタイプやスポット入札額を指定可能
+
+- ストレージ
+  - EMRFSを使用してS3内のデータに直接アクセスすることが可能。S3をHDFSと同じように扱える。
+    - 可用性・耐久性をS3と同等にすることができる。
+  - 従来通りにHDFSを直接使用することが可能。
+
+- 他サービスとの連携
+  - Kinesis Connector
+    - ストリームデータにアクセス
+  - Spark Streaming
+    - Kinesis Client Libraryを使用した処理
+  - DynamoDB connector for Hive
+    - DynamoDBへのアクセス
+  - Redshift spark connector
+    - Redshiftへのアクセス
+
+- 参考
+  - [Amazon EMR | AWS Black Belt Online Seminar](https://d1.awsstatic.com/webinars/jp/pdf/services/20191023_AWS-Blackbelt_EMR.pdf)
 
 ### AWS Data Pipeline
 
@@ -506,6 +603,11 @@
     - 仮想プライベートGWをVPCに関連付ける
     - カスタムルートテーブルを作成
     - セキュリティグループを更新
+
+- 仮想パブリックインターフェース
+  - S3などのパブリックリソース(非VPCのサービス)にアクセスするために使用する。
+  - 参考
+    - [「パブリック仮想インターフェイス」と「プライベート仮想インターフェイス」の違い - Qiita](https://qiita.com/tsumita7/items/efcc2e0009a54b953dfe)
 
 - VPNの接続方式
   - IPsec-VPNを用いる。
@@ -609,6 +711,14 @@
 - DDos攻撃対策
   - シャッフルシャーディングと anycast ルーティングにより、攻撃を受けていてもユーザーがアクセス可能な状態を維持することができる。
 
+- DNSレコードの種類
+
+|レコード名|説明|
+|:---|:---|
+|A|ホスト名からIPアドレスを関連付ける(IPv4)|
+|AAAA|ホスト名からIPアドレスを関連付ける(IPv6)|
+|CNAME|別名のドメインを定義するコード|
+
 ### CloudFront
 
 - コンテンツを高速配信するためのCDNサービス。
@@ -621,16 +731,29 @@
 - コンテンツ圧縮を有効化することで、高速化やデータ削減(コスト削減)が可能。
   - ただし、Viewer（ブラウザ等）で`Accept-Encoding: gzip`が有効である必要がある。
 
-- 地理的ブロッキングで、特定地域のユーザーのアクセスを回避可能。
+- 地理的ブロッキングで、特定国単位でのユーザーのアクセスを制限することが可能。
+  - ただし国より小さい単位や、ファイルのサブセットにまでアクセス制限をしたい場合は、サードパーティの位置情報サービスを使用する必要がある。
 
 - S3へのアクセス制限(IP制限等)するをすることが可能。
   - CloudFrontのOrigin Access Identify(OAI)を使い、特定のdistributionのみをS3のBucket Policyで許可
     - OAIは特別なユーザーであり、そのユーザーに限定してBucket Policyを設定
   - CloudFrontにWAF ACLを設定し、特定のIPアドレスのみを許可
   - OAIを使用したテンプレートはこちら
-    - [CloudFormation で OAI を使った CloudFront + S3 の静的コンテンツ配信インフラを作る](https://dev.classmethod.jp/articles/s3-cloudfront-with-oai-by-cloudformation/)
+    - [CloudFormation で OAI を使った CloudFront + S3 の静的コンテンツ配信インフラを作る | DevelopersIO](https://dev.classmethod.jp/articles/s3-cloudfront-with-oai-by-cloudformation/)
 
-- CloudFrontそのもので、Referer制限はできない。WAFを利用する必要がある。
+- 署名付きURLと署名付きCookie
+  - CloudFront自体へのアクセスを制限したい場合に使用する。
+  - 制限には、アクセスの有効期限やソースのIPを設定できる。
+  - 署名は以下のいずれかにより行われる。
+    - Trusted Key Group (AWS推奨)
+      - 信頼されたキーグループ
+    - Trusted Signer (root作業につきAWS非推奨)
+      - CloudFrontのキーペアを持つAWSアカウント
+  - [CloudFront 署名付きURLと署名付きCookieをおさらいしてPythonで試してみた | DevelopersIO](https://dev.classmethod.jp/articles/cloudfront-signed-url-and-cookie-using-python/)
+
+- Referer制限
+  - 直前のリンクを元に参照を制限する機能。
+  - CloudFrontそのもので、Referer制限はできないため、WAFを利用する必要がある。
 
 - アクセスユーザーの制御
   - 署名付きURLと署名付きCookieを利用することが可能。
@@ -672,6 +795,17 @@
     - HTTP Only
     - HTTPS Only
     - Match Viewer (HTTP または HTTPS)
+
+- オンプレミス環境との連携
+  - CloudFrontはオリジンサーバーをオンプレミスにすることが可能
+
+- Time to Live (TTL)設定について
+  - キャッシュ有効期限
+  - オリジンで更新があった場合に最大でもこのTTL後に反映される。
+  - 更新がない場合はキャッシュが機能する(TTL=0だとキャッシュされないわけではないので注意)
+    - ただしRequest自体はオリジンに送信される。
+  - 参考
+    - [CloudFrontで素早くコンテンツを更新させたい場合にTTLを短くしInvalidationを行わないキャッシュ戦略を考える | DevelopersIO](https://dev.classmethod.jp/articles/cloudfront-update-content-quickly-using-short-ttl/)
 
 ### オンプレIP移行
 
@@ -742,6 +876,9 @@
     - その後、ELBに割り当たっているDNS名をスワップする。
   - 以下を参考。
     - [https://dev.classmethod.jp/articles/elastic-beanstalk-deploy-policy/](https://dev.classmethod.jp/articles/elastic-beanstalk-deploy-policy/)
+
+- データベース削除ポリシー
+  - 保持を有効化することで、RDSをBeanstalkからデカップリングしてもデータが削除されない。
 
 ### OpsWorks
 
@@ -816,10 +953,26 @@
 
 ### Amazon API Gateway
 
-- Lambdaなどの前に設置し、公開されたAPIとして利用できる。
+- LambdaやEndpoint on EC2などの前に設置し、公開されたAPIとして利用できる。
 - REST APIおよびWebSocket APIを作成可能
 - 一時的な高負荷対応には、スロットリング制限設定とキャッシュを有効化を実施する。
 - APIコールとデータ量に応じた費用のみが発生する。
+
+- API Gatewayの実行ロール
+  - Lamda関数のARNを設定し、API GatewayがLambdaを呼び出すことを許可する権限を持つIAMロールを設定する。
+
+- 認証
+  - LambdaコンソールでAPI Gateway Lambda authorizer関数を作成する。
+  - これにより、AuthやSAMLなどのBearer Tokenによる認可戦略を使用できる。
+  - またこのAuthorizer関数も、API Gatewayの実行ロールに設定する必要がある。
+  - 参考
+    - [API Gateway Lambda オーソライザーを使用する - Amazon API Gateway](https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)
+
+- プロキシ統合
+  - プロキシ統合を使用することで、Lambda関数内でリクエストを生の状態で処理できる。
+  - これによりマッピングを手動で定義する必要がなく簡単に利用が可能。
+  - 参考
+    - [[初心者向け] Lambda 非プロキシ統合で API Gateway API をビルドする をプロキシ統合にして比較してみる | DevelopersIO](https://dev.classmethod.jp/articles/for-beginner-build-apigateway-with-noproxy-and-proxy-lambda/)
 
 ### AWS X-Ray
 
@@ -955,6 +1108,18 @@ Transform: AWS::Serverless-2016-10-31
 - 組織からメンバーアカウントの削除
   - 請求情報へのIAMユーザアクセスが有効となっている必要がある。
 
+- SCPの範囲
+  - 特定のサービスにアタッチ済みのIAMロールには影響を与えないので注意する。
+
+- マスターアカウントでメンバーアカウントのリソースを管理する方法
+  - 新規メンバーアカウントの場合
+    - メンバーアカウントをOrganizationsのコンソールで作成するとOrganizationAccountAccessRoleが自動生成される。
+    - マスターアカウントに対してクロスアカウントアクセスを設定する。
+  - 既存メンバーアカウントの場合
+    - OrganizationAccountAccessRoleが生成されない。
+    - そのためまず、メンバーアカウントをマスターアカウントに招待する。
+    - そのうえで、マスターアカウントに対してOrganizationAccountAccessRoleをクロスアカウント権限で付与することが必要。
+
 
 ### AD関連
 
@@ -969,6 +1134,12 @@ Transform: AWS::Serverless-2016-10-31
   - フル機能のMicrosoft Active DirectoryをAWSで使用できる。
   - SAMLなどのフェデレーションしたり、オンプレとのADの連携も可能。
   - 既存のADワークロードをAWSに移行する場合は、こちらを利用する。
+
+### AWS Single Sign-On (SSO)
+
+- 複数のAWSアカウントやビジネスアプリケーションへのSSOアクセスを簡単に一元管理できるクラウドSSOサービス。
+- Organizationsすべてのアカウントの一元管理も可能
+- AWS SSOで構成する資格情報、または既存の社内認証情報を使用して再インできる。
 
 ### AWS Service Catalog
 
@@ -1057,7 +1228,7 @@ Transform: AWS::Serverless-2016-10-31
   - 起動テンプレートはバージョン管理が可能。AMIと独立して設定ができる。
     - AMIは「起動テンプレートに含めない」という設定が可能。
   - 双方とも、Auto Scalingグループに紐づけする。
-  - そのAuto ScalingグループをELBに紐づけすることが可能。
+  - そのAuto ScalingグループをELBに紐づけすることが可能。S
 
 - インスタンス間のネットワーク高速化
   - クラスタープレイスメントグループを設定する。
@@ -1092,6 +1263,14 @@ Transform: AWS::Serverless-2016-10-31
 
 - キーペアの管理
   - AMIの複製では、キーペアはコピーされないため、既存のキーを使う場合には再度インポートが必要となる。
+
+- 複数のサーバーSSL証明書の設定
+  - SSL通信は、HTTP前段階で確率され、その際にSSLサーバー証明書も使用される。
+  - HTTPの前段階ではホスト名ではなくIPアドレス等を使って通信されます。
+  - そのため、SSLサーバー証明書はIPアドレス毎に一つまで有効となります。
+  - EC2に複数設定したい場合は、複数のENIで各ENIにEIPを設定する必要があります。
+  - 参考
+    - [1台のWebサーバで複数の証明書を運用する際の注意点は？ | SSLサーバ証明書のクロストラスト](https://xtrust.jp/support/faq/faq09/a008/)
 
 ### ENI
 
@@ -1149,6 +1328,14 @@ Transform: AWS::Serverless-2016-10-31
     - 突発的なリクエスト増がない場合0を維持
   - SpilloverCount
     - HTTPCode_ELB_5XXが返った数
+
+- クロスゾーン負荷分散
+  - クライアントがDNSルックアップをキャッシュする環境では、クロスゾーン負荷分散が無効な場合いずれかのAZに不可が集中する可能性がある。
+  - ALBでは常に有効となり無効にできない。
+  - CLB, NLBは作成方法によっては無効となるので、明示的な有効化が必要になる場合がある。
+    - NLBは必ず無効がデフォルトとなる。
+  - 参考
+    - [ELBの種類によるクロスゾーン負荷分散のデフォルト値調べ | DevelopersIO](https://dev.classmethod.jp/articles/elb_crosszone_load_balancing_default_value/)
 
 - 参考
   - [ELBの挙動とCloudWatchメトリクスの読み方を徹底的に理解する](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
@@ -1285,8 +1472,9 @@ Transform: AWS::Serverless-2016-10-31
 ### AWS CloudTrail
 
 - アカウントのガバナンス、コンプライアンス、運用監査、リスク監査を行うサービス。
-- AWS Organizationを利用中の場合、すべてのAWSアカウントのログをまとめて取得することが可能。
-  - 組織の証跡を使うことで、すべてのアカウントのCroudTrailイベントを同じS3バケット、CloudWatch Logs、CloudWatchイベントに配信できる。
+- AWS Organizationsを利用中の場合、すべてのAWSアカウントのログをまとめて取得することが可能。
+  - マスターアカウントの組織の証跡を有効とすることで、すべてのアカウントのCroudTrailイベントを同じS3バケット、CloudWatch Logs、CloudWatchイベントに配信できる。
+- AWS Organizationsを使用しない場合は、各アカウントで組織の証跡を有効化する必要がある。
 
 ### AWS Certificate Manager (ACM)
 
@@ -1298,6 +1486,12 @@ Transform: AWS::Serverless-2016-10-31
     1. SSL証明書をIAMにアップロードする。
     2. `get-server-certificate`コマンドにより証明書のARNを取得する。
     3. `set-load-balancer-listener-ssl-certificate`コマンドにより証明書を設定する。
+
+- 権限の分割
+  - EC2の管理者権限が開発チームにある場合、セキュリティチームのみが管理できるようELBにSSL証明書を設定する必要がある。
+
+- IAMポリシー
+  - 証明書へのアクセス権限設定は、ACMとELB(またはEC2)双方へ設定が必要。
 
 ### AWS Shield
 
@@ -1402,3 +1596,10 @@ Transform: AWS::Serverless-2016-10-31
 ### Amazon Video Streaming
 
 - 動画をストリーミング配信するためのサービス
+
+### Amazon Rekognition
+
+#### Amazon Rekognition Video
+
+- ビデオストリーミングをリアルタイム解析可能なAIサービス。
+- ストリーミングデータだけではなくS3に保存した録画データも解析することが可能。
