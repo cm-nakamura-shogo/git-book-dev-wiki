@@ -72,6 +72,7 @@
       * [AWS Tips       ](004_cloud/aws_service_tips.md)
       * [AWS Lambda     ](004_cloud/aws_service_lambda.md)
       * [Amazon Redshift](004_cloud/aws_service_redshift.md)
+      * [Amazon Athena  ](004_cloud/aws_service_athena.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
 * データベース
