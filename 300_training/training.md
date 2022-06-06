@@ -10,6 +10,11 @@
 ### インフラ
 
 - [Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
+- AWS Cookbook
+  - [AWS Cookbook | 書籍](https://www.amazon.co.jp/dp/1492092606)
+  - [AWS Cookbook | Github](https://github.com/AWSCookbook)
+  - 参考
+    - [はじまりは神本『AWS Cookbook』との邂逅　元アンチCDKの私が「CDK、できる…」と思った理由 - ログミーTech](https://logmi.jp/tech/articles/326643)
 
 ### コンピュータサイエンス
 
@@ -79,6 +84,8 @@
   - [Python実践機械学習システム100本ノック (秀和システム)](https://www.shuwasystem.co.jp/support/7980html/6341.html)
   - [Python 実践AIモデル構築 100本ノック (秀和システム)](https://www.shuwasystem.co.jp/support/7980html/6440.html)
   - [Wantedlyの社内有志による勉強会](https://github.com/wantedly/machine-learning-round-table)
+  - [立教大学 安藤ゼミ](https://sites.google.com/site/michihito7ando/lectures)
+    - DS概論や計量経済学まで。統計っぽい内容も含まれる。
 
 - 書籍
   - [ゼロからつくるPython機械学習プログラミング入門](https://www.kspub.co.jp/book/detail/5206126.html)

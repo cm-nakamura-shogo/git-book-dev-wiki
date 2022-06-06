@@ -217,7 +217,7 @@
 - Amazon FSx File Gateway
   - SMBプロトコルを使用し、Amazon FSxにファイルを保存できる。
 
-- Tape Gateway
+- AWS Storage Gateway Virtual Tape Library (VTL)
   - iSCSIベースの仮想テープライブラリに保存ができる。
 
 - Volume Gateway
@@ -265,6 +265,9 @@
   - またLambdaやEMRでデータを処理することが可能。
   - 後述のFirehoseおよびAnalyticsをConsumerとして設定することもできる。
 
+- Amazon Kinesis Connector Library
+  - DynamoDB, Redshift, S3, Elasticsearchに対するコネクタが利用可能。
+
 - 参考
   - [Amazon Kinesis | AWS Black Belt Online Seminar](https://d1.awsstatic.com/webinars/jp/pdf/services/20180110_AWS-BlackBelt-Kinesis.pdf)
 
@@ -306,7 +309,7 @@
 
 ### DynamoDB
 
-- マルチAZ構成は不可。
+- マルチAZ構成は不可。（そもそもリージョン内の3つのAZでレプリケーションをするため）
 
 - Auto Scalingの設定はRead/Write双方ともに対応。
   - トラフィック変化に応じたスループット向上を行うことができる。
@@ -322,6 +325,14 @@
 - 整合性モデルの変更可能
   - 結果整合性と強い整合性を設定で変更することができる。
 
+- キャパシティユニットの計算
+  - RCU
+    - 1ユニットで、強い整合性の場合、最大4KBの項目を1秒あたり1回実行可能
+    - 1ユニットで、結果整合性の場合、最大4KBの項目を1秒あたり2回実行可能
+    - 4KBを超える場合、多くのRCUを消費する。
+  - WCU
+    - 1ユニットで、最大1KBの項目を1秒あたり1回実行可能
+
 - LSI(local secondary Index)
   - 追加でソートキーを増やすイメージ
   - 1テーブルに５つ作成可能でテーブル作成時に作成
@@ -330,7 +341,8 @@
 - GSI(global secondary Index)
   - テーブル全体をスキャンして全体で何かを算出したい場合に使用する。
   - データに対して別のハッシュキーを設定できる。
-  - 1テーブルに５つ作成可能、テーブル作成後に作成
+  - 1テーブルに５つ作成可能、テーブル作成後に作成が可能。
+  - テーブルが複数される。
 
 - グローバルテーブル
   - リージョン間でのレプリケートが可能となる。
@@ -338,8 +350,19 @@
   - 参考
     - https://aws.amazon.com/jp/blogs/news/how-to-use-amazon-dynamodb-global-tables-to-power-multiregion-architectures/
 
+- カーディナリティ
+  - スループットを効率的に使用するためには、カーディナリティが高いパーティションキーを設定する。
+
+* アクセス制御
+  * アクセスを細かく制御するためにFine Grained Access Control (FGAC)を使用する。
+  * FGACはIAMと組み合わせて使用される。
+
+* Lambda連携
+  * データ取得や集計を空け―ラブリに実施するために、SQSとLambda関数を連携下処理で非同期実行処理を実施できる。
+
 - 参考
   - [コンセプトから学ぶAmazon DynamoDB](https://dev.classmethod.jp/referencecat/conceptual-learning-about-dynamodb/)
+  - [【入門】私を苦しめたDynamoDB | フューチャー技術ブログ](https://future-architect.github.io/articles/20200818/)
 
 ### RDS
 
@@ -392,6 +415,11 @@
   - OracleデータベースでRAC(Real Application Clusters)を利用したい場合
   - Oracle Recovery Managerでバックアップを使用したい場合(DBへのシェルアクセスが必要)
   - DBへのシェルアクセスが必要な場合
+  - Oracle DBでRMANによる復元処理を実施したい場合(RMANによるバックアップ自体は可能)
+
+- MySQL固有
+  - ログには、一般ログ、エラーログ、スロークエリログがある。
+  - スロークエリログは、実行に要した時間が`long_query_time`秒を超過した場合に記録される。
 
 ### Aurora
 
@@ -470,6 +498,10 @@
 - ネットワーク接続方法
   - NATゲートウェイを介した通信, VPN, Direct Connectなどが選択肢としてある。
 
+* AWS Schema Conversion Tool (SCT)
+  * あるデータベースエンジンにおける既存のデータベーススキーマを、別のデータベースエンジンのスキーマに変換するツール
+  * 手元のデスクトップPCなどにインストールして使用できる。
+  * Oracle DBとPostgreSQLなど異なるデータベース間での変換も可能
 ---
 ## Data Processing
 
@@ -603,7 +635,7 @@
     - セキュリティグループを更新
 
 - 仮想パブリックインターフェース
-  - S3などのパブリックリソース(非VPCのサービス)にアクセスするために使用する。
+  - S3などのパブリックリソース(非VPCのサービス)に専用線経由でアクセスするために使用する。
   - 参考
     - [「パブリック仮想インターフェイス」と「プライベート仮想インターフェイス」の違い - Qiita](https://qiita.com/tsumita7/items/efcc2e0009a54b953dfe)
 
@@ -703,6 +735,9 @@
     - AWSリソースを使用している場合はリソースのリージョン、それ以外の場合はリソースの緯度と経度に基づく。
     - 特殊なルーティングであり、トラフィックフローを利用して設定が必要。
 
+- ALIAS - No設定
+  - 複数値回答ルーティングの場合、AliasはNoに設定する必要がある。
+
 - フェイルオーバールーティングを使用する場合、アクティブ・パッシブ構成となる。
   - アクティブ・アクティブにしたい場合はその他のルーティングで、ファイルオーバーを実現する。
 
@@ -716,6 +751,11 @@
 |A|ホスト名からIPアドレスを関連付ける(IPv4)|
 |AAAA|ホスト名からIPアドレスを関連付ける(IPv6)|
 |CNAME|別名のドメインを定義するコード|
+
+* ALIASレコード
+  * CNAMEレコードと同様の動作が可能なAWS内用のレコード
+  * 参考
+    * [Amazon Route 53のALIASレコード利用のススメ | DevelopersIO](https://dev.classmethod.jp/articles/amazon-route-53-alias-records/)
 
 ### CloudFront
 
@@ -805,6 +845,9 @@
   - 参考
     - [CloudFrontで素早くコンテンツを更新させたい場合にTTLを短くしInvalidationを行わないキャッシュ戦略を考える | DevelopersIO](https://dev.classmethod.jp/articles/cloudfront-update-content-quickly-using-short-ttl/)
 
+- AWS Shieldとの関係
+  - CloudFrontでは、デフォルトでAWS Shield Standardが適用されている。
+
 ### オンプレIP移行
 
 - ROA(Route Origin Autorization)を利用し、特定のIPアドレスを移行することができる。
@@ -869,9 +912,10 @@
       - その後、もともとのAutoScalingグループをELBから削除する。
       - Immutableでも古いものと新しいものの混在する状態は変わらない。
   - 単一インスタンスの場合、All at OnceもしくはImmutableしか選択できない。
-  - 混在を避けたい場合は、Blue/Greenデプロイを実施する。ただしこれは、Beanstalkのデプロイポリシーには含まれない
+  - 混在を避けたい場合は、Blue/Greenデプロイを実施する。ただしこれは、Beanstalkのデプロイポリシーには含まれないため、OpsWork等が必要となる。
     - Blue/Greenデプロイでは、ELBごと環境をクローンしてAll at Onceでデプロイすればよい。
     - その後、ELBに割り当たっているDNS名をスワップする。
+    - 逆にローリングデプロイは、本番サーバーを新しいものに段階的に切り替える、短時間に置き換えることを目的とした方式。
   - 以下を参考。
     - [https://dev.classmethod.jp/articles/elastic-beanstalk-deploy-policy/](https://dev.classmethod.jp/articles/elastic-beanstalk-deploy-policy/)
 
@@ -972,11 +1016,22 @@
   - 参考
     - [[初心者向け] Lambda 非プロキシ統合で API Gateway API をビルドする をプロキシ統合にして比較してみる | DevelopersIO](https://dev.classmethod.jp/articles/for-beginner-build-apigateway-with-noproxy-and-proxy-lambda/)
 
+- API実行状況の監視
+  - CLoudWatchを使用して監視する。API GatewayからCloudWatchへデフォルト1分間隔でメトリクスデータが送信されます。
+  - メトリクスの内容は以下です。
+    - 4XXError: 指定期間のクライアント側のエラー数
+    - 5XXError: 指定期間のサーバー側のエラー数
+    - CacheHitCount: APIキャッシュが有効な場合に、指定期間にAPIキャッシュから配信されたリクエスト数
+    - CacheMissCount: APIキャッシュが有効な場合に、指定期間にAPIキャッシュではなくバックエンドから配信されたリクエスト数
+    - Count: 指定期間のリクエスト数
+    - IntegrationLatency: API Gatewayがリクエストを中継してからバックエンドからレスポンスを受け取るまでの時間
+    - Latency: API Gatewayがクライアントからリクエストを受け取ってからクライアントにレスポンスを返すまでの時間
+
 ### AWS X-Ray
 
 - リクエストやレスポンスの追跡・監視が行える。
 
-### AWS SAM
+### AWS Serverless Application Model (SAM)
 
 - サーバレスアプリケーション構築のデプロイツール。
 - CloudFormationのサーバレス拡張という位置づけ
@@ -1028,6 +1083,10 @@ Transform: AWS::Serverless-2016-10-31
 
 - aliasされたログインURL
   - `https://development-group.signin.aws.amazon.com/consle/`
+
+- IAMロールを使用したリソースのアクセス権限
+  - AWS STS AssumeRoleのAPI実行で使用するARNを渡す。
+  - これにより、一時的な資格情報で新しいセッションが作成される。
 
 - Web IdP
   - Amazon, Facebook, GoogleなどのOIDC互換のIdPを使う場合、Web IdPと呼ぶ。
@@ -1118,6 +1177,9 @@ Transform: AWS::Serverless-2016-10-31
     - そのためまず、メンバーアカウントをマスターアカウントに招待する。
     - そのうえで、マスターアカウントに対してOrganizationAccountAccessRoleをクロスアカウント権限で付与することが必要。
 
+- リザーブドインスタンスの共有
+  - マスターアカウントでRIの共有設定を有効化することで、アカウント間でRIの使用を共有できる。
+  - 共有したくない場合は無効化するが、その分請求が高くなる可能性がある。
 
 ### AD関連
 
@@ -1162,6 +1224,10 @@ Transform: AWS::Serverless-2016-10-31
 - AWS Systems Manager エージェント(SSMエージェント)
   - System Managerがリソースを管理できるようにするためのエージェント。
   - EC2インスタンス、オンプレサーバーなどにインストールして使用する。
+
+* AWS Systems Manager Patch Manager
+  * パッチ適用のプロセスを自動化する。
+  * インスタンスをパッチグループで分類して管理することができる。
 ---
 ## Computing
 
@@ -1270,6 +1336,10 @@ Transform: AWS::Serverless-2016-10-31
   - 参考
     - [1台のWebサーバで複数の証明書を運用する際の注意点は？ | SSLサーバ証明書のクロストラスト](https://xtrust.jp/support/faq/faq09/a008/)
 
+- クライアント側のSSL証明書設定
+  - Webサーバーとの直接的なTCP通信が必要となるので注意する。
+  - そのためELBは、HTTPSではなくTCPで設定する必要がある。
+
 ### ENI
 
 - EC2インスタンスにアタッチするネットワークインターフェース。
@@ -1334,6 +1404,16 @@ Transform: AWS::Serverless-2016-10-31
     - NLBは必ず無効がデフォルトとなる。
   - 参考
     - [ELBの種類によるクロスゾーン負荷分散のデフォルト値調べ | DevelopersIO](https://dev.classmethod.jp/articles/elb_crosszone_load_balancing_default_value/)
+
+- ソース情報の維持
+  - ELBを経由すると通常ソースのIPなどの情報が失われる。
+  - これを維持するためには以下を使用する。
+    - X-Forwarded-For (XFF)
+      - HTTPのレイヤではこれを使用する。
+    - Proxy Protocol
+      - TCPのレイヤではこれを使用する。
+  - 参考
+    - [Proxy Protocol とは？ - Qiita](https://qiita.com/miyuki_samitani/items/80353b1b22f5ee9c41a8)
 
 - 参考
   - [ELBの挙動とCloudWatchメトリクスの読み方を徹底的に理解する](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
@@ -1425,7 +1505,7 @@ Transform: AWS::Serverless-2016-10-31
   - レプリケーション設定の表示・定義ができる。
 - 旧サービスは、AWS Server Migration Service(SMS)だが、2023年3月31までで使えなくなる。
 
-## VM Import/Export
+### VM Import/Export
 
 - 仮想マシンをEC2にいこうするためのサービス
 - 似た名前として AWS Import/Exportというものがあるが、ストレージ転送のサービスであり、現在は利用されないので注意する。
@@ -1435,6 +1515,26 @@ Transform: AWS::Serverless-2016-10-31
 - ベンダーが提供するライセンス管理を行うサービス。
 - 契約条件に基づくルールを作成することで、ライセンス違反を防ぐことが可能。
 - 違反する場合は、インスタンスの起動を停止したり、管理者に侵害を通知できる。
+
+### 移行パターン
+
+* Rehost
+  * 最も変更の少ない移行パターン。オンプレサーバーは基本すべてEC2みたいな。
+* Replatform
+  * クラウドのサービスを少し使用したパターン。DBはRDSを、アプリはBeanstalkでデプロイなど。
+  * まだコード等は変更しない。
+* Refactor / Re-architect
+  * よりクラウドサービスを使用する。必要に応じて構成を大きく変更する。
+  * サーバーレスやコンテナ、ELBなどなど。
+* Re-purchasing
+  * 移行元のレガシーアプリケーションの一部をSaaSに置き換える。
+* Retaining
+  * 移行元の複雑な部分を一部オンプレミスに残す。
+* Retire
+  * アプリケーションを廃止する。
+
+* 参考
+  * [クラウドへの移行とは？意味や仕組みをわかりやすく解説！ | ブログ | CMC Japan株式会社](https://cmc-japan.co.jp/blog/what-is-migration-to-the-cloud-a-simple-explanation-of-what-it-means-and-how-it-works/)
 
 ---
 ## Security
@@ -1447,6 +1547,21 @@ Transform: AWS::Serverless-2016-10-31
   - 異なるドメイン間でユーザー認証を行うためのXMLベースの標準規格。
   - SSOなどの要件に利用される。
 
+### AWS Key Management System (KMS)
+
+* マスターキーとデータキーがある。
+* マスターキーはデータキーを暗号化するもの。
+  * 大事なもののためexportできない。
+  * ユーザーには暗号化済みのデータキーと平文のデータキーがexportできる。
+* データキーでユーザーは暗号化ができる。
+  * 暗号化されてないデータキーを使用する。そして使用後は破棄する。
+  * 暗号化済みのデータキーは保持する。
+* 復号時は、暗号化済みのデータキーをKMSに処理させることで、平文のデータキーを取得する。
+* マスターキーは１年毎にローテーションする設定をすることが可能。
+  * この場合でも古い暗号化済みデータキーは、古いマスターキーで復号可能。
+
+* 参考
+  * [10分でわかる！Key Management Serviceの仕組み #cmdevio | DevelopersIO](https://dev.classmethod.jp/articles/10minutes-kms/)
 ### HSM
 
 - Hardware Security Module
@@ -1455,12 +1570,24 @@ Transform: AWS::Serverless-2016-10-31
 
 ### AWS WAF
 
-- HTTPリクエストレベルでの制限・許可などを行う。
+- Web ACLを用いてHTTPリクエストレベルでの制限・許可などを行う。
   - 特定のリクエスト以外を許可（攻撃を遮断）
   - 特定のリクエストのみを許可（アクセス制限：日本国内のみ）
 
+* 行える許可または拒否は以下の通り
+  * 送信元の制限（特定のIP、もしくはIP範囲、特定の国）
+  * リクエストの特定部分が、指定文字列を含む、もしくは正規表現と一致すること。
+  * 指定した長さを超過していること。
+  * SQLインジェクションの可能性がある。
+  * XSSの可能性がある。
+  * または上記の組み合わせ、および５分間に渡り、指定数以上のリクエストを超えるリクエスト
+
 - Referer制限
   - 直前に参照していたURLに基づいて制限を行う。
+
+* WAFサンドウィッチ方式
+  * Webとアプリの２層構造の場合、Web層とアプリ層の間にWAFを設置する。
+  * AWS WAFが無かった自体の話のようにも見えるが、両方の選択肢がある場合はサンドウィッチ方式を選択する方が無難か。
 
 ### Amazon Inspector
 
@@ -1473,6 +1600,7 @@ Transform: AWS::Serverless-2016-10-31
 - AWS Organizationsを利用中の場合、すべてのAWSアカウントのログをまとめて取得することが可能。
   - マスターアカウントの組織の証跡を有効とすることで、すべてのアカウントのCroudTrailイベントを同じS3バケット、CloudWatch Logs、CloudWatchイベントに配信できる。
 - AWS Organizationsを使用しない場合は、各アカウントで組織の証跡を有効化する必要がある。
+- CloudTrailは、IAMユーザーやIAMロール経由でサービスに実行されたアクションやAPI実行を記録するものであり、リソースの変更を記録する場合はAWS Configを使用する。
 
 ### AWS Certificate Manager (ACM)
 
@@ -1495,7 +1623,19 @@ Transform: AWS::Serverless-2016-10-31
 
 - DDoS攻撃を緩和するサービス。
 
+- DDos攻撃の例
+  - SYNフラッド
+    - 送信元を偽造してTCPのSYNパケットを送り続けることで、サーバー側の接続リソースを枯渇させる方法
+    - [SYNフラッド](https://www.f5.com/ja_jp/services/resources/glossary/syn-flood)
+  - UDPリフレクション攻撃
+    - 大量のサーバー群に対して攻撃を指示し、ある特定の送信元(攻撃対象)に偽造して、あるサーバーにUDPリクエストを大量に送りつける
+    - そしてリクエストの応答を、偽造したある特定の送信元にすべて集中させることでダウンさせる方法
+    - [DDoS攻撃の一種である「リフレクション攻撃」とは？被害や対策例をご紹介 - カゴヤのサーバー研究室](https://www.kagoya.jp/howto/engineer/infosecurity/reflection-ddos-attacks/)
+
 - Standardでは、リアルタイム通知や可視化機能が提供されない。その場合はAdvancedとする必要がある。
+
+- CloudFrontとの関係
+  - CloudFrontでは、デフォルトでAWS Shield Standardが適用されている。
 
 ### AWS Secrets Manager
 
@@ -1506,6 +1646,14 @@ Transform: AWS::Serverless-2016-10-31
 - リソースの変更管理が可能
 
 - リソースの設定変更の継続的なモニタリングが可能でコンプライアンス評価が可能。
+
+- APIコールの記録はCloudTrailを使用する。
+
+- 変更のモニタリングはCloudWatch Eventsを使用する。
+  - 参考
+    - [特定のリソースIDの変更前と変更後をメールで通知する方法 | DevelopersIO](https://dev.classmethod.jp/articles/email-specific-resource-id/)
+
+- WAFなどのFirewallルールの変更も追跡できる。
 
 - AWS Organizationsにおける複数アカウントについてもコンプライアンス管理が可能。
 
@@ -1533,7 +1681,7 @@ Transform: AWS::Serverless-2016-10-31
 - Auto Scaling
   - キューの深さに応じてEC2などのリソースをスケールアウトすることが可能。
 
-### Amazon SNS
+### Amazon Simple Notification Service (SNS)
 
 - push型の通知サービス
 - リソース間のイベント通知、モバイルへのプッシュ通知などが用途となる。
@@ -1541,6 +1689,13 @@ Transform: AWS::Serverless-2016-10-31
 
 - SQSを直接使わずにSNSを使用すると拡張性が高くなったりするというノウハウもある。
   - [【AWS】SQSキューの前には難しいこと考えずにSNSトピックを挟むと良いよ、という話](https://dev.classmethod.jp/articles/sns-topic-should-be-placed-behind-sqs-queue/)
+  
+- イベントソース
+  - アプリケーション統合
+    - CloudWatch Events (Amazon EventBridge)
+    - Step Functions
+  - 参考
+    - [Amazon SNS イベントソース - Amazon Simple Notification Service](https://docs.aws.amazon.com/ja_jp/sns/latest/dg/sns-event-sources.html)
 
 ### Amazon SES
 
