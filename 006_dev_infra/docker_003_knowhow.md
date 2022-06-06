@@ -189,3 +189,27 @@ RUN usermod -aG sudo ubuntu
 - `コンテナサービス名:コンテナ側のポート`でアクセスできる。
 
 - ホスト側のポートだと思ってたので要注意。
+
+## shared memory領域の拡張
+
+- Dockerのshared memoryはデフォルト64MBとなっている。
+- composeファイルに以下のように記載する。
+
+```yml
+version: "3.3"
+
+services:
+  service1:
+    build:
+      - context: .
+      - shm_size: '2gb' # ビルド時のshmサイズ
+    shm_size: '2gb' # 稼働時のshmサイズ
+```
+
+- 現在の割り当て確認には、コンテナ内でdfコマンドを使えばよい。
+
+```
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+shm             2.0G     0  2.0G   0% /dev/shm
+```

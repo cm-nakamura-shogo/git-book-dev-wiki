@@ -287,6 +287,9 @@ export default defineConfig({
 - 「3種類」で管理するReactのState戦略
   - https://zenn.dev/yoshiko/articles/607ec0c9b0408d
 
+- [Container / Presentational構成【Reactのコンポーネント設計】 | NOCHITOKU](https://www.nochitoku-it.com/containr-1)
+  - Presenterてのは最近よく聞くな
+
 ### Suspenseとは
 
 - https://zenn.dev/uhyo/books/react-concurrent-handson/viewer/what-is-suspense
