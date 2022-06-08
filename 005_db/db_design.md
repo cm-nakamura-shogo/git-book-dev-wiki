@@ -18,3 +18,7 @@
   - https://www.codegrid.net/articles/2014-web-app-patterns-1/
 
 - 先勝ちを実現するには、最新の更新日時を保持しておく必要がある。
+
+## マルチテナント設計
+
+* [マルチテナント化で知っておきたいデータベースのこと | slideshare](https://classmethod.slack.com/archives/D030NQQEAKY/p1654298980899179)
