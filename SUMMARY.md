@@ -16,6 +16,7 @@
   * [base64    ](002_python/base64.md)
   * [celery    ](002_python/celery.md)
   * [datetime  ](002_python/datetime.md)
+  * [difflib   ](002_python/difflib.md)
   * [except    ](002_python/except.md)
   * [fastapi   ](002_python/fastapi.md)
   * [framework ](002_python/framework.md)
@@ -73,6 +74,7 @@
       * [AWS Lambda     ](004_cloud/aws_service_lambda.md)
       * [Amazon Redshift](004_cloud/aws_service_redshift.md)
       * [Amazon Athena  ](004_cloud/aws_service_athena.md)
+      * [Amazon Route53 ](004_cloud/aws_service_route53.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
 * データベース

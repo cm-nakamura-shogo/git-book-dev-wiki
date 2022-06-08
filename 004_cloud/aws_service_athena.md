@@ -20,6 +20,17 @@ S3のデータに対してSQLクエリできる。
 後者の場合が設定は楽だが、他サービスはこのパーティション射影に対応してない場合があり、その場合は`MSCK REPAIR TABLE`を使う方が良い可能性がある。
 他、メリットデメリットについては参考URLを参照。
 
+## PartitioningとBucketing
+
+* Partitioning
+  * スキャンする対象を限定する
+* Bucketing
+  * 大きいファイルの処理を水平分散する
+
+* 参考
+  * [Amazon Athena で CTAS クエリのファイルの数またはサイズを設定する](https://aws.amazon.com/jp/premiumsupport/knowledge-center/set-file-number-size-ctas-athena/)
+  * [Amazon Athena のPartitioningとBucketingによるパフォーマンス戦略 | DevelopersIO](https://dev.classmethod.jp/articles/amazon-athena-partitioning-vs-bucketing/)
+
 ## 参考
 
 * [[新機能]Amazon Athena ルールベースでパーティションプルーニングを自動化する Partition Projection の徹底解説 | DevelopersIO](https://dev.classmethod.jp/articles/20200627-amazon-athena-partition-projection/)

@@ -22,3 +22,20 @@ table {float:left}
 
 - https://qiita.com/piruty/items/9c4f87cc2240e1028b31
 
+## nbdime
+
+* jupyter環境上でnotebook同士の差分を良い感じに表示してくれる。
+* gitとの連携も可能(だが、labではうまくextensionが認識されなかった...)
+
+* install
+```
+$ pip install nbdime
+```
+
+* nbdime単体で使う場合はこんな感じで、GUIが立ち上がる。なお編集はできない。
+```
+$ nbdiff-web notebook1.ipynb notebook1.ipynb
+```
+
+* 参考
+  * [Jupyter Notebook ファイルのままdiffをとったり、マージしたり出来るツール nbdime - Qiita](https://qiita.com/nannoki/items/490c8d999ed400f78197)

@@ -130,3 +130,9 @@ git remote add origin git@github:<ACCOUNT_NAME>/<REPSITORY_NAME>.git
 - 参考
   - https://t-salad.com/multiple-git-account/
 
+
+## mergeとrebaseの違い
+
+* rebaseの方がブランチが横に広がらないメリットがある。
+* 参考
+  * [あなたはmerge派？rebase派？綺麗なGitログで実感したメリット - BIGLOBE Style ｜ BIGLOBEの「はたらく人」と「トガッた技術」](https://style.biglobe.co.jp/entry/2022/03/22/090000)
