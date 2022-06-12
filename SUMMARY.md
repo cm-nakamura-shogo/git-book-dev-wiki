@@ -7,6 +7,7 @@
   * [MSW       ](001_frontend/msw.md)
   * [Next.js   ](001_frontend/nextjs.md)
   * [React     ](001_frontend/react.md)
+  * [SolidJS   ](001_frontend/solidjs.md)
   * [Storybook ](001_frontend/storybook.md)
   * [TypeScript](001_frontend/typescript.md)
   * [Vue       ](001_frontend/vue.md)
