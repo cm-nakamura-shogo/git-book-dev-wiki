@@ -38,6 +38,10 @@
 
 - [全員がOAuth2.0を理解しているチームの作り方](https://dev.classmethod.jp/articles/devio2021-learning-oauth/)
 
+### MLDev
+
+* [君には今から3時間で機械学習Webアプリを作ってもらうよ](https://zenn.dev/alivelimb/articles/20220528-streamlit-ml-app)
+
 ### MLOps
 
 - [機械学習デザインパターン――データ準備、モデル構築、MLOpsの実践上の問題と解決](https://www.oreilly.co.jp/books/9784873119564/)
