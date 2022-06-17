@@ -1140,7 +1140,12 @@
 
 - 認証
   - LambdaコンソールでAPI Gateway Lambda authorizer関数を作成する。
-  - これにより、AuthやSAMLなどのBearer Tokenによる認可戦略を使用できる。
+  - Lambda Authorizerには２種類ある。
+    - トークンベース
+      - JSON ウェブトークン (JWT) や OAuth トークンなどのベアラートークンで発信者 ID を受け取ります。
+      - これにより、AuthやSAMLなどのBearer Tokenによる認可戦略を使用できる。
+    - リクエストパラメータベース
+      - ヘッダー、クエリ文字列パラメータ、stageVariables、および $context 変数の組み合わせで、発信者 ID を受け取ります。 
   - またこのAuthorizer関数も、API Gatewayの実行ロールに設定する必要がある。
   - 参考
     - [API Gateway Lambda オーソライザーを使用する - Amazon API Gateway](https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)
@@ -1891,6 +1896,10 @@ Transform: AWS::Serverless-2016-10-31
 
 - Auto Scaling
   - キューの深さに応じてEC2などのリソースをスケールアウトすることが可能。
+
+* メッセージグループ
+  * メッセージグループIDはFIFO配信を支援する機能です。
+  * これによって、 同じメッセージグループに属するメッセージは、常にメッセージグループに対して厳密な順序で1つずつ処理されます。
 
 ### Amazon Simple Notification Service (SNS)
 
