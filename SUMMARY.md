@@ -11,7 +11,7 @@
   * [Storybook ](001_frontend/storybook.md)
   * [TypeScript](001_frontend/typescript.md)
   * [Vue       ](001_frontend/vue.md)
-* Python
+* [Python](002_python/python.md)
   * [anaconda  ](002_python/anaconda.md)
   * [assert    ](002_python/assert.md)
   * [base64    ](002_python/base64.md)
