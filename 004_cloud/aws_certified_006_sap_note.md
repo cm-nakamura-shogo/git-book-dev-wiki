@@ -705,7 +705,7 @@
   - Bastionとは要塞という意味。
 
 - セカンダリCIDR
-  - IPアドレスが枯渇する場合、最大４つのセカンダリCIDARをVPCに追加できる。
+  - IPアドレスが枯渇する場合、最大４つのセカンダリCIDRをVPCに追加できる。
 
 - ポート
   - インバウンドはsshなどのポート番号を指定して解放する。
@@ -1140,7 +1140,12 @@
 
 - 認証
   - LambdaコンソールでAPI Gateway Lambda authorizer関数を作成する。
-  - これにより、AuthやSAMLなどのBearer Tokenによる認可戦略を使用できる。
+  - Lambda Authorizerには２種類ある。
+    - トークンベース
+      - JSON ウェブトークン (JWT) や OAuth トークンなどのベアラートークンで発信者 ID を受け取ります。
+      - これにより、AuthやSAMLなどのBearer Tokenによる認可戦略を使用できる。
+    - リクエストパラメータベース
+      - ヘッダー、クエリ文字列パラメータ、stageVariables、および $context 変数の組み合わせで、発信者 ID を受け取ります。 
   - またこのAuthorizer関数も、API Gatewayの実行ロールに設定する必要がある。
   - 参考
     - [API Gateway Lambda オーソライザーを使用する - Amazon API Gateway](https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)
@@ -1457,6 +1462,7 @@ Transform: AWS::Serverless-2016-10-31
       - 最大100Gbpsを実現するための拡張ネットワーク
     - Intel 82599 Virtual Function (VF) インターフェイス
       - 最大10Gbpsを実現するための拡張ネットワーク
+  - 拡張ネットワーキングの方式のことを、シングルルート I/O 仮想化 (SR-IOV) とも呼ぶ。
 
 - プレイスメントグループ
   - プレイスメントグループは設定後に、起動するという手順となる。
@@ -1540,6 +1546,10 @@ Transform: AWS::Serverless-2016-10-31
     - runnning中のインスタンスにアタッチする。
 
 - 複数アタッチすることで、それぞれをインターネット用、バックエンドとの通信用などに使い分けることも可能。
+
+- フェイルオーバー
+  - セカンダリENIを使うことにより、フェイルオーバー時に同一IPのインスタンスをフェイルオーバー先にすることが可能。
+  - またENIにはセカンダリなプライベートIPv4アドレスも設定できるため、EIPを付け替えてことでもフェイルオーバー可能。
 
 ### ELB
 
@@ -1892,6 +1902,19 @@ Transform: AWS::Serverless-2016-10-31
 - Auto Scaling
   - キューの深さに応じてEC2などのリソースをスケールアウトすることが可能。
 
+* メッセージグループ
+  * メッセージグループIDはFIFO配信を支援する機能です。
+  * これによって、 同じメッセージグループに属するメッセージは、常にメッセージグループに対して厳密な順序で1つずつ処理されます。
+
+* デッドレターキュー
+  * 長時間実行されなかったキューをデッドレターキューとして隔離して、キューがたまらないようにする仕組み
+
+* 可視性タイムアウト
+  * あるコンシューマーが処理中のものは、他のコンシューマーから見えない状態にし、重複処理をさける仕組み
+
+* 遅延キュー
+  * キューへの配信う数秒延期することが可能。
+
 ### Amazon Simple Notification Service (SNS)
 
 - push型の通知サービス
@@ -1900,6 +1923,10 @@ Transform: AWS::Serverless-2016-10-31
 
 - SQSを直接使わずにSNSを使用すると拡張性が高くなったりするというノウハウもある。
   - [【AWS】SQSキューの前には難しいこと考えずにSNSトピックを挟むと良いよ、という話](https://dev.classmethod.jp/articles/sns-topic-should-be-placed-behind-sqs-queue/)
+
+- 特定の宛先への通知停止方法
+  - 管理者側でサブスクリプションを削除する。
+  - または、受信者自身で購読解除オプションから解除することが可能。
   
 - イベントソース
   - アプリケーション統合

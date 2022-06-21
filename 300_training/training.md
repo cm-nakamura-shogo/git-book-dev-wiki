@@ -6,6 +6,7 @@
 
 - [Googleのソフトウェアエンジニアリング](https://www.oreilly.co.jp//books/9784873119656/)
 - [良いコード/悪いコードで学ぶ設計入門](https://www.amazon.co.jp/dp/4297127830)
+- [エンジニアの技術土台となる知識を得るための本の紹介 - Qiita](https://qiita.com/newta/items/4dfbd7ecf86ef74e70dd)
 
 ### インフラ
 
@@ -143,7 +144,15 @@
 - ゼロから作るDeep Learning ❹— 強化学習編
   - [書籍](https://www.amazon.co.jp/dp/4873119758)
   - [コード](https://github.com/oreilly-japan/deep-learning-from-scratch-4)
- 
+
+- [【強化学習編】2022年に読むべき「機械学習/ディープラーニングの最新論文」30選 - Qiita](https://qiita.com/skillup_ai/items/d7f1298d9f8d3ab820a5)
+
+
+### Bioinformatics
+
+- [ゲノム科学研究に必要とされる事前知識 - Laboratory for Bioinformatics ResearchLaboratory for Bioinformatics Research](https://bit.riken.jp/%E3%82%B2%E3%83%8E%E3%83%A0%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%A8%E3%81%95%E3%82%8C%E3%82%8B%E4%BA%8B%E5%89%8D%E7%9F%A5%E8%AD%98/)
+- [AWS ParallelCluster で クラウド HPC を構築し BUSCO を実行してみる | DevelopersIO](https://dev.classmethod.jp/articles/run-busco-on-parallelcluster/)
+
 ## 数学
 
 ### 統計
@@ -158,6 +167,8 @@
 - [回帰分析(新装版) (統計ライブラリー)](https://www.amazon.co.jp/dp/4254122462/)
   - 社内で流れていた
 - [統計的機械学習の数理100問 with Python](https://www.amazon.co.jp/dp/432012507X)
+- [ゆっくり機械学習](https://laid-back-scientist.com/)
+  - どちらかというと統計とかがまとまっていそう。
 
 ### 数理最適化
 
@@ -166,3 +177,15 @@
   2. [最適化超入門](https://slideshare.net/tkm2261/ss-42149384)
   3. [数理最適化ことはじめ](https://speakerdeck.com/e869120/introduction-to-mathematical-optimization-5cdef842-50f6-4e46-ab2d-549cf85c1b81)
   4. [東工大　数理計画法テキスト](http://me.titech.ac.jp/~mizu_lab/text.html)
+
+### 計量経済学
+
+- [計量経済学 (New Liberal Arts Selection) | 西山 慶彦, 新谷 元嗣, 川口 大司, 奥井 亮 |本 | 通販 - Amazon.co.jp](https://www.amazon.co.jp/dp/4641053855)
+  - 膨大だが、網羅的で評価が高い
+  - 情報ソースは、[twitter](https://twitter.com/s1ok69oo/status/1537288232337022977)にて
+
+### 統計力学
+
+- [新物理学シリーズ   統計力学〈１〉](https://www.kinokuniya.co.jp/f/dsg-01-9784563024376)
+- [新物理学シリーズ   統計力学〈２〉](https://www.kinokuniya.co.jp/f/dsg-01-9784563024383)
+  - ボルツマン分布系の話は、田崎 晴明さんの統計力学に全てが書いてあるらしい。
