@@ -93,3 +93,72 @@ df = pd.DataFrame([
 
 df['file'].str.extract("(.*)\.pptx")
 ```
+
+## rank: 順位を付ける
+
+```python
+# 値が高い順(降順)、同値は小さい順位(上位)に合わせる
+df['column_name'].rank(ascending=False, method='min')
+```
+## unique: 出現する種類を把握する
+
+```python
+df['column_name'].unique()
+```
+
+## count_values: 内訳を知る
+
+```python
+df.value_counts('column_name')
+```
+
+## sort_values: 並べ替え
+
+```python
+# 値が高い順(降順)
+df.sort_values('column_name', ascending=False)
+```
+
+## isnull(): nullかどうかを調べる
+
+```python
+df.isnull()
+df['column_name'].isnull()
+```
+
+## locとilocの違い
+
+- locはindex(いわゆるDataFrameのIndex), column名でアクセスする。
+- ilocは本当のindex番号で縦横ともにアクセスする。
+  - なのでilocを使えば、reset_index(drop=True)しなくてもアクセスしたいものにアクセスできるかもしれない
+
+## merge: joinしたいとき
+
+- だいたいこんな感じの書き方におさまる。
+
+```python
+df\
+  .merge(df2[['column1', 'column2']], how='inner', on='column1')\
+  .merge(df3[['column1', 'column3']], how='left', on='column1')\
+```
+
+## groupby + agg: 集約したいとき
+
+- だいたいこんな感じの書き方におさまる。
+
+```python
+def my_func(x):
+    return np.std(x)
+
+stats_df = df.groupby('column1').agg(
+    new_column1 = ('org_column2', 'mean'),
+    new_column2 = ('org_column2', 'std'),
+    new_column3 = ('org_column3', my_func),
+).reset_index()
+```
+
+## idxmin: 最小値の時のPandas Indexを得る
+
+```python
+df['column1'].idxmin()
+```

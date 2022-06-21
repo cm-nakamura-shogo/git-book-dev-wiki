@@ -10,3 +10,8 @@
 
 - ts公式のbootstrap
   - https://www.typescriptlang.org/docs/bootstrap
+
+## eslint
+
+- await忘れたらエラーにしてくれるESlintルール
+  - [https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-floating-promises.md](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-floating-promises.md)

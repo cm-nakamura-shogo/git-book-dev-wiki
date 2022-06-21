@@ -23,6 +23,7 @@
   * [framework ](002_python/framework.md)
   * [Jupyter   ](002_python/jupyter.md)
   * [logging   ](002_python/logging.md)
+  * [matplotlib](002_python/matplotlib.md)
   * [NumPy     ](002_python/numpy.md)
   * [pandas    ](002_python/pandas.md)
   * [pathlib   ](002_python/pathlib.md)
