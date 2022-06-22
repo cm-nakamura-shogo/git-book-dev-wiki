@@ -5,7 +5,8 @@
 - 一覧取得
 
 ```python
-fonts = set([f.name for f in matplotlib.font_manager.fontManager.ttflist])
+from matplotlib import font_manager
+fonts = set([f.name for f in font_manager.fontManager.ttflist])
 print(sorted(fonts))
 ```
 
