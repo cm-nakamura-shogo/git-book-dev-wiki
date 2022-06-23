@@ -82,6 +82,38 @@ df.isnull().sum()
 df_receipt.query('`sales ymd` == 20181103')
 ```
 
+- placeholderは、f-stringでもかけるが、@の方が汎用性が高い。
+
+```python
+user_id = "1000"
+df.query('user_id == @user_id')
+
+timedelta_val = timedelta(days=1)
+df.query('yyyymmdd_diff > @timedelta_val')
+
+date_val = datetime(2022,6,15)
+df.query('yyyymmdd > @date_val')
+```
+
+## read_csvで型指定
+
+- dictで各列の型を指定できる。
+
+```python
+read_dtype = {
+  'yyyymmdd': 'str'
+  , 'column1': 'int'
+  , 'column2': 'float'
+}
+df = pd.read_csv("sample.csv", dtype=read_dtype)
+```
+
+- 日付等は以下のように後変換する。
+
+```python
+df['yyyymmdd'] = pd.to_datetime(df['yyyymmdd'])
+```
+
 ## 抽出して新しい列を作る
 
 ```python
@@ -92,4 +124,101 @@ df = pd.DataFrame([
 ], columns=['name', 'file'])
 
 df['file'].str.extract("(.*)\.pptx")
+```
+
+## rank: 順位を付ける
+
+```python
+# 値が高い順(降順)、同値は小さい順位(上位)に合わせる
+df['column_name'].rank(ascending=False, method='min')
+```
+## unique: 出現する種類を把握する
+
+```python
+df['column_name'].unique()
+```
+
+## count_values: 内訳を知る
+
+```python
+df.value_counts('column_name')
+```
+
+## sort_values: 並べ替え
+
+```python
+# 値が高い順(降順)
+df.sort_values('column_name', ascending=False)
+```
+
+## isnull(): 欠損値かどうかを調べる
+
+```python
+df.isnull()
+df['column_name'].isnull()
+```
+
+## dropna(): 欠損値を削除する
+
+- 通常は一つでも欠損がある場合は削除される。
+
+```python
+df.dropna()
+```
+
+- どこかの列に基づきたい場合は、subsetで指定する。
+
+```python
+df.dropna(subset=['column1'])
+```
+
+## locとilocの違い
+
+- locはindex(いわゆるDataFrameのIndex), column名でアクセスする。
+- ilocは本当のindex番号で縦横ともにアクセスする。
+  - なのでilocを使えば、reset_index(drop=True)しなくてもアクセスしたいものにアクセスできるかもしれない
+
+## merge: joinしたいとき
+
+- だいたいこんな感じの書き方におさまる。
+
+```python
+df\
+  .merge(df2[['column1', 'column2']], how='inner', on='column1')\
+  .merge(df3[['column1', 'column3']], how='left', on='column1')\
+```
+
+- 複数をキーにjoinしたい場合は、`on=['column1', 'column2']`とすればOK。
+
+- join後に重複するカラム名は、`suffixes=['_left', '_right']`と指定すれば末尾に目印をつけられる。
+
+## groupby + agg: 集約したいとき
+
+- だいたいこんな感じの書き方におさまる。
+
+```python
+def my_func(x):
+    return np.std(x)
+
+stats_df = df.groupby('column1').agg(
+    new_column1 = ('org_column2', 'mean'),
+    new_column2 = ('org_column2', 'std'),
+    new_column3 = ('org_column3', my_func),
+).reset_index()
+```
+
+## idxmin: 最小値の時のPandas Indexを得る
+
+```python
+df['column1'].idxmin()
+```
+
+## drop_duplicates: 重複を削除する
+
+- 残すものをコントロールするためには、事前にsort_valuesしておく感じの使い方となる。
+
+```python
+df.drop_duplicates(subset=['column1', 'column2'], keep='first') # 最初を残す
+df.drop_duplicates(subset=['column1', 'column2'], keep='last') # 最後を残す
+df.drop_duplicates(subset=['column1', 'column2'], keep=False) # 残さない
 ```
