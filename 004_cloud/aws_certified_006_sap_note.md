@@ -160,6 +160,10 @@
     - 250 MiB/sec程度のスループット。
     - ルートボリュームには設定不可。
 
+- IOPS向上施策
+  - プロビジョンドIOPSにを使用する
+  - あるいは、EBSの容量を追加することで、IOPSを向上させることもできる。
+
 - EBSの冗長化
   - ミラーリング(RAID1)は最も、回復性が高い。
   - その他には、スナップショットやAMIの作成があるが、回復性は低い。
@@ -214,7 +218,7 @@
 ### Snowball
 
 - Snowball edge
-  - 安全なデバイスを使用し、ペタバイト規模の大容量データを転送するサービス。
+  - 安全なデバイスを使用し、テラバイト規模の大容量データを転送するサービス。
   - 物理的なハードウェアを用いた移転が可能。
 
 - Snowball edge Compute Optimized
@@ -224,8 +228,13 @@
 - Snowball edge Storage Optimized
   - 100TBのHDD容量だが、利用可能な部分は80TB程度。
 
+- Snowmobile
+  - ペタバイト規模のデータを移行するサービス。
+
 - 要する時間
   - 諸々で数週間は必要。
+  - エンドツーエンドでは、1週間程度。
+  - 100TBを1Gbps回線の場合は、Snoballの方が良い。
 
 ### 高機能なストレージのIOPS比較
 
@@ -686,6 +695,9 @@
 
 - 設定可能なCIDR範囲は`/16 ～ /28`である。
 
+- CIDRの拡張
+  - 既存のVPCにセカンダリなCIDRを追加することにより拡張することができる。
+
 - VPC内のインスタンスにDNS名を取得するためには、DNSホスト名有効化オプションが必要。
 
 - VPC Peeringはエッジ間ルーティング負荷
@@ -732,7 +744,7 @@
     - カスタムルートテーブルを作成
     - セキュリティグループを更新
 
-- 仮想パブリックインターフェース
+- パブリック仮想インターフェース
   - S3などのパブリックリソース(非VPCのサービス)に専用線経由でアクセスするために使用する。
   - 参考
     - [「パブリック仮想インターフェイス」と「プライベート仮想インターフェイス」の違い - Qiita](https://qiita.com/tsumita7/items/efcc2e0009a54b953dfe)
@@ -756,15 +768,19 @@
 - SSL VPN
   - 拠点間ではなく外出先などでインターネット経由でプライベートネットワークにアクセスするためのソリューション
 
-### DirectConnect
+### Direct Connect
 
 - 準備には数日が必要。
 
 - 冗長化としてIPsec対応のハードウェアVPNを使用することができる。
 
-### DirectConnect Gateway
+- Link Aggregation Group
+  - 複数の接続を使用して、利用できる帯域幅を増やすことができます。
+
+### Direct Connect Gateway
 
 - マルチリージョンのVPCに接続する際には、DirectConnect Gatewayが必要となる。
+- Direct Connect Gatewayにより、プライベート仮想インターフェースを別リージョンのプライベート仮想ゲートウェイ(VGW)に接続できる。
 
 ### Transit Gateway 
 
@@ -858,6 +874,9 @@
 ### CloudFront
 
 - コンテンツを高速配信するためのCDNサービス。
+
+- オリジン設定不可なもの
+  - WebサーバーなどのプライベートIPはオリジンに設定することができない。
 
 - 画像等の取得リクエストに対して応答性を挙げるために使用。
 
@@ -1075,6 +1094,12 @@
 - Lambdaの設定方法
   - Lambda関数のコードをzip化してS3にアップロードし、AWS::Lambda::Functionから参照することができる。
   - またNode.js および Python 関数の場合で依存関係がない限り、テンプレートにインラインで関数コードを指定できます。
+
+### CodeStar
+
+- CI/CDの環境を最も素早く構築するためのサービス。
+- CI/CDはCloudFormationやOpsWorksでも可能だが、CodeStarは細かい設定をしなくても使用可能。
+  - Beanstalkは、CI/CDの構築はできない。
 
 ### AWS CodeDeploy
 
@@ -1336,6 +1361,10 @@ Transform: AWS::Serverless-2016-10-31
   - マスターアカウントでRIの共有設定を有効化することで、アカウント間でRIの使用を共有できる。
   - 共有したくない場合は無効化するが、その分請求が高くなる可能性がある。
 
+- CloudTrailとの統合
+  - 組織にたいするCloudTrailの証跡を有効化することで、全アカウントでの証跡有効化をシンプルに実施できる。
+  - SCPでも設定が可能だが、CloudTrailのみであれば統合機能を使う方がよりシンプルでベストな選択である。
+
 ### AD関連
 
 - AD Connector
@@ -1436,10 +1465,12 @@ Transform: AWS::Serverless-2016-10-31
     - 専用HWのVPCで実行されるEC2インスタンス。
     - VPC構成をする際にdedicatedというのを選ぶと選択することができる。
     - 他のAWSアカウントから分離したインスタンスとなるが、同じアカウント内では共有する可能性がある。
+    - またハードウェアを専有できるが、どのハードウェアで起動するかは指定することができない。
   - Dedicated Host
     - 同じアカウント内でも共有しない設定が可能なインスタンス形式。
     - IAMグループなどで閉じたインスタンスにすることができる。
     - 用途としては、オンプレのライセンスサーバーなどをAWSに移行したい場合など。
+    - ホストのアフィニティ設定をhostにしておくと、停止して再起動した場合でも同じハードウェアを利用できる。
   - ベアメタル(Bare Metal)
     - サーバーのProcessorやMemoryにアクセス可能なインスタンス。
     - 下層のハードウェアレベルまでアクセス可能。
@@ -1611,6 +1642,9 @@ Transform: AWS::Serverless-2016-10-31
       - TCPのレイヤではこれを使用する。
   - 参考
     - [Proxy Protocol とは？ - Qiita](https://qiita.com/miyuki_samitani/items/80353b1b22f5ee9c41a8)
+
+- ELBとEIP
+  - ELBにEIPを割り当てて使用することはできない。
 
 - 参考
   - [ELBの挙動とCloudWatchメトリクスの読み方を徹底的に理解する](https://dev.classmethod.jp/articles/elb-and-cloudwatch-metrics-in-depth/)
@@ -1816,6 +1850,9 @@ Transform: AWS::Serverless-2016-10-31
   - マスターアカウントの組織の証跡を有効とすることで、すべてのアカウントのCroudTrailイベントを同じS3バケット、CloudWatch Logs、CloudWatchイベントに配信できる。
 - AWS Organizationsを使用しない場合は、各アカウントで組織の証跡を有効化する必要がある。
 - CloudTrailは、IAMユーザーやIAMロール経由でサービスに実行されたアクションやAPI実行を記録するものであり、リソースの変更を記録する場合はAWS Configを使用する。
+
+- CloudTrail Insights
+  - CloudTrailのログの定期的な監査を行うツール。
 
 * Step Functionsとの統合
   * Step Functionsの人の手作業のによるアクティビティの記録などには、CloudTrailが必要となる。
