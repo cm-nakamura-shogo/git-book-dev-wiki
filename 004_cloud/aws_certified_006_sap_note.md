@@ -164,6 +164,10 @@
   - プロビジョンドIOPSにを使用する
   - あるいは、EBSの容量を追加することで、IOPSを向上させることもできる。
 
+- ネットワーク帯域の向上
+  - インスタンスタイプの向上、EBS最適化なインスタンスを選択
+  - これによりEBSとの間に専用のネットワークを確保できる。
+
 - EBSの冗長化
   - ミラーリング(RAID1)は最も、回復性が高い。
   - その他には、スナップショットやAMIの作成があるが、回復性は低い。
@@ -214,6 +218,9 @@
 * マウントヘルパー
   * amazon-efs-utilsパッケージ
   * 暗号化オプションを設定する際などに使用する。
+
+- Windows対応
+  - SMB形式をサポートしておらず、またWindows OSのEC2インスタンスもサポートされていない。
 
 ### Snowball
 
@@ -696,6 +703,7 @@
 
 - VPC間接続にはVPC Peeringを使用する。
   - これは別のAWSアカウント間でも接続可能
+  - 別リージョンでも接続可能
 
 - VPC Peeringで複雑になる場合は、Transit Gatewayを利用する。
   - これによりハブ・アンド・スポークス構成を使用できる。
@@ -714,9 +722,10 @@
 - VPCエンドポイント
   - インターネットを介さずにAWSリソースにアクセスできる。
   - S3とDynamoDBのみ、ゲートウェイ型
-  - それ以外のリソースはプライベートリンク型
-  - ゲートウェイ型とプライベートリンク型の違い
+  - それ以外のリソースはインターフェース型(PrivateLink)
+  - ゲートウェイ型とインターフェース型(PrivateLink)の違い
     - [2つのVPCエンドポイントの違いを知る | DevelopersIO](https://dev.classmethod.jp/articles/vpc-endpoint-gateway-type/)
+    - インターフェイス型はVPC内に専用のENIが作成され、プライベートIPが割り当てられる。
 
 - Bastionホストとは
   - EC2などで構成する踏み台サーバーのこと。
@@ -1247,6 +1256,8 @@
 ### AWS X-Ray
 
 - リクエストやレスポンスの追跡・監視が行える。
+- アプリケーションにX-Ray SDKを埋め込むことにより使用する。
+- EC2だけでなく、ECS、Lambda、API Gatewayなどと統合して使用できる。
 
 ### AWS Serverless Application Model (SAM)
 
@@ -1800,7 +1811,8 @@ Transform: AWS::Serverless-2016-10-31
 
 ### VM Import/Export
 
-- 仮想マシンをEC2にいこうするためのサービス
+- 仮想マシンをEC2に移行するためのサービス(Import)
+- またはEC2からオンプレミスに移行するサービス(Export)
 - 似た名前として AWS Import/Exportというものがあるが、ストレージ転送のサービスであり、現在は利用されないので注意する。
 
 ### AWS License Manager
@@ -1855,7 +1867,7 @@ Transform: AWS::Serverless-2016-10-31
 
 * 参考
   * [10分でわかる！Key Management Serviceの仕組み #cmdevio | DevelopersIO](https://dev.classmethod.jp/articles/10minutes-kms/)
-### HSM
+### CloudHSM
 
 * Hardware Security Module
 * 不正使用防止策の施されたハードウェアデバイス内での、安全なキー保管と暗号化操作が可能になります。
@@ -1930,6 +1942,10 @@ Transform: AWS::Serverless-2016-10-31
 - カスタム証明書
   - 独自ドメインを使用する場合はそのドメインに対応したカスタム証明書を使用する。
 
+- ACMの対応サービス
+  - ACMにより作成した証明書のインポートが可能なのは、ELB、CloudFront、API Gatewayといった一部のサービスのみ。
+  - EC2では利用できないため注意が必要
+
 ### AWS Shield
 
 - DDoS攻撃を緩和するサービス。
@@ -1938,7 +1954,7 @@ Transform: AWS::Serverless-2016-10-31
   - Standard
     - CloudFrontのみ
   - Advanced
-    - CloudFront, EC2, ALBを保護対象にできる。
+    - CloudFront, EC2(紐づけられたEIP), ELBを保護対象にできる。
 
 - DDos攻撃の例
   - SYNフラッド
