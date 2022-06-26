@@ -164,6 +164,10 @@
   - プロビジョンドIOPSにを使用する
   - あるいは、EBSの容量を追加することで、IOPSを向上させることもできる。
 
+- ネットワーク帯域の向上
+  - インスタンスタイプの向上、EBS最適化なインスタンスを選択
+  - これによりEBSとの間に専用のネットワークを確保できる。
+
 - EBSの冗長化
   - ミラーリング(RAID1)は最も、回復性が高い。
   - その他には、スナップショットやAMIの作成があるが、回復性は低い。
@@ -214,6 +218,9 @@
 * マウントヘルパー
   * amazon-efs-utilsパッケージ
   * 暗号化オプションを設定する際などに使用する。
+
+- Windows対応
+  - SMB形式をサポートしておらず、またWindows OSのEC2インスタンスもサポートされていない。
 
 ### Snowball
 
@@ -394,7 +401,7 @@
 
 - グローバルテーブル
   - リージョン間でのレプリケートが可能となる。
-  - レプリカ間の変更の伝搬は、DynamoDB Streamsを使用して行われる。
+  - レプリカ間の変更の伝搬は、DynamoDB Streamsを使用して行われる。（そのため、Streamsは有効となる）
   - 参考
     - https://aws.amazon.com/jp/blogs/news/how-to-use-amazon-dynamodb-global-tables-to-power-multiregion-architectures/
 
@@ -696,6 +703,7 @@
 
 - VPC間接続にはVPC Peeringを使用する。
   - これは別のAWSアカウント間でも接続可能
+  - 別リージョンでも接続可能
 
 - VPC Peeringで複雑になる場合は、Transit Gatewayを利用する。
   - これによりハブ・アンド・スポークス構成を使用できる。
@@ -714,9 +722,10 @@
 - VPCエンドポイント
   - インターネットを介さずにAWSリソースにアクセスできる。
   - S3とDynamoDBのみ、ゲートウェイ型
-  - それ以外のリソースはプライベートリンク型
-  - ゲートウェイ型とプライベートリンク型の違い
+  - それ以外のリソースはインターフェース型(PrivateLink)
+  - ゲートウェイ型とインターフェース型(PrivateLink)の違い
     - [2つのVPCエンドポイントの違いを知る | DevelopersIO](https://dev.classmethod.jp/articles/vpc-endpoint-gateway-type/)
+    - インターフェイス型はVPC内に専用のENIが作成され、プライベートIPが割り当てられる。
 
 - Bastionホストとは
   - EC2などで構成する踏み台サーバーのこと。
@@ -867,6 +876,9 @@
     - AWSリソースを使用している場合はリソースのリージョン、それ以外の場合はリソースの緯度と経度に基づく。
     - 特殊なルーティングであり、トラフィックフローを利用して設定が必要。
 
+- ヘルスチェック
+  - フェイルオーバーを実現するためには、Evaluate Target HealthをYesに設定する。
+
 - ALIAS - No設定
   - 複数値回答ルーティングの場合、AliasはNoに設定する必要がある。
 
@@ -982,6 +994,9 @@
 
 - AWS Shieldとの関係
   - CloudFrontでは、デフォルトでAWS Shield Standardが適用されている。
+
+- WAFとの関係
+  - WAFは明示的に有効化とルール設定が必要
 
 ### オンプレIP移行
 
@@ -1241,6 +1256,8 @@
 ### AWS X-Ray
 
 - リクエストやレスポンスの追跡・監視が行える。
+- アプリケーションにX-Ray SDKを埋め込むことにより使用する。
+- EC2だけでなく、ECS、Lambda、API Gatewayなどと統合して使用できる。
 
 ### AWS Serverless Application Model (SAM)
 
@@ -1537,7 +1554,7 @@ Transform: AWS::Serverless-2016-10-31
 - プレイスメントグループ
   - プレイスメントグループは設定後に、起動するという手順となる。
   - 異なるインスタンスタイプをグループにすることはできない。
-  - インスタンスを追加する場合は、一旦プレイスメントグループを停止する必要がある。
+  - インスタンスを追加する場合は、一旦プレイスメントグループを停止する必要がある。（停止すれば追加可能）
   - 種類
     - クラスタープレイスメントグループ
       - パフォーマンス向上が目的。単一AZ内でグループ化し、複数のVPC Peeringにまたがることも可能。
@@ -1563,6 +1580,7 @@ Transform: AWS::Serverless-2016-10-31
 
 - キーペアの管理
   - AMIの複製では、キーペアはコピーされないため、既存のキーを使う場合には再度インポートが必要となる。
+  - 公開鍵（Authorizedキー）は自動で内包されて複製されるが、秘密鍵（PEMキー）はユーザーの責任で移行が必要。
 
 - 複数のサーバーSSL証明書の設定
   - SSL通信は、HTTP前段階で確率され、その際にSSLサーバー証明書も使用される。
@@ -1793,7 +1811,8 @@ Transform: AWS::Serverless-2016-10-31
 
 ### VM Import/Export
 
-- 仮想マシンをEC2にいこうするためのサービス
+- 仮想マシンをEC2に移行するためのサービス(Import)
+- またはEC2からオンプレミスに移行するサービス(Export)
 - 似た名前として AWS Import/Exportというものがあるが、ストレージ転送のサービスであり、現在は利用されないので注意する。
 
 ### AWS License Manager
@@ -1848,7 +1867,7 @@ Transform: AWS::Serverless-2016-10-31
 
 * 参考
   * [10分でわかる！Key Management Serviceの仕組み #cmdevio | DevelopersIO](https://dev.classmethod.jp/articles/10minutes-kms/)
-### HSM
+### CloudHSM
 
 * Hardware Security Module
 * 不正使用防止策の施されたハードウェアデバイス内での、安全なキー保管と暗号化操作が可能になります。
@@ -1861,6 +1880,10 @@ Transform: AWS::Serverless-2016-10-31
 - Web ACLを用いてHTTPリクエストレベルでの制限・許可などを行う。
   - 特定のリクエスト以外を許可（攻撃を遮断）
   - 特定のリクエストのみを許可（アクセス制限：日本国内のみ）
+
+- 対象サービス
+  - CloudFront, ALB, Amazon API Gatewayに紐づけが可能。
+    - EC2やS3に紐づけることはできない。
 
 * 行える許可または拒否は以下の通り
   * 送信元の制限（特定のIP、もしくはIP範囲、特定の国）
@@ -1919,9 +1942,19 @@ Transform: AWS::Serverless-2016-10-31
 - カスタム証明書
   - 独自ドメインを使用する場合はそのドメインに対応したカスタム証明書を使用する。
 
+- ACMの対応サービス
+  - ACMにより作成した証明書のインポートが可能なのは、ELB、CloudFront、API Gatewayといった一部のサービスのみ。
+  - EC2では利用できないため注意が必要
+
 ### AWS Shield
 
 - DDoS攻撃を緩和するサービス。
+
+- 対象
+  - Standard
+    - CloudFrontのみ
+  - Advanced
+    - CloudFront, EC2(紐づけられたEIP), ELBを保護対象にできる。
 
 - DDos攻撃の例
   - SYNフラッド
