@@ -87,12 +87,23 @@ df_receipt.query('`sales ymd` == 20181103')
 ```python
 user_id = "1000"
 df.query('user_id == @user_id')
+```
 
+## 時刻系のデータをquery記法で処理
+
+```python
 timedelta_val = timedelta(days=1)
 df.query('yyyymmdd_diff > @timedelta_val')
 
 date_val = datetime(2022,6,15)
 df.query('yyyymmdd > @date_val')
+```
+
+たとえばtimedeltaを数値として扱いたい場合などは、`datetime.timedelta`と併せて使う。
+
+```python
+from datetime import timedelta
+df['yyyymmdd_diff'] / timedelta(days=1)
 ```
 
 ## read_csvで型指定
@@ -138,11 +149,16 @@ df['column_name'].rank(ascending=False, method='min')
 df['column_name'].unique()
 ```
 
-## count_values: 内訳を知る
+## value_counts: 内訳を知る
 
 ```python
 df.value_counts('column_name')
 ```
+
+その他のオプション
+- `normalize=True`で比率を計算できる。
+- `bins=30`で連続値も集計できる。
+- `dropna=True`でNaNを無視できる。
 
 ## sort_values: 並べ替え
 
@@ -207,6 +223,23 @@ stats_df = df.groupby('column1').agg(
 ).reset_index()
 ```
 
+## grouby + transform: 集約したものを各行に割り当てる
+
+- 集約となるmeanやsumは、transformにより行を元のDFに拡張することができる。
+
+```python
+df['column2_mean'] = df.groupby(['column1'])['column2'].transform("mean")
+```
+
+## groupby + shift, rank: 集約でない場合のgroupby + 各行割り当て
+
+- transformとかも選択肢にでてくるけど、使わなくても行ける。
+- 集約ではなく、shiftやrankなどの場合はこの方法が使える。
+
+```python
+df.groupby('column1')['column2'].shift(-1)
+```
+
 ## idxmin: 最小値の時のPandas Indexを得る
 
 ```python
@@ -221,4 +254,18 @@ df['column1'].idxmin()
 df.drop_duplicates(subset=['column1', 'column2'], keep='first') # 最初を残す
 df.drop_duplicates(subset=['column1', 'column2'], keep='last') # 最後を残す
 df.drop_duplicates(subset=['column1', 'column2'], keep=False) # 残さない
+```
+
+## duplicated: 重複の判定
+
+- ほぼdrop_duplicatedと同じ。
+
+```python
+df.duplicated(['column1','column2'], keep='last')
+```
+
+- 抽出の場合はこうする
+
+```python
+df[df.duplicated(['column1','column2'], keep='last')]
 ```
