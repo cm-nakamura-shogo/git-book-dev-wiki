@@ -183,6 +183,12 @@
   - [分析者のためのデータ解釈学入門](https://www.amazon.co.jp/dp/4802612907)
   - [データ分析に必須の知識・考え方 統計学入門](https://www.amazon.co.jp/dp/4802613199)
   - [本質を捉えたデータ分析のための分析モデル入門](https://www.amazon.co.jp/dp/4802613776)
+- 検定
+  - [1から始める研究 〜検定方法の選び方（その2：差の検定）〜 ｜ XPERT](https://xpert.link/column/278/)
+- Joe先生のシリーズ
+  - [機械学習のためのカーネル100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003381.html)
+  - [スパース推定100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003298.html)
+  - [統計的機械学習の数理100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003244.html)
 
 ### 数理最適化
 
