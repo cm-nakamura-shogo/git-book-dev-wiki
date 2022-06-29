@@ -18,3 +18,7 @@
 
 - 画像のデータセット
   - [https://public.roboflow.com/](https://public.roboflow.com/)
+
+- 自転車シェアリングのオープンデータ
+  - [https://twitter.com/kumatira/status/1541703076301918209](https://twitter.com/kumatira/status/1541703076301918209)
+  - [https://www.odpt.org/2022/06/28/press20220628_bikeshare/](https://www.odpt.org/2022/06/28/press20220628_bikeshare/)
