@@ -7,6 +7,7 @@
 - [Googleのソフトウェアエンジニアリング](https://www.oreilly.co.jp//books/9784873119656/)
 - [良いコード/悪いコードで学ぶ設計入門](https://www.amazon.co.jp/dp/4297127830)
 - [エンジニアの技術土台となる知識を得るための本の紹介 - Qiita](https://qiita.com/newta/items/4dfbd7ecf86ef74e70dd)
+- [作って学ぶコンピュータアーキテクチャ —— LLVMとRISC-Vによる低レイヤプログラミングの基礎](https://www.amazon.co.jp/dp/4297129140)
 
 ### インフラ
 
@@ -123,6 +124,12 @@
   - MeCabなどの開発者の書籍
 - [Transformerによる自然言語処理](https://www.amazon.co.jp/dp/4254122659/)
   - Transformerについての日本語解説本として貴重
+  - 結構良かった
+
+### 音声
+
+- [Pythonで学ぶ音声認識 機械学習実践シリーズ](https://book.impress.co.jp/books/1120101083)
+  - PDF版あり
 
 ### レコメンド
 
@@ -171,6 +178,11 @@
 - [統計的機械学習の数理100問 with Python](https://www.amazon.co.jp/dp/432012507X)
 - [ゆっくり機械学習](https://laid-back-scientist.com/)
   - どちらかというと統計とかがまとまっていそう。
+- ソシム社のシリーズ
+  - [データ分析のための数理モデル入門](https://www.amazon.co.jp/dp/4802612494)
+  - [分析者のためのデータ解釈学入門](https://www.amazon.co.jp/dp/4802612907)
+  - [データ分析に必須の知識・考え方 統計学入門](https://www.amazon.co.jp/dp/4802613199)
+  - [本質を捉えたデータ分析のための分析モデル入門](https://www.amazon.co.jp/dp/4802613776)
 
 ### 数理最適化
 
