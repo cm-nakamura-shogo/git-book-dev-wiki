@@ -77,6 +77,7 @@
       * [Amazon Redshift](004_cloud/aws_service_redshift.md)
       * [Amazon Athena  ](004_cloud/aws_service_athena.md)
       * [Amazon Route53 ](004_cloud/aws_service_route53.md)
+      * [AWS CDK        ](004_cloud/aws_service_cdk.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
 * データベース
@@ -100,6 +101,7 @@
   * [PlantUML    ](007_dev_tool/plantuml.md)
   * [Software    ](007_dev_tool/software.md)
   * [ウェブツール](007_dev_tool/web_tool.md)
+  * [jq          ](007_dev_tool/jq.md)
 * 開発用SaaS
   * [Hasura  ](008_dev_saas/hasura.md)
   * [Supabase](008_dev_saas/supabase.md)

@@ -17,6 +17,10 @@
   - [AWS Cookbook | Github](https://github.com/AWSCookbook)
   - 参考
     - [はじまりは神本『AWS Cookbook』との邂逅　元アンチCDKの私が「CDK、できる…」と思った理由 - ログミーTech](https://logmi.jp/tech/articles/326643)
+- [AWSコンテナ設計・構築[本格]入門](https://www.amazon.co.jp/dp/4815607656)
+  - ECSを本格的に使いこなすための書籍
+  - 書評
+    - [[書評] 「AWSコンテナ設計・構築[本格]入門」は文字通り本格的にECS/Fargateを始めるのにお勧めの一冊 | DevelopersIO](https://dev.classmethod.jp/articles/bookreview-introduction-guide-aws-container-design-and-construction/)
 
 ### コンピュータサイエンス
 
