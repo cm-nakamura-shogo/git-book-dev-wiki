@@ -15,3 +15,8 @@
 
 - await忘れたらエラーにしてくれるESlintルール
   - [https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-floating-promises.md](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-floating-promises.md)
+
+## enum型
+
+- enumは使わない方が良いみたい。
+  - [さようなら、TypeScript enum | Kabuku Developers Blog](https://www.kabuku.co.jp/developers/good-bye-typescript-enum)

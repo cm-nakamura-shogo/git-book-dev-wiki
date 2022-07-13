@@ -273,7 +273,7 @@ module.exports = {
 ## [実践！AWS CDK #12 NAT ゲートウェイ](https://dev.classmethod.jp/articles/cdk-practice-12-nat-gateway/)
 
 - 同上。
-
+- NATGWは、2台で1日$2.83くらいかかるので要注意。
 
 ## [実践！AWS CDK #13 ルートテーブル](https://dev.classmethod.jp/articles/cdk-practice-13-route-table/)
 
@@ -338,3 +338,115 @@ module.exports = {
 - RouteTableやNACLと同様VPCにデフォルトのSGがある。
   - インバウンドは同一SGからすべてを許可
   - アウトバウンドは0.0.0.0/0にすべて許可
+
+## [実践！AWS CDK #17 EC2](https://dev.classmethod.jp/articles/cdk-practice-17-ec2/)
+
+- EC2はsubnetに対して割り当てる。
+- SSMでのアクセス失敗。NATGWを落としていたせいかも。
+  - 基本はNATGWが必要。
+  - それが嫌な場合は、VPCエンドポイントを使えば行けるようだ。
+  - [セッションマネージャーでEC2に接続できない時に確認した点](https://dev.classmethod.jp/articles/session-manageer-confirmation-item/)
+
+## [実践！AWS CDK #18 ALB](https://dev.classmethod.jp/articles/cdk-practice-18-alb/)
+
+- プロパティについて
+  - ipAddressType
+    - v4かv4,v6のdualを選択。基本v4でOK
+  - name
+    - 名前
+  - scheme
+    - internalかinternet-facingを指定。internet-facingの場合public IPが付与される。
+    - なお、gateway loadbalancerの場合はこのschemeは指定不可。
+  - securityGroups
+    - セキュリティグループ。複数指定可能なのでリストで渡す。
+  - subnets
+    - subnetを指定する。AZ毎に１つのsubnetしか指定できない。
+    - 似たプロパティとしてSubnetMappingsがあり、こちらはEIPで指定するで両方は使えない。
+  - type
+    - application | gateway | networkを指定できる。CLBはたぶん別クラス。
+- LBのターゲットとして、targetGroupが必要
+  - name
+    - 名前
+  - port
+    - ターゲットが受信するポート。登録時にoverrideされない場合はこちらが使用される。
+    - GENEVE(GLB)の場合、6081がポートとなる。
+    - lambdaがターゲットの場合、このポートは使用されない。
+  - protocol
+    - GENEVE | HTTP | HTTPS | TCP | TCP_UDP | TLS | UDP から選択。
+    - ALBでは、HTTP | HTTPS
+    - NLBでは、TCP | TCP_UDP | TLS | UDP
+    - GLBでは、GENEVEが選択可能。
+    - lambdaがターゲットの場合、この設定は使用されない。
+  - TargetType
+    - alb | instance | ip | lambda から選択。
+  - VpcId
+    - lambda以外の場合はこちらの指定が必要。
+- 関連付けるために、Listenerも必要となる。
+  - loadBalancerArn
+    - albのrefで良いみたい。
+  - port
+  - protocol
+  - defaultActions
+    - デフォルトのアクションを設定する。
+    - Actionは、forward, fixed-response, or redirectから選択する。
+    - 条件に応じてtargetを変更する場合はListenerRuleを使用して、ListenerRuleで、ListenerArnを関連付ける。
+  - テスト等はEC2の作成と一緒にやる。
+
+- ユーザーデータの例が見れたのは良かった。
+  - 普通にプロパティにbase64で指定する。
+
+```
+userData: fs.readFileSync(Ec2.userDataFilePath, 'base64')
+```
+
+- ただしユーザーデータは、updateでは反映してくれないので、EC2インスタンスをコメントアウトして、deploy２回やるなどの対応が必要。
+
+## [実践！AWS CDK #19 Secrets Manager](https://dev.classmethod.jp/articles/cdk-practice-19-secrets-manager/)
+
+- プロパティ名などが結構理解できなかった（いまだによくわからない）。
+- とりあえずgenerateSecretStringにより、自動的に生成ができるということ。
+- そしてそれが２パターンある。
+- 以下はユーザー名とパスワードが作成され、パスワードが自動生成される。
+
+```ts
+generateSecretString: {
+  excludeCharacters: '"@/\\\'',
+  generateStringKey: "password",
+  passwordLength: 16,
+  secretStringTemplate: {"username": "admin"},
+}
+```
+
+- ユーザー名が不要な場合は、secretStringTemplateを空で渡せばよい。
+
+```ts
+  generateSecretString: {
+    excludeCharacters: '"@/\\\'',
+    generateStringKey: "password",
+    passwordLength: 16,
+    secretStringTemplate: {},
+  }
+```
+
+- このsecretStringTemplateという名前の意味が分かってないが、ユースケースとしてはこの２種類っぽい。
+- これにより、以下のようなダイナミック参照が可能となる。
+
+```ts
+  public static getDynamicReference(secret: CfnSecret, secretKey: SecretKey): string {
+    return `{{resolve:secretsmanager:${secret.ref}:SecretString:${secretKey}}}`;
+  }
+```
+
+- enumは使わない方が良いみたい。
+  - [さようなら、TypeScript enum | Kabuku Developers Blog](https://www.kabuku.co.jp/developers/good-bye-typescript-enum)
+
+## []()
+
+
+- instancetypeは`t3.small`に変更
+  - 対応タイプは以下の通り。`t2.micro`にしたら怒られた。
+    - [Aurora DB instance classes - Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html)
+- auroraの場合、Performance InsightはR系のインスタンスでしか使えないようだ。
+  - [AWSのサポートも間違えるのPerformance insightsの注意点 - 片岡空の上の空](https://katawo.hatenablog.com/entry/2019/04/10/120940)
+- なのでPerformance Insightは無効化してみる。
+- 

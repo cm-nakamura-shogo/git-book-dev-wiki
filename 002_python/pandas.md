@@ -269,3 +269,13 @@ df.duplicated(['column1','column2'], keep='last')
 ```python
 df[df.duplicated(['column1','column2'], keep='last')]
 ```
+
+## より高度な最適化
+
+- [https://www.aidancooper.co.uk/pandas-anti-patterns/](https://www.aidancooper.co.uk/pandas-anti-patterns/)
+  - 再代入をせず、chain or pipeを使う
+  - forではなくapplyを使う
+  - applyをさらに最適化するには、np.select, np.whereを使う
+  - data typeを最適にする(カテゴリ型をstrにしない)
+
+- [https://kunai-lab.hatenablog.jp/entry/2018/04/08/134924](https://kunai-lab.hatenablog.jp/entry/2018/04/08/134924)

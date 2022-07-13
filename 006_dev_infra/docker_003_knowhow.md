@@ -213,3 +213,8 @@ $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 shm             2.0G     0  2.0G   0% /dev/shm
 ```
+
+## デザインパターン
+
+- 以下にまとまっているものを見つけた
+  - [私家版 Dockerfile Pattern](https://gist.github.com/udzura/1515e20d9d2f0bbf187f)
