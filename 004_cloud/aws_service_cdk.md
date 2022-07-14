@@ -440,13 +440,85 @@ generateSecretString: {
 - enumは使わない方が良いみたい。
   - [さようなら、TypeScript enum | Kabuku Developers Blog](https://www.kabuku.co.jp/developers/good-bye-typescript-enum)
 
-## []()
+## [実践！AWS CDK #20～#23 RDS関連]
 
+- これらはまとめてやりました。
+- 必要なものが複数ある。
+  - SubnetGroup ... RDSを設置するSubnet(AZ)を決めるために必要。
+  - ParameterGroup ... DBインスタンス用のパラメータ。たくさんあるのでデフォルトから変更したいもののみ修正する。
+  - ClusterParameterGroup ... DBクラスター用のパラメータ。たくさんあるのでデフォルトから変更したいもののみ修正する。
+  - Cluster ... DBクラスター
+  - Instance ... DBインスタンス
+
+- CfnDdInstanceは、RDS意外にも同名のものがneptuneなどにもあるので、import間違いには気を付ける。
+- IAMロールを参照するには、refではなくきちんとattArnを使う必要があるので注意
+  - EC2インスタンスのInstanceProfileのときは、ref参照で行けたが、これには気を付けた方がよさそう。
+  - 以下がInstanceProfile
+  ```yaml
+    InstanceProfileEc2:
+      Type: AWS::IAM::InstanceProfile
+      Properties:
+        Roles:
+          - Ref: RoleEc2
+  ```
+  - 以下はRds
+  ```yaml
+    RdsDbInstance1a:
+      Type: AWS::RDS::DBInstance
+      Properties:
+        # ...
+        MonitoringRoleArn:
+          Fn::GetAtt:
+            - RoleRds
+            - Arn
+  ```
 
 - instancetypeは`t3.small`に変更
   - 対応タイプは以下の通り。`t2.micro`にしたら怒られた。
     - [Aurora DB instance classes - Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html)
 - auroraの場合、Performance InsightはR系のインスタンスでしか使えないようだ。
   - [AWSのサポートも間違えるのPerformance insightsの注意点 - 片岡空の上の空](https://katawo.hatenablog.com/entry/2019/04/10/120940)
-- なのでPerformance Insightは無効化してみる。
-- 
+- なのでPerformance Insightは無効化してみる。以下の通りにpropsを無効化すればOK。
+
+```json
+    const commonProps = {
+      // ...
+      // enablePerformanceInsights: false,
+      // performanceInsightsRetentionPeriod: 7,
+      // ...
+    }
+```
+
+- EC2のmysqlインストールはGPG keyのエラーがでたため以下を追記必要
+
+```sh
+$ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+```
+
+- 接続はできたものの実際にはクラスターエンドポイントが不明なので、どうにかしてEC2に情報を渡す必要がありそう。
+
+## [実践！AWS CDK #24 デバッグ](https://dev.classmethod.jp/articles/cdk-practice-24-debug/)
+
+- こちらは読むだけにとどめました
+
+## [実践！AWS CDK #25 Session Manager で SSH 接続](https://dev.classmethod.jp/articles/cdk-practice-25-session-manager-ssh/)
+
+- 以下にしたがってインストールする。
+  - [https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html#install-plugin-windows](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html#install-plugin-windows)
+
+- ProxyCommandはWindowsの場合は以下でできた。
+  - `C:\Users\nakamura.shogo\.ssh\config`を以下のように編集する
+  ```
+  Host i-* mi-*
+      ProxyCommand aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p" --profile your-profile
+  ```
+  - あとは以下でOK
+  ```
+  ssh -i .\cdkpractice-stg-key-pair.pem ec2-user@i-0369b219f667e42dc
+  ```
+
+- OpenSSHのバージョンによっては、awsをフルパスで書いたり、pemファイルを`C:\Users\nakamura.shogo\.ssh`配下に置かないとダメだったりすることもあるみたい。
+  - [Windwos10でssh ProxyCommandの多段SSHの設定 - suzu6の技術ブログ](https://www.suzu6.net/posts/205-ssh-config-proxycommand-windows10/)
+
+- 踏み台にしてWindowsインスタンスにRDPで接続するなど、いろいろできるみたい
+  - [AWS Systems Manager セッションマネージャーで Windows 10 でSSH・SCPしてみた | DevelopersIO](https://dev.classmethod.jp/articles/ssm-session-manager-support-for-tunneling-ssh-scp-on-windows10/#toc-10)
