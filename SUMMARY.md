@@ -16,6 +16,7 @@
   * [assert    ](002_python/assert.md)
   * [base64    ](002_python/base64.md)
   * [celery    ](002_python/celery.md)
+  * [cv2       ](002_python/cv2.md)
   * [datetime  ](002_python/datetime.md)
   * [difflib   ](002_python/difflib.md)
   * [except    ](002_python/except.md)

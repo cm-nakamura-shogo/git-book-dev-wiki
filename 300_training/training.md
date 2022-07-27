@@ -129,6 +129,8 @@
 - [Transformerによる自然言語処理](https://www.amazon.co.jp/dp/4254122659/)
   - Transformerについての日本語解説本として貴重
   - 結構良かった
+- [Huggingface公式](https://huggingface.co/course/chapter1/1)
+- [日本語版](https://zenn.dev/ttya16/articles/ce89dcab833d32cadb39)
 
 ### 音声
 
