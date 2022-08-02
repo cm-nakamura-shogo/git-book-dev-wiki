@@ -84,6 +84,9 @@
 
 ### 機械学習一般
 
+- まとめ
+  - [SageMaker Studio Lab Community](https://github.com/aws-sagemaker-jp/awesome-studio-lab-jp)
+
 - 講義
   - [ニューヨーク大学データの深層学習講義](https://atcold.github.io/pytorch-Deep-Learning/ja/)
   - [東京工業大学の機械学習講義ノート](https://chokkan.github.io/mlnote/)
