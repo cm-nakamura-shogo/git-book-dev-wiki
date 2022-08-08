@@ -120,6 +120,7 @@
 * ML
   * [augmentation](100_ML/augmentation.md)
   * [AutoML      ](100_ML/auto_ml.md)
+  * [コンペ      ](100_ML/competition.md)
   * [データセット](100_ML/dataset.md)
   * [評価指標    ](100_ML/evaluation.md)
   * フレームワーク
