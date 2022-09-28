@@ -81,7 +81,7 @@
       * [AWS CDK        ](004_cloud/aws_service_cdk.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
-    * [ACE対策ノート](004_cloud/google_cloud_note.md)
+  * [ACE対策ノート](004_cloud/google_cloud_note.md)
 * データベース
   * [データベース設計](005_db/db_design.md)
   * [MySQL           ](005_db/mysql.md)
