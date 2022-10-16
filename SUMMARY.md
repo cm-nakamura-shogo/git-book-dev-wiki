@@ -130,6 +130,7 @@
     * [PyTorch          ](100_ML/framework_001_pytorch.md)
     * [PyTorchメモリ対策](100_ML/framework_002_pytorch_memory_opt.md)
     * [Tensroflow       ](100_ML/framework_100_tensorflow.md)
+    * [HuggingFace      ](100_ML/framework_200_huggingface.md)
   * Kaggle
     * [Kaggleチュートリアル](100_ML/kaggle_001_tutorial.md)
     * [Kaggleコンペ一覧    ](100_ML/kaggle_002_competition.md)
