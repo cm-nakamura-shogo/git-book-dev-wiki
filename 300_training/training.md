@@ -199,6 +199,10 @@
   - [スパース推定100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003298.html)
   - [統計的機械学習の数理100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003244.html)
 
+### 機械学習
+
+- [深層学習および機械学習の数理](http://ibis.t.u-tokyo.ac.jp/suzuki/lecture/2020/intensive2/%E8%AC%9B%E7%BE%A91.pdf)
+
 ### 数理最適化
 
 - まとめ
