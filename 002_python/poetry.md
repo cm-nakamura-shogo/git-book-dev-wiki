@@ -91,6 +91,22 @@ $ poetry add {Package Name}
 $ poetry remove
 ```
 
+- 依存関係を確認する。
+```sh
+poetry show --tree
+```
+
+- whlからインストールする。
+```sh
+poetry add {URLまたはローカルのwhlファイル}
+```
+URLの解釈がエラーになる場合があるので、その場合はpyproject.tomlに追記するしかない
+
+```
+[tool.poetry.dependencies]
+パッケージ名 = { url = "指定したいURL"}
+```
+
 ## poetry自体のアップデート
 
 - こういうのもある。
@@ -135,3 +151,10 @@ C:\Users\{ユーザ名}\AppData\Local\pypoetry\Cache\artifacts\ ...(略)... does
 ```
 C:\Users\{ユーザ名}\AppData\Local\pypoetry\Cache\artifacts
 ```
+
+## 参考
+
+- かなりまとまってて良い
+  - [【Python】Poetry始めてみた & Pipenv から poetry へ移行した所感 - Qiita](https://qiita.com/ragnar1904/items/0e5b8382757ccad9a56c)
+- whl周りの話が多少ある
+  - [Poetryでプライベートリポジトリからインストールする3つの方法 - Sweet Escape](https://www.keisuke69.net/entry/2021/01/10/003548)
