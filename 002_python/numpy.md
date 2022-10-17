@@ -40,3 +40,7 @@ index_tuple = np.where(A < 1)
 
 - Aの次元が2(shapeが2要素)の場合、戻りは各行列のindexとなる。
 - 次元が1(shapeが1要素)の場合も結果は、index_tuple[0]として取り出す必要がある。
+
+## Numpyでrolling処理する
+
+- [Numpy で時系列データに Rolling 処理を行う](https://zenn.dev/taku227/articles/833455ace8a3aa)

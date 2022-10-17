@@ -17,6 +17,10 @@
   - [AWS Cookbook | Github](https://github.com/AWSCookbook)
   - 参考
     - [はじまりは神本『AWS Cookbook』との邂逅　元アンチCDKの私が「CDK、できる…」と思った理由 - ログミーTech](https://logmi.jp/tech/articles/326643)
+- [AWSコンテナ設計・構築[本格]入門](https://www.amazon.co.jp/dp/4815607656)
+  - ECSを本格的に使いこなすための書籍
+  - 書評
+    - [[書評] 「AWSコンテナ設計・構築[本格]入門」は文字通り本格的にECS/Fargateを始めるのにお勧めの一冊 | DevelopersIO](https://dev.classmethod.jp/articles/bookreview-introduction-guide-aws-container-design-and-construction/)
 
 ### コンピュータサイエンス
 
@@ -80,6 +84,9 @@
 
 ### 機械学習一般
 
+- まとめ
+  - [SageMaker Studio Lab Community](https://github.com/aws-sagemaker-jp/awesome-studio-lab-jp)
+
 - 講義
   - [ニューヨーク大学データの深層学習講義](https://atcold.github.io/pytorch-Deep-Learning/ja/)
   - [東京工業大学の機械学習講義ノート](https://chokkan.github.io/mlnote/)
@@ -125,6 +132,8 @@
 - [Transformerによる自然言語処理](https://www.amazon.co.jp/dp/4254122659/)
   - Transformerについての日本語解説本として貴重
   - 結構良かった
+- [Huggingface公式](https://huggingface.co/course/chapter1/1)
+- [日本語版](https://zenn.dev/ttya16/articles/ce89dcab833d32cadb39)
 
 ### 音声
 
@@ -183,6 +192,16 @@
   - [分析者のためのデータ解釈学入門](https://www.amazon.co.jp/dp/4802612907)
   - [データ分析に必須の知識・考え方 統計学入門](https://www.amazon.co.jp/dp/4802613199)
   - [本質を捉えたデータ分析のための分析モデル入門](https://www.amazon.co.jp/dp/4802613776)
+- 検定
+  - [1から始める研究 〜検定方法の選び方（その2：差の検定）〜 ｜ XPERT](https://xpert.link/column/278/)
+- Joe先生のシリーズ
+  - [機械学習のためのカーネル100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003381.html)
+  - [スパース推定100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003298.html)
+  - [統計的機械学習の数理100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003244.html)
+
+### 機械学習
+
+- [深層学習および機械学習の数理](http://ibis.t.u-tokyo.ac.jp/suzuki/lecture/2020/intensive2/%E8%AC%9B%E7%BE%A91.pdf)
 
 ### 数理最適化
 

@@ -16,6 +16,7 @@
   * [assert    ](002_python/assert.md)
   * [base64    ](002_python/base64.md)
   * [celery    ](002_python/celery.md)
+  * [cv2       ](002_python/cv2.md)
   * [datetime  ](002_python/datetime.md)
   * [difflib   ](002_python/difflib.md)
   * [except    ](002_python/except.md)
@@ -77,8 +78,12 @@
       * [Amazon Redshift](004_cloud/aws_service_redshift.md)
       * [Amazon Athena  ](004_cloud/aws_service_athena.md)
       * [Amazon Route53 ](004_cloud/aws_service_route53.md)
+      * [AWS CDK        ](004_cloud/aws_service_cdk.md)
+      * [AWS Glue       ](004_cloud/aws_service_glue.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
+    * [ACE対策ノート](004_cloud/google_cloud_note.md)
+    * [コマンド一覧 ](004_cloud/google_cloud_command.md)
 * データベース
   * [データベース設計](005_db/db_design.md)
   * [MySQL           ](005_db/mysql.md)
@@ -100,6 +105,7 @@
   * [PlantUML    ](007_dev_tool/plantuml.md)
   * [Software    ](007_dev_tool/software.md)
   * [ウェブツール](007_dev_tool/web_tool.md)
+  * [jq          ](007_dev_tool/jq.md)
 * 開発用SaaS
   * [Hasura  ](008_dev_saas/hasura.md)
   * [Supabase](008_dev_saas/supabase.md)
@@ -117,12 +123,14 @@
 * ML
   * [augmentation](100_ML/augmentation.md)
   * [AutoML      ](100_ML/auto_ml.md)
+  * [コンペ      ](100_ML/competition.md)
   * [データセット](100_ML/dataset.md)
   * [評価指標    ](100_ML/evaluation.md)
   * フレームワーク
     * [PyTorch          ](100_ML/framework_001_pytorch.md)
     * [PyTorchメモリ対策](100_ML/framework_002_pytorch_memory_opt.md)
     * [Tensroflow       ](100_ML/framework_100_tensorflow.md)
+    * [HuggingFace      ](100_ML/framework_200_huggingface.md)
   * Kaggle
     * [Kaggleチュートリアル](100_ML/kaggle_001_tutorial.md)
     * [Kaggleコンペ一覧    ](100_ML/kaggle_002_competition.md)

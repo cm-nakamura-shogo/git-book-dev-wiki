@@ -39,8 +39,16 @@ Default output format [None]: json
 
 - 実行時のprofileを指定する場合
 
+wslなどであれば
+
 ```
 $ export AWS_PROFILE={プロファイル名}
+```
+
+powershellであれば
+
+```
+> $env:AWS_PROFILE = "cm-nakamura-test-mlflow"
 ```
 
 - 実行する都度にprofileを指定する場合(例)

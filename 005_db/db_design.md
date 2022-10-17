@@ -22,3 +22,8 @@
 ## マルチテナント設計
 
 * [マルチテナント化で知っておきたいデータベースのこと | slideshare](https://classmethod.slack.com/archives/D030NQQEAKY/p1654298980899179)
+
+## データレイクとは
+
+- [Snowflakeプラットフォームが支える６ワークロード(5) データレイクの過去と現在、そして未来 (1) | TECH+](https://news.mynavi.jp/techplus/kikaku/snowflake-workload-5/)
+  - 甲木先生の解説
