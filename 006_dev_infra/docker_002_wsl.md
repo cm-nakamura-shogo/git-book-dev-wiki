@@ -62,6 +62,12 @@ $ docker run hello-world
     $ echo "export DOCKER_HOST=tcp://localhost:2375" >~/.bashrc
     ```
 
+## DesktopなしでWindowsでDocker動かす
+
+WSLで動かすことになる。
+
+- [Docker Desktopを使わずにWindowsでDocker | IIJ Engineers Blog](https://eng-blog.iij.ad.jp/archives/14205)
+
 ## 参考：WSL2でnvidia-dockerも動かす方法
 
 - うまくいかなかったが、以下の手順に沿ってやればできる人もいるらしい。

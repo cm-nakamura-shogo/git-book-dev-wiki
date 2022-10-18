@@ -76,3 +76,11 @@ print(text_output_recursive)
 ## python早見帳
 
 - https://chokkan.github.io/python/
+
+## クラスのメソッドのアンスコ1個と2個のprefixについて
+
+- [Pythonのアンダースコア2個で始まる名前は非公開だけでなくマングリング機構を利用してサブクラスに継承しないために使う - Qiita](https://qiita.com/shiracamus/items/5331cd89b202953403dd)
+  - 基本はアンスコ1個でOK
+  - 継承先のサブクラスで上書きされたくない場合は、アンスコ2個付ける。
+    - これを呼び出せるのは、継承元側のみのメソッド内になるが。
+  - 用途はあまり思い浮かばないので基本はアンスコ1個でOK。
