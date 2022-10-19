@@ -85,6 +85,7 @@
   * [GoogleCloud](004_cloud/google_cloud.md)
     * [ACE対策ノート](004_cloud/google_cloud_note.md)
     * [コマンド一覧 ](004_cloud/google_cloud_command.md)
+  * [Terraform  ](004_cloud/terraform.md)
 * データベース
   * [データベース設計](005_db/db_design.md)
   * [MySQL           ](005_db/mysql.md)
