@@ -133,3 +133,11 @@ BertConfig {
   "vocab_size": 32000
 }
 ```
+
+### MTEB
+
+[https://huggingface.co/blog/mteb](https://huggingface.co/blog/mteb)
+
+- 埋め込むベクトルを生成可能な事前学習モデルを評価するための大規模ベンチマークに使える。
+- 112の言語、8つのタスク、58個のデータセットで評価する。
+- 個別に使えると、ブログに書くときはかどるかも。
