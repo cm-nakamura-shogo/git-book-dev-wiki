@@ -45,3 +45,24 @@ df
 - 参考記事
   - [Types of Encoder - Michael Fuchs Python](https://michael-fuchs-python.netlify.app/2019/06/16/types-of-encoder/#multilabelbinarizer)
   - [pandas.DataFrameのマルチラベルを簡単にバイナライズする方法 - Qiita](https://qiita.com/maechanneler/items/b6a06a9e296f02af0801)
+
+## StratifiedKFold
+
+cross-validationで層分割する際に使用。戻ってくるのはindexのみ。
+
+DataFrameを使う場合、このindexはpandasのindexではないので注意が必要。なので`iloc`でアクセスしないとハマる。
+
+```python
+skf = StratifiedKFold(cv_split_num, random_state=42)
+
+for train_index, valid_index in skf(feature_df, target_df):
+    X_train = feature_df.iloc[train_index]
+    y_train = target_df.iloc[train_index]
+    X_valid = feature_df.iloc[valid_index]
+    y_valid = target_df.iloc[valid_index]
+
+    # ...
+```
+
+- 参考記事
+  - [Python: pandas の DataFrame を scikit-learn で KFold するときの注意点 - CUBE SUGAR CONTAINER](https://blog.amedama.jp/entry/2018/06/21/235951)

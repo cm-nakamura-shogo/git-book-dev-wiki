@@ -81,6 +81,8 @@
       * [AWS CDK        ](004_cloud/aws_service_cdk.md)
       * [AWS Glue       ](004_cloud/aws_service_glue.md)
       * [Amazon Neptune ](004_cloud/aws_service_neptune.md)
+      * [Amazon ECS     ](004_cloud/aws_service_ecs.md)
+      * [Amazon Aurora  ](004_cloud/aws_service_aurora.md)
   * [Azure      ](004_cloud/azure.md)
   * [GoogleCloud](004_cloud/google_cloud.md)
     * [ACE対策ノート](004_cloud/google_cloud_note.md)

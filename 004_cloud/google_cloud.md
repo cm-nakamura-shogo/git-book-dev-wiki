@@ -33,6 +33,12 @@
 - BQ内部の仕組み
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/e55a6f8822b6528ff47797936e40faedc7d047ac.pdf
 
+- Remote functionsがGA(2022-10-18)
+  - クエリでCloud FunctionsやCloud Runの関数を呼び出すことができる機能
+
+- 非構造化データを使用可能な機能がプレビュー提供(2022-10-19)
+  - https://cloud.google.com/blog/products/data-analytics/how-to-manage-and-process-unstructured-data-in-bigquery?hl=en
+
 ## Vertex AI
 
 - kubeflowベース。
