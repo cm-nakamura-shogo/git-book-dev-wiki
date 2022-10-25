@@ -35,7 +35,29 @@ npx openapi-generator-cli generate -g typescript-axios -i http://localhost:17100
 
 ## reduceの使い方
 
-- [https://ginpen.com/2018/12/23/array-reduce/](https://ginpen.com/2018/12/23/array-reduce/)
+- 以下が分かりやすい
+  - [https://ginpen.com/2018/12/23/array-reduce/](https://ginpen.com/2018/12/23/array-reduce/)
+
+- 例
+  - 2次元配列をあるカラムインデックスに基づいて集約する
+  ```js
+  const sample = [
+    ['a001','サッカー','高橋',],
+    ['a002','野球','斉藤',],
+    ['a003','野球','高橋',],
+    ['a004','テニス','斉藤',],
+    ['a005','テニス','高橋',],
+    ['a006','テニス','鈴木',],
+  ];
+  sample.reduce( (acc, val, idx) => {
+    (acc[`${val[2]}`]) ? (
+        acc[`${val[2]}`] = [...acc[`${val[2]}`], val]
+    ):(
+        acc[`${val[2]}`] = [val]
+    )
+    return acc
+  }, {});
+  ```
 
 ## 配列の値渡し
 
