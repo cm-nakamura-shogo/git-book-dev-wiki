@@ -24,6 +24,30 @@ S3のデータに対してSQLクエリできる。
   * [[新機能]Amazon Athena ルールベースでパーティションプルーニングを自動化する Partition Projection の徹底解説 | DevelopersIO](https://dev.classmethod.jp/articles/20200627-amazon-athena-partition-projection/)
   * [Amazon Athena Partition Projectionを用いたHiveパーティションのパーティションプルーニングの自動化 | DevelopersIO](https://dev.classmethod.jp/articles/20200727-amazon-athena-partition-projection-for-hive-partition/)
 
+## カラム更新時のPARTITION再設定
+
+カラムを変更(float->double)などに変更した場合、作成済みのPARTITIONについては再度作成が必要となる。
+(データをINSERT INTOなどで挿入しようとすると、エラーとなる。)
+
+エラーとなったパーティションについてGlueで型の定義を確認することが可能。
+
+以下のクエリでエラーとなったパーティションを再作成して上書きすることも可能。
+
+```sql
+ALTER TABLE default.device_table ADD
+PARTITION (year = '2022', month = '10', day = '25')
+```
+
+ただしAthenaの場合、通常は一回DROPするか、MSCK REPAIR TALBEする方が良いと考えられる。
+
+なおパーティション射影の場合は、これは発生しない？と思われる。
+
+- 参考記事
+  - [Amazon Athenaでクエリ実行時に「The column ‘<column>‘ in table ‘<table>‘ is declared as type ‘double’, but partition ‘Optional[year=<year>/month=<month>/day=<date>]’ declared column ‘<column>‘ as type ‘float’.」というエラーが発生する場合の対処 | DevelopersIO](https://dev.classmethod.jp/articles/when-running-a-query-on-amazon-athena-the-column-columnin-tabletable-is-appearing-as-type-double-but-partition-optional-year-yearmonth-monthday-dat-scheduled-column-column-what-to-do-when-the-as-typ/)
+
+
+
+
 ## PartitioningとBucketing
 
 * Partitioning

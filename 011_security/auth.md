@@ -4,3 +4,5 @@
 
 - [ユーザーをログアウトから守れ！―シーケンス図から読み解くログイン状態維持【Webアプリ編】](https://dev.classmethod.jp/articles/persisten-login-for-webapp/)
   - IdPでのOAuth認証について分かりやすい。
+
+- [世界一わかりみの深いOAuth入門](https://tech-lab.sios.jp/archives/25470)
