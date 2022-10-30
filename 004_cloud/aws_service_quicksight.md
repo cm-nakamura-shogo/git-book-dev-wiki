@@ -15,3 +15,12 @@ QuickSightに送信したデータは、JSTで送信してもUTCとしてしか�
 
 - 参考記事
   - [【小ネタ】Amazon QuickSight でデータのタイムゾーンを変更できないか試してみた | DevelopersIO](https://dev.classmethod.jp/articles/change-timezone-on-quicksight/)
+
+
+## Adminの切り替わりもUTC基準
+
+月末締めで管理ユーザを変更した場合を以下で検証されている。
+JSTの9時にユーザが想定通りになるが、一時的にユーザが増えている期間が存在するようになるらしい
+
+- 参考記事
+  - [QuickSight の管理者ユーザーをたくさんつくってしまったので月が変わったタイミングで整理されるか検証してみた | DevelopersIO](https://dev.classmethod.jp/articles/quicksight-admin-takusan-tukutta/)

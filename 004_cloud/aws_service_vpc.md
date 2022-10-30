@@ -58,4 +58,10 @@ Outpostsを利用する際のローカルゲートウェイに関連づけるル
 Ingressな通信は、クライアントからのアクセス時に、NATテーブルに基づいてPublic IPをPrivate IPに変換する。
 
 
+## VPC Reachability Analyzer
+
+ネットワークが目的通りに設定されているか確認するためのツール
+
+- [新機能 – VPC Reachability Analyzer | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/)
+
 

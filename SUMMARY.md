@@ -73,6 +73,8 @@
     - [SAPノート    ](004_cloud/aws_certified_006_sap_note.md)
     - [AWS CLI      ](004_cloud/aws_cli.md)
     - [AWS SDK      ](004_cloud/aws_sdk.md)
+    - [AWS コスト   ](004_cloud/aws_const.md)
+    - [AWS アーキテクチャ例](004_cloud/aws_architecture.md)
     - サービス別
       - [概要           ](004_cloud/aws_service_overall)
       - [AWS IAM        ](004_cloud/aws_service_iam.md)
@@ -99,6 +101,7 @@
       - [AWS ParallelCluster    ](004_cloud/aws_service_parallel_cluster.md)
       - [Amazon S3              ](004_cloud/aws_service_s3.md)
       - [AWS Transfer Family    ](004_cloud/aws_service_transfer_family.md)
+      - [AWS Batch              ](004_cloud/aws_service_batch.md)
   - [Azure      ](004_cloud/azure.md)
   - [GoogleCloud](004_cloud/google_cloud.md)
     - [ACE対策ノート](004_cloud/google_cloud_note.md)

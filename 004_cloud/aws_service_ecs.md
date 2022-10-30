@@ -1,7 +1,11 @@
 # Amazon ECS
 
 コンテナのオーケストレーションサービス。
-FargateとEC2の2タイプがあり、GPUはEC2しか使用できない。
+FargateとEC2の2タイプがあり、GPU/WindowsはEC2しか使用できない。
+
+- 参考記事
+  - [AWS Fargate - Qiita](https://qiita.com/leomaro7/items/a3edb49d9929dd42cc0d)
+
 
 ### ECS Execとは
 

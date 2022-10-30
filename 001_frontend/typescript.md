@@ -20,3 +20,8 @@
 
 - enumは使わない方が良いみたい。
   - [さようなら、TypeScript enum | Kabuku Developers Blog](https://www.kabuku.co.jp/developers/good-bye-typescript-enum)
+
+## contravariance
+
+やまたつさんの記事
+- [https://yamatatsu-2019-07-16-ts-subtype.netlify.app](https://yamatatsu-2019-07-16-ts-subtype.netlify.app)
