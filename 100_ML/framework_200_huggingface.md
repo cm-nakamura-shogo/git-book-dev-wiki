@@ -134,6 +134,59 @@ BertConfig {
 }
 ```
 
+### EvalPrediction
+
+compute_metricsを自作する場合にわたってくるクラス。
+
+例えば以下のように使用する。
+
+```python
+    def compute_metrics(pred: EvalPrediction):
+        labels = pred.label_ids
+        preds = pred.predictions.argmax(-1)
+        f1 = f1_score(labels, preds)
+        recall = recall_score(labels, preds)
+        precision = precision_score(labels, preds, zero_division=0)
+        return {"f1_score": f1, "recall": recall, "precision": precision}
+    
+    # ....
+
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        tokenizer=tokenizer,
+        train_dataset=dataset_dict["train"],
+        eval_dataset=dataset_dict["valid"],
+        compute_metrics=compute_metrics,
+    )
+```
+
+定義はコードの以下を参照。
+
+- [https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/trainer_utils.py#L100](https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/trainer_utils.py#L100)
+
+
+
+
+
+### SchedulerType
+
+コードの以下でわかる。
+
+- [https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/trainer_utils.py#L355](https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/trainer_utils.py#L355)
+
+```python
+class SchedulerType(ExplicitEnum):
+    LINEAR = "linear"
+    COSINE = "cosine"
+    COSINE_WITH_RESTARTS = "cosine_with_restarts"
+    POLYNOMIAL = "polynomial"
+    CONSTANT = "constant"
+    CONSTANT_WITH_WARMUP = "constant_with_warmup"
+```
+
+デフォルトは、`"linear"`なので注意が必要。
+
 ### MTEB
 
 [https://huggingface.co/blog/mteb](https://huggingface.co/blog/mteb)

@@ -21,7 +21,6 @@ exeは以下からダウンロードする。
 terraform init
 ```
 
-
 - plan: 設定値を確認する。initを1回もしてない場合は、initしてからやる。つ。
 
 
@@ -44,6 +43,21 @@ terraform apply
 ```sh
 terraform destroy
 ```
+
+## やった方が良いコマンド
+
+- validate: 文法チェック
+
+```sh
+terraform validate
+```
+
+- fmt: コード整形
+
+```sh
+terraform fmt
+```
+
 
 ## 基本的な手順
 
@@ -147,6 +161,12 @@ resource "aws_s3_bucket_versioning" "sample" {
   }
 }
 ```
+
+## Drift検出
+
+Terraform Cloudを使用すればDrift Detectionが使用可能らしい。(2022-09にGA)
+
+- [Terraform CloudでAWSリソースの手動変更を検出してみる(Drift Detection) | DevelopersIO](https://dev.classmethod.jp/articles/terraform-cloud-drift-detection/)
 
 ## 参考記事
 

@@ -64,4 +64,8 @@ Ingressな通信は、クライアントからのアクセス時に、NATテー�
 
 - [新機能 – VPC Reachability Analyzer | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/)
 
+## AWS Transit Geteway
+
+多数のVPC接続を管理できる。VPC Peeringなどで複雑になる場合は、Transit Gatewayを利用する。
+これによりハブ・アンド・スポークス構成を使用できる。
 

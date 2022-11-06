@@ -44,3 +44,16 @@ Auto ScalingとECS Execを同時使用はできないので注意が必要
 
 - 参考
   - [ECSに必要なVPCエンドポイントまとめ（2022年版） | DevelopersIO](https://dev.classmethod.jp/articles/vpc-endpoints-for-ecs-2022/)
+
+## ECSでDocker Hubの認証情報を扱う
+
+Docker Hubからのpullには回数制限があり、IPガチャによってはこの影響がある。
+
+そのため、認証情報できちんとログインした方が良いらしい。(匿名の場合IP毎に6時間で100pull、認証の場合ユーザ毎に6時間で200pull)
+)
+
+- [ECS on Fargate構成でDocker Hubの認証情報を扱う | DevelopersIO](https://dev.classmethod.jp/articles/authenticating-with-docker-hub-for-aws-container-services/)
+
+CodeBuildについてはこれがさらに厳しい。
+
+

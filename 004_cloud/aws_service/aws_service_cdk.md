@@ -67,6 +67,11 @@ AWSCloudFormationFullAccess
 cdk bootstrap
 ```
 
+bootstrapをカスタマイズすることも可能らしい。
+
+- 参考記事
+  - [CDK Bootstrapをカスタマイズしてみた | DevelopersIO](https://dev.classmethod.jp/articles/customize-bootstrap/)
+
 ### deploy
 
 ```
@@ -522,3 +527,9 @@ $ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 
 - 踏み台にしてWindowsインスタンスにRDPで接続するなど、いろいろできるみたい
   - [AWS Systems Manager セッションマネージャーで Windows 10 でSSH・SCPしてみた | DevelopersIO](https://dev.classmethod.jp/articles/ssm-session-manager-support-for-tunneling-ssh-scp-on-windows10/#toc-10)
+
+## CDKでLambda関数のビルド
+
+nodejsの場合ビルドには通常、Docker Desktop上のesbuildを使用するらしい。ローカルのesbuildを使うようにする場合は以下の記事を参考にする。
+
+- [AWS CDKでDocker Desktopを使わずにLambda関数（aws_lambda_nodejs）をローカルビルドする | DevelopersIO](https://dev.classmethod.jp/articles/local-build-a-lambda-function-nodejs-without-docker-desktop-with-aws-cdk/)
