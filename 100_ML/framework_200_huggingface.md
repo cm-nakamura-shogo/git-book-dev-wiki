@@ -165,10 +165,6 @@ compute_metricsを自作する場合にわたってくるクラス。
 
 - [https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/trainer_utils.py#L100](https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/trainer_utils.py#L100)
 
-
-
-
-
 ### SchedulerType
 
 コードの以下でわかる。

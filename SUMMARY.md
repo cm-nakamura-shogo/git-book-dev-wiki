@@ -180,9 +180,12 @@
   - [全般](103_time_series/time_series.md)
 - データ分析
   - [全般](104_data_analytics/data_analytics.md)
+- テーブルデータ
+  - [論文](105_tabular/papers.md)
 - 学習コンテンツ
   - [学習媒体](300_training/training.md)
   - [書籍    ](300_training/book.md)
+  - [数学    ](300_training/math.md)
 - マネジメント
   - [採用](400_manage/recruit.md)
 - [未整理](scrap.md)
