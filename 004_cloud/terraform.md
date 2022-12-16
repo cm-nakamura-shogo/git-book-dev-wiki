@@ -168,6 +168,19 @@ Terraform Cloudを使用すればDrift Detectionが使用可能らしい。(2022
 
 - [Terraform CloudでAWSリソースの手動変更を検出してみる(Drift Detection) | DevelopersIO](https://dev.classmethod.jp/articles/terraform-cloud-drift-detection/)
 
+## aws_iam_policy_attachmentは使用しない方がよい
+
+既存の紐づけ済みのIAMエンティティ(user, group, role)から剥がれてしまうことがある。
+
+代わりに、以下それぞれのエンティティに対応したものを使用する。
+
+- aws_iam_user_policy_attachment 
+- aws_iam_group_policy_attachment
+- aws_iam_role_policy_attachment
+
+- 参考
+  - [terraform の aws_iam_policy_attachment は使わないほうが無難 - Qiita](https://qiita.com/bilzard/items/8b54c40351e2ff39afa0)
+
 ## 参考記事
 
 - 公式
