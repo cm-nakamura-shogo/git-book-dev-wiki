@@ -56,4 +56,14 @@ Docker Hubからのpullには回数制限があり、IPガチャによっては�
 
 CodeBuildについてはこれがさらに厳しい。
 
+## Service Connect
+
+re:Invent 2022で発表された。
+
+Servie Discoveryと違ってDNSを使わず、サービス間の通信のメトリクスが見れるのが良さそう。
+
+価格はECSタスク内で起動するService Connect agentコンテナ用に、256CPUと64MiBのメモリが必要。
+
+- [【レポート】ECSサービス間通信をシンプルにするAmazon ECS Service Connect #reinvent #CON323 | DevelopersIO](https://dev.classmethod.jp/articles/aws-reinvent-2022-amazon-ecs-service-connect-simplified-interservice-connection/#toc-10)
+
 

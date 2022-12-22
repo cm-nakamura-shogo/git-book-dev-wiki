@@ -1,6 +1,127 @@
 # Pandas
 
-## 列を並び変える。
+```python
+import pandas as pd
+```
+
+## データ型
+
+サンプルデータ
+
+```python
+df = pd.DataFrame([
+    {"column1": 1, "column2": 2},
+    {"column1": 3, "column2": 4},
+])
+```
+
+### 型を確認する
+
+```python
+df.dtypes
+```
+
+```
+column1    int64
+column2    int64
+dtype: object
+```
+
+結果はSeriesとなる。
+
+### 型を変換する(一括)
+
+```python
+_df = df.astype("str")
+_df.dtypes
+```
+
+```
+column1    object
+column2    object
+dtype: object
+```
+
+### 型を変換する(個別)
+
+```python
+_df = df.astype({"column1": str, "column2": float})
+_df.dtypes
+```
+
+```
+column1     object
+column2    float64
+dtype: object
+```
+
+なお、文字列で指定しても解釈してくれる
+
+```python
+_df = df.astype({"column1": "str", "column2": "float"})
+_df.dtypes
+```
+
+NumPyの型も解釈可能。
+
+```python
+import numpy as np
+_df = df.astype({"column1": np.int32, "column2": np.float32})
+_df.dtypespython
+```
+
+## 置換
+
+- サンプルデータ
+
+```python
+df = pd.DataFrame([
+    {"column1": 1, "column2": 2},
+    {"column1": 3, "column2": 4},
+])
+```
+
+辞書型で置換可能。
+
+```python
+df.replace({1: "A", 2: "B", 3: "C", 4: "D"})
+```
+
+```
+	column1	column2
+0	A	B
+1	C	D
+```
+
+Seriesに対しても可能。
+
+```python
+df["column1"].replace({1: "A", 2: "B", 3: "C", 4: "D"})
+```
+
+カラム名を置き換える場合は、キーワード引数でcolumnsを使用する。
+
+```python
+df.rename(columns={"column1": "aaa"})
+```
+```
+	aaa	column2
+0	A	B
+1	C	D
+```
+
+## 抽出(query)
+
+user_idが重複しているレコードを抽出する例。
+
+","で結合して、queryのinで抽出する。
+
+```python
+user_id_str = ",".join(df[df.duplicated(['user_id'], keep='last')]['user_id'].astype(str))
+df.query(f'user_id in ({user_id_str})')
+```
+
+## カラムの並び替え
 
 - 並び変えたカラムを[]に入れるだけで良い。
 
@@ -186,6 +307,12 @@ df.dropna()
 
 ```python
 df.dropna(subset=['column1'])
+```
+
+## 欠損値を列毎に修正する
+
+```python
+df.loc[rank_df.query('column1 != column1').index,'column1'] = 0
 ```
 
 ## locとilocの違い

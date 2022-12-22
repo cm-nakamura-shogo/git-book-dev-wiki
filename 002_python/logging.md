@@ -5,6 +5,13 @@
 - https://qiita.com/shotakaha/items/0fa2db1dc8253c83e2bb
 - ルートロガーがいろいろ厄介なイメージ。
 
+## ルートロガーを無効化する
+
+```python
+import logging
+
+logging.getLogger().handlers = []
+```
 ## formatで使える名前
 
 - https://blog.hiros-dot.net/?p=10328

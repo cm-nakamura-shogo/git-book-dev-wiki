@@ -136,3 +136,23 @@ git remote add origin git@github:<ACCOUNT_NAME>/<REPSITORY_NAME>.git
 * rebaseの方がブランチが横に広がらないメリットがある。
 * 参考
   * [あなたはmerge派？rebase派？綺麗なGitログで実感したメリット - BIGLOBE Style ｜ BIGLOBEの「はたらく人」と「トガッた技術」](https://style.biglobe.co.jp/entry/2022/03/22/090000)
+
+## ブランチ一覧取得
+
+ローカル
+
+```
+git branch
+```
+
+リモート
+
+```
+git branch -r
+```
+
+さらに日付順。
+
+```
+git for-each-ref --sort=-committerdate refs/remotes/origin --format='%(authordate) %(refname)' | xargs -I{} printf "%s\n" {}
+```

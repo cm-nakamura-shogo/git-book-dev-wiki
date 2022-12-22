@@ -20,3 +20,10 @@
 Step Functions → EventBridge → SNS → Lambda → Slackで実現するようだ。以下が参考になる。
 
 - [Incoming Webhookを使用してAWS Step Functionsの実行結果をSlackに通知する | DevelopersIO](https://dev.classmethod.jp/articles/slack-notify-incoming-webhook-using-lambda/)
+
+## Distributed Map
+
+re:Invent 2022, 2022/12にリリースされた機能。
+元々並列実行は対応していたものの、より大規模なものに対応したっぽい。
+
+- [AWS Step Functionsで大規模な並列処理を実施できるDistributed Mapを試してみた | DevelopersIO](https://dev.classmethod.jp/articles/distributed-map-which-can-perform-large-scale-parallel-processing-with-aws-step-functions/)

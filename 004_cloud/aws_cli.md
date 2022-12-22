@@ -1,5 +1,12 @@
 # aws cli設定
 
+## 更新
+
+```
+> msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+> aws --version
+```
+
 - 今の設定を知りたい場合
 
 ```

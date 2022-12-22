@@ -64,3 +64,17 @@ Lambda Extensionsを仕組みとして使用している。
 ENIが削除できず、どのLambdaに紐づけられているか分からない場合にLambda ENI Finderが使えるらしい。
 
 - [Elastic Network Interfaceが削除できなくて困った時にLambda ENI Finderを利用した話 | DevelopersIO](https://dev.classmethod.jp/articles/try-delete-lambda-eni-with-lambda-eni-finder/)
+
+## LambdaのContextの中身
+
+以下のような感じらしい。aws_request_idは識別子として使えるのかも。
+
+```
+function_name: hoge-dev-InvokeStateMachine
+function_version: $LATEST
+invoked_function_arn: arn:aws:lambda:ap-northeast-1:123456789012:function:hoge-dev-InvokeStateMachine
+memory_limit_in_mb: 128
+aws_request_id: 4c8443bd-f044-4c06-8ad1-7d8c351fb57f
+log_group_name: /aws/lambda/hoge-dev-InvokeStateMachine
+log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
+```
