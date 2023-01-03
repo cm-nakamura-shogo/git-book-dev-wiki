@@ -1,4 +1,4 @@
-<!-- # classification
+# classification
 
 ## 主要なモデル一覧
 
@@ -88,4 +88,4 @@
   - https://qiita.com/TeamN/items/edee1b3803a1d77fc252
 
 - B0～B7の構造
-  - https://towardsdatascience.com/complete-architectural-details-of-all-efficientnet-models-5fd5b736142 -->
+  - https://towardsdatascience.com/complete-architectural-details-of-all-efficientnet-models-5fd5b736142
