@@ -256,6 +256,7 @@
 ![](./img/aws_certified_002_saa_004_ec2_2022-03-19-18-58-16.png)
 - https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html
 
+
 - 課金されるのは、running中と休止時のstoppping(停止中)の場合となります。
 - stoppingとstoppedを使うには、EBS-backedである必要があります。
 - 再起動や停止・休止を実施しても、プライベートIPアドレスは保持されます。
