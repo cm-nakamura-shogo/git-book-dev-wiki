@@ -199,8 +199,6 @@
     - [Kaggleコンペ一覧    ](pages/aiml/aiml_kaggle_competition.md)
     - [コードコンペ(時系列)](pages/aiml/aiml_kaggle_code_compe_time_series.md)
     - [コンペその他        ](pages/aiml/aiml_other_competition.md)
-  - その他
-    - [スクラップ          ](pages/aiml/aiml_scrap.md)
 - CV
   - [概要                ](pages/aiml_cv/aiml_cv_summary.md)
   - [クラス分類          ](pages/aiml_cv/aiml_cv_classification.md)
