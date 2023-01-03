@@ -54,6 +54,10 @@ def tokenize(batch):
 dataset_dict = dataset_dict.map(tokenize, batched=True, batch_size=None)
 ```
 
+トークナイザの学習時は注意が必要。
+
+- [新しく日本語BERTのトークナイザを学習するときは limit_alphabet に気をつけよう](https://zenn.dev/hellorusk/articles/4513d7aac5b2cd)
+
 ### 隠れ次元のベクトルを得る方法
 
 Datasetクラスをうまくイテレーションする方法が分からないため、普通にrangeでforを回す。

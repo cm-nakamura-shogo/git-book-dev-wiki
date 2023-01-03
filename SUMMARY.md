@@ -175,10 +175,12 @@
   - [Analytics](pages/analytics/analytics.md)
 - AIML
   - 共通
-    - [データ拡張  ](pages/aiml/aiml_augmentation.md)
-    - [AutoML      ](pages/aiml/aiml_auto_ml.md)
-    - [データセット](pages/aiml/aiml_dataset.md)
-    - [評価指標    ](pages/aiml/aiml_evaluation.md)
+    - [データ拡張    ](pages/aiml/aiml_augmentation.md)
+    - [AutoML        ](pages/aiml/aiml_auto_ml.md)
+    - [データセット  ](pages/aiml/aiml_dataset.md)
+    - [評価指標      ](pages/aiml/aiml_evaluation.md)
+    - [アノテーション](pages/aiml/aiml_annotation.md)
+    - [チューニング  ](pages/aiml/aiml_tuning.md)
   - 設計
     - [機械学習設計](pages/aiml/aiml_design.md)
     - [MLOps       ](pages/aiml/aiml_mlops.md)
@@ -197,10 +199,18 @@
     - [Kaggleコンペ一覧    ](pages/aiml/aiml_kaggle_competition.md)
     - [コードコンペ(時系列)](pages/aiml/aiml_kaggle_code_compe_time_series.md)
     - [コンペその他        ](pages/aiml/aiml_other_competition.md)
-  - ドメイン別
-    - [画像処理            ](https://nakamura-shogo.gitbook.io/git-book-ml-wiki)
-    - [画像処理その他      ](pages/aiml/aiml_scrap_cv.md)
-    - [時系列データ        ](pages/aiml/aiml_scrap_time_series.md)
-    - [テーブルデータ      ](pages/aiml/aiml_scrap_tabular.md)
-    - [その他の研究        ](pages/aiml/aiml_scrap_other.md)
+  - その他
+    - [スクラップ          ](pages/aiml/aiml_scrap.md)
+- CV
+  - [概要      ](pages/aiml_cv/aiml_cv_summary.md)
+  - [クラス分類](pages/aiml_cv/aiml_cv_classification.md)
+  - [YOLOv5    ](pages/aiml_cv/aiml_cv_yolo_v5.md)
+  - [YOLOX     ](pages/aiml_cv/aiml_cv_yolo_x.md)
+  - [motpy     ](pages/aiml_cv/aiml_cv_motpy.md)
+- NLP
+  - [概要                               ](pages/aiml_nlp/aiml_nlp_summary.md)
+  - [Tf-idf                             ](pages/aiml_nlp/aiml_nlp_tfidf.md)
+  - [BM25                               ](pages/aiml_nlp/aiml_nlp_bm25.md)
+  - [Lucene's Practical Scoring Function](pages/aiml_nlp/aiml_nlp_lpsf.md)
+  - [Word2Vec                           ](pages/aiml_nlp/aiml_nlp_word2vec.md)
 - [全体スクラップ](scrap.md)
