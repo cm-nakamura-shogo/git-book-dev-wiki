@@ -184,6 +184,7 @@
   - 設計
     - [機械学習設計](pages/aiml/aiml_design.md)
     - [MLOps       ](pages/aiml/aiml_mlops.md)
+    - [テスト        ](pages/aiml/aiml_mltest.md)
   - ライブラリ
     - [PyTorch             ](pages/aiml/aiml_pytorch.md)
     - [PyTorchメモリ対策   ](pages/aiml/aiml_pytorch_memory_opt.md)
@@ -194,11 +195,16 @@
     - [PyMC3               ](pages/aiml/aiml_pymc3.md)
     - [MeCab               ](pages/aiml/aiml_mecab.md)
     - [Sentencepieces      ](pages/aiml/aiml_sentencepiece.md)
+    - [テキスト抽出        ](pages/aiml/aiml_text_extract.md)
   - コンペ
     - [Kaggleチュートリアル](pages/aiml/aiml_kaggle_tutorial.md)
     - [Kaggleコンペ一覧    ](pages/aiml/aiml_kaggle_competition.md)
     - [コードコンペ(時系列)](pages/aiml/aiml_kaggle_code_compe_time_series.md)
     - [コンペその他        ](pages/aiml/aiml_other_competition.md)
+  - その他
+    - [前処理              ](pages/aiml/aiml_preprocess.md)
+    - [レコメンデーション  ](pages/aiml/aiml_recommendation.md)
+    - [Graph NN            ](pages/aiml/aiml_gnn.md)
 - CV
   - [概要                ](pages/aiml_cv/aiml_cv_summary.md)
   - [クラス分類          ](pages/aiml_cv/aiml_cv_classification.md)
@@ -240,12 +246,15 @@
     - [YOLOv4            ](pages/aiml_cv/aiml_cv_object_detection/yolo_v4.md)
     - [DETR              ](pages/aiml_cv/aiml_cv_object_detection/detr.md)
     - [YOLOv5            ](pages/aiml_cv/aiml_cv_object_detection/yolo_v5.md)
+    - [Orthogonal Sphere Regularization](pages/aiml_cv/aiml_cv_object_detection/orthogonal_sphere_regularization.md)
     - [PSS               ](pages/aiml_cv/aiml_cv_object_detection/pss.md)
     - [YOLOF             ](pages/aiml_cv/aiml_cv_object_detection/yolo_f.md)
     - [OTA               ](pages/aiml_cv/aiml_cv_object_detection/ota.md)
     - [YOLOX             ](pages/aiml_cv/aiml_cv_object_detection/yolo_x.md)
+    - [YOLOv7            ](pages/aiml_cv/aiml_cv_object_detection/yolo_v7.md)
   - [セグメンテーション  ](pages/aiml_cv/aiml_cv_segmentation.md)
   - [姿勢推定            ](pages/aiml_cv/aiml_cv_pose_estimation.md)
+  - [異常検出            ](pages/aiml_cv/aiml_cv_anomaly_detection.md)
   - [その他のテクニック  ](pages/aiml_cv/aiml_cv_other_technique.md)
   - ライブラリ
     - [YOLOv5            ](pages/aiml_cv/aiml_cv_yolo_v5.md)
@@ -257,4 +266,5 @@
   - [BM25                               ](pages/aiml_nlp/aiml_nlp_bm25.md)
   - [Lucene's Practical Scoring Function](pages/aiml_nlp/aiml_nlp_lpsf.md)
   - [Word2Vec                           ](pages/aiml_nlp/aiml_nlp_word2vec.md)
+  - [Transformer                        ](pages/aiml_nlp/aiml_nlp_transformer.md)
 - [全体スクラップ](scrap.md)

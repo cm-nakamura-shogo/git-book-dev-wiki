@@ -26,6 +26,9 @@
 - これらの手順は煩雑なので、anchor boxを使わない方法も近年人気である。
   - 最終層を元画像の1/4程度に収めて、高解像で出力するCenterNetなど。
 
+- まとめの参考
+  - [Object Detection State of the Art 2022 | by Pedro Azevedo | Jun, 2022 | Medium](https://medium.com/@pedroazevedo6/object-detection-state-of-the-art-2022-ad750e0f6003)
+
 ## 学会
 
 - CVPR
@@ -177,6 +180,8 @@
 
 - PP-YOLO 2020.07.23, 未調査 / [論文](https://arxiv.org/abs/2007.12099) / [実装例](https://paperswithcode.com/paper/pp-yolo-an-effective-and-efficient)
 
+- [Orthogonal Sphere Regularization (2020-09-22)](./aiml_cv_object_detection/orthogonal_sphere_regularization.md) / [arXiv](https://arxiv.org/abs/2009.10762)
+
 - Scaled-YOLOv4 2020.11.16 CVPR'2021, 未調査 / [論文](https://arxiv.org/abs/2011.08036) / 
 
 - [PSS 2021.01.28](./aiml_cv_object_detection/pss.md), 1stage (anchor free) / [論文](https://arxiv.org/abs/2101.11782) / [実装例](https://paperswithcode.com/paper/object-detection-made-simpler-by-eliminating)
@@ -227,6 +232,8 @@
 - PP-YOLOE 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16250) / [実装例](https://paperswithcode.com/paper/pp-yoloe-an-evolved-version-of-yolo)
 
 - ViTDet 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16527) / [実装例](https://paperswithcode.com/paper/exploring-plain-vision-transformer-backbones)
+
+- [YOLOv7 (2022-07-06)](./aiml_cv_object_detection/yolo_v7.md) / [aiXiv](https://arxiv.org/abs/2207.02696) / [Papers With Code](https://paperswithcode.com/paper/yolov7-trainable-bag-of-freebies-sets-new)
 
 
 ## 参考
