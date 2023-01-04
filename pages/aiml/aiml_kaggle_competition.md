@@ -1,5 +1,18 @@
 # Kaggleコンペ一覧
 
+## 2023
+
+- [Learning Equality - Curriculum Recommendations | Kaggle](https://www.kaggle.com/competitions/learning-equality-curriculum-recommendations/data)
+  - 教育トピックに対してそのコンテンツを割り振るコンペティション。
+  - 一見自然言語っぽいデータセットだが、contentsにはaudioやvideoもあり、マルチモーダル処理が求められるかも。
+  - 2022-03-14 : Final Submission Deadline.
+  - コードコンペティション
+
+## 2022
+
+
+## 2021
+
 - Lux AI【2021.08.16～2021.12.06】
   - [https://www.kaggle.com/c/lux-ai-2021](https://www.kaggle.com/c/lux-ai-2021)
   - ゲームAIを作るコンペティション
