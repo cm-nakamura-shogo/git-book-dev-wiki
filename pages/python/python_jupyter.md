@@ -39,3 +39,13 @@ $ nbdiff-web notebook1.ipynb notebook1.ipynb
 
 * 参考
   * [Jupyter Notebook ファイルのままdiffをとったり、マージしたり出来るツール nbdime - Qiita](https://qiita.com/nannoki/items/490c8d999ed400f78197)
+
+## nbconvert
+
+### notebookをmarkdownに変換する
+
+以下により同名のmarkdownファイルが作成される。
+
+```sh
+jupyter nbconvert --to markdown sample.ipynb
+```

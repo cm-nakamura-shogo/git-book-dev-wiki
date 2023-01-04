@@ -22,22 +22,30 @@
 ## プラグイン
 
 - 基本
-  - Japanese Language Pack ... 日本語化。
+  - Japanese Language Pack : 日本語化。時々英語に戻るので以下で設定する。
+  	```
+	既定の UI 言語をオーバーライドするには、Configure Display Language コマンドを使用して、VS Code の表示言語を明示的に設定します。
+	Ctrl+Shift+P を押して "コマンド パレット" を表示し、display と入力して Configure Display Language コマンドをフィルターして表示します。
+	Enter キーを押すと、インストールされている言語の一覧がロケールごとに表示され、現在のロケールが強調表示されます。
+	UI 言語を切り替えるには、別の "ロケール" を選択してください。
+	```
 
 - 視認性
-  - Brancket Pair Colorizer2 ... カッコを色分けしてくれる。
-  - indent-rainbow ... インデントを色分けしてくれる。
-  - Rainbow CSV ... CSVの視認性向上。
-  - Trailing Space ... 空白の可視化
+  - Brancket Pair Colorizer2 : カッコを色分けしてくれる。VSCodeのデフォルトで色分けされるようになったので、今はdepricated。
+  - indent-rainbow : インデントを色分けしてくれる。
+  - Rainbow CSV : CSVの視認性向上。
+  - Trailing Space : 空白を可視化する。
+  - Error Lens : エラーの内容をエディタで見えるようにしてくれる（マウスオーバーする必要がない）
 
 - Git
-  - Git Graph ... 変更履歴がツリーで見れる。
-  - GitLens ... ブランチ同士の差分確認で主に使う。
+  - Git Graph : 変更履歴がツリーで見れる。
+  - GitLens : ブランチ同士の差分確認で主に使う。実はあまり使いこなせたことが無い。
 
 - Python
-  - Python ... Python開発の基本。
-  - Pylance ... 構文チェックや候補を頭良く表示する。今はPythonプラグインを入れると勝手に入る気がする。
-  - Python Docstring Generator ... Pythonのdocstringを自動生成できる。
+  - Python : Python開発の基本。
+  - Pylance : 構文チェックや候補を頭良く表示する。今はPythonプラグインを入れると勝手に入る気がする。
+  - Python Docstring Generator : Pythonのdocstringを自動生成できる。
+  - isort : importをPEP8準拠にしてくれる拡張機能
 
 - Markdown
   - Markdown PDF ... MarkdownをPDF変換する。
@@ -136,4 +144,26 @@
 }
 ```
 
-## 
+## ショートカット
+
+意外と網羅できてないショートカットを自分なりに整理する。
+
+### カーソル移動
+
+|||
+|:---|:---|:---|
+|Ctrl + 左右|単語毎カーソル移動|
+|Ctrl + Home|行頭移動|
+|Ctrl + End |行末移動|
+
+### マルチカーソル
+
+いくつかやり方がある。
+
+- マウスを使用する方法
+  - Alt + マウスクリック
+  - マウス中芯ボタンクリックのドラッグ
+  - Shift + Alt + マウスの右クリックドラッグ
+- マウスなしで実行可能な方法
+  - Alt + Ctrl + 上下
+  - 単語選択 ⇒ Ctrl + D （検索しながらカーソルを増やせる）
