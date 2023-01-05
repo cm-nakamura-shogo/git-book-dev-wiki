@@ -78,3 +78,11 @@ aws_request_id: 4c8443bd-f044-4c06-8ad1-7d8c351fb57f
 log_group_name: /aws/lambda/hoge-dev-InvokeStateMachine
 log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 ```
+
+## VPC Lambda
+
+通常はLambdaはVPC外に配置するが、プライベートなVPCで使用したい場合にはVPC Lambdaを使用する。
+
+ちなみにVPC LambdaをpublicなVPC（IGWあり）に配置する場合、public IPをもつENIをVPC LambdaにアタッチしないとIGWと接続できないらしい。
+
+- [VPC LambdaはIGWからインターネットに出られないわけではなかったという話 | DevelopersIO](https://dev.classmethod.jp/articles/lambda-vpc-with-global-address/)
