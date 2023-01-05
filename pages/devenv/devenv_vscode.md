@@ -226,3 +226,7 @@
 |||
 |:---|:---|
 |Alt + 上下|行移動|
+
+### 参考
+
+- [VSCodeのマルチカーソル練習帳 - Qiita](https://qiita.com/TomK/items/3b1f5be07d708d7bd6c5)
