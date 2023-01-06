@@ -19,6 +19,9 @@
   - Fraud Detector
 - Google Cloud
   - Document AI
+  - Vertex AI Vision
+  - Vertex AI Matching Engine
+  - Vertex AI Feature Store Streaming ingestion
 
 ## アプデ
 
@@ -71,6 +74,10 @@
     - 手法はk-shape法というもので2015年に書かれたアルゴらしい
 
 ## NLP
+
+- Faiss
+  - Faissとは、Facebook社が開発を行っている近似近傍探索のOSS
+  - [ベクトル検索ライブラリ Faiss を試す｜npaka｜note](https://note.com/npaka/n/nb766e344a4fc)
 
 - DeBERTaV3について
   - [DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing - retarfiの日記](https://retarfi.hatenablog.jp/entry/2022/12/15/090815)
