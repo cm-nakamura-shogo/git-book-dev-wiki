@@ -1,0 +1,76 @@
+
+### 2022-12-19追加分
+
+#### その他
+
+- 【Kaggle】新コンペ「Learning Equality - Curriculum Recommendations」開始
+  - https://www.kaggle.com/competitions/learning-equality-curriculum-recommendations
+  - 教育コンテンツをカリキュラムのトピックに分類するコンペ
+  - データセットは1GB程度なので取り組みやすいかも。
+  - 締め切りは2023年3/14まで。
+  - コードコンペです（やり方知りたい方は展開します）
+- 【SIGNATE】第２回 空戦AIチャレンジ
+  - https://signate.jp/competitions/769
+  - 投稿されたエージェント同士の対戦は、Dockerfileに基づき構築されるコンテナ上で行われます
+  - 締め切りは2023年2/14まで。
+- 【SIGNATE】ワールドＡＩコンペティション　ＹＡＭＡＧＵＣＨＩ
+  - https://signate.jp/competitions/909
+  - ドライブレコーダーの記録画像から、補修が必要な物体（区画線、道路標識、道路照明）を検出するAIモデルを作成
+  - 締め切りは2023年2/16まで。
+- 【書籍】u++さんが「Kaggleに挑む深層学習プログラミングの極意」を発売するみたい
+  - https://www.amazon.co.jp/dp/4065305136
+  - 発売は2023年2月2日
+- 言語モデルのEmbeddingとSVR(RAPIDS)で言語モデルの再学習なしに学習する方法
+  - https://secon.dev/entry/2022/12/13/090000-rapids-svr-svc-marc-ja/
+  - これがコンペとかでもまあまあ強いらしいという話。
+- 【書籍】Rユーザのためのtidymodels実践入門〜モダンな統計・機械学習モデリングの世界
+  - https://y-mattu.hatenablog.com/entry/tidymodels_book
+  - Rユーザ必見！！日本初のtidymodels本らしい
+- 【Kaggle】Happywhaleコンペ優勝解法でのOptuna使用事例 - 2022/12/10 Optuna Meetup #2
+  - https://www.slideshare.net/pfi/kaggle-happywhaleoptuna-20221210-optuna-meetup-2
+  - 多クラス(15,000)で不均衡(1サンプルのものも)
+  - ベースラインはArcFaceというもの。
+  - ハイパラ最適化自体はあまり貢献しないが、最適化する手間が削減される点が良い点。
+  - 貢献はやっぱりダイナミックなモデル変更や学習手法の改善の方が重要。
+  - 普通にやるとV100(32GB)が2-4個で半日だったので、V100が1個で1時間程度で終わるよういろいろモデルを縮小してHPO
+  - それで決めたハイパラを大きい側に適用するらしい。
+- 【Kaggle】レコメンド系kaggleコンペまとめ
+  - https://zenn.dev/mina_moto/articles/6ff668f34fa557
+  - 3つのコンペについて分析
+- Transformers4Recで簡単にセッションベースなレコメンデーションを試してみた
+  - https://acro-engineer.hatenablog.com/entry/2022/12/14/130000
+  - セッションベースレコメンデーションでは、ユーザーの履歴ではなく、セッション内の行動によってのみ、次にレコメンドする商品を決める方法。
+  - これにより、短期的にユーザーがどのようなものが欲しいかをより正確にできるようにするらしい。
+- scikit-learnで5行でできる類似テキスト検索
+  - https://zenn.dev/colum2131/articles/e178e20be6171e
+  - 章立てがよくわからんことになっているが、BoW -> SentenceTransformer -> cuMLを使ったBoWという説明だった。
+  - BoWの内容は結構一般的だが、Tfidfそのままでは次元数が爆発するのでSVDなどで対策は必要だと思われる。
+- HACK TO THE FUTURE 2023 予選 1位解法解説 | BLOG - DeNA Engineering
+  - https://engineering.dena.com/blog/2022/12/httf-2023-qual/
+  - すまんわからん…
+- Kaggleで考えるMLシステムの設計とアーキテクチャ - Qiita
+  - https://qiita.com/ieiringoo/items/dec48924e1b82e62752a
+  - TFXとアーキテクチャは面白かった。設計については深く書いてない。
+- DeBERTaV3の解説記事
+  - https://retarfi.hatenablog.jp/entry/2022/12/15/090815
+  - 2021年11月に公開された論文
+- 一次元の単語埋め込みに関する研究
+  - https://www.jstage.jst.go.jp/article/jnlp/29/4/29_1297/_pdf/-char/ja
+- 大規模分散学習でGPUを食べまくる人｜マソラ｜note
+  - https://note.com/soraemonpockts/n/n2f1512a3467f
+  - 実画像を使わない事前学習FDSLは面白そう。
+- サービス提供者はユーザーの多様なコンテンツ消費を促すべきか？ - kuri8iveにいきてこ。
+  - https://kuri8ive.hatenablog.com/entry/should-service-providers-encourage-users-to-consume-diverse-content
+  - レコメンドは、同じようなものが多い方が良いか、多様性がある方がいいか、ユーザによって多様性があるという話。
+  - ちゃんとここら辺は理解しとかんとな。。
+- Stable Diffusion の仕組みを理解する - ABEJA Tech Blog
+  - https://tech-blog.abeja.asia/entry/advent-2022-day19
+  - ざっくり以下な感じかな？
+    - 画像をノイズに変換する（学習パラメータは無い補完処理などで実現するらしい）
+    - なんかノイズ空間だと特性を維持したまま色々注入できるらしいので、テキストとかを埋め込んで混ぜる
+    - テキストを埋め込んで元の画像に戻るように学習する
+    - そうするとテキストをいじると、元の画像が良い感じに変換される
+- ［評価指標］macro-F1／micro-F1、多クラス分類のマクロ平均／マイクロ平均とは？：AI・機械学習の用語辞典 - ＠IT
+  - https://atmarkit.itmedia.co.jp/ait/articles/2212/19/news020.html
+  - ここら辺はいつもよくわからんので、混同行列しか見たくないと思っている。
+

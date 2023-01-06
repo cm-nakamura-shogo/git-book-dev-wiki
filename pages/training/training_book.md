@@ -11,3 +11,7 @@
 
 - はじめに - Python で学ぶベイズフィルタとカルマンフィルタ (翻訳)
   - [https://inzkyk.xyz/kalman_filter/preface/](https://inzkyk.xyz/kalman_filter/preface/)
+
+## まとめ
+
+- [https://twitter.com/kenken26679105/status/1609928580313812992](https://twitter.com/kenken26679105/status/1609928580313812992)

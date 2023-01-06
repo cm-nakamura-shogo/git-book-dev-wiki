@@ -268,3 +268,6 @@
   - [Word2Vec                           ](pages/aiml_nlp/aiml_nlp_word2vec.md)
   - [Transformer                        ](pages/aiml_nlp/aiml_nlp_transformer.md)
 - [全体スクラップ](scrap.md)
+- ブログ管理
+  - [ネタ帳  ](blog/blog.md)
+  - [執筆済み](blog/blog_released.md)
