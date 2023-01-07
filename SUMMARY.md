@@ -267,6 +267,7 @@
   - [Lucene's Practical Scoring Function](pages/aiml_nlp/aiml_nlp_lpsf.md)
   - [Word2Vec                           ](pages/aiml_nlp/aiml_nlp_word2vec.md)
   - [Transformer                        ](pages/aiml_nlp/aiml_nlp_transformer.md)
+    - [Cramming BERT, 2022-12-28](pages/aiml_nlp/aiml_nlp_transformer/cramming_bert_ja.md)
 - [全体スクラップ](scrap.md)
 - ブログ管理
   - [ネタ帳  ](blog/blog.md)
