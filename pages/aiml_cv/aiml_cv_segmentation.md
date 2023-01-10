@@ -21,3 +21,9 @@
 
 - [2022/03/24] Sparse Instance Activation for Real-Time Instance Segmentation
   - https://arxiv.org/abs/2203.12827
+
+- [[2212.01579] Box2Mask: Box-supervised Instance Segmentation via Level-set Evolution](https://arxiv.org/abs/2212.01579)
+  - [https://twitter.com/_akhaliq/status/1612034778236129280](https://twitter.com/_akhaliq/status/1612034778236129280)
+  - 古典的なlevel-set evolutionをNNに結合し、バウンディングボックスの教師のみで、セグメンテーションのマスクを予測するBox2Maskを提案。
+  - アプローチ自体はベースのモデル構造によらずに適用でき、CNNとTransformerベース双方で検証している。
+  - Swin-Transformerを用いたBox2Maskは、COCOにおいて42.4%のマスク適用率を達成し、最近開発された完全マスク教師付き手法に匹敵する性能。

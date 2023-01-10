@@ -75,6 +75,12 @@
 
 ## NLP
 
+- DeBERTaV2
+  - [【Hugging Face】日本語 DeBERTa V2 モデルを公開（京都大）](https://huggingface.co/ku-nlp/deberta-v2-base-japanese)
+    - コーパスは Wikipedia (3.2GB), CC100 (85GB) に加え OSCAR (54GB) を使っており日本語モデルの中では最大規模
+      - [https://twitter.com/nobug5c9/status/1611636869963616258](https://twitter.com/nobug5c9/status/1611636869963616258)
+    - ライセンスは、CC-BY-SA-4.0なので商用（ブログ）には使えそう
+
 - Faiss
   - Faissとは、Facebook社が開発を行っている近似近傍探索のOSS
   - [ベクトル検索ライブラリ Faiss を試す｜npaka｜note](https://note.com/npaka/n/nb766e344a4fc)
@@ -91,9 +97,11 @@
     - seed averagingもやっぱやる人おるんやな。
     - MultilabelStratifiedKFoldはマルチラベルの場合は必須そう。
     - ここでも「文章からの特徴抽出においては現状では DeBERTa V3 が第一択と捉えて間違いなさそうです。」とのこと。
+
 - EmbeddingとSVR(RAPIDS)
   - [言語モデルのEmbeddingとSVR(RAPIDS)で言語モデルの再学習なしに学習する方法](https://secon.dev/entry/2022/12/13/090000-rapids-svr-svc-marc-ja/)
     - これがコンペとかでもまあまあ強いらしいという話。
+
 - LUKE
   - [LUKEの解説記事](https://qiita.com/Mizuiro__sakura/items/9ccbd655501e78df5cc6)
     - 日本製でTransformersに採用された初のものらしい。
@@ -104,14 +112,28 @@
 
 ## CV
 
+- Box2Mask
+  - [【論文】[2212.01579] Box2Mask: Box-supervised Instance Segmentation via Level-set Evolution](https://arxiv.org/abs/2212.01579)
+  - [https://twitter.com/_akhaliq/status/1612034778236129280](https://twitter.com/_akhaliq/status/1612034778236129280)
+  - 古典的なlevel-set evolutionをNNに結合し、バウンディングボックスの教師のみで、セグメンテーションのマスクを予測するBox2Maskを提案。
+  - アプローチ自体はベースのモデル構造によらずに適用でき、CNNとTransformerベース双方で検証している。
+  - Swin-Transformerを用いたBox2Maskは、COCOにおいて42.4%のマスク適用率を達成し、最近開発された完全マスク教師付き手法に匹敵する性能。
+
+- ConvNext V2
+  - [【論文】[2301.00808] ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders](https://arxiv.org/abs/2301.00808)
+  - [https://twitter.com/_akhaliq/status/1610097123583819777](https://twitter.com/_akhaliq/status/1610097123583819777)
+  - ConvNeXt V2が発表。ひさしくクラス分類用のモデルは追えてないが、一応今のSOTAっぽいと言えそう？
+
 - CLIPSegについて
   - [【Hugging Face】ゼロショット画像セグメンテーションモデルであるCLIPSegをTransformersライブラリで使用する方法](https://huggingface.co/blog/clipseg-zero-shot)
     - CLIPSegはまだ限界があるものの、セグメンテーションのラベル付けを人手でやるための補助として使える。
     - CLIPに画像やテキストを与えると埋め込みベクトルが生成される。
     - あーこれ読んだらCLIPすげーってなるな。ベクトルの類似度を使えば画像検索とかに応用できるのか。
+
 - SegFormer
   - [セマンティックセグメンテーションSOTAモデルSegFormerでのfine tuningチュートリアルを提供](https://twitter.com/RisingSayak/status/1604852453475643393)
     - SegFormerをPyTorchとTensorFlowの双方で実施可能
+
 - Stable Diffusionの仕組み
   - [Stable Diffusion の仕組みを理解する - ABEJA Tech Blog](https://tech-blog.abeja.asia/entry/advent-2022-day19)
     - ざっくり以下な感じかな？
@@ -119,6 +141,7 @@
       - なんかノイズ空間だと特性を維持したまま色々注入できるらしいので、テキストとかを埋め込んで混ぜる
       - テキストを埋め込んで元の画像に戻るように学習する
       - そうするとテキストをいじると、元の画像が良い感じに変換される
+
 - データ拡張ライブラリimgaug
   - 以下で使用されていた
     - [【ブログ】Lookout for Visionのデータ拡張対応方法](https://aws.amazon.com/jp/blogs/machine-learning/image-augmentation-pipeline-for-amazon-lookout-for-vision/)
@@ -127,19 +150,28 @@
 
 ## 音声
 
+- WhisperX
+  - [WhisperX: Whisperと音素単位のASRを使って正確な音素単位のアラインメントを実行する](https://qiita.com/syoyo/items/98377869b037a87f1634)
+  - Whisperだけでは長い発話単位なので、それで正確な発話位置がわかりそう
+  - stable-tsとの違いは？
+
 - 話者判定の最新手法
   - [【Google Research】Pixel向けに話者判定ありの書き起こしを実現](https://ai.googleblog.com/2022/12/who-said-what-recorders-on-device.html)
   - 話者判定は以下の論文に基づく（Speaker Diarizationとしては最新と認識して良さそう）
     - [[2109.11641] Turn-to-Diarize: Online Speaker Diarization Constrained by Transformer Transducer Speaker Turn Detection](https://arxiv.org/abs/2109.11641)
+
 - [【Hugging Face】Audio Spectrogram Transformerが使用可能に](https://huggingface.co/docs/transformers/main/en/model_doc/audio-spectrogram-transformer)
   - Audio Spectrogram TransformerはAudio分類のSOTAモデル
   - 事前学習モデルのfine tuningも可能
+
 - audio-datasets
   - [【Hugging Face】Audio用のデータセットハブの紹介](https://huggingface.co/blog/audio-datasets)
     - Whisperのfine tuningでもでてきたけど、AudioデータもHugging Faceで結構使いまわせる
     - 主にASR（音声認識）用と、Audio Classification用に分かれる。
+
 - 音声分離 Demucs
   - [【藤本健のDigital Audio Laboratory】AIでボーカル・ドラムを取り出す、無料音声分離「Demucs」を試す-AV Watch](https://av.watch.impress.co.jp/docs/series/dal/1460920.html)
+
 - Whisperの結果をトークン毎にタイムスタンプ出力できる
   - [jianfch/stable-ts: Stabilizing timestamps of OpenAI's Whisper outputs down to word-level](https://github.com/jianfch/stable-ts)
   - READMEの２つめのmp4ファイルのデモが分かりやすい。

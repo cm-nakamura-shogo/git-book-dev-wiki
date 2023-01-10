@@ -205,6 +205,7 @@
     - [前処理              ](pages/aiml/aiml_preprocess.md)
     - [レコメンデーション  ](pages/aiml/aiml_recommendation.md)
     - [Graph NN            ](pages/aiml/aiml_gnn.md)
+    - [音声                ](pages/aiml/aiml_speech.md)
 - CV
   - [概要                ](pages/aiml_cv/aiml_cv_summary.md)
   - [クラス分類          ](pages/aiml_cv/aiml_cv_classification.md)

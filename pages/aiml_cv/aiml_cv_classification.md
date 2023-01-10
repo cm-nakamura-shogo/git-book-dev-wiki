@@ -39,6 +39,9 @@
 - DeiT 2020.12.23 / [論文](https://arxiv.org/abs/2012.12877)
 - EfficientNetV2 2021.04.01 ICML'2021 / [論文](https://arxiv.org/abs/2104.00298)
 - ConvNeXt 2022.01.10 CVPR'2022 / [論文](https://arxiv.org/abs/2201.03545)
+- [[2301.00808] ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders](https://arxiv.org/abs/2301.00808)
+  - [https://twitter.com/_akhaliq/status/1610097123583819777](https://twitter.com/_akhaliq/status/1610097123583819777)
+  - ConvNeXt V2が発表。ひさしくクラス分類用のモデルは追えてないが、一応今のSOTAっぽいと言えそう？
 
 ## 参考
 
