@@ -67,3 +67,8 @@ Servie Discoveryと違ってDNSを使わず、サービス間の通信のメト�
 - [【レポート】ECSサービス間通信をシンプルにするAmazon ECS Service Connect #reinvent #CON323 | DevelopersIO](https://dev.classmethod.jp/articles/aws-reinvent-2022-amazon-ecs-service-connect-simplified-interservice-connection/#toc-10)
 
 
+## 具体例
+
+- [FargateでWebSocertサーバーを構築する](https://dev.classmethod.jp/articles/websocket-alb-fargate/)
+  - バックエンドはNode.jsでwsというモジュールを使っている。
+  - きちんとALBを立てて複数のFargateサービスを使っている。

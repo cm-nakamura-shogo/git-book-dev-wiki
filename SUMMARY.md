@@ -78,6 +78,8 @@
     - [AWS CodeBuild            ](pages/aws/aws_codebuild.md)
     - [Amazon Connect           ](pages/aws/aws_connect.md)
     - [AWS Step Functions       ](pages/aws/aws_step_functions.md)
+    - [AWS System Manager       ](pages/aws/aws_system_manager.md)
+    - [AWS CloudTrail           ](pages/aws/aws_cloudtrail.md)
   - ストレージ
     - [AWS Transfer Family      ](pages/aws/aws_transfer_family.md)
     - [AWS Storage Gateway      ](pages/aws/aws_storage_gateway.md)
