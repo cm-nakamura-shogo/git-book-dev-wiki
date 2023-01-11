@@ -25,6 +25,14 @@
 
 ## アプデ
 
+- [【アプデ】Personalizeが新レシピ「Trending Now」を追加](https://aws.amazon.com/jp/about-aws/whats-new/2023/01/amazon-personalize-new-recipe-trending-now/)
+  - トレンドアイテムを特定する頻度を定義することができ、30分、1時間、3時間、1日ごとにおすすめアイテムを更新するオプションが用意
+  - 既存のカスタムデータセットグループにTrending Nowソリューションを作成
+  - カスタムdsgに対応しているので、バッチにも対応しているはず
+- [【アプデ】PersonalizeがIAMポリシーにおけるタグのサポートを発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/01/amazon-personalize-supports-tag-based-resource-authorization/)
+  - タグに基づくアクセス制御などが可能に。案件で使えるかもしれない。
+- [Document AI OCR解説に関する日本語記事がでている](https://cloud.google.com/blog/ja/products/ai-machine-learning/top-reasons-to-use-gcp-document-ai-ocr)
+  - Textractと比較したいところ
 - [【ブログ】Document AI OCRエンジンに3つの新機能を追加](https://cloud.google.com/blog/products/ai-machine-learning/top-reasons-to-use-gcp-document-ai-ocr/?hl=en)
   - Document AI最近元気だな。
 - [【アプデ】TranslateでのネストされたS3フォルダに保存されたファイルの翻訳サポートを開始](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/amazon-translate-support-files-stored-s3-nested-folders/)

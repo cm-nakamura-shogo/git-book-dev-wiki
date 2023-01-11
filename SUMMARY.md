@@ -169,6 +169,7 @@
 - マネジメント
   - [マネジメント          ](pages/manage/manage.md)
   - [採用                  ](pages/manage/manage_recruit.md)
+  - [商談                  ](pages/manage/manage_sales.md)
 - 学習コンテンツ
   - [学習媒体](pages/training/training_contents.md)
   - [書籍    ](pages/training/training_book.md)
