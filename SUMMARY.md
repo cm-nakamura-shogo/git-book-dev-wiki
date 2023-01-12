@@ -29,6 +29,7 @@
     - [syntax    ](pages/python/python_syntax.md)
     - [retry     ](pages/python/python_retry.md)
     - [difflib   ](pages/python/python_difflib.md)
+    - [json      ](pages/python/python_json.md)
   - 可視化
     - [matplotlib](pages/python/python_matplotlib.md)
     - [seaborn   ](pages/python/python_seaborn.md)
