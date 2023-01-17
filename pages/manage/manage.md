@@ -78,3 +78,20 @@
 ## リモートワークや1on1について
 
 - [「toCとtoBの垣根は時間をかけて解消」「評価に“個人への期待”を入れてバランスをとる」　Retty×キャディが語る、事業・エンジニア組織拡大で起きた課題とその向き合い方 - ログミーTech](https://logmi.jp/tech/articles/327987)
+
+## 組織に変化を起こす方法
+
+- [なぜ変化を起こすのが難しいのか？ - 数年以上にわたって難しさに向き合い・考え取り組んできたこと / The reason why changing organization is so hard - What I thought and faced for more than several years - Speaker Deck](https://speakerdeck.com/iwashi86/the-reason-why-changing-organization-is-so-hard-what-i-thought-and-faced-for-more-than-several-years)
+  - ちょっとした「うっ」は成長のチャンス
+  - 迷ったらつらい方を選ぶ
+  - 信頼貯金
+  - 発信を続けることにより、いつのまにか片方向の知人が増える
+  - エレベーターピッチならぬ懇親会ピッチ
+  - 辞める気になって会社に働きかけてみましょう（本当にやれることを全部やっているか？）
+  - 社内のすごい人をランチに誘う
+
+
+## 合意形成
+
+- [「笑顔の合意」のテクニック - 噛み合わない会話と対立を克服するための、エモさを排した実践的なスキルと技法 - - Speaker Deck](https://speakerdeck.com/hageyahhoo/xiao-yan-nohe-yi-notekunituku-nie-mihe-wanaihui-hua-todui-li-woke-fu-surutameno-emosawopai-sitashi-jian-de-nasukirutoji-fa)
+  - 怒りの他人事化は面白かった。
