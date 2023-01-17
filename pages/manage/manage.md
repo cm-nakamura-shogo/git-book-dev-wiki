@@ -95,3 +95,15 @@
 
 - [「笑顔の合意」のテクニック - 噛み合わない会話と対立を克服するための、エモさを排した実践的なスキルと技法 - - Speaker Deck](https://speakerdeck.com/hageyahhoo/xiao-yan-nohe-yi-notekunituku-nie-mihe-wanaihui-hua-todui-li-woke-fu-surutameno-emosawopai-sitashi-jian-de-nasukirutoji-fa)
   - 怒りの他人事化は面白かった。
+
+## OKR
+
+- [チームのパフォーマンスを引き出す、ワクワクするプロダクトゴール、OKR / Waku-waku Product Goal and OKR - Speaker Deck](https://speakerdeck.com/navitimejapan/waku-waku-product-goal-and-okr)
+
+## 信頼
+
+- [会って2日でお客様に信頼される仕事術を見た｜SHIFT Group 技術ブログ｜note](https://note.com/shift_tech/n/nef57b56ff374)
+
+## スライド作成
+
+- [プレゼンスライドがみるみる良くなる基本の推敲技術 -事例付き解説-｜石原尚（大阪大学教員）｜note](https://note.com/hisashi_is/n/n188b42f83dda)

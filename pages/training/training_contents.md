@@ -34,6 +34,8 @@
 
 - [GraphQL スターターパック | Prisma + NestJS + Next.JS製 個人ブログサイトをCloud Runで運用しよう](https://zenn.dev/waddy/books/graphql-nestjs-nextjs-bootcamp)
 - [HAKODATE Developer Conference＠函館 でGraphQLの話をしてきました](https://dev.classmethod.jp/articles/hakodate-developer-conference-graphql/)
+- [【保存版】WordPressをGatsby+Contentfulに移行する全工程（2020年2月24日時点） - 筋肉めがね](https://kinnikumegane.com/posts/howtomigratefromwordpresstogatsby/)
+  - スタックというよりはGatsbyにContentfulなどいろんなテンプレートがあって便利という話。
 
 ### データベース
 
@@ -201,6 +203,7 @@
   - [機械学習のためのカーネル100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003381.html)
   - [スパース推定100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003298.html)
   - [統計的機械学習の数理100問 with Python](https://www.kyoritsu-pub.co.jp/book/b10003244.html)
+- [東大が無料公開している統計解析の講義(全13回)](https://ocwx.ocw.u-tokyo.ac.jp/course_11408/)
 
 ### 機械学習
 
