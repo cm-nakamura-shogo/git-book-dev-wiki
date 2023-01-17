@@ -101,6 +101,9 @@
     - 画像系はこれからでPaddleNLPが先行しているらしい。
     - そのうち物体検出等(PaddleDetection)も統合されると利用ははかどりそう。
 
+- YOLOXとLambdaと私
+  - [AWS LambdaのコンテナデプロイでYOLOv5の推論エンドポイントを作成する](https://dev.classmethod.jp/articles/aws-lambda-container-deploy-yolov5-inference-endpoint/)
+
 ## NLP
 
 - DeBERTaV2
