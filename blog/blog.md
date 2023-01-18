@@ -79,14 +79,21 @@
 
 ## フレームワーク
 
+- polar
+  - [テーブルデータではcudfだけではなくpolarsというものも良いらしいというのを受信](https://twitter.com/0verfit/status/1615271807191486466)
+    - cudfはGPUが必要。
+    - cudfを使えない人たちはpolarsがいいと複数人が回答しており興味深い
+
 - TorchServe
   -  [【CADDi Tech Blog】Vertexで3ヶ月で作る運用可能なML API基盤](https://caddi.tech/archives/4123)
     - Vertex AI Endpoints、Vertex AI Model RegistryとTorchServeが良いらしい。
     - Vertex AI Model Registryはterraformで記述できないようだ。
     - TorchServeはAWSでも使えるはずなので気になった。
+
 - TFX
   - [Kaggleで考えるMLシステムの設計とアーキテクチャ - Qiita](https://qiita.com/ieiringoo/items/dec48924e1b82e62752a)
     - TFXとアーキテクチャは面白かった。設計については深く書いてない
+
 - tslearn
   - [時系列波形データの分類](https://qiita.com/tharashi/items/81ca83c83a7550901c87)
     - tslearnというライブラリを使ってクラスタリングする事例
@@ -100,9 +107,6 @@
     - 2016年にBaiduが初めてオープンソース化したPaddlePaddleがHuggingFaceで使えるようになる
     - 画像系はこれからでPaddleNLPが先行しているらしい。
     - そのうち物体検出等(PaddleDetection)も統合されると利用ははかどりそう。
-
-- YOLOXとLambdaと私
-  - [AWS LambdaのコンテナデプロイでYOLOv5の推論エンドポイントを作成する](https://dev.classmethod.jp/articles/aws-lambda-container-deploy-yolov5-inference-endpoint/)
 
 ## NLP
 
@@ -142,6 +146,9 @@
     - 単語間の関係性や、事前学習から察するにNERにも強いと予想。
 
 ## CV
+
+- YOLOXとLambdaと私
+  - [AWS LambdaのコンテナデプロイでYOLOv5の推論エンドポイントを作成する](https://dev.classmethod.jp/articles/aws-lambda-container-deploy-yolov5-inference-endpoint/)
 
 - Box2Mask
   - [【論文】[2212.01579] Box2Mask: Box-supervised Instance Segmentation via Level-set Evolution](https://arxiv.org/abs/2212.01579)

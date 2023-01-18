@@ -66,3 +66,9 @@ PARTITION (year = '2022', month = '10', day = '25')
 
 * 参考
   * [Athenaのstruct型でオブジェクトの要素が増減したときの読み込みの様子を調べた | DevelopersIO](https://dev.classmethod.jp/articles/athena_struct_json_element_changes/)
+
+## external_location
+
+AthenaのCTASはexternal_locationで結果の保存先を変更できる
+
+- [https://docs.aws.amazon.com/ja_jp/athena/latest/ug/considerations-ctas.html](https://docs.aws.amazon.com/ja_jp/athena/latest/ug/considerations-ctas.html)
