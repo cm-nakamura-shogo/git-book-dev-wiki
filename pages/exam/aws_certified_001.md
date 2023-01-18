@@ -66,3 +66,4 @@
   - https://dev.classmethod.jp/articles/got-all-aws-certification-in-new-grads-year/
 - AWS ソリューションアーキテクト アソシエイト試験 対策動画
   - https://www.youtube.com/watch?v=fsz6G45A4H4
+- [SysOpsアドミニストレーター試験対策でラボ環境を体験してみた | DevelopersIO](https://dev.classmethod.jp/articles/sysops-administrator-lab-trial/)

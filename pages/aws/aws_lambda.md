@@ -86,3 +86,23 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 ちなみにVPC LambdaをpublicなVPC（IGWあり）に配置する場合、public IPをもつENIをVPC LambdaにアタッチしないとIGWと接続できないらしい。
 
 - [VPC LambdaはIGWからインターネットに出られないわけではなかったという話 | DevelopersIO](https://dev.classmethod.jp/articles/lambda-vpc-with-global-address/)
+
+## Lambdaのリトライ
+
+リトライのRequest Idは同じになるらしい。
+
+- [AWS Lambda の呼び出しタイプを軽く整理する - ダメ元エンジニアのお勉強おメモ](https://rasp.hateblo.jp/entry/2022/06/18/181511)
+
+なのでリトライ回数に応じて処理を帰るなどの事例もある。
+
+- [Lambdaのリトライ回数に応じて処理を変えたい](https://zenn.dev/shimo_s3/articles/c2895880138d19)
+
+## 【アプデ】SQSをイベントソースとして利用する際に同時実行数が設定できるように
+
+これまでSQSをイベントソースとする際の同時実行数は、Lambda関数の「同時実行の予約」で行っていたが、直感的に設定が可能になった。
+
+- [[アップデート] AWS LambdaのAmazon SQSイベントソースで最大同時実行数を指定できるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/update-aws-lambda-event-source-amazon-sqs-concurrency/)
+
+## CDKでLambdaからSlack通知する方法
+
+- [AWS利用料金を毎日Slackに通知する仕組みをCDKで作りたくてやってみた | DevelopersIO](https://dev.classmethod.jp/articles/awscdk-costexplorer-notify-to-slack/)

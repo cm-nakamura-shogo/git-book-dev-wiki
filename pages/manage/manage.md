@@ -74,3 +74,36 @@
 ## 会議の方法
 
 - [1つでも該当すると、「会議の成功率」は5分の1以下　AIが導き出した、会議の成功を阻む5要素とは - ログミーBiz](https://logmi.jp/business/articles/327251)
+
+## リモートワークや1on1について
+
+- [「toCとtoBの垣根は時間をかけて解消」「評価に“個人への期待”を入れてバランスをとる」　Retty×キャディが語る、事業・エンジニア組織拡大で起きた課題とその向き合い方 - ログミーTech](https://logmi.jp/tech/articles/327987)
+
+## 組織に変化を起こす方法
+
+- [なぜ変化を起こすのが難しいのか？ - 数年以上にわたって難しさに向き合い・考え取り組んできたこと / The reason why changing organization is so hard - What I thought and faced for more than several years - Speaker Deck](https://speakerdeck.com/iwashi86/the-reason-why-changing-organization-is-so-hard-what-i-thought-and-faced-for-more-than-several-years)
+  - ちょっとした「うっ」は成長のチャンス
+  - 迷ったらつらい方を選ぶ
+  - 信頼貯金
+  - 発信を続けることにより、いつのまにか片方向の知人が増える
+  - エレベーターピッチならぬ懇親会ピッチ
+  - 辞める気になって会社に働きかけてみましょう（本当にやれることを全部やっているか？）
+  - 社内のすごい人をランチに誘う
+
+
+## 合意形成
+
+- [「笑顔の合意」のテクニック - 噛み合わない会話と対立を克服するための、エモさを排した実践的なスキルと技法 - - Speaker Deck](https://speakerdeck.com/hageyahhoo/xiao-yan-nohe-yi-notekunituku-nie-mihe-wanaihui-hua-todui-li-woke-fu-surutameno-emosawopai-sitashi-jian-de-nasukirutoji-fa)
+  - 怒りの他人事化は面白かった。
+
+## OKR
+
+- [チームのパフォーマンスを引き出す、ワクワクするプロダクトゴール、OKR / Waku-waku Product Goal and OKR - Speaker Deck](https://speakerdeck.com/navitimejapan/waku-waku-product-goal-and-okr)
+
+## 信頼
+
+- [会って2日でお客様に信頼される仕事術を見た｜SHIFT Group 技術ブログ｜note](https://note.com/shift_tech/n/nef57b56ff374)
+
+## スライド作成
+
+- [プレゼンスライドがみるみる良くなる基本の推敲技術 -事例付き解説-｜石原尚（大阪大学教員）｜note](https://note.com/hisashi_is/n/n188b42f83dda)

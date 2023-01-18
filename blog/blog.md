@@ -25,6 +25,17 @@
 
 ## アプデ
 
+- [Google Cloud、小売業向けの新たな AI ツールを発表](https://cloud.google.com/blog/ja/products/ai-machine-learning/google-cloud-unveils-new-ai-tools-for-retailers/)
+  - 新たな棚卸用 AI で小売業の商品供給力向上を支援（現在、全世界でプレビュー版を提供中）
+    - Vertex AI Vision をベースに、商品認識とタグ認識の 2 つの ML モデルを搭載した棚卸 AIの提供
+  - 小売業者向け Discovery AI ソリューションの新たな AI 機能（こちらはGA）
+    - 買い物客がカテゴリを選択すると、ML を利用して小売業者の EC サイトで最適な商品の並び順を選択可能に
+  - Retail Search ソリューションの機能を強化（こちらはGA）
+    - パーソナライズされた検索および閲覧結果を実現
+  - Recommendations AI の新しいアップグレード（こちらはGA）
+    - 新たなページレベルでの最適化機能
+    - 新たに追加した収益最適化機能
+    - 新しい Buy-it-Again モデル : 顧客の買い物履歴を活用し、リピート購入の見込みに関するパーソナライズされたレコメンデーションを提供
 - [【アプデ】Personalizeが新レシピ「Trending Now」を追加](https://aws.amazon.com/jp/about-aws/whats-new/2023/01/amazon-personalize-new-recipe-trending-now/)
   - トレンドアイテムを特定する頻度を定義することができ、30分、1時間、3時間、1日ごとにおすすめアイテムを更新するオプションが用意
   - 既存のカスタムデータセットグループにTrending Nowソリューションを作成
@@ -80,6 +91,18 @@
   - [時系列波形データの分類](https://qiita.com/tharashi/items/81ca83c83a7550901c87)
     - tslearnというライブラリを使ってクラスタリングする事例
     - 手法はk-shape法というもので2015年に書かれたアルゴらしい
+
+- HuggingFace
+  - [【HuggingFace】Transformersを使って画像の類似性システムを構築する方法](https://huggingface.co/blog/image-similarity)
+    - 埋め込みベクトルのコサイン類似度を使うらしい
+    - 軽いブログネタにはなるか
+  - [【HuggingFace】PaddlePaddleがHuggingFaceで使えるように](https://huggingface.co/blog/paddlepaddle)
+    - 2016年にBaiduが初めてオープンソース化したPaddlePaddleがHuggingFaceで使えるようになる
+    - 画像系はこれからでPaddleNLPが先行しているらしい。
+    - そのうち物体検出等(PaddleDetection)も統合されると利用ははかどりそう。
+
+- YOLOXとLambdaと私
+  - [AWS LambdaのコンテナデプロイでYOLOv5の推論エンドポイントを作成する](https://dev.classmethod.jp/articles/aws-lambda-container-deploy-yolov5-inference-endpoint/)
 
 ## NLP
 
@@ -193,3 +216,10 @@
     - 中身については深く書いてなかった、指数平滑化をうまく使うらしい。
 - メタ特徴量について
   - [【Kaggle】American Express - Default Predictionコンペで金メダルを獲得しました - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2022/12/22/154432)
+
+## 理論
+
+- 損失関数
+  - [[2301.05579] A survey and taxonomy of loss functions in machine learning](https://arxiv.org/abs/2301.05579)
+    - 損失関数を体系的に整理した論文らしい。
+    - 結構難しそうだけどきちんと読んだ方がよさそう。

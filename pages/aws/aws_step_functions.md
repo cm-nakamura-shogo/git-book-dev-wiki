@@ -27,3 +27,9 @@ re:Invent 2022, 2022/12にリリースされた機能。
 元々並列実行は対応していたものの、より大規模なものに対応したっぽい。
 
 - [AWS Step Functionsで大規模な並列処理を実施できるDistributed Mapを試してみた | DevelopersIO](https://dev.classmethod.jp/articles/distributed-map-which-can-perform-large-scale-parallel-processing-with-aws-step-functions/)
+
+## 特定の時間帯のみ実行する方法
+
+Wait タスクの TimestampPath が過去の時刻場合は即実行されるのが、味噌らしい。
+
+- [特定の時間帯のみ AWS Step Functions のタスクを実行するための Python コードを書いてみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-execute-task-specific-time-with-python-code/)
