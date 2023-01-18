@@ -34,3 +34,7 @@
 
 - NIIによるニコニコ動画のデータセット
   - [情報学研究データリポジトリ ニコニコデータセット](https://www.nii.ac.jp/dsc/idr/nico/nico.html)
+
+## デモ用モック
+
+- [Mockaroo](https://kakakakakku.hatenablog.com/entry/2023/01/18/190248)
