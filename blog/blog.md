@@ -83,6 +83,12 @@
   - [テーブルデータではcudfだけではなくpolarsというものも良いらしいというのを受信](https://twitter.com/0verfit/status/1615271807191486466)
     - cudfはGPUが必要。
     - cudfを使えない人たちはpolarsがいいと複数人が回答しており興味深い
+  - pandas用の100本ノックやってみた記事が出てきている
+    - [Polarsでデータサイエンス100本ノックを解く（前編） - Qiita](https://qiita.com/_jinta/items/28442d25bba067c13bb7)
+    - [Python初学者のためのPandas100本ノック - Qiita](https://qiita.com/kunishou/items/bd5fad9a334f4f5be51c)
+  - 移行ガイドは貞松さんがシェアしてくれたやつが良い
+    - [pandasから移行する人向け polars使用ガイド - Qiita](https://qiita.com/nkay/items/9cfb2776156dc7e054c8)
+  - これもブログ書きたいわね
 
 - TorchServe
   -  [【CADDi Tech Blog】Vertexで3ヶ月で作る運用可能なML API基盤](https://caddi.tech/archives/4123)
@@ -188,6 +194,10 @@
 
 ## 音声
 
+- [ReazonSpeech: Whisper large-v2並みの精度でパラメータが1/15になった日本語特化認識モデル](https://research.reazon.jp/projects/ReazonSpeech/)
+  - ESPnetが異様に使いづらかった記憶だが、HuggingFaceから利用可能ということで期待している
+  - 検証ブログ書くぞ
+
 - WhisperX
   - [WhisperX: Whisperと音素単位のASRを使って正確な音素単位のアラインメントを実行する](https://qiita.com/syoyo/items/98377869b037a87f1634)
   - Whisperだけでは長い発話単位なので、それで正確な発話位置がわかりそう
@@ -230,3 +240,11 @@
   - [[2301.05579] A survey and taxonomy of loss functions in machine learning](https://arxiv.org/abs/2301.05579)
     - 損失関数を体系的に整理した論文らしい。
     - 結構難しそうだけどきちんと読んだ方がよさそう。
+
+- [Self-Supervised Learning - Speaker Deck](https://speakerdeck.com/naok615/self-supervised-learning)
+  - 自己教師有学習についてかなり網羅的でよい
+
+- [Deep Learning Tuning Playbook](https://github.com/google-research/tuning_playbook)が話題
+  - 日本語情報もでてきており必見
+    - [Google Researchの神資料を読み解いてみる①【Deep Learning Tuning Playbook】 - Qiita](https://qiita.com/iykuetboo/items/d2975feb46627060b9a1)
+    - [Valkyrja3607/tuning_playbook_ja: ディープラーニングモデルの性能を体系的に最大化するためのプレイブック](https://github.com/Valkyrja3607/tuning_playbook_ja)
