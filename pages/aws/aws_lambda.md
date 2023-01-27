@@ -106,3 +106,11 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 ## CDKでLambdaからSlack通知する方法
 
 - [AWS利用料金を毎日Slackに通知する仕組みをCDKで作りたくてやってみた | DevelopersIO](https://dev.classmethod.jp/articles/awscdk-costexplorer-notify-to-slack/)
+
+## Lambdaで新しい「ランタイム管理設定」が追加されました(2023-01-24)
+
+ランタイムそのもののバージョン制御ではない（3.8 -> 3.9ではない）ので注意が必要。
+
+関数の更新にアップデートするなどが選択できるが、自動が推奨。関数を更新する予定が無い場合は自動にすべきとのこと。
+
+- [[アップデート] AWS Lambdaで新しい「ランタイム管理設定」が追加されました | DevelopersIO](https://dev.classmethod.jp/articles/aws-lambda-supports-runtime-management-controls/)

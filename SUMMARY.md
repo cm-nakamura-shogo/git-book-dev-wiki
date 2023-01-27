@@ -167,6 +167,7 @@
   - [記事                  ](pages/design/design_article.md)
   - [個人開発スタック      ](pages/design/design_stack.md)
   - [継承                  ](pages/design/design_inheritance.md)
+  - [QA                    ](pages/design/design_qa.md)
 - マネジメント
   - [マネジメント          ](pages/manage/manage.md)
   - [採用                  ](pages/manage/manage_recruit.md)

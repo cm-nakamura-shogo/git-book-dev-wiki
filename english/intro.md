@@ -1,4 +1,13 @@
 
+## introduce3
+
+```
+Nice to meet you, Olawale San. My name is Shogo Nakamura.
+I am also a member of ML-team.
+I always read your blog about machine learning.
+I would be happy to exchange various information about machine learning.
+```
+
 ## introduce2
 
 ```
@@ -24,4 +33,10 @@ Nice to meet you.
 ```
 Please say again slowly.
 Could you ask me again?
+```
+
+## 考え中
+
+```
+Let me think about it.
 ```
