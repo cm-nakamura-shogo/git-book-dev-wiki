@@ -107,3 +107,7 @@
 ## スライド作成
 
 - [プレゼンスライドがみるみる良くなる基本の推敲技術 -事例付き解説-｜石原尚（大阪大学教員）｜note](https://note.com/hisashi_is/n/n188b42f83dda)
+
+## 報告の仕方
+
+- [私のプロジェクトで運用している報告・相談方法を公開します！ | DevelopersIO](https://dev.classmethod.jp/articles/how_to_write_reports/)
