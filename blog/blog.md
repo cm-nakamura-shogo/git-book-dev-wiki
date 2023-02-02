@@ -106,6 +106,11 @@
     - 手法はk-shape法というもので2015年に書かれたアルゴらしい
 
 - HuggingFace
+  - [【Hugging Face】Hugging Faceでのコンピュータビジョンの現状](https://huggingface.co/blog/cv_state)
+    - CV分野におけるHugging Faceについて総括した記事。
+    - ViTへの対応をベースに様々なタスクに対応してきており、Transformerベース以外のConvNeXt、ResNet、RegNetなどの純粋な畳み込みアーキテクチャも含んできている。
+    - CV界はライブラリがたくさん混在（MMLabはあるんだけど使用感がそこまで良くない…）してるので、解決を個人的に期待している。
+    - 物体検出くらいはこいつでちょっと試してみたいと常々思っている。
   - [【HuggingFace】Transformersを使って画像の類似性システムを構築する方法](https://huggingface.co/blog/image-similarity)
     - 埋め込みベクトルのコサイン類似度を使うらしい
     - 軽いブログネタにはなるか
