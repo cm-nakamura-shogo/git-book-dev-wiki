@@ -14,3 +14,9 @@ NATゲートウェイがネットワークアドレス変換に使用するプ�
 
 - 参考
   - [https://aws.amazon.com/jp/about-aws/whats-new/2022/11/amazon-nat-gateway-allows-select-private-ip-address-network-address-translation/](https://aws.amazon.com/jp/about-aws/whats-new/2022/11/amazon-nat-gateway-allows-select-private-ip-address-network-address-translation/)
+
+## NATゲートウェイに複数のIPアドレスを追加することで、一意の宛先への最大44万件の同時接続をサポートするように(2023-02)
+
+同時接続数が8倍になった様子？
+
+- [Amazon increases NAT Gateway’s capacity to support concurrent connections to a unique destination](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/amazon-nat-gateways-capacity-concurrent-connections-unique-destination/)
