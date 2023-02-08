@@ -14,7 +14,6 @@
 - AWS
   - Comprehend
   - Rekognition
-  - Translate
   - Lookout for Equipment
   - Fraud Detector
 - Google Cloud
@@ -23,19 +22,12 @@
   - Vertex AI Matching Engine
   - Vertex AI Feature Store Streaming ingestion
 
-## アプデ
+## アプデ(AWS)
 
-- [Google Cloud、小売業向けの新たな AI ツールを発表](https://cloud.google.com/blog/ja/products/ai-machine-learning/google-cloud-unveils-new-ai-tools-for-retailers/)
-  - 新たな棚卸用 AI で小売業の商品供給力向上を支援（現在、全世界でプレビュー版を提供中）
-    - Vertex AI Vision をベースに、商品認識とタグ認識の 2 つの ML モデルを搭載した棚卸 AIの提供
-  - 小売業者向け Discovery AI ソリューションの新たな AI 機能（こちらはGA）
-    - 買い物客がカテゴリを選択すると、ML を利用して小売業者の EC サイトで最適な商品の並び順を選択可能に
-  - Retail Search ソリューションの機能を強化（こちらはGA）
-    - パーソナライズされた検索および閲覧結果を実現
-  - Recommendations AI の新しいアップグレード（こちらはGA）
-    - 新たなページレベルでの最適化機能
-    - 新たに追加した収益最適化機能
-    - 新しい Buy-it-Again モデル : 顧客の買い物履歴を活用し、リピート購入の見込みに関するパーソナライズされたレコメンデーションを提供
+- [【アプデ】Fraud Detector (AFD) がコールドスタート機能の提供を開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/amazon-fraud-detector-cold-start-model-training-limited-historical-data/)
+  - 従来は、10K以上のラベル付きイベントと少なくとも400件の不正事例を提供する必要があった
+  - このアプデにより、50件のラベル付き不正イベントと50件のラベルなしイベントのみで構築が可能
+  - これは良アップデートな気がする。ブログ化希望。
 - [【アプデ】Personalizeが新レシピ「Trending Now」を追加](https://aws.amazon.com/jp/about-aws/whats-new/2023/01/amazon-personalize-new-recipe-trending-now/)
   - トレンドアイテムを特定する頻度を定義することができ、30分、1時間、3時間、1日ごとにおすすめアイテムを更新するオプションが用意
   - 既存のカスタムデータセットグループにTrending Nowソリューションを作成
@@ -44,8 +36,6 @@
   - タグに基づくアクセス制御などが可能に。案件で使えるかもしれない。
 - [Document AI OCR解説に関する日本語記事がでている](https://cloud.google.com/blog/ja/products/ai-machine-learning/top-reasons-to-use-gcp-document-ai-ocr)
   - Textractと比較したいところ
-- [【ブログ】Document AI OCRエンジンに3つの新機能を追加](https://cloud.google.com/blog/products/ai-machine-learning/top-reasons-to-use-gcp-document-ai-ocr/?hl=en)
-  - Document AI最近元気だな。
 - [【アプデ】TranslateでのネストされたS3フォルダに保存されたファイルの翻訳サポートを開始](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/amazon-translate-support-files-stored-s3-nested-folders/)
   - 特に言うことはなさそう
 - [【アプデ】Translateでのバッチ処理時にファイル毎に言語判定が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/amazon-translate-language-detection-support-batch-translation/)
@@ -57,9 +47,6 @@
 - [【アプデ】Rekognition Content Moderationのモデルが改善し誤検出を大幅に低減](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/amazon-rekognition-labels-improves-accuracy-existing-labels-video/)
   - Content Moderationは、不適切、不要、または不快な画像や動画を検出できるディープラーニングベースの機能
   - 今回、電子商取引、ソーシャルメディア、オンラインコミュニティのコンテンツの誤検出率を大幅に低減し、本当に安全ではないコンテンツの検出率を低下させることなく実現。
-- [【アプデ】Document AI OCR ProcessorがデジタルPDFの埋め込みテキストの抽出に対応](https://cloud.google.com/release-notes#December_19_2022)
-  - PDFに非デジタルテキストが含まれている場合、光学式OCRモデルへ自動フォールバック
-  - Document AI OCR に高度なバージョニングサポート
 - [【アプデ】Fraud DetectorでData Model Explorerを提供開始](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/amazon-fraud-detector-data-models-explorer/)
   - お客様のビジネス目標に沿った不正検知MLモデルをトレーニングするために必要な、推奨されるデータのガイダンスを提供
 - [【アプデ】Forecastでコールドスタート予測に対応する新しいアプローチが発表](https://aws.amazon.com/jp/about-aws/whats-new/2022/11/amazon-forecast-generates-predictions-products-historical-data-more-accurate/)
@@ -72,6 +59,25 @@
 - [【アプデ】RekognitionでImageProperties機能のサポート](https://awsapichanges.info/archive/changes/b4d341-rekognition.html)
   - すでにブログ化はされている。
     - [Amazon Rekognition のラベル検出機能にドミナントカラーと画像品質の検出オプションが追加されました | DevelopersIO](https://dev.classmethod.jp/articles/amazon-rekognition-detect-image-properties/)
+
+## アプデ(Google Cloud)
+
+- [Google Cloud、小売業向けの新たな AI ツールを発表](https://cloud.google.com/blog/ja/products/ai-machine-learning/google-cloud-unveils-new-ai-tools-for-retailers/)
+  - 新たな棚卸用 AI で小売業の商品供給力向上を支援（現在、全世界でプレビュー版を提供中）
+    - Vertex AI Vision をベースに、商品認識とタグ認識の 2 つの ML モデルを搭載した棚卸 AIの提供
+  - 小売業者向け Discovery AI ソリューションの新たな AI 機能（こちらはGA）
+    - 買い物客がカテゴリを選択すると、ML を利用して小売業者の EC サイトで最適な商品の並び順を選択可能に
+  - Retail Search ソリューションの機能を強化（こちらはGA）
+    - パーソナライズされた検索および閲覧結果を実現
+  - Recommendations AI の新しいアップグレード（こちらはGA）
+    - 新たなページレベルでの最適化機能
+    - 新たに追加した収益最適化機能
+    - 新しい Buy-it-Again モデル : 顧客の買い物履歴を活用し、リピート購入の見込みに関するパーソナライズされたレコメンデーションを提供
+- [【ブログ】Document AI OCRエンジンに3つの新機能を追加](https://cloud.google.com/blog/products/ai-machine-learning/top-reasons-to-use-gcp-document-ai-ocr/?hl=en)
+  - Document AI最近元気だな。
+- [【アプデ】Document AI OCR ProcessorがデジタルPDFの埋め込みテキストの抽出に対応](https://cloud.google.com/release-notes#December_19_2022)
+  - PDFに非デジタルテキストが含まれている場合、光学式OCRモデルへ自動フォールバック
+  - Document AI OCR に高度なバージョニングサポート
 - [【アプデ】Document AI Warehouse](https://cloud.google.com/release-notes#November_10_2022)
   - Document AIはTextractのようなテキスト抽出サービス。
   - Document AI Warehouseは、ドキュメントと抽出データの検索や保管、管理を一元的なプラットフォーム上で行える。
@@ -198,10 +204,6 @@
       - imgaugというライブラリを使っている。
 
 ## 音声
-
-- [ReazonSpeech: Whisper large-v2並みの精度でパラメータが1/15になった日本語特化認識モデル](https://research.reazon.jp/projects/ReazonSpeech/)
-  - ESPnetが異様に使いづらかった記憶だが、HuggingFaceから利用可能ということで期待している
-  - 検証ブログ書くぞ
 
 - WhisperX
   - [WhisperX: Whisperと音素単位のASRを使って正確な音素単位のアラインメントを実行する](https://qiita.com/syoyo/items/98377869b037a87f1634)
