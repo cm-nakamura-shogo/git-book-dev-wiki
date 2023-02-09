@@ -83,6 +83,12 @@
   - Document AI Warehouseは、ドキュメントと抽出データの検索や保管、管理を一元的なプラットフォーム上で行える。
   - このWarehouse上での、テキスト抽出機能が有効になったという意味と考えられる。
 
+## その他サービス
+
+- [論文検索サービスSciSpaceがやばかった](https://typeset.io/papers/)
+  - 要約の精度がかなり良い。
+  - 論文に関する質問にチャットボットが答えてくれる、など。
+
 ## フレームワーク
 
 - polar
@@ -112,6 +118,8 @@
     - 手法はk-shape法というもので2015年に書かれたアルゴらしい
 
 - HuggingFace
+  - [【Hugging Face】音声合成・変換・認識が可能なモデルSpeechT5がTransformersライブラリで利用可能に](https://huggingface.co/blog/speecht5)
+    - ちょっと気になる。認識はWhisperより良いってことはないだろうから音声合成と音声変換が特に。
   - [【Hugging Face】Hugging Faceでのコンピュータビジョンの現状](https://huggingface.co/blog/cv_state)
     - CV分野におけるHugging Faceについて総括した記事。
     - ViTへの対応をベースに様々なタスクに対応してきており、Transformerベース以外のConvNeXt、ResNet、RegNetなどの純粋な畳み込みアーキテクチャも含んできている。
