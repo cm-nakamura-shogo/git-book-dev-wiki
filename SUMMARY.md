@@ -122,6 +122,7 @@
     - [SAA振り返り                 ](pages/exam/aws_certified_004_saa_exam.md)
     - [Blackbelt                   ](pages/exam/aws_certified_005_sap_blackbelt.md)
     - [SAPノート                   ](pages/exam/aws_certified_006_sap_note.md)
+    - [DOP対策                     ](pages/exam/aws_dop.md)
   - Google Cloud
     - [ACE対策ノート               ](pages/exam/google_cloud_ace_note.md)
 - Linux
