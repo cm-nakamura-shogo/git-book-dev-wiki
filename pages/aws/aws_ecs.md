@@ -72,3 +72,13 @@ Servie Discoveryと違ってDNSを使わず、サービス間の通信のメト�
 - [FargateでWebSocertサーバーを構築する](https://dev.classmethod.jp/articles/websocket-alb-fargate/)
   - バックエンドはNode.jsでwsというモジュールを使っている。
   - きちんとALBを立てて複数のFargateサービスを使っている。
+
+## タスクロールとタスク実行ロール
+
+タスク実行ロールは、ECRやCloudWatchなどよりインフラよりなイメージで、要するにコンテナを起動するホスト側が意識するロール。
+
+タスクロールは、コンテナで動作するアプリケーションに持たせたいロールで、S3にアクセスするなどはこちらに設定。
+
+なお、ECS Execでログを表示するには、タスクロールを設定する必要があるらしい。
+
+- [ECS Exec のログ記録はタスクロールで行われるため注意しよう | DevelopersIO](https://dev.classmethod.jp/articles/ecs-exec-use-task-role-for-logging/)

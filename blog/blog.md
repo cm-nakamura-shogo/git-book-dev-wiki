@@ -24,6 +24,9 @@
 
 ## アプデ(AWS)
 
+- [【ブログ】SageMakerの新しい地理空間機能を利用した干ばつ監視](https://aws.amazon.com/jp/blogs/machine-learning/monitoring-lake-mead-drought-using-the-new-amazon-sagemaker-geospatial-capabilities/)
+  - re:invent2022で発表された新機能の具体例
+  - 動かしてみるのに良さそう
 - [【アプデ】Fraud Detector (AFD) がコールドスタート機能の提供を開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/amazon-fraud-detector-cold-start-model-training-limited-historical-data/)
   - 従来は、10K以上のラベル付きイベントと少なくとも400件の不正事例を提供する必要があった
   - このアプデにより、50件のラベル付き不正イベントと50件のラベルなしイベントのみで構築が可能
@@ -90,17 +93,6 @@
   - 論文に関する質問にチャットボットが答えてくれる、など。
 
 ## フレームワーク
-
-- polar
-  - [テーブルデータではcudfだけではなくpolarsというものも良いらしいというのを受信](https://twitter.com/0verfit/status/1615271807191486466)
-    - cudfはGPUが必要。
-    - cudfを使えない人たちはpolarsがいいと複数人が回答しており興味深い
-  - pandas用の100本ノックやってみた記事が出てきている
-    - [Polarsでデータサイエンス100本ノックを解く（前編） - Qiita](https://qiita.com/_jinta/items/28442d25bba067c13bb7)
-    - [Python初学者のためのPandas100本ノック - Qiita](https://qiita.com/kunishou/items/bd5fad9a334f4f5be51c)
-  - 移行ガイドは貞松さんがシェアしてくれたやつが良い
-    - [pandasから移行する人向け polars使用ガイド - Qiita](https://qiita.com/nkay/items/9cfb2776156dc7e054c8)
-  - これもブログ書きたいわね
 
 - TorchServe
   -  [【CADDi Tech Blog】Vertexで3ヶ月で作る運用可能なML API基盤](https://caddi.tech/archives/4123)
