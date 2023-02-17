@@ -1,5 +1,12 @@
 # 機械学習システム構成例
 
+## ML Enablement Workshop
+
+プロダクト開発者のためのMLワークショップ
+
+- [https://github.com/aws-samples/aws-ml-enablement-workshop](https://github.com/aws-samples/aws-ml-enablement-workshop)
+
+
 ## デザインパターン(メルカリ)
 - https://mercari.github.io/ml-system-design-pattern/README_ja.html
 
