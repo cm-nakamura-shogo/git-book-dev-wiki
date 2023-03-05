@@ -123,6 +123,19 @@
   - AutoScalingReplacingUpdate : ASGごと置き換える
   - AutoScalingRollingUpdate : 同じASGのインスタンスをローリングアップデートする
 
+- ヘルパースクリプト
+  - スタック内のEC2インスタンスの構築・変更等を便利にする機能を提供
+  - 実体は４つの実行ファイルになっているので、UserDataやあるファイルのconfig内で呼ぶ感じ
+  - cfn-init
+    - リソースメタデータの取得と解釈、パッケージのインストール、ファイルの作成、およびサービスの開始で使用
+  - cfn-signal
+    - CreationPolicy または WaitCondition でシグナルを送信するために使用
+    - 前提となるリソースやアプリケーションの準備ができたときに、スタックの他のリソースを同期できるようにする
+  - cfn-get-metadata
+    - 特定のキーへのリソースまたはパスのメタデータを取得するために使用します。
+  - cfn-hup
+    - メタデータへの更新を確認し、変更が検出されたときにカスタムフックを実行するために使用します。
+
 ### AWS Config
 
 - 概要
@@ -367,6 +380,31 @@
   - 環境変数の一覧は以下の通り
     - [Environment variables in build environments - AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-env-vars.html)
 
+- フェーズ
+  - phases/install
+    - パッケージのインストールのみに利用することを推奨
+    - phases/install/runtime-versions
+    - phases/install/commands
+  - phases/pre_build
+    - ビルド前に実行するコマンドを記述。ECRへのサインイン、npmの依存関係のインストールなど
+    - phases/pre_build/commands
+  - phases/build
+    - ビルド中に実行するコマンドを記述
+    - phases/build/commands
+  - phases/post_build
+    - ビルド後に事項するコマンドを記述。ECRへのpush、アーティファクトをjar,warにするなど
+    - phases/post_build/commands
+  - どこのphaseでも書けるやつ
+    - phases/*/run-as
+      - コマンドを実行する Linux ユーザーを指定。グローバル指定よりもphase内が優先。
+    - phases/*/on-failure
+      - フェーズ中に障害が発生した場合に取るべきアクションをABORT, CONTINUEで指定
+    - phases/*/finally
+      - commandsブロックのコマンドの後に実行される
+      - commandsブロックが失敗しても実行される
+  - 参考
+    - [AWS再入門ブログリレー2022 AWS CodeBuild編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introducation-2022-aws-codebuiold/)
+
 - ECRとの連携
   - CLIヘルパーを使用してECRの資格情報を取得し、イメージをビルドしてからECRにプッシュする。
   - ECRの認証情報の取得は、環境変数ではなく、CodeBuild上のIAMロールとCLIヘルパーを使用する必要がある。
@@ -405,6 +443,16 @@
     - このフックが失敗した場合にロールバックするようにCodeDeployを構成することが可能
   - フック一覧
     - [AppSpec 'hooks' section - AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html)
+    - フックはEC2/オンプレ, Lambda, ECSで異なっている
+    - Lambdaのフック
+      - BeforeAllowTraffic, AfterAllowTraffic
+    - ECSのフック
+      - BeforeInstall, AfterInstall, AfterAllowTestTraffic, BeforeAllowTraffic, AfterAllowTraffic
+    - EC2/オンプレミスのフック
+      - かなり細かい単位でフックがあり、シナリオによっても異なる
+      - BlockTrafficの後、ApplicationStop,StartがBeforeInstall, AfterInstallの前後に追加
+      - 最後にBeforeAllowTrafficより更に前に、ValidateServiceが追加
+      - TestTraffic関連はない
 
 - Audo Scaling Groupの一時停止
   - デプロイ中にスケールアップイベントが発生した場合、新しいインスタンスは、古いアプリとなる可能性がある
@@ -413,13 +461,6 @@
     - これは、CodeDeployによるロードバランシングに使用されるcommon_functions.shスクリプトの設定によリ実施可能
     - HANDLE_PROCS=trueの場合、デプロイ処理中に以下のAmazon EC2 Auto Scalingのイベントが自動的に停止
 
-アズレバランス
-
-アラームノーティフィケーション
-
-予定されたアクション（ScheduledActions
-
-ReplaceUnhealthy（リプレイスアンヘルシー
 - 参考
   - [20210126_BlackBelt_CodeDeploy.pdf](https://d1.awsstatic.com/webinars/jp/pdf/services/20210126_BlackBelt_CodeDeploy.pdf)
 
@@ -670,6 +711,42 @@ ReplaceUnhealthy（リプレイスアンヘルシー
   - 現在はHVM AMIが推奨されており、対するものはPV AMI
   - 参考
     - [EC2の仮想化方式についてのおぼえがき - kasei_sanのブログ](https://blog.kasei-san.com/entry/2018/01/10/003933)
+
+### Amazon EC2 Auto Scaling
+
+- 簡易スケーリングポリシー
+  - ターゲット追跡スケーリングポリシーの通常設定
+  - アラーム設定に基づき１段階のスケーリングを実施
+
+- ステップスケーリングポリシー
+  - アラーム超過サイズに基づいて、インスタンス数を動的に調整する、複数段階のスケーリングを実施
+  - これにより、段階的なウォームアップ条件を設定可能
+
+- 手動スケーリング
+  - 希望容量を手動で調整する。
+
+- スケジュールされたスケーリング
+  - 実施日時を指定する。
+
+- スケールに24時間失敗し続けると、AUto Scalingが停止する可能性がある。
+
+- ヘルスチェック
+  - ELBとEC2どちらを利用するか設定する。
+
+- スケーリング時のメトリクス
+  - CPU使用率を使う。メモリ使用率を使ったトリガーはデフォルトで設定できない。
+
+- ライフサイクルフック
+  - 起動前（InService前）、終了後（Terminated前）にフックを作成可能
+  - フックでカスタムアクションを実施でき、アクションを完了するか、タイムアウト期間が終了するまで待機する
+  - デフォルトではタイムアウト期間は１時間であり、延長する場合はハートビートを記録し、タイムアウト期間の再開が必要
+  - カスタムアクションは例えば以下の構成
+    - CloudWatch Events (EventBridge)を使用してLambdaを実行
+      - いまではベストプラクティス、SNSとSQSと同じことがフックでできるため冗長
+    - SNS、SQSを使用
+  - ASGの起動終了時や、インスタンスのリプレイス、リフレッシュ、リバランシング、Warm Poolsの出入りで動作する
+
+
 ### AWS Elastic Beanstalk
 
 - 自動的にデプロイ・スケーリングを行うサービス。
