@@ -125,6 +125,9 @@
   - [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
   - [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
 
+- AWS
+  - [AWS Boto3](https://dev.classmethod.jp/articles/try-boto3-stubs/)
+
 ## コードスニペットの使い方
 
 - Visual Studio Codeに定型文（スニペット）を登録する方法

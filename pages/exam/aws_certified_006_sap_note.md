@@ -1761,7 +1761,7 @@ Transform: AWS::Serverless-2016-10-31
 
 * データ分析のBashスクリプト処理をBatch実行するなどでも使用する。
 
-### Auto Scaling
+### Amazon EC2 Auto Scaling
 
 - 簡易スケーリングポリシー
   - ターゲット追跡スケーリングポリシーの通常設定

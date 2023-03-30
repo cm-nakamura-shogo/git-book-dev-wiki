@@ -1,6 +1,7 @@
 # Table of contents
 
 - フロントエンド
+  - [導入      ](pages/frontend/frontend_intro.md)
   - [CSS       ](pages/frontend/frontend_css.md)
   - [HTML      ](pages/frontend/frontend_html.md)
   - [JavaScript](pages/frontend/frontend_javascript.md)
@@ -81,6 +82,7 @@
     - [AWS Step Functions       ](pages/aws/aws_step_functions.md)
     - [AWS System Manager       ](pages/aws/aws_system_manager.md)
     - [AWS CloudTrail           ](pages/aws/aws_cloudtrail.md)
+    - [AWS Cognito              ](pages/aws/aws_cognito.md)
   - ストレージ
     - [AWS Transfer Family      ](pages/aws/aws_transfer_family.md)
     - [AWS Storage Gateway      ](pages/aws/aws_storage_gateway.md)

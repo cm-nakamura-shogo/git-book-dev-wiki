@@ -82,3 +82,7 @@ Servie Discoveryと違ってDNSを使わず、サービス間の通信のメト�
 なお、ECS Execでログを表示するには、タスクロールを設定する必要があるらしい。
 
 - [ECS Exec のログ記録はタスクロールで行われるため注意しよう | DevelopersIO](https://dev.classmethod.jp/articles/ecs-exec-use-task-role-for-logging/)
+
+## Fargate SpotはSaving Planを使えない
+
+- [What are Savings Plans? - Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html)

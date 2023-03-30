@@ -33,3 +33,7 @@ re:Invent 2022, 2022/12にリリースされた機能。
 Wait タスクの TimestampPath が過去の時刻場合は即実行されるのが、味噌らしい。
 
 - [特定の時間帯のみ AWS Step Functions のタスクを実行するための Python コードを書いてみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-execute-task-specific-time-with-python-code/)
+
+## APIサポートが拡大(2023-02)
+
+- [[アップデート] AWS Step FunctionsのAWS SDK Integrationで、35のAWSサービスと1100のAPIアクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-new-35-services-api/)

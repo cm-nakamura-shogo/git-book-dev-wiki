@@ -1,4 +1,4 @@
-# AWS System Manager
+# AWS Systems Manager
 
 SSMと呼ばれることが多い。
 

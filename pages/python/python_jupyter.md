@@ -49,3 +49,7 @@ $ nbdiff-web notebook1.ipynb notebook1.ipynb
 ```sh
 jupyter nbconvert --to markdown sample.ipynb
 ```
+
+## JupyterHub
+
+- [AmazonLinux2にJupyterHubを構築する | DevelopersIO](https://dev.classmethod.jp/articles/al2-jupyterhub/)

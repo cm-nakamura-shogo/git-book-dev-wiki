@@ -8,6 +8,9 @@
 - 参考リンクだが、公式手順だけでもOK
   - https://zenn.dev/kenn/articles/ac128ed2775370#nvidia-drivers-for-wsl%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
 
+- コンテナ内でpipできない場合はこちらを試す
+  - [WSL2でresolv.confが消える問題の解決方法](https://zenn.dev/frog/articles/9ae2428be2825a)
+
 
 __<span style="color: red; ">※ここから先は古い情報※</span>__
 
