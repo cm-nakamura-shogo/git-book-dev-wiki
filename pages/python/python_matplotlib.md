@@ -15,3 +15,9 @@ print(sorted(fonts))
 ```python
 plt.rcParams['font.family'] = 'HackGen'
 ```
+
+## 日本語化
+
+japanize-matplotlibをimportすれば良いみたい。
+
+- [https://qiita.com/uehara1414/items/6286590d2e1ffbf68f6c](https://qiita.com/uehara1414/items/6286590d2e1ffbf68f6c)

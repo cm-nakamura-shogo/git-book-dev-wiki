@@ -114,3 +114,7 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 関数の更新にアップデートするなどが選択できるが、自動が推奨。関数を更新する予定が無い場合は自動にすべきとのこと。
 
 - [[アップデート] AWS Lambdaで新しい「ランタイム管理設定」が追加されました | DevelopersIO](https://dev.classmethod.jp/articles/aws-lambda-supports-runtime-management-controls/)
+
+## [Lambda関数の呼び出しタイプとリトライ方式まとめ](https://dev.classmethod.jp/articles/lambda-idempotency/)
+
+## [特定のセキュリティグループが関連づけられているLambda関数をワンライナーで取得してみた](https://dev.classmethod.jp/articles/sg-used-by-lambda/)

@@ -83,6 +83,8 @@
     - [AWS System Manager       ](pages/aws/aws_system_manager.md)
     - [AWS CloudTrail           ](pages/aws/aws_cloudtrail.md)
     - [AWS Cognito              ](pages/aws/aws_cognito.md)
+    - [AWS Application Composer ](pages/aws/aws_application_composer.md)
+    - [Amazon SNS               ](pages/aws/aws_sns.md)
   - ストレージ
     - [AWS Transfer Family      ](pages/aws/aws_transfer_family.md)
     - [AWS Storage Gateway      ](pages/aws/aws_storage_gateway.md)
@@ -90,16 +92,18 @@
     - [Amazon RDS               ](pages/aws/aws_rds.md)
     - [Amazon Aurora            ](pages/aws/aws_aurora.md)
     - [Amazon Neptune           ](pages/aws/aws_neptune.md)
+    - [Amazon DynamoDB          ](pages/aws/aws_dynamodb.md)
   - AIML
     - [AWS Personalize          ](pages/aws/aws_personalize.md)
     - [Amazon SageMaker         ](pages/aws/aws_sagemaker.md)
-  - Analysis
+  - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)
     - [AWS Glue                 ](pages/aws/aws_glue.md)
     - [Amazon QuickSight        ](pages/aws/aws_quicksight.md)
     - [Amazon OpenSearch Service](pages/aws/aws_opensearch.md)
     - [Amazon Location Service  ](pages/aws/aws_location_service.md)
+    - [AWS Clean Rooms          ](pages/aws/aws_clean_rooms.md)
 - クラウド開発
   - [Azure        ](pages/cloud/cloud_azure.md)
   - [GoogleCloud  ](pages/cloud/cloud_google_cloud.md)
@@ -171,10 +175,13 @@
   - [個人開発スタック      ](pages/design/design_stack.md)
   - [継承                  ](pages/design/design_inheritance.md)
   - [QA                    ](pages/design/design_qa.md)
+  - [セキュリティ          ](pages/design/design_security.md)
+  - [ネットワーク          ](pages/design/design_network.md)
 - マネジメント
   - [マネジメント          ](pages/manage/manage.md)
   - [採用                  ](pages/manage/manage_recruit.md)
   - [商談                  ](pages/manage/manage_sales.md)
+  - [Working Agreement     ](pages/manage/manage_working_agreement.md)
 - 学習コンテンツ
   - [学習媒体](pages/training/training_contents.md)
   - [書籍    ](pages/training/training_book.md)

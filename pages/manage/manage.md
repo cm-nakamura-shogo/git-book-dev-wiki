@@ -67,10 +67,6 @@
 　　・そのノートブックは構成管理が必要か
 ```
 
-## ワーキングアグリーメント
-
-- https://twitter.com/kajinari/status/1281528662404161536?s=20&t=NSf2PXr0B3lpTw_MqxA1cg
-
 ## 会議の方法
 
 - [1つでも該当すると、「会議の成功率」は5分の1以下　AIが導き出した、会議の成功を阻む5要素とは - ログミーBiz](https://logmi.jp/business/articles/327251)
@@ -111,3 +107,4 @@
 ## 報告の仕方
 
 - [私のプロジェクトで運用している報告・相談方法を公開します！ | DevelopersIO](https://dev.classmethod.jp/articles/how_to_write_reports/)
+- [PMはどうやってプロジェクトを進める？コミュニケーション・チーミングの側面から解説してみた](https://dev.classmethod.jp/articles/communication_and_teaming_project_promotion/)

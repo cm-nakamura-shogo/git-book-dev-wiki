@@ -218,3 +218,7 @@ shm             2.0G     0  2.0G   0% /dev/shm
 
 - 以下にまとまっているものを見つけた
   - [私家版 Dockerfile Pattern](https://gist.github.com/udzura/1515e20d9d2f0bbf187f)
+
+## 歴史
+
+- [Docker一強の終焉にあたり、押さえるべきContainer事情](https://zenn.dev/ttnt_1013/articles/f36e251a0cd24e)

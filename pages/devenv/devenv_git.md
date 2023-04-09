@@ -156,3 +156,9 @@ git branch -r
 ```
 git for-each-ref --sort=-committerdate refs/remotes/origin --format='%(authordate) %(refname)' | xargs -I{} printf "%s\n" {}
 ```
+
+## git rebase
+
+git rebase -> force-with-leaseの流れが良いらしい？
+
+- [https://twitter.com/chizu_potato/status/1634454907326717953?s=12&t=0nszgXsDXAd-L4WiCutIWg](https://twitter.com/chizu_potato/status/1634454907326717953?s=12&t=0nszgXsDXAd-L4WiCutIWg)

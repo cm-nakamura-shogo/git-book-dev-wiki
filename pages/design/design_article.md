@@ -12,3 +12,5 @@
   - https://qiita.com/katsunory/items/4e7611b057c664781636
 
 - [熱量を失ったサーバーレスという世界（個人の所感） - Sweet Escape](https://www.keisuke69.net/entry/2022/12/29/135620)
+- [「SaaS事業開発でやった10の失敗」](https://twitter.com/shin_sasaki19/status/1630432263359070208)
+- [Google Style Guides | styleguide](https://google.github.io/styleguide)

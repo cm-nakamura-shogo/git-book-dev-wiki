@@ -11,6 +11,8 @@ FargateとEC2の2タイプがあり、GPU/WindowsはEC2しか使用できない�
 
 SSMを使用してコンテナとの接続を確立することができる。
 
+- [[アップデート] 実行中のコンテナに乗り込んでコマンドを実行できる「ECS Exec」が公開されました | DevelopersIO](https://dev.classmethod.jp/articles/ecs-exec/)
+
 Auto ScalingとECS Execを同時使用はできないので注意が必要
 - [ECS Execの有効化が原因でECSタスクがPROVISIONING状態から遷移しなくなった話 | DevelopersIO](https://dev.classmethod.jp/articles/ecs-exec-cant-use-with-asg-capacity-provider/)
 
@@ -86,3 +88,7 @@ Servie Discoveryと違ってDNSを使わず、サービス間の通信のメト�
 ## Fargate SpotはSaving Planを使えない
 
 - [What are Savings Plans? - Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html)
+
+## 参考
+
+### [[小ネタ]ECSのCPUUtilizationとCPUUtilizedは同じ指標？](https://dev.classmethod.jp/articles/ecs-cpuutilized-vs-cpuutilization/)

@@ -15,3 +15,8 @@ VPCエンドポイント経由でアクセスが可能となった。
 ## メトリクスサポート(2023-02-21)
 
 - [AWS App Runner adds service level concurrency, CPU and Memory utilization metrics](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/aws-app-runner-concurrency-cpu-memory-utilization-metrics/)
+
+## 記事
+
+- [AWS App RunnerでホストしたNginxをCognito認証で保護する - YOMON8.NET](https://yomon.hatenablog.com/entry/2022/11/apprunner_cognito)
+- [LlamaIndexをApp Runner上で動かしてみた | DevelopersIO](https://dev.classmethod.jp/articles/llamaindex-on-app-runner/)

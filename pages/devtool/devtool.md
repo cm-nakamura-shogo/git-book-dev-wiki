@@ -31,3 +31,12 @@
 ## TeX生成
 
 - https://tex-image-link-generator.herokuapp.com/
+
+## Wireshark
+
+- linuxでもWiresharkする方法
+  - [[Wireshark] sshdumpを使って手元のマシンからEC2インスタンスのパケットキャプチャーをしてみた](https://dev.classmethod.jp/articles/wireshark-sshdump/)
+
+## Piping Server
+
+- [Piping Serverを使って起動直後のサーバにファイルをラクラク転送してみた！](https://dev.classmethod.jp/articles/piping-server-transfer-dirs-files/)
