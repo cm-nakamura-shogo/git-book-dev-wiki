@@ -67,17 +67,21 @@
   - ネットワーク
     - [AWS NAT Gateway          ](pages/aws/aws_nat_gateway.md)
     - [Amazon Route53           ](pages/aws/aws_route53.md)
+  - セキュリティ
+    - [Amazon Inspector         ](pages/aws/aws_inspector.md)
   - コンピューティング
     - [AWS Lambda               ](pages/aws/aws_lambda.md)
     - [Amazon ECS               ](pages/aws/aws_ecs.md)
     - [AWS ParallelCluster      ](pages/aws/aws_parallel_cluster.md)
     - [AWS Batch                ](pages/aws/aws_batch.md)
+    - [Amazon Lightsail         ](pages/aws/aws_lightsail.md)
   - アプリ開発
     - [Amazon API Gateway       ](pages/aws/aws_api_gateway.md)
     - [AWS App Runner           ](pages/aws/aws_app_runner.md)
     - [AWS CDK                  ](pages/aws/aws_cdk.md)
     - [Amazon Kinesis           ](pages/aws/aws_kinesis.md)
     - [AWS CodeBuild            ](pages/aws/aws_codebuild.md)
+    - [AWS CodePipeline         ](pages/aws/aws_codepipeline.md)
     - [Amazon Connect           ](pages/aws/aws_connect.md)
     - [AWS Step Functions       ](pages/aws/aws_step_functions.md)
     - [AWS System Manager       ](pages/aws/aws_system_manager.md)
@@ -85,6 +89,7 @@
     - [AWS Cognito              ](pages/aws/aws_cognito.md)
     - [AWS Application Composer ](pages/aws/aws_application_composer.md)
     - [Amazon SNS               ](pages/aws/aws_sns.md)
+    - [Amazon EventBridge       ](pages/aws/aws_eventbridge.md)
   - ストレージ
     - [AWS Transfer Family      ](pages/aws/aws_transfer_family.md)
     - [AWS Storage Gateway      ](pages/aws/aws_storage_gateway.md)

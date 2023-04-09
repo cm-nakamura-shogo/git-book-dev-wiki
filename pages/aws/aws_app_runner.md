@@ -1,22 +1,25 @@
 # AWS App Runner
 
-## VPCアクセス
+## 参考
 
-VPCエンドポイント経由でアクセスが可能となった。
+### [AWS App RunnerでホストしたNginxをCognito認証で保護する - YOMON8.NET](https://yomon.hatenablog.com/entry/2022/11/apprunner_cognito)
 
-- [[アップデート] AWS App RunnerでVPC内からのプライベートアクセスが可能になりました | DevelopersIO](https://dev.classmethod.jp/articles/aws-app-runner-supports-privately-accessible-services-amazon-vpc)
+### [LlamaIndexをApp Runner上で動かしてみた | DevelopersIO](https://dev.classmethod.jp/articles/llamaindex-on-app-runner/)
 
-## 環境変数系のサポート
+## アップデート
+
+### [2022-11-02 VPCエンドポイント経由でリソースへのアクセスが可能に](https://dev.classmethod.jp/articles/aws-app-runner-supports-privately-accessible-services-amazon-vpc)
+
+### [2023-01-06 環境変数系のサポート](https://dev.classmethod.jp/articles/app-runner-secrets-ssm-parameter/)
 
 環境変数ソースで Secrets Manager と SSM パラメータストアがサポートされた
 
-- [AWS App Runner の環境変数ソースで Secrets Manager と SSM パラメータストアがサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/app-runner-secrets-ssm-parameter/)
+### [2023-02-21 メトリクスサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/aws-app-runner-concurrency-cpu-memory-utilization-metrics/)
 
-## メトリクスサポート(2023-02-21)
+### [2023-02-22 HTTPからHTTPSへのリダイレクトがサポート](https://dev.classmethod.jp/articles/aws-app-runner-supports-http-to-https-redirect/)
 
-- [AWS App Runner adds service level concurrency, CPU and Memory utilization metrics](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/aws-app-runner-concurrency-cpu-memory-utilization-metrics/)
+### [2023-02-24 WAF機能のサポート](https://dev.classmethod.jp/articles/aws-app-runner-waf/)
 
-## 記事
+以下も参考に
 
-- [AWS App RunnerでホストしたNginxをCognito認証で保護する - YOMON8.NET](https://yomon.hatenablog.com/entry/2022/11/apprunner_cognito)
-- [LlamaIndexをApp Runner上で動かしてみた | DevelopersIO](https://dev.classmethod.jp/articles/llamaindex-on-app-runner/)
+- [AWS App RunnerのWAFを試してその裏側を予想してみた](https://dev.classmethod.jp/articles/try-and-inspect-aws-app-runner-waf/)

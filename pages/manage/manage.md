@@ -108,3 +108,4 @@
 
 - [私のプロジェクトで運用している報告・相談方法を公開します！ | DevelopersIO](https://dev.classmethod.jp/articles/how_to_write_reports/)
 - [PMはどうやってプロジェクトを進める？コミュニケーション・チーミングの側面から解説してみた](https://dev.classmethod.jp/articles/communication_and_teaming_project_promotion/)
+- [プロジェクトの役割をメンバーに伝えるためには？運用している方法を公開してみた](https://dev.classmethod.jp/articles/share_project_role/)

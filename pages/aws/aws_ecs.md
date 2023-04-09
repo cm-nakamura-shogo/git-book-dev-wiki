@@ -92,3 +92,11 @@ Servie Discoveryと違ってDNSを使わず、サービス間の通信のメト�
 ## 参考
 
 ### [[小ネタ]ECSのCPUUtilizationとCPUUtilizedは同じ指標？](https://dev.classmethod.jp/articles/ecs-cpuutilized-vs-cpuutilization/)
+
+## アップデート
+
+### [2023-02-27 非アクティブなタスク定義リビジョンの削除をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/amazon-ecs-deletion-inactive-task-definition-revisions/)
+
+こちらも
+- [ついにAmazon ECSの不要なタスク定義が削除できるようになりました！](https://dev.classmethod.jp/articles/update-amazon-ecs-delete-inactive-task-definition/)
+- [Amazon ECS タスク定義のリビジョンが「削除」をサポートしました！](https://dev.classmethod.jp/articles/amazon-ecs-task-definition-deletion/)

@@ -14,3 +14,7 @@
 - dは追加機能
 - xlargeはインスタンスサイズ
 - C5d.xlarge全体でインスタンスタイプ
+
+## アップデート
+
+### [2023-02-24 東京リージョンで「C7g」AWS Graviton 3のEC2が利用可能に](https://dev.classmethod.jp/articles/c7g-ec2-tokyo-region/)
