@@ -97,24 +97,30 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 
 - [Lambdaのリトライ回数に応じて処理を変えたい](https://zenn.dev/shimo_s3/articles/c2895880138d19)
 
-## 【アプデ】SQSをイベントソースとして利用する際に同時実行数が設定できるように
+## 参考記事
+
+### [2017-10-05 Lambda関数の呼び出しタイプとリトライ方式まとめ](https://dev.classmethod.jp/articles/lambda-idempotency/)
+
+### [2019-03-03 今度こそ理解する！俺式Lambda入門](https://dev.classmethod.jp/articles/lambda-my-first-step/)
+
+最初に読むのはすごく良い気がする
+
+### [2023-02-28 特定のセキュリティグループが関連づけられているLambda関数をワンライナーで取得してみた](https://dev.classmethod.jp/articles/sg-used-by-lambda/)
+
+### [2023-01-16 CDKでLambdaからSlack通知する方法](https://dev.classmethod.jp/articles/awscdk-costexplorer-notify-to-slack/)
+
+## アプデ
+
+### [2023-01-17 SQSをイベントソースとして利用する際に同時実行数が設定できるように](https://dev.classmethod.jp/articles/update-aws-lambda-event-source-amazon-sqs-concurrency/)
 
 これまでSQSをイベントソースとする際の同時実行数は、Lambda関数の「同時実行の予約」で行っていたが、直感的に設定が可能になった。
 
-- [[アップデート] AWS LambdaのAmazon SQSイベントソースで最大同時実行数を指定できるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/update-aws-lambda-event-source-amazon-sqs-concurrency/)
-
-## CDKでLambdaからSlack通知する方法
-
-- [AWS利用料金を毎日Slackに通知する仕組みをCDKで作りたくてやってみた | DevelopersIO](https://dev.classmethod.jp/articles/awscdk-costexplorer-notify-to-slack/)
-
-## Lambdaで新しい「ランタイム管理設定」が追加されました(2023-01-24)
+### [2023-01-24 Lambdaで新しい「ランタイム管理設定」が追加されました](https://dev.classmethod.jp/articles/aws-lambda-supports-runtime-management-controls/)
 
 ランタイムそのもののバージョン制御ではない（3.8 -> 3.9ではない）ので注意が必要。
 
 関数の更新にアップデートするなどが選択できるが、自動が推奨。関数を更新する予定が無い場合は自動にすべきとのこと。
 
-- [[アップデート] AWS Lambdaで新しい「ランタイム管理設定」が追加されました | DevelopersIO](https://dev.classmethod.jp/articles/aws-lambda-supports-runtime-management-controls/)
+### [2023-04-07 レスポンスをストリーミングで返せるように](https://dev.classmethod.jp/articles/aws-lambda-can-streaming-response/)
 
-## [Lambda関数の呼び出しタイプとリトライ方式まとめ](https://dev.classmethod.jp/articles/lambda-idempotency/)
-
-## [特定のセキュリティグループが関連づけられているLambda関数をワンライナーで取得してみた](https://dev.classmethod.jp/articles/sg-used-by-lambda/)
+APIGWでは使えないので、Lambda関数URLなどを使用する必要がある。

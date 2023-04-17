@@ -96,6 +96,7 @@
 
 - まとめ
   - [SageMaker Studio Lab Community](https://github.com/aws-sagemaker-jp/awesome-studio-lab-jp)
+  - [【2023年版】機械学習の日本語無料学習教材まとめ - Qiita](https://qiita.com/shuto_ishii/items/ff36b82e37d0c4ccc073)
 
 - 講義
   - [ニューヨーク大学データの深層学習講義](https://atcold.github.io/pytorch-Deep-Learning/ja/)

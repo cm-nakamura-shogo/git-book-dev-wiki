@@ -1,5 +1,9 @@
 # Table of contents
 
+- スクラップ
+  - [AIML      ](scraps/scrap_aiml.md)
+  - [アプリ    ](scraps/scrap_app.md)
+  - [コンテンツ](scraps/scrap_contents.md)
 - フロントエンド
   - [導入      ](pages/frontend/frontend_intro.md)
   - [CSS       ](pages/frontend/frontend_css.md)
@@ -99,8 +103,9 @@
     - [Amazon Neptune           ](pages/aws/aws_neptune.md)
     - [Amazon DynamoDB          ](pages/aws/aws_dynamodb.md)
   - AIML
-    - [AWS Personalize          ](pages/aws/aws_personalize.md)
+    - [Amazon Personalize       ](pages/aws/aws_personalize.md)
     - [Amazon SageMaker         ](pages/aws/aws_sagemaker.md)
+    - [Amazon Kendra            ](pages/aws/aws_kendra.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)

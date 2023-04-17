@@ -12,9 +12,9 @@
 
 ## 参考
 
-### [【AWS Tips】SSE-KMSとキーローテーションの目的・仕組み - 顧客フロントSEのIT勉強ブログ](https://frontse.hatenablog.jp/entry/2021/09/09/171150)
+### [2021-09-09 【AWS Tips】SSE-KMSとキーローテーションの目的・仕組み - 顧客フロントSEのIT勉強ブログ](https://frontse.hatenablog.jp/entry/2021/09/09/171150)
 
-### [S3 オブジェクトの一覧をあまり手間をかけずに AWS CLI で取得する](https://dev.classmethod.jp/articles/s3-objects-list-aws-cli/)
+### [2023-02-28 S3 オブジェクトの一覧をあまり手間をかけずに AWS CLI で取得する](https://dev.classmethod.jp/articles/s3-objects-list-aws-cli/)
 
 以下が結論
 
@@ -22,10 +22,15 @@
 aws s3 ls バケット名 --recursive | grep -v '/$' | awk '{print $4}' > result.txt
 ```
 
+### [2023-04-14 大量のAmazon S3 バケットをシェルスクリプトで一撃削除](https://dev.classmethod.jp/articles/delete-versioning-s3-shell/)
+
+- バージョニングが有効になっている場合は旧バージョンのファイル削除をするs3api delete-objectsを使用する必要があるのはポイント
+- delete-objectsは1000個までしか一度に指定できないため、その場合別途対策が必要らしい
+
 ## アップデート
 
-### [Amazon S3 Storage Lens に 34 個のメトリクスが追加](https://dev.classmethod.jp/articles/s3-storage-lens-34-metrics/)
+### [2023-01-06 Amazon S3 Storage Lens に 34 個のメトリクスが追加](https://dev.classmethod.jp/articles/s3-storage-lens-34-metrics/)
 
 Storage LensはさまざまなメトリクスでS3を分析する機能
 
-### [[アップデート] S3 インターフェースエンドポイントでプライベート DNS 名を使用できるようになりました](https://dev.classmethod.jp/articles/amazon-s3-private-connectivity-on-premises-networks/)
+### [2023-03-15 S3 インターフェースエンドポイントでプライベート DNS 名を使用できるように](https://dev.classmethod.jp/articles/amazon-s3-private-connectivity-on-premises-networks/)
