@@ -401,3 +401,7 @@
 
 - バンディットアルゴリズムを用いた推薦システムの構成について
   - https://techblog.zozo.com/entry/zozoresearch-bandit-overviews
+
+## アップデート
+
+### [2023-04-17 PersonalizeがData Wranglerとの統合でデータ準備が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/prepare-data-amazon-personalize-sagemaker-data-wrangler-integration/)

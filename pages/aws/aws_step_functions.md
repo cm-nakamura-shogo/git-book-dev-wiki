@@ -34,6 +34,14 @@ Wait タスクの TimestampPath が過去の時刻場合は即実行されるの
 
 - [特定の時間帯のみ AWS Step Functions のタスクを実行するための Python コードを書いてみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-execute-task-specific-time-with-python-code/)
 
-## APIサポートが拡大(2023-02)
+## 参考記事
+
+### [2020-07-07 ステート間のパラメータ受け渡し方法](https://dev.classmethod.jp/articles/stepfunctions-parameters-inter-states/)
+
+- 平野さんの記事。とても分かりやすい。
+
+## アップデート
+
+### APIサポートが拡大(2023-02)
 
 - [[アップデート] AWS Step FunctionsのAWS SDK Integrationで、35のAWSサービスと1100のAPIアクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-new-35-services-api/)

@@ -124,3 +124,22 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 ### [2023-04-07 レスポンスをストリーミングで返せるように](https://dev.classmethod.jp/articles/aws-lambda-can-streaming-response/)
 
 APIGWでは使えないので、Lambda関数URLなどを使用する必要がある。
+
+### [2023-04-18 Python 3.10のruntimeに対応](https://aws.amazon.com/jp/blogs/compute/python-3-10-runtime-now-available-in-aws-lambda/)
+
+そもそもPython 3.10の新機能にもフィーチャーして紹介されている。
+
+- Structural pattern matching (PEP 634):
+  - 構造的パターンマッチ(match-case文)の導入
+  - [Python 3.10の新機能：構造化パターンマッチング | gihyo.jp](https://gihyo.jp/article/2022/07/monthly-python-2207)
+- Parenthesized context managers (BPO-12782):
+  - 複数contextmanagerを使う場合に、withのネストする必要がないという理解
+  - [What’s New In Python 3.10 ノート — 読書ノート 1.5dev documentation](https://showa-yojyo.github.io/notebook/python-3.10.html#parenthesized-context-managers)
+- Writing union types as X | Y (PEP 604):
+  - `Union[X,Y]`と書いていたものが、`X | Y` で良くなるということらしい
+  - [PEP 604 (Complementary syntax for Union[]) を読んだよメモ - Qiita](https://qiita.com/tk0miya/items/613221c7707102591215)
+- User-defined type guards (PEP 647):
+  - 型チェックツールをより正確に動かすことができるということみたい
+  - [PEP 647 (User-Defined Type Guards) を読んだよメモ - Qiita](https://qiita.com/tk0miya/items/1b093c2eee7668fffb62)
+- Improved error messages:
+  - [Python 3.10から導入されたBetter error messagesの深掘り | gihyo.jp](https://gihyo.jp/article/2022/12/monthly-python-2212)

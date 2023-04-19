@@ -7,6 +7,59 @@ mlnewsに載せないものも含まれる。基本は全部載せたもので�
 以下misc-mlシェア検討済み。
 ---
 
+### [2023-04-18 JumpStartでドメインに適応したLLMをfine-tuningする事例](https://aws.amazon.com/jp/blogs/machine-learning/financial-text-generation-using-a-domain-adapted-fine-tuned-large-language-model-in-amazon-sagemaker-jumpstart/)
+
+- モデルはLLM GPT-J 6Bを使用。
+
+### [2023-04-18 日本でもGoogle Bardが利用可能に](https://qiita.com/MasaruYamazaki/items/a107d4455500420ffd5b)
+
+- [Google の会話型 Generative AI である Bard が日本から利用可能になったので試してみました！ | DevelopersIO](https://dev.classmethod.jp/articles/bard-googles-generative-ai-is-now-available-in-japan/)
+
+### [2023-04-18 VicunaがGPT-4のように画像を入力として処理できるように](https://twitter.com/tikgiau/status/1647767975804452864)
+
+- MiniGPT-4とうたっており、Gradioを使ったデモも公開されている
+
+### [2023-04-17 OSS版LLaMAみたいなRedPajamaプロジェクトが発表](https://github.com/togethercomputer/RedPajama-Data/)
+
+- LLaMAトレーニングデータセット再現
+- 今のところデータセットのみの話っぽい
+
+### [2023-04-17 Meta AIが高性能なコンピュータビジョンモデルをトレーニングする新しい手法 DINOv2 を発表](https://ai.facebook.com/blog/dino-v2-computer-vision-self-supervised-learning/)
+
+- ファインチューニング不要で、さまざまなコンピュータビジョンのタスクに活用可能
+- 自己教師あり学習を採用。あらゆる画像の集合体から学習可能
+- 深度推定など、現在の標準的なアプローチでは学習が難しいものも学習できる
+
+### [2023-04-17 大規模言語モデルをデプロイするためのパイプライン、最適化について](https://aws.amazon.com/jp/blogs/machine-learning/deploy-large-models-at-high-performance-using-fastertransformer-on-amazon-sagemaker/)
+
+- LMI DLC(Large Model Inference, Deep Learning Container)と呼ばれている
+- モデルの圧縮や分割方法など網羅的に記載されているかも
+
+### [2023-04-17 SageMaker Data Wrangleでnltkやscipyを使う事例](https://aws.amazon.com/jp/blogs/machine-learning/authoring-custom-transformations-in-amazon-sagemaker-data-wrangler-using-nltk-and-scipy/)
+
+- カスタム変換でnltkやscipyを使うことができる
+
+### [2023-04-17 Fraud Detectorの新機能であるコールドスタートを使用する例](https://aws.amazon.com/jp/blogs/machine-learning/overcome-the-machine-learning-cold-start-challenge-in-fraud-detection-using-amazon-fraud-detector/)
+
+- わずか100イベント程度でリアルタイムの不正防止MLモデルを迅速にブートストラップできる
+
+### [2023-04-17 SageMaker Collections : モデルレジストリのモデルを整理する新機能](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-collections-organize-model-registry/)
+
+- 登録されたモデルのうち互いに関連するものをグループ化し、階層的に整理することが可能
+### [2023-04-17 Inferentia2によるHuggng Face Transformersの高速化](https://huggingface.co/blog/accelerate-transformers-with-inferentia2)
+
+- こちらはHugging Face側の記事
+
+### [2023-04-11 Kaggle: Image Matching Challenge 2023が開始](https://www.kaggle.com/competitions/image-matching-challenge-2023/overview/evaluation)
+
+- 参照画像から対象画像の回転と並進を予測するコンペ
+- 用途としては3D再構成に使うのが目的らしい
+
+### [2023-04-17 低コストで高性能な生成系 AI 推論用の Amazon EC2 Inf2 インスタンスが一般公開](https://aws.amazon.com/jp/blogs/news/amazon-ec2-inf2-instances-for-low-cost-high-performance-generative-ai-inference-are-now-generally-available/)
+
+- 日本語の公式ブログ記事
+- 言語モデル以外でも、inf2.8xlargeやinf2.xlarge辺りは音声処理でもターゲットになるかもしれない。
+
 ### [2023-04-14 Google Colab で BabyAGI を試す](https://note.com/npaka/n/n97152182c98a)
 
 - タスク駆動型自律エージェントのフレームワークです。ゴールに基づいてタスクの作成、優先順位付け、および実行を行う。
