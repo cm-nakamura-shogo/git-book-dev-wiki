@@ -4,6 +4,53 @@
 
 mlnewsに載せないものも含まれる。基本は全部載せたものであるべきだが、別の方がシェアしたものはその限りではない。
 
+### [2023-04-20 Stability AIがLLMとなるStableLMを発表](https://github.com/Stability-AI/StableLM)
+
+- AWSとの連携は期待が持てる。日本語対応が期待されるところ。
+- OpenAssistantはさっそくStableLMに対応
+  - [https://huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant)
+
+### [2023-04-19 特徴量エンジニアリングとFeature Storeを使ってほぼリアルタイムな特徴量による裏付けを分析](https://aws.amazon.com/jp/blogs/machine-learning/use-streaming-ingestion-with-amazon-sagemaker-feature-store-and-amazon-msk-to-make-ml-backed-decisions-in-near-real-time/)
+
+- ストリーミングの取り込みはAmazon Managed Streaming for Apache Kafka (MSK)(Amazon MSK)を使用
+- 事例としてはトランザクションに対する不正検知となっており、結構おもしろい
+
+### [2023-04-17 1次元の時系列をFFT等を使い2次元にmapするTimeNetを提案](https://arxiv.org/abs/2210.02186)
+
+- 1次元時系列を複数の期間に基づく2次元テンソル集合に変換することで、時間変動の分析を2次元空間に拡張
+- 短期・長期予測、インピュテーション、分類、異常検知など、5つの主要な時系列解析タスクにおいて一貫した最先端を達成
+- 「FFT等」のところが論文読まないと分からないな
+
+### [2023-04-17 llama_indexの公式がソースにクエリの答えが含まれているかを評価する方法を紹介](https://twitter.com/jerryjliu0/status/1647626532519841793)
+
+- それぞれのソースとクエリを入力として、含まれるかどうかをYes,Noで答えさせることにより実現
+
+### [2023-04-17 llama_indexの公式が単一のルータを使って使用するIndexを複数の中から選択する例の紹介](https://twitter.com/gpt_index/status/1647625929165008897)
+
+- LangChainと同じようなアイディアで、多分各インデックスの説明文とクエリの比較により判断するものかと
+
+### [2023-04-16 Nishikaの材料コンペの2nd place solution解説](https://qiita.com/mi-212/items/694124649d2848a6b559)
+
+- GNNのアーキテクチャとしてNequIPを採用
+
+### [2023-04-16 LangChain の チェーン・エージェントの評価](https://note.com/npaka/n/n7f7479bd3e19)
+
+- こういった生成系の評価の悩みとそれの解決策が記載
+- データの欠如についてはデータセットが記載されており、評価はLangChainの機能として評価用のツールやチェーンを紹介
+
+### [2023-04-16 OpenAssistantの発表](https://twitter.com/omarsar0/status/1647339407173664772)
+
+- みんなで作るInstructGPTという位置づけ
+- リリースにはモデル、データセット、チャットインターフェイスが含まれている
+- データセットOASST1をApache 2.0で公開している
+  - [https://twitter.com/_philschmid/status/1647288182252228612](https://twitter.com/_philschmid/status/1647288182252228612)
+
+### [2023-04-16 ChatGPTやBigChatの活用ヒントまとめ](https://twitter.com/developer_quant/status/1647447763838468097)
+
+### [2023-04-15 Streamlitで実装されたQAチェーンを評価するauto-evaluatorの紹介](https://blog.langchain.dev/auto-eval-of-question-answering-tasks/)
+
+- OpenAIモデルだけでなく、RetrieverやEmbeddingに使うモデルも変更しながら評価が可能なツールとなっている
+
 以下misc-mlシェア検討済み。
 ---
 

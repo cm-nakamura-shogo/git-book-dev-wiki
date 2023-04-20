@@ -69,3 +69,13 @@ AWS SDK for pandas(旧称：AWS Data Wrangler)とは別物のため注意。
 Wrangler自体で課金というよりはStudioを立ち上げてたりジョブを実行する際に課金される様子。
 
 - [いつどこで課金が発生してる？Amazon SageMakerの動きと料金体系をセットで考える | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-pricing/)
+
+## 参考記事
+
+### [2022-04-14 【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
+
+## アップデート
+
+### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
+
+- あの画像に記載された文字を手入力したりするやつ

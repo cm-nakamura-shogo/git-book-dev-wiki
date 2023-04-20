@@ -94,9 +94,12 @@
     - [AWS Application Composer ](pages/aws/aws_application_composer.md)
     - [Amazon SNS               ](pages/aws/aws_sns.md)
     - [Amazon EventBridge       ](pages/aws/aws_eventbridge.md)
+    - [Amazon CodeCatalyst      ](pages/aws/aws_codecatalyst.md)
+    - [Amazon CodeWhisperer     ](pages/aws/aws_codewhisperer.md)
   - ストレージ
     - [AWS Transfer Family      ](pages/aws/aws_transfer_family.md)
     - [AWS Storage Gateway      ](pages/aws/aws_storage_gateway.md)
+    - [Amazon EFS               ](pages/aws/aws_efs.md)
   - DB
     - [Amazon RDS               ](pages/aws/aws_rds.md)
     - [Amazon Aurora            ](pages/aws/aws_aurora.md)
@@ -106,6 +109,7 @@
     - [Amazon Personalize       ](pages/aws/aws_personalize.md)
     - [Amazon SageMaker         ](pages/aws/aws_sagemaker.md)
     - [Amazon Kendra            ](pages/aws/aws_kendra.md)
+    - [Amazon Comprehend        ](pages/aws/aws_comprehend.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)
@@ -117,6 +121,7 @@
 - クラウド開発
   - [Azure        ](pages/cloud/cloud_azure.md)
   - [GoogleCloud  ](pages/cloud/cloud_google_cloud.md)
+    - [Vertex AI Pipelines      ](pages/gcp/gcp_vertexaipipelines.md)
   - [コマンド一覧 ](pages/cloud/cloud_google_cloud_command.md)
   - [Terraform    ](pages/cloud/cloud_terraform.md)
 - 試験対策

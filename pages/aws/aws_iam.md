@@ -61,3 +61,7 @@ IAMユーザとは
 
 - IAM の評価論理をやんわり押さえるセッション「やんわり押さえよう IAM の評価論理」で登壇しました
   - https://dev.classmethod.jp/articles/devio-2021-iam-evaluation-logic/
+
+## [IAMの設定ドキュメント](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html)
+
+細かい制限を加える場合はここら辺を参照する必要がある

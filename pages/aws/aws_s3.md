@@ -12,6 +12,25 @@
 
 ## 参考
 
+### [2021-05-20 複数のアクセス拒否設定をしたS3バケットをCloudFormationで作ってみた](https://dev.classmethod.jp/articles/multi-access-restricted-s3-cfn/)
+
+Effect: DenyでConditionがAND条件で評価されるので、どれか一つでも合えばアクセスできる設定となる。
+
+```
+            Condition:
+              StringNotLike:
+                'aws:userId':
+                  - "AROAxxxxxxxxxxxxxxxxx:*"
+              NotIpAddress:
+                'aws:SourceIp':
+                  - 111.222.333.444/32
+              StringNotEquals:
+                'aws:SourceVpce':
+                  - "vpce-1a2b3c4d"
+                "aws:CalledVia":
+                  - "cloudformation.amazonaws.com"
+```
+
 ### [2021-09-09 【AWS Tips】SSE-KMSとキーローテーションの目的・仕組み - 顧客フロントSEのIT勉強ブログ](https://frontse.hatenablog.jp/entry/2021/09/09/171150)
 
 ### [2023-02-28 S3 オブジェクトの一覧をあまり手間をかけずに AWS CLI で取得する](https://dev.classmethod.jp/articles/s3-objects-list-aws-cli/)

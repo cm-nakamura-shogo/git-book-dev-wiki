@@ -1,5 +1,6 @@
 # アプリケーション開発
 
+
 ### [2023-04-18 JupyterにS3をブラウジングする拡張機能があるらしい](https://dev.classmethod.jp/articles/202304-jupyterhub_s3-md/)
 
 ### [2023-04-18 LocalStack 2.0がリリース](https://www.publickey1.jp/blog/23/awslocalstack_20.html)
@@ -11,7 +12,23 @@
 
 - 興味のある組み合わせだが、あまりわからない。
 
+### [2023-04-16 PythonのThreading Moduleについて](https://note.com/mega_gorilla/n/n101748d37b07)
+
+- 使い方に関するまとめ記事
+
+### [2023-04-15 俺たちのフロントエンド”大”自慢大会](https://dev.classmethod.jp/articles/20230414-findy-classmethod-frontend-event/)
+
+- 最も興味をひかれたのはbulletproof-reactかな
+- CRA前提なので、Next.jsの場合は、pages/featuresを持ってくる
+- 公式もそう言っている
+  - [https://github.com/alan2207/bulletproof-react/issues/21](https://github.com/alan2207/bulletproof-react/issues/21)
+- その他、bulletproof-reactの紹介
+  - [Reactベストプラクティスの宝庫！「bulletproof-react」が勉強になりすぎる件](https://zenn.dev/manalink_dev/articles/bulletproof-react-is-best-architecture)
+  - [本気で考えるReactのベストプラクティス！bulletproof-react2022](https://zenn.dev/t_keshi/articles/bulletproof-react-2022)
+
 ### [2023-04-11 AWS / Google Cloud / Azure それぞれの推しサービス](https://dev.classmethod.jp/articles/developersio-day-one-favorite-services-aws-google-cloud-azure/)
+
+### [2023-04-09 緊急解説！　突如出現したnitrogqlの中身と裏側](https://zenn.dev/uhyo/articles/nitrogql-beta-release)
 
 ### [2023-04-03 コードレビューを爆速にするための組織づくり](https://zenn.dev/hacobell_dev/articles/code-review-blocker)
 
@@ -50,6 +67,12 @@
 - 割と低レイヤになじみがない人向けなのかも
 
 ### [2021-05-13 30個以上の個人開発を失敗。そこから自分のサービスで生きていけるようになるまでの話。](https://note.com/iritec/n/n17c741c5f02d)
+
+### [2021-05-01 [JS] Fetch APIでFormDataをPOSTするときにContent-Typeを指定しないようにしよう。 - Qiita](https://qiita.com/YOCKOW/items/0b9635c62840998708f7)
+
+- content-typeには、`boundary=`も書いてあるのが正しいので、`multipart/form-data`だけ指定するとboundaryがサーバー側でわからなくなる。
+- ただしくは、`multipart/form-data; boundary=----hogehogehoge`が正なので。
+- これはJSの話だが他の言語でもあるかもしれないので注意。
 
 ### [2021-06-27 個人開発でwebサービスを作ったら人生で初めてバズった話](https://qiita.com/katsunory/items/4e7611b057c664781636)
 
