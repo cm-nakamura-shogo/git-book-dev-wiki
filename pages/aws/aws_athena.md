@@ -75,10 +75,14 @@ AthenaのCTASはexternal_locationで結果の保存先を変更できる
 
 ## 参考記事
 
-### [AWS Athena で CREATE TABLE する](https://qiita.com/yoshiyama_hana/items/3d532c7ecc5f08c0d040)
+### [2019-12-09 AWS Athena で CREATE TABLE する](https://qiita.com/yoshiyama_hana/items/3d532c7ecc5f08c0d040)
 
 - わりと各パラメータの詳しい説明がある
 
-### [S3アクセスログをAthenaで分析](https://qiita.com/hamingcode/items/6f44bfbc8c54d974ae43)
+### [2021-02-08 【全リージョン対応】CloudTrailのログをAthenaのPartition Projectionなテーブルで作る](https://dev.classmethod.jp/articles/cloudtrail-athena-partition-projection-table/)
+
+- CloudTrailログでPartitionどうしたらええかのヒントにもなる
+
+### [2021-04-22 S3アクセスログをAthenaで分析](https://qiita.com/hamingcode/items/6f44bfbc8c54d974ae43)
 
 - プロダクトにS3使うときは合った方がいい？（ログまででいいかもだが分析することがあれば）

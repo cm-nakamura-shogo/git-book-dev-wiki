@@ -25,6 +25,10 @@
   - [Reactベストプラクティスの宝庫！「bulletproof-react」が勉強になりすぎる件](https://zenn.dev/manalink_dev/articles/bulletproof-react-is-best-architecture)
   - [本気で考えるReactのベストプラクティス！bulletproof-react2022](https://zenn.dev/t_keshi/articles/bulletproof-react-2022)
 
+### [2023-04-14 DNSにちょっとだけ詳しくなりたい人に贈る少し突っ込んだDNSの話](https://dev.classmethod.jp/articles/devio_day1_dns/)
+
+- DNSマスター大瀧さんの解説
+
 ### [2023-04-13 prismatixでのTerraform運用で活用しているツールの紹介](https://dev.classmethod.jp/articles/developersio-day-one-terraform-and-related-tools-utilized-by-prismatix/)
 
 - シングルテナントのためアカウント数がとても多いのでTerraformを使っている

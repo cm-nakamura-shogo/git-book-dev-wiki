@@ -164,6 +164,9 @@ mlnewsに載せないものも含まれる。基本は全部載せたもので�
 - 元論文は3/31に出ている以下
   - [https://arxiv.org/abs/2303.17760](https://arxiv.org/abs/2303.17760)
 
+### [2023-04-12 ChatGPT Retrieval Pluginをローカルで動かす事例](https://dev.classmethod.jp/articles/running-chatgpt-retrieval-plugin-api-locally/)
+
+
 ### [2023-04-12 ColabでCerebras-GPTを試す](https://note.com/npaka/n/n82f74e62c30f)
 
 - 日本語はダメそう
