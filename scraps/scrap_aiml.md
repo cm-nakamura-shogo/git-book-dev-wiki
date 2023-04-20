@@ -114,6 +114,10 @@ mlnewsに載せないものも含まれる。基本は全部載せたもので�
 - 日本語の公式ブログ記事
 - 言語モデル以外でも、inf2.8xlargeやinf2.xlarge辺りは音声処理でもターゲットになるかもしれない。
 
+### [2023-04-14 ベクトルデータベース Pinecone の概念を整理する](https://dev.classmethod.jp/articles/pinecone-overview/)
+
+- 密・疎・ハイブリットなど詳しく
+
 ### [2023-04-14 Google Colab で BabyAGI を試す](https://note.com/npaka/n/n97152182c98a)
 
 - タスク駆動型自律エージェントのフレームワークです。ゴールに基づいてタスクの作成、優先順位付け、および実行を行う。
@@ -145,6 +149,10 @@ mlnewsに載せないものも含まれる。基本は全部載せたもので�
 ### [2023-04-13 LangChainをGUIで扱えるFlowiseAIがリリース](https://twitter.com/FlowiseAI/status/1646176565691023360)
 
 - LangFlowより高機能なのかな？
+
+### [2023-04-13 LLMを高速に学習できるDeepSpeed-ChatをMicrosoftが公開](https://zenn.dev/howdy39/articles/a4a6f07a95a023)
+
+- OPT-13Bが7.5時間で$1,920（約25万円）単位とのこと
 
 ### [2023-04-13 Alpacaフォーマットの日本語データセットが CC BY-SA 3.0で公開](https://huggingface.co/datasets/kunishou/databricks-dolly-15k-ja)
 
@@ -247,6 +255,11 @@ mlnewsに載せないものも含まれる。基本は全部載せたもので�
 ### [2023-03-19 NAVERがGPT-3と商品検索を組み合わせた論文](https://twitter.com/sz_dr/status/1637460944707289088)
 
 - コンテキスト保持の仕組みの参考になると考えられる
+
+### [2023-03-14 DocsBot AI を使ってみた](https://zenn.dev/howdy39/articles/a4a6f07a95a023)
+
+- 任意のドキュメントを食わせて検索可能なSaaS
+- 社内的にやりたいことと、似ている例
 
 ### [2023-03-11 ChatGPTクローンをFastAPI・WebSocket・LangChain・Reactで](https://zenn.dev/ktechb/articles/chatgpt-clone-stream)
 

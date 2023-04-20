@@ -1,9 +1,9 @@
 # Table of contents
 
 - スクラップ
-  - [AIML      ](scraps/scrap_aiml.md)
-  - [アプリ    ](scraps/scrap_app.md)
-  - [コンテンツ](scraps/scrap_contents.md)
+  - [AIML          ](scraps/scrap_aiml.md)
+  - [アプリ        ](scraps/scrap_app.md)
+  - [学習コンテンツ](scraps/scrap_training.md)
 - フロントエンド
   - [導入      ](pages/frontend/frontend_intro.md)
   - [CSS       ](pages/frontend/frontend_css.md)

@@ -24,3 +24,18 @@ JSTの9時にユーザが想定通りになるが、一時的にユーザが増�
 
 - 参考記事
   - [QuickSight の管理者ユーザーをたくさんつくってしまったので月が変わったタイミングで整理されるか検証してみた | DevelopersIO](https://dev.classmethod.jp/articles/quicksight-admin-takusan-tukutta/)
+
+## 参考記事
+
+### [2022-01-30 分析を、テンプレート機能を使って別アカウントへ配布](https://dev.classmethod.jp/articles/quicksight-analysis-template/)
+
+- 本日時点でCloudFormationやAWS CLIでQuickSightの分析をイチから作成することはできない
+- その代わりに、QuickSightにはコンソール上で作成した分析をテンプレート化して配布する機能が備わっている
+
+## アップデート
+
+### [2023-04-13 QuickSight で API でデータセット更新スケジュールを管理出来るようになった](https://dev.classmethod.jp/articles/quicksight-api-refresh-schedule/)
+
+- データセット（SPICE） のデータ更新をスケジュール設定がAPIから可能に
+- CloudFormationでもサポートされた（4/15追記）
+- 従来は取り込み部分を EventBridge や Lambda で別途スケジューリングする必要があった

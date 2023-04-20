@@ -1,6 +1,5 @@
 # アプリケーション開発
 
-
 ### [2023-04-18 JupyterにS3をブラウジングする拡張機能があるらしい](https://dev.classmethod.jp/articles/202304-jupyterhub_s3-md/)
 
 ### [2023-04-18 LocalStack 2.0がリリース](https://www.publickey1.jp/blog/23/awslocalstack_20.html)
@@ -25,6 +24,16 @@
 - その他、bulletproof-reactの紹介
   - [Reactベストプラクティスの宝庫！「bulletproof-react」が勉強になりすぎる件](https://zenn.dev/manalink_dev/articles/bulletproof-react-is-best-architecture)
   - [本気で考えるReactのベストプラクティス！bulletproof-react2022](https://zenn.dev/t_keshi/articles/bulletproof-react-2022)
+
+### [2023-04-13 prismatixでのTerraform運用で活用しているツールの紹介](https://dev.classmethod.jp/articles/developersio-day-one-terraform-and-related-tools-utilized-by-prismatix/)
+
+- シングルテナントのためアカウント数がとても多いのでTerraformを使っている
+- Atlantisとは、GitHubなどと連携してTerraformのプロビジョニングを自動化する
+- tflintとは、Terraformを静的解析するもので、CI/CDツールとも連携が可能
+- tfsecとは、Terraformを静的解析し、セキュリティ上の問題を検出するツール
+  - ただし、tfsecからTrivyへの以降が推奨されている
+- Trivyとは、Dockerイメージで使用されるパッケージや依存関係の脆弱性をスキャンするツールで、Terraformにも対応
+- terraform-docsとは、コードのドキュメンテーションを自動生成するツール
 
 ### [2023-04-11 AWS / Google Cloud / Azure それぞれの推しサービス](https://dev.classmethod.jp/articles/developersio-day-one-favorite-services-aws-google-cloud-azure/)
 
@@ -58,9 +67,23 @@
 
 ### [2022-12-29 熱量を失ったサーバーレスという世界（個人の所感） - Sweet Escape](https://www.keisuke69.net/entry/2022/12/29/135620)
 
+### [2022-12-20 FastAPIのディレクトリ構成の最適解](https://zenn.dev/dencyu/articles/a94928b9ce45f7)
+
+- カテゴリ単位（横串）となっている。routerはroutersに、crudはcrudに。
+- 最近、個人的にはfeature単位（縦串）が分かりやすい説はあるのよな。なのでbulletproof-reactに同意している。
+
+### [2022-12-06 Docker on Lima なツールを色々試してみた](https://developers.freee.co.jp/entry/freee-docker-desktop-alternative)
+
+- Docker１強時代の終焉にあたり読む必要がありそう
+- とはいえ今のところWindows向けじゃない気も
+
 ### [2022-10-18 会議の目的は「課題を議論すること」ではない　参加者の「迷い」をなくす、会議のゴールの伝え方 - ログミーBiz](https://logmi.jp/business/articles/327653)
 
 - これは良かったぞ。
+
+### [2022-05-12 Pulumiを使ってCognitoのユーザプールを作成する例](https://dev.classmethod.jp/articles/tried-make-cognito-userpool-using-pulumi)
+
+- Cognito設定の参考になりそう
 
 ### [2021-12-21 とってもやさしいGo言語入門](https://zenn.dev/sharefull_blog/articles/1fb628d82ed79b)
 
