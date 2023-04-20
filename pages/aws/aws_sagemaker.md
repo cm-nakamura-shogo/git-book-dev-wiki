@@ -74,6 +74,15 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 ### [2022-04-14 【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 
+### [2023-04-20 SageMaker Inference Recommenderの最新のアップデート](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/general-availability-amazon-codecatalyst/)
+
+以下が挙げられている
+
+- SageMaker Python SDKによる推論リコメンダーの実行サポート
+- 推論レコメンダーの操作性向上
+- 推論リコメンダーの柔軟な運用を可能にする新APIを公開
+- ロギングとメトリクスのためのAmazon CloudWatchとのより深い統合
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)

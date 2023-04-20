@@ -4,6 +4,16 @@
 
 mlnewsに載せないものも含まれる。基本は全部載せたものであるべきだが、別の方がシェアしたものはその限りではない。
 
+以下misc-mlシェア検討済み。
+---
+
+### [2023-04-20 Google Research : 長期な時系列予測のための研究正解TiDEモデルの紹介](https://ai.googleblog.com/2023/04/recent-advances-in-deep-long-horizon.html)
+
+- 既存手法としてTransformer系のFEDformerやPatchTSTを例にしている
+- TiDEはシンプルなMLPアーキテクチャがベースのEncoder-Decoderモデルとなっている
+- 入力として過去の出力yやAttributes、特徴量xから構成される
+- これらはGoogle CloudのVertex AutoML Forecastingで近々利用できるようになる予定
+
 ### [2023-04-20 Stability AIがLLMとなるStableLMを発表](https://github.com/Stability-AI/StableLM)
 
 - AWSとの連携は期待が持てる。日本語対応が期待されるところ。
@@ -50,9 +60,6 @@ mlnewsに載せないものも含まれる。基本は全部載せたもので�
 ### [2023-04-15 Streamlitで実装されたQAチェーンを評価するauto-evaluatorの紹介](https://blog.langchain.dev/auto-eval-of-question-answering-tasks/)
 
 - OpenAIモデルだけでなく、RetrieverやEmbeddingに使うモデルも変更しながら評価が可能なツールとなっている
-
-以下misc-mlシェア検討済み。
----
 
 ### [2023-04-18 JumpStartでドメインに適応したLLMをfine-tuningする事例](https://aws.amazon.com/jp/blogs/machine-learning/financial-text-generation-using-a-domain-adapted-fine-tuned-large-language-model-in-amazon-sagemaker-jumpstart/)
 

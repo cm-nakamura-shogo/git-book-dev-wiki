@@ -13,3 +13,5 @@
 ### [2023-04-19 Dev Environments で GitHub リポジトリがサポート](https://dev.classmethod.jp/articles/codecatalyst-dev-environments-github/)
 
 - Dev Environments で環境を起動する時に、リンクされた GitHub リポジトリのコードを展開しすぐに作業を開始出来るようになった
+
+### [2023-04-20 一般提供開始（オレゴンのみ）](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/general-availability-amazon-codecatalyst/)
