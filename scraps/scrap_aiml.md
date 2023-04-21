@@ -1,12 +1,5 @@
 # AIML
 
-ほぼスクラップ帳。
-
-mlnewsに載せないものも含まれる。基本は全部載せたものであるべきだが、別の方がシェアしたものはその限りではない。
-
-以下misc-mlシェア検討済み。
----
-
 ### [2023-04-20 Google Research : 長期な時系列予測のための研究正解TiDEモデルの紹介](https://ai.googleblog.com/2023/04/recent-advances-in-deep-long-horizon.html)
 
 - 既存手法としてTransformer系のFEDformerやPatchTSTを例にしている
