@@ -1,9 +1,14 @@
 # Table of contents
 
-- スクラップ
+- スクラップ帳
   - [AIML          ](scraps/scrap_aiml.md)
-  - [アプリ        ](scraps/scrap_app.md)
+  - [アプリ全般    ](scraps/scrap_app.md)
+  - [フロント      ](scraps/scrap_frontend.md)
+  - [インフラ      ](scraps/scrap_infra.md)
+  - [アナリティクス](scraps/scrap_analytics.md)
+  - [マネジメント  ](scraps/scrap_manage.md)
   - [学習コンテンツ](scraps/scrap_training.md)
+  - [古いスクラップ](scraps/scrap_old.md)
 - フロントエンド
   - [導入      ](pages/frontend/frontend_intro.md)
   - [CSS       ](pages/frontend/frontend_css.md)
@@ -119,11 +124,11 @@
     - [Amazon Location Service  ](pages/aws/aws_location_service.md)
     - [AWS Clean Rooms          ](pages/aws/aws_clean_rooms.md)
 - クラウド開発
-  - [Azure        ](pages/cloud/cloud_azure.md)
-  - [GoogleCloud  ](pages/cloud/cloud_google_cloud.md)
+  - [Azure                      ](pages/cloud/cloud_azure.md)
+  - [GoogleCloud                ](pages/cloud/cloud_google_cloud.md)
     - [Vertex AI Pipelines      ](pages/gcp/gcp_vertexaipipelines.md)
-  - [コマンド一覧 ](pages/cloud/cloud_google_cloud_command.md)
-  - [Terraform    ](pages/cloud/cloud_terraform.md)
+    - [コマンド一覧             ](pages/cloud/cloud_google_cloud_command.md)
+  - [Terraform                  ](pages/cloud/cloud_terraform.md)
 - 試験対策
   - AWS
     - [AWS認定概要                 ](pages/exam/aws_certified_001.md)
@@ -299,7 +304,6 @@
   - [Word2Vec                           ](pages/aiml_nlp/aiml_nlp_word2vec.md)
   - [Transformer                        ](pages/aiml_nlp/aiml_nlp_transformer.md)
     - [Cramming BERT, 2022-12-28](pages/aiml_nlp/aiml_nlp_transformer/cramming_bert_ja.md)
-- [全体スクラップ](scrap.md)
 - ブログ管理
   - [ネタ帳  ](blog/blog.md)
   - [執筆済み](blog/blog_released.md)
