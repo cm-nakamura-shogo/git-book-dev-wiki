@@ -35,6 +35,12 @@
 - 読書会で読み中
 - [読書メモ](./2022-08-26_engineering-manager.md)
 
+### [2022-04-22 プロを目指す人のためのTypeScript入門](https://gihyo.jp/book/2022/978-4-297-12747-3)
+
+- まあまあええらしい。入門～中級向け。
+- 書評
+  - [「プロを目指す人のためのTypeScript入門」読書感想文 - Qiita](https://qiita.com/Yametaro/items/e3edba38d0fdc337e041)
+
 ### [2021-11-29 Googleのソフトウェアエンジニアリング](https://www.oreilly.co.jp/books/9784873119656/)
 
 - CADDi輪読会で題材になっていた。
@@ -51,12 +57,25 @@
 - CADDi輪読会で題材になっていた。
 - ぜひ読みたい。
 
+### [2019-12-01 マスタリングTCP/IP 第6版](https://www.amazon.co.jp/dp/4274224473)
+
+- 新人おすすめ図書に入っていた
+
 ### [2019-07-18 データ指向アプリケーションデザイン](https://www.oreilly.co.jp/books/9784873118703/)
 
 - こちらはほぼ呼んでいるが、CADDi輪読会で題材になっていた。
 - [読書メモ](./2019-07-18_data-intensive-applications-design.md)
 
+### [2017-11-16 Hit Refresh](https://www.amazon.co.jp/dp/B076Q6M456)
+
+- nishibaさん推奨図書
+  - [https://twitter.com/m_nishiba/status/1649938404958941186](https://twitter.com/m_nishiba/status/1649938404958941186)
+
 ### [2013-01-16 SQLアンチパターン](https://www.amazon.co.jp/dp/4873115892)
 
 - CADDi輪読会で題材になっていた。
 - 積んであるが読むべき
+
+### [2012-03-15 達人に学ぶDB設計 徹底指南書](https://www.amazon.co.jp/dp/B00EE1XPAI)
+
+- 菊池さん推奨図書
