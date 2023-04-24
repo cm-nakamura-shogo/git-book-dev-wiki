@@ -405,3 +405,12 @@
 ## アップデート
 
 ### [2023-04-17 PersonalizeがData Wranglerとの統合でデータ準備が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/prepare-data-amazon-personalize-sagemaker-data-wrangler-integration/)
+
+### [2023-04-21 PersonalizeがKafka Sinkコネクタに対応し、リアルタイムデータを簡単に取り込めるように](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-personalize-kafka-sink-connector/)
+
+### [2023-04-21 Personalizeで類似品推奨の人気度チューニングが可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-personalize-popularity-tuning-item-recommendations/)
+
+- Similar-Itemsレシピで人気度チューニングが可能となる
+- これにより以下が可能
+  - 人気のあるアイテムをより重視する
+  - 選択したアイテムに似ているがあまり知られていないアイテムを推薦する

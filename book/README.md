@@ -16,6 +16,12 @@
 - 宣伝
   - [https://twitter.com/biomedicalhacks/status/1639147337112260608](https://twitter.com/biomedicalhacks/status/1639147337112260608)
 
+### [2023-03-27 コンピュータネットワーク　第6版](https://bookplus.nikkei.com/atcl/catalog/23/03/16/00728/)
+
+- 分厚く高いがネットワークの聖典？
+- 宣伝
+  - [https://twitter.com/nonNoise/status/1650135452450713602](https://twitter.com/nonNoise/status/1650135452450713602)
+
 ### [2023-03-25 ロバストPython](https://www.oreilly.co.jp//books/9784814400171/)
 
 - [読書メモ](./2023-03-25_robust-python.md)

@@ -1,5 +1,25 @@
 # AIML
 
+### [2023-04-23 次世代のRWKVモデルに使用する想定のマルチ言語トークナイザーが公開](https://twitter.com/forasteran/status/1649919025458323456)
+
+- 日本語の例でも示されており今後に期待できる。
+
+### [2023-04-22 LangChain 0.0.146でcompress retrieved documentをリリース](https://twitter.com/hwchase17/status/1649428295467905025)
+
+- クエリする前にRetriver側の情報を、クエリに関連する情報に圧縮する。
+- Retriver作成時に圧縮するわけでないことに注意
+- 以下で試した記事がある
+  - [LangChainの新機能Contextual Compression Retrieverを試す｜mah_lab / 西見 公宏｜note](https://note.com/mahlab/n/n7d72e83904cc)
+
+### [2023-04-21 Whisper JAX : Whisperを70倍高速化を観測](https://twitter.com/currypurin/status/1649402118699360258)
+
+- 一時間の音声を15秒で書き起こす
+- なおGPU, TPU駆動が前提
+
+### [2023-04-21 Jpn10%のRWKVが観測](https://twitter.com/meteor_eternal/status/1649361381697929217)
+
+- いままではOtherという形だったので、日本語に特化している点は期待できる
+
 ### [2023-04-20 Google Research : 長期な時系列予測のための研究正解TiDEモデルの紹介](https://ai.googleblog.com/2023/04/recent-advances-in-deep-long-horizon.html)
 
 - 既存手法としてTransformer系のFEDformerやPatchTSTを例にしている
@@ -12,11 +32,63 @@
 - AWSとの連携は期待が持てる。日本語対応が期待されるところ。
 - OpenAssistantはさっそくStableLMに対応
   - [https://huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant)
+- ファインチューニング済みモデルもいくつか公開されている
+  - [https://twitter.com/haruto_qu/status/1648734352933818370](https://twitter.com/haruto_qu/status/1648734352933818370)
+- 日本語も頑張ってくれるつもりみたい
+  - [https://twitter.com/stabilityai_jp/status/1648709992281948160](https://twitter.com/stabilityai_jp/status/1648709992281948160)
+
+### [2023-04-19 LangChainをRWKVで駆動する例](https://note.com/npaka/n/n130a57aa384a)
+
+- まあまだまだこれからだな
+- `from langchain.llms import RWKV`でlangchainから使えるのは楽やね
+- 使用モデルは`RWKV-4-Raven-14B-v9-Eng99%-Other1%-20230412-ctx8192.pth`
+- 私のブログでは`RWKV-4-Raven-14B-v8-EngAndMore-20230408-ctx4096.pth`を使ってて、Ravenのアップデートが速いな
+
+### [2023-04-19 LangChainの0.0.143がリリース](https://twitter.com/langchainai/status/1648359232104976384)
+
+- 結構規模が大きい
+- Jira Toolkit : エージェントがJIRAの課題を検索し、作成することが可能
+- Annoy VectorStore : vectorstoreが追加。Python バインディングを持つ C++ ライブラリ
+- Image Caption Loader : Hugging FaceからBLIPモデルを使用し、画像のキャプションを生成し、それをデータとして読み込む
+- Twitter Tweet Loader : Pythonパッケージを使用し、twitterユーザーのリストのツイートからテキストを読み込むことができるように
+- Confluence Document Loader : これはそのまま
+- Diffbot Document Loader : ？？？
+- Big Query specific SQL Prompt : これもそのままかな
+- Boolean filter for OpenSearch : ？？？
+
+### [2023-04-19 llama-indexがGoogle検索などの検索機能を追加](https://twitter.com/jerryjliu0/status/1648347966615465984)
+
+- 以下が挙げられている
+  - 📝 Note-taking capabilities
+  - 🌐 Web Page search
+  - 🔎 @google search capabilities
+
+### [2023-04-19 GPT4All-JがGPTであるLLaMaを除去しApacheとなった](https://twitter.com/sonesuke/status/1648414463517949953)
+
+- オープン化は急速に進んでいる
+
+### [2023-04-19 CAFA 5 Protein Function Prediction](https://www.kaggle.com/competitions/cafa-5-protein-function-prediction)
+
+- アミノ酸配列からタンパク質の機能を予測するコンペ
+- データが329MBと小さめなので参加しやすいかも
+- 締めは2023-08-21
 
 ### [2023-04-19 特徴量エンジニアリングとFeature Storeを使ってほぼリアルタイムな特徴量による裏付けを分析](https://aws.amazon.com/jp/blogs/machine-learning/use-streaming-ingestion-with-amazon-sagemaker-feature-store-and-amazon-msk-to-make-ml-backed-decisions-in-near-real-time/)
 
 - ストリーミングの取り込みはAmazon Managed Streaming for Apache Kafka (MSK)(Amazon MSK)を使用
 - 事例としてはトランザクションに対する不正検知となっており、結構おもしろい
+
+### [2023-04-18 JumpStartでドメインに適応したLLMをfine-tuningする事例](https://aws.amazon.com/jp/blogs/machine-learning/financial-text-generation-using-a-domain-adapted-fine-tuned-large-language-model-in-amazon-sagemaker-jumpstart/)
+
+- モデルはLLM GPT-J 6Bを使用。
+
+### [2023-04-18 日本でもGoogle Bardが利用可能に](https://qiita.com/MasaruYamazaki/items/a107d4455500420ffd5b)
+
+- [Google の会話型 Generative AI である Bard が日本から利用可能になったので試してみました！ | DevelopersIO](https://dev.classmethod.jp/articles/bard-googles-generative-ai-is-now-available-in-japan/)
+
+### [2023-04-18 VicunaがGPT-4のように画像を入力として処理できるように](https://twitter.com/tikgiau/status/1647767975804452864)
+
+- MiniGPT-4とうたっており、Gradioを使ったデモも公開されている
 
 ### [2023-04-17 1次元の時系列をFFT等を使い2次元にmapするTimeNetを提案](https://arxiv.org/abs/2210.02186)
 
@@ -32,40 +104,6 @@
 
 - LangChainと同じようなアイディアで、多分各インデックスの説明文とクエリの比較により判断するものかと
 
-### [2023-04-16 Nishikaの材料コンペの2nd place solution解説](https://qiita.com/mi-212/items/694124649d2848a6b559)
-
-- GNNのアーキテクチャとしてNequIPを採用
-
-### [2023-04-16 LangChain の チェーン・エージェントの評価](https://note.com/npaka/n/n7f7479bd3e19)
-
-- こういった生成系の評価の悩みとそれの解決策が記載
-- データの欠如についてはデータセットが記載されており、評価はLangChainの機能として評価用のツールやチェーンを紹介
-
-### [2023-04-16 OpenAssistantの発表](https://twitter.com/omarsar0/status/1647339407173664772)
-
-- みんなで作るInstructGPTという位置づけ
-- リリースにはモデル、データセット、チャットインターフェイスが含まれている
-- データセットOASST1をApache 2.0で公開している
-  - [https://twitter.com/_philschmid/status/1647288182252228612](https://twitter.com/_philschmid/status/1647288182252228612)
-
-### [2023-04-16 ChatGPTやBigChatの活用ヒントまとめ](https://twitter.com/developer_quant/status/1647447763838468097)
-
-### [2023-04-15 Streamlitで実装されたQAチェーンを評価するauto-evaluatorの紹介](https://blog.langchain.dev/auto-eval-of-question-answering-tasks/)
-
-- OpenAIモデルだけでなく、RetrieverやEmbeddingに使うモデルも変更しながら評価が可能なツールとなっている
-
-### [2023-04-18 JumpStartでドメインに適応したLLMをfine-tuningする事例](https://aws.amazon.com/jp/blogs/machine-learning/financial-text-generation-using-a-domain-adapted-fine-tuned-large-language-model-in-amazon-sagemaker-jumpstart/)
-
-- モデルはLLM GPT-J 6Bを使用。
-
-### [2023-04-18 日本でもGoogle Bardが利用可能に](https://qiita.com/MasaruYamazaki/items/a107d4455500420ffd5b)
-
-- [Google の会話型 Generative AI である Bard が日本から利用可能になったので試してみました！ | DevelopersIO](https://dev.classmethod.jp/articles/bard-googles-generative-ai-is-now-available-in-japan/)
-
-### [2023-04-18 VicunaがGPT-4のように画像を入力として処理できるように](https://twitter.com/tikgiau/status/1647767975804452864)
-
-- MiniGPT-4とうたっており、Gradioを使ったデモも公開されている
-
 ### [2023-04-17 OSS版LLaMAみたいなRedPajamaプロジェクトが発表](https://github.com/togethercomputer/RedPajama-Data/)
 
 - LLaMAトレーニングデータセット再現
@@ -76,6 +114,9 @@
 - ファインチューニング不要で、さまざまなコンピュータビジョンのタスクに活用可能
 - 自己教師あり学習を採用。あらゆる画像の集合体から学習可能
 - 深度推定など、現在の標準的なアプローチでは学習が難しいものも学習できる
+- 続報解説がきている
+  - [https://twitter.com/timdarcet/status/1649435730291093506](https://twitter.com/timdarcet/status/1649435730291093506)
+- よくみると、NC-4.0なので非商用かー
 
 ### [2023-04-17 大規模言語モデルをデプロイするためのパイプライン、最適化について](https://aws.amazon.com/jp/blogs/machine-learning/deploy-large-models-at-high-performance-using-fastertransformer-on-amazon-sagemaker/)
 
@@ -96,16 +137,47 @@
 ### [2023-04-17 Inferentia2によるHuggng Face Transformersの高速化](https://huggingface.co/blog/accelerate-transformers-with-inferentia2)
 
 - こちらはHugging Face側の記事
-
-### [2023-04-11 Kaggle: Image Matching Challenge 2023が開始](https://www.kaggle.com/competitions/image-matching-challenge-2023/overview/evaluation)
-
-- 参照画像から対象画像の回転と並進を予測するコンペ
-- 用途としては3D再構成に使うのが目的らしい
-
 ### [2023-04-17 低コストで高性能な生成系 AI 推論用の Amazon EC2 Inf2 インスタンスが一般公開](https://aws.amazon.com/jp/blogs/news/amazon-ec2-inf2-instances-for-low-cost-high-performance-generative-ai-inference-are-now-generally-available/)
 
 - 日本語の公式ブログ記事
 - 言語モデル以外でも、inf2.8xlargeやinf2.xlarge辺りは音声処理でもターゲットになるかもしれない。
+
+### [2023-04-16 Nishikaの材料コンペの2nd place solution解説](https://qiita.com/mi-212/items/694124649d2848a6b559)
+
+- GNNのアーキテクチャとしてNequIPを採用
+
+### [2023-04-16 LangChain の チェーン・エージェントの評価](https://note.com/npaka/n/n7f7479bd3e19)
+
+- こういった生成系の評価の悩みとそれの解決策が記載
+- データの欠如についてはデータセットが記載されており、評価はLangChainの機能として評価用のツールやチェーンを紹介
+
+### [2023-04-16 OpenAssistantの発表](https://twitter.com/omarsar0/status/1647339407173664772)
+
+- みんなで作るInstructGPTという位置づけ
+- リリースにはモデル、データセット、チャットインターフェイスが含まれている
+- データセットOASST1をApache 2.0で公開している
+  - [https://twitter.com/_philschmid/status/1647288182252228612](https://twitter.com/_philschmid/status/1647288182252228612)
+
+
+### [2023-04-16 npakaさん : OpenAI APIのファインチューニングの学習データのガイドライン](https://note.com/npaka/n/n021a59452dc8)
+
+- いずれ必要になるかもしれないファインチューニングの知識
+
+### [2023-04-16 ChatGPTやBigChatの活用ヒントまとめ](https://twitter.com/developer_quant/status/1647447763838468097)
+
+### [2023-04-15 LLMOpsに有益なツール群のまとめ](https://twitter.com/nepinepimate3/status/1647136562105454592)
+
+- LLMというか範囲が広すぎるのであんま意味ないかも
+- たぶんまったく使う用途の無いものも含まれている
+
+### [2023-04-15 Streamlitで実装されたQAチェーンを評価するauto-evaluatorの紹介](https://blog.langchain.dev/auto-eval-of-question-answering-tasks/)
+
+- OpenAIモデルだけでなく、RetrieverやEmbeddingに使うモデルも変更しながら評価が可能なツールとなっている
+
+### [2023-04-14 Google Research : 自動微分を越えるアルゴリズム](https://ai.googleblog.com/2023/04/beyond-automatic-differentiation.html)
+
+- 相変わらず先進的。
+- 一応、AutoBoundとしてライブラリを公開しているらしい。
 
 ### [2023-04-14 ベクトルデータベース Pinecone の概念を整理する](https://dev.classmethod.jp/articles/pinecone-overview/)
 
@@ -157,6 +229,12 @@
 - 元論文は3/31に出ている以下
   - [https://arxiv.org/abs/2303.17760](https://arxiv.org/abs/2303.17760)
 
+### [2023-04-12 MLOps のはじめかた - Speaker Deck](https://speakerdeck.com/asei/mlops-nohazimekata)
+
+- Money Forward社のMLOpsの知見
+- StepFunctionsやInferenciaがでてくる
+- MLOpsだからと言って新しい技術を採用すると痛い目にあう（これは確かに）
+
 ### [2023-04-12 ChatGPT Retrieval Pluginをローカルで動かす事例](https://dev.classmethod.jp/articles/running-chatgpt-retrieval-plugin-api-locally/)
 
 
@@ -167,6 +245,13 @@
 ### [2023-04-12 LlamaIndexでPinconeを使って疎と密のハイブリットな検索を試す](https://note.com/npaka/n/n63afe0e6684a)
 
 - devioの記事と疎密の意味が少し違いそう？要確認。
+
+### [2023-04-11 day1のChatGPT会のレポート](https://dev.classmethod.jp/articles/report-developersio-day1-chatgpt-beginning/)
+
+### [2023-04-11 Kaggle: Image Matching Challenge 2023が開始](https://www.kaggle.com/competitions/image-matching-challenge-2023/overview/evaluation)
+
+- 参照画像から対象画像の回転と並進を予測するコンペ
+- 用途としては3D再構成に使うのが目的らしい
 
 ### [2023-04-11 LlamaIndexの検証機能 ResponseとSourceをGPT-4に評価させて正しいかを判断する](https://twitter.com/jerryjliu0/status/1645451897372024832)
 
@@ -224,6 +309,10 @@
 
 - TypeScriptでLangChainをする網羅的な内容
 - Python使いでも概要をおさえるのは良さそう
+
+### [2023-04-01 音源分離技術の基礎と動向](https://www.jstage.jst.go.jp/article/essfr/16/4/16_257/_pdf/-char/ja)
+
+- 音源分離について日本語でまとめられている記事
 
 ### [2023-03-30 Evolving Zoom IQ, our AI smart companion, with new features and a collaboration with OpenAI](https://blog.zoom.us/zoom-iq-smart-companion/)
 
@@ -291,6 +380,13 @@
 - sakasegawa氏
 - デカ言語モデルが手元で動く。A100を使う必要がある。
 - 日本語対応していないため、FuguMTで翻訳している。
+
+### [2023-03-02 Dropout Reduces Underfitting](https://arxiv.org/abs/2303.01500)
+
+- [https://twitter.com/shriver_light/status/1649395937457094657](https://twitter.com/shriver_light/status/1649395937457094657)
+  - Dropoutが過学習だけでなく、学習初期の未学習にも効くことを発見
+  - バッチ間の勾配分散を減らし、学習初期だけDropoutすると最終的なlossも削減可能
+  - 学習後期だけ使うと汎化性能が向上するという研究
 
 ### [2023-02-23 LangChainのAgentがどのようにToolを選択しているかを確認したメモ](https://www.inoue-kobo.com/ai_ml/langchain-agent/)
 

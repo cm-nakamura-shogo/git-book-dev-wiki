@@ -83,6 +83,8 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - 推論リコメンダーの柔軟な運用を可能にする新APIを公開
 - ロギングとメトリクスのためのAmazon CloudWatchとのより深い統合
 
+### [2023-04-21 バッチ処理のユースケースに対応したSageMaker Pipelineの例を紹介](https://aws.amazon.com/jp/blogs/machine-learning/create-sagemaker-pipelines-for-training-consuming-and-monitoring-your-batch-use-cases/)
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
