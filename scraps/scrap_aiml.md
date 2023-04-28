@@ -11,6 +11,10 @@
 - 以下で試した記事がある
   - [LangChainの新機能Contextual Compression Retrieverを試す｜mah_lab / 西見 公宏｜note](https://note.com/mahlab/n/n7d72e83904cc)
 
+### [2023-04-21 0421DS協会_ChatGPTによって描かれる未来とAI開発の変遷.pdf](https://speakerdeck.com/hirosatogamo/0421dsxie-hui-chatgptniyotutemiao-kareruwei-lai-toaikai-fa-nobian-qian)
+
+- Microsoft SAの記事のアップデート版かな？
+
 ### [2023-04-21 Whisper JAX : Whisperを70倍高速化を観測](https://twitter.com/currypurin/status/1649402118699360258)
 
 - 一時間の音声を15秒で書き起こす
@@ -224,6 +228,11 @@
 - 商用利用も可能なAlpacaのデータセット
 - これを元にしたLLMが今後活発になるのでは
 
+### [2023-04-12 商用利用可能なDolly 2.0がDatabricks社からリリース](https://gigazine.net/news/20230413-dolly-2-0-open-instruction-following-llm-for-commercial-use/)
+
+- 公式
+  - [https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)
+
 ### [2023-04-12 CAMEL: エージェント同士を会話させる論文の実験をLangChainで実現する方法](https://twitter.com/hwchase17/status/1645834030519296000)
 
 - 元論文は3/31に出ている以下
@@ -310,6 +319,13 @@
 - TypeScriptでLangChainをする網羅的な内容
 - Python使いでも概要をおさえるのは良さそう
 
+### [2023-04-05 LLaMAをWeb対話データでチューニングしたKoala-13B](https://twitter.com/sakuragi_zero/status/1643308310807052288)
+
+- Alpacaとかとの差が良く分からん…
+- 公式
+  - [https://bair.berkeley.edu/blog/2023/04/03/koala/](https://bair.berkeley.edu/blog/2023/04/03/koala/)
+- LLaMA系なので商用利用はできない
+
 ### [2023-04-01 音源分離技術の基礎と動向](https://www.jstage.jst.go.jp/article/essfr/16/4/16_257/_pdf/-char/ja)
 
 - 音源分離について日本語でまとめられている記事
@@ -365,6 +381,8 @@
 - エンコーディングというかトークナイザの話といった方が誤解が無さそう。
 - とりあえずほとんどの最新のやつはcl100k_baseを使っている。
 
+### [2023-03-08 日本のロボティクスに関する記事](https://www.nature.com/articles/d41586-023-00668-z)
+
 ### [2023-03-08 ChatGPT APIとFaissを使って長い文章から質問応答する仕組み](https://qiita.com/sakasegawa/items/16714fa132e874cab069)
 
 - sakasegawa氏
@@ -405,6 +423,11 @@
 ### [2023-02-24 PythonでTableau風 BIツールによる視覚的データ探索をやってみよう 〜PyGWalker〜](https://qiita.com/hima2b4/items/dfdfb77cf3a588f4131a)
 
 - BIツールみたいなことをPythonでやる
+
+### [2023-02-03 自民党AIの進化と実装に関するプロジェクトチーム](https://note.com/akihisa_shiozaki/n/n4c126c27fd3d)
+
+- 松尾さんとかの見解も資料として上がってて面白い
+- がその思いとは裏腹に国産LLMを作る話にはならなかったらしい
 
 ### [2022-12-12 話題爆発中のAI「ChatGPT」の仕組みにせまる！](https://qiita.com/omiita/items/c355bc4c26eca2817324)
 
