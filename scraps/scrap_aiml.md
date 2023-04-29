@@ -1,5 +1,22 @@
 # AIML
 
+### [2023-04-29 LlamaIndex 0.6.0 - データに対する新しいクエリインターフェイス｜npaka｜note](https://note.com/npaka/n/n4254fc549dc0)
+
+- 大きめの変更が加えられており、APIが整理されている
+- queryなどの使い方の違い、indexはビューに過ぎない点などが特徴か
+
+### [2023-04-28 RWVK v10 14bが公開](https://twitter.com/meteor_eternal/status/1651716023605919744)
+
+- これが商用利用可能なOSSの頼みの綱やで。ホンマに。
+
+### [2023-04-28 Stability.aiがStableVicunaを発表](https://ja.stability.ai/blog/stablevicuna-open-source-rlhf-chatbot)
+
+- Vicuna系ということはLLaMA系なので商用利用不可
+
+### [2023-04-27 vicuna-13bのデータセットについて](https://twitter.com/npaka123/status/1651435773298880518)
+
+- CarperAI/vicuna-13b-fine-tuned-rlhfや報酬モデルで使われるデータセットが整理されている
+
 ### [2023-04-27 Hugging Face Transformersを使いTensrFlowとTPUを言語モデルの学習方法](https://huggingface.co/blog/tf_tpu)
 
 ### [2023-04-26 vicuna-13bで embedding vectorの計算 (& GPT･RWKVとの比較)｜Kan Hatakeyama｜note](https://note.com/kan_hatakeyama/n/n2fbd81ac1d45)
@@ -29,6 +46,13 @@
 ### [2023-04-25 Google Research : 多項式複雑度でNASを実現するLayerNAS](https://ai.googleblog.com/2023/04/layernas-neural-architecture-search-in.html)
 
 - 探索すべきモデル候補の数が1桁減少し、計算量や最終的な性能がより良いモデルアーキテクチャを発見することが可能
+
+### [2023-04-24 Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062)
+
+- 200万トークンの処理が可能にスケーリングするモデルについての論文
+- Recurrent Memory Transformerという昨年の論文に基づいている
+  - [https://arxiv.org/abs/2207.06881](https://arxiv.org/abs/2207.06881)
+- 絵だけみる感じたと階層的にやる感じなのかなー、比較的ロースペック(1080Ti)で実験しているので検証はし易そうだがコードがない
 
 ### [2023-04-24 大規模言語モデルのための強化学習｜npaka｜note](https://note.com/npaka/n/ne6d2e7e076ea)
 
