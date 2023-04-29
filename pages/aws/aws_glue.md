@@ -18,3 +18,11 @@ ETLを行うサービス
 ### [2023-04-17 リソース使用状況を監視する新機能を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/aws-glue-monitor-usage-resources/)
 
 - Cloudwatchで特定のGlueリソースの利用状況を監視し、適切なCloudWatchアラームを設定することが可能に
+
+### [2023-04-24 CrawlersがPartition Indexの作成に対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/aws-glue-crawlers-creating-partition-indexes/)
+
+Glue CrawlerはS3からデータスキーマとパーティションを抽出し、AWS Glue Data Catalogに入力することでメタデータを最新の状態に保つ機能
+
+本リリースでは、AWS Glue Crawlerが新しいAWS Glue Data Catalogテーブルを作成する際に、手動で作成する必要がなく、デフォルトでパーティションインデックスも作成される
+
+これにより、数百万のパーティションを持つテーブルのパーティションメタデータの取得とフィルタリングに要する時間を短縮

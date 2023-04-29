@@ -85,8 +85,28 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 ### [2023-04-21 バッチ処理のユースケースに対応したSageMaker Pipelineの例を紹介](https://aws.amazon.com/jp/blogs/machine-learning/create-sagemaker-pipelines-for-training-consuming-and-monitoring-your-batch-use-cases/)
 
+### [2023-04-27 CustomOpsでTrainiumの機能を拡張する方法](https://aws.amazon.com/jp/blogs/machine-learning/how-to-extend-the-functionality-of-aws-trainium-with-custom-operators/)
+
+- TrainiumやInferentiaは、Neuron SDKを通じてソフトウェアでCustomOpsをサポート
+- GPSIMDエンジンを用いてハードウェアを加速させる
+  - General Purpose Single Instruction Multiple Data engine
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
 
 - あの画像に記載された文字を手入力したりするやつ
+
+### [2023-04-25 ローカルMLコードのリモートジョブへの変換を高速化](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-local-ml-code-conversion-jobs/)
+
+- SageMaker Python SDKを使って、作成したローカルMLコードを、依存関係とともに、最小限のコード変更でトレーニングジョブとして実行できるように
+- コードにPythonデコレータを追加するだけで、そのコード、データセット、ワークスペース環境の設定を受け取り、SageMaker Trainingジョブとして実行
+- サンプルノートブックは[こちら](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-remote-function)
+- 公式ブログは[こちら](https://aws.amazon.com/jp/blogs/machine-learning/run-your-local-machine-learning-code-as-amazon-sagemaker-training-jobs-with-minimal-code-changes/)
+
+### [2023-04-27 SageMaker with TensorBoardの一般提供を開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-hosted-tensorboard/)
+
+- TensorBoardを使用して、SageMakerトレーニングジョブのモデル収束の問題を可視化し、デバッグが可能に
+- TensorBoardは、トレーニングセットと検証セットにおけるモデルの精度やロスを追跡するために一般的に使用される観測可能ツール
+- 価格表にも更新があり、ホスティングするためにml.r5.largeインスタンスが使われ、US Eastで1時間$0.126程度
+- 東京リージョンではまだ使えない。

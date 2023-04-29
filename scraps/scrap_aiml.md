@@ -1,5 +1,44 @@
 # AIML
 
+### [2023-04-27 Hugging Face Transformersを使いTensrFlowとTPUを言語モデルの学習方法](https://huggingface.co/blog/tf_tpu)
+
+### [2023-04-26 vicuna-13bで embedding vectorの計算 (& GPT･RWKVとの比較)｜Kan Hatakeyama｜note](https://note.com/kan_hatakeyama/n/n2fbd81ac1d45)
+
+- 埋め込みを別ライブラリで実施する記事としては参考となる
+- 比較結果自体は、評価が主観であり、モデル規模もアンフェアな条件なので参考程度
+
+### [2023-04-26 OpenAIのブランドガイドラインが公開された](https://dev.classmethod.jp/articles/about-openai-brand-guidelines/)
+
+- 明記する必要のあることがいくつかありそう
+- マークについても言及がある
+
+### [2023-04-26 Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://www.researchgate.net/publication/370224758_Harnessing_the_Power_of_LLMs_in_Practice_A_Survey_on_ChatGPT_and_Beyond)
+
+- GitHubで必要な論文などの情報がまとめられている
+  - [https://github.com/Mooler0410/LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide)
+- 正攻法で学術的なまとめで、LangChainやLlamaIndexなどについては特に言及がない
+
+### [2023-04-25 ChatGPTのWeb版がオプトアウトをより簡易に提供](https://openai.com/blog/new-ways-to-manage-your-data-in-chatgpt)
+
+- 30日保存はAPIと同様なので注意。
+- 不正使用を監視するために必要な場合に使われるとのこと。
+- また、ChatGPT Businessもアナウンスされているが、単純にデフォルトでオプトアウトという形らしい。
+- 弊社ブログ
+  - [https://dev.classmethod.jp/articles/chatgpt-web-chat-history-off/](https://dev.classmethod.jp/articles/chatgpt-web-chat-history-off/)
+
+### [2023-04-25 Google Research : 多項式複雑度でNASを実現するLayerNAS](https://ai.googleblog.com/2023/04/layernas-neural-architecture-search-in.html)
+
+- 探索すべきモデル候補の数が1桁減少し、計算量や最終的な性能がより良いモデルアーキテクチャを発見することが可能
+
+### [2023-04-24 大規模言語モデルのための強化学習｜npaka｜note](https://note.com/npaka/n/ne6d2e7e076ea)
+
+- なぜ「強化学習」が「教師あり学習」よりも言語モデルの学習に適しているのか、考察した記事で面白い
+
+### [2023-04-23 tiktokenでトークンについて掘り下げた記事](https://nikkie-ftnext.hatenablog.com/entry/how-chatgpt-tokenize-japanese-text-tackling-with-tiktoken)
+
+- 1漢字（ユニコード）が２つのトークンに分割されているのは知らなかった
+- 使われ方が似ている文字が近くの文字コードに来ているとは限らないから、これは少し斬新だなという感想
+
 ### [2023-04-23 次世代のRWKVモデルに使用する想定のマルチ言語トークナイザーが公開](https://twitter.com/forasteran/status/1649919025458323456)
 
 - 日本語の例でも示されており今後に期待できる。
@@ -283,6 +322,12 @@
 - その他、LLMを活用したツールについてなど
 
 ### [2023-04-11 Passregi CVの現在と取り組んできた改良](https://dev.classmethod.jp/articles/developers-io-day-one-passregi-cv-improvements/)
+
+### [2023-04-10 ChatGPTの機会と脅威](https://www.docswell.com/s/ku-suke/KNRR6P-chatgpt-enterprise)
+
+- かなりまとまっていてて活用方針の参考となる
+- Azure OpenAIってGPT-3.5のfine-tuneできるんやっけ？？とはなっている
+- 研究用ととはいえ商用利用不可なので、たぶん企業の研究は無理では…
 
 ### [2023-04-10 SparseFormer: 人間の視覚認識に基づいたスパースなプロセスへの挑戦](https://twitter.com/_akhaliq/status/1645278535878049792)
 
