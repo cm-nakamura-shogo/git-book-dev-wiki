@@ -82,6 +82,13 @@ AthenaのCTASはexternal_locationで結果の保存先を変更できる
 - 固定価格で長期的なコミットメントなしに、完全に管理されたコンピュート容量でSQLクエリを実行できるようにする
 - ミッションクリティカルなクエリに専用コンピートを割り当て、クエリの同時実行数やコストなどのワークロード性能特性を制御することが可能
 - 容量はいつでも追加可能で、指定した容量とアカウントで有効な時間に対してのみ支払いが発生
+- 石川さんのブログが出ている
+  - [Amazon Athena キャパシティ予約ができるProvisioned Capacityについて徹底解説！ | DevelopersIO](https://dev.classmethod.jp/articles/20230429-amazon-athena-provisioned-capacity/)
+  - 1つのDPUは、4つのvCPUと16GB RAMに相当
+  - プロビジョニングできる最小キャパシティは、24DPU、8時間
+  - 最小でも82.56USDの料金が発生してしまう
+  - Provisioned Capacityが最も適しているユースケースは、Athenaに毎月100ドル以上利用する場合
+  - RI（Reserved Instance）に例えるなら、8時間以上の前払いなしのRIを動的に購入して適用するのに近い
 
 
 ## 参考記事

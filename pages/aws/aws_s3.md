@@ -24,7 +24,7 @@ Effect: DenyでConditionがAND条件で評価されるので、どれか一つ�
               NotIpAddress:
                 'aws:SourceIp':
                   - 111.222.333.444/32
-              StringNotEquals:
+            StringNotEquals:
                 'aws:SourceVpce':
                   - "vpce-1a2b3c4d"
                 "aws:CalledVia":
@@ -59,3 +59,8 @@ Storage LensはさまざまなメトリクスでS3を分析する機能
 - すべての新しいS3バケットに対して以下が適用
   - S3ブロック公開アクセスを自動的に有効
   - S3アクセス制御リスト（ACL）を無効にする
+- 参考
+  - [今S3のIaCで「AccessControlListNotSupported: The bucket does not allow ACLs」というエラーが出たならそれは2023年4月に行われたS3の仕様変更が原因かもしれない | DevelopersIO](https://dev.classmethod.jp/articles/s3-acl-error-from-202304/)
+    - ACL有効化が必要な要件は非常に限定的で、たとえば「CloudFrontディストリビューションのログを格納するバケット」などはACL設定が必要
+    - 一方、「CloudFrontのオリジンにする、静的コンテンツを格納するバケット」についてはACLの設定が不要
+    - いまいちど見直すべし

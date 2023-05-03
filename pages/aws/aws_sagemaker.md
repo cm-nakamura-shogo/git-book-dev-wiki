@@ -91,6 +91,26 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - GPSIMDエンジンを用いてハードウェアを加速させる
   - General Purpose Single Instruction Multiple Data engine
 
+### [2023-05-02 SageMaker上のTriton推論サーバで動作するFILバックエンドの詳細](https://aws.amazon.com/jp/blogs/machine-learning/hosting-ml-models-on-amazon-sagemaker-using-triton-xgboost-lightgbm-and-treelite-models/)
+
+- Triton推論サーバがエンドポイントで使用
+- FIL(Forest Inference Library)は各フレームワーク（XGBoost, LightGBM, cuML）の独自性をうまく吸収してくれそう
+
+### [2023-05-02 独自のMLモデルをSageMaker Canvasに持ち込み、正確な予測を生成する方法](https://aws.amazon.com/jp/blogs/machine-learning/bring-your-own-ml-model-into-amazon-sagemaker-canvas-and-generate-accurate-predictions/)
+
+- 以下３つのアーキテクチャ事例を紹介している
+  - SageMaker AutopilotとCanvas
+  - SageMaker JumpStartとCanvas
+  - SageMaker Model RegistryとCanvas
+
+### [2023-05-02 SageMaker JumpStartの基盤モデルによるRetrieval Augmented Generationを用いたQA](https://aws.amazon.com/jp/blogs/machine-learning/question-answering-using-retrieval-augmented-generation-with-foundation-models-in-amazon-sagemaker-jumpstart/)
+
+- LLMsを用いたRAGによるテキスト生成では、LLMsに供給されるコンテキストの一部として特定の外部データを供給することで、ドメイン固有のテキスト出力を生成することが可能
+- 以下２つの事例を取り上げている
+  - LangChainライブラリとAmazon SageMakerのエンドポイントを使う方法
+  - SageMakerのKNNアルゴリズムを使って、SageMakerのエンドポイントを使って大規模データの意味検索を行う方法
+- LLMsはオープンソース（GPT-J-6B、Flan T5 UL2、BloomZ 7B1）を使っており、近年のに比べると軽量なものの事例
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -110,3 +130,12 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - TensorBoardは、トレーニングセットと検証セットにおけるモデルの精度やロスを追跡するために一般的に使用される観測可能ツール
 - 価格表にも更新があり、ホスティングするためにml.r5.largeインスタンスが使われ、US Eastで1時間$0.126程度
 - 東京リージョンではまだ使えない。
+
+### [2023-05-01 Data Wranglerが画像データ作成に対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-data-wrangler-image-data-preparation/)
+
+- ラベリング、トレーニング、推論のための画像データを準備することが可能に
+- S3から画像をプレビューしてインポートし、さまざまな組み込み画像変換を使用して、画像データのクリーン化、標準化、品質改善を行う
+- ビルトイン変換には、リサイズ、重複の削除、回転、反転、グレイスケール、コントラストの強化、ぼかし、ノイズの追加など
+- スニペットを使って、異常値の検出や画像からテキストを抽出するなどの高度な使用例もサポート
+- 公式ブログ
+  - [Prepare image data with Amazon SageMaker Data Wrangler | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/prepare-image-data-with-amazon-sagemaker-data-wrangler/)

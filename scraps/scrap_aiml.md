@@ -1,9 +1,47 @@
 # AIML
 
+### [2023-05-01 長文から論点を抽出して、その論点を軸に文章の要約を試みる](https://note.com/mahlab/n/ndce1a18681e8)
+
+- 手順は以下
+  - CharacterTextSplitterで300字のチャンクに分割
+  - チャンク毎にtext-embedding-ada-002で埋め込みベクトルを生成
+  - Faissを使いk-means法でクラスタ数を5としてクラスタに分ける
+  - 各クラスタ毎にload_summarize_chainで要約する
+  - 各クラスタにLLMでタイトルをつけてもらう
+- 割と要約の選択肢として良いのかも。
+
+### [2023-05-03 OpenLLaMA : LLaMAのApache-2.0実装が動き始めている](https://twitter.com/haoliuhl/status/1653460937897295873)
+
+- 各所の反応
+  - [https://twitter.com/manjiroukeigo/status/1653543983325515776](https://twitter.com/manjiroukeigo/status/1653543983325515776)
+  - [https://twitter.com/umiyuki_ai/status/1653506794503942148](https://twitter.com/umiyuki_ai/status/1653506794503942148)
+  - [https://twitter.com/_kaiinui/status/1653498780501807105](https://twitter.com/_kaiinui/status/1653498780501807105)
+
+### [2023-05-03 SAM + ResNet(fine-tuning) + ChatGPTで冷蔵庫の具材からレシピ推薦](https://dev.classmethod.jp/articles/chatgpt-recomend-recip)
+
+- SAMのイメージがまだわかないな。
+
+### [2023-05-01 GPT-3でZennの使い方を回答できる問い合わせシステムを作ってみた](https://dev.classmethod.jp/articles/zenn-chat-with-gpt3)
+
+- LLamaIndexとか使わずにやる例となっており、Pineconeに対してベクトル検索している
+
+### 2023-04-30 Semantic Kernel についての記事がいくつか
+
+- [Semantic Kernel のサンプル概要](https://zenn.dev/hiromu/articles/20230430_semantikkernel)
+- [Azure OpenAI Service を便利に使うための Semantic Kernel を試してみよう on C#](https://zenn.dev/microsoft/articles/semantic-kernel-1)
+- [Semantic Kernel のスキルを外部ファイルで定義して読み込む](https://zenn.dev/microsoft/articles/semantic-kernel-2)
+
+### [2023-04-29 Stability AIからDeepFloyd IFが公開](https://note.com/te_ftef/n/nd83eb09a3990)
+
+- と思ったらこの記事はベースとなっているImagenの記事
+- DeepFloydは学習元丸パクりのAI画像が作れると話題になってる模様
+
 ### [2023-04-29 LlamaIndex 0.6.0 - データに対する新しいクエリインターフェイス｜npaka｜note](https://note.com/npaka/n/n4254fc549dc0)
 
 - 大きめの変更が加えられており、APIが整理されている
 - queryなどの使い方の違い、indexはビューに過ぎない点などが特徴か
+
+### [2023-04-28 音声合成に使用可能な事前学習モデルHuBERTをApache-2.0ライセンスで公開](https://twitter.com/yasyune1023/status/1651893684521287682)
 
 ### [2023-04-28 RWVK v10 14bが公開](https://twitter.com/meteor_eternal/status/1651716023605919744)
 
@@ -27,6 +65,10 @@
 ### [2023-04-28 Stability.aiがStableVicunaを発表](https://ja.stability.ai/blog/stablevicuna-open-source-rlhf-chatbot)
 
 - Vicuna系ということはLLaMA系なので商用利用不可
+
+### [2023-04-27 Pineconeのデータ管理についてのプラクティス](https://dev.classmethod.jp/articles/pinecone-data-management-practice/)
+
+- 長いテキストは分割せざるを得ないので、出所が同じものはmetadataで工夫しましょうという話
 
 ### [2023-04-27 vicuna-13bのデータセットについて](https://twitter.com/npaka123/status/1651435773298880518)
 
@@ -315,6 +357,8 @@
 - 商用利用も可能なAlpacaのデータセット
 - これを元にしたLLMが今後活発になるのでは
 
+### [2023-04-12 langchainでAzure OpenAI使ったり、AD認証しながらReAct構成するコード](https://twitter.com/hiro_gamo/status/1645819925787971584)
+
 ### [2023-04-12 商用利用可能なDolly 2.0がDatabricks社からリリース](https://gigazine.net/news/20230413-dolly-2-0-open-instruction-following-llm-for-commercial-use/)
 
 - 公式
@@ -540,7 +584,13 @@
 - 界隈ではtwo-phase trainingと呼ばれている
 - 題材は、画像データに対する不均衡データに限定されているのかも
 
+### [2021-09-08 GPT-2のパラメータについての解説記事](https://zenn.dev/tyaahan/articles/a8d99900000002)
+
+- 割ときちんと解説されていてよくわからずに使っている場合は読んでおいた方が良い
+
+
 ### [2019-12-01 Captumを試す](https://qiita.com/gorogoroyasu/items/819ce2613e72ac96d588)
 
 - 機械学習モデルを解釈し、理解するための手法をまとめたライブラリ
 - SHAPやGradCAMの話と思えばいい、その他の手法も多くある
+
