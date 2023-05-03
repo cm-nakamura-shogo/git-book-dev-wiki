@@ -53,3 +53,9 @@ aws s3 ls バケット名 --recursive | grep -v '/$' | awk '{print $4}' > result
 Storage LensはさまざまなメトリクスでS3を分析する機能
 
 ### [2023-03-15 S3 インターフェースエンドポイントでプライベート DNS 名を使用できるように](https://dev.classmethod.jp/articles/amazon-s3-private-connectivity-on-premises-networks/)
+
+### [2023-04-28 すべての新しいバケットに2つのセキュリティベストプラクティスをデフォルトで適用するように](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-s3-security-best-practices-buckets-default/)
+
+- すべての新しいS3バケットに対して以下が適用
+  - S3ブロック公開アクセスを自動的に有効
+  - S3アクセス制御リスト（ACL）を無効にする
