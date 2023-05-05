@@ -62,6 +62,12 @@
 
 ## Web資料
 
+### [A Cookbook of Self-Supervised Learning](https://arxiv.org/abs/2304.12210)
+
+- [https://twitter.com/_determina_/status/1653779271264120834](https://twitter.com/_determina_/status/1653779271264120834)
+  - arXivにアップされた自己教師あり学習のCookbook
+  - データの前処理とかハイパラ選択とか学習の高速化手法とか、学習に際して知っておきたい（けど経験豊富なMLエンジニアしかあんま分かってないような）ことが全部書いてある
+
 ### [君には今から3時間で機械学習Webアプリを作ってもらうよ](https://zenn.dev/alivelimb/articles/20220528-streamlit-ml-app)
 
 ### [データサイエンス100本ノック前処理編](https://github.com/The-Japan-DataScientist-Society/100knocks-preprocess)

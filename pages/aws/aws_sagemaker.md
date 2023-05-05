@@ -111,6 +111,10 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
   - SageMakerのKNNアルゴリズムを使って、SageMakerのエンドポイントを使って大規模データの意味検索を行う方法
 - LLMsはオープンソース（GPT-J-6B、Flan T5 UL2、BloomZ 7B1）を使っており、近年のに比べると軽量なものの事例
 
+### [2023-05-03 SageMakerドメイン復旧についてのソリューション事例 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/implement-backup-and-recovery-using-an-event-driven-serverless-architecture-with-amazon-sagemaker-studio/)
+
+### [2023-05-04 SageMaker JumpStartを使ってGenerative AIをAWSで始める方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/get-started-with-generative-ai-on-aws-using-amazon-sagemaker-jumpstart/)
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -139,3 +143,10 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - スニペットを使って、異常値の検出や画像からテキストを抽出するなどの高度な使用例もサポート
 - 公式ブログ
   - [Prepare image data with Amazon SageMaker Data Wrangler | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/prepare-image-data-with-amazon-sagemaker-data-wrangler/)
+
+### [2023-05-02 Sagemaker Autopilotは、サンプルの重みと追加の目的指標を持つトレーニングモデルをサポート (AWS)](https://awsapichanges.info/archive/changes/bd55ca-api.sagemaker.html)
+
+### [2023-05-03 SageMakerのデプロイインスタンスにml.inf2とml.trn1が対応 (AWS)](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/sagemaker-ml-inf2-ml-trn1-instances-model-deployment/)
+
+- 公式ブログでも
+  - [2023-05-04 SageMaker上でInferentia2とTrainiumを使ってGenerative AIの推論を低コスト・高パフォーマンスで実現する方法](https://aws.amazon.com/jp/blogs/machine-learning/achieve-high-performance-with-lowest-cost-for-generative-ai-inference-using-aws-inferentia2-and-aws-trainium-on-amazon-sagemaker/)

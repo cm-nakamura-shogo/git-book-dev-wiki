@@ -1,5 +1,31 @@
 # AIML
 
+### [2023-05-04 CLIP ViT-L/14がリリース (Hugging Face)](https://huggingface.co/laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K)
+
+- ImageNetで79.2%のゼロショット精度を実現したCLIP ViT-L/14がリリース
+- CLIPを大きく上回り、LAION-2Bで学習させた大型モデル（ViT-g/14）を凌駕
+
+### [2023-05-04 StarCoder: コード生成用の最先端のLLM (Hugging Face)](https://huggingface.co/blog/starcoder)
+
+- ベンチマークでは、OpenAIのcode-cushman-001 (12B)モデルも凌駕している
+- VSCodeの拡張機能「HF Code Autocomplete」として使える（APIキーとかは必要そう）
+  - [HF Code Autocomplete - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=HuggingFace.huggingface-vscode)
+
+### [2023-05-04 MaMMUT: マルチモーダルのための新しい基盤モデルアーキテクチャの研究 (Google Research)](https://ai.googleblog.com/2023/05/mammut-simple-vision-encoder-text.html)
+
+- 視覚言語基盤モデルは、一般的にはCLIPなどに代表される対照学習と次トークン予測の２つの主要なシナリオが一般的
+- 前者と後者で得意な下流タスクがことなるため課題
+- MaMMUTはこれを解決するアーキテクチャとなっており、更に先行研究よりも多くの画像フレームを扱えるため、動画処理にもメリットがある
+- 要するにImage側のエンコーダ結果をテキスト側のデコーダのCross Attentionとして使うところがポイントっぽい
+
+### [2023-05-03 SpikeGPT: より軽量な環境で動かすことが可能な言語モデルの可能性](https://zenn.dev/octu0/scraps/0078b6e9925674)
+
+### [2023-05-03 BigQueryのテーブルクローン機能がGA (Google Cloud)](https://cloud.google.com/bigquery/docs/release-notes#May_03_2023)
+
+### [2023-05-03 LLMの独自コンテキスト拡張(RAG)にKendraを使用する例の紹介 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
+
+### [2023-05-03 Gravitonプロセッサに対するPyTorch 2.0の推論性能の最適化を実現 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/optimized-pytorch-2-0-inference-with-aws-graviton-processors/)
+
 ### [2023-05-01 長文から論点を抽出して、その論点を軸に文章の要約を試みる](https://note.com/mahlab/n/ndce1a18681e8)
 
 - 手順は以下
@@ -119,6 +145,8 @@
 - Recurrent Memory Transformerという昨年の論文に基づいている
   - [https://arxiv.org/abs/2207.06881](https://arxiv.org/abs/2207.06881)
 - 絵だけみる感じたと階層的にやる感じなのかなー、比較的ロースペック(1080Ti)で実験しているので検証はし易そうだがコードがない
+- この動画で話題になっている
+  - [https://www.youtube.com/watch?v=0404XdXnUvU](https://www.youtube.com/watch?v=0404XdXnUvU)
 
 ### [2023-04-24 大規模言語モデルのための強化学習｜npaka｜note](https://note.com/npaka/n/ne6d2e7e076ea)
 
