@@ -2,7 +2,25 @@
 
 ## book
 
+### [2023-01-27 オブザーバビリティ・エンジニアリング (オライリー)](https://www.amazon.co.jp/dp/4814400128)
+
+### [2023-01-25 プログラマーのためのCPU入門](https://www.amazon.co.jp/dp/4908686165)
+
+- 書評的には熱い
+  - [プログラマのためのCPU入門 - ぱたへね](https://natsutan.hatenablog.com/entry/2023/02/23/093741)
+  - パタヘネ読んでCPU完全理解した！みたいな人が現実を知るのに良い本
+
 ### [2022-12-28 単体テストの考え方/使い方](https://www.amazon.co.jp/dp/4839981728)
+
+### [2022-11-09 コンピュータの構成と設計　MIPS Edition　第6版](https://www.amazon.co.jp/dp/B0BLTQS81T)
+
+- パタヘネと呼ばれているやつ
+
+### [2022-10-14 Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識](https://www.amazon.co.jp/dp/B0BG8J5QJ1)
+
+- 社内で話題になっていた
+- 著者自身による紹介
+  - [Linuxカーネル学習の敷居を下げたいという思いを実現した本 「Linuxのしくみ」](https://speakerdeck.com/sat/linuxkaneruxue-xi-nofu-ju-woxia-getaitoiusi-iwoshi-xian-sitaben-linuxnosikumi)
 
 ### [2022-07-01 作って学ぶコンピュータアーキテクチャ —— LLVMとRISC-Vによる低レイヤプログラミングの基礎](https://www.amazon.co.jp/dp/4297129140)
 
@@ -28,7 +46,7 @@
 ### [2020-02-13 ボトムアップDDD](https://www.amazon.co.jp/dp/B082WXZVPC/)
 
 - CADDi輪読会で題材になっていた。
-- 買った。
+- 買った。読了済み。
 - [読書メモ](./2020-02-13_bottom-up-ddd.md)
 
 ### [2019-07-18 データ指向アプリケーションデザイン](https://www.oreilly.co.jp/books/9784873118703/)

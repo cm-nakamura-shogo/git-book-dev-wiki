@@ -8,6 +8,11 @@
 
 - いわゆるDMBOK
 
+### [2018-11-14 SQL実践入門 ──高速でわかりやすいクエリの書き方](https://www.amazon.co.jp/dp/B07JHRL1D3)
+
+- fkubotaさん推奨図書
+  - [https://twitter.com/fkubota_/status/1627234848854376448](https://twitter.com/fkubota_/status/1627234848854376448)
+
 ### [2015-03-10 理論から学ぶデータベース実践入門](https://www.amazon.co.jp/dp/4774171972)
 
 - かなりボリューミーではあるみたい

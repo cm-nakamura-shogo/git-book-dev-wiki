@@ -1,6 +1,11 @@
 
 ## book
 
+### [2023-05-03 スタッフエンジニア　マネジメントを超えるリーダーシップ](https://www.amazon.co.jp/dp/429607055X)
+
+- devioの書評
+  - [[書評]シニアエンジニアから先のキャリアを考える「スタッフエンジニア マネジメントを超えたリーダーシップ」 | DevelopersIO](https://dev.classmethod.jp/articles/book-review-staff-engineer/)
+
 ### [2022-11-21 人を選ぶ技術](https://www.amazon.co.jp/dp/4866802065)
 
 - ばんくしさん推奨図書
@@ -24,6 +29,8 @@
 ### [2020-05-20 SCRUM BOOT CAMP THE BOOK](https://www.amazon.co.jp/gp/product/B086GBXRN6)
 
 - nagaseサンの本
+
+### [2019-04-25 スーパーエンジニアへの道　技術リーダーシップの人間学](https://www.amazon.co.jp/dp/B09BDVP5BV)
 
 ### [2019-09-17 ちいとぽ](https://www.amazon.co.jp/dp/4820729632)
 
@@ -50,9 +57,20 @@
 
 ### [2014-07-30 コンサル一年目が学ぶこと](https://www.amazon.co.jp/dp/B00MA671WW)
 
+- 社内での推奨図書
+
+### [2014-11-13 ファシリテーションの教科書](https://www.amazon.co.jp/dp/B00P28A5M8)
+
+- elithのニュースレターから
+
 ### [2011-05-26 アート・オブ・コミュニティ ―「貢献したい気持ち」を繋げて成果を導くには (オライリー)](https://www.amazon.co.jp/dp/4873114950)
 
 - 嵩原さん推奨図書
+
+### [2006-11-08 技術の創造と設計](https://www.amazon.co.jp/dp/4000052446)
+
+- ところてんさんが言及していたので
+  - [https://twitter.com/tokoroten/status/762465213559910400](https://twitter.com/tokoroten/status/762465213559910400)
 
 ### [2001-07-03 イノベーションのジレンマ 増補改訂版](https://www.amazon.co.jp/dp/4798100234)
 
