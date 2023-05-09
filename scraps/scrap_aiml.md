@@ -1,5 +1,71 @@
 # AIML
 
+### [2023-05-09 MLflowをAWSで動作しSageMakerと連携する際にアクセス制御を実現する方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/securing-mlflow-in-aws-fine-grained-access-control-with-aws-native-services/)
+
+- 前回記事と併せるとMLflowを稼働させる方法の参考になりそう
+
+### [2023-05-08 TensorRTとTriton Inference Serverを使用した最適なパフォーマンスの推論方法について (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/host-ml-models-on-amazon-sagemaker-using-triton-tensorrt-models/)
+
+### [2023-05-08 食べログがChatGPTプラグインを提供開始](https://prtimes.jp/main/html/rd/p/000000903.000001455.html)
+
+### [2023-05-07 SalesforceがSlackGPTをローンチ](https://thebridge.jp/2023/05/salesforce-launches-slackgpt-embracing-generative-ai-for-enterprise-workflows)
+
+- AI 機能はまだ新しい Slack プラットフォームの一部として開発・テストされている
+- 未読のメッセージが多数ある場合、ユーザはクリックするだけで議論された内容の要約を得ることができ、要約とアクションアイテムを求めることで、逃した打ち合わせに追いつくことができる
+- Claudeという見慣れないLLMの姿も
+
+### [2023-05-07 NVIDIA製OSSのLLMにガードレールを設定するNeMo Guardrails (DevIO)](https://dev.classmethod.jp/articles/nemo-guardrails-overview/)
+
+- 裏側はLangChainってのがLangChainの先行具合を語っているな
+
+### [2023-05-07 SAMで動画からデータセットを作る例 (DevIO)](https://dev.classmethod.jp/articles/sygment-anything-create-dataset-image/)
+
+- 追跡やノイズ除去の部分が参考になる
+- そもそもmatplotlibでマウスイベントとかとれるんや、知らんかった…
+
+### [2023-05-06 MosaicMLのLLMホスティング推論が安価かもという話 (mah_labさん)](https://twitter.com/mah_lab/status/1654769352439386112)
+
+- いま話題のMPT-7B-Instructの場合は$0.0005/1k tokens
+- OpenAIのgpt-3.5-turboは$0.002/1k tokensなので1/4になる
+
+### [2023-05-06 OpenAssistantのオープンソースデータセットOASST1の日本語翻訳版が公開 (クニえもんさん)](https://twitter.com/kun1em0n/status/1654781915315191813)
+
+- 自動翻訳なので元言語がマイナーな言語は除外することを推奨されている
+
+### [2023-05-06 RedPajama-INCITEの発表](https://twitter.com/togethercompute/status/1654600390288064513)
+
+- LLaMAのレシピを可能な限り再現するモデルとインストラクトチューニング版とチャット版を公開
+- npakaさんの記事でも
+  - [Google Colab で RedPajama-INCITE を試す｜npaka｜note](https://note.com/npaka/n/nd4b73951a46f)
+- その他の反応
+  - [https://twitter.com/jaguring1/status/1654625307541004288](https://twitter.com/jaguring1/status/1654625307541004288)
+
+### [2023-05-06 Andrew Ngさんの開発者のためのプロンプトエンジニアリングの要点](https://note.com/mahlab/n/n96c84a441b4d)
+
+- 組み込む際のご参考に
+- こちらにもまとめられていた
+  - [開発者のためのチャットGPTプロンプトエンジニアリング講座が公開されていたので眺めてみた - Qiita](https://qiita.com/mihoicchi/items/a7d04d6b2b3bfbc96e72)
+
+### [2023-05-05 BigQueryのINSERT INTO SELECTでAmazon S3およびAzure Blobからフィルタリングしてテーブルに追加することが可能に (Google Cloud)](https://cloud.google.com/bigquery/docs/release-notes#May_05_2023)
+
+- まだプレビュー
+
+### [2023-05-05 Amazon KendraとAmazon Rekognitionを統合し画像を検索できるエンジンを実現する方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/build-an-image-search-engine-with-amazon-kendra-and-amazon-rekognition/)
+
+- 複雑な画像の例としてAWSのアーキテクチャ図を題材としている
+- RekognitionのCustom Labelsやテキスト検出を使用
+
+### [2023-05-05 MPT-7Bの発表](https://www.mosaicml.com/blog/mpt-7b)
+
+- 6万5000トークン使用可能（GPT-4の2倍）
+- 7Bと比較的小さいモデルながら、かなり高性能
+- 日本語を扱える
+- npakaさんの記事でも
+  - [Google Colab で MPT-7B を試す｜npaka｜note](https://note.com/npaka/n/nf442fc9f9c8d)
+- その他の反応
+  - [https://twitter.com/jaguring1/status/1654613738727804933](https://twitter.com/jaguring1/status/1654613738727804933)
+  - [https://twitter.com/forasteran/status/1654609679392346112](https://twitter.com/forasteran/status/1654609679392346112)
+
 ### [2023-05-04 CLIP ViT-L/14がリリース (Hugging Face)](https://huggingface.co/laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K)
 
 - ImageNetで79.2%のゼロショット精度を実現したCLIP ViT-L/14がリリース
@@ -10,6 +76,8 @@
 - ベンチマークでは、OpenAIのcode-cushman-001 (12B)モデルも凌駕している
 - VSCodeの拡張機能「HF Code Autocomplete」として使える（APIキーとかは必要そう）
   - [HF Code Autocomplete - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=HuggingFace.huggingface-vscode)
+- npakaさん
+  - [StarCoder - コードのためのLLM｜npaka｜note](https://note.com/npaka/n/n242eadbf2cd2)
 
 ### [2023-05-04 MaMMUT: マルチモーダルのための新しい基盤モデルアーキテクチャの研究 (Google Research)](https://ai.googleblog.com/2023/05/mammut-simple-vision-encoder-text.html)
 
@@ -47,6 +115,11 @@
 
 - SAMのイメージがまだわかないな。
 
+### [2023-05-01 ローカルLLM の対話で使われてるプロンプト書式まとめ (npakaさん)](https://note.com/npaka/n/n2e2cf5a458ac)
+
+- 色々あって泣けてくる
+
+
 ### [2023-05-01 GPT-3でZennの使い方を回答できる問い合わせシステムを作ってみた](https://dev.classmethod.jp/articles/zenn-chat-with-gpt3)
 
 - LLamaIndexとか使わずにやる例となっており、Pineconeに対してベクトル検索している
@@ -66,6 +139,8 @@
 
 - 大きめの変更が加えられており、APIが整理されている
 - queryなどの使い方の違い、indexはビューに過ぎない点などが特徴か
+- クイックスタートガイドの続編
+  - [LlamaIndex クイックスタートガイド - v0.6.0｜npaka｜note](https://note.com/npaka/n/n50475d6c3118)
 
 ### [2023-04-28 音声合成に使用可能な事前学習モデルHuBERTをApache-2.0ライセンスで公開](https://twitter.com/yasyune1023/status/1651893684521287682)
 
