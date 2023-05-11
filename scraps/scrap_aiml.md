@@ -1,5 +1,42 @@
 # AIML
 
+### [2023-05-11 Bardが日本語に対応 (Google Japan Blog)](https://japan.googleblog.com/2023/05/bard.html)
+
+- ウェイトリストがなくなり180カ国以上ですぐに英語での利用が可能になったこと、そして日本語と韓国語に対応したことが発表
+- Bardは現在、Googleが開発した最新のAI基盤モデル「PaLM 2」を用いており、今後さらに強力な基盤モデルのGeminiへ移行する予定
+- その他のソース
+  - [At Google I/O, generative AI gets to work | Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-at-io-2023/?hl=en)
+  - [［速報］Googleの生成的AI「Bard」が日本語に対応。ウェイトリストもなくなり、すぐに利用できるように。Google I/O 2023 － Publickey](https://www.publickey1.jp/blog/23/googleaibard.html)
+
+### [2023-05-11 Google I/Oでの新製品Gen App Builderに搭載の検索エンジンEnterprise Searchを解説したセッション](https://twitter.com/kazunori_279/status/1656404071522381824?)
+
+- Google検索譲りのセマンティック検索機能を提供。LLMとの統合で全く新しいユーザ体験を実現
+
+### [2023-05-10 Vertex AIがGenerative AIをサポート。まだプレビュー (Google Cloud)](https://cloud.google.com/release-notes#May_10_2023)
+
+- モデルは以下。チャットから埋め込み、チューニングまでカバーしていそう。本気を出してきたか。
+  - PaLM 2 for Text: text-bison@001
+  - PaLM 2 for Chat: chat-bison@001
+  - Embedding for Text: textembedding-gecko@001
+  - Generative AI Studio for Language
+  - Tuning for PaLM 2
+
+### [2023-05-10 JupyterConで開発の生産性を高めるための新しいツールを発表 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/announcing-new-jupyter-contributions-by-aws-to-democratize-generative-ai-and-scale-ml-workloads/)
+
+- Jupyter AI
+  - LLMを使い、プログラマーがソースコードを生成、デバッグ、説明するのを助けることが可能
+  - また、ローカルファイルに関する質問に答えたり、簡単な自然言語のプロンプトからノートブック全体を生成したりすることも可能に
+  - マジックコマンドと、JupyterLabのフレンドリーなチャットUIの両方を提供する
+- Amazon CodeWhisperer Jupyter エクステンション
+  - JupyterLabおよびAmazon SageMaker StudioのPythonノートブックに対して、リアルタイムで1行または全機能のコード提案を生成するCodeWhisperer拡張を無料でインストールして使用できることを発表
+- Notebookのスケジュール実行
+  - ノートブックスケジューリングツールが、オープンソースのJupyter拡張として登場
+  - [Schedule your notebooks from any JupyterLab environment using the Amazon SageMaker JupyterLab extension | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/schedule-your-notebooks-from-any-jupyterlab-environment-using-the-amazon-sagemaker-jupyterlab-extension/)
+- Amazon CodeGuru Jupyterエクステンション
+  - ノートブックセル内のインジェクションの欠陥、データリーク、弱い暗号、暗号化の欠落などのセキュリティ脆弱性を検出するのを支援
+  - また、MLライブラリAPIの誤用、無効な実行順序、非決定性など、計算ノートブックの可読性、再現性、正しさに影響する多くの一般的な問題を検出する
+
+
 ### [2023-05-09 MLflowをAWSで動作しSageMakerと連携する際にアクセス制御を実現する方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/securing-mlflow-in-aws-fine-grained-access-control-with-aws-native-services/)
 
 - 前回記事と併せるとMLflowを稼働させる方法の参考になりそう
@@ -91,6 +128,9 @@
 ### [2023-05-03 BigQueryのテーブルクローン機能がGA (Google Cloud)](https://cloud.google.com/bigquery/docs/release-notes#May_03_2023)
 
 ### [2023-05-03 LLMの独自コンテキスト拡張(RAG)にKendraを使用する例の紹介 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
+
+- 社内検証してくれた人がいるみたい
+  - [Amazon Kendra と OpenAI により最新の AWS ユーザーガイドに基づいて回答するチャットアプリケーションのサンプルを試してみた | DevelopersIO](https://dev.classmethod.jp/articles/using-amazon-kendra-langchain-extensions/)
 
 ### [2023-05-03 Gravitonプロセッサに対するPyTorch 2.0の推論性能の最適化を実現 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/optimized-pytorch-2-0-inference-with-aws-graviton-processors/)
 

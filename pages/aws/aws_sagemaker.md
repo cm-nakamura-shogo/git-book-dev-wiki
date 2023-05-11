@@ -115,6 +115,27 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 ### [2023-05-04 SageMaker JumpStartを使ってGenerative AIをAWSで始める方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/get-started-with-generative-ai-on-aws-using-amazon-sagemaker-jumpstart/)
 
+### [2023-05-09 SageMaker上のTriton推論サーバで動作するPythonバックエンドの紹介](https://aws.amazon.com/jp/blogs/machine-learning/host-ml-models-on-amazon-sagemaker-using-triton-python-backend/)
+
+- FILの記事に似ている。違いが良く分からん。
+
+### [2023-05-09 SageMaker上のESMFold言語モデルによるタンパク質構造予測の高速化](https://aws.amazon.com/jp/blogs/machine-learning/accelerate-protein-structure-prediction-with-the-esmfold-language-model-on-amazon-sagemaker/)
+
+- ESMFoldは、アミノ酸配列からタンパク質の構造を予測するために開発された、高精度な深層学習ベースの手法
+- AlpaFold2などと異なり、ルックアップやMultiple Sequence Alignmentを必要とせず、外部データベースへの依存もない
+- その代わりに大規模なタンパク質言語モデル（pLM）をバックボーンとして使用する
+
+### [2023-05-10 SageMaker CanvasのML予測を使ってAmazon QuickSightで予測ダッシュボードを公開する事例](https://aws.amazon.com/jp/blogs/machine-learning/publish-predictive-dashboards-in-amazon-quicksight-using-ml-predictions-from-amazon-sagemaker-canvas/)
+
+### [2023-05-10 GravitonでSageMakerの推論コストを削減する](https://aws.amazon.com/jp/blogs/machine-learning/reduce-amazon-sagemaker-inference-cost-with-aws-graviton/)
+
+- Graviton3ベースのEC2 c7gインスタンスを使ったSageMakerリアルタイム推論の例
+- 比較対象として、16個のvCPUと32GiBのメモリのスペックで横並びに評価している
+- Gravitonインスタンスにモデルをデプロイするには、AWS DLC(Deep Learning Container)を使用するか、ARMv8.2アーキテクチャに対応したコンテナを自身で用意すればよいとのこと
+- 自身で用意するための公式ドキュメント
+  - [Building your own algorithm container — Amazon SageMaker Examples 1.0.0 documentation](https://sagemaker-examples.readthedocs.io/en/latest/advanced_functionality/scikit_bring_your_own/scikit_bring_your_own.html)
+
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -134,6 +155,8 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - TensorBoardは、トレーニングセットと検証セットにおけるモデルの精度やロスを追跡するために一般的に使用される観測可能ツール
 - 価格表にも更新があり、ホスティングするためにml.r5.largeインスタンスが使われ、US Eastで1時間$0.126程度
 - 東京リージョンではまだ使えない。
+- 公式ブログ
+  - [Amazon SageMaker with TensorBoard: An overview of a hosted TensorBoard experience | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/amazon-sagemaker-with-tensorboard-overview-of-a-hosted-tensorboard-experience/)
 
 ### [2023-05-01 Data Wranglerが画像データ作成に対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-data-wrangler-image-data-preparation/)
 
@@ -144,9 +167,30 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - 公式ブログ
   - [Prepare image data with Amazon SageMaker Data Wrangler | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/prepare-image-data-with-amazon-sagemaker-data-wrangler/)
 
-### [2023-05-02 Sagemaker Autopilotは、サンプルの重みと追加の目的指標を持つトレーニングモデルをサポート (AWS)](https://awsapichanges.info/archive/changes/bd55ca-api.sagemaker.html)
-
 ### [2023-05-03 SageMakerのデプロイインスタンスにml.inf2とml.trn1が対応 (AWS)](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/sagemaker-ml-inf2-ml-trn1-instances-model-deployment/)
 
 - 公式ブログでも
   - [2023-05-04 SageMaker上でInferentia2とTrainiumを使ってGenerative AIの推論を低コスト・高パフォーマンスで実現する方法](https://aws.amazon.com/jp/blogs/machine-learning/achieve-high-performance-with-lowest-cost-for-generative-ai-inference-using-aws-inferentia2-and-aws-trainium-on-amazon-sagemaker/)
+
+### [2023-05-10 SageMaker Serverless Inferenceのプロビジョンドコンカレンシーを発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/provisioned-concurrency-amazon-sagemaker-serverless-inference/)
+
+- Serverless Inferenceのコールドスタートを緩和し、ワークロードの予測可能なパフォーマンス特性を得ることが可能に
+- [Announcing provisioned concurrency for Amazon SageMaker Serverless Inference | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/announcing-provisioned-concurrency-for-amazon-sagemaker-serverless-inference/)
+
+### [2023-05-10 SageMaker CanvasでMLモデルを本番で運用できるように](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-canvas-operationalize-ml-models-production/)
+
+- 学習したモデルをワンクリックでSageMaker Model registryに登録できるように
+- 公式ブログ
+  - [Operationalize ML models built in Amazon SageMaker Canvas to production using the Amazon SageMaker Model Registry | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/operationalize-ml-models-built-in-amazon-sagemaker-canvas-to-production-using-the-amazon-sagemaker-model-registry/)
+
+### [2023-05-10 SageMakerノートブックがml.p4d、ml.p4de、ml.inf1インスタンスをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-notebooks-ml-p4d-ml-p4de-ml-inf1-instances/)
+
+- inf1はinf2が先行していた
+
+### [2023-05-10 SageMaker Autopilotは、重みを持つMLモデルのトレーニングや、8つの目的指標をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/sagemaker-autopilot-training-ml-models-weights-eight-objective-metrics/)
+
+- Ensembleモードでの重み付き客観指標による訓練をサポート
+- 追加目的指標は、RMSE、MAE、R2、Balanced Accuracy、Precision、Precision Macro、Recall、Recall Macro
+- 標準的な指標がそろった感じか
+- APIアップデートが先行していた
+  - [2023-05-02 Sagemaker Autopilotは、サンプルの重みと追加の目的指標を持つトレーニングモデルをサポート (AWS)](https://awsapichanges.info/archive/changes/bd55ca-api.sagemaker.html)

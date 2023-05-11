@@ -77,7 +77,7 @@ AthenaのCTASはexternal_locationで結果の保存先を変更できる
 
 ## アップデート
 
-### [2023-04-28 Provisioned Capacityを発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-athena-provisioned-capacity/)
+### [2023-04-28 AthenaがProvisioned Capacityを発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-athena-provisioned-capacity/)
 
 - 固定価格で長期的なコミットメントなしに、完全に管理されたコンピュート容量でSQLクエリを実行できるようにする
 - ミッションクリティカルなクエリに専用コンピートを割り当て、クエリの同時実行数やコストなどのワークロード性能特性を制御することが可能
@@ -90,6 +90,10 @@ AthenaのCTASはexternal_locationで結果の保存先を変更できる
   - Provisioned Capacityが最も適しているユースケースは、Athenaに毎月100ドル以上利用する場合
   - RI（Reserved Instance）に例えるなら、8時間以上の前払いなしのRIを動的に購入して適用するのに近い
 
+### [2023-05-09 AthenaがApache Hudi 0.12.2をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-athena-apache-hudi/)
+
+- Hudi 0.12.2のテーブルをAthenaでクエリすることが可能に
+- Hudiは、Amazon EMR、Apache Spark、Apache Hiveまたはその他の互換性のあるサービスを介して管理されるデータ管理フレームワーク
 
 ## 参考記事
 
