@@ -1,47 +1,85 @@
 # AIML
 
-### [2023-05-11 Bardが日本語に対応 (Google Japan Blog)](https://japan.googleblog.com/2023/05/bard.html)
+### [2023-05-12 チャットボットのテストのためのチャットボットを作って自動で対話してもらう (mah_labさん)](https://note.com/mahlab/n/n377fef03d5a4)
 
-- ウェイトリストがなくなり180カ国以上ですぐに英語での利用が可能になったこと、そして日本語と韓国語に対応したことが発表
-- Bardは現在、Googleが開発した最新のAI基盤モデル「PaLM 2」を用いており、今後さらに強力な基盤モデルのGeminiへ移行する予定
-- その他のソース
-  - [At Google I/O, generative AI gets to work | Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-at-io-2023/?hl=en)
-  - [［速報］Googleの生成的AI「Bard」が日本語に対応。ウェイトリストもなくなり、すぐに利用できるように。Google I/O 2023 － Publickey](https://www.publickey1.jp/blog/23/googleaibard.html)
+- 2人の人格を作ってお互いに対話させるデモ
+- 何をテストしたいのか正直分からんかった。少なくともプロンプトをテストするものではなく、LLMのテストな位置づけか。
 
-### [2023-05-11 Google I/Oでの新製品Gen App Builderに搭載の検索エンジンEnterprise Searchを解説したセッション](https://twitter.com/kazunori_279/status/1656404071522381824?)
+### [2023-05-12 日本語T5モデルの公開｜株式会社レトリバ](https://note.com/retrieva/n/n7b4186dc5ada)
 
-- Google検索譲りのセマンティック検索機能を提供。LLMとの統合で全く新しいユーザ体験を実現
+- 3Bパラメータ(xl)まで対応
+- cc-by-sa-4.0なので商用利用もOK。クレジット表示と改変した場合のライセンス継承が必要。
+- 11Bとなるxxlも公開しそうな雰囲気がある
 
-### [2023-05-10 Vertex AIがGenerative AIをサポート。まだプレビュー (Google Cloud)](https://cloud.google.com/release-notes#May_10_2023)
+### [2023-05-12 Anthropicのテキスト生成AI「Claude」が100kトークンに対応](https://gigazine.net/news/20230512-claude-token-context/)
 
-- モデルは以下。チャットから埋め込み、チューニングまでカバーしていそう。本気を出してきたか。
-  - PaLM 2 for Text: text-bison@001
-  - PaLM 2 for Chat: chat-bison@001
-  - Embedding for Text: textembedding-gecko@001
-  - Generative AI Studio for Language
-  - Tuning for PaLM 2
+- 平均的な人物は約5時間で10万トークン分の文章を読むことが可能だが、Claudeであれば1分以内にこれらの処理を行える
+- 実際に小説全体をClaudeに読み込ませ、一文を書き換えたうえでClaudeに対して「元の文章と何が違いますか」と尋ねたところ、わずか22秒で正解が出せる
 
-### [2023-05-10 JupyterConで開発の生産性を高めるための新しいツールを発表 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/announcing-new-jupyter-contributions-by-aws-to-democratize-generative-ai-and-scale-ml-workloads/)
+### [2023-05-12 OpenAIがWeb browsingとPluginsのbeta版をもうすぐロールアウト](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)
 
-- Jupyter AI
-  - LLMを使い、プログラマーがソースコードを生成、デバッグ、説明するのを助けることが可能
-  - また、ローカルファイルに関する質問に答えたり、簡単な自然言語のプロンプトからノートブック全体を生成したりすることも可能に
-  - マジックコマンドと、JupyterLabのフレンドリーなチャットUIの両方を提供する
-- Amazon CodeWhisperer Jupyter エクステンション
-  - JupyterLabおよびAmazon SageMaker StudioのPythonノートブックに対して、リアルタイムで1行または全機能のコード提案を生成するCodeWhisperer拡張を無料でインストールして使用できることを発表
-- Notebookのスケジュール実行
-  - ノートブックスケジューリングツールが、オープンソースのJupyter拡張として登場
-  - [Schedule your notebooks from any JupyterLab environment using the Amazon SageMaker JupyterLab extension | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/schedule-your-notebooks-from-any-jupyterlab-environment-using-the-amazon-sagemaker-jupyterlab-extension/)
-- Amazon CodeGuru Jupyterエクステンション
-  - ノートブックセル内のインジェクションの欠陥、データリーク、弱い暗号、暗号化の欠落などのセキュリティ脆弱性を検出するのを支援
-  - また、MLライブラリAPIの誤用、無効な実行順序、非決定性など、計算ノートブックの可読性、再現性、正しさに影響する多くの一般的な問題を検出する
+- 来週中にすべてのPlusユーザーに展開される予定
 
+### [2023-05-11 ChatGPT Code Interpreterのデモ動画](https://twitter.com/yutatatatata/status/1656460958309707776)
 
-### [2023-05-09 MLflowをAWSで動作しSageMakerと連携する際にアクセス制御を実現する方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/securing-mlflow-in-aws-fine-grained-access-control-with-aws-native-services/)
+- すごいし個人的には便利だと思う
+- 動画をみてると分析観点のフィードバックを指示であたえるには、結局専門知識いるので、誰でもできるようになるわけではなさそう。
+- 自分でやったことある人しか使いこなせないやーつな気もする
 
-- 前回記事と併せるとMLflowを稼働させる方法の参考になりそう
+### [2023-05-11 生成AI周回遅れキャッチアップ勉強会！ - Speaker Deck](https://speakerdeck.com/minorun365/sheng-cheng-aizhou-hui-chi-rekiyatutiatuhumian-qiang-hui)
 
-### [2023-05-08 TensorRTとTriton Inference Serverを使用した最適なパフォーマンスの推論方法について (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/host-ml-models-on-amazon-sagemaker-using-triton-tensorrt-models/)
+- ChatGPT Browsing Pluginは知らなかったな
+- Chain of ThoughtやFew-shotなどのプロンプトエンジニアリング用語覚えられない
+
+### [2023-05-11 Bard(バード)とGPT-4の出力を横並びにする比較記事](https://qiita.com/kumag0r0/items/77dbe743643183ae3e98)
+
+- 結構肉薄しているという印象は私と同じ。
+
+### [2023-05-11 Whisper JAXのデモがHugging FaceのSpaceにて公開](https://twitter.com/sanchitgandhi99/status/1656665496463495168)
+
+### [2023-05-11 低レイテンシーなテキスト生成について (Hugging Face)](https://huggingface.co/blog/assisted-generation)
+
+- 量子化、バッチ化、並列化が既存
+- これに対してASSISTANT MODELを使って生成することで低レイテンシーを実現
+- TransformersのAPIを使えば簡単に利用可能らしい
+
+### [2023-05-11 サイバーエージェント、独自の日本語LLM（大規模言語モデル）を開発](https://www.cyberagent.co.jp/news/detail/id=28797)
+
+- すでに13Bまでの開発が完了しており、当社が提供する「極予測AI」「極予測TD」「極予測LP」などAIを活用した広告クリエイティブ制作領域のサービスにおいて活用を始めている
+- まあ言ってるだけなので確認するすべがないが、リソースは本気度が高いので、そうなのかもしれん。
+  - [80基の「NVIDIA H100 Tensor コア GPU」※2を活用したAI開発環境](https://www.cyberagent.co.jp/news/detail/id=28484)
+- NVIDIAと協業してたのか、知らんかった。
+
+### [2023-05-10 GitLabとGoogle CloudはAI分野での提携を発表](https://www.publickey1.jp/blog/23/gitlabgoogle_cloudaiai.html)
+
+- GitHub Copilot Xの後追い
+
+### [2023-05-10 ZendeskがOpenAIと提携しZendesk AIを発表](https://www.zendesk.co.jp/newsroom/press-releases/zendesk-ai/)
+
+- devio
+  - [[速報] #Zendesk が #OpenAI と提携しAI関連の新サービス Zendesk AIを発表しました | DevelopersIO](https://dev.classmethod.jp/articles/zendesk-ai-announces/)
+
+### [2023-05-10 Metaが深度や熱、IMU信号を含めたマルチモーダルImageBindを公開](https://twitter.com/masahirochaen/status/1656176014714880003)
+
+- 「ImageBind」は、「画像」「テキスト」「音声」「深度(3D)」「熱」「IMU(慣性測定ユニット)」といった6つの異なるモダリティにまたがる共同埋め込みを学習
+- ロボット分野での活用が期待。
+- 凄いとは思うしOpenAI以上と言っているが、入力が以上と言っているのだけなので、まあ用途は限られるかな…
+- その他
+  - [Google Colab で ImageBind を試す｜npaka](https://note.com/npaka/n/n22f7980e12bc)
+
+### [2023-05-10 ソフトバンク、LINEと和製GPT立ち上げへ](https://www.itmedia.co.jp/news/articles/2305/10/news170.html#utm_term=share_sp)
+
+- LINEが開発してきた独自の大規模言語モデルHyperCLOVAがキーか。
+
+### [2023-05-09 信頼されるAIプロダクトを作るポイントの解説 (piqcy)](https://twitter.com/icoxfog417/status/1655593727543373827)
+
+- 利用目的に合わないAIの利用(abuse)、過信による不適切な利用(misuse)をコントロールして、不信による不使用(disuse)を防止する
+
+### [2023-05-09 StarCoderをチャット用にチューニングして利用する (Hugging Face)](https://huggingface.co/blog/starchat-alpha)
+
+### [2023-05-08 頭の中に浮かんだ文章の意味を fMRI で解読する驚くべきデコーダーの開発](https://aasj.jp/news/watch/22018)
+
+- 単語単位ではないが、それっぽい埋め込みを生成できるらしい
 
 ### [2023-05-08 食べログがChatGPTプラグインを提供開始](https://prtimes.jp/main/html/rd/p/000000903.000001455.html)
 
@@ -59,6 +97,10 @@
 
 - 追跡やノイズ除去の部分が参考になる
 - そもそもmatplotlibでマウスイベントとかとれるんや、知らんかった…
+
+### [2023-05-06 サクッと始めるプロンプトエンジニアリング【LangChain / ChatGPT】](https://zenn.dev/umi_mori/books/prompt-engineer)
+
+- LangChainを使うときに一番最初に読むにはええかも
 
 ### [2023-05-06 MosaicMLのLLMホスティング推論が安価かもという話 (mah_labさん)](https://twitter.com/mah_lab/status/1654769352439386112)
 
@@ -82,15 +124,6 @@
 - 組み込む際のご参考に
 - こちらにもまとめられていた
   - [開発者のためのチャットGPTプロンプトエンジニアリング講座が公開されていたので眺めてみた - Qiita](https://qiita.com/mihoicchi/items/a7d04d6b2b3bfbc96e72)
-
-### [2023-05-05 BigQueryのINSERT INTO SELECTでAmazon S3およびAzure Blobからフィルタリングしてテーブルに追加することが可能に (Google Cloud)](https://cloud.google.com/bigquery/docs/release-notes#May_05_2023)
-
-- まだプレビュー
-
-### [2023-05-05 Amazon KendraとAmazon Rekognitionを統合し画像を検索できるエンジンを実現する方法 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/build-an-image-search-engine-with-amazon-kendra-and-amazon-rekognition/)
-
-- 複雑な画像の例としてAWSのアーキテクチャ図を題材としている
-- RekognitionのCustom Labelsやテキスト検出を使用
 
 ### [2023-05-05 MPT-7Bの発表](https://www.mosaicml.com/blog/mpt-7b)
 
@@ -116,23 +149,7 @@
 - npakaさん
   - [StarCoder - コードのためのLLM｜npaka｜note](https://note.com/npaka/n/n242eadbf2cd2)
 
-### [2023-05-04 MaMMUT: マルチモーダルのための新しい基盤モデルアーキテクチャの研究 (Google Research)](https://ai.googleblog.com/2023/05/mammut-simple-vision-encoder-text.html)
-
-- 視覚言語基盤モデルは、一般的にはCLIPなどに代表される対照学習と次トークン予測の２つの主要なシナリオが一般的
-- 前者と後者で得意な下流タスクがことなるため課題
-- MaMMUTはこれを解決するアーキテクチャとなっており、更に先行研究よりも多くの画像フレームを扱えるため、動画処理にもメリットがある
-- 要するにImage側のエンコーダ結果をテキスト側のデコーダのCross Attentionとして使うところがポイントっぽい
-
 ### [2023-05-03 SpikeGPT: より軽量な環境で動かすことが可能な言語モデルの可能性](https://zenn.dev/octu0/scraps/0078b6e9925674)
-
-### [2023-05-03 BigQueryのテーブルクローン機能がGA (Google Cloud)](https://cloud.google.com/bigquery/docs/release-notes#May_03_2023)
-
-### [2023-05-03 LLMの独自コンテキスト拡張(RAG)にKendraを使用する例の紹介 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
-
-- 社内検証してくれた人がいるみたい
-  - [Amazon Kendra と OpenAI により最新の AWS ユーザーガイドに基づいて回答するチャットアプリケーションのサンプルを試してみた | DevelopersIO](https://dev.classmethod.jp/articles/using-amazon-kendra-langchain-extensions/)
-
-### [2023-05-03 Gravitonプロセッサに対するPyTorch 2.0の推論性能の最適化を実現 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/optimized-pytorch-2-0-inference-with-aws-graviton-processors/)
 
 ### [2023-05-01 長文から論点を抽出して、その論点を軸に文章の要約を試みる](https://note.com/mahlab/n/ndce1a18681e8)
 
@@ -241,10 +258,6 @@
 - 弊社ブログ
   - [https://dev.classmethod.jp/articles/chatgpt-web-chat-history-off/](https://dev.classmethod.jp/articles/chatgpt-web-chat-history-off/)
 
-### [2023-04-25 Google Research : 多項式複雑度でNASを実現するLayerNAS](https://ai.googleblog.com/2023/04/layernas-neural-architecture-search-in.html)
-
-- 探索すべきモデル候補の数が1桁減少し、計算量や最終的な性能がより良いモデルアーキテクチャを発見することが可能
-
 ### [2023-04-24 GPT4Toolsの公開](https://gpt4tools.github.io/)
 
 - Toolsに画像処理をいくつかいれてあり、それをユーザのクエリから選ぶ感じで対話的に画像処理をするツール
@@ -296,13 +309,6 @@
 
 - いままではOtherという形だったので、日本語に特化している点は期待できる
 
-### [2023-04-20 Google Research : 長期な時系列予測のための研究正解TiDEモデルの紹介](https://ai.googleblog.com/2023/04/recent-advances-in-deep-long-horizon.html)
-
-- 既存手法としてTransformer系のFEDformerやPatchTSTを例にしている
-- TiDEはシンプルなMLPアーキテクチャがベースのEncoder-Decoderモデルとなっている
-- 入力として過去の出力yやAttributes、特徴量xから構成される
-- これらはGoogle CloudのVertex AutoML Forecastingで近々利用できるようになる予定
-
 ### [2023-04-20 Stability AIがLLMとなるStableLMを発表](https://github.com/Stability-AI/StableLM)
 
 - AWSとの連携は期待が持てる。日本語対応が期待されるところ。
@@ -349,19 +355,6 @@
 - データが329MBと小さめなので参加しやすいかも
 - 締めは2023-08-21
 
-### [2023-04-19 特徴量エンジニアリングとFeature Storeを使ってほぼリアルタイムな特徴量による裏付けを分析](https://aws.amazon.com/jp/blogs/machine-learning/use-streaming-ingestion-with-amazon-sagemaker-feature-store-and-amazon-msk-to-make-ml-backed-decisions-in-near-real-time/)
-
-- ストリーミングの取り込みはAmazon Managed Streaming for Apache Kafka (MSK)(Amazon MSK)を使用
-- 事例としてはトランザクションに対する不正検知となっており、結構おもしろい
-
-### [2023-04-18 JumpStartでドメインに適応したLLMをfine-tuningする事例](https://aws.amazon.com/jp/blogs/machine-learning/financial-text-generation-using-a-domain-adapted-fine-tuned-large-language-model-in-amazon-sagemaker-jumpstart/)
-
-- モデルはLLM GPT-J 6Bを使用。
-
-### [2023-04-18 日本でもGoogle Bardが利用可能に](https://qiita.com/MasaruYamazaki/items/a107d4455500420ffd5b)
-
-- [Google の会話型 Generative AI である Bard が日本から利用可能になったので試してみました！ | DevelopersIO](https://dev.classmethod.jp/articles/bard-googles-generative-ai-is-now-available-in-japan/)
-
 ### [2023-04-18 VicunaがGPT-4のように画像を入力として処理できるように](https://twitter.com/tikgiau/status/1647767975804452864)
 
 - MiniGPT-4とうたっており、Gradioを使ったデモも公開されている
@@ -394,29 +387,9 @@
   - [https://twitter.com/timdarcet/status/1649435730291093506](https://twitter.com/timdarcet/status/1649435730291093506)
 - よくみると、NC-4.0なので非商用かー
 
-### [2023-04-17 大規模言語モデルをデプロイするためのパイプライン、最適化について](https://aws.amazon.com/jp/blogs/machine-learning/deploy-large-models-at-high-performance-using-fastertransformer-on-amazon-sagemaker/)
-
-- LMI DLC(Large Model Inference, Deep Learning Container)と呼ばれている
-- モデルの圧縮や分割方法など網羅的に記載されているかも
-
-### [2023-04-17 SageMaker Data Wrangleでnltkやscipyを使う事例](https://aws.amazon.com/jp/blogs/machine-learning/authoring-custom-transformations-in-amazon-sagemaker-data-wrangler-using-nltk-and-scipy/)
-
-- カスタム変換でnltkやscipyを使うことができる
-
-### [2023-04-17 Fraud Detectorの新機能であるコールドスタートを使用する例](https://aws.amazon.com/jp/blogs/machine-learning/overcome-the-machine-learning-cold-start-challenge-in-fraud-detection-using-amazon-fraud-detector/)
-
-- わずか100イベント程度でリアルタイムの不正防止MLモデルを迅速にブートストラップできる
-
-### [2023-04-17 SageMaker Collections : モデルレジストリのモデルを整理する新機能](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-collections-organize-model-registry/)
-
-- 登録されたモデルのうち互いに関連するものをグループ化し、階層的に整理することが可能
 ### [2023-04-17 Inferentia2によるHuggng Face Transformersの高速化](https://huggingface.co/blog/accelerate-transformers-with-inferentia2)
 
 - こちらはHugging Face側の記事
-### [2023-04-17 低コストで高性能な生成系 AI 推論用の Amazon EC2 Inf2 インスタンスが一般公開](https://aws.amazon.com/jp/blogs/news/amazon-ec2-inf2-instances-for-low-cost-high-performance-generative-ai-inference-are-now-generally-available/)
-
-- 日本語の公式ブログ記事
-- 言語モデル以外でも、inf2.8xlargeやinf2.xlarge辺りは音声処理でもターゲットになるかもしれない。
 
 ### [2023-04-16 Nishikaの材料コンペの2nd place solution解説](https://qiita.com/mi-212/items/694124649d2848a6b559)
 
@@ -449,11 +422,6 @@
 ### [2023-04-15 Streamlitで実装されたQAチェーンを評価するauto-evaluatorの紹介](https://blog.langchain.dev/auto-eval-of-question-answering-tasks/)
 
 - OpenAIモデルだけでなく、RetrieverやEmbeddingに使うモデルも変更しながら評価が可能なツールとなっている
-
-### [2023-04-14 Google Research : 自動微分を越えるアルゴリズム](https://ai.googleblog.com/2023/04/beyond-automatic-differentiation.html)
-
-- 相変わらず先進的。
-- 一応、AutoBoundとしてライブラリを公開しているらしい。
 
 ### [2023-04-14 ベクトルデータベース Pinecone の概念を整理する](https://dev.classmethod.jp/articles/pinecone-overview/)
 

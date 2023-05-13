@@ -16,3 +16,7 @@
 ### 画像処理100本ノック
 
 - [minido/Gasyori100knock-1: 画像処理100本ノックして画像処理を画像処理して画像処理するためのもの For Japanese, English and Chinese](https://github.com/minido/Gasyori100knock-1)
+
+### 画像研究まとめ
+
+- [Zero-shot Learning網羅的サーベイ：CLIPが切り開いたVision & Languageの新しい世界 - エクサウィザーズ Engineer Blog](https://techblog.exawizards.com/entry/2023/05/10/055218)

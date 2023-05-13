@@ -93,6 +93,7 @@
   - 開発環境
     - [AWS CLI                  ](pages/aws/aws_cli.md)
     - [AWS SDK                  ](pages/aws/aws_sdk.md)
+    - [Management Console       ](pages/aws/aws_management_console.md)
   - 基本
     - [概要                     ](pages/aws/aws_overall)
     - [AWS IAM                  ](pages/aws/aws_iam.md)
@@ -136,7 +137,7 @@
     - [Amazon Aurora            ](pages/aws/aws_aurora.md)
     - [Amazon Neptune           ](pages/aws/aws_neptune.md)
     - [Amazon DynamoDB          ](pages/aws/aws_dynamodb.md)
-  - AIML
+  - [AIML                       ](pages/aws/aws_aiml.md)
     - [Amazon Personalize       ](pages/aws/aws_personalize.md)
     - [Amazon SageMaker         ](pages/aws/aws_sagemaker.md)
     - [Amazon Kendra            ](pages/aws/aws_kendra.md)
@@ -151,9 +152,14 @@
     - [AWS Clean Rooms          ](pages/aws/aws_clean_rooms.md)
 - クラウド開発
   - [Azure                      ](pages/cloud/cloud_azure.md)
-  - [GoogleCloud                ](pages/cloud/cloud_google_cloud.md)
-    - [Vertex AI Pipelines      ](pages/gcp/gcp_vertexaipipelines.md)
-    - [コマンド一覧             ](pages/cloud/cloud_google_cloud_command.md)
+  - [GoogleCloud                ]
+    - [概要                     ](pages/gcp/gcp_summary.md)
+    - [記事                     ](pages/gcp/gcp_scrap.md)
+    - [Google Research          ](pages/gcp/gcp_google_research.md)
+    - [BigQuery                 ](pages/gcp/gcp_bigquery.md)
+    - [Cloud Data Fusion        ](pages/gcp/gcp_cloud_data_fusion.md)
+    - [GKE                      ](pages/gcp/gcp_gke.md)
+    - [Vertex AI                ](pages/gcp/gcp_vertexai.md)
   - [Terraform                  ](pages/cloud/cloud_terraform.md)
 - 試験対策
   - AWS
