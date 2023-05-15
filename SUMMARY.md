@@ -182,7 +182,8 @@
     - [SAPノート                   ](pages/exam/aws_certified_006_sap_note.md)
     - [DOP対策                     ](pages/exam/aws_dop.md)
   - Google Cloud
-    - [ACE対策ノート               ](pages/exam/google_cloud_ace_note.md)
+    - [ACE対策ノート               ](pages/exam/gcp_ace_note.md)
+    - [PCD対策ノート               ](pages/exam/gcp_pcd_note.md)
 - Linux
   - セットアップ
     - [ディスプレイ設定     ](pages/linux/linux_display_config.md)

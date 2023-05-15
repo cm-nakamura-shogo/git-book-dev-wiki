@@ -788,7 +788,7 @@
 
 ## ◆セキュリティ
 
-### Cloud IAP（Cloud **Identity-Aware Proxy）**
+### Cloud IAP（Cloud Identity-Aware Proxy）
 
 - Google Cloudが提供するフルマネージドのリバースプロキシ
 - IAPを経由してVPCにある各種リソース（Compute Engineなど）にアクセス可能
@@ -1146,7 +1146,7 @@
 - 送信側は受信側を意識することなく処理を行えるため、受信側のシステム変更や障害に強い
     - そのため、マイクロサービスのアプリケーション同士の連携にも使用可能
 - Publisher、Subscriberには、Google Cloudサービス以外にIoT機器やオンプレシステムも使用可能
-- *複数サーバーに大量のタスクを効率的に、スケーラブルに割り当てるアーキテクチャにも使用*
+- 複数サーバーに大量のタスクを効率的に、スケーラブルに割り当てるアーキテクチャにも使用
 - ack-deadline
     - subscriberのackが無い場合、そのsubscriberには再度配信する。その待ち時間の設定値
 
