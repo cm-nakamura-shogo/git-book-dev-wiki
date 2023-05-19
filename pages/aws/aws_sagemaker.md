@@ -135,6 +135,15 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - 自身で用意するための公式ドキュメント
   - [Building your own algorithm container — Amazon SageMaker Examples 1.0.0 documentation](https://sagemaker-examples.readthedocs.io/en/latest/advanced_functionality/scikit_bring_your_own/scikit_bring_your_own.html)
 
+### [2023-05-16 SageMaker JumpStartでGPT-NeoXT-Chat-Base-20Bという基盤モデルを提供開始](https://aws.amazon.com/jp/blogs/machine-learning/gpt-neoxt-chat-base-20b-foundation-model-for-chatbot-applications-is-now-available-on-amazon-sagemaker/)
+
+- 20Bなので性能は良さそうだが、日本語対応が微妙かもしれない。
+
+### [2023-05-17 ageMaker JumpStartで大規模言語モデルによるサーバーレスな会議要約バックエンドを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-serverless-meeting-summarization-backend-with-large-language-models-on-amazon-sagemaker-jumpstart/)
+
+- Flan-T5-XLを使う。日本語モデルに差し替えできれば有用かもしれない。
+- Lambda + S3のバケツリレーでTranscribeとSageMaker Endpointを使う
+- SageMaker Endpointのお値段が。。
 
 ## アップデート
 

@@ -13,3 +13,11 @@
   - 検出された顔の目、鼻、口が部分的に捉えられている場合、またはマスク、暗いサングラス、携帯電話、手、その他のオブジェクトで覆われている場合
 - 偽を返す例
   - 眼鏡、薄い色のサングラス、髪の毛など、顔認証に影響を与えない一般的な事象を検出した場合
+
+### [2023-05-17 Amazon Rekognition、Face APIsで視線方向検出を開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-rekognition-eye-gaze-direction-detection-face-apis/)
+
+- Rekognition DetectFacesおよびIndexFaces APIsの新しい属性としてEyeDirectionが追加される形
+- 画像内で検出された各顔について、人の視線方向のヨー（縦軸の回転）およびピッチ（横軸の回転）角度を予測
+- ヨー角とピッチ角の値を-180度から180度の間で予測し、0から100の間の信頼度スコアが設定される
+- APIアップデート
+  - [https://awsapichanges.info/archive/changes/5f8543-rekognition.html](https://awsapichanges.info/archive/changes/5f8543-rekognition.html)

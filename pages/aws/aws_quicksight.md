@@ -39,3 +39,8 @@ JSTの9時にユーザが想定通りになるが、一時的にユーザが増�
 - データセット（SPICE） のデータ更新をスケジュール設定がAPIから可能に
 - CloudFormationでもサポートされた（4/15追記）
 - 従来は取り込み部分を EventBridge や Lambda で別途スケジューリングする必要があった
+
+### [2023-05-15 QuickSight、SPICEパフォーマンス最適化のための「Common Sub-expression Elimination」の提供を開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-quicksight-common-sub-expression-elimination/)
+
+- CSEは、複雑な式の繰り返し使用を中間テーブルに押し込んで、合計/小計、トップ・ボトム・フィルター、条件付き書式、チャートの「その他」バケットなど、複雑なクエリを簡素化
+- ダッシュボードの読み込みが速くなり、ユーザ体験の向上が可能

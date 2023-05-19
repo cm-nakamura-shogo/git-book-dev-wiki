@@ -20,3 +20,4 @@
 
 ### [2023-05-11 Google I/Oで自然言語でAIと対話するだけで誰でもアプリが作れる「Duet AI for AppSheet」発表](https://www.publickey1.jp/blog/23/googleaiduet_ai_for_appsheet.html)
 
+### [2023-05-11 LangChain AI、Chroma、Hubbleなどコラボレーションをダイレクトコールアウト](https://twitter.com/manhnd11/status/1656366327018455043)

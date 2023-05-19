@@ -1,5 +1,46 @@
 # AIML
 
+### [2023-05-18 OpenAIのOrganization機能の利用方法をまとめ](https://dev.classmethod.jp/articles/openai-organization-how-to/)
+
+- 端的に言うと、APIの利用料をまとめて請求できるようになる機能
+- WebのUIから利用するChatGPTのPlusアカウントの請求をまとめて行うことは現状できない
+
+### [2023-05-17 Cloudflare、エッジアプリにAIをもたらす「Constellation」発表](https://www.publickey1.jp/blog/23/cloudflareaiconstellation.html)
+
+- 画像認識、アノマリ検出、テキスト処理、音声認識など可能
+
+
+### [2023-05-17 サイバーエージェント、日本語の大規模言語モデルを一般公開](https://www.itmedia.co.jp/news/articles/2305/17/news096.html)
+
+- CC BY-SA 4.0で商用利用も可能。サイズは7B。
+- モデルはOpenCALMというやつでなじみないがGPT-NeoXベースで独自の様子？Hugging Faceで公開されている
+- 13Bパラメータまで開発が完了しているらしい。公開されるかな。
+- npakaさんが試している
+  - [Google Colab で OpenCALM-7B を試す｜npaka](https://note.com/npaka/n/n2185b422a2f2)
+- チャット用途では微妙か…？
+  - [オープンなLLMをDockerで動かす](https://zenn.dev/karaage0703/articles/2b753b4dc26471)
+
+### [2023-05-17 rinnaさんも日本語に特化した36億パラメータのGPT言語モデルを公開](https://prtimes.jp/main/html/rd/p/000000042.000070041.html)
+
+- 同じくGPT-NeoXベースで、MITライセンス
+- npakaさんが試している
+  - [Google Colab で Rinna-3.6B を試す｜npaka](https://note.com/npaka/n/ne4a38239f420)
+
+### [2023-05-15 日本初の挑戦〜食べログによるChatGPTプラグイン開発の舞台裏](https://tech-blog.tabelog.com/entry/first-challenge-tabelog-chatgpt-plugin-devleopment)
+
+- 技術的な話はあまりなかったが、脆弱性診断とかやるのはすごい。
+- コンテキストを与えるとかはやってないのかも？キーワード検索をChatGPTでラッパした感じかもしれない
+
+### [2023-05-15 RWKVの紹介 - Transformerの長所を生かしたRNN](https://huggingface.co/blog/rwkv)
+
+- 仕組みや強みなどが詳しく書いてある。Transformersライブラリとの統合も正式にサポート（`pip install rwkv`が不要）
+- ネイティブで非常に長いコンテキスト長をサポートするなど
+- 新しい多言語トークナイザーがリリースされ、今後は多言語対応を進める
+
+### [2023-05-13 AnnotationGPTは凄そう (piqcyさん)](https://twitter.com/icoxfog417/status/1657282631804014595)
+
+### [2023-05-12 iroiro-lora](https://twitter.com/2vXpSwA7/status/1656920989350105088)
+
 ### [2023-05-12 チャットボットのテストのためのチャットボットを作って自動で対話してもらう (mah_labさん)](https://note.com/mahlab/n/n377fef03d5a4)
 
 - 2人の人格を作ってお互いに対話させるデモ
