@@ -274,6 +274,7 @@
     - [レコメンデーション  ](pages/aiml/aiml_recommendation.md)
     - [Graph NN            ](pages/aiml/aiml_gnn.md)
     - [音声                ](pages/aiml/aiml_speech.md)
+    - [Whisper             ](pages/aiml/aiml_whisper.md)
 - CV
   - [概要                ](pages/aiml_cv/aiml_cv_summary.md)
   - [クラス分類          ](pages/aiml_cv/aiml_cv_classification.md)
@@ -337,6 +338,18 @@
   - [Word2Vec                           ](pages/aiml_nlp/aiml_nlp_word2vec.md)
   - [Transformer                        ](pages/aiml_nlp/aiml_nlp_transformer.md)
     - [Cramming BERT, 2022-12-28](pages/aiml_nlp/aiml_nlp_transformer/cramming_bert_ja.md)
+- LLM
+  - [LLM アルゴリズム     ](pages/aiml_llm/aiml_llm_algo.md)
+  - [LLM サービス         ](pages/aiml_llm/aiml_llm_application_service.md)
+  - [LLM 活用記事         ](pages/aiml_llm/aiml_llm_application_article.md)
+  - [LLM データセット     ](pages/aiml_llm/aiml_llm_dataset.md)
+  - [LLM 開発             ](pages/aiml_llm/aiml_llm_dev.md)
+  - [LLM モデル           ](pages/aiml_llm/aiml_llm_model.md)
+  - [LLM OpenAI社動向     ](pages/aiml_llm/aiml_llm_openai.md)
+  - [LLM LangChain        ](pages/aiml_llm/aiml_llm_retriever_langchain.md)
+  - [LLM LlamaIndex       ](pages/aiml_llm/aiml_llm_retriever_llamaindex.md)
+  - [LLM その他のRetriever](pages/aiml_llm/aiml_llm_retriever_others.md)
+  - [LLM ベクターストア   ](pages/aiml_llm/aiml_llm_vectorstore.md)
 - ブログ管理
   - [ネタ帳  ](blog/blog.md)
   - [執筆済み](blog/blog_released.md)

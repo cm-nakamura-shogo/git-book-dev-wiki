@@ -27,7 +27,6 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 - BQ内部の仕組み
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/e55a6f8822b6528ff47797936e40faedc7d047ac.pdf
 
-
 ## アップデート
 
 ### [2022-10-10 マルチステートメントトランザクションがGA](https://dev.classmethod.jp/articles/bigquery-mutistatement-transaction-ga/)
@@ -39,6 +38,12 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 - クエリでCloud FunctionsやCloud Runの関数を呼び出すことができる機能
 
 ### [2022-10-19 非構造化データを使用可能な機能がプレビュー提供](https://cloud.google.com/blog/products/data-analytics/how-to-manage-and-process-unstructured-data-in-bigquery?hl=en)
+
+### [2023-02-16 BigQueryの主キー/外部キー制約はJoin Eliminationには使われない](https://qiita.com/abe_masanori/items/c19cf240fa3eaeeff44c)
+
+- 実際にデータのチェックが行われるわけではない
+- データのチェックが行われないのであれば主キー/外部キー制約を付与する理由は何なのかというと、一般の DBMS ではオプティマイザが実行計画を最適化する際に利用される
+- その最適化の手法の一つに不要な結合処理をスキップする Join Elimination という手法があり、そちらに利用される
 
 ### [2023-05-03 BigQueryのテーブルクローン機能がGA (Google Cloud)](https://cloud.google.com/bigquery/docs/release-notes#May_03_2023)
 
