@@ -67,3 +67,9 @@ $ aws s3 ls --profile example
 - 参考
   - [AWS CLI のコンフィグファイルと環境変数とコマンドラインオプションで指定できる内容をまとめて確認してみた](https://dev.classmethod.jp/articles/aws-cli-configuration-file-env-option/)
   - [AWS CLIのプロファイル切り替えをいい感じにする](https://qiita.com/crossroad0201/items/f84b3e2fece41750755b)
+
+## Profile Switcher
+
+シェル環境であればSwitcherで切り替えられるのが便利そう。
+
+- [AWS Profile名が覚えきれないので、AWS Profile Switcher使ってみた。 | DevelopersIO](https://dev.classmethod.jp/articles/aws_profile_swicher/)

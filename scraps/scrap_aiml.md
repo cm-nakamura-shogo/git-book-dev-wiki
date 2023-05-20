@@ -1,5 +1,23 @@
 # AIML
 
+### [2023-05-19 日本語翻訳したデータセットhh-rlhf-49k-ja, cnn_dailymail_27k_jaが公開 (クニえもんさん)](https://twitter.com/kun1em0n/status/1659394751949582336)
+
+- hh-rlhf-49k-ja
+  - Anthropicのデータセット hh-rlhfのうち、Mosaic MLのMPT-7B-Instructの学習に使われているものを抜粋して翻訳したもの。
+  - 日本語DollyデータとマージすればMPT-7Bの学習データセットに
+- cnn_dailymail_27k_ja
+  - CNNとDailymailが公開しているニュース要約コーパスで30万レコードのうちの一部を抜粋して翻訳
+
+### [2023-05-19 大規模言語モデルの開発者が知っておくと役立つさまざまな数字](https://gigazine.net/news/20230519-llm-numbers/)
+
+- GPT-3.5と4のコスト比、エンベッディングのコスト、セルフホストする際に使用できそうなSentenceTransformersなど有用な情報がある
+
+### [2023-05-18 OpenCALM-7Bをdolly-15k-jaでLoRAした例](https://twitter.com/masuidrive/status/1659089478781227008)
+
+### [2023-05-18 0518LLMmeetup_LLMシステムの非機能要件対応_現場レポート.pdf - Speaker Deck](https://speakerdeck.com/hirosatogamo/0518llmmeetup-llmsisutemunofei-ji-neng-yao-jian-dui-ying-xian-chang-repoto)
+
+よかった。認証の流れ、閉域化されたAzureでのアーキテクチャの例などが書いてある。
+
 ### [2023-05-18 OpenAIのOrganization機能の利用方法をまとめ](https://dev.classmethod.jp/articles/openai-organization-how-to/)
 
 - 端的に言うと、APIの利用料をまとめて請求できるようになる機能
@@ -10,7 +28,7 @@
 - 画像認識、アノマリ検出、テキスト処理、音声認識など可能
 
 
-### [2023-05-17 サイバーエージェント、日本語の大規模言語モデルを一般公開](https://www.itmedia.co.jp/news/articles/2305/17/news096.html)
+### [2023-05-17 CA-OpenCALM サイバーエージェント、日本語の大規模言語モデルを一般公開](https://www.itmedia.co.jp/news/articles/2305/17/news096.html)
 
 - CC BY-SA 4.0で商用利用も可能。サイズは7B。
 - モデルはOpenCALMというやつでなじみないがGPT-NeoXベースで独自の様子？Hugging Faceで公開されている
@@ -25,6 +43,18 @@
 - 同じくGPT-NeoXベースで、MITライセンス
 - npakaさんが試している
   - [Google Colab で Rinna-3.6B を試す｜npaka](https://note.com/npaka/n/ne4a38239f420)
+
+### [2023-05-16 LlamaIndex 0.6.8の紹介](https://twitter.com/gpt_index/status/1658481782923362306)
+
+- PDFの出典元を得られるように
+  - SimpleDirectoryReaderでpdfを読み込むと自動でnodeのextra_infoにpage_labelが付与
+  - [https://github.com/jerryjliu/llama_index/blob/main/docs/examples/citation/pdf_page_reference.ipynb](https://github.com/jerryjliu/llama_index/blob/main/docs/examples/citation/pdf_page_reference.ipynb)
+- LLM-based Rerankingでより高精度なRetrievalを行う
+  - stage1が埋め込みベクトル、stage2がLLMを使ったRerankingで高速かつ精度の良いNode抽出を行える
+  - [https://twitter.com/jerryjliu0/status/1657827898517012486](https://twitter.com/jerryjliu0/status/1657827898517012486)
+- 外部にデータを送信しない「ローカルオンリー」モードで使用するチュートリアルを追加
+  - [https://twitter.com/jerryjliu0/status/1658119334080724993](https://twitter.com/jerryjliu0/status/1658119334080724993)
+  - LLMはGPT4ALL、埋め込みにはsentence-transformersを使用する例となっている
 
 ### [2023-05-15 日本初の挑戦〜食べログによるChatGPTプラグイン開発の舞台裏](https://tech-blog.tabelog.com/entry/first-challenge-tabelog-chatgpt-plugin-devleopment)
 
@@ -51,6 +81,8 @@
 - 3Bパラメータ(xl)まで対応
 - cc-by-sa-4.0なので商用利用もOK。クレジット表示と改変した場合のライセンス継承が必要。
 - 11Bとなるxxlも公開しそうな雰囲気がある
+- 2023-05-18に再度公開された
+  - [https://twitter.com/jnishi/status/1659084719651160066](https://twitter.com/jnishi/status/1659084719651160066)
 
 ### [2023-05-12 Anthropicのテキスト生成AI「Claude」が100kトークンに対応](https://gigazine.net/news/20230512-claude-token-context/)
 
@@ -341,6 +373,12 @@
 
 - Microsoft SAの記事のアップデート版かな？
 
+### [2023-04-21 faster-whisperてのもあるらしい](https://zenn.dev/ryoppippi/articles/b66fa477c1c3af)
+
+- OpenAI 公式のモデルを軽量化、独自の最適化により、最大 4 倍の高速化を実現
+- 軽いと評判の Whisper.cpp よりも高速に動作（ただしメモリは若干多め）
+- Whisper.cpp と違って、GPU による高速化の恩恵が受けられる
+
 ### [2023-04-21 Whisper JAX : Whisperを70倍高速化を観測](https://twitter.com/currypurin/status/1649402118699360258)
 
 - 一時間の音声を15秒で書き起こす
@@ -349,6 +387,10 @@
 ### [2023-04-21 Jpn10%のRWKVが観測](https://twitter.com/meteor_eternal/status/1649361381697929217)
 
 - いままではOtherという形だったので、日本語に特化している点は期待できる
+
+### [2023-04-20 プロンプトエンジニアリングから始めるLangChain入門 - Speaker Deck](https://speakerdeck.com/os1ma/puronputoenziniaringukarashi-merulangchainru-men)
+
+- LangChainを調べる際に有用
 
 ### [2023-04-20 Stability AIがLLMとなるStableLMを発表](https://github.com/Stability-AI/StableLM)
 

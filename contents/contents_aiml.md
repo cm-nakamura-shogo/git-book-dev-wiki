@@ -99,3 +99,5 @@
 ### [データサイエンティスト スキルチェックリスト](https://the-japan-datascientist-society.github.io/skills-checklist-viewer/)
 
 ### [因果推論100本ノック](https://zenn.dev/s1ok69oo/articles/909ca2e858f43c)
+
+### [AWS-ML-JP](https://github.com/aws-samples/aws-ml-jp)

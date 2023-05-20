@@ -56,3 +56,11 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
   - ml.resize_image：画像のサイズを変更する。
   - ML.DISTANCE: 2つのベクトル間の距離を計算する．
   - ML.LP_NORM：Lᵖ normを計算します．
+
+### [2023-05-18 BigQueryでカラム名の横にあるソートメニューを使って、クエリ結果をソートできるように。プレビュー機能。](https://cloud.google.com/bigquery/docs/release-notes#May_18_2023)
+
+### [2023-05-19 BigQueryでEXTERNAL_QUERY SQL pushdownが一般提供開始](https://cloud.google.com/bigquery/docs/release-notes#May_19_2023)
+
+- Cloud SQLやCloud Spannerデータベースなどの外部ソースからのデータ検索を最適化
+- 列の刈り込み（SELECT句）とフィルターのプッシュダウン（WHERE句）によりり少ないデータを転送することで、実行時間とコストを削減
+- すべてのデータ型がフィルタープッシュダウンに対応していないとのこと

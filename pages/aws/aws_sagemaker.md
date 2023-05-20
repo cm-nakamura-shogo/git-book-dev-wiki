@@ -203,3 +203,6 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - 標準的な指標がそろった感じか
 - APIアップデートが先行していた
   - [2023-05-02 Sagemaker Autopilotは、サンプルの重みと追加の目的指標を持つトレーニングモデルをサポート (AWS)](https://awsapichanges.info/archive/changes/bd55ca-api.sagemaker.html)
+
+
+### [2023-05-19 SageMaker Geospatial MLが一般提供開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-supports-geospatial-ml-generally-available/)
