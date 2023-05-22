@@ -91,6 +91,8 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - GPSIMDエンジンを用いてハードウェアを加速させる
   - General Purpose Single Instruction Multiple Data engine
 
+### [2023-04-20 AWS-CDKを使い爆速で機械学習環境SageMakerStudioを構築する。with TypeScript - Qiita](https://qiita.com/kennyQiita/items/628be93f8aa7ea37be68)
+
 ### [2023-05-02 SageMaker上のTriton推論サーバで動作するFILバックエンドの詳細](https://aws.amazon.com/jp/blogs/machine-learning/hosting-ml-models-on-amazon-sagemaker-using-triton-xgboost-lightgbm-and-treelite-models/)
 
 - Triton推論サーバがエンドポイントで使用

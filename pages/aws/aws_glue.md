@@ -13,6 +13,11 @@ ETLを行うサービス
 - pushした際のコンフリクトは強制上書きされるため注意が必要。
   - ベストプラクティスとして、ブランチをユーザ毎に分けるなどをした方が良い。
 
+## 参考記事
+
+### [2023-04-24 [Step Functions + Glue] Glueジョブ終了時の出力を次のステートに流す。エラーハンドリングもできるよ！ | DevelopersIO](https://dev.classmethod.jp/articles/step-functions-glue-sync-output/)
+
+
 ## アップデート
 
 ### [2023-04-17 リソース使用状況を監視する新機能を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/aws-glue-monitor-usage-resources/)
@@ -33,3 +38,6 @@ Glue CrawlerはS3からデータスキーマとパーティションを抽出し
   - [[アップデート] AWS Glue 大規模インスタンスタイプG.4X および G.8Xが一般提供されました | DevelopersIO](https://dev.classmethod.jp/articles/20230510-aws-glue-g4x-and-g8x/)
 - これまでの、--write-shuffle-files-to-s3や--write-shuffle-spills-to-s3 を有効にするワークアラウンドも今後も有効とのこと
 - しかしより直接的な選択肢としてスケールアップできる選択肢ができた感じ
+
+### [2023-05-03 [新機能] AWS Glue Visual ETL がネイティブ Amazon Redshift 機能をサポートしたので試してみました！ | DevelopersIO](https://dev.classmethod.jp/articles/aws-glue-amazon-redshift-integration-for-apache-spark/)
+

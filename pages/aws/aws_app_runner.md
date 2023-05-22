@@ -6,6 +6,11 @@
 
 ### [LlamaIndexをApp Runner上で動かしてみた | DevelopersIO](https://dev.classmethod.jp/articles/llamaindex-on-app-runner/)
 
+### [2023-05-17 DevelopersIOのフロントエンドをApp Runnerに変更してみた | DevelopersIO](https://dev.classmethod.jp/articles/devio-on-app-runner/)
+
+### [2023-05-02 App Runner の vCPU数変更に伴う性能影響とCloudWatchメトリクスを確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/app-runner-vcpu-change/)
+
+
 ## アップデート
 
 ### [2022-11-02 VPCエンドポイント経由でリソースへのアクセスが可能に](https://dev.classmethod.jp/articles/aws-app-runner-supports-privately-accessible-services-amazon-vpc)

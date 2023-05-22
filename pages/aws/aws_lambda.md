@@ -109,6 +109,9 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 
 ### [2023-01-16 CDKでLambdaからSlack通知する方法](https://dev.classmethod.jp/articles/awscdk-costexplorer-notify-to-slack/)
 
+### [2023-04-26 AWS Lambda のレスポンスストリーミングを使って API Gateway + Lambda 構成で 10 MB のレスポンスを生成してみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-lambda-response-streaming-api-gateway/)
+
+
 ## アプデ
 
 ### [2023-01-17 SQSをイベントソースとして利用する際に同時実行数が設定できるように](https://dev.classmethod.jp/articles/update-aws-lambda-event-source-amazon-sqs-concurrency/)
@@ -143,3 +146,7 @@ APIGWでは使えないので、Lambda関数URLなどを使用する必要があ
   - [PEP 647 (User-Defined Type Guards) を読んだよメモ - Qiita](https://qiita.com/tk0miya/items/1b093c2eee7668fffb62)
 - Improved error messages:
   - [Python 3.10から導入されたBetter error messagesの深掘り | gihyo.jp](https://gihyo.jp/article/2022/12/monthly-python-2212)
+
+### [2023-05-18 AWS Parameters and Secrets Lambda Extensionを使用してみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-parameters-and-secrets-lambda-extension/)
+
+- キャッシュかされていいみたい

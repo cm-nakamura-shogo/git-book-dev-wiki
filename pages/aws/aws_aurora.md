@@ -12,3 +12,7 @@ v1->v2によりVPC外からパブリックアクセスが可能となった。�
 
 - IOに追加料金が発生せず、容量に対して課金される。容量はスタンダードより割増。
 - コストが予測しやすくなる（IOだと予測が難しい）
+
+### [2023-05-13 Amazon Aurora が Graviton3 搭載インスタンス(R7g)をサポートしました | DevelopersIO](https://dev.classmethod.jp/articles/aurora-graviton3-r7g/)
+
+- 値上げ分を上回る 高性能なDBとの評価

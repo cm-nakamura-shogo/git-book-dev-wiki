@@ -65,3 +65,8 @@ IAMユーザとは
 ## [IAMの設定ドキュメント](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html)
 
 細かい制限を加える場合はここら辺を参照する必要がある
+
+## 参考記事
+
+### [2023-05-04 【S3 Bucketへのアクセス管理】 特定のIAM RoleにのみS3 Bucketへのアクセスを許可し、IAM User GroupとIAM Roleで厳密にスイッチングする方法 | DevelopersIO](https://dev.classmethod.jp/articles/s3-bucket-access-control-with-iam-role-and-group-switching/)
+- むずくてよく分からんかった…

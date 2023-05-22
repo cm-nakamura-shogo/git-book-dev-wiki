@@ -4,6 +4,10 @@
 
 - GPT-3.5と4のコスト比、エンベッディングのコスト、セルフホストする際に使用できそうなSentenceTransformersなど有用な情報がある
 
+### [2023-05-18 0518LLMmeetup_LLMシステムの非機能要件対応_現場レポート.pdf - Speaker Deck](https://speakerdeck.com/hirosatogamo/0518llmmeetup-llmsisutemunofei-ji-neng-yao-jian-dui-ying-xian-chang-repoto)
+
+よかった。認証の流れ、閉域化されたAzureでのアーキテクチャの例などが書いてある。
+
 ### [2023-05-15 日本初の挑戦〜食べログによるChatGPTプラグイン開発の舞台裏](https://tech-blog.tabelog.com/entry/first-challenge-tabelog-chatgpt-plugin-devleopment)
 
 - 技術的な話はあまりなかったが、脆弱性診断とかやるのはすごい。
@@ -24,6 +28,8 @@
 
 - 色々あって泣けてくる
 
+### [2023-04-30 【2024年版】ChatGPT APIを社内利用する時に採用すべきアーキテクチャを考えた - Qiita](https://qiita.com/yuno_miyako/items/ce80002adf76bd321ad3)
+
 ### [2023-04-28 生成AIの利用ガイドラインを作成するための手引き](https://storialaw.jp/blog/9414)
 
 - 入力データの著作権や個人情報、自社機密情報、生成物などのついての手引きが記載
@@ -39,10 +45,6 @@
   - プロンプトの著作権も、創作性があれば「プログラムの著作物」として保護されるため注意が必要
   - また、生成物の商用利用について、OpenAIの場合は、生成物に関する権利についても全てユーザに移転する旨が規定されていますので、生成物の利用についての制限はない。
 
-### [2023-05-18 0518LLMmeetup_LLMシステムの非機能要件対応_現場レポート.pdf - Speaker Deck](https://speakerdeck.com/hirosatogamo/0518llmmeetup-llmsisutemunofei-ji-neng-yao-jian-dui-ying-xian-chang-repoto)
-
-よかった。認証の流れ、閉域化されたAzureでのアーキテクチャの例などが書いてある。
-
 ### [2023-04-21 0421DS協会_ChatGPTによって描かれる未来とAI開発の変遷.pdf](https://speakerdeck.com/hirosatogamo/0421dsxie-hui-chatgptniyotutemiao-kareruwei-lai-toaikai-fa-nobian-qian)
 
 - Microsoft SAの記事のアップデート版かな？
@@ -54,6 +56,8 @@
 - LLMというか範囲が広すぎるのであんま意味ないかも
 - たぶんまったく使う用途の無いものも含まれている
 
+### [2023-04-12 クックパッドの toB 向け事業における ChatGPT API の活用事例紹介 - クックパッド開発者ブログ](https://techlife.cookpad.com/entry/2023/04/12/142744)
+
 ### [2023-04-11 LLMを使ったアプリケーションを作る際のエンジニアリングのポイント](https://huyenchip.com/2023/04/11/llm-engineering.html)
 
 - LLMの非決定性にどう対処するか
@@ -63,6 +67,7 @@
 
 ### [2023-04-11 day1のChatGPT会のレポート](https://dev.classmethod.jp/articles/report-developersio-day1-chatgpt-beginning/)
 
+### [2023-04-10 【誰でも簡単ChatGPT、GPT-4 利用】Azure OpenAI Serviceを使ってみた with LINE Bot【Azureでより安心・安全にAI機能が使える】 - Qiita](https://qiita.com/mochan_tk/items/8b64cf4ca713250030a4)
 
 ### [2023-04-10 ChatGPTの機会と脅威](https://www.docswell.com/s/ku-suke/KNRR6P-chatgpt-enterprise)
 

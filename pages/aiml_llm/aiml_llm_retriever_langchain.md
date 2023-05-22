@@ -9,6 +9,8 @@
 
 - LangChainを使うときに一番最初に読むにはええかも
 
+### [2023-05-03 LangChain v0.0.155アップデート](https://twitter.com/langchainai/status/1653469034804023298?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+
 ### [2023-04-22 LangChain 0.0.146でcompress retrieved documentをリリース](https://twitter.com/hwchase17/status/1649428295467905025)
 
 - クエリする前にRetriver側の情報を、クエリに関連する情報に圧縮する。

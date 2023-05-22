@@ -108,6 +108,7 @@
   - コンピューティング
     - [AWS Lambda               ](pages/aws/aws_lambda.md)
     - [Amazon ECS               ](pages/aws/aws_ecs.md)
+    - [Amazon ECR               ](pages/aws/aws_ecr.md)
     - [AWS ParallelCluster      ](pages/aws/aws_parallel_cluster.md)
     - [AWS Batch                ](pages/aws/aws_batch.md)
     - [Amazon Lightsail         ](pages/aws/aws_lightsail.md)

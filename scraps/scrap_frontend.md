@@ -1,5 +1,16 @@
 # フロントエンド
 
+### [2023-05-09 React Application Architecture for Production〜これ一冊で全てが網羅〜](https://zenn.dev/hrbrain/articles/437d0b7492ac47)
+
+### [2023-04-28 レスポンシブデザインで Tailwind CSS と CSS custom properties を併用する体験が良過ぎる](https://zenn.dev/amon/articles/9e8b7d220d2661)
+
+### [2023-04-25 React+ViteプロジェクトにStorybook（v7）を導入する | DevelopersIO](https://dev.classmethod.jp/articles/react-vite-storybook/)
+
+
+### [2023-04-25 TypeScript開発に欠かせない？Zodライブラリの基本 | DevelopersIO](https://dev.classmethod.jp/articles/basic_usage_zod/)
+
+- お、Zod確かによさそう。
+
 ### [2023-04-22 React Tailwindのコンポーネントを生成するAIサービス](https://twitter.com/carlosknopel/status/1649450389190721537)
 
 - 実装はLangChainで実施されている

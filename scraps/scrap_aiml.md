@@ -22,6 +22,10 @@
 
 - 単語単位ではないが、それっぽい埋め込みを生成できるらしい
 
+### [2023-05-07 onoderaさんはTwitterを使っています: 「polarsのvertical concatはcolumnsの順番も揃ってないといけないっぽい」 / Twitter](https://twitter.com/0verfit/status/1655151985988091905?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+
+### [2023-05-07 piqcyさんはTwitterを使っています: 「Amazonのシニアプロダクトマネジャーが、プロダクトマネジメントにおけるAIの用途とを語った動画](https://twitter.com/icoxfog417/status/1655130947069804546?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+
 ### [2023-05-07 SAMで動画からデータセットを作る例 (DevIO)](https://dev.classmethod.jp/articles/sygment-anything-create-dataset-image/)
 
 - 追跡やノイズ除去の部分が参考になる
@@ -32,9 +36,13 @@
 - ImageNetで79.2%のゼロショット精度を実現したCLIP ViT-L/14がリリース
 - CLIPを大きく上回り、LAION-2Bで学習させた大型モデル（ViT-g/14）を凌駕
 
+### [2023-05-03 AWS Batch で OpenMPI を使った並列ジョブの実行をやってみた | DevelopersIO](https://dev.classmethod.jp/articles/tried-aws-batch-multi-node-parallel-jobs/)
+
 ### [2023-05-03 SAM + ResNet(fine-tuning) + ChatGPTで冷蔵庫の具材からレシピ推薦](https://dev.classmethod.jp/articles/chatgpt-recomend-recip)
 
 - SAMのイメージがまだわかないな。
+
+### [2023-05-02 Liam BranniganさんはTwitterを使っています: 「One important point is checking if your query is running in streaming mode.](https://twitter.com/braaannigan/status/1653323252473774081?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 
 ### [2023-04-29 Stability AIからDeepFloyd IFが公開](https://note.com/te_ftef/n/nd83eb09a3990)
 
@@ -44,6 +52,8 @@
 ### [2023-04-28 音声合成に使用可能な事前学習モデルHuBERTをApache-2.0ライセンスで公開](https://twitter.com/yasyune1023/status/1651893684521287682)
 
 ### [2023-04-27 Hugging Face Transformersを使いTensrFlowとTPUを言語モデルの学習方法](https://huggingface.co/blog/tf_tpu)
+
+### [2023-04-22 Count-Anything: SAMを応用した物体数をカウントするOSS](https://github.com/ylqi/Count-Anything)
 
 ### [2023-04-19 CAFA 5 Protein Function Prediction](https://www.kaggle.com/competitions/cafa-5-protein-function-prediction)
 
@@ -112,6 +122,8 @@
 
 - 音源分離について日本語でまとめられている記事
 
+### [2023-03-16 データの Concept drift 問題について - Debug me](https://yukinoi.hatenablog.com/entry/concept_drift)
+
 ### [2023-03-08 日本のロボティクスに関する記事](https://www.nature.com/articles/d41586-023-00668-z)
 
 ### [2023-03-02 Dropout Reduces Underfitting](https://arxiv.org/abs/2303.01500)
@@ -145,3 +157,4 @@
 - 機械学習モデルを解釈し、理解するための手法をまとめたライブラリ
 - SHAPやGradCAMの話と思えばいい、その他の手法も多くある
 
+### [2013-12-29 ソシャゲ分析講座　基本編（その６）：ソシャゲの「4つのステージとKPI」を理解する - Real Analytics （リアルアナリティクス）](https://analytics.hatenadiary.com/entry/20131229/p1)

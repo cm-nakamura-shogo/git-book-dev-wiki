@@ -95,6 +95,9 @@ AthenaのCTASはexternal_locationで結果の保存先を変更できる
 - Hudi 0.12.2のテーブルをAthenaでクエリすることが可能に
 - Hudiは、Amazon EMR、Apache Spark、Apache Hiveまたはその他の互換性のあるサービスを介して管理されるデータ管理フレームワーク
 
+### [2022-11-09 Amazon AthenaでQuery Result Reuse（クエリ結果の再利用）が使えるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/query-result-reuse-is-now-available-on-amazon-athena/)
+
+
 ## 参考記事
 
 ### [2019-12-09 AWS Athena で CREATE TABLE する](https://qiita.com/yoshiyama_hana/items/3d532c7ecc5f08c0d040)

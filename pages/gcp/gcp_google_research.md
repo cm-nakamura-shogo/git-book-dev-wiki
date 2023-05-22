@@ -1,5 +1,7 @@
 # Google Research
 
+### [2023-04-21 Visual Blocks for ML: Accelerating machine learning prototyping with interactive tools – Google AI Blog](https://ai.googleblog.com/2023/04/visual-blocks-for-ml-accelerating.html)
+
 ### [2023-04-14 Google Research : 自動微分を越えるアルゴリズム](https://ai.googleblog.com/2023/04/beyond-automatic-differentiation.html)
 
 - 相変わらず先進的。

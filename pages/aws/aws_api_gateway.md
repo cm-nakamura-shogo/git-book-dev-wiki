@@ -12,3 +12,9 @@ Lambda非プロキシ(カスタム)統合は、プロキシ統合のセットア
 
 - 参考
   - [API Gateway + REST + Lambda 非プロキシ(カスタム)統合でステータス200以外返ってこない | DevelopersIO](https://dev.classmethod.jp/articles/apigateway-rest-lambda-custom-integrations-status-only-200/)
+
+## 参考記事
+
+### [2023-04-17 API Gateway に統合されたバックエンドからの JSON 形式のレスポンスを API Gateway だけで編集する | DevelopersIO](https://dev.classmethod.jp/articles/api-gateway-vtl-template-response/)
+
+### [2023-04-27 API Gateway の Lambda オーソライザーキャッシュを使う時に問題となる実装を検証してみた | DevelopersIO](https://dev.classmethod.jp/articles/api-gateway-authorizor-cache-policy/)

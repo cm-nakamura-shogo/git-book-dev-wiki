@@ -38,3 +38,7 @@
 
 - Colaboratory の企業版みたいなイメージ
 - Cloud Storage と BigQuey にすぐアクセスできる
+
+### [2021-08-05 機械学習パイプラインの要件と Vertex Pipelines / Kubeflow Pipelines V2 による実装 - Speaker Deck](https://speakerdeck.com/asei/kubeflow-pipelines-v2-niyorushi-zhuang)
+
+### [2021-12-09 Vertex Pipelines + KFPのArtifact(不)完全ガイド](https://zenn.dev/kurushi/articles/01ac5fdc4e1bfc)

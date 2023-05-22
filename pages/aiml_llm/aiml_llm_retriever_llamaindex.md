@@ -12,6 +12,8 @@
   - [https://twitter.com/jerryjliu0/status/1658119334080724993](https://twitter.com/jerryjliu0/status/1658119334080724993)
   - LLMはGPT4ALL、埋め込みにはsentence-transformersを使用する例となっている
 
+### [2023-05-02 LlamaIndexのデバッグ機能のCallbackManagerとLlamaDebugHandlerの追加](https://twitter.com/gpt_index/status/1653407672602071040?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+
 ### [2023-04-29 LlamaIndex 0.6.0 - データに対する新しいクエリインターフェイス｜npaka｜note](https://note.com/npaka/n/n4254fc549dc0)
 
 - 大きめの変更が加えられており、APIが整理されている

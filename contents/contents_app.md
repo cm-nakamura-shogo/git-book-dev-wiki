@@ -53,6 +53,9 @@
 
 - こちらはほぼ呼んでいるが、CADDi輪読会で題材になっていた。
 - [読書メモ](./2019-07-18_data-intensive-applications-design.md)
+- 感想
+  - [2023-05-14 書評『データ指向アプリケーションデザイン』 | Hippocampus's Garden](https://hippocampus-garden.com/book_review_kleppmann/)
+
 
 ### [2018-08-23 OSSライセンスの教科書](https://www.amazon.co.jp/dp/4297100355)
 

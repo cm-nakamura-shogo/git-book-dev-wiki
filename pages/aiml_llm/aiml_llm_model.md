@@ -46,6 +46,8 @@
 
 - 日本語の例でも示されており今後に期待できる。
 
+### [2023-04-22 Google Colab で RWKV-LoRA のファインチューニングを試す｜npaka](https://note.com/npaka/n/ndb1df153aed5)
+
 ### [2023-04-21 Jpn10%のRWKVが観測](https://twitter.com/meteor_eternal/status/1649361381697929217)
 
 - いままではOtherという形だったので、日本語に特化している点は期待できる
@@ -119,6 +121,8 @@
 - 今のところデータセットのみの話っぽい
 
 ## Vicuna
+
+### [2023-04-29 さらにブラッシュアップされたVicuna「StableVicuna-13B」を試す｜はまち](https://note.com/hamachi_jp/n/n60f8663ca898)
 
 ### [2023-04-27 vicuna-13bのデータセットについて](https://twitter.com/npaka123/status/1651435773298880518)
 

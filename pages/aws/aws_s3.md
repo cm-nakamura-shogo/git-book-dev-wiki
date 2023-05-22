@@ -12,6 +12,8 @@
 
 ## 参考
 
+### [2021-03-31 絵で見て 3分でおさらいする Amazon S3 のバージョニングとライフサイクル | DevelopersIO](https://dev.classmethod.jp/articles/3minutes-s3-versioning-lifecycle/)
+
 ### [2021-05-20 複数のアクセス拒否設定をしたS3バケットをCloudFormationで作ってみた](https://dev.classmethod.jp/articles/multi-access-restricted-s3-cfn/)
 
 Effect: DenyでConditionがAND条件で評価されるので、どれか一つでも合えばアクセスできる設定となる。
@@ -45,6 +47,7 @@ aws s3 ls バケット名 --recursive | grep -v '/$' | awk '{print $4}' > result
 
 - バージョニングが有効になっている場合は旧バージョンのファイル削除をするs3api delete-objectsを使用する必要があるのはポイント
 - delete-objectsは1000個までしか一度に指定できないため、その場合別途対策が必要らしい
+
 
 ## アップデート
 

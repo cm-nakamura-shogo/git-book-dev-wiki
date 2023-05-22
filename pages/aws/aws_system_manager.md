@@ -6,11 +6,13 @@ SSMと呼ばれることが多い。
 
 パラメータストアなども良くつかわれる。
 
-## VSCodeのRemote SSH環境構築方法
+## 参考
+
+### [2020-03-30【AWS Systems Manager】パッチマネージャーの パッチベースライン と パッチグループ の概念を勉強する | DevelopersIO](https://dev.classmethod.jp/articles/patchmanager-baseline-and-group/)
+
+### [2023-01-09 VSCodeのRemote SSH環境構築方法](https://dev.classmethod.jp/articles/how-to-use-vscode-remote-ssh-with-aws-systems-manager/)
 
 プライベートなEC2を例といた構成
-
-- [AWS Systems Manager と VS Code Remote SSH を組み合わせて快適なリモート開発環境を作る方法 | DevelopersIO](https://dev.classmethod.jp/articles/how-to-use-vscode-remote-ssh-with-aws-systems-manager/)
 
 ## アップデート
 
