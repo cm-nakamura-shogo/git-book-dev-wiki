@@ -1,5 +1,9 @@
 # AWS AIML全般
 
+### [2023-05-24 SageMaker JumpStart上での基盤モデルによる対話誘導型知的文書処理](https://aws.amazon.com/jp/blogs/machine-learning/dialogue-guided-intelligent-document-processing-with-foundation-models-on-amazon-sagemaker-jumpstart/)
+
+### [2023-05-24 AWSのAIサービスを使って、住宅ローンの引受プロセスにおける書類検証や不正検知を自動化](https://aws.amazon.com/jp/blogs/machine-learning/automate-document-validation-and-fraud-detection-in-the-mortgage-underwriting-process-using-aws-ai-services-part-1/)
+
 ### [2023-05-10 JupyterConで開発の生産性を高めるための新しいツールを発表 (AWS)](https://aws.amazon.com/jp/blogs/machine-learning/announcing-new-jupyter-contributions-by-aws-to-democratize-generative-ai-and-scale-ml-workloads/)
 
 - Jupyter AI

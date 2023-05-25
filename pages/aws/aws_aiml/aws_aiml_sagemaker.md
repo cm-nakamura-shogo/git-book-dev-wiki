@@ -155,6 +155,10 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - 画像生成とNLU・テキスト生成にはAPIGW + Lambda + SageMaker Endpointを使用
 - これらすべてを4つのStackに分けてCDKで構築している
 
+### [2023-05-24 SageMaker Jumpstart Text2Textでバッチ変換を実行する例](https://aws.amazon.com/jp/blogs/machine-learning/perform-batch-transforms-with-amazon-sagemaker-jumpstart-text2text-generation-large-language-models/)
+
+- こちらもFLAN T5を使用する例
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
