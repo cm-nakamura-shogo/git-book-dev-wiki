@@ -1,5 +1,7 @@
 # LLM : 開発
 
+### [2023-05-23 ChatGPTを使い始める前に理解しておく情報や用語など | DevelopersIO](https://dev.classmethod.jp/articles/pre-chatgpt/)
+
 ### [2023-05-19 大規模言語モデルの開発者が知っておくと役立つさまざまな数字](https://gigazine.net/news/20230519-llm-numbers/)
 
 - GPT-3.5と4のコスト比、エンベッディングのコスト、セルフホストする際に使用できそうなSentenceTransformersなど有用な情報がある

@@ -141,11 +141,19 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 - 20Bなので性能は良さそうだが、日本語対応が微妙かもしれない。
 
-### [2023-05-17 ageMaker JumpStartで大規模言語モデルによるサーバーレスな会議要約バックエンドを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-serverless-meeting-summarization-backend-with-large-language-models-on-amazon-sagemaker-jumpstart/)
+### [2023-05-17 SageMaker JumpStartで大規模言語モデルによるサーバーレスな会議要約バックエンドを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-serverless-meeting-summarization-backend-with-large-language-models-on-amazon-sagemaker-jumpstart/)
 
 - Flan-T5-XLを使う。日本語モデルに差し替えできれば有用かもしれない。
 - Lambda + S3のバケツリレーでTranscribeとSageMaker Endpointを使う
 - SageMaker Endpointのお値段が。。
+
+### [2023-05-22 SageMaker JumpstartによるFLAN T5 XLのインストラクションファインチューニング](https://aws.amazon.com/jp/blogs/machine-learning/instruction-fine-tuning-for-flan-t5-xl-with-amazon-sagemaker-jumpstart/)
+
+### [2023-05-23 AWS CDKを使用してAmazon SageMaker JumpStartから生成型AIモデルをデプロイする](https://aws.amazon.com/jp/blogs/machine-learning/deploy-generative-ai-models-from-amazon-sagemaker-jumpstart-using-the-aws-cdk/)
+
+- アプリにはECS + Fargateを使用し、Streamlitで構築する
+- 画像生成とNLU・テキスト生成にはAPIGW + Lambda + SageMaker Endpointを使用
+- これらすべてを4つのStackに分けてCDKで構築している
 
 ## アップデート
 
