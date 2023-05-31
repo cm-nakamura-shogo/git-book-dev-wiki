@@ -31,3 +31,14 @@
 - 分類用のヘッドは学習対象する
 - Vision EncoderとText EncoderはFrozenでやる
 - SAMの物体検出版？というわけではなさそうだが、汎用性は高そう
+
+### [2023-05-25 I/O 2023でのGoogle Research](https://ai.googleblog.com/2023/05/google-research-at-io-2023.html)
+
+- PaLM2意外の研究内容についても触れられている
+- 個人的にはChirpという音声認識を把握してなかった、まだプレビューだがWhisperとの比較をしたい。
+- Text to Speechで利用可能
+  - [Chirp: Universal speech model  |  Cloud Speech-to-Text v2 documentation  |  Google Cloud](https://cloud.google.com/speech-to-text/v2/docs/chirp-model)
+
+### [2023-05-25 大規模データセットのための差分プライベートクラスタリング](https://ai.googleblog.com/2023/05/differentially-private-clustering-for.html)
+
+### [2023-05-26 チャートなどのグラフを理解する基盤モデルの研究](https://ai.googleblog.com/2023/05/foundation-models-for-reasoning-on.html)

@@ -27,7 +27,7 @@
   - [ボトムアップDDD                   ](book/2020-02-13_bottom-up-ddd.md)
   - [エンジニアリングマネージャの仕事  ](book/2022-08-26_engineering-manager.md)
   - [ロバストPython                    ](book/2023-03-25_robust-python.md)
-- スクラップ帳
+- [スクラップ帳    ](scraps/scrap.md)
   - [AIML          ](scraps/scrap_aiml.md)
   - [アプリ全般    ](scraps/scrap_app.md)
   - [フロント      ](scraps/scrap_frontend.md)
@@ -145,6 +145,7 @@
     - [Amazon CodeWhisperer     ](pages/aws/aws_aiml/aws_aiml_codewhisperer.md)
     - [Amazon Rekognition       ](pages/aws/aws_aiml/aws_aiml_rekognition.md)
     - [Amazon SageMaker         ](pages/aws/aws_aiml/aws_aiml_sagemaker.md)
+    - [Amazon Polly             ](pages/aws/aws_aiml/aws_aiml_polly.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)

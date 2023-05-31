@@ -1,5 +1,9 @@
 # AIML
 
+### [2023-05-24 Hugging Faceがマイクロソフトと協業し、Azure上でHugging Faceのモデルカタログを提供開始](https://huggingface.co/blog/hugging-face-endpoints-on-azure)
+
+- Azure Machine Learning Studio内で直接利用できる新しいHugging Face Hub Model Catalogを構築
+
 ### [2023-05-24 Microsoft Build 2023のAI/MLアップデート最速まとめ](https://zenn.dev/microsoft/articles/dbd3119d44faf0)
 
 ### [2023-05-17 Cloudflare、エッジアプリにAIをもたらす「Constellation」発表](https://www.publickey1.jp/blog/23/cloudflareaiconstellation.html)

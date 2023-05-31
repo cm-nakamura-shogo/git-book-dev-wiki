@@ -159,6 +159,13 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 - こちらもFLAN T5を使用する例
 
+
+### [2023-05-30 SageMakerの使用量を分析し、使用状況に応じたコスト最適化の機会を見極める(全五回シリーズ)](https://aws.amazon.com/jp/blogs/machine-learning/part-1-analyze-amazon-sagemaker-spend-and-determine-cost-optimization-opportunities-based-on-usage-part-1/)
+
+### [2023-05-30 SageMaker XGBoostが完全分散型GPUトレーニングを提供開始](https://aws.amazon.com/jp/blogs/machine-learning/amazon-sagemaker-xgboost-now-offers-fully-distributed-gpu-training/)
+
+- マルチGPUでのトレーニングに対応
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -220,3 +227,16 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 
 ### [2023-05-19 SageMaker Geospatial MLが一般提供開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-supports-geospatial-ml-generally-available/)
+
+### [2023-05-25 SageMaker JumpStartがLLMのドメイン固有のデータセットによるfine-tuning機能を提供](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-sagemaker-jumpstart-fine-tuning-foundation-models-domain-adaptation/)
+
+- 公式ブログによる紹介はGPT-J 6Bモデル
+  - [Domain-adaptation Fine-tuning of Foundation Models in Amazon SageMaker JumpStart on Financial data | AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/domain-adaptation-fine-tuning-of-foundation-models-in-amazon-sagemaker-jumpstart-on-financial-data/)
+
+### [2023-05-26 SageMaker Notebook インスタンスに ml.p4d と ml.infが追加](https://awsapichanges.info/archive/changes/3e813c-api.sagemaker.html)
+
+### [2023-05-30 SageMaker Ground Truth PlusがRLHF(Reinforcement Learning from Human Feedback)に対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/sagemaker-ground-truth-plus-human-feedback-fine-tuning-data-generative-ai/)
+
+- RLHFにより人間の好みに合った出力を学習できる
+- 公式ブログ
+  - [High-quality human feedback for your generative AI applications from Amazon SageMaker Ground Truth Plus | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/high-quality-human-feedback-for-your-generative-ai-applications-from-amazon-sagemaker-ground-truth-plus/)

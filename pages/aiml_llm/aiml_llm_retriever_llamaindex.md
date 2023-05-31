@@ -1,5 +1,43 @@
 # LLM : Retriever(LlamaIndex)
 
+### [2023-05-28 LlamaIndex 0.6.12](https://github.com/jerryjliu/llama_index/compare/v0.6.11...v0.6.12)
+
+- ResponseMode.COMPACT_ACCUMULATEが追加
+  - COMPACTがチャンク再統合なのでより効率的に動作する
+- プロンプト関連の処理がPromptTypeというAPIで再構成されている
+  - https://github.com/jerryjliu/llama_index/blob/v0.6.12/llama_index/prompts/prompt_type.py
+
+### [2023-05-26 LlamaIndex 0.6.11](https://github.com/jerryjliu/llama_index/compare/v0.6.10.post1...v0.6.11)
+
+- vellum_aiとのインテグレーション
+  - プロンプトをバージョンアップ/デプロイ/監視する
+- BaseCallbackHandlerにstart_traceとend_traceが追加
+  - ともなってLlamaDebugHandlerにもいくつか修正が入っている
+- DynamoDBのストアが追加
+  - index_store, doc_store, vectore_storeにも対応している
+
+### [2023-05-24 LlamaIndex 0.6.10](https://github.com/jerryjliu/llama_index/compare/v0.6.9...v0.6.10)
+
+- 余り変更点は多くなさそう
+- PDFReaderのメタデータにpage_labelに加えて、file_nameが追加されている
+
+### [2023-05-20 LlamaIndex 0.6.9](https://twitter.com/gpt_index/status/1659593915903926277)
+
+- Fsspecをサポート
+  - vector_store/doc_store内のオブジェクトを、fsspecがサポートするあらゆるオブジェクトストレージに永続化が可能に
+  - S3, GCS, Azure blobその他が含まれる
+- S3KVStore
+  - S3をネイティブなKey-Valueストアとしてサポートするように
+  - S3DBKVStoreという名前でdoc_storeとindex_storeに対応
+  - BaseKVStoreはこれでMongoDBS3が対応し、KVStoreで使えるようになるはず
+  - あまりドキュメントには記載されていない
+- ResponseBuilderにAccumulatorが追加
+  - ResponseMode.ACCUMULATEが増えている
+  - 各ノードに均等にクエリし結果を連結するらしい。
+  - ともなって設計的にBaseResponseBuilderが生えており、抽象化が進んだ
+- SubQuestionQueryEngineが追加
+  - 複雑なクエリ（例：比較対照）を多くのサブクエリに分解して実行するクエリエンジン
+
 ### [2023-05-16 LlamaIndex 0.6.8の紹介](https://twitter.com/gpt_index/status/1658481782923362306)
 
 - PDFの出典元を得られるように
