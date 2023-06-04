@@ -83,6 +83,10 @@
 - ChatGPT Browsing Pluginは知らなかったな
 - Chain of ThoughtやFew-shotなどのプロンプトエンジニアリング用語覚えられない
 
+### [2023-05-14 CTOの視点から見たAzure OpenAI ServiceとOpenAIのChatGPT APIの深堀り比較 - Qiita](https://qiita.com/lazy-kz/items/32e8e7c86bdce67beb48)
+
+- 結論、最新モデルかどうか意外はAzure OpenAI一択な気がする。
+
 ### [2023-05-15 日本初の挑戦〜食べログによるChatGPTプラグイン開発の舞台裏](https://tech-blog.tabelog.com/entry/first-challenge-tabelog-chatgpt-plugin-devleopment)
 
 - 技術的な話はあまりなかったが、脆弱性診断とかやるのはすごい。

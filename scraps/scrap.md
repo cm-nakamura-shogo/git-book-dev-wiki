@@ -4,9 +4,6 @@
 
 ## LLM
 
-- [LangChainとAzure OpenAI版GPTモデルの連携部分を実装してみる - Qiita](https://qiita.com/tmiyata25/items/7a04096342241d8a2b4c)
-- [LMQL(Language Model Query Language)概観｜mah_lab / 西見 公宏](https://note.com/mahlab/n/n11b15b323c87)
-
 ## AIML
 
 - [ウマたん@スタビジ（AI・データサイエンスをもっと身近なものに）さんはTwitterを使っています: 「サイバーエージェントが新入社員研修で使ったAI開発における「MLOps」の資料を無償公開！全140ページ。資料は「Speaker Deck」でハンズオン用のリポジトリもGitHubで公開。サイバーエージェント、AIに最近かなり力を入れているしこういう資料をオープンにするの素晴らしい https://t.co/LhVOhoiQu7」 / Twitter](https://twitter.com/statistics1012/status/1663116469750702081)
@@ -74,7 +71,3 @@
 ### [2023-06-02『Gitleaks』で機密情報の漏洩を防ぐ〜コマンド編〜 | DevelopersIO](https://dev.classmethod.jp/articles/gitleaks-commands/)
 
 - これ便利そう
-
-### [2023-05-14 CTOの視点から見たAzure OpenAI ServiceとOpenAIのChatGPT APIの深堀り比較 - Qiita](https://qiita.com/lazy-kz/items/32e8e7c86bdce67beb48)
-
-- 結論、最新モデルかどうか意外はAzure OpenAI一択な気がする。

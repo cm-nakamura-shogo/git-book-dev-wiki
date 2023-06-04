@@ -20,3 +20,7 @@
 - あとブログの説明が何言ってるか分かりにくいのでそこは要注意
 - 素直に公式チュートリアル見た方が良さそう
   - [guidance/tutorial.ipynb at main · microsoft/guidance · GitHub](https://github.com/microsoft/guidance/blob/main/notebooks/tutorial.ipynb)
+
+## LMQL
+
+### [2023-04-21 LMQL(Language Model Query Language)概観｜mah_lab / 西見 公宏](https://note.com/mahlab/n/n11b15b323c87)
