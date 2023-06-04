@@ -9,10 +9,11 @@
 - CC BY-SA 4.0で商用利用も可能。サイズは7B。
 - モデルはOpenCALMというやつでなじみないがGPT-NeoXベースで独自の様子？Hugging Faceで公開されている
 - 13Bパラメータまで開発が完了しているらしい。公開されるかな。
+- そのままではチャット用途では微妙か…？
+  - [オープンなLLMをDockerで動かす](https://zenn.dev/karaage0703/articles/2b753b4dc26471)
 - npakaさんが試している
   - [Google Colab で OpenCALM-7B を試す｜npaka](https://note.com/npaka/n/n2185b422a2f2)
-- チャット用途では微妙か…？
-  - [オープンなLLMをDockerで動かす](https://zenn.dev/karaage0703/articles/2b753b4dc26471)
+  - [Google Colab で OpenCALM-7B のLoRAファインチューニングを試す｜npaka](https://note.com/npaka/n/na5b8e6f749ce)
 
 ### [2023-05-11 サイバーエージェント、独自の日本語LLM（大規模言語モデル）を開発](https://www.cyberagent.co.jp/news/detail/id=28797)
 
@@ -28,6 +29,7 @@
 - 同じくGPT-NeoXベースで、MITライセンス
 - npakaさんが試している
   - [Google Colab で Rinna-3.6B を試す｜npaka](https://note.com/npaka/n/ne4a38239f420)
+  - [Google Colab で Rinna-3.6B のLoRAファインチューニングを試す｜npaka](https://note.com/npaka/n/nc387b639e50e)
 
 ## RWKV
 

@@ -21,3 +21,6 @@
 - ヨー角とピッチ角の値を-180度から180度の間で予測し、0から100の間の信頼度スコアが設定される
 - APIアップデート
   - [https://awsapichanges.info/archive/changes/5f8543-rekognition.html](https://awsapichanges.info/archive/changes/5f8543-rekognition.html)
+- devio
+  - [[アップデート] Amazon Rekognition で顔写真の視線の方向（Eye Direction）を検出できるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/amazon-rekognition-eyes-gaze-direction-detection-in-face-apis/#toc-1)
+  - 正直精度は低そうやな…

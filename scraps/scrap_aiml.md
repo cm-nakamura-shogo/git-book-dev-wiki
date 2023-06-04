@@ -1,5 +1,13 @@
 # AIML
 
+### [2023-05-31 BLOOMのようなOSSなLLMをHugging Face LLM Inference ContainerをSageMakerに展開する](https://huggingface.co/blog/sagemaker-huggingface-llm)
+
+### [2023-05-29 Scikit-LLMの紹介](https://qiita.com/fuyu_quant/items/4d56553d6a6c951bd8f7)
+
+- こちらの方が詳しい
+  - [Scikit-LLM: Sklearn Meets Large Language Models | by Fareed Khan | May, 2023 | Medium](https://medium.com/@fareedkhandev/scikit-llm-sklearn-meets-large-language-models-11fc6f30e530)
+  - GPTSummarizerは使えそう
+
 ### [2023-05-24 Hugging Faceがマイクロソフトと協業し、Azure上でHugging Faceのモデルカタログを提供開始](https://huggingface.co/blog/hugging-face-endpoints-on-azure)
 
 - Azure Machine Learning Studio内で直接利用できる新しいHugging Face Hub Model Catalogを構築

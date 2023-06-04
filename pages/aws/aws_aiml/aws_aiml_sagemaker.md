@@ -166,6 +166,14 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 - マルチGPUでのトレーニングに対応
 
+### [2023-05-31 SageMakerで基盤モデルを使用して認定試験へ学習する](https://aws.amazon.com/jp/blogs/machine-learning/accelerate-your-learning-towards-aws-certification-exams-with-automated-quiz-generation-using-amazon-sagemaker-foundations-models/)
+
+### [2023-05-31 SageMaker Python SDKでAmazon SageMakerリソースのデフォルトを設定・使用する](https://aws.amazon.com/jp/blogs/machine-learning/configure-and-use-defaults-for-amazon-sagemaker-resources-with-the-sagemaker-python-sdk/)
+
+### [2023-05-31 SageMaker上でTritonのPyTorchバックエンドを深く理解する](https://aws.amazon.com/jp/blogs/machine-learning/host-ml-models-on-amazon-sagemaker-using-triton-cv-model-with-pytorch-backend/)
+
+### [2023-05-31 Amazon ECS でTrainiumインスタンスを使用してコンテナ内でMLワークロードを実行する](https://aws.amazon.com/jp/blogs/machine-learning/scale-your-machine-learning-workloads-on-amazon-ecs-powered-by-aws-trainium-instances/)
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)

@@ -30,6 +30,8 @@
 
 - 頻度、開始時間（オプション）、終了時間（オプション）を指定することで、Vertex AIで定期的に実行されるパイプラインをスケジュールすることが可能に
 
+### [2023-06-01 Vertex AIバッチ予測リクエストの入力または出力として、マルチリージョンのBigQueryテーブルを指定できるように](https://cloud.google.com/release-notes#June_01_2023)
+
 ## 参考記事
 
 ### [2023-04-20 自己流 Vertex AI Pipelines 開発プラクティス](https://note.com/tatsuyashirakawa/n/n146551bc5a66)

@@ -48,7 +48,6 @@ aws s3 ls バケット名 --recursive | grep -v '/$' | awk '{print $4}' > result
 - バージョニングが有効になっている場合は旧バージョンのファイル削除をするs3api delete-objectsを使用する必要があるのはポイント
 - delete-objectsは1000個までしか一度に指定できないため、その場合別途対策が必要らしい
 
-
 ## アップデート
 
 ### [2023-01-06 Amazon S3 Storage Lens に 34 個のメトリクスが追加](https://dev.classmethod.jp/articles/s3-storage-lens-34-metrics/)

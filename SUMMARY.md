@@ -146,6 +146,8 @@
     - [Amazon Rekognition       ](pages/aws/aws_aiml/aws_aiml_rekognition.md)
     - [Amazon SageMaker         ](pages/aws/aws_aiml/aws_aiml_sagemaker.md)
     - [Amazon Polly             ](pages/aws/aws_aiml/aws_aiml_polly.md)
+    - [Amazon Fraud Detector    ](pages/aws/aws_aiml/aws_aiml_fraud_detector.md)
+    - [Amazon Translate         ](pages/aws/aws_aiml/aws_aiml_translate.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)
@@ -278,7 +280,6 @@
     - [レコメンデーション  ](pages/aiml/aiml_recommendation.md)
     - [Graph NN            ](pages/aiml/aiml_gnn.md)
     - [音声                ](pages/aiml/aiml_speech.md)
-    - [Whisper             ](pages/aiml/aiml_whisper.md)
 - CV
   - [概要                ](pages/aiml_cv/aiml_cv_summary.md)
   - [クラス分類          ](pages/aiml_cv/aiml_cv_classification.md)

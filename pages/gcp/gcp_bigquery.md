@@ -64,6 +64,9 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 
 ### [2023-05-18 BigQueryでカラム名の横にあるソートメニューを使って、クエリ結果をソートできるように。プレビュー機能。](https://cloud.google.com/bigquery/docs/release-notes#May_18_2023)
 
+- devio
+  - [BigQuery でクエリ結果の並び替えができるようになりました（Preview） | DevelopersIO](https://dev.classmethod.jp/articles/bigquery-sort-query-results/)
+
 ### [2023-05-19 BigQueryでEXTERNAL_QUERY SQL pushdownが一般提供開始](https://cloud.google.com/bigquery/docs/release-notes#May_19_2023)
 
 - Cloud SQLやCloud Spannerデータベースなどの外部ソースからのデータ検索を最適化

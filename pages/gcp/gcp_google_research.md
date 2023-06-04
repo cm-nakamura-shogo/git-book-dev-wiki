@@ -42,3 +42,7 @@
 ### [2023-05-25 大規模データセットのための差分プライベートクラスタリング](https://ai.googleblog.com/2023/05/differentially-private-clustering-for.html)
 
 ### [2023-05-26 チャートなどのグラフを理解する基盤モデルの研究](https://ai.googleblog.com/2023/05/foundation-models-for-reasoning-on.html)
+
+### [2023-05-31 ソフトウェア開発活動のための大規模シーケンスモデル](https://ai.googleblog.com/2023/05/large-sequence-models-for-software.html)
+
+### [2023-06-01 検索支援型視覚言語事前トレーニング](https://ai.googleblog.com/2023/06/retrieval-augmented-visual-language-pre.html)
