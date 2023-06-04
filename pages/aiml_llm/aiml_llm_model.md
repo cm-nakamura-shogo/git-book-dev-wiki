@@ -200,3 +200,20 @@
 - npakaさんが試している
   - [Google Colab で Rinna-3.6B を試す｜npaka](https://note.com/npaka/n/ne4a38239f420)
   - [Google Colab で Rinna-3.6B のLoRAファインチューニングを試す｜npaka](https://note.com/npaka/n/nc387b639e50e)
+
+## Gorilla
+
+### [2023-05-26 ハルシネーションを大幅に減らす言語モデル「Gorilla」が公開](https://gigazine.net/news/20230526-llm-connected-massive-api-gorilla/)
+
+- 「API呼び出しの記述においてGPT-4の性能を上回るように調整された」なので何かに特化した話らしい
+
+## Falcon
+
+### [2023-05-27 オープンLLMリーダーボードで上位を占めるLLM、Falcon-40B & 7Bをリリース](https://huggingface.co/tiiuae/falcon-40b)
+
+- リリース当初は商用利用には報酬が必要であったが、Apache 2.0化された
+- LLaMAの代替なるかといったところ（LLaMAは7B～65B）
+
+## Aurora genAI
+
+### [2023-05-30 Intel、1兆パラメータの科学向けAI「Aurora genAI」を発表](https://twitter.com/shi3z/status/1663492032231522305)

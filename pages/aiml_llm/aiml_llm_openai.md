@@ -22,6 +22,11 @@
 - 弊社ブログ
   - [https://dev.classmethod.jp/articles/chatgpt-web-chat-history-off/](https://dev.classmethod.jp/articles/chatgpt-web-chat-history-off/)
 
+### [2023-04-26 OpenAI の Embeddings API はイケてるのか、定量的に調べてみる - Qiita](https://qiita.com/akeyhero/items/ce371bfed64399027c23)
+
+- ２つの類似度計算では教師有モデルのBERTやLUKEの方が良いらしいが、これらは全てのペアに対して都度計算が必要なのでEmbeddingsにもメリットがある
+- 他のEmbeddingsと比較するという点では、PKSHAの SimCSEがより良い結果らしい。これは参考になる。
+
 ### [2023-04-26 OpenAIのブランドガイドラインが公開された](https://dev.classmethod.jp/articles/about-openai-brand-guidelines/)
 
 - 明記する必要のあることがいくつかありそう

@@ -1,4 +1,6 @@
-# LLM : アプリケーション
+# LLM : サービス
+
+おもにSaaSっぽい活用サービスをまとめている
 
 ### [2023-03-14 DocsBot AI を使ってみた](https://zenn.dev/howdy39/articles/a4a6f07a95a023)
 
@@ -81,3 +83,7 @@
 - 自分でやったことある人しか使いこなせないやーつな気もする
 
 ### [2023-05-13 AnnotationGPTは凄そう (piqcyさん)](https://twitter.com/icoxfog417/status/1657282631804014595)
+
+### [2023-05-25 Voyager: An Open-Ended Embodied Agent with Large Language Models](https://voyager.minedojo.org/)
+
+- LLMを使ったゲームエージェントのようだ。それをVoyagerと呼んでいる

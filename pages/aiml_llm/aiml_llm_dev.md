@@ -14,7 +14,6 @@
 - まとめ記事を書く際には参考になりそうなひとつ。
 - 個人的に新しい情報はなさそう。
 
-
 ### [2023-04-10 GPT関連のOSSライブラリまとめ](https://qiita.com/sonesuke/items/56a6e4b6532eafa104f4)
 
 - 開発前に一読すれば良いかも。
@@ -97,5 +96,41 @@
 
 - GPT-3.5と4のコスト比、エンベッディングのコスト、セルフホストする際に使用できそうなSentenceTransformersなど有用な情報がある
 
+### [2023-05-21 第1回 LLM 勉強会 - NII(国立情報学研究所)](http://llm-jp.nii.ac.jp/llm/2023/05/21/first-study-group.html)
+
+- 特に以下の資料が正しくまとまっており有用
+  - [Recent_LLMs.pptx - Google スライド](https://docs.google.com/presentation/d/178Nk6flxqS59E2J9SSj5ZhyZ8YD_3tWJ/edit#slide=id.p1)
+- 言及されているが各モデルのライセンスのまとめ
+  - [Mooler0410/LLMsPracticalGuide: A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers)](https://github.com/Mooler0410/LLMsPracticalGuide#Usage-and-Restrictions)
+
 ### [2023-05-23 ChatGPTを使い始める前に理解しておく情報や用語など | DevelopersIO](https://dev.classmethod.jp/articles/pre-chatgpt/)
 
+### [2013-05-27 StackLLaMA : RLHFでLLaMAを学習するための実践ガイド｜npaka](https://note.com/npaka/n/n1248a4202df0)
+
+- Hugging Faceの以下記事のまとめ
+  - [StackLLaMA: A hands-on guide to train LLaMA with RLHF](https://huggingface.co/blog/stackllama)
+
+### [2023-06-01 歴代チャットボットと最近のLLMのまとめ - Qiita](https://qiita.com/Ted-HM/items/192746b547547eb070da)
+
+- 最近のものまでまとめてあるのは評価できるが、ざっくりすぎる＋多少論点がずれているものもあるので参考程度
+
+### [2023-06-01 生成系AI/LLM に関する 注目アップデート ~MS Build 2023 編~ - Speaker Deck](https://speakerdeck.com/yujioshima/llm-niguan-suru-zhu-mu-atupudeto-ms-build-2023-bian)
+
+- こちら社内文書に基づくChatBotの作成に有用そうでした。
+- MS Build 2023のまとめから始まり、Cognitive Search + LLMでRetrieval Augmented Generationを実現する方法、
+- 実際にメルカリ社内での活用方法の紹介があります。
+- 個人的にクエリとドキュメントは類似性があるか疑問に思っており、
+- そこも最後の活用方法でTwo tower modelで解決しているところが面白かったです。
+- Two tower modelはVertex AI Matching Engineでも実現できそう
+  - [Two-Tower ModelでEmbeddingsを作成してMatching Engineで法人名寄せを試す（前半）｜Koji Iino](https://note.com/lizefield/n/n67eb32d2c1a4)
+
+### [2023-06-03 QLoRA: メモリの消費量を激減させつつ少ないデータでトレーニングできる手法](https://gigazine.net/news/20230603-qlora-finetuning-llm/)
+
+- LoRAでは、元のモデルのパラメーター行列を低ランク近似した新たな行列をトレーニング対象にすることで、トレーニングに必要なメモリの消費量を削減
+  - [[2106.09685] LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+- このLoRAをベースに、追加で3つのテクニックを利用することで650億(65B)パラメーターのモデルを48GBしかメモリを搭載していないGPUでトレーニング可能に
+- 学習も24時間のトレーニングでChatGPTの99.3%に匹敵する性能を引き出すことに成功
+- ３つのテクニック
+  - NF4での量子化 : QLoRAでは4bitで量子化を行う
+  - 二重量子化 : 量子化の際に用いる定数についても量子化を行う
+  - ページ最適化 : GPUメモリが上限に達した際に、通常のメモリへとデータを退避させて計算に必要なメモリを確保（ピークの使用率を抑える）
