@@ -4,6 +4,8 @@
 
 ## LLM
 
+なし
+
 ## AIML
 
 - [ウマたん@スタビジ（AI・データサイエンスをもっと身近なものに）さんはTwitterを使っています: 「サイバーエージェントが新入社員研修で使ったAI開発における「MLOps」の資料を無償公開！全140ページ。資料は「Speaker Deck」でハンズオン用のリポジトリもGitHubで公開。サイバーエージェント、AIに最近かなり力を入れているしこういう資料をオープンにするの素晴らしい https://t.co/LhVOhoiQu7」 / Twitter](https://twitter.com/statistics1012/status/1663116469750702081)
@@ -16,10 +18,7 @@
 
 ## competitions
 
-- [2023 Kaggle AI Report | Kaggle](https://www.kaggle.com/competitions/2023-kaggle-ai-report/?utm_medium=email&utm_source=gamma&utm_campaign=comp-ai-report-2023)
-- [Google Research - Identify Contrails to Reduce Global Warming | Kaggle](https://www.kaggle.com/competitions/google-research-identify-contrails-reduce-global-warming?utm_medium=email&utm_source=gamma&utm_campaign=comp-contrails-2023)
-- [Google - American Sign Language Fingerspelling Recognition | Kaggle](https://www.kaggle.com/c/asl-fingerspelling?utm_medium=email&utm_source=gamma&utm_campaign=comp-fingerspelling-2023)
-- [ICR - Identifying Age-Related Conditions | Kaggle](https://www.kaggle.com/competitions/icr-identify-age-related-conditions?utm_medium=email&utm_source=gamma&utm_campaign=comp-icr-2023)
+なし
 
 ## Book and Contents
 
@@ -67,6 +66,14 @@
 - [2022-11-21 AWS の障害分離境界について学べるホワイトペーパー AWS Fault Isolation Boundaries を読んでみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-fault-isolation-boundaries/)
 - [2021-05-01 AWSでバッチ処理を実装する際の選択肢とサービス比較](https://zenn.dev/faycute/articles/fb310e3ccd783f)
 - [2023-04-24 【議事録の構成も】議事録後に確認すべきチェック観点28選を解説！ | DevelopersIO](https://dev.classmethod.jp/articles/how_write_minutes/)
+
+### [2023-05-04 Slack App のアプリホーム（Home タブ）を構築する方法を確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/building-slack-app-home-tab/)
+
+- Slackフロントエンドの参考になるな
+
+### [2023-05-20 3年間運用したCDKの失敗から学ぶCDK開発のプラクティス | ドクセル](https://www.docswell.com/s/integrated1453/5GXL7N-AWS-CDK-Conference-Japan-2023)
+
+- CDK使う場合に読んでおいた方がいい
 
 ### [2023-06-02『Gitleaks』で機密情報の漏洩を防ぐ〜コマンド編〜 | DevelopersIO](https://dev.classmethod.jp/articles/gitleaks-commands/)
 

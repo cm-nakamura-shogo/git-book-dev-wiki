@@ -271,10 +271,9 @@
     - [Sentencepieces      ](pages/aiml/aiml_sentencepiece.md)
     - [テキスト抽出        ](pages/aiml/aiml_text_extract.md)
   - コンペ
+    - [コンペ一覧          ](pages/aiml/aiml_competition.md)
     - [Kaggleチュートリアル](pages/aiml/aiml_kaggle_tutorial.md)
-    - [Kaggleコンペ一覧    ](pages/aiml/aiml_kaggle_competition.md)
     - [コードコンペ(時系列)](pages/aiml/aiml_kaggle_code_compe_time_series.md)
-    - [コンペその他        ](pages/aiml/aiml_other_competition.md)
   - その他
     - [前処理              ](pages/aiml/aiml_preprocess.md)
     - [レコメンデーション  ](pages/aiml/aiml_recommendation.md)

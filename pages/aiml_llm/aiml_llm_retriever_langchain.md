@@ -74,3 +74,11 @@
 ### [2023-05-16 LangChainとAzure OpenAI版GPTモデルの連携部分を実装してみる - Qiita](https://qiita.com/tmiyata25/items/7a04096342241d8a2b4c)
 
 - LangChain、簡単なベクターストアはできて結構よさげかもしれん。
+
+### [2023-05-28 [翻訳] LangChainにおけるドキュメントに対するQ&Aのコンセプトガイド - Qiita](https://qiita.com/taka_yayoi/items/8f3251b44f4a6c7f5c64)
+
+- よさげなのだが途中で終わっているので公式を読んだ方がよさそう
+
+### [2023-06-03 LangChainの get_openai_callback が便利という話](https://twitter.com/mlbear2/status/1664801611594752000)
+
+- 勉強時のご参考

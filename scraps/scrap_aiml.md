@@ -45,6 +45,12 @@
 - 追跡やノイズ除去の部分が参考になる
 - そもそもmatplotlibでマウスイベントとかとれるんや、知らんかった…
 
+### [2023-05-07 医療画像解析の分野で広く使用される半教師あり医療画像セグメンテーションの精度を向上させるための新しい方法](https://elith.substack.com/i/119966648/論文)
+
+- 国際学会CVPR2023に採択されたBidirectional Copy-Paste for Semi-Supervised Medical Image Segmentationについて解説
+- 提案された新しい半教師あり医療画像セグメンテーション手法はBCPはBidirectional Copy-Pasteの略
+- BCPは、ラベル付きデータとラベルなしデータを双方向にコピー＆ペーストすることで、未ラベルデータがラベル付きデータから包括的な共通の意味を学ぶように促すことが目的
+
 ### [2023-05-04 CLIP ViT-L/14がリリース (Hugging Face)](https://huggingface.co/laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K)
 
 - ImageNetで79.2%のゼロショット精度を実現したCLIP ViT-L/14がリリース
@@ -58,6 +64,11 @@
 
 ### [2023-05-02 Liam BranniganさんはTwitterを使っています: 「One important point is checking if your query is running in streaming mode.](https://twitter.com/braaannigan/status/1653323252473774081?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 
+### [2023-05-01 AudioGPTの解説](https://elith.substack.com/i/118059325/論文)
+
+- マルチモーダルAIシステムを提案しLLMs(ChatGPT)を補完
+- 音声対話が可能な基盤モデルという位置づけ
+
 ### [2023-04-29 Stability AIからDeepFloyd IFが公開](https://note.com/te_ftef/n/nd83eb09a3990)
 
 - と思ったらこの記事はベースとなっているImagenの記事
@@ -66,6 +77,13 @@
 ### [2023-04-28 音声合成に使用可能な事前学習モデルHuBERTをApache-2.0ライセンスで公開](https://twitter.com/yasyune1023/status/1651893684521287682)
 
 ### [2023-04-27 Hugging Face Transformersを使いTensrFlowとTPUを言語モデルの学習方法](https://huggingface.co/blog/tf_tpu)
+
+### [2023-04-24 SAMが様々な実世界のアプリケーションにおいてどのように機能するかを調査した論文](https://elith.substack.com/i/116461340/論文)
+
+- SAMの課題（医療画像、低コントラスト、夜間）も挙げられていて興味深い
+- 元論文
+  - [[2304.05750] Segment Anything Is Not Always Perfect: An Investigation of SAM on Different Real-world Applications](https://arxiv.org/abs/2304.05750)
+
 
 ### [2023-04-22 Count-Anything: SAMを応用した物体数をカウントするOSS](https://github.com/ylqi/Count-Anything)
 

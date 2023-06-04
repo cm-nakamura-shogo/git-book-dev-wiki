@@ -87,6 +87,20 @@
 
 - 結論、最新モデルかどうか意外はAzure OpenAI一択な気がする。
 
+### [2023-05-14 FLAIR: オンラインで会話型ボットを検出するためのフレームワーク](https://elith.substack.com/i/121117725/論文)
+
+- 人間とボットを効果的に区別するための質問シナリオ
+  - 人間にとっては簡単だがボットにとっては難しいもの
+  - ボットにとっては簡単だが人間にとっては難しいもの
+- LLMの弱点
+  - 文字のカウント、文字の置換、文字の配置
+  - ランダム編集、ノイズ侵害
+  - ASCIIアート
+- LLMが得意なもの
+  - 記憶、計算の一部
+- 元論文
+  - [[2305.06424] Bot or Human? Detecting ChatGPT Imposters with A Single Question](https://arxiv.org/abs/2305.06424)
+
 ### [2023-05-15 日本初の挑戦〜食べログによるChatGPTプラグイン開発の舞台裏](https://tech-blog.tabelog.com/entry/first-challenge-tabelog-chatgpt-plugin-devleopment)
 
 - 技術的な話はあまりなかったが、脆弱性診断とかやるのはすごい。
@@ -107,12 +121,27 @@
 - 言及されているが各モデルのライセンスのまとめ
   - [Mooler0410/LLMsPracticalGuide: A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers)](https://github.com/Mooler0410/LLMsPracticalGuide#Usage-and-Restrictions)
 
+### [2023-05-22 OpenCALM, Rinna, GPT-3.5の比較](https://elith.substack.com/i/122600758/調査)
+
+- チャット用に調整したらもうちょいマシになるのかな
+
 ### [2023-05-23 ChatGPTを使い始める前に理解しておく情報や用語など | DevelopersIO](https://dev.classmethod.jp/articles/pre-chatgpt/)
 
 ### [2013-05-27 StackLLaMA : RLHFでLLaMAを学習するための実践ガイド｜npaka](https://note.com/npaka/n/n1248a4202df0)
 
 - Hugging Faceの以下記事のまとめ
   - [StackLLaMA: A hands-on guide to train LLaMA with RLHF](https://huggingface.co/blog/stackllama)
+
+### [2023-05-29 PEARL: 大規模言語モデルによる長文文書に対するタスクの改善](https://elith.substack.com/i/124082742/論文)
+
+- 戦略として、中間ステップに分解することで入力例を改善する「PEARL」というフレームワークを提案
+- PEARLは、ゼロショット とchain-of-thought promptingを上回る
+- 中間ステップは以下の３つで構成
+  - アクションマイニング：要約、検索など
+  - プラン生成：アクションの実行するプラン
+  - プラン実行：2で生成したプランを実際に実行する
+- 元論文
+  - [https://arxiv.org/pdf/2305.14564.pdf](https://arxiv.org/pdf/2305.14564.pdf)
 
 ### [2023-06-01 歴代チャットボットと最近のLLMのまとめ - Qiita](https://qiita.com/Ted-HM/items/192746b547547eb070da)
 
@@ -138,3 +167,10 @@
   - NF4での量子化 : QLoRAでは4bitで量子化を行う
   - 二重量子化 : 量子化の際に用いる定数についても量子化を行う
   - ページ最適化 : GPUメモリが上限に達した際に、通常のメモリへとデータを退避させて計算に必要なメモリを確保（ピークの使用率を抑える）
+
+### [2023-06-03 24GB GPU で 20B LLM の RLHF ファインチューニング｜npaka](https://note.com/npaka/n/nff4091ea33ce)
+
+- 以下の3月の記事の解説
+  - [【Hugging Face】24GBのコンシューマ向けGPUで20BilionのLLMをファインチューニングする方法](https://huggingface.co/blog/trl-peft)
+
+

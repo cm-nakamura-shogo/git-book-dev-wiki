@@ -92,3 +92,64 @@
   - COMPACTがチャンク再統合なのでより効率的に動作する
 - プロンプト関連の処理がPromptTypeというAPIで再構成されている
   - https://github.com/jerryjliu/llama_index/blob/v0.6.12/llama_index/prompts/prompt_type.py
+
+
+### [2023-05-28 LlamaIndex 0.6.13](https://github.com/jerryjliu/llama_index/compare/v0.6.12...v0.6.13)
+
+- [Graphsignal](https://graphsignal.com/)との連携
+  - AIエージェントやLLMを搭載したアプリケーションに観測性を提供
+- SQLAutoVectorQueryEngineの追加
+
+### [2023-05-30 LlamaIndex 0.6.14](https://github.com/jerryjliu/llama_index/compare/v0.6.13...v0.6.14)
+
+- ChatEngineなる新しいエンジンが追加
+  - 種類としてはSimpleChatEngine、ReActChatEngine、CondenseQuestionChatEngine
+  - as_chat_engineでインスタンス化し、切り替えはChatModeで実施できる。デフォルトはCondenseQuestionChatEngine。
+- 内部的にglobal_service_contextができている。用途は不明。
+- PromptTypeにCONVERSATION、DECOMPOSE、CHOICE_SELECTが追加
+
+### [2023-05-31 LlamaIndex 0.6.15](https://github.com/jerryjliu/llama_index/compare/v0.6.14...v0.6.15)
+
+- Agentに関するユースケースが追加されたのみ
+  - [docs/use_cases/agents.md](docs/use_cases/agents.md)
+
+### [2023-06-01 LlamaIndex 0.6.16](https://github.com/jerryjliu/llama_index/compare/v0.6.15...v0.6.16.post1)
+
+- 引数など使い方に影響のある名前変更あり
+  - デフォルト定数に一部変更有。これに応じて引数が変わるので要注意。
+    - NodeParser側
+      - DEFAULT_CHUNK_OVERLAPが200から20に。これは要注意。
+      - DEFAULT_CHUNK_SIZEはそのまま。
+      - chunk_size_limitもchunck_sizeに変わっている
+    - PromptHelper側
+      - MAX_CHUNK_OVERLAPが消滅。max_chunk_overlapが非推奨となり代わりにchunk_overlap_ratioを使用するようになった影響
+      - DEFAULT_CHUNK_OVERLAP_RATIOは0.1となっている
+      - MAX_CHUNK_SIZEがDEFAULT_CONTEXT_WINDOWに名前変更
+      - NUM_OUTPUTSがDEFAULT_NUM_OUTPUTSに名前変更
+  - 各データストアのto_dictがなくなりto_jsonに変更
+- RetryQueryEngineが追加
+  - 内部でFeedbackQueryTransformationを使う
+  - FeedbackQueryTransformationが追加
+    - Evaluatorの結果を使ってクエリにフィードバックが可能に。これがEvaluatorを抽象型にした背景っぽい。
+  - BaseEvaluatorという新しい抽象型で評価系が実装
+    - もともとQueryResponseEvaluatorがあったがEvaluatorが抽象型の親クラスを持つように変更されている
+- PromptHelperの修正
+  - compact_text_chunksがrepackという名前に代わっている
+  - truncateという複数ノードのテキストをつなげる処理が追加
+  - chunk_overlap_ratioが指定できるように
+- PsychicReaderが追加
+  - Psychicは多くのSaaSアプリのデータを1つのユニバーサルAPIで同期させることができるプラットフォーム
+
+### [2023-06-01 LlamaIndex 0.6.16.post1](https://github.com/jerryjliu/llama_index/compare/v0.6.16...v0.6.16.post1)
+
+- SubQuestionQueryEngineのパッチ
+
+### [2023-06-03 LlamaIndex 0.6.17](https://github.com/jerryjliu/llama_index/compare/v0.6.16.post1...v0.6.17)
+
+- Nodeの削除系操作について見直しが入っている
+- RefDocInfoにAPIがいくつか追加
+
+### [2023-06-03 LlamaIndex 0.6.18](https://github.com/jerryjliu/llama_index/compare/v0.6.17...v0.6.18)
+
+- Vector StoreにMyScaleVectorStoreとSupabaseVectorStoreが追加
+- FunctionTool、BaseToolSpecの具象化クラスNotionToolSpec、TestToolSpecが追加。用途はあまりわかってない
