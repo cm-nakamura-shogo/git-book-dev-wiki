@@ -32,6 +32,20 @@
 
 ### [2023-06-01 Vertex AIバッチ予測リクエストの入力または出力として、マルチリージョンのBigQueryテーブルを指定できるように](https://cloud.google.com/release-notes#June_01_2023)
 
+### [2023-06-07 Vertex AIのPaLM 2 for Text, Embedding for Text, Generative AI StudioがGAに](https://cloud.google.com/release-notes#June_07_2023)
+
+- 発表されたもののうちPaLM 2 for ChatとTuning for PaLM 2以外はGAになったっぽい
+
+### [2023-06-07 Vertex AI Model Gardenが(GA)で提供開始](https://cloud.google.com/release-notes#June_07_2023)
+
+- Model GardenはVertex AIと選択したOSSモデルの発見、テスト、カスタマイズ、デプロイを支援するプラットフォーム
+
+### [2023-06-07 Vertex AI Codey APIsがプレビュー開始](https://cloud.google.com/release-notes#June_07_2023)
+
+- Codey APIを利用することで、コード生成、コード補完、コードチャットAPIをGCPプロジェクトからも利用することが可能に
+- Codey APIは、Generative AI studioまたはRESTコマンドでプログラム的に使用可能
+
+
 ## 参考記事
 
 ### [2023-04-20 自己流 Vertex AI Pipelines 開発プラクティス](https://note.com/tatsuyashirakawa/n/n146551bc5a66)

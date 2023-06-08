@@ -1,20 +1,15 @@
 # scrap
 
-
 ## Update
-
-[AWS API Changes](https://awsapichanges.info/archive/changes/372fd4-api.sagemaker.html)
-[AWS API Changes](https://awsapichanges.info/archive/changes/5959d6-frauddetector.html)
-[Build high-performance ML models using PyTorch 2.0 on AWS – Part 1 | AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/part-1-build-high-performance-ml-models-using-pytorch-2-0-on-aws/)
-[Arrange your transcripts into paragraphs with Amazon Transcribe | AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/arrange-your-transcripts-into-paragraphs-with-amazon-transcribe/)
-[Build machine learning-ready datasets from the Amazon SageMaker offline Feature Store using the Amazon SageMaker Python SDK | AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/build-machine-learning-ready-datasets-from-the-amazon-sagemaker-offline-feature-store-using-the-amazon-sagemaker-python-sdk/)
-[SageMaker Automatic Model Tuning automatically chooses tuning configurations](https://aws.amazon.com/about-aws/whats-new/2023/06/sagemaker-automatic-model-tuning-configurations/)
-[Google Cloud latest news and announcements | Google Cloud Blog](https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/?hl=en)
-[Google Cloud release notes  |  Documentation](https://cloud.google.com/release-notes#June_05_2023)
-[Google Cloud release notes  |  Documentation](https://cloud.google.com/release-notes#June_06_2023)
 
 ## LLM
 
+- [オープンソースで商用利用可能な大規模言語モデル「Falcon」が登場、オープンソースモデルの中では最高の性能に - GIGAZINE](https://gigazine.net/news/20230606-falcon-open-llm/)
+- [TorishimaさんはTwitterを使っています: 「アラブ方面の石油マネー（たぶん）で作られた LLM らしい（LLaMA 超えは確かに凄そう） やっぱりデータセット綺麗に作るのが大事なんだな… オープンソースで商用利用可能な大規模言語モデル「Falcon」が登場、オープンソースモデルの中では最高の性能に - GIGAZINE https://t.co/jre70b0lRq」 / Twitter](https://twitter.com/izutorishima/status/1666022728602882048?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+- [RWKVを論文と実装から読み解く](https://zenn.dev/jow/articles/f66d6403b9a509)
+- [「ChatGPT」に使われる言語モデル「GPT」からうまく答えを引き出すためのOpenAI公式ガイド - GIGAZINE](https://gigazine.net/news/20230606-openai-gpt-best-practices/)
+- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
+- [GPT best practices - OpenAI API](https://platform.openai.com/docs/guides/gpt-best-practices)
 - [TogetherさんはTwitterを使っています: 「Announcing RedPajama 7B trained on 1T tokens! 🚀 • Instruct, chat, base, and interim checkpoints on @huggingface • The instruct model outperforms all open 7B models on HELM benchmarks • The 5TB dataset has been used to train over 100 models Details👇 https://t.co/oUNKqYBmlS https://t.co/bBTYf51M28」 / Twitter](https://twitter.com/togethercompute/status/1666067674382888961)
 - [布留川英一 / Hidekazu FurukawaさんはTwitterを使っています: 「Google Colab + trlx で OpenCALM のRLHFファインチューニングを練習する｜npaka @npaka123 #note https://t.co/yKwQStio45」 / Twitter](https://twitter.com/npaka123/status/1666076882788548608)
 - [piqcyさんはTwitterを使っています: 「AWSで機械学習を行う方法がわかるリポジトリに生成系AIのサンプルが加わりました。AWSの実装が早すぎる赤い彗星の力で以下言語モデルの追加学習(通常Fine Tuning + LoRA)、推論のコードを掲載してます Alpaca-LoRA Cerebras StableLM Dolly v2 OpenCALM Rinna NeoX RWKV MPT https://t.co/lUnJEFt1dQ」 / Twitter](https://twitter.com/icoxfog417/status/1665687806176534528?s=12&t=0nszgXsDXAd-L4WiCutIWg)
@@ -34,8 +29,22 @@
 - [GitLabがGoogle Cloud(Vertex AI)と提携しました！ | DevelopersIO](https://dev.classmethod.jp/articles/gitlab-vertex-ai-2305/)
 - [Meta AI Unleashes Megabyte, a Revolutionary Scalable Model Architecture - Artisana](https://www.artisana.ai/articles/meta-ai-unleashes-megabyte-a-revolutionary-scalable-model-architecture)
 
+## Speech
+
+- [Evaluating speech synthesis in many languages with SQuId – Google AI Blog](https://ai.googleblog.com/2023/06/evaluating-speech-synthesis-in-many.html)
+
+## Python
+
+- [Pythonの相対インポートで上位ディレクトリ・サブディレクトリを指定 | note.nkmk.me](https://note.nkmk.me/python-relative-import/)
+- [【Python】__str__と__repr__の使い方｜ゆうまるブログ](https://yumarublog.com/python/str-repr/)
+
 ## AIML
 
+- [PythonのML（機械学習）と可視化のためのデータ操作ライブラリ「redframes」のインストール | Men of Letters（メン・オブ・レターズ） – 論理的思考/業務改善/プログラミング](https://laboratory.kazuuu.net/installation-of-redframes-data-manipulation-library-for-ml-machine-learning-and-visualization-in-python/)
+- [AlphaDev discovers faster sorting algorithms](https://www.deepmind.com/blog/alphadev-discovers-faster-sorting-algorithms)
+- [Optimising computer systems with more generalised AI tools](https://www.deepmind.com/blog/optimising-computer-systems-with-more-generalised-ai-tools)
+- [Docker on GPU インスタンス（EC2）で CUDA コンテナの実行環境を作って Hello World を実行してみた | DevelopersIO](https://dev.classmethod.jp/articles/running-cuda-container-on-docker-gpu-instance-ec2-hello-world/)
+- [Welcome fastText to the Hugging Face Hub](https://huggingface.co/blog/fasttext)
 - [Visual captions: Using large language models to augment video conferences with dynamic visuals – Google AI Blog](https://ai.googleblog.com/2023/06/visual-captions-using-large-language.html)
 - [tattakaさんはTwitterを使っています: 「社内勉強会で使用した資料を公開しました 2017年のSfmLearner以降の手法を中心に、Deep Learningを用いたVisual Odometryについてまとめています https://t.co/BbIIxC8mCb」 / Twitter](https://twitter.com/tattaka_sun/status/1665634601606483968?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 - [QDくん⚡️AI関連の無料教材紹介さんはTwitterを使っています: 「Amazonが無料公開している機械学習の講義動画(全138回) Machine Learning University https://t.co/UvxlANqMAU 各コースで使用されているスライド, データセット, Notebook ↓ 表形式データ https://t.co/tnhdE8nXqY 決定木とアンサンブル学習 https://t.co/3LuVZiZlFC 画像認識… https://t.co/fze6AAYIsE」 / Twitter](https://twitter.com/developer_quant/status/1665707551063937024?s=12&t=0nszgXsDXAd-L4WiCutIWg)
@@ -60,6 +69,7 @@
 
 ## Book and Contents
 
+- [新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング (できるビジネス) | 唐木 元 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4844338722)
 - [『OpenAI GPT-4/ChatGPT/LangChain 人工知能プログラミング実践入門』 が発売になります。｜npaka](https://note.com/npaka/n/n4b0066c376f7)
 - [Googleを支える技術 ……巨大システムの内側の世界：書籍案内｜技術評論社](https://gihyo.jp/book/2008/978-4-7741-3432-1)
 - [O'Reilly Japan - 初めてのTypeScript](https://www.oreilly.co.jp/books/9784814400362/)
@@ -71,6 +81,11 @@
 
 ## Other
 
+- [Shota NukumizuさんはTwitterを使っています: 「【超重要記事】API設計スキルを次のレベルに引き上げるベストプラクティス22選 良質なREST API設計のテクニックが、コード付きで簡潔に解説されています。 APIの読みやすさは意外と大事だったりする。 #駆け出しエンジニアと繋がりたい #今日の積み上げ #プログラミング https://t.co/SBJroFnjDI」 / Twitter](https://twitter.com/nameless_sn/status/1665916420985692160?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+- [Python で学ぶ実践的なドメイン駆動設計とレイヤードアーキテクチャ / DDD and Onion Architecture in Python - Speaker Deck](https://speakerdeck.com/iktakahiro/ddd-and-onion-architecture-in-python)
+- [API GatewayとS3を使ってメンテナンスページをホスティングしてみた | DevelopersIO](https://dev.classmethod.jp/articles/api-gateway-proxy-s3-maintenance-page/)
+- [共立出版 アリがと蟻さんはTwitterを使っています: 「こんな本が欲しかった！（ですよね！？）あえて「失敗」事例を広く共有することで、データサイエンティストがやりがちな過ちを防ぎ、ビジネスにおけるデータサイエンティストの価値向上の一助となることを目指し、本書は企画されました。 https://t.co/eH5oj2Ao5z」 / Twitter](https://twitter.com/1738310/status/1666329421966635011)
+- [Amazon ECS Service ConnectをAWS CloudFormationでデプロイして削除してみた | DevelopersIO](https://dev.classmethod.jp/articles/20230606-amazon-ecs-service-connect-cfn-01/)
 - [AWS-Black-Belt_2023_Datalake-Format-On-AWS_0516_v1.pdf](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Datalake-Format-On-AWS_0516_v1.pdf)
 - [fetaroさんはTwitterを使っています: 「資料公開しました！ GO TechTalk #19 タクシーアプリ『GO』事業成長を支えるデータ分析基盤の継続的改善！ https://t.co/pJSEDDFdzD」 / Twitter](https://twitter.com/fetarodc/status/1665573107405561856?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 - [ばんくし王さんはTwitterを使っています: 「エムスリーは採用強化中です。 ギークでユニークな人同士がリスペクトし合える文化です。1番空気を感じられるYouTubeチャンネルを共有しておきますね。 エムスリー公式テックチャンネル 【M3 Tech Channel】 https://t.co/XYNQlGrpzK」 / Twitter](https://twitter.com/vaaaaanquish/status/1665665848726388738?s=12&t=0nszgXsDXAd-L4WiCutIWg)

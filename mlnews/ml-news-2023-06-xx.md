@@ -1,0 +1,26 @@
+
+## AWS
+
+### [2023-06-06 Transcribeで実際のトランスクリプトと一緒に提供するメタデータに基づいて自動的に段落を導入する方法](https://aws.amazon.com/blogs/machine-learning/arrange-your-transcripts-into-paragraphs-with-amazon-transcribe/)
+
+- 無音時間を使って段落分けを実現している。他の認識エンジンでも実現できそう。
+
+### [2023-06-06 SageMaker Automatic Model Tuningが探索や試行、最大実行時間を目標変数に基づいた自動選択が可能に](https://aws.amazon.com/about-aws/whats-new/2023/06/sagemaker-automatic-model-tuning-configurations/)
+
+- ジョブ定義の一部として必要だったハイパーパラメータの範囲、チューニング戦略、ジョブ数などの設定を指定する必要がない新しい設定であるautotuneを提供する
+
+### [2023-06-07 SageMaker Pipelinesにおいて、パイプライン内の任意のステップをサブワークフローとして実行することができる新機能を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-pipelines-selective-executions/)
+
+- 関連するAPI Changes
+  - [https://awsapichanges.info/archive/changes/372fd4-api.sagemaker.html](https://awsapichanges.info/archive/changes/372fd4-api.sagemaker.html)
+
+### [2023-06-07 SageMaker Canvasがモデルの再トレーニングと、更新されたデータセットによるバッチ予測ワークフローの自動化機能を提供](https://aws.amazon.com/about-aws/whats-new/2023/06/amazon-sagemaker-canvas-ml-models-workflows-datasets/)
+
+- プロダクション向きの機能がでてきた
+- 対応するデータソースは、ローカルアップロードとAmazon S3のみ。
+- [公式ブログ](https://aws.amazon.com/blogs/machine-learning/retrain-ml-models-and-automate-batch-predictions-in-amazon-sagemaker-canvas-using-updated-datasets/)
+
+## Google
+
+## その他
+

@@ -174,6 +174,14 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 ### [2023-05-31 Amazon ECS でTrainiumインスタンスを使用してコンテナ内でMLワークロードを実行する](https://aws.amazon.com/jp/blogs/machine-learning/scale-your-machine-learning-workloads-on-amazon-ecs-powered-by-aws-trainium-instances/)
 
+### [2023-06-07 SageMakerで最新のLLM基盤モデル Falcon-40Bをトレーニング](https://aws.amazon.com/blogs/machine-learning/technology-innovation-institute-trains-the-state-of-the-art-falcon-llm-40b-foundation-model-on-amazon-sagemaker/)
+
+- 最近界隈で石油マネーLLMと話題になっているやつ
+- 記事はゼロから事前学習モデルを作る方法について紹介されているのであくまで読み物として
+
+### [2023-06-06  SageMaker Python SDKを使用して、Amazon SageMaker Offline Featurestoreから機械学習可能なデータセットを構築する](https://aws.amazon.com/blogs/machine-learning/build-machine-learning-ready-datasets-from-the-amazon-sagemaker-offline-feature-store-using-the-amazon-sagemaker-python-sdk/)
+
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -248,3 +256,18 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - RLHFにより人間の好みに合った出力を学習できる
 - 公式ブログ
   - [High-quality human feedback for your generative AI applications from Amazon SageMaker Ground Truth Plus | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/high-quality-human-feedback-for-your-generative-ai-applications-from-amazon-sagemaker-ground-truth-plus/)
+
+### [2023-06-06 SageMaker Automatic Model Tuningが探索や試行、最大実行時間を目標変数に基づいた自動選択が可能に](https://aws.amazon.com/about-aws/whats-new/2023/06/sagemaker-automatic-model-tuning-configurations/)
+
+- ジョブ定義の一部として必要だったハイパーパラメータの範囲、チューニング戦略、ジョブ数などの設定を指定する必要がない新しい設定であるautotuneを提供する
+
+### [2023-06-07 SageMaker Pipelinesにおいて、パイプライン内の任意のステップをサブワークフローとして実行することができる新機能を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-pipelines-selective-executions/)
+
+- 関連するAPI Changes
+  - [https://awsapichanges.info/archive/changes/372fd4-api.sagemaker.html](https://awsapichanges.info/archive/changes/372fd4-api.sagemaker.html)
+
+### [2023-06-07 SageMaker Canvasがモデルの再トレーニングと、更新されたデータセットによるバッチ予測ワークフローの自動化機能を提供](https://aws.amazon.com/about-aws/whats-new/2023/06/amazon-sagemaker-canvas-ml-models-workflows-datasets/)
+
+- プロダクション向きの機能がでてきた
+- 対応するデータソースは、ローカルアップロードとAmazon S3のみ。
+- [公式ブログ](https://aws.amazon.com/blogs/machine-learning/retrain-ml-models-and-automate-batch-predictions-in-amazon-sagemaker-canvas-using-updated-datasets/)
