@@ -181,6 +181,10 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 ### [2023-06-06  SageMaker Python SDKを使用して、Amazon SageMaker Offline Featurestoreから機械学習可能なデータセットを構築する](https://aws.amazon.com/blogs/machine-learning/build-machine-learning-ready-datasets-from-the-amazon-sagemaker-offline-feature-store-using-the-amazon-sagemaker-python-sdk/)
 
+### [2023-06-09 Tritonを使用してAmazon SageMaker上でONNXモデルをホストする](https://aws.amazon.com/jp/blogs/machine-learning/host-ml-models-on-amazon-sagemaker-using-triton-onnx-models/)
+
+- ONNXの最大のメリットは、異なるフレームワークやツール間でMLモデルを表現し、交換するための標準化された形式を提供すること
+- 記事では、GPUを使用するマルチモデルエンドポイント（MME）向けにONNXベースのモデルをデプロイする方法を紹介
 
 ## アップデート
 
@@ -271,3 +275,15 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - プロダクション向きの機能がでてきた
 - 対応するデータソースは、ローカルアップロードとAmazon S3のみ。
 - [公式ブログ](https://aws.amazon.com/blogs/machine-learning/retrain-ml-models-and-automate-batch-predictions-in-amazon-sagemaker-canvas-using-updated-datasets/)
+
+### [2023-06-08 Amazon SageMaker DistributionがECRから利用可能に](https://aws.amazon.com/jp/blogs/machine-learning/get-started-with-the-open-source-amazon-sagemaker-distribution/)
+
+- Amazon SageMaker Distributionは、機械学習、データサイエンス、可視化のための主要なフレームワークを含むDockerイメージのセット
+- CPUとGPUの2種類を準備し、PyTorch、TensorFlow、KerasなどのDeep Learningフレームワーク、numpy、scikit-learn、pandasなどのPythonパッケージ、およびJupyter LabなどのIDEが含まれる
+- GPU版は5.3GB程度のイメージサイズ
+
+### [2023-06-09 Falcon 40B基盤モデルがSageMaker JumpStartで利用可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/falcon-40b-foundation-model-tii-sagemaker-jumpstart/)
+
+- Falcon 40Bは、Apache 2.0ライセンスで利用可能な400億パラメータの大規模言語モデル
+- 以下のサンプルノートブックで試すことが可能
+  - [amazon-sagemaker-examples/introduction_to_amazon_algorithms/jumpstart-foundation-models/text-generation-falcon.ipynb](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/jumpstart-foundation-models/text-generation-falcon.ipynb)

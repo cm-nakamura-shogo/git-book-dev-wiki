@@ -402,6 +402,8 @@
 - バンディットアルゴリズムを用いた推薦システムの構成について
   - https://techblog.zozo.com/entry/zozoresearch-bandit-overviews
 
+## 参考
+
 ## アップデート
 
 ### [2023-04-17 PersonalizeがData Wranglerとの統合でデータ準備が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/prepare-data-amazon-personalize-sagemaker-data-wrangler-integration/)
@@ -414,6 +416,8 @@
 - これにより以下が可能
   - 人気のあるアイテムをより重視する
   - 選択したアイテムに似ているがあまり知られていないアイテムを推薦する
+- 公式
+  - [2023-06-08 Amazon PersonalizeのSimilar-Itemsの人気度チューニングを導入](https://aws.amazon.com/jp/blogs/machine-learning/introducing-popularity-tuning-for-similar-items-in-amazon-personalize/)
 
 ### [2023-05-30 Personalizeでソリューションを作成し、レコメンダーを作成または更新する際に、トレーニング用の特定の列を除外する機能をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-personalize-model-training/)
 

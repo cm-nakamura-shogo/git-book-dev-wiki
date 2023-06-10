@@ -148,6 +148,7 @@
     - [Amazon Polly             ](pages/aws/aws_aiml/aws_aiml_polly.md)
     - [Amazon Fraud Detector    ](pages/aws/aws_aiml/aws_aiml_fraud_detector.md)
     - [Amazon Translate         ](pages/aws/aws_aiml/aws_aiml_translate.md)
+    - [Amazon Lex               ](pages/aws/aws_aiml/aws_aiml_lex.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)
@@ -166,6 +167,7 @@
     - [Cloud Data Fusion        ](pages/gcp/gcp_cloud_data_fusion.md)
     - [GKE                      ](pages/gcp/gcp_gke.md)
     - [Vertex AI                ](pages/gcp/gcp_vertexai.md)
+    - [Compute Engine           ](pages/gcp/gcp_compute_engine.md)
   - [Terraform                  ](pages/cloud/cloud_terraform.md)
 - 試験対策
   - AWS

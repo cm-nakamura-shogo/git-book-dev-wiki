@@ -40,6 +40,9 @@
 
 ## AIML
 
+- [うとしんさんはTwitterを使っています: 「MCMCの神動画を見つけた！緑本の久保先生の講義動画で，1時間半でMCMCと階層ベイズの概要を理解できる最高の講義動画だった． 階層ベイズ＆MCMC講義 （久保拓弥）　難易度★★ https://t.co/YOYTS4eBzm @YouTubeより」 / Twitter](https://twitter.com/s1ok69oo/status/1666770106079395841?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+- [紫乃さんさんはTwitterを使っています: 「ウェブから有用な機械学習用のデータを自動で集めてくる研究 Active Learning from the Web (WWW 2023) の日本語解説スライドを公開しました https://t.co/nYqqU5M4pU こちらの内容で本日 14:00 より JSAI L会場 (中会議室 C2) にて発表するのでぜひお越しください‼️」 / Twitter](https://twitter.com/joisino_/status/1666962945979588609?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+- [ゆうやわいさんはTwitterを使っています: 「JSAI2023 チュートリアル 「解釈可能な機械学習 〜説明は人のためか？〜」にご参加いただきましてありがとうございました。今日の講演資料を公開しましたので、ご興味がありましたらこちらをご覧ください。 #JSAI2023 https://t.co/1eqzVbycea」 / Twitter](https://twitter.com/yuyay_/status/1666682639703760897?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 - [PythonのML（機械学習）と可視化のためのデータ操作ライブラリ「redframes」のインストール | Men of Letters（メン・オブ・レターズ） – 論理的思考/業務改善/プログラミング](https://laboratory.kazuuu.net/installation-of-redframes-data-manipulation-library-for-ml-machine-learning-and-visualization-in-python/)
 - [AlphaDev discovers faster sorting algorithms](https://www.deepmind.com/blog/alphadev-discovers-faster-sorting-algorithms)
 - [Optimising computer systems with more generalised AI tools](https://www.deepmind.com/blog/optimising-computer-systems-with-more-generalised-ai-tools)
@@ -81,6 +84,8 @@
 
 ## Other
 
+- [モーサテ平井塾 完全版 1時限目「超競争時代のリーダーシップ」｜Newsモーニングサテライト（モーサテ）|テレ東BIZ（テレビ東京ビジネスオンデマンド）](https://txbiz.tv-tokyo.co.jp/nms/vod/post_275160)
+- [モーサテ平井塾 完全版 2時限目「モチベ―ショナル・リーダー５カ条」｜Newsモーニングサテライト（モーサテ）|テレ東BIZ（テレビ東京ビジネスオンデマンド）](https://txbiz.tv-tokyo.co.jp/nms/vod/post_275614)
 - [Shota NukumizuさんはTwitterを使っています: 「【超重要記事】API設計スキルを次のレベルに引き上げるベストプラクティス22選 良質なREST API設計のテクニックが、コード付きで簡潔に解説されています。 APIの読みやすさは意外と大事だったりする。 #駆け出しエンジニアと繋がりたい #今日の積み上げ #プログラミング https://t.co/SBJroFnjDI」 / Twitter](https://twitter.com/nameless_sn/status/1665916420985692160?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 - [Python で学ぶ実践的なドメイン駆動設計とレイヤードアーキテクチャ / DDD and Onion Architecture in Python - Speaker Deck](https://speakerdeck.com/iktakahiro/ddd-and-onion-architecture-in-python)
 - [API GatewayとS3を使ってメンテナンスページをホスティングしてみた | DevelopersIO](https://dev.classmethod.jp/articles/api-gateway-proxy-s3-maintenance-page/)

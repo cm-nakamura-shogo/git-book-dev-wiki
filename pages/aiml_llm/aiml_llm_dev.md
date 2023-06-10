@@ -173,4 +173,7 @@
 - 以下の3月の記事の解説
   - [【Hugging Face】24GBのコンシューマ向けGPUで20BilionのLLMをファインチューニングする方法](https://huggingface.co/blog/trl-peft)
 
+### [2023-06-09 Retrieval Augmented Generationを改良する2つの方法 | DevelopersIO](https://dev.classmethod.jp/articles/revise-retrieval-augmented-generation/)
 
+- 単純なRAGの問題点を挙げて、解決策のChat/Askを解説している良記事
+- LlamaIndexの課題やLangChainを使うべきという話も分かる気がする

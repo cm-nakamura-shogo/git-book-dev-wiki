@@ -1,5 +1,16 @@
 # AWS AIML全般
 
+### [2023-06-09 ローコードエンタープライズグラフ機械学習（ML）フレームワーク、GraphStorm0.1のオープンソースリリースを発表](https://aws.amazon.com/jp/blogs/machine-learning/fast-track-graph-ml-with-graphstorm-a-new-way-to-solve-problems-on-enterprise-scale-graphs/)
+
+- GraphStormを使用すると何十億ものエンティティ間の関係や相互作用の構造を直接考慮したソリューションを構築
+- 具体例としては詐欺検出シナリオ、レコメンデーション、コミュニティ検出、検索問題など
+- GraphStormは以下のような組み込みグラフMLモデルコレクションを提供
+  - Relational Graph Convolutional Networks（RGCN）
+  - Relational Graph Attention Networks（RGAT）
+  - 異種グラフを扱うHeterogeneous Graph Transformer（HGT）
+- グラフMLの専門知識が少ないML技術者でもタスクに応じて異なるモデルソリューションを試し、正しいモデルを迅速に選択可能
+- ちょっと気になる
+
 ### [2023-05-25 OpenSearchとLangChainを組み合わせたソリューション](https://aws.amazon.com/jp/blogs/machine-learning/build-a-powerful-question-answering-bot-with-amazon-sagemaker-amazon-opensearch-service-streamlit-and-langchain/)
 
 - OpenSearch, LangChain, Streamlitなどの組み合わせ
