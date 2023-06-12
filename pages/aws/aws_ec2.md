@@ -37,6 +37,12 @@ parameter storeからAMIの情報を取得することができる。
 aws ec2 describe-images --owners 309956199498 --query 'sort_by(Images, &CreationDate)[*].[CreationDate,Name,ImageId]' --filters "Name=name,Values=RHEL-8.7*" --region ap-northeast-1 --output table
 ```
 
+### [AMIにおけるAmazon公式のアカウントIDを調べる](https://dev.classmethod.jp/articles/tsnote-ami-amazon-cli/)
+
+```bash
+aws ec2 describe-images --owners amazon --query 'Images[].OwnerId' | jq unique
+```
+
 ## アップデート
 
 ### [2023-02-24 東京リージョンで「C7g」AWS Graviton 3のEC2が利用可能に](https://dev.classmethod.jp/articles/c7g-ec2-tokyo-region/)

@@ -186,6 +186,12 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - ONNXの最大のメリットは、異なるフレームワークやツール間でMLモデルを表現し、交換するための標準化された形式を提供すること
 - 記事では、GPUを使用するマルチモデルエンドポイント（MME）向けにONNXベースのモデルをデプロイする方法を紹介
 
+### [2023-06-12 SageMaker Hugging Face Estimatorとモデル並列ライブラリを使ってGPT-Jをfine tuningする](https://aws.amazon.com/jp/blogs/machine-learning/fine-tune-gpt-j-using-an-amazon-sagemaker-hugging-face-estimator-and-the-model-parallel-library/)
+
+- モデル並列化に関する説明があってよい
+
+### [2023-06-12 Amazon SageMaker上でOpenChatkitのモデルを使用したカスタムチャットボットアプリケーションを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-custom-chatbot-applications-using-openchatkit-models-on-amazon-sagemaker/)
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)

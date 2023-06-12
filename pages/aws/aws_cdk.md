@@ -528,8 +528,13 @@ $ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 - 踏み台にしてWindowsインスタンスにRDPで接続するなど、いろいろできるみたい
   - [AWS Systems Manager セッションマネージャーで Windows 10 でSSH・SCPしてみた | DevelopersIO](https://dev.classmethod.jp/articles/ssm-session-manager-support-for-tunneling-ssh-scp-on-windows10/#toc-10)
 
-## CDKでLambda関数のビルド
+## 参考記事
+
+### CDKでLambda関数のビルド
 
 nodejsの場合ビルドには通常、Docker Desktop上のesbuildを使用するらしい。ローカルのesbuildを使うようにする場合は以下の記事を参考にする。
 
 - [AWS CDKでDocker Desktopを使わずにLambda関数（aws_lambda_nodejs）をローカルビルドする | DevelopersIO](https://dev.classmethod.jp/articles/local-build-a-lambda-function-nodejs-without-docker-desktop-with-aws-cdk/)
+
+
+### [[AWS CDK] Bootstrap リソースのカスタマイズ（修飾子 `hnb659fds` の変更）をしてみた | DevelopersIO](https://dev.classmethod.jp/articles/changing-the-aws-cdk-bootstrap-environment-from-the-default-qualifier-hnb659fds/)
