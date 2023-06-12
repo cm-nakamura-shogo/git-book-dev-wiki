@@ -72,6 +72,10 @@
 - その他の反応
   - [https://twitter.com/jaguring1/status/1654625307541004288](https://twitter.com/jaguring1/status/1654625307541004288)
 
+### [2023-06-06 RedPajama-INCITEのInstructとChat版が公開](https://www.together.xyz/blog/redpajama-7b)
+
+- 7Bモデルでは最高の性能を出したとのこと
+
 ## GPT4All
 
 ### [2023-04-19 GPT4All-JがGPTであるLLaMaを除去しApacheとなった](https://twitter.com/sonesuke/status/1648414463517949953)
@@ -115,6 +119,8 @@
 - 仕組みや強みなどが詳しく書いてある。Transformersライブラリとの統合も正式にサポート（`pip install rwkv`が不要）
 - ネイティブで非常に長いコンテキスト長をサポートするなど
 - 新しい多言語トークナイザーがリリースされ、今後は多言語対応を進める
+
+### [2023-06-06 RWKVを論文と実装から読み解く](https://zenn.dev/jow/articles/f66d6403b9a509)
 
 ## SpikeGPT
 
@@ -175,6 +181,8 @@
 
 ### [2023-05-18 OpenCALM-7Bをdolly-15k-jaでLoRAした例](https://twitter.com/masuidrive/status/1659089478781227008)
 
+### [2023-06-06 Google Colab + trlx で OpenCALM のRLHFファインチューニングを練習する｜npaka](https://note.com/npaka/n/nb8034942b642)
+
 ## 株式会社レトリバ
 
 ### [2023-05-12 日本語T5モデルの公開｜株式会社レトリバ](https://note.com/retrieva/n/n7b4186dc5ada)
@@ -213,6 +221,9 @@
 
 - リリース当初は商用利用には報酬が必要であったが、Apache 2.0化された
 - LLaMAの代替なるかといったところ（LLaMAは7B～65B）
+- 関連
+  - [オープンソースで商用利用可能な大規模言語モデル「Falcon」が登場、オープンソースモデルの中では最高の性能に - GIGAZINE](https://gigazine.net/news/20230606-falcon-open-llm/)
+  - [The Falcon has landed in the Hugging Face ecosystem](https://huggingface.co/blog/falcon)
 
 ## Aurora genAI
 

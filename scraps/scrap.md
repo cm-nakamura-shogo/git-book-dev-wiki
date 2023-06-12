@@ -4,28 +4,25 @@
 
 ## LLM
 
-- [オープンソースで商用利用可能な大規模言語モデル「Falcon」が登場、オープンソースモデルの中では最高の性能に - GIGAZINE](https://gigazine.net/news/20230606-falcon-open-llm/)
-- [TorishimaさんはTwitterを使っています: 「アラブ方面の石油マネー（たぶん）で作られた LLM らしい（LLaMA 超えは確かに凄そう） やっぱりデータセット綺麗に作るのが大事なんだな… オープンソースで商用利用可能な大規模言語モデル「Falcon」が登場、オープンソースモデルの中では最高の性能に - GIGAZINE https://t.co/jre70b0lRq」 / Twitter](https://twitter.com/izutorishima/status/1666022728602882048?s=12&t=0nszgXsDXAd-L4WiCutIWg)
-- [RWKVを論文と実装から読み解く](https://zenn.dev/jow/articles/f66d6403b9a509)
-- [「ChatGPT」に使われる言語モデル「GPT」からうまく答えを引き出すためのOpenAI公式ガイド - GIGAZINE](https://gigazine.net/news/20230606-openai-gpt-best-practices/)
-- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
+
+### [2023-06-06「ChatGPT」に使われる言語モデル「GPT」からうまく答えを引き出すためのOpenAI公式ガイド - GIGAZINE](https://gigazine.net/news/20230606-openai-gpt-best-practices/)
+
+- 公式ガイドだが目新しい情報はあまりない
 - [GPT best practices - OpenAI API](https://platform.openai.com/docs/guides/gpt-best-practices)
-- [TogetherさんはTwitterを使っています: 「Announcing RedPajama 7B trained on 1T tokens! 🚀 • Instruct, chat, base, and interim checkpoints on @huggingface • The instruct model outperforms all open 7B models on HELM benchmarks • The 5TB dataset has been used to train over 100 models Details👇 https://t.co/oUNKqYBmlS https://t.co/bBTYf51M28」 / Twitter](https://twitter.com/togethercompute/status/1666067674382888961)
-- [布留川英一 / Hidekazu FurukawaさんはTwitterを使っています: 「Google Colab + trlx で OpenCALM のRLHFファインチューニングを練習する｜npaka @npaka123 #note https://t.co/yKwQStio45」 / Twitter](https://twitter.com/npaka123/status/1666076882788548608)
-- [piqcyさんはTwitterを使っています: 「AWSで機械学習を行う方法がわかるリポジトリに生成系AIのサンプルが加わりました。AWSの実装が早すぎる赤い彗星の力で以下言語モデルの追加学習(通常Fine Tuning + LoRA)、推論のコードを掲載してます Alpaca-LoRA Cerebras StableLM Dolly v2 OpenCALM Rinna NeoX RWKV MPT https://t.co/lUnJEFt1dQ」 / Twitter](https://twitter.com/icoxfog417/status/1665687806176534528?s=12&t=0nszgXsDXAd-L4WiCutIWg)
-- [Langchain・Semantic Kernel・guidanceでエージェント機能を実装して比較してみた。 - Qiita](https://qiita.com/sakue_103/items/6ffee0bc267e71eafd60)
+
+### 未読
+
+- [ローカルLLMの情報まとめ｜npaka](https://note.com/npaka/n/nd95fba328b65)
+- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
 - [日本語特化の生成AIが続々、オルツは1600億パラメーターでChatGPTを追う | 日経クロステック（xTECH）](https://xtech.nikkei.com/atcl/nxt/column/18/02423/053100030/)
 - [whisper-ctranslate2を試す](https://zenn.dev/kun432/scraps/216e2df4928fec)
 - [逆瀬川さんはTwitterを使っています: 「LLM関連のよくまとまってるものとしては、Yao FuさんのHow does GPT Obtain its Ability?とWeibo AI Labの张俊林さんのzhihuでの記事がオススメです。 今年1月の時点でこれらが出てきていたのが驚きでした。 https://t.co/IJ8roqC8Vz https://t.co/gLAttNDSnv」 / Twitter](https://twitter.com/gyakuse/status/1665202930205573120?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 - [自宅PCで「rinna」の日本語言語モデルを試用、メモリ32GBあればCPUだけでも動くぞ！【イニシャルB】 - INTERNET Watch](https://internet.watch.impress.co.jp/docs/column/shimizu/1503707.html)
-- [The Falcon has landed in the Hugging Face ecosystem](https://huggingface.co/blog/falcon)
 - [Google I/Oで発表されたAIたち。Bard、PaLM 2関連まとめ | ギズモード・ジャパン](https://www.gizmodo.jp/2023/05/google-io23-ai-outline.html)
 - [［速報］Google Cloudでのシステム開発について何でもAIが教えてくれる「Duet AI for Google Cloud」発表。Google I/O 2023 － Publickey](https://www.publickey1.jp/blog/23/google_cloudaiduet_ai_for_google_cloud.html)
-- [im132ndさんはTwitterを使っています: 「RWKVの論文来てるじゃん https://t.co/hNjcih1jEx」 / Twitter](https://twitter.com/im132nd/status/1660818868510785536)
 - [Daisuke Okanohara / 岡野原 大輔さんはTwitterを使っています: 「注意機構（Attention）が(QK^T)Vで計算するのに対し、KVQ空間における新しい計算としてIntentionは正則化付最小二乗法の解と同様に Q(KK^T+αI)^{-1} K^TV で計算する。Attentionが推論時に勾配降下法で逐次的に解くとみなせるのに対しIntentionは解析解を直接求める。 https://t.co/DVCRRmSAFJ」 / Twitter](https://twitter.com/hillbig/status/1661134719831126016)
 - [ChatGPT(GPT-4)が個人情報を出力するか試してみた | DevelopersIO](https://dev.classmethod.jp/articles/chatgpt-security-pii/)
 - [ざっくりつかむ！LangChainのメンタルモデル](https://zenn.dev/fumi_sagawa/articles/113b4e5a46b984)
-- [ChatGPT Meetup Tokyo #2で「社内でChatGPTを利用するためのガイドラインを整備した話」をLTしました | DevelopersIO](https://dev.classmethod.jp/articles/chatgpt-guideline-lt/)
 - [GitLabがGoogle Cloud(Vertex AI)と提携しました！ | DevelopersIO](https://dev.classmethod.jp/articles/gitlab-vertex-ai-2305/)
 - [Meta AI Unleashes Megabyte, a Revolutionary Scalable Model Architecture - Artisana](https://www.artisana.ai/articles/meta-ai-unleashes-megabyte-a-revolutionary-scalable-model-architecture)
 

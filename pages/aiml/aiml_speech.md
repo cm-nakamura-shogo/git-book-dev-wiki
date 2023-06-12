@@ -37,6 +37,10 @@
 
 ### [2023-05-11 Whisper JAXのデモがHugging FaceのSpaceにて公開](https://twitter.com/sanchitgandhi99/status/1656665496463495168)
 
+### [2023-05-22 whisper-ctranslate2を試す](https://zenn.dev/kun432/scraps/216e2df4928fec)
+
+- 高速なやつ。GPUの方がより高速。
+
 ### [2023-06-02 AVFormer: ゼロショットなAV-ASRを実現するために音声モデルに視覚情報を注入する](https://ai.googleblog.com/2023/06/avformer-injecting-vision-into-frozen.html)
 
 - AV-ASRという動画から音声認識をする研究があるが、動画と書き起こし結果のデータセットは少なく、音声側の大規模化に追い付けていない
