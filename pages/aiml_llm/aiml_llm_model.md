@@ -1,5 +1,9 @@
 # LLM : モデル
 
+## まとめ
+
+### [2023-06-11 ローカルLLMの情報まとめ｜npaka](https://note.com/npaka/n/nd95fba328b65)
+
 ## FLAN
 
 ### [2023-03-04 Google の FLAN-20B with UL2 を動かしてChatGPT APIのように使ってみる！](https://qiita.com/sakasegawa/items/7394fe68eb0087b3c4a5)

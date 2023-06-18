@@ -2,7 +2,6 @@
 
 ### 未読
 
-- [ローカルLLMの情報まとめ｜npaka](https://note.com/npaka/n/nd95fba328b65)
 - [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
 - [日本語特化の生成AIが続々、オルツは1600億パラメーターでChatGPTを追う | 日経クロステック（xTECH）](https://xtech.nikkei.com/atcl/nxt/column/18/02423/053100030/)
 - [whisper-ctranslate2を試す](https://zenn.dev/kun432/scraps/216e2df4928fec)
