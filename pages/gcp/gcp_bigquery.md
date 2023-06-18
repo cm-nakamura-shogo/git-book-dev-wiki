@@ -81,3 +81,6 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 ### [2023-06-12 クエリ実行グラフの一般提供（GA）を開始](https://cloud.google.com/bigquery/docs/release-notes#June_12_2023)
 
 - クエリ実行グラフは、クエリパフォーマンスの問題を診断したり、クエリパフォーマンスのインサイトを受け取るために使用することができます。
+
+
+### [2023-06-15 BigQueryでもML.GENERATE_TEXTによりLLMのtext-bisonが使える機能がプレビュー](https://cloud.google.com/bigquery/docs/release-notes#June_15_2023)

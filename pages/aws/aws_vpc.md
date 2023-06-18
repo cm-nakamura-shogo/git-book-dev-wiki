@@ -58,14 +58,19 @@ Outpostsを利用する際のローカルゲートウェイに関連づけるル
 Ingressな通信は、クライアントからのアクセス時に、NATテーブルに基づいてPublic IPをPrivate IPに変換する。
 
 
-## VPC Reachability Analyzer
+### VPC Reachability Analyzer
 
 ネットワークが目的通りに設定されているか確認するためのツール
 
 - [新機能 – VPC Reachability Analyzer | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/)
 
-## AWS Transit Geteway
+### AWS Transit Geteway
 
 多数のVPC接続を管理できる。VPC Peeringなどで複雑になる場合は、Transit Gatewayを利用する。
 これによりハブ・アンド・スポークス構成を使用できる。
 
+## 参考記事
+
+### [2022-08-07 Amazon VPCを「これでもか！」というくらい丁寧に解説 - Qiita](https://qiita.com/c60evaporator/items/2f24d4796202e8b06a77)
+
+### [2022-08-14 【ベストプラクティス】Amazon VPC の構築方法を分かりやすく解説 - Qiita](https://qiita.com/c60evaporator/items/b9e645b96afa3a34f41e)

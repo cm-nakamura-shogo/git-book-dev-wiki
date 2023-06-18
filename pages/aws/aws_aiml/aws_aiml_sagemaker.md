@@ -159,7 +159,6 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 - こちらもFLAN T5を使用する例
 
-
 ### [2023-05-30 SageMakerの使用量を分析し、使用状況に応じたコスト最適化の機会を見極める(全五回シリーズ)](https://aws.amazon.com/jp/blogs/machine-learning/part-1-analyze-amazon-sagemaker-spend-and-determine-cost-optimization-opportunities-based-on-usage-part-1/)
 
 ### [2023-05-30 SageMaker XGBoostが完全分散型GPUトレーニングを提供開始](https://aws.amazon.com/jp/blogs/machine-learning/amazon-sagemaker-xgboost-now-offers-fully-distributed-gpu-training/)
@@ -191,6 +190,14 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - モデル並列化に関する説明があってよい
 
 ### [2023-06-12 Amazon SageMaker上でOpenChatkitのモデルを使用したカスタムチャットボットアプリケーションを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-custom-chatbot-applications-using-openchatkit-models-on-amazon-sagemaker/)
+
+### [2023-06-12 SageMakerのバッチ変換でPCAを実行してみた | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-pca-batch-transformation/)
+
+- なゆゆのSageMakerのバッチ変換
+
+### [2023-06-13 DLC上にFalcon-40BをAmazon SageMakerにデプロイする](https://aws.amazon.com/jp/blogs/machine-learning/deploy-falcon-40b-with-large-model-inference-dlcs-on-amazon-sagemaker/)
+
+### [2023-06-14 SageMakerプロジェクトを使用しSageMaker AutopilotをMLOpsプロセスに導入する方法](https://aws.amazon.com/jp/blogs/machine-learning/bring-sagemaker-autopilot-into-your-mlops-processes-using-a-custom-sagemaker-project/)
 
 ## アップデート
 

@@ -6,6 +6,12 @@
 - devioの書評
   - [[書評]シニアエンジニアから先のキャリアを考える「スタッフエンジニア マネジメントを超えたリーダーシップ」 | DevelopersIO](https://dev.classmethod.jp/articles/book-review-staff-engineer/)
 
+### [2023-03-09 エンジニアのためのマネジメント入門](https://www.amazon.co.jp/dp/4297133342)
+
+- 関連
+  - [マネジメントの知識がドメイン駆動設計を加速する - ソフトウェア設計を考える](https://masuda220.hatenablog.com/entry/2023/06/12/124719)
+- DDDとの関連もあって面白いかも
+
 ### [2022-11-21 人を選ぶ技術](https://www.amazon.co.jp/dp/4866802065)
 
 - ばんくしさん推奨図書

@@ -1,15 +1,5 @@
 # scrap
 
-## Update
-
-## LLM
-
-
-### [2023-06-06「ChatGPT」に使われる言語モデル「GPT」からうまく答えを引き出すためのOpenAI公式ガイド - GIGAZINE](https://gigazine.net/news/20230606-openai-gpt-best-practices/)
-
-- 公式ガイドだが目新しい情報はあまりない
-- [GPT best practices - OpenAI API](https://platform.openai.com/docs/guides/gpt-best-practices)
-
 ### 未読
 
 - [ローカルLLMの情報まとめ｜npaka](https://note.com/npaka/n/nd95fba328b65)
@@ -32,6 +22,7 @@
 
 ## Python
 
+- [Python：メインページ - リファレンス メモ](https://cercopes-z.com/Python/index.html)
 - [Pythonの相対インポートで上位ディレクトリ・サブディレクトリを指定 | note.nkmk.me](https://note.nkmk.me/python-relative-import/)
 - [【Python】__str__と__repr__の使い方｜ゆうまるブログ](https://yumarublog.com/python/str-repr/)
 
@@ -81,6 +72,10 @@
 
 ## Other
 
+- [[ 速報 ] Amazon Inspector が SBOM Export を対応しました！ #AWSreInforce | DevelopersIO](https://dev.classmethod.jp/articles/software-bill-materials-export-capability-amazon-inspector/)
+- [[速報]Amazon Verified PermissionsがGAしました #AWSreInforce | DevelopersIO](https://dev.classmethod.jp/articles/amazon-verified-permissions-ga/)
+- [AWS Summitに出展・登壇しました！ | PayPay Inside-Out](https://insideout.paypay.ne.jp/2023/06/09/event-awssummit2023-jp/)
+- [[小ネタ] EC2用にIAMロールを作ったのに、EC2へ割り当てられない！ | DevelopersIO](https://dev.classmethod.jp/articles/how-to-create-iam-instance-profile-using-amc/)
 - [モーサテ平井塾 完全版 1時限目「超競争時代のリーダーシップ」｜Newsモーニングサテライト（モーサテ）|テレ東BIZ（テレビ東京ビジネスオンデマンド）](https://txbiz.tv-tokyo.co.jp/nms/vod/post_275160)
 - [モーサテ平井塾 完全版 2時限目「モチベ―ショナル・リーダー５カ条」｜Newsモーニングサテライト（モーサテ）|テレ東BIZ（テレビ東京ビジネスオンデマンド）](https://txbiz.tv-tokyo.co.jp/nms/vod/post_275614)
 - [Shota NukumizuさんはTwitterを使っています: 「【超重要記事】API設計スキルを次のレベルに引き上げるベストプラクティス22選 良質なREST API設計のテクニックが、コード付きで簡潔に解説されています。 APIの読みやすさは意外と大事だったりする。 #駆け出しエンジニアと繋がりたい #今日の積み上げ #プログラミング https://t.co/SBJroFnjDI」 / Twitter](https://twitter.com/nameless_sn/status/1665916420985692160?s=12&t=0nszgXsDXAd-L4WiCutIWg)

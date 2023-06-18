@@ -40,3 +40,12 @@
 
 - 端的に言うと、APIの利用料をまとめて請求できるようになる機能
 - WebのUIから利用するChatGPTのPlusアカウントの請求をまとめて行うことは現状できない
+
+### [2023-06-06「ChatGPT」に使われる言語モデル「GPT」からうまく答えを引き出すためのOpenAI公式ガイド - GIGAZINE](https://gigazine.net/news/20230606-openai-gpt-best-practices/)
+
+- 公式ガイドだが目新しい情報はあまりない
+- [GPT best practices - OpenAI API](https://platform.openai.com/docs/guides/gpt-best-practices)
+
+### [2023-06-14 OpenAI APIのFunction callingで関数が呼ばれる条件を確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/openai-api-function-calling-check-condition/)
+
+- descriptionだけでなく引数情報なども参照して決定している様子

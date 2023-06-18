@@ -35,3 +35,26 @@
 - 量子化、バッチ化、並列化が既存
 - これに対してASSISTANT MODELを使って生成することで低レイテンシーを実現
 - TransformersのAPIを使えば簡単に利用可能らしい
+
+### [2023-05-13 ChatGPTで独自データを扱うためのエンべディング](https://note.com/ogatahisato/n/n899dcb459f35)
+
+- 基本的な内容で新しいものはない
+
+### [2023-06-12 自然な対話で商品検索！OpenAI と全文検索エンジンで対話型ゆるふわ検索 AI アシスタントを作ってみた](https://dev.classmethod.jp/articles/interactive-fuzzy-item-search-with-openai-api/)
+
+- フレームワークや検索方法の判断基準などが書いてありとても有用
+
+### [2023-06-14 GPT-3.5-turboの新機能を使ってCVPRの論文を良い感じに検索・推薦・要約するシステム](https://zenn.dev/turing_motors/articles/579ffa1c80661a)
+
+- まあ想定の範囲内な内容だった
+- streamlitは把握しておかないと今後役に立つのかもな
+
+### [2023-06-15 LangChain の「OpenAI Functions Agent」を試す](https://note.com/hamachi_jp/n/nbcaa7cff259d)
+
+- もともとtoolsが同様の機能であったため、かなり自然な形でFunction Callingがマージされている
+- initialize_agentで、agent=AgentType.OPENAI_FUNCTIONSを指定するのみ
+
+### [2023-06-17 OpenAIのFunction calling機能を活かした、LangChainの新機能Taggingを試す](https://note.com/hamachi_jp/n/n8237d3e0b8ed)
+
+- Function Callingを使ってテキストに感情やスピード、ボリュームなどをタグ付けする機能
+- 記事ではその結果をRINNAを使って音声合成している

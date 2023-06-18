@@ -24,3 +24,10 @@
 - devio
   - [[アップデート] Amazon Rekognition で顔写真の視線の方向（Eye Direction）を検出できるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/amazon-rekognition-eyes-gaze-direction-detection-in-face-apis/#toc-1)
   - 正直精度は低そうやな…
+
+### [2023-06-13 Rekognitionがユーザーベクトルで顔検索の精度を向上](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-rekognition-face-search-accuracy-user-vectors/)
+
+- 同一ユーザーの複数の顔画像を活用することで、顔検索の精度を大幅に向上させる新機能を発表
+- 顔ベクトルとは、画像から顔を数学的に表現したもので、今回同一ユーザーの複数の顔ベクトルを集約したユーザーベクトルを作成することが可能に
+- ユーザーベクターは、照明、シャープネス、ポーズ、見た目など様々な要素を含んでいるため、よりロバストな描写で高い顔検索精度を実現
+- [AWS API Changes](https://awsapichanges.info/archive/changes/106e8b-rekognition.html)

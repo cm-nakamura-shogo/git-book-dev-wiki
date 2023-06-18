@@ -2,6 +2,10 @@
 
 ## book
 
+### [2023-08-03 データ分析失敗事例集](https://www.kyoritsu-pub.co.jp/book/b10032587.html)
+
+- 少し社内で話題に
+
 ### [2023-01-26 SQLではじめるデータ分析 (オライリー)](https://www.amazon.co.jp/dp/4814400209)
 
 ### [2021-08-24 Kaggle Grandmasterに学ぶ 機械学習 実践アプローチ](https://www.amazon.co.jp/dp/4839974985)

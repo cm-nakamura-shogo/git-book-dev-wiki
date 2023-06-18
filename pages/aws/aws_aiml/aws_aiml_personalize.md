@@ -423,3 +423,9 @@
 
 - データセットのどの列をトレーニングに使用するかをお客様が選択できるように
 - 以前は、モデルのトレーニング中に顧客のデータセット内のすべての列が使用されていたが、これにより実験が簡単になった
+
+### [2023-06-13 PersonalizeがVPCエンドポイントに対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-personalize-vpc-endpoints/)
+
+- Personalizeがオープンインターネットを介さずにVPC上のリソースと通信できるように
+- VPC を Amazon Personalize に接続するには、Amazon Personalize 用の VPC エンドポイントを定義
+- エンドポイントは、サポートされているAWSサービス宛てのトラフィックのエントリポイントとして機能する、プライベートIPアドレスを持つENI

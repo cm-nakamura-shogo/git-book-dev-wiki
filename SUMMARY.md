@@ -100,6 +100,7 @@
     - [Amazon S3                ](pages/aws/aws_s3.md)
     - [Amazon EC2               ](pages/aws/aws_ec2.md)
     - [Amazon VPC               ](pages/aws/aws_vpc.md)
+    - [Amazon EC2 Instance Connect](pages/aws/aws_eic.md)
   - ネットワーク
     - [AWS NAT Gateway          ](pages/aws/aws_nat_gateway.md)
     - [Amazon Route53           ](pages/aws/aws_route53.md)
@@ -149,6 +150,7 @@
     - [Amazon Fraud Detector    ](pages/aws/aws_aiml/aws_aiml_fraud_detector.md)
     - [Amazon Translate         ](pages/aws/aws_aiml/aws_aiml_translate.md)
     - [Amazon Lex               ](pages/aws/aws_aiml/aws_aiml_lex.md)
+    - [AWS Inferentia           ](pages/aws/aws_aiml/aws_aiml_inferentia.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)

@@ -21,3 +21,8 @@ LambdaからのAPI Callで稼働状況を監視できる。
 ## 機械学習プロジェクトの進め方
 
 - [機械学習技術を使った実際の研究開発プロジェクトについて | hassaku's blog](http://blog.hassaku-labs.com/post/machine-learning-project/)
+
+## nyaggle
+
+- [nyaggle/examples at master · nyanp/nyaggle · GitHub](https://github.com/nyanp/nyaggle/tree/master/examples)
+- mamasさんが見ろと言っている

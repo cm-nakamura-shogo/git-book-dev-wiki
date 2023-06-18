@@ -45,6 +45,8 @@
 - Codey APIを利用することで、コード生成、コード補完、コードチャットAPIをGCPプロジェクトからも利用することが可能に
 - Codey APIは、Generative AI studioまたはRESTコマンドでプログラム的に使用可能
 
+### [2023-06-15 chat-bison@001のモデルが更新され、コンテキストフィールドの指示に従いやすくなった](https://cloud.google.com/release-notes#June_15_2023)
+
 
 ## 参考記事
 

@@ -87,3 +87,7 @@
 ### [2023-05-25 Voyager: An Open-Ended Embodied Agent with Large Language Models](https://voyager.minedojo.org/)
 
 - LLMを使ったゲームエージェントのようだ。それをVoyagerと呼んでいる
+
+### [2023-06-15 WizardCoder-15B](https://twitter.com/hardmaru/status/1669898590435835906)
+
+- StarCoderなど既存のコード補完より良いと主張している

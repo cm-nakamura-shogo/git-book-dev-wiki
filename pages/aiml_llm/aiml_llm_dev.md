@@ -179,3 +179,9 @@
 
 - 単純なRAGの問題点を挙げて、解決策のChat/Askを解説している良記事
 - LlamaIndexの課題やLangChainを使うべきという話も分かる気がする
+
+### [2023-06-10 Azure OpenAI Service の クォータ管理](https://zenn.dev/microsoft/articles/be24a299f46a4d)
+
+- Tokens Per Minute (TPM) のクォータを、各デプロイに対してユーザー任意の値 (1K 単位) で割り当てることができるように
+
+### [2023-06-14 「ChatGPTについて調べてくれ」と社長から特命を受けた人のためのChatGPT概論(40min版)_v1.00.pdf - Speaker Deck](https://speakerdeck.com/doradora09/20230614-chatgptnituitediao-hetekure-toshe-chang-karate-ming-woshou-ketaren-notamenochatgptgai-lun-40minban-v1-dot-00)

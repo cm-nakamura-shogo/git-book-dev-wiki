@@ -1,5 +1,11 @@
 # AWS AIML全般
 
+### [2023-06-13 生成AIと最新のデータアーキテクチャを使用してインサイトを得る](https://aws.amazon.com/jp/blogs/machine-learning/reinventing-the-data-experience-use-generative-ai-and-modern-data-architecture-to-unlock-insights/)
+
+- アーキテクチャとしてAmazon Redshift、Amazon RDS、Snowflake、Amazon Athena、AWS Glueなどのサービスを使用
+- SageMakerを用いた基盤モデル、LangChainなどと組み合わせる
+- もうBedrock使ってきてるやん…
+
 ### [2023-06-09 ローコードエンタープライズグラフ機械学習（ML）フレームワーク、GraphStorm0.1のオープンソースリリースを発表](https://aws.amazon.com/jp/blogs/machine-learning/fast-track-graph-ml-with-graphstorm-a-new-way-to-solve-problems-on-enterprise-scale-graphs/)
 
 - GraphStormを使用すると何十億ものエンティティ間の関係や相互作用の構造を直接考慮したソリューションを構築

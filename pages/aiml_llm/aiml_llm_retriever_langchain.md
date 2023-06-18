@@ -75,6 +75,10 @@
 
 - LangChain、簡単なベクターストアはできて結構よさげかもしれん。
 
+### [2023-05-21 これを読んだらわかった気になれるLangChain - Qiita](https://qiita.com/moritalous/items/7ceccbf809cc2f35ded2)
+
+- 公式を読んだ方がいいかも
+
 ### [2023-05-28 [翻訳] LangChainにおけるドキュメントに対するQ&Aのコンセプトガイド - Qiita](https://qiita.com/taka_yayoi/items/8f3251b44f4a6c7f5c64)
 
 - よさげなのだが途中で終わっているので公式を読んだ方がよさそう
@@ -82,3 +86,8 @@
 ### [2023-06-03 LangChainの get_openai_callback が便利という話](https://twitter.com/mlbear2/status/1664801611594752000)
 
 - 勉強時のご参考
+
+### [2023-06-12 LangChainの生みの親、Harrison Chase氏によるチュートリアル講座](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/)
+
+- 以下で紹介
+  - [https://twitter.com/yamazombie1/status/1668086216489680899](https://twitter.com/yamazombie1/status/1668086216489680899)

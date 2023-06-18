@@ -189,3 +189,7 @@ Terraform Cloudを使用すればDrift Detectionが使用可能らしい。(2022
 - [Terraform で変数を使う - Qiita](https://qiita.com/ringo/items/3af1735cd833fb80da75)
 - DevIO
   - [Terraformが依存関係を理解できるようにコードを書こう | DevelopersIO](https://dev.classmethod.jp/articles/dependency-in-terraform/)
+
+### [2023-06-09 Terraformのデプロイパイプラインに使用できるツールをまとめてみた | DevelopersIO](https://dev.classmethod.jp/articles/terraform-deploy-pipeline-tool)
+
+- 非常によくメリット・デメリットがまとまっていてよい。

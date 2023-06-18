@@ -1,5 +1,11 @@
 # Amazon Translate
 
+## 参考
+
+### [2023-06-15 Translate Active Custom Translationで多言語自動翻訳パイプラインを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-multilingual-automatic-translation-pipeline-with-amazon-translate-active-custom-translation/)
+
+- ACTの事例として
+
 ## アップデート
 
 ### [2023-05-24 Amazon Translateがリアルタイム翻訳に対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-translate-document-translation/)

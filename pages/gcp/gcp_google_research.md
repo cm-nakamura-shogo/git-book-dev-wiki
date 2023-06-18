@@ -46,3 +46,10 @@
 ### [2023-05-31 ソフトウェア開発活動のための大規模シーケンスモデル](https://ai.googleblog.com/2023/05/large-sequence-models-for-software.html)
 
 ### [2023-06-01 検索支援型視覚言語事前トレーニング](https://ai.googleblog.com/2023/06/retrieval-augmented-visual-language-pre.html)
+
+### [2023-06-13 人間の注意力の予測モデルによる楽しいユーザー体験の実現](https://ai.googleblog.com/2023/06/enabling-delightful-user-experiences.html)
+
+- 人間がどの領域に注目しているか予測するモデルの研究らしい
+- 注意を乱すものを抑制することもできるらしい
+
+### [2023-06-14 NeRFで室内空間を再構築する](https://ai.googleblog.com/2023/06/reconstructing-indoor-spaces-with-nerf.html)
