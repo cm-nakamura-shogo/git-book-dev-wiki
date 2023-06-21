@@ -17,3 +17,8 @@
 ### [EC2 Instance Connect Endpoint経由でRDSに接続してみた | DevelopersIO](https://dev.classmethod.jp/articles/how-to-connect-rds-instance-via-eic-endpoint/)
 
 ### [EC2 Instance Connect Endpoint経由でWindows ServerにRDP接続してみた | DevelopersIO](https://dev.classmethod.jp/articles/how-to-connect-windows-server-instance-via-eic-endpoint/)
+
+### [EC2 Instance Connect Endpointを複数アカウント間で使う際に気を付けるべきこと | DevelopersIO](https://dev.classmethod.jp/articles/precautions-when-using-eic-endpoint-between-multiple-accounts/)
+
+### [EC2 Instance Connect EndpointをCDKで作成してみた | DevelopersIO](https://dev.classmethod.jp/articles/create-ec2-instance-connect-endpoint-using-cdk-custom-resource/)
+

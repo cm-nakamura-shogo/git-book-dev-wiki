@@ -160,7 +160,8 @@
     - [Amazon Location Service  ](pages/aws/aws_location_service.md)
     - [AWS Clean Rooms          ](pages/aws/aws_clean_rooms.md)
 - クラウド開発
-  - [Azure                      ](pages/cloud/cloud_azure.md)
+  - [Azure                      ](pages/azure/azure.md)
+    - [Azure OpenAI Service     ](pages/azure/azure_openai_service.md)
   - [GoogleCloud                ]
     - [概要                     ](pages/gcp/gcp_summary.md)
     - [記事                     ](pages/gcp/gcp_scrap.md)
@@ -333,6 +334,7 @@
   - [セグメンテーション  ](pages/aiml_cv/aiml_cv_segmentation.md)
   - [姿勢推定            ](pages/aiml_cv/aiml_cv_pose_estimation.md)
   - [異常検出            ](pages/aiml_cv/aiml_cv_anomaly_detection.md)
+  - [拡散モデル          ](pages/aiml_cv/aiml_cv_diffusion.md)
   - [その他のテクニック  ](pages/aiml_cv/aiml_cv_other_technique.md)
   - ライブラリ
     - [YOLOv5            ](pages/aiml_cv/aiml_cv_yolo_v5.md)

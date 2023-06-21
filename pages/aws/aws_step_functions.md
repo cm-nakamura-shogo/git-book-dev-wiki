@@ -45,3 +45,5 @@ Wait タスクの TimestampPath が過去の時刻場合は即実行されるの
 ### APIサポートが拡大(2023-02)
 
 - [[アップデート] AWS Step FunctionsのAWS SDK Integrationで、35のAWSサービスと1100のAPIアクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-new-35-services-api/)
+
+### [2023-06-17 AWS Step Functions の AWS SDK Integration で、7つの AWS サービスと 460 以上の API アクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-adds-integration-for-7-services/)

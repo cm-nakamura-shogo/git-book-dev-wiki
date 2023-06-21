@@ -1,5 +1,19 @@
 # scrap
 
+[Google Cloud release notes  |  Documentation](https://cloud.google.com/release-notes#June_19_2023)
+[Google Cloud release notes  |  Documentation](https://cloud.google.com/release-notes#June_16_2023)
+[Google at CVPR 2023 – Google AI Blog](https://ai.googleblog.com/2023/06/google-at-cvpr-2023.html)
+[IoT データの取り込みと可視化のための7つのパターン – ユースケースに最適なものを決定する方法 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/7-patterns-for-iot-data-ingestion-and-visualization-how-to-decide-what-works-best-for-your-use-case/)
+[SambaSafety automates custom R workload, improving driver safety with Amazon SageMaker and AWS Step Functions | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/samba-safety-automates-custom-r-workload-improving-driver-safety-with-amazon-sagemaker-and-aws-step-functions/)
+[Reduce energy consumption of your machine learning workloads by up to 90% with AWS purpose-built accelerators | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/reduce-energy-consumption-of-your-machine-learning-workloads-by-up-to-90-with-aws-purpose-built-accelerators/)
+[BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#June_19_2023)
+[BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#June_20_2023)
+
+
+[TED日本語 - サイモン シネック: 優れたリーダーはどうやって行動を促すか | デジタルキャスト](https://digitalcast.jp/v/13255/)
+[RedshiftでVPCルーティングを利用し、VPCエンドポイント経由でデータをロードする | DevelopersIO](https://dev.classmethod.jp/articles/20161020-redshift-enhanced-vpc/)
+[マネコン起動もできるAWSのスイッチロール用CLIツール「AWSume」の紹介 | DevelopersIO](https://dev.classmethod.jp/articles/awsume/)
+
 ### 未読
 
 - [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
@@ -59,6 +73,8 @@
 
 ## Book and Contents
 
+- [2020-05-11 データマネジメントが30分でわかる本](https://www.amazon.co.jp/dp/B085W4YSZJ)
+- [2023-06-14 ビジネスダッシュボード設計・実装ガイドブック 成果を生み出す](https://www.shoeisha.co.jp/book/detail/9784798177649)
 - [新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング (できるビジネス) | 唐木 元 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4844338722)
 - [『OpenAI GPT-4/ChatGPT/LangChain 人工知能プログラミング実践入門』 が発売になります。｜npaka](https://note.com/npaka/n/n4b0066c376f7)
 - [Googleを支える技術 ……巨大システムの内側の世界：書籍案内｜技術評論社](https://gihyo.jp/book/2008/978-4-7741-3432-1)

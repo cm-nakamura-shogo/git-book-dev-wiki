@@ -199,6 +199,10 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 ### [2023-06-14 SageMakerプロジェクトを使用しSageMaker AutopilotをMLOpsプロセスに導入する方法](https://aws.amazon.com/jp/blogs/machine-learning/bring-sagemaker-autopilot-into-your-mlops-processes-using-a-custom-sagemaker-project/)
 
+### [2023-06-21 ユーザーごとに Amazon SageMaker Studio ノートブックの利用料金を把握する方法](https://dev.classmethod.jp/articles/amazon-sagemaker-studio-cost-allocation-tags/)
+
+- 単なるタグの話
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)

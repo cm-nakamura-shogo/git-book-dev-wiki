@@ -45,3 +45,8 @@
 
 - AV-ASRという動画から音声認識をする研究があるが、動画と書き起こし結果のデータセットは少なく、音声側の大規模化に追い付けていない
 - なので、音声側のモデルをそのまま使って画像情報を注入するという、Flamingoと同様のアプローチを採用している
+
+### [2023-06-19 Fine-Tune MMS Adapter Models for low-resource ASR](https://huggingface.co/blog/mms_adapters)
+
+- よくわからんかったけど、希少言語のASRに関するfine-tuningかな
+- 低リソース言語の場合、MMSのアダプタートレーニングを使用することを強く推奨とのこと
