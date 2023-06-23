@@ -232,3 +232,16 @@
 ## Aurora genAI
 
 ### [2023-05-30 Intel、1兆パラメータの科学向けAI「Aurora genAI」を発表](https://twitter.com/shi3z/status/1663492032231522305)
+
+## Orca
+
+### [2023-06-13 Microsoft AIが「Orca」を発表、GPT-4から複雑な説明のトレースと段階的な思考プロセスを学習する130億パラメータのモデル](https://www.marktechpost.com/2023/06/13/microsoft-ai-introduces-orca-a-13-billion-parameter-model-that-learns-to-imitate-the-reasoning-process-of-lfms-large-foundation-models/)
+
+- あれGPT-4に乗っかり学習している…？
+
+## phi-1
+
+### [2023-06-22 Microsoftがたった13億のパラメーターでGPT-3.5超えのHumanEval50.6％をたたき出す「phi-1」を発表](https://gigazine.net/news/20230622-phi-1-large-language-model-microsoft/)
+
+- プログラミング能力を評価するためのデータセットであるHumanEvalで50.6％、MBPPで55.5％と、高い精度
+- GPT-4の67％には及ばないが、パラメーター数が1750億のGPT-3.5を上回る
