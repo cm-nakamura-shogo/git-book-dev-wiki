@@ -1,5 +1,11 @@
 # Amazon Rekognition
 
+## 参考記事
+
+### [2022-09-09 Amazon Rekognition Custom Labels でモデル精度を向上するための Tips](https://aws.amazon.com/jp/blogs/news/tips-to-improve-your-amazon-rekognition-custom-labels-model/)
+
+- プロジェクトで使う際に有用かも
+
 ## アップデート
 
 ### [2023-05-03 画像や動画に対するコンテンツモデレーションの精度を改善 (AWS)](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-rekognition-content-moderation-images-videos/)

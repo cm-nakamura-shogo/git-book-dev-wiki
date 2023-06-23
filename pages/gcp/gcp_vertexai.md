@@ -47,6 +47,8 @@
 
 ### [2023-06-15 chat-bison@001のモデルが更新され、コンテキストフィールドの指示に従いやすくなった](https://cloud.google.com/release-notes#June_15_2023)
 
+### [2023-06-20 A100 80GBアクセラレータは現在、一部の地域でカスタム・トレーニング・ジョブ向けに一般提供](https://cloud.google.com/release-notes#June_20_2023)
+
 
 ## 参考記事
 

@@ -18,3 +18,7 @@
 
 - 一番画像的にはわかりやすいかも
 - チャンク分割された様子も伺える
+
+### [2023-06-22 生成AI用Cognitive Searchの言語アナライザーを日本語にしたい - Qiita](https://qiita.com/tmiyata25/items/e8866dfed6dd4b9a02ad)
+
+- Cognitive Searchを自分で構築すれば色々解決するらしいが、そこまでしなくて対処するワークアラウンドが記載されている

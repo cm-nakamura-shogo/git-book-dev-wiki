@@ -429,3 +429,9 @@
 - Personalizeがオープンインターネットを介さずにVPC上のリソースと通信できるように
 - VPC を Amazon Personalize に接続するには、Amazon Personalize 用の VPC エンドポイントを定義
 - エンドポイントは、サポートされているAWSサービス宛てのトラフィックのエントリポイントとして機能する、プライベートIPアドレスを持つENI
+
+### [2023-06-21 Personalizeが、入力アイテムのプロパティによる選択アイテムのフィルタリングに対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-personalize-filtering-items-properties-input-item/)
+
+- 従来はデータセットのプロパティやユーザのプロパティに基づいてフィルタリングできていた
+- 今回、Related Items recipesにおいて入力アイテムやquery itemのプロパティにも対応
+- 要するにItemベースレコメンド生成時のフィルタリング機能ができるようになった印象か

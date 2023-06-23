@@ -1,21 +1,14 @@
 # scrap
 
-[Google Cloud release notes  |  Documentation](https://cloud.google.com/release-notes#June_19_2023)
-[Google Cloud release notes  |  Documentation](https://cloud.google.com/release-notes#June_16_2023)
-[Google at CVPR 2023 – Google AI Blog](https://ai.googleblog.com/2023/06/google-at-cvpr-2023.html)
-[IoT データの取り込みと可視化のための7つのパターン – ユースケースに最適なものを決定する方法 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/7-patterns-for-iot-data-ingestion-and-visualization-how-to-decide-what-works-best-for-your-use-case/)
-[SambaSafety automates custom R workload, improving driver safety with Amazon SageMaker and AWS Step Functions | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/samba-safety-automates-custom-r-workload-improving-driver-safety-with-amazon-sagemaker-and-aws-step-functions/)
-[Reduce energy consumption of your machine learning workloads by up to 90% with AWS purpose-built accelerators | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/reduce-energy-consumption-of-your-machine-learning-workloads-by-up-to-90-with-aws-purpose-built-accelerators/)
-[BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#June_19_2023)
-[BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#June_20_2023)
-
-
-[TED日本語 - サイモン シネック: 優れたリーダーはどうやって行動を促すか | デジタルキャスト](https://digitalcast.jp/v/13255/)
-[RedshiftでVPCルーティングを利用し、VPCエンドポイント経由でデータをロードする | DevelopersIO](https://dev.classmethod.jp/articles/20161020-redshift-enhanced-vpc/)
-[マネコン起動もできるAWSのスイッチロール用CLIツール「AWSume」の紹介 | DevelopersIO](https://dev.classmethod.jp/articles/awsume/)
-
 ### 未読
 
+- [The world’s first braiding of non-Abelian anyons – Google AI Blog](https://ai.googleblog.com/2023/06/the-worlds-first-braiding-of-non.html)
+- [Responsible AI at Google Research: AI for Social Good – Google AI Blog](https://ai.googleblog.com/2023/06/responsible-ai-at-google-research-ai.html)
+- [Google at CVPR 2023 – Google AI Blog](https://ai.googleblog.com/2023/06/google-at-cvpr-2023.html)
+- [「LLM」を活用したプロダクト開発に必要な能力とは何か　“機械学習の民主化”でますます注目される「MLPdM」の重要性 - ログミーTech](https://logmi.jp/tech/articles/328826)
+- [プロダクトが大きくなると、なぜ生産性は下がるのか？　『Team Topologies』から読み解く、「認知負荷」という考え方 - ログミーTech](https://logmi.jp/tech/articles/328828)
+- [RedshiftでVPCルーティングを利用し、VPCエンドポイント経由でデータをロードする | DevelopersIO](https://dev.classmethod.jp/articles/20161020-redshift-enhanced-vpc/)
+- [マネコン起動もできるAWSのスイッチロール用CLIツール「AWSume」の紹介 | DevelopersIO](https://dev.classmethod.jp/articles/awsume/)
 - [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
 - [日本語特化の生成AIが続々、オルツは1600億パラメーターでChatGPTを追う | 日経クロステック（xTECH）](https://xtech.nikkei.com/atcl/nxt/column/18/02423/053100030/)
 - [whisper-ctranslate2を試す](https://zenn.dev/kun432/scraps/216e2df4928fec)
@@ -155,15 +148,3 @@
 - [2022-11-21 AWS の障害分離境界について学べるホワイトペーパー AWS Fault Isolation Boundaries を読んでみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-fault-isolation-boundaries/)
 - [2021-05-01 AWSでバッチ処理を実装する際の選択肢とサービス比較](https://zenn.dev/faycute/articles/fb310e3ccd783f)
 - [2023-04-24 【議事録の構成も】議事録後に確認すべきチェック観点28選を解説！ | DevelopersIO](https://dev.classmethod.jp/articles/how_write_minutes/)
-
-### [2023-05-04 Slack App のアプリホーム（Home タブ）を構築する方法を確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/building-slack-app-home-tab/)
-
-- Slackフロントエンドの参考になるな
-
-### [2023-05-20 3年間運用したCDKの失敗から学ぶCDK開発のプラクティス | ドクセル](https://www.docswell.com/s/integrated1453/5GXL7N-AWS-CDK-Conference-Japan-2023)
-
-- CDK使う場合に読んでおいた方がいい
-
-### [2023-06-02『Gitleaks』で機密情報の漏洩を防ぐ〜コマンド編〜 | DevelopersIO](https://dev.classmethod.jp/articles/gitleaks-commands/)
-
-- これ便利そう

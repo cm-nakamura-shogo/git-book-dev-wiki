@@ -203,6 +203,19 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 - 単なるタグの話
 
+### [2023-06-21 AWS CDK を使用して、Amazon SageMaker Studio ライフサイクル構成をデプロイ](https://aws.amazon.com/jp/blogs/machine-learning/use-the-aws-cdk-to-deploy-amazon-sagemaker-studio-lifecycle-configurations/)
+
+### [2023-06-22 日本語大規模言語モデル OpenCALM の知識でクイズ王に挑戦する | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/open-calm-and-openai-chatgpt-accuracy-on-jaqket-experiment-in-amazon-sagemaker/)
+
+- 少し考察が偏っており、個人的には7Bでは到底GPT-3.5-turboなどに及ばないことが分かる。
+- もう少し大規模化しないとちょっと難しそう
+
+### [2023-06-22 ライト＆ワンダーがAWSでゲーム機の予知保全ソリューションを構築した方法](https://aws.amazon.com/jp/blogs/machine-learning/how-light-wonder-built-a-predictive-maintenance-solution-for-gaming-machines-on-aws/)
+
+- カジノの設備の予知保全ソリューションの構築例。
+- ベースラインにAutoGluon、そしてSageMaker automatic model tuningでDeep Learningを使っている様子
+- Deep Learningのアーキテクチャはお手製で結構きちんと頑張っている印象なので参考になる
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -304,3 +317,7 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - Falcon 40Bは、Apache 2.0ライセンスで利用可能な400億パラメータの大規模言語モデル
 - 以下のサンプルノートブックで試すことが可能
   - [amazon-sagemaker-examples/introduction_to_amazon_algorithms/jumpstart-foundation-models/text-generation-falcon.ipynb](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/jumpstart-foundation-models/text-generation-falcon.ipynb)
+
+### [2023-06-21 SageMaker Feature Storeのfeature processingを使用してデータをMLの特徴量に変換する機能が発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/data-ml-features-sagemaker-feature-store-processing/)
+
+- データソースと、データに対して実行したい変換関数を提供するだけで、SageMaker Feature Store がデータを ML フィーチャに変換できる

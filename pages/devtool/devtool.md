@@ -40,3 +40,9 @@
 ## Piping Server
 
 - [Piping Serverを使って起動直後のサーバにファイルをラクラク転送してみた！](https://dev.classmethod.jp/articles/piping-server-transfer-dirs-files/)
+
+## Gitleaks
+
+### [2023-06-02『Gitleaks』で機密情報の漏洩を防ぐ〜コマンド編〜 | DevelopersIO](https://dev.classmethod.jp/articles/gitleaks-commands/)
+
+- これ便利そう

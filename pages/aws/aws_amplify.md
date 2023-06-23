@@ -11,6 +11,11 @@
 
 ### [2023-06-08 AmplifyにおけるNext.jsのAPIルートの扱いに関する記事](https://aws.amazon.com/jp/blogs/mobile/next-js-api-routes-with-aws-amplify/)
 
+### [2023-06-22 AWS Amplify が効果を発揮する Next.js の 5 つの機能 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/5-next-js-features-that-are-better-with-aws-amplify/)
+
+- React Server Componentの話など記載されている
+
+
 ## アップデート
 
 ### [2023-04-19 モバイルやクロスプラットフォームアプリのプッシュ通知に対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/aws-amplify-push-notifications-mobile-cross-platform-apps/)

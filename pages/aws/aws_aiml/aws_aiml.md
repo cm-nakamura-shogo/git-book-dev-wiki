@@ -1,5 +1,9 @@
 # AWS AIML全般
 
+### [2023-06-21 Live Call Analytics with Agent Assistの分析機能について](https://aws.amazon.com/jp/blogs/machine-learning/boost-agent-productivity-with-salesforce-integration-for-live-call-analytics/)
+
+呼び出しの開始と 呼び出し後のカスタム処理呼び出しのために、独自のAWS Lambdaフックを記述する機能
+
 ### [2023-06-13 生成AIと最新のデータアーキテクチャを使用してインサイトを得る](https://aws.amazon.com/jp/blogs/machine-learning/reinventing-the-data-experience-use-generative-ai-and-modern-data-architecture-to-unlock-insights/)
 
 - アーキテクチャとしてAmazon Redshift、Amazon RDS、Snowflake、Amazon Athena、AWS Glueなどのサービスを使用

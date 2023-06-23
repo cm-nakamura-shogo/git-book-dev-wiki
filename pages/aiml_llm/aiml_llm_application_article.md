@@ -58,3 +58,7 @@
 
 - Function Callingを使ってテキストに感情やスピード、ボリュームなどをタグ付けする機能
 - 記事ではその結果をRINNAを使って音声合成している
+
+### [2023-06-22 機械翻訳は人間を超えるのか | DevelopersIO](https://dev.classmethod.jp/articles/machine_translation_human/)
+
+- さすがにDeepLの方がまだ頑張っていそう。GPT-4なら分からんけど。
