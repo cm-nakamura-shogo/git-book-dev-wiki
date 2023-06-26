@@ -129,6 +129,7 @@
     - [Amazon SNS               ](pages/aws/aws_sns.md)
     - [Amazon EventBridge       ](pages/aws/aws_eventbridge.md)
     - [Amazon CodeCatalyst      ](pages/aws/aws_codecatalyst.md)
+    - [Amazon CloudWatch        ](pages/aws/aws_cloudwatch.md)
   - ストレージ
     - [AWS Transfer Family      ](pages/aws/aws_transfer_family.md)
     - [AWS Storage Gateway      ](pages/aws/aws_storage_gateway.md)

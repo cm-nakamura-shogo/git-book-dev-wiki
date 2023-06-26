@@ -2,6 +2,8 @@
 
 ## 参考
 
+### [2022-01-21 Amazon CognitoでSingle Sign Onを実現してみた](https://kakehashi-dev.hatenablog.com/entry/2022/01/21/080000)
+
 ### [2022-05-12 Pulumiを使ってCognitoのユーザプールを作成する例](https://dev.classmethod.jp/articles/tried-make-cognito-userpool-using-pulumi)
 
 - Cognito設定の参考になりそう
