@@ -15,6 +15,8 @@
 
 - React Server Componentの話など記載されている
 
+### [2023-06-28 AWS Amplify での Next.js API routes | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/next-js-api-routes-with-aws-amplify/)
+
 
 ## アップデート
 

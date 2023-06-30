@@ -9,3 +9,5 @@
 ### [2023-05-25 Kendraの検索指標から可視化やメンテのヒントを得る](https://aws.amazon.com/jp/blogs/machine-learning/get-insights-on-your-users-search-behavior-from-amazon-kendra-using-an-ml-powered-serverless-stack/)
 
 ### [2023-06-13 ブレインパッド社のAmazon Kendraと AWS Lambdaを使った社内ナレッジ共有の仕組み](https://aws.amazon.com/jp/blogs/machine-learning/how-brainpad-fosters-internal-knowledge-sharing-with-amazon-kendra/)
+
+### [2023-06-29 【開催報告】Amazon Kendra で簡単に自然言語を使った「検索」システムを構築 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/amazon-kendra-seminar-20230607/)

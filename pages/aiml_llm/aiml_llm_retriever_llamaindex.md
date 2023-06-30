@@ -153,3 +153,10 @@
 
 - Vector StoreにMyScaleVectorStoreとSupabaseVectorStoreが追加
 - FunctionTool、BaseToolSpecの具象化クラスNotionToolSpec、TestToolSpecが追加。用途はあまりわかってない
+
+### [2023-06-29 PydanticProgramの紹介](https://gpt-index.readthedocs.io/en/latest/how_to/structured_outputs/root.html)
+
+- 作者のツイート
+  - [https://twitter.com/jerryjliu0/status/1674077742869147648](https://twitter.com/jerryjliu0/status/1674077742869147648)
+- 公式ツイート
+  - [https://twitter.com/llama_index/status/1674075533548871681](https://twitter.com/llama_index/status/1674075533548871681)

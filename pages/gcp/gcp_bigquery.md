@@ -90,6 +90,10 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 
 ### [2023-06-20 BigQueryが、オープンソースエンジンで作成されたApache Icebergテーブルのクエリをサポートするように](https://cloud.google.com/bigquery/docs/release-notes#June_20_2023)
 
-### [2021-06-21 TRUNCATE TABLEが複数ステートメント・トランザクションでサポートされるように](https://cloud.google.com/bigquery/docs/release-notes#June_21_2023)
+### [2023-06-21 TRUNCATE TABLEが複数ステートメント・トランザクションでサポートされるように](https://cloud.google.com/bigquery/docs/release-notes#June_21_2023)
 
 - [【BigQuery アップデート情報】トランザクション内でのTRUNCATE TABLEがGAになりました | DevelopersIO](https://dev.classmethod.jp/articles/truncate-table/)
+
+
+### [2023-06-26 JavaまたはScalaを使用してApache Spark用のストアドプロシージャを作成できるように](https://cloud.google.com/bigquery/docs/release-notes#June_26_2023)
+

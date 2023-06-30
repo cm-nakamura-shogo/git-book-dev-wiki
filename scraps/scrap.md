@@ -2,25 +2,74 @@
 
 ### 未読
 
-- [The world’s first braiding of non-Abelian anyons – Google AI Blog](https://ai.googleblog.com/2023/06/the-worlds-first-braiding-of-non.html)
-- [Responsible AI at Google Research: AI for Social Good – Google AI Blog](https://ai.googleblog.com/2023/06/responsible-ai-at-google-research-ai.html)
-- [Google at CVPR 2023 – Google AI Blog](https://ai.googleblog.com/2023/06/google-at-cvpr-2023.html)
-- [「LLM」を活用したプロダクト開発に必要な能力とは何か　“機械学習の民主化”でますます注目される「MLPdM」の重要性 - ログミーTech](https://logmi.jp/tech/articles/328826)
-- [プロダクトが大きくなると、なぜ生産性は下がるのか？　『Team Topologies』から読み解く、「認知負荷」という考え方 - ログミーTech](https://logmi.jp/tech/articles/328828)
-- [RedshiftでVPCルーティングを利用し、VPCエンドポイント経由でデータをロードする | DevelopersIO](https://dev.classmethod.jp/articles/20161020-redshift-enhanced-vpc/)
-- [マネコン起動もできるAWSのスイッチロール用CLIツール「AWSume」の紹介 | DevelopersIO](https://dev.classmethod.jp/articles/awsume/)
-- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
-- [日本語特化の生成AIが続々、オルツは1600億パラメーターでChatGPTを追う | 日経クロステック（xTECH）](https://xtech.nikkei.com/atcl/nxt/column/18/02423/053100030/)
-- [whisper-ctranslate2を試す](https://zenn.dev/kun432/scraps/216e2df4928fec)
-- [逆瀬川さんはTwitterを使っています: 「LLM関連のよくまとまってるものとしては、Yao FuさんのHow does GPT Obtain its Ability?とWeibo AI Labの张俊林さんのzhihuでの記事がオススメです。 今年1月の時点でこれらが出てきていたのが驚きでした。 https://t.co/IJ8roqC8Vz https://t.co/gLAttNDSnv」 / Twitter](https://twitter.com/gyakuse/status/1665202930205573120?s=12&t=0nszgXsDXAd-L4WiCutIWg)
-- [自宅PCで「rinna」の日本語言語モデルを試用、メモリ32GBあればCPUだけでも動くぞ！【イニシャルB】 - INTERNET Watch](https://internet.watch.impress.co.jp/docs/column/shimizu/1503707.html)
-- [Google I/Oで発表されたAIたち。Bard、PaLM 2関連まとめ | ギズモード・ジャパン](https://www.gizmodo.jp/2023/05/google-io23-ai-outline.html)
-- [［速報］Google Cloudでのシステム開発について何でもAIが教えてくれる「Duet AI for Google Cloud」発表。Google I/O 2023 － Publickey](https://www.publickey1.jp/blog/23/google_cloudaiduet_ai_for_google_cloud.html)
-- [Daisuke Okanohara / 岡野原 大輔さんはTwitterを使っています: 「注意機構（Attention）が(QK^T)Vで計算するのに対し、KVQ空間における新しい計算としてIntentionは正則化付最小二乗法の解と同様に Q(KK^T+αI)^{-1} K^TV で計算する。Attentionが推論時に勾配降下法で逐次的に解くとみなせるのに対しIntentionは解析解を直接求める。 https://t.co/DVCRRmSAFJ」 / Twitter](https://twitter.com/hillbig/status/1661134719831126016)
-- [ChatGPT(GPT-4)が個人情報を出力するか試してみた | DevelopersIO](https://dev.classmethod.jp/articles/chatgpt-security-pii/)
-- [ざっくりつかむ！LangChainのメンタルモデル](https://zenn.dev/fumi_sagawa/articles/113b4e5a46b984)
-- [GitLabがGoogle Cloud(Vertex AI)と提携しました！ | DevelopersIO](https://dev.classmethod.jp/articles/gitlab-vertex-ai-2305/)
-- [Meta AI Unleashes Megabyte, a Revolutionary Scalable Model Architecture - Artisana](https://www.artisana.ai/articles/meta-ai-unleashes-megabyte-a-revolutionary-scalable-model-architecture)
+- 未分類
+
+- OpenAI / LLM
+  - [ボーンデジタル、書籍『OpenAI GPT-4/ChatGPT/LangChain 人工知能プログラミング実践入門』を刊行 | gamebiz](https://gamebiz.jp/news/369776)
+  - [OpenAI GPT-4/ChatGPT/LangChain 人工知能プログラミング実践入門 | ボーンデジタル](https://www.borndigital.co.jp/book/30254.html)
+  - [OpenAIのAPIを使って営業資料をベクトル検索するボットをつくってみた | DevelopersIO](https://dev.classmethod.jp/articles/implement-sales-documents-search-bot/)
+  - [Azure OpenAIで自社データを取り込んだChatbotを実現する。 | DevelopersIO](https://dev.classmethod.jp/articles/azure-openai-add-your-data/)
+  - [Azure Open AI「Add your data」のシンプル設定方法、試した結果の比較と「4つの所感 & 解決案？」 - Qiita](https://qiita.com/YutaroOgawa2/items/e53c47787405abc196e5)
+  - [Azure OpenAIをもちいたLLMアプリの企画から本番構築までの道のり/Microsoft Build Japan - Speaker Deck](https://speakerdeck.com/yoshidashingo/microsoft-build-japan)
+  - [社内勉強会で生成AIについて発表したので70ページの資料を公開する！ - Qiita](https://qiita.com/hedgehog051/items/b1308e8baf7b0f551548)
+  - [Introducing OpenAI London](https://openai.com/blog/introducing-openai-london)
+  - [Generative AI with Large Language Models | Coursera](https://www.coursera.org/learn/generative-ai-with-llms)
+  - ["Prompt Flow"とは何か？その革新的な思考とAI時代の仕事上チーム協力への影響｜0xpanda alpha lab](https://note.com/panda_lab/n/nd740d1ad0ae2)
+  - [「LLM」を活用したプロダクト開発に必要な能力とは何か　“機械学習の民主化”でますます注目される「MLPdM」の重要性 - ログミーTech](https://logmi.jp/tech/articles/328826)
+  - [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り - Platinum Data Blog by BrainPad](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
+  - [日本語特化の生成AIが続々、オルツは1600億パラメーターでChatGPTを追う | 日経クロステック（xTECH）](https://xtech.nikkei.com/atcl/nxt/column/18/02423/053100030/)
+  - [逆瀬川さんはTwitterを使っています: 「LLM関連のよくまとまってるものとしては、Yao FuさんのHow does GPT Obtain its Ability?とWeibo AI Labの张俊林さんのzhihuでの記事がオススメです。 今年1月の時点でこれらが出てきていたのが驚きでした。 https://t.co/IJ8roqC8Vz https://t.co/gLAttNDSnv」 / Twitter](https://twitter.com/gyakuse/status/1665202930205573120?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [自宅PCで「rinna」の日本語言語モデルを試用、メモリ32GBあればCPUだけでも動くぞ！【イニシャルB】 - INTERNET Watch](https://internet.watch.impress.co.jp/docs/column/shimizu/1503707.html)
+  - [Google I/Oで発表されたAIたち。Bard、PaLM 2関連まとめ | ギズモード・ジャパン](https://www.gizmodo.jp/2023/05/google-io23-ai-outline.html)
+  - [［速報］Google Cloudでのシステム開発について何でもAIが教えてくれる「Duet AI for Google Cloud」発表。Google I/O 2023 － Publickey](https://www.publickey1.jp/blog/23/google_cloudaiduet_ai_for_google_cloud.html)
+  - [ChatGPT(GPT-4)が個人情報を出力するか試してみた | DevelopersIO](https://dev.classmethod.jp/articles/chatgpt-security-pii/)
+  - [ざっくりつかむ！LangChainのメンタルモデル](https://zenn.dev/fumi_sagawa/articles/113b4e5a46b984)
+
+- AIML
+  - [Daisuke Okanohara / 岡野原 大輔さんはTwitterを使っています: 「xGenは7B LLMのOSSで8k文脈扱える。学習コストを抑えるため文脈長を最初2kから始め最後に4K-&gt;8Kと増やす。学習途中のスパイクは自己注意とMLPブロックを並列化する工夫が原因の一つでないかと考察。長文脈を扱う対話、質問応答、要約が同サイズのモデルと比べ大きく改善 https://t.co/3SPkAdIV3v」 / Twitter](https://twitter.com/hillbig/status/1674183027046612994?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [AI事業本部MLOps研修公開！MLOps研修で学ぶ最新の機械学習ワークフローとは？ | CyberAgent Developers Blog](https://developers.cyberagent.co.jp/blog/archives/42762/)
+  - [whisper-ctranslate2を試す](https://zenn.dev/kun432/scraps/216e2df4928fec)
+  - [Daisuke Okanohara / 岡野原 大輔さんはTwitterを使っています: 「注意機構（Attention）が(QK^T)Vで計算するのに対し、KVQ空間における新しい計算としてIntentionは正則化付最小二乗法の解と同様に Q(KK^T+αI)^{-1} K^TV で計算する。Attentionが推論時に勾配降下法で逐次的に解くとみなせるのに対しIntentionは解析解を直接求める。 https://t.co/DVCRRmSAFJ」 / Twitter](https://twitter.com/hillbig/status/1661134719831126016)
+  - [Meta AI Unleashes Megabyte, a Revolutionary Scalable Model Architecture - Artisana](https://www.artisana.ai/articles/meta-ai-unleashes-megabyte-a-revolutionary-scalable-model-architecture)
+
+- Google Research Blog
+  - [Announcing the first Machine Unlearning Challenge – Google Research Blog](https://ai.googleblog.com/2023/06/announcing-first-machine-unlearning.html)
+  - [On-device diffusion plugins for conditioned text-to-image generation – Google Research Blog](https://ai.googleblog.com/2023/06/on-device-diffusion-plugins-for.html)
+  - [The world’s first braiding of non-Abelian anyons – Google AI Blog](https://ai.googleblog.com/2023/06/the-worlds-first-braiding-of-non.html)
+  - [Responsible AI at Google Research: AI for Social Good – Google AI Blog](https://ai.googleblog.com/2023/06/responsible-ai-at-google-research-ai.html)
+  - [Google at CVPR 2023 – Google AI Blog](https://ai.googleblog.com/2023/06/google-at-cvpr-2023.html)
+
+- Book
+  - [ソフトウェア設計のトレードオフと誤りを出版しました | フューチャー技術ブログ](https://future-architect.github.io/articles/20230616a/)
+  - [(1) O'Reilly JapanさんはTwitterを使っています: 「8月発行予定の新刊『機械学習システムデザイン ―実運用レベルのアプリケーションを実現する継続的反復プロセス』の情報をAmazonおよび楽天ブックスで公開開始しました！ https://t.co/34M5rjUE2T https://t.co/Okr1GyoR3t」 / Twitter](https://twitter.com/oreilly_japan/status/1673207153258287104)
+  - [キーエンス解剖　最強企業のメカニズム | 西岡 杏 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4296200917)
+
+- manage
+  - [スクラムチームと伍(キングダム) – SUZ-LAB](https://media.suz-lab.co.jp/2020/08/17/scrum-team-and-five/)
+  - [高いパフォーマンスを発揮する組織 - Amazon ピザ 2 枚チーム | AWS Executive Insights](https://aws.amazon.com/jp/executive-insights/content/amazon-two-pizza-team/)
+  - [リモート開発を助ける「思いやりのある文章」の書き方 - ROUTE06 Tech Blog](https://tech.route06.co.jp/entry/2023/06/27/172131)
+  - [プロダクトが大きくなると、なぜ生産性は下がるのか？　『Team Topologies』から読み解く、「認知負荷」という考え方 - ログミーTech](https://logmi.jp/tech/articles/328828)
+
+- dev
+  - [React/Next によるアプリケーション開発のこれから - Speaker Deck](https://speakerdeck.com/koba04/next-niyoruapurikesiyonkai-fa-nokorekara)
+  - [次世代のCSS in JS、Panda CSSをNext.js Appルーターで使用する](https://zenn.dev/a_da_chi/articles/725ba2cd4ce358)
+  - [ドキュメント（opswitch） – opswitchサポート](https://opswitch.zendesk.com/hc/ja/categories/360001970251-%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88-opswitch-)
+  - [フィーチャーフラグを管理するためのOpenFeature | フューチャー技術ブログ](https://future-architect.github.io/articles/20230621a/)
+
+- devio
+  - [Amazon EventBridge Pipesを使ってプロデューサー/コンシューマー型メッセージ処理のパイプラインを簡略化しよう #reinvent | DevelopersIO](https://dev.classmethod.jp/articles/consistent-consumer-pipelining-with-eventbridge-pipes/)
+  - [[AWS Step Functions] ステートマシンが無限ループして148ドルも課金が発生した話 | DevelopersIO](https://dev.classmethod.jp/articles/aws-stepfunctions-state-machine-looped-endlessly-causing-148-dollars-billing/)
+  - [[Python] pip installが依存関係を解決する挙動について調べてみた | DevelopersIO](https://dev.classmethod.jp/articles/pip-requirements-resolve-dependency/)
+  - [キャンセル待ち戦争から抜きんでよう！Google Apps Scriptを利用してキャンプ場予約サイトからLINEに転送する仕組みを作ってみた | DevelopersIO](https://dev.classmethod.jp/articles/get_camp_reserved/)
+  - [Google ColaboratoryでSeleniumを使うための設定方法 | DevelopersIO](https://dev.classmethod.jp/articles/google-colaboratory-use-selenium/)
+  - [プロジェクトとメンバーWinWinが最高！プロジェクトで成長させるための取り組みをお話しします | DevelopersIO](https://dev.classmethod.jp/articles/introspection_and_grow_in_projects/)
+  - [EC2 Instance Connect Endpoint経由でRDSに接続してみた | DevelopersIO](https://dev.classmethod.jp/articles/how-to-connect-rds-instance-via-eic-endpoint/)
+  - [[レポート]Snowflake Summit Opening Keynote #SnowflakeDB #SnowflakeSummit | DevelopersIO](https://dev.classmethod.jp/articles/snowflake-summit-2023-opening-keynote/)
+  - [WebAuthnのOptionsを色々変更してブラウザの挙動を検証してみた（登録編） | DevelopersIO](https://dev.classmethod.jp/articles/webauthn-create-parameter-test/)
+  - [SNS トピックには同じエンドポイントを持つ SNS サブスクリプションを複数関連づけられない | DevelopersIO](https://dev.classmethod.jp/articles/sns-topics-cannot-have-multiple-subscriptions-to-the-same-endpoint/)
+  - [ExcelやGoogleスプレッドシートをMarkdown出力するVS Codeの拡張機能「Excel to Markdown table」が便利すぎる件 | DevelopersIO](https://dev.classmethod.jp/articles/excel-to-markdown-table/)
+  - [RedshiftでVPCルーティングを利用し、VPCエンドポイント経由でデータをロードする | DevelopersIO](https://dev.classmethod.jp/articles/20161020-redshift-enhanced-vpc/)
+  - [マネコン起動もできるAWSのスイッチロール用CLIツール「AWSume」の紹介 | DevelopersIO](https://dev.classmethod.jp/articles/awsume/)
 
 ## Speech
 
@@ -31,6 +80,7 @@
 - [Python：メインページ - リファレンス メモ](https://cercopes-z.com/Python/index.html)
 - [Pythonの相対インポートで上位ディレクトリ・サブディレクトリを指定 | note.nkmk.me](https://note.nkmk.me/python-relative-import/)
 - [【Python】__str__と__repr__の使い方｜ゆうまるブログ](https://yumarublog.com/python/str-repr/)
+- [ダミーファイルを生成するfaker-fileを使ってみた | DevelopersIO](https://dev.classmethod.jp/articles/faker-file-for-generating-dummy-files/)
 
 ## AIML
 

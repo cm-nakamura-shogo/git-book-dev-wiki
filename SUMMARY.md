@@ -165,13 +165,13 @@
     - [Azure OpenAI Service     ](pages/azure/azure_openai_service.md)
   - [GoogleCloud                ]
     - [概要                     ](pages/gcp/gcp_summary.md)
-    - [記事                     ](pages/gcp/gcp_scrap.md)
     - [Google Research          ](pages/gcp/gcp_google_research.md)
     - [BigQuery                 ](pages/gcp/gcp_bigquery.md)
     - [Cloud Data Fusion        ](pages/gcp/gcp_cloud_data_fusion.md)
     - [GKE                      ](pages/gcp/gcp_gke.md)
     - [Vertex AI                ](pages/gcp/gcp_vertexai.md)
     - [Compute Engine           ](pages/gcp/gcp_compute_engine.md)
+    - [その他                   ](pages/gcp/gcp_misc.md)
   - [Terraform                  ](pages/cloud/cloud_terraform.md)
 - 試験対策
   - AWS

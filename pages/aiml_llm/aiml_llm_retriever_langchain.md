@@ -91,3 +91,8 @@
 
 - 以下で紹介
   - [https://twitter.com/yamazombie1/status/1668086216489680899](https://twitter.com/yamazombie1/status/1668086216489680899)
+
+### [2023-06-29 LangChainインテグレーションハブを立ち上げ](https://integrations.langchain.com/)
+
+- 公式ツイート
+  - https://twitter.com/langchainai/status/1674138461291556866

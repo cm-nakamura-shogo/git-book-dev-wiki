@@ -216,6 +216,20 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - ベースラインにAutoGluon、そしてSageMaker automatic model tuningでDeep Learningを使っている様子
 - Deep Learningのアーキテクチャはお手製で結構きちんと頑張っている印象なので参考になる
 
+### [2023-06-27 Earth.comとProvectusがAmazon SageMakerでMLOpsインフラを導入した方法](https://aws.amazon.com/jp/blogs/machine-learning/how-earth-com-and-provectus-implemented-their-mlops-infrastructure-with-amazon-sagemaker/)
+
+### [2023-06-27 Amazon SageMaker JumpStartの独自基盤モデルをAmazon SageMaker Studioで使用する](https://aws.amazon.com/jp/blogs/machine-learning/use-proprietary-foundation-models-from-amazon-sagemaker-jumpstart-in-amazon-sagemaker-studio/)
+
+- SageMaker JumpStart には、2 種類の基礎モデルがある
+- Proprietary models
+  - AI21、Cohereなどが提供する事前学習済みモデルで、scriptsや重みなどのmodel artifactsは閲覧できない
+- Publicly available models
+  - HuggingFaceなどで公開されているFLANやFalconなどのモデル
+
+### [2023-06-29 Amazon SageMaker Studio Notebook上でFalcon-40BなどのLLMをQLoRAでチューニングする方法](https://aws.amazon.com/jp/blogs/machine-learning/interactively-fine-tune-falcon-40b-and-other-llms-on-amazon-sagemaker-studio-notebooks-using-qlora/)
+
+- 具体的には、単一のml.g5.12xlargeインスタンス（4 A10G GPU）を使用してFalcon-40Bを 微調整する
+
 ## アップデート
 
 ### [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
@@ -321,3 +335,11 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 ### [2023-06-21 SageMaker Feature Storeのfeature processingを使用してデータをMLの特徴量に変換する機能が発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/data-ml-features-sagemaker-feature-store-processing/)
 
 - データソースと、データに対して実行したい変換関数を提供するだけで、SageMaker Feature Store がデータを ML フィーチャに変換できる
+
+### [2023-06-26 Amazon SageMaker Neo用のPyTorchおよびTensorFlowモデルをコンパイルするための追加ターゲットとして、inf2およびtrn1を選択可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/sagemaker-neo-pytorch-tensorflow-models-inferentia-2-trainium-1-instances/)
+
+### [2023-06-26 Amazon SageMaker Data WranglerはSnowflakeへの直接接続が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-data-wrangler-direct-connection-snowflake-data/)
+
+### [2023-06-26 Amazon SageMaker Role Manager、数分できめ細かな権限を作成できるCDKライブラリを提供開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-role-manager-cdk-library-fine-grained-permissions/)
+
+- [公式ブログ](https://aws.amazon.com/jp/blogs/machine-learning/define-customized-permissions-in-minutes-with-amazon-sagemaker-role-manager-via-the-aws-cdk/)

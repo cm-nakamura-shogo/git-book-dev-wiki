@@ -1,5 +1,7 @@
 # LLM : データセット
 
+### [2022-03-03 JGLUE](https://twitter.com/shunk031/status/1670589712615219200)
+
 ### [2023-04-13 Alpacaフォーマットの日本語データセットが CC BY-SA 3.0で公開](https://huggingface.co/datasets/kunishou/databricks-dolly-15k-ja)
 
 - 商用利用も可能なAlpacaのデータセット

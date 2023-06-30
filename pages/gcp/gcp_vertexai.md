@@ -11,6 +11,19 @@
 - メルカリ活用例
   - https://engineering.mercari.com/blog/entry/20220224-similar-search-using-matching-engine/
 
+## 参考記事
+
+### [2021-08-05 機械学習パイプラインの要件と Vertex Pipelines / Kubeflow Pipelines V2 による実装 - Speaker Deck](https://speakerdeck.com/asei/kubeflow-pipelines-v2-niyorushi-zhuang)
+
+### [2021-12-09 Vertex Pipelines + KFPのArtifact(不)完全ガイド](https://zenn.dev/kurushi/articles/01ac5fdc4e1bfc)
+
+### [2023-04-20 自己流 Vertex AI Pipelines 開発プラクティス](https://note.com/tatsuyashirakawa/n/n146551bc5a66)
+
+### [2023-05-13 Vertex AI Workbenchが良さそうという話](https://twitter.com/naganumat/status/1657309179110117378)
+
+- Colaboratory の企業版みたいなイメージ
+- Cloud Storage と BigQuey にすぐアクセスできる
+
 ## アップデート
 
 ### [2023-05-10 Vertex AIがGenerative AIをサポート。まだプレビュー (Google Cloud)](https://cloud.google.com/release-notes#May_10_2023)
@@ -49,16 +62,7 @@
 
 ### [2023-06-20 A100 80GBアクセラレータは現在、一部の地域でカスタム・トレーニング・ジョブ向けに一般提供](https://cloud.google.com/release-notes#June_20_2023)
 
+### [2023-06-26 Vertex AI WorkbenchがM109のリリースに対応](https://cloud.google.com/release-notes#June_26_2023)
 
-## 参考記事
-
-### [2023-04-20 自己流 Vertex AI Pipelines 開発プラクティス](https://note.com/tatsuyashirakawa/n/n146551bc5a66)
-
-### [2023-05-13 Vertex AI Workbenchが良さそうという話](https://twitter.com/naganumat/status/1657309179110117378)
-
-- Colaboratory の企業版みたいなイメージ
-- Cloud Storage と BigQuey にすぐアクセスできる
-
-### [2021-08-05 機械学習パイプラインの要件と Vertex Pipelines / Kubeflow Pipelines V2 による実装 - Speaker Deck](https://speakerdeck.com/asei/kubeflow-pipelines-v2-niyorushi-zhuang)
-
-### [2021-12-09 Vertex Pipelines + KFPのArtifact(不)完全ガイド](https://zenn.dev/kurushi/articles/01ac5fdc4e1bfc)
+- Python 3.10およびCUDA 11.8を含むPytorch 2.0のユーザー管理型ノートブックインスタンスが利用可能に
+- その他のソフトウェア・アップデートやバグ修正など

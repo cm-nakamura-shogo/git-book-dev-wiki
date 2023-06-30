@@ -139,7 +139,7 @@
   - [https://twitter.com/umiyuki_ai/status/1653506794503942148](https://twitter.com/umiyuki_ai/status/1653506794503942148)
   - [https://twitter.com/_kaiinui/status/1653498780501807105](https://twitter.com/_kaiinui/status/1653498780501807105)
 
-## MPT-7B
+## MPT
 
 ### [2023-05-05 MPT-7Bの発表](https://www.mosaicml.com/blog/mpt-7b)
 
@@ -156,6 +156,13 @@
 
 - いま話題のMPT-7B-Instructの場合は$0.0005/1k tokens
 - OpenAIのgpt-3.5-turboは$0.002/1k tokensなので1/4になる
+
+### [2023-06-26 MPT-30Bが公開](https://www.mosaicml.com/blog/mpt-30b)
+
+- 参考ツイート
+  - [https://twitter.com/ImAI_Eruel/status/1673277752462680064](https://twitter.com/ImAI_Eruel/status/1673277752462680064)
+- MPT-30B-chatというモデルもあるが商用利用できないためこちらは注意
+  - [https://twitter.com/sakkusakumura/status/1673833822973214721](https://twitter.com/sakkusakumura/status/1673833822973214721)
 
 ## LINE社
 
@@ -245,3 +252,11 @@
 
 - プログラミング能力を評価するためのデータセットであるHumanEvalで50.6％、MBPPで55.5％と、高い精度
 - GPT-4の67％には及ばないが、パラメーター数が1750億のGPT-3.5を上回る
+
+## Ernie 3.5
+
+### [2023-06-28 Baiduが「GPT-3.5を上回る」AIモデル「Ernie 3.5」を発表 - GIGAZINE](https://gigazine.net/news/20230628-baidu-ernie-3-5/)
+
+- 中国の検索大手Baiduが、自社のAIモデル「Ernie」の最新版である「Ernie 3.5」を発表
+- Ernie 3.5はOpenAIのGPT-3.5を上回り、中国語能力ではGPT-4を上回ったと主張
+

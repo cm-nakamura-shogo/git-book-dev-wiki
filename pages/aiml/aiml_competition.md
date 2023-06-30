@@ -119,3 +119,8 @@
 
 - 毛細血管・細動脈・細静脈などの微小血管構造の画像のセグメンテーションが題材
 
+### [2023-07-07 to 2023-09-05 : Finding AI-generated Images - Solafune](https://solafune.com/competitions/05724228-0ac1-4488-a42f-e945f2117632?menu=about&tab=overview)
+
+- 衛生画像と航空画像の画像生成モデルから生成された画像とオリジナル画像の判別
+- 賞金総額 10,000 USD(1位: $6,000)
+- Stability AIがスポンサー

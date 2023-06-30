@@ -404,6 +404,8 @@
 
 ## 参考
 
+### [2023-06-29 Amazon Personalizeでユーザーのコンテキストに基づいてアイテムを推薦し、動的にフィルタリングする](https://aws.amazon.com/jp/blogs/machine-learning/recommend-and-dynamically-filter-items-based-on-user-context-in-amazon-personalize/)
+
 ## アップデート
 
 ### [2023-04-17 PersonalizeがData Wranglerとの統合でデータ準備が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/prepare-data-amazon-personalize-sagemaker-data-wrangler-integration/)
