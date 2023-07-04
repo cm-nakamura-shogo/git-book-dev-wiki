@@ -36,9 +36,10 @@ Wait タスクの TimestampPath が過去の時刻場合は即実行されるの
 
 ## 参考記事
 
-### [2020-07-07 ステート間のパラメータ受け渡し方法](https://dev.classmethod.jp/articles/stepfunctions-parameters-inter-states/)
-
-- 平野さんの記事。とても分かりやすい。
+- [2020-07-07 ステート間のパラメータ受け渡し方法](https://dev.classmethod.jp/articles/stepfunctions-parameters-inter-states/)
+  - 平野さんの記事。とても分かりやすい。
+- [2023-07-01 Step FunctionsのStates.Format組み込み関数で文字列を作成する | DevelopersIO](https://dev.classmethod.jp/articles/step-functions-format-strings-with-builtin-functions/)
+  - 鈴木さんの記事。パラメータをStates.Formatで文字列にする例。
 
 ## アップデート
 

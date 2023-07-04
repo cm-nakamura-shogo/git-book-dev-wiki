@@ -157,6 +157,7 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
   - カジノの設備の予知保全ソリューションの構築例。
   - ベースラインにAutoGluon、そしてSageMaker automatic model tuningでDeep Learningを使っている様子
   - Deep Learningのアーキテクチャはお手製で結構きちんと頑張っている印象なので参考になる
+- [2023-06-23 FastAPI、AWS Lambda、AWS CDKを使用した大規模言語モデルのサーバーレスML推論エンドポイントのデプロイ](https://aws.amazon.com/jp/blogs/machine-learning/deploy-a-serverless-ml-inference-endpoint-of-large-language-models-using-fastapi-aws-lambda-and-aws-cdk/)
 - [2023-06-27 Earth.comとProvectusがAmazon SageMakerでMLOpsインフラを導入した方法](https://aws.amazon.com/jp/blogs/machine-learning/how-earth-com-and-provectus-implemented-their-mlops-infrastructure-with-amazon-sagemaker/)
 - [2023-06-27 Amazon SageMaker JumpStartの独自基盤モデルをAmazon SageMaker Studioで使用する](https://aws.amazon.com/jp/blogs/machine-learning/use-proprietary-foundation-models-from-amazon-sagemaker-jumpstart-in-amazon-sagemaker-studio/)
   - SageMaker JumpStart には、2 種類の基礎モデルがある
@@ -242,6 +243,7 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-06-26 Amazon SageMaker Neo用のPyTorchおよびTensorFlowモデルをコンパイルするための追加ターゲットとして、inf2およびtrn1を選択可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/agemaker-neo-pytorch-tensorflow-models-inferentia-2-trainium-1-instances/)
 - [2023-06-26 Amazon SageMaker Data WranglerはSnowflakeへの直接接続が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-data-wrangler-direct-connection-snowflake-data/)- [2023-06-26 Amazon SageMaker Role Manager、数分できめ細かな権限を作成できるCDKライブラリを提供開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-role-manager-cdk-library-fine-grained-permissions/)
   - [公式ブログ](https://aws.amazon.com/jp/blogs/machine-learning/define-customized-permissions-in-minutes-with-amazon-sagemaker-role-manager-via-the-aws-cdk/)
+- [2023-06-23 Amazon SageMaker推論レコメンダーがAWS Consoleに登場](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/sagemaker-inference-recommender-console-recommendations-model-creation/)
 - [2023-06-30 RStudio on Amazon SageMakerに開発者の生産性を向上させる新しい RStudio Workbench バージョン 2023.03 が追加](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/rstudio-amazon-sagemaker-developer-productivity/)
 - [2023-06-30 Amazon SageMaker Feature StoreがオンラインストアのTTLをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-feature-store-ttl-online-store/)
 - [2023-06-30 Amazon SageMaker Canvasが Apache Parquet ファイル形式をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-canvas-apache-parquet-file-format/)
