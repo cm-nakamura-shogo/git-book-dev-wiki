@@ -26,43 +26,28 @@
 
 ## アップデート
 
-### [2023-05-10 Vertex AIがGenerative AIをサポート。まだプレビュー (Google Cloud)](https://cloud.google.com/release-notes#May_10_2023)
-
-- モデルは以下。チャットから埋め込み、チューニングまでカバーしていそう。本気を出してきたか。
-  - PaLM 2 for Text: text-bison@001
-  - PaLM 2 for Chat: chat-bison@001
-  - Embedding for Text: textembedding-gecko@001
-  - Generative AI Studio for Language
-  - Tuning for PaLM 2
-
-### [2023-05-16 Vertex AI Custom Trainingが Experimentsとの深い統合に対応](https://cloud.google.com/release-notes#May_16_2023)
-
-- オートロギングを有効にしてトレーニングジョブを送信し、パラメータとモデルのパフォーマンスメトリクスを自動的に記録することが可能に
-
-### [2023-05-16 Vertex AI PipelinesのスケジューラAPIがプレビューで利用可能に](https://cloud.google.com/release-notes#May_16_2023)
-
-- 頻度、開始時間（オプション）、終了時間（オプション）を指定することで、Vertex AIで定期的に実行されるパイプラインをスケジュールすることが可能に
-
-### [2023-06-01 Vertex AIバッチ予測リクエストの入力または出力として、マルチリージョンのBigQueryテーブルを指定できるように](https://cloud.google.com/release-notes#June_01_2023)
-
-### [2023-06-07 Vertex AIのPaLM 2 for Text, Embedding for Text, Generative AI StudioがGAに](https://cloud.google.com/release-notes#June_07_2023)
-
-- 発表されたもののうちPaLM 2 for ChatとTuning for PaLM 2以外はGAになったっぽい
-
-### [2023-06-07 Vertex AI Model Gardenが(GA)で提供開始](https://cloud.google.com/release-notes#June_07_2023)
-
-- Model GardenはVertex AIと選択したOSSモデルの発見、テスト、カスタマイズ、デプロイを支援するプラットフォーム
-
-### [2023-06-07 Vertex AI Codey APIsがプレビュー開始](https://cloud.google.com/release-notes#June_07_2023)
-
-- Codey APIを利用することで、コード生成、コード補完、コードチャットAPIをGCPプロジェクトからも利用することが可能に
-- Codey APIは、Generative AI studioまたはRESTコマンドでプログラム的に使用可能
-
-### [2023-06-15 chat-bison@001のモデルが更新され、コンテキストフィールドの指示に従いやすくなった](https://cloud.google.com/release-notes#June_15_2023)
-
-### [2023-06-20 A100 80GBアクセラレータは現在、一部の地域でカスタム・トレーニング・ジョブ向けに一般提供](https://cloud.google.com/release-notes#June_20_2023)
-
-### [2023-06-26 Vertex AI WorkbenchがM109のリリースに対応](https://cloud.google.com/release-notes#June_26_2023)
-
-- Python 3.10およびCUDA 11.8を含むPytorch 2.0のユーザー管理型ノートブックインスタンスが利用可能に
-- その他のソフトウェア・アップデートやバグ修正など
+- [2023-05-10 Vertex AIがGenerative AIをサポート。まだプレビュー (Google Cloud)](https://cloud.google.com/release-notes#May_10_2023)
+  - モデルは以下。チャットから埋め込み、チューニングまでカバーしていそう。本気を出してきたか。
+    - PaLM 2 for Text: text-bison@001
+    - PaLM 2 for Chat: chat-bison@001
+    - Embedding for Text: textembedding-gecko@001
+    - Generative AI Studio for Language
+    - Tuning for PaLM 2
+- [2023-05-16 Vertex AI Custom Trainingが Experimentsとの深い統合に対応](https://cloud.google.com/release-notes#May_16_2023)
+  - オートロギングを有効にしてトレーニングジョブを送信し、パラメータとモデルのパフォーマンスメトリクスを自動的に記録することが可能に
+- [2023-05-16 Vertex AI PipelinesのスケジューラAPIがプレビューで利用可能に](https://cloud.google.com/release-notes#May_16_2023)
+  - 頻度、開始時間（オプション）、終了時間（オプション）を指定することで、Vertex AIで定期的に実行されるパイプラインをスケジュールすることが可能に
+ [2023-06-01 Vertex AIバッチ予測リクエストの入力または出力として、マルチリージョンのBigQueryテーブルを指定できるように](https://cloud.google.com/release-notes#June_01_2023)
+- [2023-06-07 Vertex AIのPaLM 2 for Text, Embedding for Text, Generative AI StudioがGAに](https://cloud.google.com/release-notes#June_07_2023)
+  - 発表されたもののうちPaLM 2 for ChatとTuning for PaLM 2以外はGAになったっぽい
+- [2023-06-07 Vertex AI Model Gardenが(GA)で提供開始](https://cloud.google.com/release-notes#June_07_2023)
+  - Model GardenはVertex AIと選択したOSSモデルの発見、テスト、カスタマイズ、デプロイを支援するプラットフォーム
+- [2023-06-07 Vertex AI Codey APIsがプレビュー開始](https://cloud.google.com/release-notes#June_07_2023)
+  - Codey APIを利用することで、コード生成、コード補完、コードチャットAPIをGCPプロジェクトからも利用することが可能に
+  - Codey APIは、Generative AI studioまたはRESTコマンドでプログラム的に使用可能
+ [2023-06-15 chat-bison@001のモデルが更新され、コンテキストフィールドの指示に従いやすくなった](https://cloud.google.com/release-notes#June_15_2023)
+ [2023-06-20 A100 80GBアクセラレータは現在、一部の地域でカスタム・トレーニング・ジョブ向けに一般提供](https://cloud.google.com/release-notes#June_20_2023)
+- [2023-06-26 Vertex AI WorkbenchがM109のリリースに対応](https://cloud.google.com/release-notes#June_26_2023)
+  - Python 3.10およびCUDA 11.8を含むPytorch 2.0のユーザー管理型ノートブックインスタンスが利用可能に
+  - その他のソフトウェア・アップデートやバグ修正など
+- [2023-06-30 Vertex Explainable AIのexample-based explanationsサポートが一般的に利用可能](https://cloud.google.com/release-notes#June_30_2023)

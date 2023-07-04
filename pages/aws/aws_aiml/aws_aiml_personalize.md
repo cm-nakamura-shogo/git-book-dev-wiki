@@ -291,7 +291,7 @@
         - interactionから計算するモデルの隠れ層のノード数。より複雑なモデル化が可能になります。
       - item_metadata_hidden_dimension(HPO tunable: Yes)
         - itemのmetadataから計算するモデルの隠れ層のノード数。より複雑なモデル化が可能になります。
-      
+
   - recipe: SIMS
     - interactionデータを使ってアイテムの類似度を計算します。
     - 学習のHyperparameterとしては以下があります。
@@ -350,50 +350,6 @@
 
 - https://docs.aws.amazon.com/personalize/latest/dg/limits.html#limits-table
 
-## 公式のアップデート
-
-- [2020.08.17] USER_PERSONALIZATIONのリリース
-  - https://aws.amazon.com/jp/blogs/machine-learning/amazon-personalize-can-now-create-up-to-50-better-recommendations-for-fast-changing-catalogs-of-new-products-and-fresh-content/
-
-- [2021.11.29] Domain Dataset Groupのリリース
-  - https://aws.amazon.com/blogs/machine-learning/amazon-personalize-announces-recommenders-optimized-for-retail-and-media-entertainment/
-
-- [2021.11.29] User Segmentationのリリース
-  - https://aws.amazon.com/blogs/machine-learning/improve-the-return-on-your-marketing-investments-with-intelligent-user-segmentation-in-amazon-personalize/
-
-## 過去の参考記事
-
-- [2019.07.07] Amazon Personalizeを使ってみた
-  - https://dev.classmethod.jp/articles/yoshim-amazon-personalize-tutorial/
-  - 用語の説明が詳しく、その後やってみたの記事となっている。
-- [2019.12.07] Amazon Personalize でコールドアイテムに対応したレシピでレコメンドしてみた – 機械学習 on AWS Advent Calendar 2019
-  - https://dev.classmethod.jp/articles/2019advent-calendar-ml-on-aws-1207
-  - HRNN-coldstart recipeを試している。
-- [2020.02.26]
-  - https://dev.classmethod.jp/articles/personalize-untrained-user/
-  - 未学習ユーザーに対する各レシピの挙動を調査している。(HRNN, HRNN-metadata, Popularity Count)
-  - SDKからの実行例が多く記載されている。
-- [2020.03.04] PersonalizeのAutoML機能を使ったレシピの自動選択を試してみた
-  - https://dev.classmethod.jp/articles/personalize-automl/
-  - AutoMLを試してみた記事。AutoMLは現在、APIからしか利用できなくなっている気がする。
-- [2020.03.23] Amazon Personalizeでハイパーパラメータのチューニング結果を取得できるようになりました!
-  - https://dev.classmethod.jp/articles/personalize-hpo-result/
-  - HPO, AutoMLの結果が取得できるようになったという記事。
-- [2020.06.10] Amazon Personalizeに選択したEventTypeのアイテムをレコメンドから除外するフィルターが追加されました
-  - https://dev.classmethod.jp/articles/amazon-personalize-update-recommendation-filter/
-  - EVENT_TYPEを使ったフィルタリングのトライアル。
-  - 学習データに存在しないEVENT_TYPEがフィルタリングされない結果となっている。
-- [2020.08.28] Amazon Personalizeの推論フィルターでアイテムやユーザーのメタデータを条件としてフィルタできるようになりました
-  - https://dev.classmethod.jp/articles/amazon-personalize-update-enhancing-recommendation-filter/
-  - itemsのmetadataを使ったフィルタリング
-- [2020.08.31] Amazon Personalizeに新たなレシピ「USER_PERSONALIZATION」が追加されました
-  - https://dev.classmethod.jp/articles/amazon-personalize-update-new-recipe-user-personalization/
-  - HRNN, HRNN-metadata, HRNN-coldstartを統合・改善したレシピ、USER_PERSONALIZATIONのトライアル。
-  - IMPRESSION、CREATION_TIMESTAMPの説明、HRNNとの比較実験や、trainingMode=UPDATEの説明などが含まれる。
-- [2020.10.31] Amazon Personalizeの推論フィルターを使って年齢制限のある商品やコンテンツをユーザーの年齢に応じてフィルターする
-  - https://dev.classmethod.jp/articles/amazon-personalize-recommendation-filter-age-limit/
-  - より具体的なフィルター実例
-
 ## 基礎原理
 
 - 協調フィルタリング
@@ -402,38 +358,56 @@
 - バンディットアルゴリズムを用いた推薦システムの構成について
   - https://techblog.zozo.com/entry/zozoresearch-bandit-overviews
 
-## 参考
+## 参考記事
 
-### [2023-06-29 Amazon Personalizeでユーザーのコンテキストに基づいてアイテムを推薦し、動的にフィルタリングする](https://aws.amazon.com/jp/blogs/machine-learning/recommend-and-dynamically-filter-items-based-on-user-context-in-amazon-personalize/)
+- [2019-07-07 Amazon Personalizeを使ってみた](https://dev.classmethod.jp/articles/yoshim-amazon-personalize-tutorial/)
+  - 用語の説明が詳しく、その後やってみたの記事となっている。
+- [2019-12-07 Amazon Personalize でコールドアイテムに対応したレシピでレコメンドしてみた – 機械学習 on AWS Advent Calendar 2019](https://dev.classmethod.jp/articles/2019advent-calendar-ml-on-aws-1207)
+  - HRNN-coldstart recipeを試している。
+- [2020-02-26](https://dev.classmethod.jp/articles/personalize-untrained-user/)
+  - 未学習ユーザーに対する各レシピの挙動を調査している。(HRNN, HRNN-metadata, Popularity Count)
+  - SDKからの実行例が多く記載されている。
+- [2020-03-04 PersonalizeのAutoML機能を使ったレシピの自動選択を試してみた](https://dev.classmethod.jp/articles/personalize-automl/)
+  - AutoMLを試してみた記事。AutoMLは現在、APIからしか利用できなくなっている気がする。
+- [2020-03-23 Amazon Personalizeでハイパーパラメータのチューニング結果を取得できるようになりました!](https://dev.classmethod.jp/articles/personalize-hpo-result/)
+  - HPO, AutoMLの結果が取得できるようになったという記事。
+- [2020-06-10 Amazon Personalizeに選択したEventTypeのアイテムをレコメンドから除外するフィルターが追加されました](https://dev.classmethod.jp/articles/amazon-personalize-update-recommendation-filter/)
+  - EVENT_TYPEを使ったフィルタリングのトライアル。
+  - 学習データに存在しないEVENT_TYPEがフィルタリングされない結果となっている。
+- [2020-08-28 Amazon Personalizeの推論フィルターでアイテムやユーザーのメタデータを条件としてフィルタできるようになりました](https://dev.classmethod.jp/articles/amazon-personalize-update-enhancing-recommendation-filter/)
+  - itemsのmetadataを使ったフィルタリング
+- [2020-08-31 Amazon Personalizeに新たなレシピ「USER_PERSONALIZATION」が追加されました](https://dev.classmethod.jp/articles/amazon-personalize-update-new-recipe-user-personalization/)
+  - HRNN, HRNN-metadata, HRNN-coldstartを統合・改善したレシピ、USER_PERSONALIZATIONのトライアル。
+  - IMPRESSION、CREATION_TIMESTAMPの説明、HRNNとの比較実験や、trainingMode=UPDATEの説明などが含まれる。
+- [2020-10-31 Amazon Personalizeの推論フィルターを使って年齢制限のある商品やコンテンツをユーザーの年齢に応じてフィルターする](https://dev.classmethod.jp/articles/amazon-personalize-recommendation-filter-age-limit/)
+  - より具体的なフィルター実例
+- [2023-06-29 Amazon Personalizeでユーザーのコンテキストに基づいてアイテムを推薦し、動的にフィルタリングする](https://aws.amazon.com/jp/blogs/machine-learning/recommend-and-dynamically-filter-items-based-on-user-context-in-amazon-personalize/)
 
 ## アップデート
 
-### [2023-04-17 PersonalizeがData Wranglerとの統合でデータ準備が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/prepare-data-amazon-personalize-sagemaker-data-wrangler-integration/)
-
-### [2023-04-21 PersonalizeがKafka Sinkコネクタに対応し、リアルタイムデータを簡単に取り込めるように](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-personalize-kafka-sink-connector/)
-
-### [2023-04-21 Personalizeで類似品推奨の人気度チューニングが可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-personalize-popularity-tuning-item-recommendations/)
-
-- Similar-Itemsレシピで人気度チューニングが可能となる
-- これにより以下が可能
-  - 人気のあるアイテムをより重視する
-  - 選択したアイテムに似ているがあまり知られていないアイテムを推薦する
-- 公式
-  - [2023-06-08 Amazon PersonalizeのSimilar-Itemsの人気度チューニングを導入](https://aws.amazon.com/jp/blogs/machine-learning/introducing-popularity-tuning-for-similar-items-in-amazon-personalize/)
-
-### [2023-05-30 Personalizeでソリューションを作成し、レコメンダーを作成または更新する際に、トレーニング用の特定の列を除外する機能をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-personalize-model-training/)
-
-- データセットのどの列をトレーニングに使用するかをお客様が選択できるように
-- 以前は、モデルのトレーニング中に顧客のデータセット内のすべての列が使用されていたが、これにより実験が簡単になった
-
-### [2023-06-13 PersonalizeがVPCエンドポイントに対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-personalize-vpc-endpoints/)
-
-- Personalizeがオープンインターネットを介さずにVPC上のリソースと通信できるように
-- VPC を Amazon Personalize に接続するには、Amazon Personalize 用の VPC エンドポイントを定義
-- エンドポイントは、サポートされているAWSサービス宛てのトラフィックのエントリポイントとして機能する、プライベートIPアドレスを持つENI
-
-### [2023-06-21 Personalizeが、入力アイテムのプロパティによる選択アイテムのフィルタリングに対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-personalize-filtering-items-properties-input-item/)
-
-- 従来はデータセットのプロパティやユーザのプロパティに基づいてフィルタリングできていた
-- 今回、Related Items recipesにおいて入力アイテムやquery itemのプロパティにも対応
-- 要するにItemベースレコメンド生成時のフィルタリング機能ができるようになった印象か
+- [2020-08-17 USER_PERSONALIZATIONのリリース](https://aws.amazon.com/jp/blogs/machine-learning/amazon-personalize-can-now-create-up-to-50-better-recommendations-for-fast-changing-catalogs-of-new-products-and-fresh-content/)
+- [2021-11-29 Domain Dataset Groupのリリース](https://aws.amazon.com/blogs/machine-learning/amazon-personalize-announces-recommenders-optimized-for-retail-and-media-entertainment/)
+- [2021-11-29 User Segmentationのリリース](https://aws.amazon.com/blogs/machine-learning/improve-the-return-on-your-marketing-investments-with-intelligent-user-segmentation-in-amazon-personalize/)
+- [2023-04-17 PersonalizeがData Wranglerとの統合でデータ準備が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/prepare-data-amazon-personalize-sagemaker-data-wrangler-integration/)
+- [2023-04-21 PersonalizeがKafka Sinkコネクタに対応し、リアルタイムデータを簡単に取り込めるように](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-personalize-kafka-sink-connector/)
+- [2023-04-21 Personalizeで類似品推奨の人気度チューニングが可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-personalize-popularity-tuning-item-recommendations/)
+  - Similar-Itemsレシピで人気度チューニングが可能となる
+  - これにより以下が可能
+    - 人気のあるアイテムをより重視する
+    - 選択したアイテムに似ているがあまり知られていないアイテムを推薦する
+  - 公式
+    - [2023-06-08 Amazon PersonalizeのSimilar-Itemsの人気度チューニングを導入](https://aws.amazon.com/jp/blogs/machine-learning/introducing-popularity-tuning-for-similar-items-in-amazon-personalize/)
+- [2023-05-30 Personalizeでソリューションを作成し、レコメンダーを作成または更新する際に、トレーニング用の特定の列を除外する機能をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-personalize-model-training/)
+  - データセットのどの列をトレーニングに使用するかをお客様が選択できるように
+  - 以前は、モデルのトレーニング中に顧客のデータセット内のすべての列が使用されていたが、これにより実験が簡単になった
+- [2023-06-13 PersonalizeがVPCエンドポイントに対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-personalize-vpc-endpoints/)
+  - Personalizeがオープンインターネットを介さずにVPC上のリソースと通信できるように
+  - VPC を Amazon Personalize に接続するには、Amazon Personalize 用の VPC エンドポイントを定義
+  - エンドポイントは、サポートされているAWSサービス宛てのトラフィックのエントリポイントとして機能する、プライベートIPアドレスを持つENI
+- [2023-06-21 Personalizeが、入力アイテムのプロパティによる選択アイテムのフィルタリングに対応](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-personalize-filtering-items-properties-input-item/)
+  - 従来はデータセットのプロパティやユーザのプロパティに基づいてフィルタリングできていた
+  - 今回、Related Items recipesにおいて入力アイテムやquery itemのプロパティにも対応
+  - 要するにItemベースレコメンド生成時のフィルタリング機能ができるようになった印象か
+- [2023-07-03 Amazon Personalize、最新のストリームデータを利用して一括レコメンデーションの品質を向上](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-personalize-quality-batch-recommendations/)
+  - イベントトラッカー経由でストリーミングされた新しく記録されたイベントを使用して、モデルの再トレーニングを必要とせずにレコメンデーションを生成できるように
+  - 以前のバッチ レコメンデーションでは、最後にモデルを再トレーニングした時点までのインタラクションのみが考慮されていた

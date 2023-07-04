@@ -1,5 +1,8 @@
 # scrap
 
+- [2023-07-02 Faiss Readerを使って、クエリに類似したノードのみのインデックスを作成する | DevelopersIO](https://dev.classmethod.jp/articles/faiss-reader-index-only-similar-to-query/)
+  - 単純に比較したいのであれば、VectorStoreIndexでStorageContextのVectorStoreにFaissVectorStoreを指定する方法もありかも
+
 ### 未読
 
 - 未分類
