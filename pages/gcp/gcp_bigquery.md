@@ -70,3 +70,15 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
   - [【BigQuery アップデート情報】トランザクション内でのTRUNCATE TABLEがGAになりました | DevelopersIO](https://dev.classmethod.jp/articles/truncate-table/)
 - [2023-06-26 JavaまたはScalaを使用してApache Spark用のストアドプロシージャを作成できるように](https://cloud.google.com/bigquery/docs/release-notes#June_26_2023)
 - [2023-06-30 Amazon S3データを参照するBigLakeテーブルでメタデータキャッシングが利用可能に(プレビュー)](https://cloud.google.com/bigquery/docs/release-notes#June_30_2023)
+- [2023-07-05 BigQueryアップデート](https://cloud.google.com/release-notes#July_11_2023)
+  - GA : LOAD DATA SQLステートメントを使用して、Avro、CSV、改行区切りJSON、JSON、ORC、またはParquetファイルからテーブルにデータをロードする機能。
+  - Preview : スロット・エスティメータが、エディション価格と過去のパフォーマンス・メトリクスに基づいて、コスト最適なコミットメントとオートスケールの推奨を提供するように。
+  - GA : フェイルセーフ期間が一般的に利用可能に。フェイルセーフ期間では、タイムトラベルウィンドウの後にさらに7日間のデータストレージが提供。
+  - GA : ストレージの課金に物理バイトを使用する機能がGA。データセットのストレージ課金モデルを物理バイトを使用するように設定すると、課金されるアクティブ・ストレージ・コストの合計には、タイムトラベルおよびフェイルセーフ・ストレージに使用されるバイトが含まれます。
+  - GA : タイムトラベルウィンドウを構成する機能が一般的に利用可能になりました（GA）。タイムトラベルウィンドウの期間は、最小2日から最大7日まで指定できます。
+  - BigQueryの容量コミットメントが以下のように変更
+    - 年間コミットメントはEnterpriseまたはEnterprise Plusエディションでのみ利用可能になりました。定額制の年間コミットメントは利用できなくなりました。
+    - 月額コミットメントおよびフレックスコミットメントは利用できなくなりました。
+  - Preview : Analytics Hubのリストでデータの送信を制限できるように
+- [2023-07-06 BigQueryアップデート](https://cloud.google.com/release-notes#July_06_2023)
+  - GA : Spanner Data Boostは、プロビジョニングされたSpannerインスタンス上の既存のワークロードにほとんど影響を与えることなく、分析クエリやデータエクスポートを実行することができます。

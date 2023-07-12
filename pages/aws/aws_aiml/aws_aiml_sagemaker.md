@@ -170,6 +170,10 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-06-30 Amazon SageMaker Canvasを使用して製造品質のためのコンピュータビジョンによる欠陥検出の例](https://aws.amazon.com/jp/blogs/machine-learning/democratize-computer-vision-defect-detection-for-manufacturing-quality-using-no-code-machine-learning-with-amazon-sagemaker-canvas/)
 - [2023-07-03 AWS上のディープラーニングに基づく先進運転支援システムのための自動ラベリングモジュール](https://aws.amazon.com/jp/blogs/machine-learning/auto-labeling-module-for-deep-learning-based-advanced-driver-assistance-systems-on-aws/)
   - Ground Truth の自動ラベリング機能の使い方を紹介
+- [2023-07-06 Amazon SageMaker Studio ノートブックのインスタンスタイプをユーザーごとに利用制限する方法 | DevelopersIO](https://dev.classmethod.jp/articles/restrict-instance-types-use-amazon-sagemaker-studio-notebook/)
+  - ドメインに紐づいたユーザー毎の実行ロールに対してDenyなポリシーをアタッチすることで実現している
+- [2023-07-05 SageMaker Jumpstartを使用した車両故障確率の予測](https://aws.amazon.com/jp/blogs/machine-learning/predict-vehicle-fleet-failure-probability-using-amazon-sagemaker-jumpstart/)
+- [2023-07-11 SageMaker トレーニングワークロード用の @remote デコレーターを使用してプライベートリポジトリにアクセス](https://aws.amazon.com/jp/blogs/machine-learning/access-private-repos-using-the-remote-decorator-for-amazon-sagemaker-training-workloads/)
 
 ## アップデート
 
@@ -247,3 +251,4 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-06-30 RStudio on Amazon SageMakerに開発者の生産性を向上させる新しい RStudio Workbench バージョン 2023.03 が追加](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/rstudio-amazon-sagemaker-developer-productivity/)
 - [2023-06-30 Amazon SageMaker Feature StoreがオンラインストアのTTLをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-feature-store-ttl-online-store/)
 - [2023-06-30 Amazon SageMaker Canvasが Apache Parquet ファイル形式をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-canvas-apache-parquet-file-format/)
+- [2023-07-05 Amazon SageMaker Model Cards と Amazon SageMaker Model Registry の統合を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-model-cards-model-versions-registry/)

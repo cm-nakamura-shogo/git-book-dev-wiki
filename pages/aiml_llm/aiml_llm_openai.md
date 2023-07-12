@@ -49,3 +49,12 @@
 ### [2023-06-14 OpenAI APIのFunction callingで関数が呼ばれる条件を確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/openai-api-function-calling-check-condition/)
 
 - descriptionだけでなく引数情報なども参照して決定している様子
+
+### [2023-07-09 ChatGPTのCode Interpreterはどこまでできるのか](https://zenn.dev/yuhei_fujita/articles/try-chat-gpt-code-interpreter)
+
+- numpyのような有名なライブラリは利用できるが、すべてのライブラリを利用できるというわけではない。
+- Code Interpreterは外部のネットワークから隔離された環境でソースコードを実行するためWeb APIなどは呼び出せない。
+- 内容を理解できるのはあくまでテキストのみ
+- 大量のファイルやサイズの大きなでファイルは扱えない
+- 実行環境は維持できない
+- Python以外は実行できない

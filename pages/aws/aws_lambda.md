@@ -114,6 +114,8 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 
 ## アプデ
 
+### [2021-09-30 AWS Lambdaがarm64アーキテクチャをサポートしました | DevelopersIO](https://dev.classmethod.jp/articles/aws-lambda-graviton2/)
+
 ### [2023-01-17 SQSをイベントソースとして利用する際に同時実行数が設定できるように](https://dev.classmethod.jp/articles/update-aws-lambda-event-source-amazon-sqs-concurrency/)
 
 これまでSQSをイベントソースとする際の同時実行数は、Lambda関数の「同時実行の予約」で行っていたが、直感的に設定が可能になった。

@@ -35,3 +35,5 @@
 - GitHubで必要な論文などの情報がまとめられている
   - [https://github.com/Mooler0410/LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide)
 - 正攻法で学術的なまとめで、LangChainやLlamaIndexなどについては特に言及がない
+
+### [2023-07-11 大規模言語モデルがIn-Context Learningをどのように実現しているかの論文紹介](https://twitter.com/hillbig/status/1678525778492018688)

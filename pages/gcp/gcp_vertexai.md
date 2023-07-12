@@ -51,3 +51,10 @@
   - Python 3.10およびCUDA 11.8を含むPytorch 2.0のユーザー管理型ノートブックインスタンスが利用可能に
   - その他のソフトウェア・アップデートやバグ修正など
 - [2023-06-30 Vertex Explainable AIのexample-based explanationsサポートが一般的に利用可能](https://cloud.google.com/release-notes#June_30_2023)
+- [2023-07-06 Vertex AIアップデート](https://cloud.google.com/release-notes#July_07_2023)
+  - Vertex AI Model EvaluationはGAに。また以下がプレビュー。
+    - スライスされたメトリクスによるモデル評価。
+    - 公平性と偏りのメトリクスによるモデル評価。
+    - AutoML画像分類モデルの視覚エラー分析。
+- [2023-07-10 Vertex AIアップデート](https://cloud.google.com/release-notes#July_10_2023)
+  - PaLM 2 for Chat (chat-bison) のサポートが (GA) で利用可能に。

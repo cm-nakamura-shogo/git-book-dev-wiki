@@ -185,3 +185,7 @@
 - Tokens Per Minute (TPM) のクォータを、各デプロイに対してユーザー任意の値 (1K 単位) で割り当てることができるように
 
 ### [2023-06-14 「ChatGPTについて調べてくれ」と社長から特命を受けた人のためのChatGPT概論(40min版)_v1.00.pdf - Speaker Deck](https://speakerdeck.com/doradora09/20230614-chatgptnituitediao-hetekure-toshe-chang-karate-ming-woshou-ketaren-notamenochatgptgai-lun-40minban-v1-dot-00)
+
+### [2023-07-11 ベクトル検索で「以外」や「数字の大小」を試してみた | DevelopersIO](https://dev.classmethod.jp/articles/vector-search-except-and-numerical-big-small/)
+
+- 有用記事。Embeddingsについては考察の余地があるな。

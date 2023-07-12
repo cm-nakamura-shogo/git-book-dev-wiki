@@ -59,6 +59,10 @@
   - モデルを使ったバックテストと予測
   - エンジンコンフィグ、モデル、バックテスト、予測リソースからのメタデータのエクスポート
 
+### [2023-07-05 Cloud Runで1時間を超える長時間のジョブがサポート(プレビュー)](https://cloud.google.com/release-notes#July_05_2023)
+
+## 参考記事
+
 ### [2023-06-28 Vertex AIでGoogleのユニバーサル音声モデル（USM）Chirpを使い始める](https://medium.com/google-cloud/getting-started-with-chirp-the-googles-universal-speech-model-usm-on-vertex-ai-f54edaf4da93)
 
 - Chirpを利用する方法の公式解説記事
