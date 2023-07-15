@@ -71,6 +71,6 @@ Ingressな通信は、クライアントからのアクセス時に、NATテー�
 
 ## 参考記事
 
-### [2022-08-07 Amazon VPCを「これでもか！」というくらい丁寧に解説 - Qiita](https://qiita.com/c60evaporator/items/2f24d4796202e8b06a77)
-
-### [2022-08-14 【ベストプラクティス】Amazon VPC の構築方法を分かりやすく解説 - Qiita](https://qiita.com/c60evaporator/items/b9e645b96afa3a34f41e)
+- [2022-08-07 Amazon VPCを「これでもか！」というくらい丁寧に解説 - Qiita](https://qiita.com/c60evaporator/items/2f24d4796202e8b06a77)
+- [2022-08-14 【ベストプラクティス】Amazon VPC の構築方法を分かりやすく解説 - Qiita](https://qiita.com/c60evaporator/items/b9e645b96afa3a34f41e)
+- [[登壇レポート] AWS Ambassadorが考える個人的に最強のマルチアカウントハイブリッドネットワーク構成 というタイトルで登壇しました #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/developersio-2023-multi-account-hybrid-network/)

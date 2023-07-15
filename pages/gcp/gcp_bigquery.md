@@ -19,7 +19,7 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
   - 参考記事
     - [Google ColaboratoryでBigQueryのクエリ結果を扱ってみる | DevelopersIO](https://dev.classmethod.jp/articles/bq_colab/)
 
-## 参考記事
+## Articles
 
 - スプレッドシートをBigQueryから分析してみた
   - https://dev.classmethod.jp/articles/google-spreadsheet-sql-from-bigquery
@@ -27,7 +27,9 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 - BQ内部の仕組み
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/e55a6f8822b6528ff47797936e40faedc7d047ac.pdf
 
-## アップデート
+- [BigQuery の正規表現関数の使いどころを自分なりに整理してみた | DevelopersIO](https://dev.classmethod.jp/articles/bigquery-regexp-usage/)
+
+## Updates
 
 - [2022-10-10 マルチステートメントトランザクションがGA](https://dev.classmethod.jp/articles/bigquery-mutistatement-transaction-ga/)
   - 失敗時にロールバックしてくれるため、INSERTを同期させたいものがある場合に便利。
@@ -82,3 +84,8 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
   - Preview : Analytics Hubのリストでデータの送信を制限できるように
 - [2023-07-06 BigQueryアップデート](https://cloud.google.com/release-notes#July_06_2023)
   - GA : Spanner Data Boostは、プロビジョニングされたSpannerインスタンス上の既存のワークロードにほとんど影響を与えることなく、分析クエリやデータエクスポートを実行することができます。
+- [2023-07-12 BigQueryアップデート](https://cloud.google.com/release-notes#July_12_2023)
+  - BigQuery MLフィーチャー前処理機能が一般公開
+    - TRANSFORM句を使用するモデルをTensorFlow SavedModel形式にエクスポート
+    - TRANSFORM句で学習したモデルをVertex AIやローカルに配置することもできるように
+  - 時系列予測のためのカスタムホリデーモデリングがプレビューに

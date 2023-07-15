@@ -186,6 +186,6 @@
 
 ### [2023-06-14 「ChatGPTについて調べてくれ」と社長から特命を受けた人のためのChatGPT概論(40min版)_v1.00.pdf - Speaker Deck](https://speakerdeck.com/doradora09/20230614-chatgptnituitediao-hetekure-toshe-chang-karate-ming-woshou-ketaren-notamenochatgptgai-lun-40minban-v1-dot-00)
 
-### [2023-07-11 ベクトル検索で「以外」や「数字の大小」を試してみた | DevelopersIO](https://dev.classmethod.jp/articles/vector-search-except-and-numerical-big-small/)
-
-- 有用記事。Embeddingsについては考察の余地があるな。
+- [2023-07-06 AWS Chalice を使って、ChatGPT Slack Appを作成してみた(LangChain編) | DevelopersIO](https://dev.classmethod.jp/articles/aws-chalice-chatgpt-slack-app-langchain/)
+- [2023-07-07 生成系AIの実応用に向けて - Speaker Deck](https://speakerdeck.com/line_developers/toward-practical-applications-of-generative-ai)
+- [2023-07-05 LLM in Productionで登壇しました、それとChat is not all you needの話 - LayerX エンジニアブログ](https://tech.layerx.co.jp/entry/2023/07/05/113052)

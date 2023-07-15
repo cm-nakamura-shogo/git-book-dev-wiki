@@ -58,3 +58,5 @@
     - AutoML画像分類モデルの視覚エラー分析。
 - [2023-07-10 Vertex AIアップデート](https://cloud.google.com/release-notes#July_10_2023)
   - PaLM 2 for Chat (chat-bison) のサポートが (GA) で利用可能に。
+- [2023-07-12 Vertex AIアップデート](https://cloud.google.com/release-notes#July_12_2023)
+  - text-bisionのバッチ処理リクエストがGAに。

@@ -66,7 +66,39 @@ IAMユーザとは
 
 細かい制限を加える場合はここら辺を参照する必要がある
 
+## AssumeRole
+
+普段ロールの切り替えでプロジェクト横断してるのがAssumeRole
+
+信頼ポリシーは、切り替えるときに基幹のAWSアカウントから払い出されたIAM UserがMFAを使った場合のみプロジェクトのIAM RoleにAssumeすることができるっていう定義
+
+なので、IAM Roleには以下のような信頼ポリシーが記載されています。
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::000000000000:user/cm-watanabe.koki"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "Bool": {
+                    "aws:MultiFactorAuthPresent": "true"
+                }
+            }
+        }
+    ]
+}
+```
+
+このポリシーに基づいてIAM Roleの権限を使える様になることを移譲って表現する
+
 ## 参考記事
+
+### [IAM ロールの PassRole と AssumeRole をもう二度と忘れないために絵を描いてみた | DevelopersIO](https://dev.classmethod.jp/articles/iam-role-passrole-assumerole/)
 
 ### [2023-05-04 【S3 Bucketへのアクセス管理】 特定のIAM RoleにのみS3 Bucketへのアクセスを許可し、IAM User GroupとIAM Roleで厳密にスイッチングする方法 | DevelopersIO](https://dev.classmethod.jp/articles/s3-bucket-access-control-with-iam-role-and-group-switching/)
 - むずくてよく分からんかった…

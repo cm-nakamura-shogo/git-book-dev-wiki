@@ -139,6 +139,7 @@
     - [Amazon Aurora            ](pages/aws/aws_aurora.md)
     - [Amazon Neptune           ](pages/aws/aws_neptune.md)
     - [Amazon DynamoDB          ](pages/aws/aws_dynamodb.md)
+    - [Amazon DocumentDB        ](pages/aws/aws_documentdb.md)
   - [AIML                       ](pages/aws/aws_aiml/aws_aiml.md)
     - [Amazon Personalize       ](pages/aws/aws_aiml/aws_aiml_personalize.md)
     - [Amazon SageMaker         ](pages/aws/aws_aiml/aws_aiml_sagemaker.md)
@@ -237,7 +238,7 @@
   - [SQL                   ](pages/app/app_sql.md)
 - 設計開発全般
   - [記事                  ](pages/design/design_article.md)
-  - [個人開発スタック      ](pages/design/design_stack.md)
+  - [アーキテクチャ        ](pages/design/design_architecture.md)
   - [継承                  ](pages/design/design_inheritance.md)
   - [QA                    ](pages/design/design_qa.md)
   - [セキュリティ          ](pages/design/design_security.md)
@@ -360,7 +361,7 @@
   - [LLM LangChain        ](pages/aiml_llm/aiml_llm_retriever_langchain.md)
   - [LLM LlamaIndex       ](pages/aiml_llm/aiml_llm_retriever_llamaindex.md)
   - [LLM その他のRetriever](pages/aiml_llm/aiml_llm_retriever_others.md)
-  - [LLM ベクターストア   ](pages/aiml_llm/aiml_llm_vectorstore.md)
+  - [LLM 埋め込みベクトル ](pages/aiml_llm/aiml_llm_embeddings.md)
 - ブログ管理
   - [ネタ帳  ](blog/blog.md)
   - [執筆済み](blog/blog_released.md)

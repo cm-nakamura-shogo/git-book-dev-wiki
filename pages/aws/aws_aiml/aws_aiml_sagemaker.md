@@ -70,20 +70,26 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 
 - [いつどこで課金が発生してる？Amazon SageMakerの動きと料金体系をセットで考える | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-pricing/)
 
-## 参考記事
+## Articles
 
 - [2022-04-14 【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
-- [2023-04-20 SageMaker Inference Recommenderの最新のアップデート](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/general-availability-amazon-codecatalyst/)
-  - SageMaker Python SDKによる推論リコメンダーの実行サポート
-  - 推論レコメンダーの操作性向上
-  - 推論リコメンダーの柔軟な運用を可能にする新APIを公開
-  - ロギングとメトリクスのためのAmazon CloudWatchとのより深い統合
+- [2023-04-20 AWS-CDKを使い爆速で機械学習環境SageMakerStudioを構築する。with TypeScript - Qiita](https://qiita.com/kennyQiita/items/628be93f8aa7ea37be68)
+- [2023-06-12 SageMakerのバッチ変換でPCAを実行してみた | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-pca-batch-transformation/)
+  - なゆゆのSageMakerのバッチ変換
+- [2023-06-21 ユーザーごとに Amazon SageMaker Studio ノートブックの利用料金を把握する方法](https://dev.classmethod.jp/articles/amazon-sagemaker-studio-cost-allocation-tags/)
+  - 単なるタグの話
+- [2023-07-06 Amazon SageMaker Studio ノートブックのインスタンスタイプをユーザーごとに利用制限する方法 | DevelopersIO](https://dev.classmethod.jp/articles/restrict-instance-types-use-amazon-sagemaker-studio-notebook/)
+  - ドメインに紐づいたユーザー毎の実行ロールに対してDenyなポリシーをアタッチすることで実現している
+- [2023-07-14 Amazon SageMaker ドメイン作成時に設定が必要な各パラメータを解説](https://dev.classmethod.jp/articles/amazon-sagemaker-domain-setup-parameter/)
+  - めっちゃ有用記事だ！
+
+## Articles(公式)
+
 - [2023-04-21 バッチ処理のユースケースに対応したSageMaker Pipelineの例を紹介](https://aws.amazon.com/jp/blogs/machine-learning/create-sagemaker-pipelines-for-training-consuming-and-monitoring-your-batch-use-cases/)
 - [2023-04-27 CustomOpsでTrainiumの機能を拡張する方法](https://aws.amazon.com/jp/blogs/machine-learning/how-to-extend-the-functionality-of-aws-trainium-with-custom-operators/)
   - TrainiumやInferentiaは、Neuron SDKを通じてソフトウェアでCustomOpsをサポート
   - GPSIMDエンジンを用いてハードウェアを加速させる
     - General Purpose Single Instruction Multiple Data engine
-- [2023-04-20 AWS-CDKを使い爆速で機械学習環境SageMakerStudioを構築する。with TypeScript - Qiita](https://qiita.com/kennyQiita/items/628be93f8aa7ea37be68)
 - [2023-05-02 SageMaker上のTriton推論サーバで動作するFILバックエンドの詳細](https://aws.amazon.com/jp/blogs/machine-learning/hosting-ml-models-on-amazon-sagemaker-using-triton-xgboost-lightgbm-and-treelite-models/)
   - Triton推論サーバがエンドポイントで使用
   - FIL(Forest Inference Library)は各フレームワーク（XGBoost, LightGBM, cuML）の独自性をうまく吸収してくれそう
@@ -143,12 +149,8 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-06-12 SageMaker Hugging Face Estimatorとモデル並列ライブラリを使ってGPT-Jをfine tuningする](https://aws.amazon.com/jp/blogs/machine-learning/fine-tune-gpt-j-using-an-amazon-sagemaker-hugging-face-estimator-and-the-model-parallel-library/)
   - モデル並列化に関する説明があってよい
 - [2023-06-12 Amazon SageMaker上でOpenChatkitのモデルを使用したカスタムチャットボットアプリケーションを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-custom-chatbot-applications-using-openchatkit-models-on-amazon-sagemaker/)
-- [2023-06-12 SageMakerのバッチ変換でPCAを実行してみた | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-pca-batch-transformation/)
-  - なゆゆのSageMakerのバッチ変換
 - [2023-06-13 DLC上にFalcon-40BをAmazon SageMakerにデプロイする](https://aws.amazon.com/jp/blogs/machine-learning/deploy-falcon-40b-with-large-model-inference-dlcs-on-amazon-sagemaker/)
 - [2023-06-14 SageMakerプロジェクトを使用しSageMaker AutopilotをMLOpsプロセスに導入する方法](https://aws.amazon.com/jp/blogs/machine-learning/bring-sagemaker-autopilot-into-your-mlops-processes-using-a-custom-sagemaker-project/)
-- [2023-06-21 ユーザーごとに Amazon SageMaker Studio ノートブックの利用料金を把握する方法](https://dev.classmethod.jp/articles/amazon-sagemaker-studio-cost-allocation-tags/)
-  - 単なるタグの話
 - [2023-06-21 AWS CDK を使用して、Amazon SageMaker Studio ライフサイクル構成をデプロイ](https://aws.amazon.com/jp/blogs/machine-learning/use-the-aws-cdk-to-deploy-amazon-sagemaker-studio-lifecycle-configurations/)
 - [2023-06-22 日本語大規模言語モデル OpenCALM の知識でクイズ王に挑戦する | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/open-calm-and-openai-chatgpt-accuracy-on-jaqket-experiment-in-amazon-sagemaker/)
   - 少し考察が偏っており、個人的には7Bでは到底GPT-3.5-turboなどに及ばないことが分かる。
@@ -170,15 +172,18 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-06-30 Amazon SageMaker Canvasを使用して製造品質のためのコンピュータビジョンによる欠陥検出の例](https://aws.amazon.com/jp/blogs/machine-learning/democratize-computer-vision-defect-detection-for-manufacturing-quality-using-no-code-machine-learning-with-amazon-sagemaker-canvas/)
 - [2023-07-03 AWS上のディープラーニングに基づく先進運転支援システムのための自動ラベリングモジュール](https://aws.amazon.com/jp/blogs/machine-learning/auto-labeling-module-for-deep-learning-based-advanced-driver-assistance-systems-on-aws/)
   - Ground Truth の自動ラベリング機能の使い方を紹介
-- [2023-07-06 Amazon SageMaker Studio ノートブックのインスタンスタイプをユーザーごとに利用制限する方法 | DevelopersIO](https://dev.classmethod.jp/articles/restrict-instance-types-use-amazon-sagemaker-studio-notebook/)
-  - ドメインに紐づいたユーザー毎の実行ロールに対してDenyなポリシーをアタッチすることで実現している
 - [2023-07-05 SageMaker Jumpstartを使用した車両故障確率の予測](https://aws.amazon.com/jp/blogs/machine-learning/predict-vehicle-fleet-failure-probability-using-amazon-sagemaker-jumpstart/)
 - [2023-07-11 SageMaker トレーニングワークロード用の @remote デコレーターを使用してプライベートリポジトリにアクセス](https://aws.amazon.com/jp/blogs/machine-learning/access-private-repos-using-the-remote-decorator-for-amazon-sagemaker-training-workloads/)
 
-## アップデート
+## Updates
 
 - [2023-04-19 SageMaker Studio LabがCAPTCHAに対応しボットやスクリプトの使用を抑制](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-studiolab-combats-bots-captcha/)
   - あの画像に記載された文字を手入力したりするやつ
+- [2023-04-20 SageMaker Inference Recommenderの最新のアップデート](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/general-availability-amazon-codecatalyst/)
+  - SageMaker Python SDKによる推論リコメンダーの実行サポート
+  - 推論レコメンダーの操作性向上
+  - 推論リコメンダーの柔軟な運用を可能にする新APIを公開
+  - ロギングとメトリクスのためのAmazon CloudWatchとのより深い統合
 - [2023-04-25 ローカルMLコードのリモートジョブへの変換を高速化](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-sagemaker-local-ml-code-conversion-jobs/)
   - SageMaker Python SDKを使って、作成したローカルMLコードを、依存関係とともに、最小限のコード変更でトレーニングジョブとして実行できるように
   - コードにPythonデコレータを追加するだけで、そのコード、データセット、ワークスペース環境の設定を受け取り、SageMaker Trainingジョブとして実行

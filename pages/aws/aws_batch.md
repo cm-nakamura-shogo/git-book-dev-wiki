@@ -23,3 +23,8 @@
   - ジョブロールは、ジョブの実行時に実行環境やその他の AWS サービスにアクセスするために必要な権限を持つ IAM ロール
   - たとえば、ジョブが AWS Lambda を利用する場合、ジョブロールがその権限を提供する
   - コンテナの文脈だと、コンテナインスタンス側のロールであるため、こちら側にジョブ毎に適切な権限を割り当てる
+
+## Update
+
+- [2023-07-14 AWS Batch on AWS FargateがCLI/SDKでLinux ARM64とWindows x86コンテナをサポートするように](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-batch-fargate-linux-arm64-windows-x86-containers-cli-sdk/)
+  - Gravitonが使えるためよりコスパが良い

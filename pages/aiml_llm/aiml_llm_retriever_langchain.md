@@ -96,3 +96,14 @@
 
 - 公式ツイート
   - https://twitter.com/langchainai/status/1674138461291556866
+
+### [2023-07-10 「LangChainを使ってChatGPTの機能を拡張してみた ~過去の会話やGoogle検索結果を活用して自然な応答を生成する方法~」というタイトルで登壇しました #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/how-to-develop-apps-using-langchain-lanuch01/)
+
+- LangChain + Streamlitがよくまとまっている
+
+### [2023-07-12 つくりながら学ぶ！AIアプリ開発入門 - LangChain & Streamlit による ChatGPT API 徹底活用](https://zenn.dev/ml_bear/books/d1f060a3f166a5)
+
+- 普通にstreamlitのサンプルとして使える
+- load_summarize_chainのchain_typeの違い（stuffやmap_reduce）が分かる
+- Youtube用のDataloaderなど
+- streamlitはいろんなアプリ作れそうやけん、機械学習の具体的なイメージしてもらえるブログに使えそうやん

@@ -411,3 +411,5 @@
 - [2023-07-03 Amazon Personalize、最新のストリームデータを利用して一括レコメンデーションの品質を向上](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-personalize-quality-batch-recommendations/)
   - イベントトラッカー経由でストリーミングされた新しく記録されたイベントを使用して、モデルの再トレーニングを必要とせずにレコメンデーションを生成できるように
   - 以前のバッチ レコメンデーションでは、最後にモデルを再トレーニングした時点までのインタラクションのみが考慮されていた
+- [2023-07-14 Personalizeでは、既存のスキーマにカラムを追加できるようになり、データセットの変更が容易に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-personalize-add-columns-existing-datasets/)
+  - 便利そうだが、古いデータはどのように扱われるんやろ

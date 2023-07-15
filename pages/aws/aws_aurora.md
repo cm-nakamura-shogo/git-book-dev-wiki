@@ -16,3 +16,8 @@ v1->v2によりVPC外からパブリックアクセスが可能となった。�
 ### [2023-05-13 Amazon Aurora が Graviton3 搭載インスタンス(R7g)をサポートしました | DevelopersIO](https://dev.classmethod.jp/articles/aurora-graviton3-r7g/)
 
 - 値上げ分を上回る 高性能なDBとの評価
+
+### [2023-07-13 Aurora PostgreSQLがベクトル・ストレージと類似性検索のためにpgvectorをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-aurora-postgresql-pgvector-vector-storage-similarity-search/)
+
+- pgvectorは、Amazon Bedrockや Amazon SageMakerなどのエンベッディングを保存し、検索することを可能にする
+- Aurora Machine Learningにも言及

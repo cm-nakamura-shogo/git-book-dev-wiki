@@ -9,7 +9,6 @@
 
 - スキーマからSQLを生成している面白い事例
 
-
 ### [2023-04-11 LlamaIndexの検証機能 ResponseとSourceをGPT-4に評価させて正しいかを判断する](https://twitter.com/jerryjliu0/status/1645451897372024832)
 
 - 以下のコード例によればGPT-4に検証させている様子（つまりGPT-4のAPIが使えない場合は使えない機能）
@@ -160,3 +159,11 @@
   - [https://twitter.com/jerryjliu0/status/1674077742869147648](https://twitter.com/jerryjliu0/status/1674077742869147648)
 - 公式ツイート
   - [https://twitter.com/llama_index/status/1674075533548871681](https://twitter.com/llama_index/status/1674075533548871681)
+
+### [2023-07-02 Faiss Readerを使って、クエリに類似したノードのみのインデックスを作成する | DevelopersIO](https://dev.classmethod.jp/articles/faiss-reader-index-only-similar-to-query/)
+
+- 単純に比較したいのであれば、VectorStoreIndexでStorageContextのVectorStoreにFaissVectorStoreを指定する方法もありかも
+
+### [2023-07-05 LlamaIndex 0.7.0 の新機能｜npaka](https://note.com/npaka/n/nd38a5583c34a)
+
+- ResponseSynthesizerがきちんと設計されたのはデカい。
