@@ -98,6 +98,7 @@
   - 多言語用の新トークナイザーが使われている
 - [2023-07-14 日本語対応が大きく強化](https://twitter.com/blinkdl_ai/status/1679816885695807489)
 - [2023-07-15 Google Colab で RWKV-4-World-JPNtuned を試す - ChatRWKV版｜npaka](https://note.com/npaka/n/n7c89a8df7a8d)
+- [2023-07-16 rwkv.cpp を試す｜npaka](https://note.com/npaka/n/n9ffb39a1c32f)
 
 ## SpikeGPT
 

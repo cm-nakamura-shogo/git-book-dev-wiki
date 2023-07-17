@@ -10,3 +10,5 @@
   - pgvectorやっぱり速度面で難があるんやな
 - [2023-07-11 ベクトル検索で「以外」や「数字の大小」を試してみた | DevelopersIO](https://dev.classmethod.jp/articles/vector-search-except-and-numerical-big-small/)
   - 有用記事。Embeddingsについては考察の余地があるな。
+- [2023-07-16 ベクトル検索で欲しい情報が得られないときの問題点と改良方法を考えてみた | DevelopersIO](https://dev.classmethod.jp/articles/problem-and-improve-methods-of-vector-search)
+  - 山本さんのまとめ

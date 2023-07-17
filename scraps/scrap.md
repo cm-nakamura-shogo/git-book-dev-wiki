@@ -79,7 +79,6 @@
 - [2020-05-11 データマネジメントが30分でわかる本](https://www.amazon.co.jp/dp/B085W4YSZJ)
 - [2023-06-14 ビジネスダッシュボード設計・実装ガイドブック 成果を生み出す](https://www.shoeisha.co.jp/book/detail/9784798177649)
 - [新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング (できるビジネス) | 唐木 元 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4844338722)
-- [『OpenAI GPT-4/ChatGPT/LangChain 人工知能プログラミング実践入門』 が発売になります。｜npaka](https://note.com/npaka/n/n4b0066c376f7)
 - [Googleを支える技術 ……巨大システムの内側の世界：書籍案内｜技術評論社](https://gihyo.jp/book/2008/978-4-7741-3432-1)
 - [O'Reilly Japan - 初めてのTypeScript](https://www.oreilly.co.jp/books/9784814400362/)
 - [QDくん⚡️AI関連の無料教材紹介さんはTwitterを使っています: 「スキルアップAI社のPython入門講座が期間限定で無料になっている。講義動画の他、スライドpdfやNotebookをDL可 機械学習のためのPython入門講座 https://t.co/tlGZkA89tW ・実行環境の整備 ・Python基礎文法 ・numpy ・pandas ・matplotlib ・seaborn ・データの前処理 ・機械学習モデルの構築と評価 https://t.co/6MyXBaaOkx」 / Twitter](https://twitter.com/developer_quant/status/1662092878502588416?s=12&t=0nszgXsDXAd-L4WiCutIWg)
@@ -91,51 +90,7 @@
 
 ## dev
 
-- manage
-  - [私の仕事推進チェックリスト | DevelopersIO](https://dev.classmethod.jp/articles/shigoto-umaku-ittenai-to-omotta-toki-ni-miru/)
-  - [ところてんさんはTwitterを使っています: 「現代のビジネス、整合性のある意思決定や設計をするには「一人の人間の頭にすべての情報が詰まっている」ということにたいする価値が爆増していて、 これが分業によるワークライフバランスと激烈に相性が悪いという問題がある」 / Twitter](https://twitter.com/tokoroten/status/1679881104017494018)
-  - [スクラムチームと伍(キングダム) – SUZ-LAB](https://media.suz-lab.co.jp/2020/08/17/scrum-team-and-five/)
-  - [高いパフォーマンスを発揮する組織 - Amazon ピザ 2 枚チーム | AWS Executive Insights](https://aws.amazon.com/jp/executive-insights/content/amazon-two-pizza-team/)
-  - [リモート開発を助ける「思いやりのある文章」の書き方 - ROUTE06 Tech Blog](https://tech.route06.co.jp/entry/2023/06/27/172131)
-  - [プロダクトが大きくなると、なぜ生産性は下がるのか？　『Team Topologies』から読み解く、「認知負荷」という考え方 - ログミーTech](https://logmi.jp/tech/articles/328828)
-  - [プロジェクトとメンバーWinWinが最高！プロジェクトで成長させるための取り組みをお話しします | DevelopersIO](https://dev.classmethod.jp/articles/introspection_and_grow_in_projects/)
-  - [フィーチャーフラグを管理するためのOpenFeature | フューチャー技術ブログ](https://future-architect.github.io/articles/20230621a/)
-  - [でいじさんはTwitterを使っています: 「GitLabの人は毎度いいこと言うなと思いながら読んでる。情報収集と決断をわけるべし。情報を集めたら、DRI(directly responsible individual)が決断すべし。情報を集めた上なら決断は多数決じゃなくても良い。DRIは別に皆に説明しなくても良い。などなど。 https://t.co/cxoNhQCODM」 / Twitter](https://twitter.com/daisy1754/status/1665505586178412544?s=12&t=0nszgXsDXAd-L4WiCutIWg)
-  - [ばんくし王さんはTwitterを使っています: 「最初雑談長いけど結構良かった。EMないしマネジメントはMPを使う故にいきなりなるとしんどい事もある。 https://t.co/YAPinyY3Mg」 / Twitter](https://twitter.com/vaaaaanquish/status/1665661803219636226?s=12&t=0nszgXsDXAd-L4WiCutIWg)
-  - [1/3「Team Topologies Study 30分で分かった気になるチームトポロジー」吉羽 龍太郎 | エンジニアの生き様をウォッチするメディア](https://pr.forkwell.com/event/team-topologies-study-01-01/)
-  - [ゆめみにおける、「マネージャーを置かない」デザイン組織設計について｜Cocoda](https://cocoda.design/lilynonnon/p/pe9a655210921)
-  - [なぜ私が議事録を書くのか？あなたが議事録を書く理由について解説 | DevelopersIO](https://dev.classmethod.jp/articles/why_write_minutes/)
-  - [2022-01-04 【挫折克服】目標達成・習慣化したいならIf-Thenプランニング | フォームズのブログ](https://blog.formzu.com/if_then_planning)
-  - [2023-05-01 技術調査の結果を表にまとめる際のコツについて考えてみた | DevelopersIO](https://dev.classmethod.jp/articles/summarize-technical-investigation-results-as-table-for-explanation/)
-  - [2023-04-28 要件定義とはそもそも何か - Speaker Deck](https://speakerdeck.com/haru860/yao-jian-ding-yi-tohasomosomohe-ka)
-  - [2023-04-24 【議事録の構成も】議事録後に確認すべきチェック観点28選を解説！ | DevelopersIO](https://dev.classmethod.jp/articles/how_write_minutes/)
-
-- python
-  - [Python3.12からPEP695-Type Parameter Syntax(型引数構文)が導入され、型変数を使ったクラスや関数の定義が大きく変わる - Qiita](https://qiita.com/junkmd/items/1aa7be17401cfebab92d)
-  - [FastAPIがPydantic v2対応したので、V2移行のポイントを紹介する(意外と簡単)](https://zenn.dev/tk_resilie/articles/fastapi0100_pydanticv2)
-  - [Python3.12の新機能ハイライト](https://zenn.dev/yosemat/articles/3e01d9d6a2d80c)
-  - [pytestとmotoを利用してAWSサービスのmockを使ったテストをしてみる | DevelopersIO](https://dev.classmethod.jp/articles/pytest-moto-aws-service-mock/)
-  - [Python：メインページ - リファレンス メモ](https://cercopes-z.com/Python/index.html)
-  - [Pythonの相対インポートで上位ディレクトリ・サブディレクトリを指定 | note.nkmk.me](https://note.nkmk.me/python-relative-import/)
-  - [【Python】__str__と__repr__の使い方｜ゆうまるブログ](https://yumarublog.com/python/str-repr/)
-  - [ダミーファイルを生成するfaker-fileを使ってみた | DevelopersIO](https://dev.classmethod.jp/articles/faker-file-for-generating-dummy-files/)
-  - [[Python] pip installが依存関係を解決する挙動について調べてみた | DevelopersIO](https://dev.classmethod.jp/articles/pip-requirements-resolve-dependency/)
-  - [Python で学ぶ実践的なドメイン駆動設計とレイヤードアーキテクチャ / DDD and Onion Architecture in Python - Speaker Deck](https://speakerdeck.com/iktakahiro/ddd-and-onion-architecture-in-python)
-  - [Awesome Fastapi (mjhea0/awesome-fastapi) Overview - Track Awesome List](https://www.trackawesomelist.com/mjhea0/awesome-fastapi/readme/)
-  - [2023-05-08 ラズパイにカメラモジュールにセットしてPythonで写真や動画を撮る | DevelopersIO](https://dev.classmethod.jp/articles/raspberrypi-camera-freenove/)
-
-- frontend
-  - [CSS・TypeScriptの相性が抜群。vanilla-extractが最高のCSS開発体験をくれた](https://zenn.dev/moneyforward/articles/vanilla-extract)
-  - [Webアプリを個人開発した時に使用した便利なJavaScriptのライブラリを5つ紹介する - Qiita](https://qiita.com/hayaharu3220/items/1569d466db5f61fd5e8a)
-  - [【TypeScript】超実践的テクニック集【Reactなし】 - Qiita](https://qiita.com/ment_RE/items/9387b47dbef6433f6637)
-  - [Panda CSS - Chakra UI の Zero Runtime CSS フレームワーク](https://zenn.dev/cybozu_frontend/articles/panda-is-coming)
-  - [React/Next によるアプリケーション開発のこれから - Speaker Deck](https://speakerdeck.com/koba04/next-niyoruapurikesiyonkai-fa-nokorekara)
-  - [次世代のCSS in JS、Panda CSSをNext.js Appルーターで使用する](https://zenn.dev/a_da_chi/articles/725ba2cd4ce358)
-  - [N予備校とWebフロントエンドの新陳代謝 / iCARE Dev Meetup #30 - Speaker Deck](https://speakerdeck.com/berlysia/icare-dev-meetup-number-30)
-  - [TypeScriptとVitestでユニットテストしてみた！ | DevelopersIO](https://dev.classmethod.jp/articles/ts-and-vitest-unittest/)
-  - [世のフロントエンドエンジニアにApollo Clientを布教したい - Qiita](https://qiita.com/seya/items/26c8a0dc549a10efcdf8)
-
-- AWS
+- aws
   - [Amazon EventBridge Pipesを使ってプロデューサー/コンシューマー型メッセージ処理のパイプラインを簡略化しよう #reinvent | DevelopersIO](https://dev.classmethod.jp/articles/consistent-consumer-pipelining-with-eventbridge-pipes/)
   - [[AWS Step Functions] ステートマシンが無限ループして148ドルも課金が発生した話 | DevelopersIO](https://dev.classmethod.jp/articles/aws-stepfunctions-state-machine-looped-endlessly-causing-148-dollars-billing/)
   - [EC2 Instance Connect Endpoint経由でRDSに接続してみた | DevelopersIO](https://dev.classmethod.jp/articles/how-to-connect-rds-instance-via-eic-endpoint/)
@@ -192,11 +147,11 @@
   - [のんピ / non-97 / ブログ狂中年卍さんはTwitterを使っています: 「自分流AWS基本設計書の目次書いてみた 基本的にはIPAの非機能要求グレードを参考にしてみたけど、他に項目あるかな?? この後いそいそと本文書いていこっと https://t.co/KDhm0qtluM」 / Twitter](https://twitter.com/non____97/status/1344216072681971713)
   - [Proxy SwitchyOmega - Chrome ウェブストア](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
   - [2019-12-16 副作用と参照透過性と冪等性を理解して、テストでドメインを磨く - Qiita](https://qiita.com/suzuki-hoge/items/893605555cae2014641a)
-  - [2023-05-05 だれでもAIメーカーの技術スタックとか](https://zenn.dev/catnose99/scraps/54456f57950eb8)
   - [2020-06-01 Gmailアドレスを複数作成するためのエイリアス設定方法｜Office Hack](https://office-hack.com/gmail/gmail-address-multiple/)
   - [2023-05-05 [Slack API] Bolt for JavaScript を使用した Getting Started を試してみた | DevelopersIO](https://dev.classmethod.jp/articles/slack-api-bolt-js-getting-start/)
   - [2023-04-17 [レポート] サーバーレスで作る共同編集サービス #devio_day1 #sub2 | DevelopersIO](https://dev.classmethod.jp/articles/developersio-day-one-collaborative-service-with-serverless/)
   - [2023-05-01 Google ColaboratoryでSeleniumを使うための設定方法 | DevelopersIO](https://dev.classmethod.jp/articles/google-colaboratory-use-selenium/)
+  - [2023-05-05 だれでもAIメーカーの技術スタックとか](https://zenn.dev/catnose99/scraps/54456f57950eb8)
   - [2023-04-13 GoogleスプレッドシートでSlackに投稿するボタンを作成してみた | DevelopersIO](https://dev.classmethod.jp/articles/slack-post-message-from-gsheet/)
   - [2022-11-08 VSCode+Docker+Dev Containerを使って開発環境をコンテナに作ってみた](https://zenn.dev/harurow/articles/c903de5f479a57)
   - [2022-07-26 DevelopersIO 2022にて「OSSで始めるコンテナセキュリティ」というタイトルで登壇しました #devio2022 | DevelopersIO](https://dev.classmethod.jp/articles/developersio-2022-container-security-with-oss-tools/)
