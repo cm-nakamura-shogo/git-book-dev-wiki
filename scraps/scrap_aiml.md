@@ -1,6 +1,8 @@
 # AIML
 
 - [2013-12-29 ソシャゲ分析講座　基本編（その６）：ソシャゲの「4つのステージとKPI」を理解する - Real Analytics （リアルアナリティクス）](https://analytics.hatenadiary.com/entry/20131229/p1)
+- [2018-07-13 ソーシャルゲームの価値を上げるログデータのつくりかた](https://blog.applibot.co.jp/2018/07/13/collecting-high-quality-log-in-social-game/)
+  - ゲームにおけるログデータとは
 - [2019-12-01 Captumを試す](https://qiita.com/gorogoroyasu/items/819ce2613e72ac96d588)
   - 機械学習モデルを解釈し、理解するための手法をまとめたライブラリ
   - SHAPやGradCAMの話と思えばいい、その他の手法も多くある

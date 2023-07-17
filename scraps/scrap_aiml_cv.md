@@ -1,5 +1,22 @@
 # AIML
 
+## Books
+
+- 未登録
+
+## Contents
+
+- [minido/Gasyori100knock-1: 画像処理100本ノックして画像処理を画像処理して画像処理するためのもの For Japanese, English and Chinese](https://github.com/minido/Gasyori100knock-1)
+- BrainPad社の異常検知まとめ
+  - [【連載⓪】 工業製品画像のデータセットで不良品検知手法の検証をする【不良品検知ブログ】（目次）](https://blog.brainpad.co.jp/entry/2020/12/04/113000)
+  - [【連載①】画像に対する教師なし深層異常検知の基本手法【不良品検知ブログ】](https://blog.brainpad.co.jp/entry/2020/12/11/110000)
+  - [【連載②】パラメータを自動調整する深層距離学習 -Adacos-【不良品検知ブログ】](https://blog.brainpad.co.jp/entry/2020/12/24/123000)
+  - [【連載③】少量の学習データで機能する異常検知手法 -DifferNet-【不良品検知ブログ】](https://blog.brainpad.co.jp/entry/2021/01/15/110000)
+
+## Articles
+
+- [2020-05-14 MobileNetV2の転移学習](https://dev.classmethod.jp/articles/introduce-to-transfer-learning-by-tensorflow-for-beginner/)
+- [2022-01-10 YOLOXので自作データの学習](https://zenn.dev/opamp/articles/d3878b189ea256)
 - [2023-04-10 SparseFormer: 人間の視覚認識に基づいたスパースなプロセスへの挑戦](https://twitter.com/_akhaliq/status/1645278535878049792)
   - 現在の視覚ネットワークの多くは、画素やパッチなどの視覚単位を一律に処理する密なパラダイムに従っている
   - これを人間の疎な視覚認識をエンドツーエンドで模倣する手法
@@ -37,6 +54,8 @@
   - 国際学会CVPR2023に採択されたBidirectional Copy-Paste for Semi-Supervised Medical Image Segmentationについて解説
   - 提案された新しい半教師あり医療画像セグメンテーション手法はBCPはBidirectional Copy-Pasteの略
   - BCPは、ラベル付きデータとラベルなしデータを双方向にコピー＆ペーストすることで、未ラベルデータがラベル付きデータから包括的な共通の意味を学ぶように促すことが目的
+- [2023-05-10 Zero-shot Learning網羅的サーベイ：CLIPが切り開いたVision & Languageの新しい世界 - エクサウィザーズ Engineer Blog](https://techblog.exawizards.com/entry/2023/05/10/055218)
+  - 網羅的サーベイ
 - [2023-05-10 Metaが深度や熱、IMU信号を含めたマルチモーダルImageBindを公開](https://twitter.com/masahirochaen/status/1656176014714880003)
   - 「ImageBind」は、「画像」「テキスト」「音声」「深度(3D)」「熱」「IMU(慣性測定ユニット)」といった6つの異なるモダリティにまたがる共同埋め込みを学習
   - ロボット分野での活用が期待。

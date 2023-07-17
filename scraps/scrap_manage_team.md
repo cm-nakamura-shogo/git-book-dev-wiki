@@ -1,0 +1,113 @@
+# manage
+
+## Books
+
+- [2000-06-00 入門から応用へ　行動科学の展開―人的資源の活用](https://www.kinokuniya.co.jp/f/dsg-01-9784820116844)
+  - 大澤さんオススメ
+- [2000-10-01 まず、ルールを破れ すぐれたマネジャーはここが違う](https://honto.jp/netstore/pd-book_01941026.html)
+  - なゆゆオススメ
+- [2001-07-03 イノベーションのジレンマ 増補改訂版](https://www.amazon.co.jp/dp/4798100234)
+  - 岩瀬さんのSpeakerDeckで紹介
+- [2006-01-01 最高のリーダー、マネジャーがいつも考えているたったひとつのこと](https://www.amazon.co.jp/dp/4532312639)
+  - ハマコーさんオススメ
+- [2006-11-08 技術の創造と設計](https://www.amazon.co.jp/dp/4000052446)
+  - ところてんさんが言及していたので
+    - [https://twitter.com/tokoroten/status/762465213559910400](https://twitter.com/tokoroten/status/762465213559910400)
+- [2011-05-26 アート・オブ・コミュニティ ―「貢献したい気持ち」を繋げて成果を導くには (オライリー)](https://www.amazon.co.jp/dp/4873114950)
+  - 嵩原さん推奨図書
+- [2012-11-09 採用基準 地頭より論理的思考力より大切なもの](https://www.amazon.co.jp/dp/B00B42SX70)
+  - とよさきさんオススメ
+- [2014-07-30 コンサル一年目が学ぶこと](https://www.amazon.co.jp/dp/B00MA671WW)
+  - 社内での推奨図書
+- [2014-11-13 ファシリテーションの教科書](https://www.amazon.co.jp/dp/B00P28A5M8)
+  - elithのニュースレターから
+- [2015-01-24 世界はシステムで動く](https://www.amazon.co.jp/dp/4862761801)
+  - 岩瀬さんのSpeakerDeckで紹介
+    - [なぜ変化を起こすのが難しいのか？ - Speaker Deck](https://speakerdeck.com/iwashi86/the-reason-why-changing-organization-is-so-hard-what-i-thought-and-faced-for-more-than-several-years)
+- [2015-08-07 新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング（できるビジネス） - インプレスブックス](https://book.impress.co.jp/books/1114101132)
+- [2017-05-00 エラスティックリーダーシップ ― 自己組織化チームの育て方](https://www.oreilly.co.jp/books/9784873118024/)
+  - 大澤さんオススメ
+- [2018-02-07 カイゼン・ジャーニー たった1人からはじめて、「越境」するチームをつくるまで](https://www.amazon.co.jp/dp/4798153346)
+  - Belugaさんが勧めていた
+- [2018-07-19 Learn Better ― 頭の使い方が変わり、学びが深まる6つのステップ](https://www.amazon.co.jp/dp/4862762581)
+- [2018-11-22 LeanとDevOpsの科学](https://www.amazon.co.jp/dp/4295004901)
+  - ちいとぽ本の前提として
+- [2019-04-25 スーパーエンジニアへの道　技術リーダーシップの人間学](https://www.amazon.co.jp/dp/B09BDVP5BV)
+- [2019-09-17 ちいとぽ](https://www.amazon.co.jp/dp/4820729632)
+  - CADDi輪読会で題材になっていた。
+  - fukabori.fmを先に読んでも良いかも
+    - [69. チームトポロジー(前編) w/ miholovesq | fukabori.fm](https://fukabori.fm/episode/69)
+    - [70. チームトポロジー(後編) w/ miholovesq | fukabori.fm](https://fukabori.fm/episode/70)
+  - 読書会中。
+  - [読書メモ](../book/2019-09-17_team-topology.md)
+- [2020-05-20 SCRUM BOOT CAMP THE BOOK](https://www.amazon.co.jp/gp/product/B086GBXRN6)
+  - nagaseサンの本
+- [2021-11-10 「組織のネコ」という働き方](https://www.amazon.co.jp/dp/4798170232)
+  - 岩瀬さんのSpeakerDeckで紹介
+- [2021-11-29 だから僕たちは、組織を変えていける —やる気に満ちた「やさしいチーム」のつくりかた](https://www.amazon.co.jp/dp/4295406252)
+  - 伊豫谷さんオススメ
+- [2021-12-23 問いかけの作法 チームの魅力と才能を引き出す技術](https://www.amazon.co.jp/dp/4799328085)
+  - 伊豫谷さんと髙野さんオススメ
+- [2022-08-26 エンジニアリングマネージャーのしごと](https://www.oreilly.co.jp/books/9784873119946/)
+  - 読書会で読了。正直生かせるかなーと思ってしまったな。
+  - [読書メモ](../book/2022-08-26_engineering-manager.md)
+- [2022-11-04 「技術書」の読書術](https://www.amazon.co.jp/dp/4798171549)
+  - ベースラインとして読んでおきたい
+- [2022-11-21 人を選ぶ技術](https://www.amazon.co.jp/dp/4866802065)
+  - ばんくしさん推奨図書
+    - 人の成長意欲を分解して、どうやって面接で見るか書かれている。
+    - 前半はエモだが後半でちゃんと構造化してくれるのでエンジニアでも読みやすい。
+    - 会社の面接に出る人全員に読んでもらうよう薦めています。
+- [2023-01-22 共に変容するファシリテーション――５つの在り方で場を見極め、10の行動で流れを促す](https://www.amazon.co.jp/dp/4862763200)
+  - 長南さんオススメ
+- [2023-03-09 エンジニアのためのマネジメント入門](https://www.amazon.co.jp/dp/4297133342)
+  - 関連
+    - [マネジメントの知識がドメイン駆動設計を加速する - ソフトウェア設計を考える](https://masuda220.hatenablog.com/entry/2023/06/12/124719)
+  - DDDとの関連もあって面白いかも
+- [2023-05-03 スタッフエンジニア　マネジメントを超えるリーダーシップ](https://www.amazon.co.jp/dp/429607055X)
+  - devioの書評
+    - [[書評]シニアエンジニアから先のキャリアを考える「スタッフエンジニア マネジメントを超えたリーダーシップ」 | DevelopersIO](https://dev.classmethod.jp/articles/book-review-staff-engineer/)
+
+## Contents
+
+- [高いパフォーマンスを発揮する組織 - Amazon ピザ 2 枚チーム | AWS Executive Insights](https://aws.amazon.com/jp/executive-insights/content/amazon-two-pizza-team/)
+
+## Articles
+
+- [2018-05-07 デスマーチが起きる理由 - ３つの指標](https://gist.github.com/voluntas/9c1d9d51e86a853fed6889f743a12145)
+- [2020-08-17 スクラムチームと伍(キングダム) – SUZ-LAB](https://media.suz-lab.co.jp/2020/08/17/scrum-team-and-five/)
+- [2022-01-04 【挫折克服】目標達成・習慣化したいならIf-Thenプランニング | フォームズのブログ](https://blog.formzu.com/if_then_planning)
+- [2022-04-28 なぜ私が議事録を書くのか？あなたが議事録を書く理由について解説 | DevelopersIO](https://dev.classmethod.jp/articles/why_write_minutes/)
+- [2022-05-08 1/3「Team Topologies Study 30分で分かった気になるチームトポロジー」吉羽 龍太郎 | エンジニアの生き様をウォッチするメディア](https://pr.forkwell.com/event/team-topologies-study-01-01/)
+- [2022-10-18 会議の目的は「課題を議論すること」ではない　参加者の「迷い」をなくす、会議のゴールの伝え方 - ログミーBiz](https://logmi.jp/business/articles/327653)
+  - これは良かったぞ。
+- [2023-03-08 プロダクトが大きくなると、なぜ生産性は下がるのか？　『Team Topologies』から読み解く、「認知負荷」という考え方 - ログミーTech](https://logmi.jp/tech/articles/328828)
+- [2023-04-02 エンジニア組織の熱量とその重要性](https://fukabori.fm/episode/93)
+  - 全編勉強になった。
+  - 火を絶やさないようなタイミング、後押しは確かに大事。
+- [2023-04-03 コードレビューを爆速にするための組織づくり](https://zenn.dev/hacobell_dev/articles/code-review-blocker)
+  - Working Agreementは大事やな。
+    - チームメンバーはレビュー依頼を受けたら、それを優先タスクとする
+    - レビューでコメントがあれば、レビュイーは返信と修正を優先タスクとする。意思疎通に時間がかかるようであればペアレビュー、モブプロを検討する
+    - レビュイーはレビュアーにレビューの催促を Slack などでしてもよい
+    - 当日にレビューをする時間が取れない場合、デイリースクラムなどで告知し、代わりにレビューをするメンバーを相談する
+  - 参照されいるラベルを付けるのも参考となるかも。
+- [2023-04-10 エンジニアとビジネスの距離感の難しさ](https://fukabori.fm/episode/93)
+  - 前半は良かった。
+  - 後半はまあうーんという感想
+- [2023-04-24 【議事録の構成も】議事録後に確認すべきチェック観点28選を解説！ | DevelopersIO](https://dev.classmethod.jp/articles/how_write_minutes/)
+- [2023-05-01 技術調査の結果を表にまとめる際のコツについて考えてみた | DevelopersIO](https://dev.classmethod.jp/articles/summarize-technical-investigation-results-as-table-for-explanation/)
+- [2023-05-26 ゆめみにおける、「マネージャーを置かない」デザイン組織設計について｜Cocoda](https://cocoda.design/lilynonnon/p/pe9a655210921)
+- [2023-06-05 GitLabのMaking Decisions](https://twitter.com/daisy1754/status/1665505586178412544)
+  - GitLabの人は毎度いいこと言うなと思いながら読んでる。
+  - 情報収集と決断をわけるべし。情報を集めたら、DRI(directly responsible individual)が決断すべし。
+  - 情報を集めた上なら決断は多数決じゃなくても良い。
+  - DRIは別に皆に説明しなくても良い。などなど。
+- [2023-06-05 EMが必要だからやる から EMになりたい へ](https://twitter.com/vaaaaanquish/status/1665661803219636226)
+  - 最初雑談長いけど結構良かった。
+  - EMないしマネジメントはMPを使う故にいきなりなるとしんどい事もある。
+- [2023-06-27 リモート開発を助ける「思いやりのある文章」の書き方 - ROUTE06 Tech Blog](https://tech.route06.co.jp/entry/2023/06/27/172131)
+- [2023-06-28 プロジェクトとメンバーWinWinが最高！プロジェクトで成長させるための取り組みをお話しします | DevelopersIO](https://dev.classmethod.jp/articles/introspection_and_grow_in_projects/)
+- [2023-07-07 私の仕事推進チェックリスト | DevelopersIO](https://dev.classmethod.jp/articles/shigoto-umaku-ittenai-to-omotta-toki-ni-miru/)
+- [2023-07-15 ビジネスとワークライフバランス](https://twitter.com/tokoroten/status/1679881104017494018)
+  - 現代のビジネス、整合性のある意思決定や設計をするには「一人の人間の頭にすべての情報が詰まっている」ということにたいする価値が爆増していて、 これが分業によるワークライフバランスと激烈に相性が悪いという問題がある

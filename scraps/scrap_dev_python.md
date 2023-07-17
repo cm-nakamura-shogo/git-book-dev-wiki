@@ -1,7 +1,21 @@
 # Python
 
+## Books
+
+- [2023-04-14 ハイパフォーマンスPython 第2版](https://www.oreilly.co.jp/blog/2023/03/1990_high_performance_python_2e.html)
+- [2023-03-25 ロバストPython](https://www.oreilly.co.jp//books/9784814400171/)
+  - [読書メモ](../book/2023-03-25_robust-python.md)
+
+## Contents
+
 - [Python：メインページ - リファレンス メモ](https://cercopes-z.com/Python/index.html)
 - [Awesome Fastapi (mjhea0/awesome-fastapi) Overview - Track Awesome List](https://www.trackawesomelist.com/mjhea0/awesome-fastapi/readme/)
+- 京都大学 プログラミング演習 Python 2021 (PDF形式の教科書)
+  - [本編](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/1/Version2021_10_08_01.pdf)
+  - [コラム編](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/2/Version2021_10_08_02.pdf)
+- [東京大学 Pythonプログラミング入門](https://utokyo-ipp.github.io/course/)
+
+## Atricles
 
 - [2019-07-19 Pythonの相対インポートで上位ディレクトリ・サブディレクトリを指定 | note.nkmk.me](https://note.nkmk.me/python-relative-import/)
 - [2021-10-16 Python で学ぶ実践的なドメイン駆動設計とレイヤードアーキテクチャ / DDD and Onion Architecture in Python - Speaker Deck](https://speakerdeck.com/iktakahiro/ddd-and-onion-architecture-in-python)
@@ -16,6 +30,7 @@
   - バックエンドを変えることで、整数型の欠損値を表現できるようになっている点は大きいかも
 - [2023-04-16 PythonのThreading Moduleについて](https://note.com/mega_gorilla/n/n101748d37b07)
   - 使い方に関するまとめ記事
+- [2023-04-18 JupyterにS3をブラウジングする拡張機能があるらしい](https://dev.classmethod.jp/articles/202304-jupyterhub_s3-md/)
 - [2023-05-07 onoderaさんはTwitterを使っています: 「polarsのvertical concatはcolumnsの順番も揃ってないといけないっぽい」 / Twitter](https://twitter.com/0verfit/status/1655151985988091905?s=12&t=0nszgXsDXAd-L4WiCutIWg)
 - [2023-05-08 ラズパイにカメラモジュールにセットしてPythonで写真や動画を撮る | DevelopersIO](https://dev.classmethod.jp/articles/raspberrypi-camera-freenove/)
 - [2023-06-27 [Python] pip installが依存関係を解決する挙動について調べてみた | DevelopersIO](https://dev.classmethod.jp/articles/pip-requirements-resolve-dependency/)
