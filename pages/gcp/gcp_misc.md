@@ -49,3 +49,14 @@
 - [2023-07-05 Cloud Runで1時間を超える長時間のジョブがサポート(プレビュー)](https://cloud.google.com/release-notes#July_05_2023)
   - 24時間らしい。
   - ```A single Cloud Run jobs task can now run for up to 24 hours.``````
+- [2023-07-17 Document AIのアップデート](https://cloud.google.com/release-notes#July_17_2023)
+  - Document AI WorkbenchのCustom Document Splitter(CDS)が、1つのファイル内で複数のドキュメントを分割・分類するための実運用ユースケースで一般的に利用できるように
+  - CDSは以下の機能をリリース
+    - CDSは、非同期/バッチ予測で最大1,000ページ、インポート、ラベリング、トレーニング、評価では最大200ページの文書をサポート
+    - 文書分割と分類のためのCDSモデル評価
+    - 複数のフォルダにまたがる文書をインポート時に一括ラベル付けすることで、CDSトレーニングデータセットをより迅速に準備可能に
+  - CDSの以下の機能強化をリリース
+    - 個々のページをサイド・バイ・サイドで表示しながら、文書全体の分割と分類をレビューできるようになり、ラベリングと評価のエクスペリエンスが向上
+    - エラーメッセージに文書名が使用されるようになり、トラブルシューティングが改善
+    - スキーマ名にハイフンを使用可能に
+  - またこのリリースにより、現在提供されているすべてのWorkbenchプロセッサ（Custom Document Extractor，Custom Document Classifier，Custom Document Splitter）がGAで利用可能に

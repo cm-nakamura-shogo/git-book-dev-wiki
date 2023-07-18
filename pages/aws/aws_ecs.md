@@ -88,26 +88,24 @@ Servie Discoveryと違ってDNSを使わず、サービス間の通信のメト�
 
 - [What are Savings Plans? - Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html)
 
-## 参考
-
-### Fargateのtopコマンドと設定値の矛盾
+## Fargateのtopコマンドと設定値の矛盾
 
 きちんと明確にプロファイルしたいならEC2を使うべき。
 freeコマンドでは基盤側の情報が採取されることもある。MemoryUtilizedの算出方法は非公開。
 
-### [[小ネタ]ECSのCPUUtilizationとCPUUtilizedは同じ指標？](https://dev.classmethod.jp/articles/ecs-cpuutilized-vs-cpuutilization/)
+## Articles
 
-### [2020-08-30 ALB と docker ヘルスチェックによる ECS の挙動について | Stuck inside](https://blog.msysh.me/posts/2020/08/behavior_of_ecs_by_alb_and_docker_health_check.html)
+- [2020-08-30 ALB と docker ヘルスチェックによる ECS の挙動について | Stuck inside](https://blog.msysh.me/posts/2020/08/behavior_of_ecs_by_alb_and_docker_health_check.html)
+- [2023-03-18 [小ネタ]ECSのCPUUtilizationとCPUUtilizedは同じ指標？](https://dev.classmethod.jp/articles/ecs-cpuutilized-vs-cpuutilization/)
+- [2023-05-17 [小ネタ]ECSタスクのタグ付けはタグの伝播元を設定しよう | DevelopersIO](https://dev.classmethod.jp/articles/ecs-using-tags/)
+- [2023-05-08 Amazon ECS Exec(aws ecs execute-command)を便利にするツール「sssh」 | DevelopersIO](https://dev.classmethod.jp/articles/sssh-ecs-exec-tool/)
 
-### [2023-05-17 [小ネタ]ECSタスクのタグ付けはタグの伝播元を設定しよう | DevelopersIO](https://dev.classmethod.jp/articles/ecs-using-tags/)
+## Updates
 
-### [2023-05-08 Amazon ECS Exec(aws ecs execute-command)を便利にするツール「sssh」 | DevelopersIO](https://dev.classmethod.jp/articles/sssh-ecs-exec-tool/)
-
-
-## アップデート
-
-### [2023-02-27 非アクティブなタスク定義リビジョンの削除をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/amazon-ecs-deletion-inactive-task-definition-revisions/)
-
-こちらも
-- [ついにAmazon ECSの不要なタスク定義が削除できるようになりました！](https://dev.classmethod.jp/articles/update-amazon-ecs-delete-inactive-task-definition/)
-- [Amazon ECS タスク定義のリビジョンが「削除」をサポートしました！](https://dev.classmethod.jp/articles/amazon-ecs-task-definition-deletion/)
+- [2023-02-27 非アクティブなタスク定義リビジョンの削除をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/02/amazon-ecs-deletion-inactive-task-definition-revisions/)
+  - こちらも
+  - [ついにAmazon ECSの不要なタスク定義が削除できるようになりました！](https://dev.classmethod.jp/articles/update-amazon-ecs-delete-inactive-task-definition/)
+  - [Amazon ECS タスク定義のリビジョンが「削除」をサポートしました！](https://dev.classmethod.jp/articles/amazon-ecs-task-definition-deletion/)
+- [2023-07-17 AWS FargateがSeekable OCIを使用してコンテナ起動の高速化を実現](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-fargate-container-startup-seekable-oci/)
+  - 公式ブログポストに沿えば使えるらしい
+    - [AWS Fargate Enables Faster Container Startup using Seekable OCI | AWS News Blog](https://aws.amazon.com/jp/blogs/aws/aws-fargate-enables-faster-container-startup-using-seekable-oci/)

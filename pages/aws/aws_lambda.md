@@ -138,3 +138,9 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
   - Amazon SQS、AWS Lambda、Amazon SNS間の再帰的な呼び出しを16回行った時点で停止する
   - 関数が Amazon SQS または Amazon SNS にイベントを送信すると、Lambda はそのイベントに基づいて関数が呼び出された回数を追跡
   - 同じトリガーイベントによって関数が16回以上起動された場合、Lambdaは次の起動を停止し、設定されていればデッドレターキューまたは障害発生時にイベントを送信
+- [2023-07-17 AWS LambdaとAmazon EventBridge Pipesがフィルタリング機能を強化](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-lambda-eventbridge-pipes-enhanced-filtering/)
+  - 以下のフィルタリング機能などをサポート
+    - 値の末尾の文字に対するマッチング (サフィックスフィルタリング)
+    - 大文字小文字の区別を無視する (equals-ignore-case)
+    - 複数のフィールドにまたがる条件が真である場合に単一のルールでマッチングする (OR マッチング) 
+  - また数値の境界を従来の-1e9～1e9から-5e9～5e9に増加
