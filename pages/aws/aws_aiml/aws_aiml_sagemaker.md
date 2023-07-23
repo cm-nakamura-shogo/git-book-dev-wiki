@@ -174,6 +174,12 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
   - Ground Truth の自動ラベリング機能の使い方を紹介
 - [2023-07-05 SageMaker Jumpstartを使用した車両故障確率の予測](https://aws.amazon.com/jp/blogs/machine-learning/predict-vehicle-fleet-failure-probability-using-amazon-sagemaker-jumpstart/)
 - [2023-07-11 SageMaker トレーニングワークロード用の @remote デコレーターを使用してプライベートリポジトリにアクセス](https://aws.amazon.com/jp/blogs/machine-learning/access-private-repos-using-the-remote-decorator-for-amazon-sagemaker-training-workloads/)
+- [2023-07-18 Amazon SageMakerを使用したスパムメール検知器の構築](https://aws.amazon.com/jp/blogs/machine-learning/build-an-email-spam-detector-using-amazon-sagemaker/)
+- [2023-07-19 自分のデータを使って要約と質問応答のための生成的AI基礎モデルを使用する](https://aws.amazon.com/jp/blogs/machine-learning/use-a-generative-ai-foundation-model-for-summarization-and-question-answering-using-your-own-data/)
+  - LangChainでRAGを実現する複雑めなアーキテクチャ
+- [2023-07-20 Amazon SageMakerを使用して、カスタムアンサンブルのトレーニング、チューニング、デプロイを効率化](https://aws.amazon.com/jp/blogs/machine-learning/efficiently-train-tune-and-deploy-custom-ensembles-using-amazon-sagemaker/)
+- [2023-07-21 Amazon SageMakerの地理空間機能を使ってネズミの侵入を分析](https://aws.amazon.com/jp/blogs/machine-learning/analyze-rodent-infestation-using-amazon-sagemaker-geospatial-capabilities/)
+- [2023-07-21 Amazon SageMaker ドメインのアクセス認証がAWS IAM Identity Centerの場合、ユーザー同士でファイル共有する方法2選 | DevelopersIO](https://dev.classmethod.jp/articles/amazon-sagemaker-aws-iam-identity-center-file-share/)
 
 ## Updates
 
@@ -257,3 +263,8 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-06-30 Amazon SageMaker Feature StoreがオンラインストアのTTLをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-feature-store-ttl-online-store/)
 - [2023-06-30 Amazon SageMaker Canvasが Apache Parquet ファイル形式をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-sagemaker-canvas-apache-parquet-file-format/)
 - [2023-07-05 Amazon SageMaker Model Cards と Amazon SageMaker Model Registry の統合を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-model-cards-model-versions-registry/)
+- [2023-07-18 Meta社のLlama 2ファンデーションモデルがAmazon SageMaker JumpStartに登場](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/llama-2-foundation-models-meta-amazon-sagemaker-jumpstart/)
+  - 公式ブログ
+    - [Llama 2 foundation models from Meta are now available in Amazon SageMaker JumpStart | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/llama-2-foundation-models-from-meta-are-now-available-in-amazon-sagemaker-jumpstart/)
+- [2023-07-19 Amazon SageMaker モデルカードとモデルレジストリの統合を発表](https://aws.amazon.com/jp/blogs/machine-learning/integrate-amazon-sagemaker-model-cards-with-the-model-registry/)
+- [2023-07-20 SageMakerフィーチャーストアのクロスアカウントサポート](https://awsapichanges.info/archive/changes/00fc0c-api.sagemaker.html)

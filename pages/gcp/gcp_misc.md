@@ -60,3 +60,17 @@
     - エラーメッセージに文書名が使用されるようになり、トラブルシューティングが改善
     - スキーマ名にハイフンを使用可能に
   - またこのリリースにより、現在提供されているすべてのWorkbenchプロセッサ（Custom Document Extractor，Custom Document Classifier，Custom Document Splitter）がGAで利用可能に
+- [2023-07-18 Document AIのアップデート](https://cloud.google.com/release-notes#July_18_2023)
+  - Form Parser (pretrained-form-parser-v2.0-2022-11-10)の以下の機能がGA
+    - 一般的なフィールド抽出：ドキュメントから11種類のエンティティを抽出可能
+    - チェックボックス検出の強化
+    - 200以上の言語をカバーする国際化（i18n）サポート
+    - アップグレードされたキーと値のペア（KVP）検出モデル
+  - Form Parser  v2.1 (pretrained-form-parser-v2.1-2023-06-26)がパブリックプレビューに
+- [2023-07-20 Generative AI App Builderのアップデート](https://cloud.google.com/release-notes#July_20_2023)
+  - Enterprise Search : Citations
+    - サマリーの引用がプレビューで利用できるように。これにより要約の特定の文章がどの検索結果から引用されているかを示します。
+  - Enterprise Search : Ignore adverserial and non-summary seeking queries
+    - 敵対的なクエリやサマリーを求めないクエリがレスポンスにサマリーを含めないように検索リクエストを設定できるように(プレビュー)
+  - Enterprise Search : Personalize
+    - 「Personalize」機能の名称を「Recommendations」に変更。これはネーミングのみの変更で製品の機能に変更はありません。

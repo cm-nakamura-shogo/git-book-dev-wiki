@@ -27,7 +27,8 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
 - BQ内部の仕組み
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/e55a6f8822b6528ff47797936e40faedc7d047ac.pdf
 
-- [BigQuery の正規表現関数の使いどころを自分なりに整理してみた | DevelopersIO](https://dev.classmethod.jp/articles/bigquery-regexp-usage/)
+- [2023-07-07 BigQuery の正規表現関数の使いどころを自分なりに整理してみた | DevelopersIO](https://dev.classmethod.jp/articles/bigquery-regexp-usage/)
+- [2023-07-22 BigQueryでJSONLのデータを読み込む外部テーブルを作ってみた | DevelopersIO](https://dev.classmethod.jp/articles/create-bigquery-jsonl-external-table/)
 
 ## Updates
 
@@ -89,3 +90,17 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
     - TRANSFORM句を使用するモデルをTensorFlow SavedModel形式にエクスポート
     - TRANSFORM句で学習したモデルをVertex AIやローカルに配置することもできるように
   - 時系列予測のためのカスタムホリデーモデリングがプレビューに
+- [2023-07-19 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_19_2023)
+  - BigQueryは検索インデックスを使用して、等置演算子（=）、IN演算子、LIKE演算子、またはSTARTS_WITH関数を含む一部のクエリを最適化し、インデックス付きデータと文字列リテラルを比較できるように
+- [2023-07-20 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_19_2023)
+  - BigQuery MLでARIMA_PLUS_XREGモデルによる多変量時系列予測が一般に利用可能に
+    - この機能を使用すると、追加の特徴列を使用して時系列予測を実行できます
+  - BigQuery MLは、モデルの説明可能性を高める新しいExplainable AI機能を導入
+    - ML.EXPLAIN_FORECAST関数をARIMA_PLUS_XREGモデルで使用できるようになりました。
+    - 更新されたML.EXPLAIN_FORECAST関数を使用して、時系列予測モデル（ARIMA_PLUSとARIMA_PLUS_XREGの両方）の休日に対する休日効果の説明を得ることができます。
+    - ML.GLOBAL_EXPLAIN関数をAutoML Tablesモデルで使用して、グローバルなモデルの説明可能性を得ることができるようになりました。
+    - Boosted Tree モデルと Random Forest モデルで、approx_global_feature_contrib オプションと approx_feature_contrib オプションが使用可能に
+      - approx_global_feature_contrib : モデル学習で大域的な特徴寄与計算に高速近似を使用する
+      - approx_feature_contrib : モデル推論で局所的な特徴寄与計算に高速近似を使用する
+  - 公式ブログ
+    - [Customized holiday modeling with BigQuery ML forecasting | Google Cloud Blog](https://cloud.google.com/blog/products/data-analytics/customized-holiday-modeling-with-bigquery-ml-forecasting/?hl=en)

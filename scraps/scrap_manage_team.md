@@ -67,6 +67,7 @@
 - [2023-05-03 スタッフエンジニア　マネジメントを超えるリーダーシップ](https://www.amazon.co.jp/dp/429607055X)
   - devioの書評
     - [[書評]シニアエンジニアから先のキャリアを考える「スタッフエンジニア マネジメントを超えたリーダーシップ」 | DevelopersIO](https://dev.classmethod.jp/articles/book-review-staff-engineer/)
+- [2023-09-11 GitLabに学ぶ 世界最先端のリモート組織のつくりかた](https://www.amazon.co.jp/dp/4798179426)
 
 ## Contents
 

@@ -105,6 +105,8 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
 - [2023-02-28 特定のセキュリティグループが関連づけられているLambda関数をワンライナーで取得してみた](https://dev.classmethod.jp/articles/sg-used-by-lambda/)
 - [2023-01-16 CDKでLambdaからSlack通知する方法](https://dev.classmethod.jp/articles/awscdk-costexplorer-notify-to-slack/)
 - [2023-04-26 AWS Lambda のレスポンスストリーミングを使って API Gateway + Lambda 構成で 10 MB のレスポンスを生成してみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-lambda-response-streaming-api-gateway/)
+- [2023-07-19 DevelopersIO 2023 にて「AWS Lambdaは俺が作った」というタイトルで発表しました #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/developersio-2023-lambda-was-made-by-me/)
+  - Firecrakerについてちょっと分かる
 
 ## Update
 
@@ -138,6 +140,7 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
   - Amazon SQS、AWS Lambda、Amazon SNS間の再帰的な呼び出しを16回行った時点で停止する
   - 関数が Amazon SQS または Amazon SNS にイベントを送信すると、Lambda はそのイベントに基づいて関数が呼び出された回数を追跡
   - 同じトリガーイベントによって関数が16回以上起動された場合、Lambdaは次の起動を停止し、設定されていればデッドレターキューまたは障害発生時にイベントを送信
+  - [[アップデート] Lambda 関数が再帰ループを検出して停止するようになりました | DevelopersIO](https://dev.classmethod.jp/articles/detecting-and-stopping-recursive-loops-in-aws-lambda-functions/)
 - [2023-07-17 AWS LambdaとAmazon EventBridge Pipesがフィルタリング機能を強化](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-lambda-eventbridge-pipes-enhanced-filtering/)
   - 以下のフィルタリング機能などをサポート
     - 値の末尾の文字に対するマッチング (サフィックスフィルタリング)

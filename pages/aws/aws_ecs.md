@@ -109,3 +109,4 @@ freeコマンドでは基盤側の情報が採取されることもある。Memo
 - [2023-07-17 AWS FargateがSeekable OCIを使用してコンテナ起動の高速化を実現](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-fargate-container-startup-seekable-oci/)
   - 公式ブログポストに沿えば使えるらしい
     - [AWS Fargate Enables Faster Container Startup using Seekable OCI | AWS News Blog](https://aws.amazon.com/jp/blogs/aws/aws-fargate-enables-faster-container-startup-using-seekable-oci/)
+  - [[アップデート]全 AWS Fargate 利用者必見！ Seekable OCI インデックスによりコンテナの起動が大幅に高速化するようになりました | DevelopersIO](https://dev.classmethod.jp/articles/update-aws-fargate-seekable-oci/#toc-13)

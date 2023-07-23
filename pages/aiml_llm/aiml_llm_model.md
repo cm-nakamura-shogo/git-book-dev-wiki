@@ -236,3 +236,10 @@
   - 「xGen」は、「Salesforce」が開発した、8Kの文脈をあつかえる7BのローカルLLM
   - 長い文脈をあつかう対話、質問応答、要約が同サイズのモデルと比べ大きく改善されている
   - 日本語も少しできますが、英語の方が精度が高い
+
+## Llama 2
+
+- [2023-07-19 商用可能な Llama-2 がリリース](https://twitter.com/_kaiinui/status/1681341214896058368)
+- [2023-07-19 ggml版が早速でている](https://huggingface.co/TheBloke)
+- [2023-07-19 llama2のセットアップメモ (ダウンロードと推論)｜Kan Hatakeyama](https://note.com/kan_hatakeyama/n/n7dc20556f55f)
+- [2023-07-19 Llama.cpp で Llama 2 を試す｜npaka](https://note.com/npaka/n/n0ad63134fbe2)

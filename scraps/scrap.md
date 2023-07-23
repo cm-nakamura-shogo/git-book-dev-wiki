@@ -16,7 +16,6 @@
   - [Symbol tuning improves in-context learning in language models – Google Research Blog](https://ai.googleblog.com/2023/07/symbol-tuning-improves-in-context.html)
 - LLM
   - [OpenAIのAPIを使って営業資料をベクトル検索するボットをつくってみた | DevelopersIO](https://dev.classmethod.jp/articles/implement-sales-documents-search-bot/)
-  - [Azure OpenAIで自社データを取り込んだChatbotを実現する。 | DevelopersIO](https://dev.classmethod.jp/articles/azure-openai-add-your-data/)
   - [Azure Open AI「Add your data」のシンプル設定方法、試した結果の比較と「4つの所感 & 解決案？」 - Qiita](https://qiita.com/YutaroOgawa2/items/e53c47787405abc196e5)
   - [Azure OpenAIをもちいたLLMアプリの企画から本番構築までの道のり/Microsoft Build Japan - Speaker Deck](https://speakerdeck.com/yoshidashingo/microsoft-build-japan)
   - [社内勉強会で生成AIについて発表したので70ページの資料を公開する！ - Qiita](https://qiita.com/hedgehog051/items/b1308e8baf7b0f551548)

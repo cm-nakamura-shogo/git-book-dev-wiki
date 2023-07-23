@@ -34,17 +34,16 @@ Wait タスクの TimestampPath が過去の時刻場合は即実行されるの
 
 - [特定の時間帯のみ AWS Step Functions のタスクを実行するための Python コードを書いてみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-execute-task-specific-time-with-python-code/)
 
-## 参考記事
+## Articles
 
 - [2020-07-07 ステート間のパラメータ受け渡し方法](https://dev.classmethod.jp/articles/stepfunctions-parameters-inter-states/)
   - 平野さんの記事。とても分かりやすい。
 - [2023-07-01 Step FunctionsのStates.Format組み込み関数で文字列を作成する | DevelopersIO](https://dev.classmethod.jp/articles/step-functions-format-strings-with-builtin-functions/)
   - 鈴木さんの記事。パラメータをStates.Formatで文字列にする例。
+- [2023-07-17 AWS Step Functions から直接 AWS Batch のジョブ実行開始を試してみた | DevelopersIO](https://dev.classmethod.jp/articles/tried-starting-aws-batch-job-execution-directly-from-aws-step-functions/)
+  - APIサポート拡大によりBatchも呼び出せるようになっている
 
-## アップデート
+## Updates
 
-### APIサポートが拡大(2023-02)
-
-- [[アップデート] AWS Step FunctionsのAWS SDK Integrationで、35のAWSサービスと1100のAPIアクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-new-35-services-api/)
-
-### [2023-06-17 AWS Step Functions の AWS SDK Integration で、7つの AWS サービスと 460 以上の API アクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-adds-integration-for-7-services/)
+- [2023-02-19 [アップデート] AWS Step FunctionsのAWS SDK Integrationで、35のAWSサービスと1100のAPIアクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-new-35-services-api/)
+- [2023-06-17 AWS Step Functions の AWS SDK Integration で、7つの AWS サービスと 460 以上の API アクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-adds-integration-for-7-services/)

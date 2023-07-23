@@ -7,6 +7,8 @@
 - [[新機能]Snowpark for PythonのコーディングがSnowsight上で出来る「Python Worksheets」がパブリックプレビューになりました #SnowflakeDB | DevelopersIO](https://dev.classmethod.jp/articles/snowflake-python-worksheets-public-preview/)
 - [Snowpark Container Services — A Tech Primer | by Caleb Baechtold | Snowflake | Jul, 2023 | Medium](https://medium.com/snowflake/snowpark-container-services-a-tech-primer-99ff2ca8e741)
 - [推薦システムにおけるSnowparkの活用 - dely Tech Blog](https://tech.dely.jp/entry/2023/03/24/131917)
+- [2023-07-19 Powering Llama LLMs in Snowpark, Part 1](https://www.snowflake.com/blog/running-llama-llm-snowpark/?lang=ja)
+  - SnowparkでLlama 2を使うための記事らしい
 
 ## Snowflake Summit 2023
 

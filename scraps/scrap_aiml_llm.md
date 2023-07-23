@@ -7,3 +7,5 @@
     - [Scikit-LLM: Sklearn Meets Large Language Models | by Fareed Khan | May, 2023 | Medium](https://medium.com/@fareedkhandev/scikit-llm-sklearn-meets-large-language-models-11fc6f30e530)
     - GPTSummarizerは使えそう
 - [2023-05-31 BLOOMのようなOSSなLLMをHugging Face LLM Inference ContainerをSageMakerに展開する](https://huggingface.co/blog/sagemaker-huggingface-llm)
+- [2023-07-17 Open-Source Text Generation & LLM Ecosystem at Hugging Face](https://huggingface.co/blog/os-llms)
+  - オープンなLLMなどの説明

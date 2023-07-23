@@ -75,39 +75,36 @@ AthenaのCTASはexternal_locationで結果の保存先を変更できる
 
 - [https://docs.aws.amazon.com/ja_jp/athena/latest/ug/considerations-ctas.html](https://docs.aws.amazon.com/ja_jp/athena/latest/ug/considerations-ctas.html)
 
-## アップデート
 
-### [2023-04-28 AthenaがProvisioned Capacityを発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-athena-provisioned-capacity/)
+## Articles
 
-- 固定価格で長期的なコミットメントなしに、完全に管理されたコンピュート容量でSQLクエリを実行できるようにする
-- ミッションクリティカルなクエリに専用コンピートを割り当て、クエリの同時実行数やコストなどのワークロード性能特性を制御することが可能
-- 容量はいつでも追加可能で、指定した容量とアカウントで有効な時間に対してのみ支払いが発生
-- 石川さんのブログが出ている
-  - [Amazon Athena キャパシティ予約ができるProvisioned Capacityについて徹底解説！ | DevelopersIO](https://dev.classmethod.jp/articles/20230429-amazon-athena-provisioned-capacity/)
-  - 1つのDPUは、4つのvCPUと16GB RAMに相当
-  - プロビジョニングできる最小キャパシティは、24DPU、8時間
-  - 最小でも82.56USDの料金が発生してしまう
-  - Provisioned Capacityが最も適しているユースケースは、Athenaに毎月100ドル以上利用する場合
-  - RI（Reserved Instance）に例えるなら、8時間以上の前払いなしのRIを動的に購入して適用するのに近い
+- [2018-05-22 S3にフラットに配置してしまったログも大丈夫！シンボリックリンクを利用してスキャン範囲を絞ってAthenaからクエリする | DevelopersIO](https://dev.classmethod.jp/articles/create-athena-table-with-symboliclink/)
+  - Apache Hive互換のマニフェストファイル(symlink.txt)を作る方法
+  - これはすごい
+- [2019-12-09 AWS Athena で CREATE TABLE する](https://qiita.com/yoshiyama_hana/items/3d532c7ecc5f08c0d040)
+  - わりと各パラメータの詳しい説明がある
+- [2021-02-08 【全リージョン対応】CloudTrailのログをAthenaのPartition Projectionなテーブルで作る](https://dev.classmethod.jp/articles/cloudtrail-athena-partition-projection-table/)
+  - CloudTrailログでPartitionどうしたらええかのヒントにもなる
+- [2021-04-22 S3アクセスログをAthenaで分析](https://qiita.com/hamingcode/items/6f44bfbc8c54d974ae43)
+  - プロダクトにS3使うときは合った方がいい？（ログまででいいかもだが分析することがあれば）
+- [2023-07-20 「Amazon Athena for Apache Sparkを使ってデータ分析をしよう！」というタイトルで DevelopersIO 2023 に登壇しました！ #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/devio2023-osaka-data-analytics-with-amazon-athena-for-apache-spark/)
+  - サクッとデータレイクから大規模分析際に良い
+  - ジョブ化するにはGlueを使う様子
 
-### [2023-05-09 AthenaがApache Hudi 0.12.2をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-athena-apache-hudi/)
+## Updates
 
-- Hudi 0.12.2のテーブルをAthenaでクエリすることが可能に
-- Hudiは、Amazon EMR、Apache Spark、Apache Hiveまたはその他の互換性のあるサービスを介して管理されるデータ管理フレームワーク
-
-### [2022-11-09 Amazon AthenaでQuery Result Reuse（クエリ結果の再利用）が使えるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/query-result-reuse-is-now-available-on-amazon-athena/)
-
-
-## 参考記事
-
-### [2019-12-09 AWS Athena で CREATE TABLE する](https://qiita.com/yoshiyama_hana/items/3d532c7ecc5f08c0d040)
-
-- わりと各パラメータの詳しい説明がある
-
-### [2021-02-08 【全リージョン対応】CloudTrailのログをAthenaのPartition Projectionなテーブルで作る](https://dev.classmethod.jp/articles/cloudtrail-athena-partition-projection-table/)
-
-- CloudTrailログでPartitionどうしたらええかのヒントにもなる
-
-### [2021-04-22 S3アクセスログをAthenaで分析](https://qiita.com/hamingcode/items/6f44bfbc8c54d974ae43)
-
-- プロダクトにS3使うときは合った方がいい？（ログまででいいかもだが分析することがあれば）
+- [2023-04-28 AthenaがProvisioned Capacityを発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/04/amazon-athena-provisioned-capacity/)
+  - 固定価格で長期的なコミットメントなしに、完全に管理されたコンピュート容量でSQLクエリを実行できるようにする
+  - ミッションクリティカルなクエリに専用コンピートを割り当て、クエリの同時実行数やコストなどのワークロード性能特性を制御することが可能
+  - 容量はいつでも追加可能で、指定した容量とアカウントで有効な時間に対してのみ支払いが発生
+  - 石川さんのブログが出ている
+    - [Amazon Athena キャパシティ予約ができるProvisioned Capacityについて徹底解説！ | DevelopersIO](https://dev.classmethod.jp/articles/20230429-amazon-athena-provisioned-capacity/)
+    - 1つのDPUは、4つのvCPUと16GB RAMに相当
+    - プロビジョニングできる最小キャパシティは、24DPU、8時間
+    - 最小でも82.56USDの料金が発生してしまう
+    - Provisioned Capacityが最も適しているユースケースは、Athenaに毎月100ドル以上利用する場合
+    - RI（Reserved Instance）に例えるなら、8時間以上の前払いなしのRIを動的に購入して適用するのに近い
+- [2023-05-09 AthenaがApache Hudi 0.12.2をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-athena-apache-hudi/)
+  - Hudi 0.12.2のテーブルをAthenaでクエリすることが可能に
+  - Hudiは、Amazon EMR、Apache Spark、Apache Hiveまたはその他の互換性のあるサービスを介して管理されるデータ管理フレームワーク
+- [2022-11-09 Amazon AthenaでQuery Result Reuse（クエリ結果の再利用）が使えるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/query-result-reuse-is-now-available-on-amazon-athena/)

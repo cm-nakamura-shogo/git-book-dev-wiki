@@ -75,3 +75,5 @@
 - [2023-06-29 React/Next によるアプリケーション開発のこれから - Speaker Deck](https://speakerdeck.com/koba04/next-niyoruapurikesiyonkai-fa-nokorekara)
   - Next.js 13の話がまとまっている
 - [2023-07-13 CSS・TypeScriptの相性が抜群。vanilla-extractが最高のCSS開発体験をくれた](https://zenn.dev/moneyforward/articles/vanilla-extract)
+- [2023-07-20 Next.jsのいろいろなレンダリング方法を確認する | DevelopersIO](https://dev.classmethod.jp/articles/nextjs-rendering/)
+  - かなり詳しくまとまっている

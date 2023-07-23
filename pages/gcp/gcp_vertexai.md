@@ -60,3 +60,19 @@
   - PaLM 2 for Chat (chat-bison) のサポートが (GA) で利用可能に。
 - [2023-07-12 Vertex AIアップデート](https://cloud.google.com/release-notes#July_12_2023)
   - text-bisionのバッチ処理リクエストがGAに。
+- [2023-07-18 Vertex AIアップデート](https://cloud.google.com/release-notes#July_18_2023)
+  - text-bisionのモデルチューニングを更新：
+  - チューニングパイプラインがアップグレードされ、text-bisonにおいてより効率的なチューニングとパフォーマンスの向上を実現。
+  - 新しい learning_rate パラメーターにより、各反復のステップサイズを調整できる。
+- [2023-07-19 Vertex AI Workbenchアップデート](https://cloud.google.com/release-notes#July_19_2023)
+  - Vertex AI Workbenchインスタンスがプレビューで利用可能に
+  - Vertex AI Workbenchインスタンスは、マネージドノートブックとユーザマネージドノートブックの機能を組み合わせて、堅牢なデータサイエンスソリューションを提供
+  - サポートされる機能は以下の通りです：
+    - アイドルタイムアウト
+    - BigQueryとクラウドストレージの統合
+    - エンドユーザとサービスアカウントの認証
+    - VPCサービスコントロール
+    - 顧客管理暗号化キー（CMEK）
+    - ヘルスステータスの監視
+    - スケジュールによるノートブックの実行
+    - Dataprocの統合

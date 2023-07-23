@@ -31,6 +31,7 @@
   - [DB                ](scraps/scrap_dev_database.md)
   - [フロント          ](scraps/scrap_dev_frontend.md)
   - [Python            ](scraps/scrap_dev_python.md)
+  - [開発ツール        ](scraps/scrap_dev_tool.md)
   - [AWS               ](scraps/scrap_infra_aws.md)
   - [コンテナ          ](scraps/scrap_infra_container.md)
   - [IaC               ](scraps/scrap_infra_iac.md)
@@ -165,9 +166,11 @@
     - [Amazon OpenSearch Service](pages/aws/aws_opensearch.md)
     - [Amazon Location Service  ](pages/aws/aws_location_service.md)
     - [AWS Clean Rooms          ](pages/aws/aws_clean_rooms.md)
+    - [Amazon EMR               ](pages/aws/aws_emr.md)
 - クラウド開発
   - [Azure                      ](pages/azure/azure.md)
     - [Azure OpenAI Service     ](pages/azure/azure_openai_service.md)
+    - [Azure Cognitive Search   ](pages/azure/azure_cognitive_search.md)
   - [GoogleCloud                ]
     - [概要                     ](pages/gcp/gcp_summary.md)
     - [Google Research          ](pages/gcp/gcp_google_research.md)

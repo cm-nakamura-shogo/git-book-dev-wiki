@@ -42,3 +42,6 @@
 - [2023-05-24 Hugging Faceがマイクロソフトと協業し、Azure上でHugging Faceのモデルカタログを提供開始](https://huggingface.co/blog/hugging-face-endpoints-on-azure)
   - Azure Machine Learning Studio内で直接利用できる新しいHugging Face Hub Model Catalogを構築
 - [2023-05-24 Microsoft Build 2023のAI/MLアップデート最速まとめ](https://zenn.dev/microsoft/articles/dbd3119d44faf0)
+- [2023-07-15 「gzipによるセマンティック検索」の実装と直感的な説明](https://twitter.com/kyo_takano/status/1680131588947079168)
+- [2023-07-19 Retentive Network: A Successor to Transformer for Large Language Models](https://arxiv.org/abs/2307.08621)
+  - https://twitter.com/hotchpotch/status/1681411852532862976
