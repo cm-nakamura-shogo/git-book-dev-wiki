@@ -1,5 +1,11 @@
 # AIML
 
+## Books
+
+- [2023-07-29 大規模言語モデル入門：書籍案内｜技術評論社](https://gihyo.jp/book/2023/978-4-297-13633-8)
+
+## Articles
+
 - [2023-02-23 TransformerやAttentionの分かりにくい点についてのメモ](https://blog.statsbeginner.net/entry/2023/02/23/174435)
   - これはさすがに今更なのでええやろう
 - [2023-05-29 Scikit-LLMの紹介](https://qiita.com/fuyu_quant/items/4d56553d6a6c951bd8f7)

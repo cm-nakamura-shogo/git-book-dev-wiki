@@ -62,3 +62,5 @@
   - 凄いとは思うしOpenAI以上と言っているが、入力が以上と言っているのだけなので、まあ用途は限られるかな…
   - その他
     - [Google Colab で ImageBind を試す｜npaka](https://note.com/npaka/n/n22f7980e12bc)
+- [2023-07-23 Prompting Large Language Models with Answer Heuristics for Knowledge-based Visual Question Answering - Speaker Deck](https://speakerdeck.com/tereka114/prompting-large-language-models-with-answer-heuristics-for-knowledge-based-visual-question-answering)
+  - おもにVQAに関する研究まとめ

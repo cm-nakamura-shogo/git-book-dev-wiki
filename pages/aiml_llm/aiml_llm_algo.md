@@ -29,3 +29,5 @@
 - [2023-07-11 GPT-4の情報がリーク](https://twitter.com/heat_1nt/status/1678592126635114496)
 - [2023-07-12 Microsoftが10億トークン処理できるLongNetを発表](https://twitter.com/goto_yuta_/status/1679000172406394881)
 - [2023-07-14 事前学習を学習する仕組みとしてReLoRAが研究](https://twitter.com/goto_yuta_/status/1679744370214604802)
+  - [https://twitter.com/syoyo/status/1681043246104064000](https://twitter.com/syoyo/status/1681043246104064000)
+  - [ReLoRA: Stack More Layers Differently のメモ](https://zenn.dev/syoyo/articles/0ec81adcc0e3c6)
