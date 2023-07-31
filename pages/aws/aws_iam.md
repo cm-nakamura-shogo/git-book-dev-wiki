@@ -96,6 +96,17 @@ IAMユーザとは
 
 このポリシーに基づいてIAM Roleの権限を使える様になることを移譲って表現する
 
+## サービスリンクロール
+
+ユーザーが作ることはできないが、あらかじめAWSに準備された特定のAWSサービスが使用することを想定したロール
+
+「対応しているAWSリソースを作成した際に自動で作成されます」らしい。
+
+よりセキュアにするための仕組みのロール？？
+
+[【AWS】「Service-Linked Role」というIAMリソースについて](https://zenn.dev/devcamp/articles/672342f72ea71e)
+[デビュー当時から変わらない AWS 管理ポリシーの初期メンバーを確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/list-aws-managed-policies/)
+
 ## 参考記事
 
 ### [IAM ロールの PassRole と AssumeRole をもう二度と忘れないために絵を描いてみた | DevelopersIO](https://dev.classmethod.jp/articles/iam-role-passrole-assumerole/)

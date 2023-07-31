@@ -26,3 +26,7 @@ Kinesis Data Firehoseの送信先として設定することが可能。
 EC2(Apache) -> Firehose -> OpenSearchという流れ。
 
 FirehoseでLambdaを使って、Lambdaのblueprintで「Apache Log to JSON」を選択して変換する。
+
+## Updates
+
+- [2023-07-25 Amazon PersonalizeがOpenSearchの統合され検索結果のパーソナライズが可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/personalize-search-results-amazon-personalize-opensearch-integration/)

@@ -268,3 +268,16 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
     - [Llama 2 foundation models from Meta are now available in Amazon SageMaker JumpStart | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/llama-2-foundation-models-from-meta-are-now-available-in-amazon-sagemaker-jumpstart/)
 - [2023-07-19 Amazon SageMaker モデルカードとモデルレジストリの統合を発表](https://aws.amazon.com/jp/blogs/machine-learning/integrate-amazon-sagemaker-model-cards-with-the-model-registry/)
 - [2023-07-20 SageMakerフィーチャーストアのクロスアカウントサポート](https://awsapichanges.info/archive/changes/00fc0c-api.sagemaker.html)
+- [2023-07-25 Amazon SageMaker CanvasがML artifactsのS3出力先のカスタムが可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-canvas-custom-s3-ml-artifacts/)
+- [2023-07-25 Amazon SageMaker Canvasが新しい5つのデータ前処理機能を追加](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-canvas-data-preparation-five-capabilities/)
+  - 列のデータ型を数値、テキスト、日時の間で変更することが可能となり、バイナリやカテゴリカルなどのデータ型に関する表示も可能に
+  - 時系列データを再サンプルして、時系列データセットの観測値を一定の間隔にすることが可能に
+  - データ内の行を管理する方法が改善され、昇順または降順に並べ替えたり、ランダムにシャッフルしたり、重複する行を削除したりできるように
+- [2023-07-25 Amazon SageMaker CanvasでAmazon Textractによって提供されるすぐに使えるモデルであるDocument Queriesが使用可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-document-queries-textract/)
+  - Document Queriesによりドキュメントの構造 (テーブル、フォーム、フィールド、ネストされたデータ) についての事前知識がなくても、自然言語を使用して構造化ドキュメントから抽出したいデータを指定できる
+- [2023-07-25 Amazon SageMaker CanvasがAmazon QuickSightとの機械学習（ML）モデルの共有をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-canvas-sharing-ml-models-amazon-quicksight/)
+  - Canvasでモデルを構築し、QuickSightでダッシュボードを構築するための予測を生成できるように
+  - Canvasからモデルを共有すると、すべての入力データと出力データの属性からなるMLモデルのスキーマファイルが自動的に作成
+- [2023-07-25 Amazon SageMaker Canvasが機械学習（ML）モデルを異なる客観的指標でトレーニングする機能を提供](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-canvas-training-ml-models-objective-metrics/)
+  - これまで SageMaker Canvas は、各問題タイプに対して単一のデフォルトの目的メトリックのみをサポートしていた
+  - 以降は、サポートされているメトリックのリストから目的メトリックを選択し、それに従って ML モデルを最適化することが可能

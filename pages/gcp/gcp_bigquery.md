@@ -104,3 +104,9 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
       - approx_feature_contrib : モデル推論で局所的な特徴寄与計算に高速近似を使用する
   - 公式ブログ
     - [Customized holiday modeling with BigQuery ML forecasting | Google Cloud Blog](https://cloud.google.com/blog/products/data-analytics/customized-holiday-modeling-with-bigquery-ml-forecasting/?hl=en)
+- [2023-07-28 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_28_2023)
+  - クエリキューが一般的に利用可能に
+  - クエリキューでは、BigQueryは利用可能なスロットに基づいてクエリの同時実行数を自動的に決定
+  - 最大同時実行数に達すると、処理リソースが利用可能になるまで追加のクエリがキューに入れられる
+  - クエリキューはデフォルトで有効化されており、ここ数週間でロールアウトされる
+  - オプションで、予約の最大同時実行数を設定することが可能

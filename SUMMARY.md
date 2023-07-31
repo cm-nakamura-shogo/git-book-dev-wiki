@@ -158,6 +158,7 @@
     - [Amazon Translate         ](pages/aws/aws_aiml/aws_aiml_translate.md)
     - [Amazon Lex               ](pages/aws/aws_aiml/aws_aiml_lex.md)
     - [AWS Inferentia           ](pages/aws/aws_aiml/aws_aiml_inferentia.md)
+    - [Amazon Bedrock           ](pages/aws/aws_aiml/aws_aiml_bedrock.md)
   - Analytics
     - [Amazon Redshift          ](pages/aws/aws_redshift.md)
     - [Amazon Athena            ](pages/aws/aws_athena.md)

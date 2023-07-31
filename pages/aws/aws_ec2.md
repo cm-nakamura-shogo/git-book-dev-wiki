@@ -45,4 +45,6 @@ aws ec2 describe-images --owners amazon --query 'Images[].OwnerId' | jq unique
 
 ## アップデート
 
-### [2023-02-24 東京リージョンで「C7g」AWS Graviton 3のEC2が利用可能に](https://dev.classmethod.jp/articles/c7g-ec2-tokyo-region/)
+- [2023-02-24 東京リージョンで「C7g」AWS Graviton 3のEC2が利用可能に](https://dev.classmethod.jp/articles/c7g-ec2-tokyo-region/)
+- [2023-07-26 生成AIとHPCに最適化されたAmazon EC2 P5インスタンスが一般に利用可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-ec2-p5-instances-generative-ai-hpc-generally-available/)
+  - p4de.24largeを越えたインスタンスの登場

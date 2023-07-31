@@ -147,3 +147,19 @@ log_stream_name: 2022/08/22/[$LATEST]7dc42810d4254fc1a5bd0d5f28750f32
     - 大文字小文字の区別を無視する (equals-ignore-case)
     - 複数のフィールドにまたがる条件が真である場合に単一のルールでマッチングする (OR マッチング) 
   - また数値の境界を従来の-1e9～1e9から-5e9～5e9に増加
+- [2023-07-27 AWS LambdaがPython 3.11をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-lambda-python-3-11/)
+  - [Python 3.11 runtime now available in AWS Lambda | AWS Compute Blog](https://aws.amazon.com/jp/blogs/compute/python-3-11-runtime-now-available-in-aws-lambda/)
+  - [[アップデート] AWS LambdaのサポートランタイムにPython 3.11が追加されました | DevelopersIO](https://dev.classmethod.jp/articles/update-aws-lambda-support-runtime-python311/)
+  - [What’s New In Python 3.11 — Python 3.11.4 documentation](https://docs.python.org/3.11/whatsnew/3.11.html)
+  - 個人的に注目は以下
+    - PEP 657: Fine-grained error locations in tracebacks
+      - エラーメッセージがより分かりやすく
+    - PEP 646: Variadic generics
+      - 型指定の改善
+    - PEP 655: Marking individual TypedDict items as required or not-required
+      - 型指定の改善
+    - PEP 673: Self type
+      - 型指定の改善
+    - PEP 675: Arbitrary literal string type
+      - インジェクションからの保護
+    - PEP 681: Data class transforms

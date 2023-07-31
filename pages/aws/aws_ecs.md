@@ -110,3 +110,5 @@ freeコマンドでは基盤側の情報が採取されることもある。Memo
   - 公式ブログポストに沿えば使えるらしい
     - [AWS Fargate Enables Faster Container Startup using Seekable OCI | AWS News Blog](https://aws.amazon.com/jp/blogs/aws/aws-fargate-enables-faster-container-startup-using-seekable-oci/)
   - [[アップデート]全 AWS Fargate 利用者必見！ Seekable OCI インデックスによりコンテナの起動が大幅に高速化するようになりました | DevelopersIO](https://dev.classmethod.jp/articles/update-aws-fargate-seekable-oci/#toc-13)
+- [2023-07-27 Amazon ECS コンソールでタスク定義ワークフローのサポートが強化](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-ecs-console-task-definition-workflows/)
+  - 1つのページレイアウトで、タスク定義の新規作成と修正、さらにコンテナログのルーティング、ファイアレンズ、コンテナのヘルスチェックなどの機能を設定できるように

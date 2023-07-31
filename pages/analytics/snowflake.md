@@ -9,6 +9,7 @@
 - [推薦システムにおけるSnowparkの活用 - dely Tech Blog](https://tech.dely.jp/entry/2023/03/24/131917)
 - [2023-07-19 Powering Llama LLMs in Snowpark, Part 1](https://www.snowflake.com/blog/running-llama-llm-snowpark/?lang=ja)
   - SnowparkでLlama 2を使うための記事らしい
+- [2023-07-28 Snowpark Pythonを使ったクライアントアプリケーション用のローカル開発環境の準備をしてみた | DevelopersIO](https://dev.classmethod.jp/articles/create-local-develop-python-environment-snowpark/)
 
 ## Snowflake Summit 2023
 
