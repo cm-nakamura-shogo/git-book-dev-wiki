@@ -78,6 +78,7 @@
     - [https://twitter.com/stabilityai_jp/status/1648709992281948160](https://twitter.com/stabilityai_jp/status/1648709992281948160)
 - [2023-04-28 Stability.aiがStableVicunaを発表](https://ja.stability.ai/blog/stablevicuna-open-source-rlhf-chatbot)
   - Vicuna系ということはLLaMA系なので商用利用不可
+- [2023-08-10 日本語言語モデル「Japanese StableLM Alpha」をリリースしました — Stability AI Japan](https://ja.stability.ai/blog/japanese-stablelm-alpha)
 
 ## RWKV
 
@@ -243,3 +244,5 @@
 - [2023-07-19 ggml版が早速でている](https://huggingface.co/TheBloke)
 - [2023-07-19 llama2のセットアップメモ (ダウンロードと推論)｜Kan Hatakeyama](https://note.com/kan_hatakeyama/n/n7dc20556f55f)
 - [2023-07-19 Llama.cpp で Llama 2 を試す｜npaka](https://note.com/npaka/n/n0ad63134fbe2)
+- [2023-08-01 Llama 2 の日本語出力性能を評価してみた](https://note.com/lightblue_tech/n/nd996c7d85984)
+  - 日本語でチューニングされたLlama 2の情報がまとまっている

@@ -180,6 +180,27 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-07-20 Amazon SageMakerを使用して、カスタムアンサンブルのトレーニング、チューニング、デプロイを効率化](https://aws.amazon.com/jp/blogs/machine-learning/efficiently-train-tune-and-deploy-custom-ensembles-using-amazon-sagemaker/)
 - [2023-07-21 Amazon SageMakerの地理空間機能を使ってネズミの侵入を分析](https://aws.amazon.com/jp/blogs/machine-learning/analyze-rodent-infestation-using-amazon-sagemaker-geospatial-capabilities/)
 - [2023-07-21 Amazon SageMaker ドメインのアクセス認証がAWS IAM Identity Centerの場合、ユーザー同士でファイル共有する方法2選 | DevelopersIO](https://dev.classmethod.jp/articles/amazon-sagemaker-aws-iam-identity-center-file-share/)
+- [2023-07-31 SageMaker Canvasの高度なメトリクスを深く掘り下げる](https://aws.amazon.com/jp/blogs/machine-learning/is-your-model-good-a-deep-dive-into-amazon-sagemaker-canvas-advanced-metrics/)
+- [2023-07-31 SageMakerで創薬を加速するタンパク質フォールディングワークフローを構築](https://aws.amazon.com/jp/blogs/machine-learning/build-protein-folding-workflows-to-accelerate-drug-discovery-on-amazon-sagemaker/)
+- [2023-08-01 SageMakerでカスタム要約モデルを構築する](https://aws.amazon.com/jp/blogs/machine-learning/exploring-summarization-options-for-healthcare-with-amazon-sagemaker/)
+  - 基礎として使っているモデルは、Hugging Face Hubで提供されているGoogleのPegasus
+  - これをJumpStartでfine-tuningする
+- [2023-08-02 ジェネレーティブAIとAmazon Kendraを使用して、企業規模で画像のキャプション作成と検索を自動化](https://aws.amazon.com/jp/blogs/machine-learning/automate-caption-creation-and-search-for-images-at-enterprise-scale-using-generative-ai-and-amazon-kendra/)
+- [2023-08-03 Amazon SageMakerとAmazon Rekognitionを使用して、画像内の車の位置を検出するコンピュータビジョンモデルの構築とトレーニング](https://aws.amazon.com/jp/blogs/machine-learning/build-and-train-computer-vision-models-to-detect-car-positions-in-images-using-amazon-sagemaker-and-amazon-rekognition/)
+  -  RekognitionモデルまたはカスタムDetectronモデルのいずれかを呼び出して車の位置を検出できるAmplifyのモックウェブアプリケーションで構成
+- [2023-08-03 SageMaker Canvas がどのようにデータを処理し、モデルを訓練し、異なるデータセットサイズに対してより高速かつ効率的に予測を生成できるようになったかを紹介](https://aws.amazon.com/jp/blogs/machine-learning/accelerate-business-outcomes-with-70-performance-improvements-to-data-processing-training-and-inference-with-amazon-sagemaker-canvas/)
+- [2023-08-03 Amazon SageMakerで数千のMLモデルのトレーニングと推論をスケールアップ](https://aws.amazon.com/jp/blogs/machine-learning/scale-training-and-inference-of-thousands-of-ml-models-with-amazon-sagemaker/)
+- [2023-08-03 生成AIによるAWSインテリジェント文書処理の強化](https://aws.amazon.com/jp/blogs/machine-learning/enhancing-aws-intelligent-document-processing-with-generative-ai/)
+  - textractで抽出し、LLMで要約を作る事例
+- [2023-08-04 SageMaker Data Wranglerの新機能でデータ準備を最適化](https://aws.amazon.com/jp/blogs/machine-learning/optimize-data-preparation-with-new-features-in-aws-sagemaker-data-wrangler/)
+- [2023-08-04 SageMaker Data Wranglerの新機能でデータ準備を最適化](https://aws.amazon.com/jp/blogs/machine-learning/optimize-data-preparation-with-new-features-in-aws-sagemaker-data-wrangler/)
+- [2023-08-07 大規模言語モデル（LLM）の微調整を行い、大手ゲーム会社の有害音声を分類](https://aws.amazon.com/jp/blogs/machine-learning/aws-performs-fine-tuning-on-a-large-language-model-llm-to-classify-toxic-speech-for-a-large-gaming-company/)
+- [2023-08-08 SageMakerのマルチモデルエンドポイントをGPU上に配置する](https://aws.amazon.com/jp/blogs/machine-learning/deploy-thousands-of-model-ensembles-with-amazon-sagemaker-multi-model-endpoints-on-gpu-to-minimize-your-hosting-costs/)
+- [2023-08-08 Amazon SageMaker Studio で Spark UI をホストする](https://aws.amazon.com/jp/blogs/machine-learning/host-the-spark-ui-on-amazon-sagemaker-studio/)
+- [2023-08-09 SageMakerに導入されたジェネレーティブAIを使ってクリエイティブな広告を生成する](https://aws.amazon.com/jp/blogs/machine-learning/generate-creative-advertising-using-generative-ai-deployed-on-amazon-sagemaker/)
+  - SAMを生成AIって言っている…？
+- [2023-08-10 CloudWatchを使用したAmazon SageMakerの集中監視およびレポートソリューションの構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-centralized-monitoring-and-reporting-solution-for-amazon-sagemaker-using-amazon-cloudwatch/)
+- [2023-08-11 SageMaker JumpStartによるゼロショットテキスト分類](https://aws.amazon.com/jp/blogs/machine-learning/zero-shot-text-classification-with-amazon-sagemaker-jumpstart/)
 
 ## Updates
 
@@ -281,3 +302,7 @@ Wrangler自体で課金というよりはStudioを立ち上げてたりジョブ
 - [2023-07-25 Amazon SageMaker Canvasが機械学習（ML）モデルを異なる客観的指標でトレーニングする機能を提供](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-sagemaker-canvas-training-ml-models-objective-metrics/)
   - これまで SageMaker Canvas は、各問題タイプに対して単一のデフォルトの目的メトリックのみをサポートしていた
   - 以降は、サポートされているメトリックのリストから目的メトリックを選択し、それに従って ML モデルを最適化することが可能
+- [2023-08-02 SageMaker Studio、機械学習用のビルド済みドッカー「SageMaker Distribution」を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/08/sagemaker-studio-pre-built-docker-sagemaker-distribution-machine-learning/)
+- [2023-08-04 Amazon SageMakerがSalesforce Data Cloudとの新たな直接統合を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/08/amazon-sagemaker-direct-integration-salesforce-data-cloud/)
+  - [Amazon SageMakerとSalesforce Data Cloudを使用して独自のAIを導入する](https://aws.amazon.com/jp/blogs/machine-learning/bring-your-own-ai-using-amazon-sagemaker-with-salesforce-data-cloud/)
+  - [Amazon SageMakerとSalesforce Data Cloudの統合を利用して、AI/MLでSalesforceアプリを強化する](https://aws.amazon.com/jp/blogs/machine-learning/use-the-amazon-sagemaker-and-salesforce-data-cloud-integration-to-power-your-salesforce-apps-with-ai-ml/)

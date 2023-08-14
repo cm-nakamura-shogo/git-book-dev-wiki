@@ -15,3 +15,5 @@
   - Toxicity Detection は現在、バッチ処理でUS Englishで利用可能
   - APIが先行していたみたい
     - [2023-07-20 Transcribeがstoxicity-detectionを追加し、送信された音声の毒性スコアを表示できるように](https://awsapichanges.info/archive/changes/00fc0c-transcribe.html)
+  - 公式ブログ
+    - [2023-07-26 Transcribeの有害語検出機能で、話し言葉の有害語にフラグを立てる](https://aws.amazon.com/jp/blogs/machine-learning/flag-harmful-language-in-spoken-conversations-with-amazon-transcribe-toxicity-detection/)

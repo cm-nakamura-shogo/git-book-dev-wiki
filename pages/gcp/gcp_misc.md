@@ -74,3 +74,24 @@
     - 敵対的なクエリやサマリーを求めないクエリがレスポンスにサマリーを含めないように検索リクエストを設定できるように(プレビュー)
   - Enterprise Search : Personalize
     - 「Personalize」機能の名称を「Recommendations」に変更。これはネーミングのみの変更で製品の機能に変更はありません。
+- [2023-08-01 Document AIのアップデート](https://cloud.google.com/release-notes#August_01_2023)
+  - 以下のDocument AI Workbench機能の提供を開始しました：
+    - より多くのパブリックAPIを使って、プログラムでモデルを作成し、トレーニングする：
+      - DatasetSchema API：DatasetSchema API: UpdateDatasetSchema, GetDatasetSchema.スキーマを作成するには、UpdateDatasetSchema API（シングルトン・リソース）を使用します。
+      - データセット API：UpdateDataset、ImportDocuments、GetDocument、BatchDeleteDocuments。
+        - ListDocument API がリリースされるまでは、ImportDocuments API の confirmations を使用してデータセット内のドキュメントの一覧を作成してください。
+  - Custom Document Extractor (CDE) 内の選択的ラベリングにより、多様なトレーニングおよびテスト文書セットを準備できます。
+    - 125以上のドキュメントをCDEデータセットにインポートすると、CDEがクラスタリング結果に基づいてラベル付けすべきドキュメントを推奨します。
+    - 選択的ラベリングは、データセットにインポートされた新しいドキュメントのみをサポートします。
+    - 既にデータセットにインポートされているドキュメントのレコメンデーションが必要な場合は、ドキュメントを削除して再度インポートしてください。
+  - CDE のクイックテーブルでは、テーブルの最初の行のパターンを残りの行に適用することで、テーブルを一括でラベリングし、モデルのトレーニングを高速化します。
+  - データセットのデフォルトストレージオプションを使用して、新しいプロセッサを開始します。詳細オプションを使用して、独自のクラウドストレージの場所を設定することもできます。
+- [2023-08-02 Generative AI App Builderのアップデート](https://cloud.google.com/release-notes#August_02_2023)
+  - エンタープライズサーチ：カスタム埋め込みを使用する
+    - 独自のカスタムベクター埋め込みをEnterprise Searchに持ち込むことがプレビューでサポートされています。
+    - データ上に独自の埋め込みを作成した場合、Enterprise Searchにアップロードしてクエリ時に使用できます。
+    - 詳細については、カスタム埋め込みを使用するを参照してください。
+- [2023-08-02 Retail API : 検索パフォーマンスの階層とパフォーマンスのアップグレード要件を表示](https://cloud.google.com/release-notes#August_04_2023)
+- [2023-08-09 Generative AI App Builderのアップデート](https://cloud.google.com/release-notes#August_02_2023)
+  - VPCサービスコントロールのサポート
+  - VPC Service Controlsはプレビュー版でEnterprise Searchをサポートします。

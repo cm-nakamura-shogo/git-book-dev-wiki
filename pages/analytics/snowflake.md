@@ -1,5 +1,12 @@
 # Snowflake
 
+## Articles
+
+- [Getting Started with Snowflake - Zero to Snowflake](https://quickstarts.snowflake.com/guide/getting_started_with_snowflake/index.html?index=..%2F..index#10)
+- [2022年末、改めて「Snowflakeとは？」を簡単に説明する #SnowflakeDB | DevelopersIO](https://dev.classmethod.jp/articles/snowflake-advent-calendar-2022-benefis-of-snowflake/)
+- [Snowpark Pythonを使ったクライアントアプリケーション用のローカル開発環境の準備をしてみた | DevelopersIO](https://dev.classmethod.jp/articles/create-local-develop-python-environment-snowpark/)
+- [Glue StudioでSnowflake connectivityを使ってSnowflakeとS3のデータ連携をしてみた | DevelopersIO](https://dev.classmethod.jp/articles/s3-to-snowflake-data-integration-with-glue-studio-snowflake-connectivity/)
+
 ## Snowpark
 
 - [Machine Learning with Snowpark Python](https://quickstarts.snowflake.com/guide/machine_learning_with_snowpark_python/index.html?utm_cta=website-workload-data-science-resources-ml-with-snowpark-python-quickstart#0)

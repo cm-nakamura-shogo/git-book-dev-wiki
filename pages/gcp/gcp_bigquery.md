@@ -90,6 +90,8 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
     - TRANSFORM句を使用するモデルをTensorFlow SavedModel形式にエクスポート
     - TRANSFORM句で学習したモデルをVertex AIやローカルに配置することもできるように
   - 時系列予測のためのカスタムホリデーモデリングがプレビューに
+- [2023-07-17 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_17_2023)
+  - [【アップデート情報】 BigQueryで主キーと外部キーが正式にサポートされるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/bigquery-primary-foreign-key/)
 - [2023-07-19 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_19_2023)
   - BigQueryは検索インデックスを使用して、等置演算子（=）、IN演算子、LIKE演算子、またはSTARTS_WITH関数を含む一部のクエリを最適化し、インデックス付きデータと文字列リテラルを比較できるように
 - [2023-07-20 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_19_2023)
@@ -110,3 +112,30 @@ JSON変換など柔軟に対応できる変換がない場合は、UDFを定義�
   - 最大同時実行数に達すると、処理リソースが利用可能になるまで追加のクエリがキューに入れられる
   - クエリキューはデフォルトで有効化されており、ここ数週間でロールアウトされる
   - オプションで、予約の最大同時実行数を設定することが可能
+- [2023-07-31 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#July_31_2023)
+  - BigQuery Storage Write APIの多重化が一般公開（GA）されました。
+  - デフォルトのストリームで多重化を使用して、共有接続で複数の宛先テーブルに書き込むことができます。
+- [2023-08-03 BigQueryアップデート](https://cloud.google.com/bigquery/docs/release-notes#August_03_2023)
+  - Analytics Hubを使用すると、共有データセットの使用状況メトリクスを追跡できるようになりました。この機能は一般に利用可能です（GA）。
+  - 使用状況メトリクスには次のようなものがあります：
+    - 共有データセットに対して実行されたジョブ
+    - サブスクライバーのプロジェクトや組織による共有データセットの消費詳細。
+    - ジョブが処理した行数とバイト数。
+  - クラウドコンソールの更新以下の機能がプレビューで利用可能になりました：
+    - [ようこそ] ページの [最近アクセスしたリソース] セクションで、最近アクセスした 10 個のリソースを表示できます。
+    - クエリエディタでクエリを実行した後、[Chart] タブでクエリ結果を視覚化できます。
+  - SQL 文でマテリアライズド・ビューへのアクセスを GRANT または REVOKE できるようになりました。この機能は一般に利用可能です（GA）。
+- [2023-08-04 BigQueryアップデート](https://cloud.google.com/release-notes#August_04_2023)
+  - BigQueryが外部テーブルのマニフェストファイルの使用をサポートするようになりました。この機能は一般公開（GA）されました。
+- [2023-08-07 BigQueryアップデート](https://cloud.google.com/release-notes#August_07_2023)
+  - quantitive LIKE演算子のプレビューが開始。この演算子を使うと、検索値が複数のパターンにマッチするかどうかを、これらの条件のいずれかを使ってチェックすることができます
+  - いくつかのJSON関数が一般公開（GA）
+  - BigQueryは、IAMパーミッションの拒否ポリシーを使用してプリンシパルへのアクセスを拒否する機能をサポートするように
+- [2023-08-08 BigQueryアップデート](https://cloud.google.com/release-notes#August_08_2023)
+  - クエリおよびマテリアライズド・ビューで、以下の機能が一般に利用可能になりました（GA）：
+    - ANY_VALUE 関数の HAVING MAX 節と HAVING MIN 節。
+    - ANY_VALUE(x HAVING MAX y)の同義語であるMAX_BY関数。
+    - MIN_BY関数。ANY_VALUE(x HAVING MIN y)の同義語
+- [2023-08-10 BigQueryアップデート](https://cloud.google.com/release-notes#August_10_2023)
+  - カーディナリティの高い結合に関するクエリ・パフォーマンスのインサイトが表示されるようになりました。この機能は一般公開（GA）されています。
+  - ユーザー定義関数を使用して、BigQueryデータをプロトコルバッファ（Protobuf）列としてエクスポートできるようになりました。この機能は一般的に利用可能です

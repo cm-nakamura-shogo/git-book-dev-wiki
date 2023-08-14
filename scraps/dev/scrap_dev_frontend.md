@@ -77,3 +77,4 @@
 - [2023-07-13 CSS・TypeScriptの相性が抜群。vanilla-extractが最高のCSS開発体験をくれた](https://zenn.dev/moneyforward/articles/vanilla-extract)
 - [2023-07-20 Next.jsのいろいろなレンダリング方法を確認する | DevelopersIO](https://dev.classmethod.jp/articles/nextjs-rendering/)
   - かなり詳しくまとまっている
+- [2023-07-26 技術選定の参考にbulletproof-reactを見てみる | DevelopersIO](https://dev.classmethod.jp/articles/bulletproof-react-library-selection/)

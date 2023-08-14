@@ -112,3 +112,5 @@ freeコマンドでは基盤側の情報が採取されることもある。Memo
   - [[アップデート]全 AWS Fargate 利用者必見！ Seekable OCI インデックスによりコンテナの起動が大幅に高速化するようになりました | DevelopersIO](https://dev.classmethod.jp/articles/update-aws-fargate-seekable-oci/#toc-13)
 - [2023-07-27 Amazon ECS コンソールでタスク定義ワークフローのサポートが強化](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-ecs-console-task-definition-workflows/)
   - 1つのページレイアウトで、タスク定義の新規作成と修正、さらにコンテナログのルーティング、ファイアレンズ、コンテナのヘルスチェックなどの機能を設定できるように
+- [2023-08-09 FargateがプロセスIDの名前空間共有とカーネルパラメータ構成をサポートするように](https://aws.amazon.com/jp/about-aws/whats-new/2023/08/aws-fargate-pid-namespace-sharing-kernel-configuration/)
+  - [【アップデート】ECS on FargateがsystemControlsをサポートし、カーネルパラメータが調整できるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/ecs-on-fargate-support-systemcontrols/)

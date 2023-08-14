@@ -76,3 +76,5 @@
     - ヘルスステータスの監視
     - スケジュールによるノートブックの実行
     - Dataprocの統合
+- [2023-08-09 Imagen Multimodal EmbeddingがGA](https://cloud.google.com/release-notes#August_09_2023)
+  - Vertex AI上のImagenはマルチモーダル埋め込みのGA機能

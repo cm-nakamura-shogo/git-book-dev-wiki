@@ -53,6 +53,7 @@
   - [読書メモ](../book/2022-08-26_engineering-manager.md)
 - [2022-11-04 「技術書」の読書術](https://www.amazon.co.jp/dp/4798171549)
   - ベースラインとして読んでおきたい
+  - [「技術書」の読書術 を読んで個人的に使っていきたいTips - Qiita](https://qiita.com/ryosuke-horie/items/36aca08bd4ff4378b8df)
 - [2022-11-21 人を選ぶ技術](https://www.amazon.co.jp/dp/4866802065)
   - ばんくしさん推奨図書
     - 人の成長意欲を分解して、どうやって面接で見るか書かれている。

@@ -40,3 +40,4 @@
 - [2023-07-08 Python3.12の新機能ハイライト](https://zenn.dev/yosemat/articles/3e01d9d6a2d80c)
 - [2023-07-09 FastAPIがPydantic v2対応したので、V2移行のポイントを紹介する(意外と簡単)](https://zenn.dev/tk_resilie/articles/fastapi0100_pydanticv2)
 - [2023-07-13 pytestとmotoを利用してAWSサービスのmockを使ったテストをしてみる | DevelopersIO](https://dev.classmethod.jp/articles/pytest-moto-aws-service-mock/)
+- [2023-07-22 dataclassを捨ててpydanticに乗り換える](https://zenn.dev/yosemat/articles/dd69000307f468)

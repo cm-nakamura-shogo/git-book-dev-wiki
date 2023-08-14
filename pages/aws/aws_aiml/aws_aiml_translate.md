@@ -16,4 +16,6 @@
 - [2023-06-30 Amazon Translateがカスタム用語機能を強化](https://aws.amazon.com/jp/about-aws/whats-new/2023/06/amazon-translate-enhances-terminology-feature/)
   - 一致する用語の文脈に応じた適切なバージョンが作成され、より質の高い翻訳が生成される
   - 例えば、一致する用語が単数形であるにもかかわらず、文中に複数形が必要な場合、新バージョンでは自動的に複数形に変換されるなど
+  - [Translateがカスタム用語集を強化し、翻訳精度と流暢さを向上](https://aws.amazon.com/jp/blogs/machine-learning/amazon-translate-enhances-its-custom-terminology-to-improve-translation-accuracy-and-fluency/)
 - [2023-07-19 Amazon TranslateでDocxファイルのリアルタイム翻訳が可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-translate-real-time-translation-docx-files/)
+- [2023-08-04 Amazon Translate、リアルタイム文書翻訳のための言語検出を可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/08/amazon-translate-language-detection-document-translation/)

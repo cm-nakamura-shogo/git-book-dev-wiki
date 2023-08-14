@@ -12,3 +12,4 @@
     - ただし、tfsecからTrivyへの以降が推奨されている
   - Trivyとは、Dockerイメージで使用されるパッケージや依存関係の脆弱性をスキャンするツールで、Terraformにも対応
   - terraform-docsとは、コードのドキュメンテーションを自動生成するツール
+- [2023-07-25「Terraformのデプロイパイプラインに使用できるツールをまとめてみる」というテーマのビデオセッションで話しました #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/tf-deploy-piepline-video-devio2023/)
