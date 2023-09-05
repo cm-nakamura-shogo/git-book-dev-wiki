@@ -79,6 +79,9 @@
     - eca_nfnetは見たことないので新しいのかも
       - https://huggingface.co/timm/eca_nfnet_l0
     - メルスペクトログラムも現役、Augmentation法や前処理も詳細に解説してありありがたい
+- [2023-03-09 to 2023-06-08 Parkinson's Freezing of Gait Prediction | Kaggle](https://www.kaggle.com/competitions/tlvmc-parkinsons-freezing-gait-prediction/overview)
+  - パーキンソン病患者の多くを悩ませる衰弱症状である歩行凍結（FOG）を検出するコンペ
+  - ウェアラブル3D腰部センサーから収集したデータに基づいて学習させた機械学習モデルを開発する
 - [2023-04-19 to 2023-08-21 : CAFA 5 Protein Function Prediction | Kaggle](https://www.kaggle.com/competitions/cafa-5-protein-function-prediction)
   - アミノ酸配列からタンパク質の機能を予測するコンペ
   - データが329MBと小さめなので参加しやすいかも
@@ -95,3 +98,11 @@
   - 衛生画像と航空画像の画像生成モデルから生成された画像とオリジナル画像の判別
   - 賞金総額 10,000 USD(1位: $6,000)
   - Stability AIがスポンサー
+- [2023-07-12 to 2023-10-11 CommonLit - Evaluate Student Summaries | Kaggle](https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/)
+  - 生徒が書いた要約の質を評価するコンペ
+- [2023-07-17 to 2023-10-17 Bengali.AI Speech Recognition | Kaggle](https://www.kaggle.com/competitions/bengaliai-speech)
+  - ベンガル語の音声認識のWERを競うコンペ
+- [2023-07-26 to 2023-10-24 RSNA 2023 Abdominal Trauma Detection | Kaggle](https://www.kaggle.com/competitions/rsna-2023-abdominal-trauma-detection)
+  - 外傷患者のCTスキャンからいくつかの潜在的な損傷を特定するコンペ
+- [to 2023-09-15 金融時系列予測 | Nishika](https://competition.nishika.com/competitions/finance_ts/summary)
+- [2023-08-11 to 2023-09-29 テクノプロ・デザイン社 食品パッケージ画像解析チャレンジ | SIGNATE - Data Science Competition](https://signate.jp/competitions/1104)

@@ -1,5 +1,242 @@
 # scrap
 
+### LLM
+
+- npaka
+  - [「LangSmith クイックスタートガイド｜npaka @npaka123 #note https://t.co/f53iDBRcRh」 / X](https://twitter.com/npaka123/status/1685097132578181120?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「exllama+GPTQをgoogle colabで試してみた｜しば🐕AI https://t.co/q3kHnQzVYw #zenn」 / X](https://twitter.com/npaka123/status/1687504299079954432?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「「Vicuna-v1.5」などの情報を追加。 Llama 2 の情報まとめ｜npaka @npaka123 #note https://t.co/KDFUXAPbFw」 / X](https://twitter.com/npaka123/status/1688322930097475584?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「Google Colab で Japanese StableLM Alpha + LlamaIndex の QA を試す｜npaka @npaka123 #note https://t.co/XrXmGYlyEs」 / X](https://twitter.com/npaka123/status/1689624439900852225?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「Google ColabでPaLM2を試す。モデルのダウンロードとかないのですぐ動いた。 https://t.co/CBH6VWFPTh」 / X](https://twitter.com/npaka123/status/1693884621858255297?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「AutoGPTQ と transformers によるLLMの軽量化｜npaka @npaka123 #note https://t.co/oAyOoihOky」 / X](https://twitter.com/npaka123/status/1694480707278782572?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「Code Llama の概要｜npaka @npaka123 #note https://t.co/qhGMBFYQQs」 / X](https://twitter.com/npaka123/status/1694841470250066092?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「【ローカルLLM】日本語強めの多言語モデル「OpenBuddy-Llama2」を試す｜Baku #note https://t.co/k5ULSpEsml」 / X](https://twitter.com/npaka123/status/1695148210317299888?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [「最近話題の音生成AIまとめ｜npaka @npaka123 #note https://t.co/mz4n57x0wG」 / X](https://twitter.com/npaka123/status/1691782641635524645?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+- LLM
+  - [エンジニアはLLMとどう付き合うか / How engineer get along with LLM - Speaker Deck](https://speakerdeck.com/kishida/how-engineer-get-along-with-llm)
+  - [XユーザーのKai INUIさん: 「Llama2-7bのトークン長が32kに拡張されたものがリリース / X](https://twitter.com/_kaiinui/status/1685131606615552000?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [岡野原 大輔さん: 「ToolLLMは16000超の実世界のAPIの集めて学習、評価できるようにした枠組み。 / X](https://twitter.com/hillbig/status/1688300896898428933?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [Cerence Leverages Trail-Blazing Generative AI to Enhance the In-Car Experience for Automakers and Their Drivers | Cerence](https://cerence.com/news-releases/news-release-details/cerence-leverages-trail-blazing-generative-ai-enhance-car/)
+  - [DPO による Llama 2 のファインチューニング｜npaka](https://note.com/npaka/n/nfe7391a1d28d)
+  - [ChatGPT - Azure OpenAI 大全 - Speaker Deck](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
+  - [【登壇レポート】LLMをファインチューニングして対話用のLLMを作成する - ACES エンジニアブログ](https://tech.acesinc.co.jp/entry/2023/08/22/150423)
+  - [ChatGPT研究所さん: 「【注目】Metaが最高性能のコーディング専用LLMを発表 Code Llama を公開しました。 / X](https://twitter.com/ctgptlb/status/1694737893980614707?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [23/08/27 最近オープンソースのLLMがまた一杯出たなあ](https://six-loganberry-ba7.notion.site/23-08-27-LLM-b0e998dc35674cd28fe1ebad58d8a861)
+  - [LLMのファインチューニング で 何ができて 何ができないのか｜npaka](https://note.com/npaka/n/nec63c01f7ee8)
+  - [LlamaIndexの性能向上のためのテクニックガイド｜npaka](https://note.com/npaka/n/n33e28a9e1409)
+  - [「大規模言語モデル入門 / X](https://twitter.com/tech_slideshare/status/1697475160553775244)
+  - [Xユーザーの今井翔太 / Llama2ベースで、入力が12万トークン以上！ 大体の論文や、下手すれば小さい書籍、大体の実装が丸ごと入りそう / X](https://twitter.com/ImAI_Eruel/status/1697778975563792820)
+- dev
+  - [ずんだもんの英単語読み入力をAIで賄ってみる #ChatGPT | DevelopersIO](https://dev.classmethod.jp/articles/cover-english-accent-for-zundamon-by-chatgpt/)
+  - [LangChain × SlackAPI × Lambda でWebページを要約してくれるSlackChatGPTサーバーレスアプリ作った - Qiita](https://qiita.com/lyd-ryotaro/items/23788998017649df6822)
+  - [話題の ChatGPT + LangChain で、膨大な PDF ドキュメントの内容を爆速で把握する - Qiita](https://qiita.com/hiroki_okuhata_int/items/7102bab7d96eb2574e7d)
+  - [【Google Cloud】Enterprise Searchで社内ドキュメントを検索してみた | DevelopersIO](https://dev.classmethod.jp/articles/try-google-cloud-enterprise-search/#toc-23)
+  - [[ChatGPT x Zendesk]顧客からの問い合わせに自動的に返信する仕組みを作り、未来のヘルプデスクを体感してみた | DevelopersIO](https://dev.classmethod.jp/articles/chatgpt-zendesk-auto-helpdesk/)
+  - [LangChainとHugging FaceのSentence SimilarityモデルでテキストのEmbeddingを作成する | DevelopersIO](https://dev.classmethod.jp/articles/create-text-embedding-with-langchain-hugging-face-hub-sentence-similarity-model/)
+
+### AIML
+
+- ML
+  - [深津 貴之さん: 「個人的には、画像生成AIよりも欲しかった。 「画像の自然言語アノテーションAI」 / X](https://twitter.com/fladdict/status/1694601641545335002?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [AIDBさん: 「顔を認識しつつ個人の特定はしない手法を、テンセントなどが開発 / X](https://twitter.com/ai_database/status/1694145102753726750?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [XユーザーのAIDBさん: 「大規模ビジョン言語モデルで産業用の異常検出を自動で行うアーキテクチャ『Anomaly（異常）GPT』が非常に高い精度 / X](https://twitter.com/ai_database/status/1697067986375561470)
+
+### manage
+
+- manage
+  - [エンジニアとしての自分とマネージャーとしての自分の狭間で、どう成長していくのか？（AWS DevDay 2023登壇資料） - Speaker Deck](https://speakerdeck.com/takuros/enziniatositenozi-fen-tomaneziyatositenozi-fen-noxia-jian-de-doucheng-chang-siteikunoka-aws-devday-2023deng-tan-zi-liao)
+
+### dev
+
+- vector db
+  - [Xユーザーの𝕊hinichi 𝕋akaŷanagiさん: 「ベクトルDBのトレードオフを分析した記事。 / X](https://twitter.com/_stakaya/status/1693387184278302983?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [巨大なタスクに圧倒されそうな時は“分割統治”で征服せよ　ゴールまで走り続けるために有効な考え方 - ログミーTech](https://logmi.jp/tech/articles/329164)
+- dev
+  - [Xユーザーのえふのじさん: 「インテルのCPU、6～11世代Coreシリーズに重大な脆弱性 / X](https://twitter.com/fnoji/status/1689144445873328128?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [バクラクMLチームの技術スタックの変遷 - LayerX エンジニアブログ](https://tech.layerx.co.jp/entry/2023/07/28/184937)
+  - [XユーザーのShota Nukumizuさん: 「【おもしろ記事】1000万ユーザに耐えるサーバを作ってみた  / X](https://twitter.com/nameless_sn/status/1693895824017678444?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+  - [O'Reilly Japan - ソフトウェアアーキテクチャの基礎](https://www.oreilly.co.jp//books/9784873119823/)
+  - [「ソフトウェアアーキテクチャの基礎」読書感想](https://zenn.dev/yoshiko/scraps/124fbe6d5b2103)
+  - [【Auth0入門】QuickStartで手を動かしながらサクッとAuth0を学んでみた | DevelopersIO](https://dev.classmethod.jp/articles/lets-begin-auth0/)
+  - [開発チームリーダーとしてやってきたことのふりかえり #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/devio2023-reflection-on-what-i-have-done-as-a-development-team-leader/)
+  - [運用保守のお仕事について | DevelopersIO](https://dev.classmethod.jp/articles/how-about-mentainance-work/)
+  - [Intel OpenVinoの開発環境を準備してデモを動かしてみた | DevelopersIO](https://dev.classmethod.jp/articles/intel-openvino-dev-env-and-try-demos/)
+
+### google
+
+- Cloud Next
+  - [Google Cloud Blog | News, Features and Announcements](https://cloud.google.com/blog/?hl=en)
+  - [Google Cloud Next’23のOpening Keynoteで発表されたAI/MLサービス関連トピックまとめ #GoogleCloudNext | DevelopersIO](https://dev.classmethod.jp/articles/google-cloud-next23-opening-keynote-ai-ml/)
+  - [【Google Cloud】Enterprise Searchで社内ドキュメントを検索してみた | DevelopersIO](https://dev.classmethod.jp/articles/try-google-cloud-enterprise-search/)
+  - [PaLM2をVertex AIのコンソールから使ってコード化する方法も確認する | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-palm2-console/)
+  - [Google Cloud Next ’23 の記事一覧 | DevelopersIO](https://dev.classmethod.jp/referencecat/google-cloud-next-23/)
+  - [Winners of 2023 Google Cloud Customer Awards announced | Google Cloud Blog](https://cloud.google.com/blog/topics/customers/winners-of-2023-google-cloud-customer-awards-announced/?hl=en)
+  - [Welcome to Google Cloud Next ‘23 | Google Cloud Blog](https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next-23/?hl=en)
+  - [PaLM2をVertex AIのコンソールから使ってコード化する方法も確認する | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-palm2-console/)
+  - [Google Cloud Enterprise SearchとRetrieveReadCompose方式RAGを利用して社内公式情報を全部質問できるようにしてみた | DevelopersIO](https://dev.classmethod.jp/articles/qa-with-google-cloud-enterprise-search-and-retrieve-read-compose-rag/)
+  - [[セッションレポート][ANA211] BigQueryとPaLMによる次世代のデータ分析の到来に備えよう！ #GoolgeCloudNext | DevelopersIO](https://dev.classmethod.jp/articles/next_generation_data_analytics_with_bigquery_palm/)
+
+### aws
+
+- AWS
+  - [週刊AWS – 2023/7/24週 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/aws-weekly-20230724/)
+  - [AWS HealthImaging が一般提供を開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/general-availability-aws-healthimaging/)
+  - [AWS Entity Resolution が一般提供開始](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/aws-entity-resolution-generally-available/)
+- aws blog
+  - [Build production-ready generative AI applications for enterprise search using Haystack ...](https://aws.amazon.com/jp/blogs/machine-learning/build-production-ready-generative-ai-applications-for-enterprise-search-using-haystack-pipelines-and-amazon-sagemaker-jumpstart-with-llms/)
+  - [Zero-shot and few-shot prompting for the BloomZ 176B foundation model ...](https://aws.amazon.com/jp/blogs/machine-learning/zero-shot-and-few-shot-prompting-for-the-bloomz-176b-foundation-model-with-the-simplified-amazon-sagemaker-jumpstart-sdk/)
+  - [Intelligent video and audio Q&A with ...](https://aws.amazon.com/jp/blogs/machine-learning/intelligent-video-and-audio-qa-with-multilingual-support-using-llms-on-amazon-sagemaker/)
+  - [How Amazon Shopping uses Amazon Rekognition Content Moderation ...](https://aws.amazon.com/jp/blogs/machine-learning/how-amazon-shopping-uses-amazon-rekognition-content-moderation-to-review-harmful-images-in-product-reviews/)
+  - [How Thomson Reuters developed Open Arena, an enterprise-grade large ...](https://aws.amazon.com/jp/blogs/machine-learning/how-thomson-reuters-developed-open-arena-an-enterprise-grade-large-language-model-playground-in-under-6-weeks/)
+  - [Train self-supervised vision ...](https://aws.amazon.com/jp/blogs/machine-learning/train-self-supervised-vision-transformers-on-overhead-imagery-with-amazon-sagemaker/)
+  - [Unlocking efficiency: Harnessing the power ...](https://aws.amazon.com/jp/blogs/machine-learning/unlocking-efficiency-harnessing-the-power-of-selective-execution-in-amazon-sagemaker-pipelines/)
+  - [Build ML features at scale with Amazon SageMaker ...](https://aws.amazon.com/jp/blogs/machine-learning/build-ml-features-at-scale-with-amazon-sagemaker-feature-store-using-data-from-amazon-redshift/)
+  - [Apply fine-grained data access controls with AWS ...](https://aws.amazon.com/jp/blogs/machine-learning/apply-fine-grained-data-access-controls-with-aws-lake-formation-in-amazon-sagemaker-data-wrangler/)
+  - [Explain medical decisions ...](https://aws.amazon.com/jp/blogs/machine-learning/explain-medical-decisions-in-clinical-settings-using-amazon-sagemaker-clarify/)
+  - [Machine learning with decentralized training ...](https://aws.amazon.com/jp/blogs/machine-learning/machine-learning-with-decentralized-training-data-using-federated-learning-on-amazon-sagemaker/)
+  - [Announcing Amazon S3 access ...](https://aws.amazon.com/jp/blogs/machine-learning/announcing-amazon-s3-access-point-support-for-amazon-sagemaker-data-wrangler/)
+  - [Persistent Systems shapes the ...](https://aws.amazon.com/jp/blogs/machine-learning/persistent-systems-shapes-the-future-of-software-engineering-with-amazon-codewhisperer/)
+  - [Announcing the Preview of Amazon SageMaker Profiler: Track and visualize detailed hardware ...](https://aws.amazon.com/jp/blogs/machine-learning/announcing-the-preview-of-amazon-sagemaker-profiler-track-and-visualize-detailed-hardware-performance-data-for-your-model-training-workloads/)
+  - [University of San Francisco Data Science Conference 2023 Datathon in partnership ...](https://aws.amazon.com/jp/blogs/machine-learning/university-of-san-francisco-data-science-conference-2023-datathon-in-partnership-with-aws-and-amazon-sagemaker-studio-lab/)
+  - [MLOps for batch inference with model monitoring and retraining using Amazon ...](https://aws.amazon.com/jp/blogs/machine-learning/mlops-for-batch-inference-with-model-monitoring-and-retraining-using-amazon-sagemaker-hashicorp-terraform-and-gitlab-ci-cd/)
+  - [Automatically generate impressions from findings in ...](https://aws.amazon.com/jp/blogs/machine-learning/automatically-generate-impressions-from-findings-in-radiology-reports-using-generative-ai-on-aws/)
+  - [Deploy self-service question answering with the QnABot on AWS solution powered by Amazon Lex ...](https://aws.amazon.com/jp/blogs/machine-learning/deploy-self-service-question-answering-with-the-qnabot-on-aws-solution-powered-by-amazon-lex-with-amazon-kendra-and-large-language-models/)
+  - [Use Amazon SageMaker ...](https://aws.amazon.com/jp/blogs/machine-learning/use-amazon-sagemaker-model-card-sharing-to-improve-model-governance/)
+  - [FMOps/LLMOps: ...](https://aws.amazon.com/jp/blogs/machine-learning/fmops-llmops-operationalize-generative-ai-and-differences-with-mlops/)
+  - [Elevating the generative AI experience: ...](https://aws.amazon.com/jp/blogs/machine-learning/elevating-the-generative-ai-experience-introducing-streaming-support-in-amazon-sagemaker-hosting/)
+- vpc flowlog
+  - [フローログレコードの例 - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/flow-logs-records-examples.html)
+  - [フローログレコードの例 - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/flow-logs-records-examples.html)
+  - [IPアドレス - グローバルIPアドレスとプライベートIPアドレス](https://www.infraexpert.com/study/ip5.html)
+  - [【初心者向け】VPCフローログとは | SunnyCloud](https://www.sunnycloud.jp/column/20221115-01/)
+- DynamoDB
+  - [いいねとその通知機能をDynamoDBで設計したら思ったよりムズい - エムスリーテックブログ](https://www.m3tech.blog/entry/2023/08/25/110000)
+  - [DynamoDBの設定項目をマネコンで確認しつつ整理してみた | DevelopersIO](https://dev.classmethod.jp/articles/dynamodb-setting-item/)
+  - [motoでDynamoDBをモックするときはmock_dynamodbを使用することになったので歴史を振り返ってみた | DevelopersIO](https://dev.classmethod.jp/articles/moto-mock-dynamodb-history/)
+  - [LambdaからDynamoDBのテーブルをCreateしたいときの話 | DevelopersIO](https://dev.classmethod.jp/articles/story-of-create-table-from-lambda/)
+- S3
+  - [S3のコストについて改めて確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/202308-s3cost-01/)
+  - [S3 サーバーアクセスログを Athena + シンボリックリンクを利用して分析してみた | DevelopersIO](https://dev.classmethod.jp/articles/athena-symlink-s3accesslogs/)
+  - [[アップデート] Mountpoint for Amazon S3 が GA されました。 | DevelopersIO](https://dev.classmethod.jp/articles/amazon-s3-mountpoint-ga-update/)
+  - [AWS ParallelCluster に Mountpoint for Amazon S3 を使って S3 バケットをマウントする方法 | DevelopersIO](https://dev.classmethod.jp/articles/how-to-use-mountpoint-for-amaozn-s3-with-aws-parallelcluster/)
+  - [ゲノム解析のワークロードで Mountpoint for Amazon S3 のリード性能は如何ほどものかと確認してみた | DevelopersIO](https://dev.classmethod.jp/articles/moutpoint-for-amazon-s3-performance-on-genome-analysis-workloads/)
+- aws devio
+  - [[アップデート]Service Catalogの製品タイプにTerraform Cloudが追加されました | DevelopersIO](https://dev.classmethod.jp/articles/update-service-catalog-terraform-cloud-support/)
+  - [[アップデート] Amazon QuickSight で AWS IAM Identity Center の統合機能がサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/iam-identity-center-integration-quicksight/)
+  - [[アップデート] Amazon OpenSearch Serverless で最大 OCU および時系列コレクションのインデックスデータサイズ上限が拡張されました | DevelopersIO](https://dev.classmethod.jp/articles/opensearch-serverless-workloads-collections/)
+  - [[アップデート] AWS Batch の ECS on EC2 タイプでコンテナインスタンスに Amazon Linux 2023 が設定出来るようになりました | DevelopersIO](https://dev.classmethod.jp/articles/batch-amazon-ecs-al2023/)
+  - [[アップデート] EC2 Instance Connect Endpoint が CloudFormation で遂に使えるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/eic-cloudformation-support/)
+  - [【アップデート】ECS on Fargateでサイドカーからプロセス/システムコール監視が簡単にできるようになりました！ | DevelopersIO](https://dev.classmethod.jp/articles/ecs-on-fargate-support-shared-pid-namespace/)
+  - [Amazon AthenaのIcebergテーブルのbucket関数で、ハッシュによるパーティション分割を利用してみる | DevelopersIO](https://dev.classmethod.jp/articles/athena-iceberg-table-bucket-hidden-partition/)
+
+
+### analytics
+
+- dbt
+  - [dbt認定試験「dbt Analytics Engineering Certification Exam」概要を読んで何を理解しておくべきか、どんなスキルが求められるのかを把握する #dbt | DevelopersIO](https://dev.classmethod.jp/articles/point-of-dbt-analytics-engineering-certification-exam/)
+  - [dbt認定試験「dbt Cloud Administrator Certification Exam」概要を読んで何を理解しておくべきか、どんなスキルが求められるのかを把握する #dbt | DevelopersIO](https://dev.classmethod.jp/articles/point-of-dbt-cloud-administrator-certification-exam/)
+  - [dbtの公式入門ドキュメント『Quickstart for dbt Cloud and BigQuery』を実践してみた #dbt | DevelopersIO](https://dev.classmethod.jp/articles/quickstart-for-dbt-cloud-and-bigquery/)
+  - [dbtの公式入門ドキュメント『Quickstart for dbt Cloud and Snowflake』を実践してみた #dbt | DevelopersIO](https://dev.classmethod.jp/articles/quickstart-for-dbt-cloud-and-snowflake/)
+  - [EC2でAnsible練習環境を作成してみた | DevelopersIO](https://dev.classmethod.jp/articles/deploy-ansible-practice-environment/)
+  - [AnsibleでAmazon Linux 2023にdbt-athena環境を構築してみた | DevelopersIO](https://dev.classmethod.jp/articles/ansible-amazon-linux-2023-dbt-athena/)
+  - [dbtとは？｜dbtで始めるデータパイプライン構築〜入門から実践〜](https://zenn.dev/dbt_tokyo/books/537de43829f3a0/viewer/what_dbt)
+- data catalog
+  - [AWS Glue Data Catalog を理解する - Qiita](https://qiita.com/c-irei/items/c91272026954837a879c)
+  - [とにかくシンプルなデータカタログが欲しい人におすすめな「Select Star」のご紹介 | DevelopersIO](https://dev.classmethod.jp/articles/dive-deep-into-modern-data-saas-about-select-star/)
+  - [激熱！1日1製品！最強のデータ系SaaSはどれだ決定戦 アドベントカレンダー2021 | DevelopersIO](https://dev.classmethod.jp/articles/dive-deep-into-modern-data-saas-advent-calendar/)
+
+### book
+
+- [最近o'reillyの『Data Mesh』というデータの分散アーキテクチャに関する本を読みました。](https://mond.how/topics/4zmeukz6fd2jqcn)
+- [会計クイズを解くだけで財務3表がわかる 世界一楽しい決算書の読み方 | 大手町のランダムウォーカー, わかる |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4046043679)
+- [新米PdM目線でおすすめする書籍「プロダクトマネージャーのしごと 第2版」 | DevelopersIO](https://dev.classmethod.jp/articles/product-management-in-practice-review/)
+
+## rss-ml
+
+- [RO-ViT: Region-aware pre-training for open-vocabulary object detection with vision transformers – Google Research Blog](https://blog.research.google/2023/08/ro-vit-region-aware-pre-training-for.html)
+- [3秒の音声があれば本人そっくりの声で日本語・英語・中国語合成できる「VALL-E X」はやはり脅威。MSが非公開にした技術のOSS版を試して実感した（CloseBox） | テクノエッジ TechnoEdge](https://www.techno-edge.net/article/2023/08/28/1812.html)
+- [Xユーザーのyshr10icさん: 「The Kaggle Workbookの翻訳書出るのね！ The Kaggle Workbook 著名コンテストに学ぶ！競技トップレベルの思考と技術（2023/10/19発売予定） https://t.co/1LufywtEMk」 / X](https://twitter.com/yshr_10ic/status/1696447775721017571?s=12&t=suYC6B2IhN7jv0qU5zDxmQ)
+- [企業による生成AIアプリ構築はどう楽になる？　Google Cloudが開発基盤Vertex AIを強化：Google Cloud Next ’23 - ＠IT](https://atmarkit.itmedia.co.jp/ait/articles/2308/30/news094.html)
+- [ChatGPTにLipsumみたいなダミーテキストを作らせる - Qiita](https://qiita.com/ist-sh-ha/items/b805d4483620ae32da5e)
+- [Introducing ChatGPT Enterprise](https://openai.com/blog/introducing-chatgpt-enterprise)
+- [AudioLDM 2, but faster ⚡️](https://huggingface.co/blog/audioldm2)
+- [WeatherBench 2: A benchmark for the next generation of data-driven weather models – Google Research Blog](https://blog.research.google/2023/08/weatherbench-2-benchmark-for-next.html)
+- [Teaching with AI](https://openai.com/blog/teaching-with-ai)
+- [GPT-1の仕組みを解説！ | AGIRobots Blog](https://developers.agirobots.com/jp/gpt-1/)
+- [計算時間とメモリの壁を打破！Transformerの次世代モデルReformer | AI-SCHOLAR | AI：(人工知能)論文・技術情報メディア](https://ai-scholar.tech/articles/transformer/reformer)
+- [人工知能を用いた金融政策予想と市場予測分布に基づく為替の投資戦略](https://www.jstage.jst.go.jp/article/jsaisigtwo/2017/FIN-018/2017_12/_article/-char/ja/)
+- [Using GPT-4 for content moderation](https://openai.com/blog/using-gpt-4-for-content-moderation)
+- [OpenAI acquires Global Illumination](https://openai.com/blog/openai-acquires-global-illumination)
+- [日本語画像言語モデル「Japanese InstructBLIP Alpha」をリリースしました — Stability AI Japan](https://ja.stability.ai/blog/japanese-instructblip-alpha)
+- [Neural network pruning with combinatorial optimization – Google Research Blog](https://ai.googleblog.com/2023/08/neural-network-pruning-with.html)
+- [RWKVについて解説 | AGIRobots](https://agirobots.com/rwkv/)
+- [RTX3060上でJapanese StableLM Base AlphaをLoRAファインチューニングする｜ラナンP](https://note.com/vertnov/n/n3b15ae113112)
+- [Instruction Tuningにより対話性能を向上させた3.6B日本語言語モデルを公開します](https://engineering.linecorp.com/ja/blog/3.6b-japanese-language-model-with-improved-dialog-performance-by-instruction-tuning)
+- [ChatGPT開発に必要なGPUは3万基、日本の国策AI基盤は1千基。目前に迫る日本のAI敗戦 – WirelessWire News](https://wirelesswire.jp/2023/08/85203/)
+- [数学の入門書を選ぶ3つのコツ - webエンジニアの日常](https://www.uosansatox.biz/entry/2019/01/07/123000)
+- [好きな人の声で好きな文章を読ませるMicrosoftの音声AI「SpeechX」、映像から3Dシーンを生成するNVIDIA開発「Neuralangelo」のコード公開など重要論文5本を解説（生成AIウィークリー） | テクノエッジ TechnoEdge](https://www.techno-edge.net/article/2023/08/21/1773.html)
+- [Google、コード生成や補完のAIモデル「Codey」が日本語での指示や説明に対応したと発表 － Publickey](https://www.publickey1.jp/blog/23/_googleaicodey.html)
+- [Google、大規模言語モデル「PaLM 2」が日本語対応したと発表。ダジャレを理解する能力も － Publickey](https://www.publickey1.jp/blog/23/googlepalm_2.html)
+- [Making LLMs lighter with AutoGPTQ and transformers](https://huggingface.co/blog/gptq-integration)
+- [［CEDEC 2023］AIの現状とゲームに与える影響とは。街にいるAIキャラクターが，勝手にパーティーを始めるゲームが生まれる!?](https://www.4gamer.net/games/999/G999905/20230823065/)
+- [広告システムにおける機械学習モデルの推論差分検知について - Gunosy Tech Blog](https://tech.gunosy.io/entry/ads-ml-model-validation)
+
+## articles
+
+- [チームトポロジー Vol. 2 「組織をチームトポロジーで振り返るメリット」タイミー 亀田 彗 | ITエンジニア向けのトレンド情報](https://pr.forkwell.com/event/team-topologies-study-01-02/)
+- [pandasから移行する人向け polars使用ガイド - Qiita](https://qiita.com/nkay/items/9cfb2776156dc7e054c8)
+- [プログラミングに挫折したならAIお姉ちゃんに任せなさい - 本しゃぶり](https://honeshabri.hatenablog.com/entry/One-chanGPT)
+- [Zennを例に Gen App Builder の Enterprise Search 活用方法を考察する](https://zenn.dev/team_zenn/articles/google-cloud-enterprise-search-entry)
+- [後で楽できるTerraformの書き方（※ただし書くときは辛い） - SMARTCAMP Engineer Blog](https://tech.smartcamp.co.jp/entry/easy-terraform-later)
+- [えーっ、最強の乱数シードがあるんですか！？ | 株式会社オープンストリーム](https://www.opst.co.jp/keep_innovating_blog/220105/)
+- [ブリリアントジャークとは？3つの対処法と1.1コミュニケーション - 魔法剣乱れ打ち](https://www.n-links.co.jp/web/nblog/management/brilliant-jerks/)
+- [O'Reilly Japan - 大規模データ管理](https://www.oreilly.co.jp/books/9784814400089/)
+- [データマネジメント知識体系ガイドDMBOK要約・解説｜よしむら＠データマネジメント担当｜note](https://note.com/datamanagement/m/m3f27a63bfe25)
+- [Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考 - 秀和システム あなたの学びをサポート！](https://www.shuwasystem.co.jp/book/b620733.html)
+- [AnsibleでAmazon Linux 2023にdbt-athena環境を構築してみた | DevelopersIO](https://dev.classmethod.jp/articles/ansible-amazon-linux-2023-dbt-athena/)
+- [Github Actions + Terraformを使ったSnowflakeリソース管理のCI/CDパイプラインの構築](https://zenn.dev/t_koreeda/articles/dfc62ed51ef925)
+- [twitter.com/dagster/status/1691502523188916224](https://twitter.com/dagster/status/1691502523188916224)
+- [O'Reilly Japan Blog - 9月新刊情報『プロダクトマネージャーのしごと 第2版』](https://www.oreilly.co.jp/blog/2023/08/40043_product_management_in_practice_2e.html)
+- [Google Cloud で生成 AI アプリケーションを作ろう！パート 0：Google Cloud の生成 AI ソリューション](https://zenn.dev/google_cloud_jp/articles/google-cloud-generative-ai)
+- [ネットワークはなぜつながるのか 第2版 知っておきたいTCP/IP、LAN、光ファイバの基礎知識 | 戸根 勤, 日経NETWORK |本 | 通販 | Amazon](https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E7%AC%AC2%E7%89%88-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81%E5%85%89%E3%83%95%E3%82%A1%E3%82%A4%E3%83%90%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822283119)
+- [DNSド素人がdigコマンドとRoute 53を使って、DNSについてあれこれ学んでみた | DevelopersIO](https://dev.classmethod.jp/articles/dig-route53-begginer/)
+- [Snowflakeアプリ開発環境をDockerで構築【Docker+Snowpark+LangChain+Streamlit】](https://zenn.dev/al_everywhere/articles/snowflake-app-with-docker)
+- [(1) XユーザーのTakuto Wadaさん: 「新卒向けReact研修の皮を被った全222ページ(!)の圧倒的資料 / “React” https://t.co/LCrMINZhG8」 / X](https://twitter.com/t_wada/status/1690164771520475136)
+- [AWS Network Load Balancerの内部LBはクライアントとターゲットが同一IPアドレスのトラフィックを扱うことができない | DevelopersIO](https://dev.classmethod.jp/articles/internal-nlb-cant-handle-same-ip-traffic/)
+- [Mountpoint for Amazon S3 – Generally Available and Ready for Production Workloads | AWS News Blog](https://aws.amazon.com/jp/blogs/aws/mountpoint-for-amazon-s3-generally-available-and-ready-for-production-workloads/)
+- [Data Mesh Principles and Logical Architecture](https://martinfowler.com/articles/data-mesh-principles.html#Self-serveDataPlatform)
+- [Announcing StableCode — Stability AI](https://stability.ai/blog/stablecode-llm-generative-ai-coding)
+- [DataZoneのProject capabilitiesについてまとめてみた - Qiita](https://qiita.com/yust0724/items/2cc5be98322984db653e)
+- [QuickSightのサンプルデータでML Insightを使用した予測機能を試してみる | DevelopersIO](https://dev.classmethod.jp/articles/try-ml-insight-quicksight-sample-data/)
+- [Amazon QuickSightの条件付きルールでビジュアルの表示・非表示を切り替えよう | DevelopersIO](https://dev.classmethod.jp/articles/switch-visual-with-conditional-rules-quicksight/)
+- [Python 3.11で追加されたtomlibを使ってみる | DevelopersIO](https://dev.classmethod.jp/articles/python-3-11-use-tomlib/)
+- [Pythonで容量の大きいCSVファイルを指定したサイズの複数ファイルに分割する | DevelopersIO](https://dev.classmethod.jp/articles/python-split-huge-size-file/)
+- [[アップデート] Amazon EventBridge Schedulerは、最後のタスク呼び出し完了時に、スケジュールを自動的に削除できるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/update-amazon-eventbridge-scheduler-auto-delete-scheduler/)
+- [「M7i」「 M7i-flex」 最新 Intel CPUを搭載した 汎用EC2インスタンスがリリースされました | DevelopersIO](https://dev.classmethod.jp/articles/ec2-instances-m7i-m7i-flex/)
+- [Session Manager + SSHポートフォワーディングでプライベートなインスタンスを踏み台にして２ホスト間を繋ぐ | DevelopersIO](https://dev.classmethod.jp/articles/access-private-host-in-another-nw-over-ssh-tunnel-and-session-manager/)
+- [AWS FargateにおけるAmazon ECS クラスターの効果的な分け方を様々な観点で考えてみた | DevelopersIO](https://dev.classmethod.jp/articles/divide-clusters-in-aws-fargate/)
+- [[アップデート] AWS Batch でマネジメントコンソールからも Linux ARM64 と Windows のジョブ定義が作成出来るようになりました | DevelopersIO](https://dev.classmethod.jp/articles/batch-fargate-linux-arm64-windows-x86-containers-console/)
+- [AWS Batch のスポットインスタンスの配分戦略にスポット価格と中断率の両方を考慮するいい塩梅の戦略が追加されました | DevelopersIO](https://dev.classmethod.jp/articles/aws-batch-price-capacity-optimized-allocation-strategy-spot-instances/)
+- [[MockGPT] ChatGPTのモックAPIを使ってテストする [WireMock] | DevelopersIO](https://dev.classmethod.jp/articles/mockgpt/)
+- [Amazon Neptune ServerlessでグラフDBを構築し、最短経路問題を解いてみた | DevelopersIO](https://dev.classmethod.jp/articles/neptune-serverless-db-dijkstra/)
+- [Amazon Rekognitionのコンテンツモデレーション機能を使ってみた | DevelopersIO](https://dev.classmethod.jp/articles/amazon-rekognition-moderating-content-2023/)
+- [クラスメソッド データアナリティクス通信(機械学習編) – 2023年8月号 | DevelopersIO](https://dev.classmethod.jp/articles/cm-da-news-ml-202308/)
+- [「伝わる情報アーキテクチャー」を心がけよう！ 社内勉強会でお話しました。 | DevelopersIO](https://dev.classmethod.jp/articles/information-architecture-for-communication-230731/)
+- [FastSAMで高速道路を走行する車両をセグメンテーションをしてみました（上下線や追い越し車線も判定してみました） | DevelopersIO](https://dev.classmethod.jp/articles/detecting-cars-on-highways-with-fast-sam/)
+- [Snowflakeのデータに対して探索的データ分析をしたい！SnowsightのチャートとAmazon SageMaker Studioの例 | DevelopersIO](https://dev.classmethod.jp/articles/snowflake-exploratory-data-analysis-sample/)
+- [【アップデート情報】BigQueryでJson functionsが新たに追加されました | DevelopersIO](https://dev.classmethod.jp/articles/bigquery-json-functions/)
+- [AWS Parameters and Secrets Lambda Extensionをrequestsモジュールなしで使ってみた | DevelopersIO](https://dev.classmethod.jp/articles/aws-parameters-and-secrets-lambda-extension-not-request-module/)
+- [Flowcharts Syntax | Mermaid](http://mermaid.js.org/syntax/flowchart.html)
+- [プライベートな Lambda 関数で SQS をイベントソースに設定しても Lambda 関数は動作しないと勘違いしていた話 | DevelopersIO](https://dev.classmethod.jp/articles/sqs-to-vpclambda/)
+- [計算量オーダーの求め方を総整理！ 〜 どこから log が出て来るか 〜 - Qiita](https://qiita.com/drken/items/872ebc3a2b5caaa4a0d0)
+- [Pythonistaなら知っておきたい計算量のはなし - Qiita](https://qiita.com/Hironsan/items/68161ee16b1c9d7b25fb)
+- [O'Reilly Japan Blog - 9月新刊情報『機械学習システムデザイン』](https://www.oreilly.co.jp/blog/2023/08/40040_designing_machine_learning_systems.html)
+- [Quickstart for dbt Core from a manual install | dbt Developer Hub](https://docs.getdbt.com/quickstarts/manual-install?step=1)
+- [AWS-Black-Belt_2023_Datalake-Format-On-AWS_0516_v1.pdf](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Datalake-Format-On-AWS_0516_v1.pdf)
+- [ラムダアーキテクチャ - Qiita](https://qiita.com/zokashi/items/0dfcb957c533f9cc4f51)
+- [DynamoDBのパーティション分割問題について｜ハンズラボ株式会社](https://www.hands-lab.com/tech/t1592/)
+
+
 ## LLM
 
 - [Llama 2 + multilingual-e5-large で LangChain のRetrievalQAを試す｜npaka](https://note.com/npaka/n/n3164e8b24539)

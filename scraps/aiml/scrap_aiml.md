@@ -45,3 +45,10 @@
 - [2023-07-15 「gzipによるセマンティック検索」の実装と直感的な説明](https://twitter.com/kyo_takano/status/1680131588947079168)
 - [2023-07-19 Retentive Network: A Successor to Transformer for Large Language Models](https://arxiv.org/abs/2307.08621)
   - https://twitter.com/hotchpotch/status/1681411852532862976
+- [2023-09-04 コンペで使える！？LightGBMで実装する３つの弱教師あり学習 - ABEJA Tech Blog](https://tech-blog.abeja.asia/entry/lightgbm-weakly-supervised-learning-202309)
+  - 弱教師有学習についての対策
+  - 弱教師とは解きたいタスクに対して不完全なラベルしかない問題
+  - 問題設定含んでわかりやすいのでオススメ
+- [2023-09-05 グラフ構造学習を評価するためフレームワーク、米Googleが開発　4000以上のアーキテクチャを統一](https://www.itmedia.co.jp/news/articles/2309/05/news038.html)
+  - 「Unified Graph Structure Learning」（UGSL）を提案
+  - 10以上の既存の方法と4000以上の異なるアーキテクチャを同じ枠組みで組み込み、評価可

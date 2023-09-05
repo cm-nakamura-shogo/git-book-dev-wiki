@@ -1,0 +1,50 @@
+
+## updates
+
+- [2023-08-18 Generative AI App Builder release notes  |  Google Cloud](https://cloud.google.com/generative-ai-app-builder/docs/release-notes#August_18_2023)
+  - Enterprise Search: Multi-turn, conversational search UI
+    - Google Cloud コンソールからのマルチターン、会話型検索はプレビューで利用可能です。
+  - Enterprise Search: Languages
+    - 検索結果とスニペットがサポートされています：
+      - デンマーク語 (da-DK)
+      - オランダ語 (nl-NL)
+      - ヒンディー語 (hi-IN)
+      - ポルトガル語 (pt-BR)
+      - スウェーデン語 (sv-SE)
+    - 検索結果とスニペットは、英語（en-US）、フランス語（fr-FR）、スペイン語（es-ES）、ドイツ語（de-DE）、イタリア語（it-IT）でもサポートされています。
+- [2023-08-29 Generative AI App Builder release notes  |  Google Cloud](https://cloud.google.com/generative-ai-app-builder/docs/release-notes#August_29_2023)
+  - Vertex AI Search and Conversationは、Generative AI App Builderの新しい製品名です。
+  - Generative AI App Builderは、一般公開されています。
+  - Separation of data stores and apps
+    - データストアとアプリは別個のものです。
+    - コンソールでは、アプリはAppsページに、データストアはData Storesページに表示されます。
+    - アプリ作成時にデータストアを作成してアプリにアタッチすることも、アプリ作成時に新しいデータストアを作成することもできます。
+    - アプリとデータストアは1対1の関係です。
+    - 各アプリは1つのデータストアに関連付けられており、アタッチした後に切断することはできません。
+    - この変更は、既存のアプリの機能には影響しません。
+  - Enterprise Search: フォローアップ検索はGA
+    - 以前は、フォローアップ検索機能はマルチターン検索と呼ばれていました。
+    - フォローアップ付き検索は現在、一般的に利用可能です（GA）。
+    - さらに、回答付き検索とフォローアップ付き検索の一貫性を向上させるため、conversions.converse メソッド v1 からの応答は要約オブジェクトを提供し、返信オブジェクトと参照オブジェクトを提供しなくなりました。
+    - v1betaバージョンのメソッドからのレスポンスに変更はありません。
+    - セーフサーチは、フォローアップ付き検索機能で利用できます。
+    - フォローアップ付き検索に関する一般的な情報は、フォローアップ付き検索を参照してください。
+  - Enterprise Search: スニペット、抽出回答、抽出セグメントの改善
+    - スニペットステータスがスニペットと共に返されるようになりました。
+    - 抽出回答には、回答が見つかったドキュメントのページ番号が含まれます。
+    - 1つの検索結果に対して、最大10個の抽出セグメントを返すことができます。
+    - スニペットと抽出されたコンテンツを取得するを参照してください。
+  - Enterprise Search: 米国とEUの複数地域をサポート
+    - データストアを作成するときに、グローバル、US マルチリージョン、または EU マルチリージョンを指定できます。
+    - マルチリージョン使用に関連する制限などの詳細については、Enterprise Search のロケーションを参照してください。
+  - Enterprise Search: 言語
+    - Enterprise Searchでは、より多くの言語でより多くの機能がサポートされています。
+    - [About apps, engines, and data stores  |  Generative AI App Builder  |  Google Cloud](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#languages)
+  - Enterprise Search: ウェブサイトドメインの確認
+    - Advanced website indexingがオンになっているデータストアにあるすべてのWebサイトについて、ドメインの所有権を確認するための新しい要件が追加されました。
+  - Enterprise Search: 信頼度スコア
+    - 抽出セグメントの信頼度スコアは、allowlistのプレビューで利用できます。スコアはクエリと抽出セグメントの類似度に基づいています。
+  - Enterprise Search: APIを使用したサービングコントロールはGA
+    - Boost、filter、synonym、および redirect サービングコントロールは、API メソッドコールを通じて返される検索結果に影響を与えます。
+  - Enterprise Search: 関連する質問
+    - 関連する質問は、フォローアップ検索の許可リスト、プレビュー機能として利用できます。

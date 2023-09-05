@@ -137,6 +137,7 @@
 
 - [2023-05-10 ソフトバンク、LINEと和製GPT立ち上げへ](https://www.itmedia.co.jp/news/articles/2305/10/news170.html#utm_term=share_sp)
   - LINEが開発してきた独自の大規模言語モデルHyperCLOVAがキーか。
+- [2023-08-14 36億パラメータの日本語言語モデルを公開しました](https://engineering.linecorp.com/ja/blog/3.6-billion-parameter-japanese-language-model)
 
 ## OpenCALM (CyberAgent)
 

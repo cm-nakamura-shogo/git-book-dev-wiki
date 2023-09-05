@@ -15,17 +15,9 @@
 - xlargeはインスタンスサイズ
 - C5d.xlarge全体でインスタンスタイプ
 
-## 参考記事
+## AMI
 
-### [2017-11-21 パラメーターストアから最新のWindows AMIのIDを取得する](https://dev.classmethod.jp/articles/latest-windows-ami-from-parameter-store)
-
-parameter storeからAMIの情報を取得することができる。
-
-### [2023-04-18 Amazon Linux 2023でDNSサーバーを指定する方法](https://dev.classmethod.jp/articles/amazon-linux-2023-static-dns/)
-
-- 今までと少し違うらしい。
-
-### 2023-04-17 Red Hat公式のAMIを探す方法
+### Red Hat公式のAMIを探す方法
 
 以下に公式のアカウント番号がある。
 
@@ -37,14 +29,10 @@ parameter storeからAMIの情報を取得することができる。
 aws ec2 describe-images --owners 309956199498 --query 'sort_by(Images, &CreationDate)[*].[CreationDate,Name,ImageId]' --filters "Name=name,Values=RHEL-8.7*" --region ap-northeast-1 --output table
 ```
 
-### [AMIにおけるAmazon公式のアカウントIDを調べる](https://dev.classmethod.jp/articles/tsnote-ami-amazon-cli/)
+### Amazon公式のAMIのアカウントIDを調べる
 
 ```bash
 aws ec2 describe-images --owners amazon --query 'Images[].OwnerId' | jq unique
 ```
 
-## アップデート
-
-- [2023-02-24 東京リージョンで「C7g」AWS Graviton 3のEC2が利用可能に](https://dev.classmethod.jp/articles/c7g-ec2-tokyo-region/)
-- [2023-07-26 生成AIとHPCに最適化されたAmazon EC2 P5インスタンスが一般に利用可能に](https://aws.amazon.com/jp/about-aws/whats-new/2023/07/amazon-ec2-p5-instances-generative-ai-hpc-generally-available/)
-  - p4de.24largeを越えたインスタンスの登場
+- [公開されているAMIの所有者がAmazonであることを確認する方法 | DevelopersIO](https://dev.classmethod.jp/articles/tsnote-ami-amazon-cli/)

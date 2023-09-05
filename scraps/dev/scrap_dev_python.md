@@ -41,3 +41,6 @@
 - [2023-07-09 FastAPIがPydantic v2対応したので、V2移行のポイントを紹介する(意外と簡単)](https://zenn.dev/tk_resilie/articles/fastapi0100_pydanticv2)
 - [2023-07-13 pytestとmotoを利用してAWSサービスのmockを使ったテストをしてみる | DevelopersIO](https://dev.classmethod.jp/articles/pytest-moto-aws-service-mock/)
 - [2023-07-22 dataclassを捨ててpydanticに乗り換える](https://zenn.dev/yosemat/articles/dd69000307f468)
+- [Python で DI(Dependency Injection) を実現するフレームワークの Injector を使ってみる | DevelopersIO](https://dev.classmethod.jp/articles/python-injector-launch01/)
+- [【Python】injectorでDIコンテナを実装する - Qiita](https://qiita.com/Jazuma/items/9fa15b36f61f9d1e770c)
+- [Python 3.11で追加されたtomlibを使ってみる | DevelopersIO](https://dev.classmethod.jp/articles/python-3-11-use-tomlib/)

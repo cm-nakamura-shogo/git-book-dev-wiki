@@ -1,0 +1,70 @@
+
+## updates
+
+- [2023-08-18 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#August_18_2023)
+  - Vertex AI Matching Engineのパブリックエンドポイントが一般公開(GA)されました。開始方法については、マッチングエンジンのセットアップをご覧ください。
+- [2023-08-22 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#August_22_2023)
+  - Vertex AIカスタム・トレーニングは、Previewでパーシステント・リソースの提供を開始した。
+  - パーシステントリソースとは、カスタムトレーニングジョブを実行するために使用できる、長期間稼働するマシンクラスタのことです。
+  - 一度作成された永続的リソースは、将来のトレーニングジョブでも利用可能なため、モデルをトレーニングするたびに計算リソースがプロビジョニングされるのを待つ必要はありません。
+- [2023-08-28 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#August_28_2023)
+  - Tabular Workflow for Forecastingはプレビューでご利用いただけます。ドキュメントについては、Tabular Workflow for Forecastingを参照。
+- [2023-08-29 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#August_29_2023)
+  - Imagen on Vertex AIは現在、以下の一般利用可能（GA）機能を提供しています：
+    - 被写体モデルのチューニング（標準）*。
+    - スタイルモデルチューニング*。
+    - Imagenの詳細、または制限付きGA機能へのアクセス方法については、Imagen on Vertex AIの概要をご覧ください。
+  - 生成AIモデルからのストリーム応答
+    - Generative AI モデルのストリーミング・サポートが一般利用可能になりました（GA）。
+    - プロンプトを送信した後、モデルは出力全体が利用可能になるまで待つ代わりに、生成された応答トークンを返します。
+    - サポートされるモデルは以下の通りです：
+      - テキストバイソン
+      - チャットバイソン
+      - コードバイソン
+      - コードチャットバイソン
+    - 詳しくは、生成AIモデルからのストリーム応答をご覧ください。
+  - Vertex AIモデルでの新しいGenerative AIサポートと言語サポートの拡大
+    - Vertex AI の Generative AI サポートが更新され、新しい言語モデル候補（最新モデル）、32k までの入出力トークンをサポートする言語モデル、およびサポートされる言語が追加されました。
+    - 詳しくは、利用可能なモデル、モデルのバージョンとライフサイクルをご覧ください。
+  - text-bisonモデルのモデルチューニングが一般公開(GA)されました。
+    - 教師あり微調整（SFT）によるtext-bisonモデルのチューニングが一般に利用可能になりました（GA）。
+    - 詳細については、テキストモデルのチューニングを参照してください。
+  - chat-bison モデルのチューニングがプレビューで利用可能になりました。
+    - 教師付き微調整を使用して、chat-bison モデルを調整できるようになりました。
+    - この機能は (Preview) にあります。詳細については、テキストモデルのチューニングを参照してください。
+  - 新しい埋め込みモデルがプレビューで利用可能に
+    - Vertex AI のジェネレーティブ AI サポートのユーザーは、(Preview) で英語以外の幅広い言語で学習した新しいモデルを使用して埋め込みを作成できるようになりました。
+      - textembedding-gecko-multilingual
+    - 詳しくは テキスト埋め込み をご覧ください。
+  - text-bisonの人間フィードバックからの強化学習（RLHF）チューニング Generative AIテキスト生成基盤モデル（text-bison）がRLHFチューニングをサポートするようになりました。
+    - RLHF チューニング機能は (Preview) にあります。詳しくは、RLHFモデルチューニングを使うをご覧ください。
+  - Vertex AI Codey API言語サポート
+    - Vertex AI Codey APIが、追加のプログラミング言語をサポートするようになりました。
+    - 詳しくは、サポートされるコーディング言語をご覧ください。
+  - Vertex AI Codey API が教師付き微調整（SFT）をサポートしました。
+    - コードチャット（codechat-bison）とコード生成（code-bison）の Vertex AI Codey API モデルが、監視付き微調整（SFT）をサポートするようになりました。
+    - Vertex AI Codey APIsモデルの教師付き微調整機能は（プレビュー）です。詳細については、コードモデルのチューニングを参照してください。
+  - メトリクスベースのモデル評価
+    - 分類、要約、質問応答、一般的なテキスト生成のための評価データセットに対して、基礎モデルやチューニングされたモデルのパフォーマンスを評価することができます。
+    - この機能は（プレビュー）で利用できます。
+    - 詳しくは、モデルのパフォーマンスを評価するをご覧ください。
+  - Vertex AI Vector Search は、Vertex AI Matching Engine の新しい製品名です。
+  - Vertex AI Model RegistryモデルとVertex AI DatasetsがDataplexのData Catalogに同期されました。
+    - Data Catalogは、IAMの境界を維持したまま、データ成果物の組織全体での検索と発見を可能にする。
+    - これらのアセットの同期と検索は、プレビューで利用可能です。
+    - 詳細については、Data Catalogのドキュメントを参照してください。
+  - CountToken APIがプレビューで利用可能に
+    - CountToken APIが(Preview)で利用可能になりました。
+    - この API を使用して、プロンプトのトークン数と請求可能文字数を取得できます。
+    - 詳しくは Get token count をご覧ください。
+  - Vertex AI Pipelines Template Gallery が一般公開（GA）されました。
+    - テンプレート・ギャラリーには、MLOpsプラクティスをブートストラップするための、Googleが作成したパイプラインとコンポーネントのテンプレートが含まれています。
+    - テンプレートをカスタマイズしてそのまま実行したり、独自のパイプラインに組み込んだりできます。
+    - 詳しくは、テンプレート ギャラリーからビルド済みテンプレートを使用するをご覧ください。
+- [2023-08-31 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#August_31_2023)
+  - Experiment management:
+    - Google Cloud consoleは、トレーニング中のステップにわたるモデルのパフォーマンス変化の視覚化をサポートし、高度なラン比較を表示します。
+    - 詳細については、実行の比較と分析を参照してください：Google Cloud console をご覧ください。
+- [2023-09-01 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#September_01_2023)
+  - Vertex AI
+    - text-bisonの価格が、入出力文字数1,000文字あたり0.0005ドルに値下げされました。詳しくは、Vertex AI 価格をご覧ください

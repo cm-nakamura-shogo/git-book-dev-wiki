@@ -64,3 +64,7 @@
     - [Google Colab で ImageBind を試す｜npaka](https://note.com/npaka/n/n22f7980e12bc)
 - [2023-07-23 Prompting Large Language Models with Answer Heuristics for Knowledge-based Visual Question Answering - Speaker Deck](https://speakerdeck.com/tereka114/prompting-large-language-models-with-answer-heuristics-for-knowledge-based-visual-question-answering)
   - おもにVQAに関する研究まとめ
+- [2023-09-04 論文の画期的なOCR技術『Nougat』をMetaが開発](https://twitter.com/ai_database/status/1698545683467579737)
+  - Nougat: Neural Optical Understanding for Academic Documents
+  - 日本語対応できるかは要検証か
+  - Training用のAPIも生えているのでなんとかはできそう

@@ -1,0 +1,50 @@
+
+
+## updates
+
+- [2023-08-17 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_17_2023)
+  - クロスリージョンデータセットレプリケーションにより、ソースリージョンから1つまたは複数の他のリージョンにデータセットを複製できるようになりました。
+  - この機能は現在プレビュー中です。
+- [2023-08-21 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_21_2023)
+  - テーブルをスキャンしてデータプロファイルを作成し、データ品質を監視できるようになりました。
+    - これらの機能により、データをよりよく理解し、正確で信頼できるものにすることができます。これらの機能は一般的に利用可能です。
+  - Analytics Hubでは、サブスクリプションを管理できるようになりました。
+    - サブスクリプションリソースは、サブスクライバーに関する関連情報を保存し、共有リソースとリンクされたデータセット間の接続を表します。
+    - この機能は現在プレビュー中です。
+- [2023-08-22 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_22_2023)
+  - BigQueryでは、データのマスキングルーチンを独自に作成できるようになりました。
+    - REGEX_REPLACEスカラー関数を使用して、機密データを難読化するカスタムマスキングルールを作成できます。
+    - この機能は現在プレビュー中です。
+- [2023-08-24 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_24_2023)
+  - 以下のテキスト埋め込み機能がプレビューで利用可能になりました
+    - 埋め込み用のVertex AI PaLM API（textembedding-gecko）を参照するBigQuery MLリモートモデルの作成。
+    - リモート埋め込みモデルでML.GENERATE_TEXT_EMBEDDING関数を使用して、BigQueryに格納されたテキストを埋め込む。
+    - ARRAY<NUMERIC>型を他のモデルの入力特徴型として使う。
+    - NNLM、SWIVEL、BERT TensorFlowモデルでテキスト埋め込みを生成する。
+    - 詳細は[https://cloud.google.com/bigquery/docs/text-embedding-semantic-search](https://cloud.google.com/bigquery/docs/text-embedding-semantic-search)
+  - 以下のBigQuery ML推論機能が一般公開（GA）されました：
+    - ONNX、XGBoost、TensorFlow Liteモデルをインポートし、BigQuery ML推論エンジン内で実行できるようになります。
+    - モデルをVertex AI Prediction上でリモートホストし、BigQuery MLで推論を実行できるため、データパイプラインを手動で構築する必要がなくなります。
+    - BigQuery ML 関数を使用して Vertex AI の事前学習済みモデルに対して推論を実行することで、自然言語処理、翻訳、コンピュータビジョンのタスクを BigQuery で実行できます。
+    これらの関数は、Cloud Vision、Cloud Natural Language、Cloud Translation APIで動作します。
+- [2023-08-29 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_29_2023)
+  - データ・クリーン・ルームは現在プレビュー中です。
+  - データ・クリーン・ルームは、複数の関係者が、基礎となるデータを移動したり公開したりすることなく、データ資産を共有、結合、分析できる安全な環境を提供します。
+  - 詳細については、以下のトピックをご覧ください：
+    - データ・クリーン・ルームの使用
+    - クエリとビューの集計しきい値
+    - 集約しきい値句
+  - Duet AI in BigQueryは、Google CloudのAIを搭載したコラボレーターで、SQLクエリの完成、生成、説明を支援します。この機能はプレビュー版です。
+  - BigQuery Studioは現在プレビュー中です。BigQuery Studioは、BigQueryでのデータの発見、探索、分析、推論の実行を容易にする以下のような機能を提供します：
+    - Colab Enterpriseが提供するPythonノートブック。ノートブックはワンクリックでPython開発ランタイムを提供し、BigQuery DataFramesをビルトインでサポートします。
+    - Dataformによる、ノートブックと保存クエリの資産管理とバージョン履歴。
+  - BigQuery DataFramesは現在プレビュー中です。BigQuery DataFramesは、BigQueryでのデータ分析や機械学習タスクの実行に使用できるPython APIです。BigQuery DataFramesは以下の部分で構成されています：
+    - bigframes.pandas は、BigQuery 上で DataFrame API を実装します（Pandas と部分的に互換性があります）。
+    - bigframes.mlは、BigQuery ML用のPython APIを実装しています（部分的にscikit-learnと互換性があります）。
+    - BigQuery DataFrames クイックスタート を使用して、BigQuery DataFrames を始めましょう。
+  - 以下のGenerative AI機能がBigQuery MLで一般利用可能になりました（GA）：
+    - Vertex AIラージ言語モデル（LLM）text-bisonに基づくリモートモデルの作成。
+    - LLMベースのリモートモデルでML.GENERATE_TEXT関数を使用し、BigQueryテーブルに格納されたテキストに対して生成的自然言語タスクを実行する。
+    - リモートモデルとML.GENERATE_TEXT関数を使用してテキストを生成するチュートリアルで、これらの機能をお試しください。
+- [2023-08-30 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_30_2023)
+  - EXPORT DATAステートメントを使用して、BigQueryデータをBigtableに直接エクスポートできるようになりました。この機能はプレビュー中です。
