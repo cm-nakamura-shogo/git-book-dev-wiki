@@ -15,3 +15,10 @@
 - [2023-05-31 BLOOMのようなOSSなLLMをHugging Face LLM Inference ContainerをSageMakerに展開する](https://huggingface.co/blog/sagemaker-huggingface-llm)
 - [2023-07-17 Open-Source Text Generation & LLM Ecosystem at Hugging Face](https://huggingface.co/blog/os-llms)
   - オープンなLLMなどの説明
+- [2023-09-06 TIIのFalcon-180BがHuggingFaceで公開](https://huggingface.co/blog/falcon-180b)
+  - こちらは5月末に公開されたFalcon-40Bのさらなる大規模版
+  - MMLUではLlama 2(70B)やOpenAIのGPT-3.5に匹敵する性能
+  - HuggingFaceのSpacesで試すことが可能。日本語も理解・回答してくれる（多少不自然な場合もある）
+    - [Falcon-180B Demo - a Hugging Face Space by tiiuae](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
+  - 40B,7BはApach 2.0 Licenseであったが、こちらは特殊なライセンスとなっておりその点は注意
+    - [LICENSE.txt · tiiuae/falcon-180b-license at main](https://huggingface.co/spaces/tiiuae/falcon-180b-license/blob/main/LICENSE.txt)

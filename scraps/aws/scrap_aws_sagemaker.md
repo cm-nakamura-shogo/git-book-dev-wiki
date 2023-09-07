@@ -27,3 +27,14 @@
 - [2023-09-01 SageMaker CanvasがJDBCによる追加のデータコネクタをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/amazon-sagemaker-canvas-data-connectors-jdbc/)
   - Salesforce、Databricks、SQL Server、MySQL、PostgreSQL、MariaDB、Amazon RDS、およびAmazon Aurora用の8つの新しいJDBCコネクタをサポート
 - [2023-09-01 Sagemaker Real-time Inferenceがレスポンスストリーミングをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/sagemaker-real-time-inference-response-streaming/)
+- [2023-09-05 Amazon SageMakerの地理空間機能がGPUベースのインスタンスでノートブックをサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/amazon-sagemaker-geospatial-notebook-gpu-instances/)
+  - 書いてある通り
+- [2023-09-06 Amazon SageMaker InferenceがPyTorchのMME(マルチモデルエンドポイント)をサポート](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/amazon-sagemaker-inference-multi-model-endpoints-pytorch/)
+  - TorchServe を使用してデプロイされた PyTorch モデルをサポートするように
+  - [Run multiple generative AI models on GPU using Amazon SageMaker multi-model endpoints with TorchServe and save up to 75% in inference costs | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/run-multiple-generative-ai-models-on-gpu-using-amazon-sagemaker-multi-model-endpoints-with-torchserve-and-save-up-to-75-in-inference-costs/)
+- [2023-09-06 Amazon SageMaker JumpStartを使用して、Llama 2モデルをfine-tuningすることが可能に](https://aws.amazon.com/jp/blogs/machine-learning/fine-tune-llama-2-for-text-generation-on-amazon-sagemaker-jumpstart/)
+  - LLMは巨大なモデルであるため、fine-tuningにもLoRAや量子化、データ並列化トレーニング(FSDP)などの設定がある
+  - モデル規模により使用可能なfine-tuning方法に違いがある
+  - fine-tuningにかかる時間なども記載されており、70Bで最大8時間程度の計測結果がある
+- [2023-09-06 Amazon SageMaker JumpStartを使用したGenerative AIとRAGによる安全なエンタープライズアプリケーションの構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-secure-enterprise-application-with-generative-ai-and-rag-using-amazon-sagemaker-jumpstart/)
+  - RAGにOpenSearchを使うアーキテクチャ例
