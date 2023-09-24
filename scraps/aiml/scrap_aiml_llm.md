@@ -22,3 +22,21 @@
     - [Falcon-180B Demo - a Hugging Face Space by tiiuae](https://huggingface.co/spaces/tiiuae/falcon-180b-demo)
   - 40B,7BはApach 2.0 Licenseであったが、こちらは特殊なライセンスとなっておりその点は注意
     - [LICENSE.txt · tiiuae/falcon-180b-license at main](https://huggingface.co/spaces/tiiuae/falcon-180b-license/blob/main/LICENSE.txt)
+- [2023-09-07 自動運転EV開発のチューリング、日英言語対応のマルチモーダル学習ライブラリ「Heron」と最大700億パラメータの大規模モデル群を公開｜Turingのプレスリリース](https://prtimes.jp/main/html/rd/p/000000034.000098132.html)
+  - いろいろなモデルの組み合わせでVision and languageモデルを学習できるライブラリ「Heron」を公開
+  - ソースコード部分については研究・商用利用が可能なApache License 2.0で公開
+  - 公開した学習済みのマルチモーダルモデル群は、Llama 2-chat、ELYZA-Llama 2、 Japanese StableLMなどをベースにHeronで追加学習を行い、マルチモーダル化させたもの
+  - モデルは5種類公開されており、7Bまたは70B(Llama 2ベースのみ)となっている
+  - LLaVAのInstruction Tuningで使われた15万件の画像に対する対話データセットを日本語化して学習（LLaVA-Instruct-150K-JAとしてHuggingFaceで公開）
+  - モデル自体はそれぞれライセンスが異なるので注意
+  - 異常検知をさせたり、画像から道路状況を説明させたりする例が出回っている
+  - 以下のSpacesで利用可能
+    - [Heronチャットデモ - a Hugging Face Space by turing-motors](https://huggingface.co/spaces/turing-motors/heron_chat_blip)
+    - Spaceで使用されているheron-chat-blip-ja-stablelm-base-7b-v0は、CC-BY-NCなので商用利用不可
+  - 日本語のマルチモーダルモデルまともに動くものがなかったが、ようやく使えるものがでてきたという印象
+- [2023-09-08 OpenInterpreter / ついにAIがガチのアシスタントに!これは凄い、というか凄すぎる｜shi3z](https://note.com/shi3zblog/n/n7eaba88ffe4a)
+  - ローカルで動くOpenAIのCode Interpreterみたいなやつ、pipで入れれば使える
+  - 勝手にpipで色々なパッケージ入れてくるのは普通にツラいので使い捨て環境でやる方が良さそう
+- [2023-09-08 LlamaIndex の VectorIndexAutoRetriever を試す｜npaka](https://note.com/npaka/n/n44a6d7842a5d)
+  - クエリからメタデータを自動生成して、クエリ＋メタデータでRetrieveする
+  - 多くのベクトルストアはメタデータフィルタにも対応しているため、実用ではこれらを使用する

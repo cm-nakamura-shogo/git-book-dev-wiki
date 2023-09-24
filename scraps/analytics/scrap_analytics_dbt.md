@@ -14,3 +14,7 @@
     - 任意のテストを書きたい場合はマクロを書くか、 dbt_utils にテスト用のマクロが用意されているので利用する
     - source を宣言することで SELECT文の中で参照できるようになり、データリネージで表示が可能
     - これみるとDataformもOSS版（CLI）があるみたい。SaaS版も無料!?
+- [2023.09.10 dbt-athenaで既存のGlueテーブルをソーステーブルに使う | DevelopersIO](https://dev.classmethod.jp/articles/dbt-athena-use-source-glue-table/)
+- [2023.09.10 dbt-athenaを使っているdbtプロジェクトでドキュメントを生成してみる | DevelopersIO](https://dev.classmethod.jp/articles/dbt-athena-document-data-linage/)
+- [2023.09.10 dbt-athenaのHiveテーブル向けのIncremental modelsについて、どのようにデータとGlueテーブルが作成されるのか調べてみた | DevelopersIO](https://dev.classmethod.jp/articles/dbt-athena-hive-table-incremental-models/)
+- [2023.09.11 Digdagからdbtを実行してAthenaにモデルを作成してみた | DevelopersIO](https://dev.classmethod.jp/articles/digdag-dbt-core-run-from-workflows/)

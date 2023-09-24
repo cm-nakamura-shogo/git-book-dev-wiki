@@ -11,3 +11,9 @@
 - [2023-06-29 【開催報告】Amazon Kendra で簡単に自然言語を使った「検索」システムを構築 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/amazon-kendra-seminar-20230607/)
 - [2023-09-06 Amazon Kendra で独自文書に対するセマンティック検索（自然言語での検索）を実現する - Taste of Tech Topics](https://acro-engineer.hatenablog.com/entry/2023/09/06/110000)
   - Kendraの紹介記事で画面や具体的な使用例が示されており分かりやすい
+
+## update
+
+- [2023-09-07 Amazon Kendraがダイナミック・コンテンツ対応のWeb Crawlerをリリース](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/amazon-kendra-web-crawler-dynamic-content/)
+  - Kendra Web Crawlerを使用して、Angular、React、JavaScriptでWebページをインデックスし、Kendra Intelligent Searchを使用してコンテンツ全体の情報を検索できるように
+  - ウェブクローラにはVPCサポートが付属しており、VPCサブネットを通じてアクセス可能な内部ウェブサイトのコンテンツもインデックスできる

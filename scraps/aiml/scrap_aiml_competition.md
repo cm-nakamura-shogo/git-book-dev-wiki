@@ -106,3 +106,6 @@
   - 外傷患者のCTスキャンからいくつかの潜在的な損傷を特定するコンペ
 - [to 2023-09-15 金融時系列予測 | Nishika](https://competition.nishika.com/competitions/finance_ts/summary)
 - [2023-08-11 to 2023-09-29 テクノプロ・デザイン社 食品パッケージ画像解析チャレンジ | SIGNATE - Data Science Competition](https://signate.jp/competitions/1104)
+- [2023-09-11 to 2023-11-27 NeurIPS 2023 - Machine Unlearning | Kaggle](https://www.kaggle.com/competitions/neurips-2023-machine-unlearning)
+  - 機械学習解除とは、学習済みモデルから学習例の特定の部分集合（「忘却集合」）の影響を除去することを目的とした、機械学習の新たな分野
+  - 学習済みモデルと忘却集合と保持集合が与えられ、忘却集合のデータを忘れた重みを出力するコンペ

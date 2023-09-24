@@ -1,4 +1,14 @@
 
+## articles
+
+- [2023-09-07 そのパラメータの意味は？Vertex AIのGenerative AI Studioで文章生成するときの設定を知ろう | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-palm2-parameter/)
+  - Temperature、Top-K、Top-Pの解説
+  - Temperatureはそこまで解説されてないが、Top-K、Top-Pはこれを見れば十分
+- [2023-09-08 Vertex AIの生成AIでtext-bisonのファインチューニングをしてみる | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-palm2-fine-tuning/)
+  - 意外と使いどころが難しそうなのね、調教も難しそう
+- [2023-09-08 大規模言語モデル（LLM）をアプリケーション開発で活用するには？ グーグル・クラウドが基礎から解説 |CodeZine（コードジン）](https://codezine.jp/article/detail/18138)
+  - あまり目新しい情報はなかった
+
 ## updates
 
 - [2023-08-18 Vertex AI release notes  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/release-notes#August_18_2023)

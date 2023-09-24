@@ -48,3 +48,29 @@
     - Boost、filter、synonym、および redirect サービングコントロールは、API メソッドコールを通じて返される検索結果に影響を与えます。
   - Enterprise Search: 関連する質問
     - 関連する質問は、フォローアップ検索の許可リスト、プレビュー機能として利用できます。
+- [2023-09-15 Generative AI App Builder release notes  |  Google Cloud](https://cloud.google.com/generative-ai-app-builder/docs/release-notes#September_15_2023)
+  - Vertex AI Search (エンタープライズサーチ)：要約のための言語
+    - 英語以外に以下の言語に対応しています：
+      - ドイツ語 (de-DE)
+      - スペイン語 (es-ES)
+      - イタリア語 (it-IT)
+      - フランス語 (fr-FR)
+      - オランダ語 (nl-NL)
+      - ポルトガル語 (pt-BR)
+      - スウェーデン語 (sv-SE)
+      - 言語を参照してください。
+  - Vertex AI Search（エンタープライズ検索）：許可リスト付きプレビュー用隣接セグメント
+    - 抽出セグメントを取得する際、関連セグメントの直前と直後から最大 3 つのセグメントを取得することもできます。
+    - 隣接セグメントは、関連セグメントにコンテキストと精度を追加することができます。隣接セグメントを有効にすると、待ち時間が長くなることがあります。
+    - 隣接セグメントは allowlist でプレビュー中です。隣接セグメントを試すには、Google アカウントチームに連絡してください。
+    - Extractive segments を参照してください。
+  - Vertex AI Search（エンタープライズ検索）：許可リストでプレビューするためのカスタマイズ可能なサマリー
+    - サマリーをリクエストする際、自然言語による指示を与えることでカスタマイズすることができます。
+    - 詳細の長さやレベル、出力のスタイル（「シンプル」など）、出力の言語、回答の焦点、形式（表、箇条書き、XMLなど）などのカスタマイズをリクエストできます。
+    - カスタマイズ可能な要約はallowlistでプレビュー中です。この機能を試してみたい方は、Googleアカウントチームまでお問い合わせください。
+    - カスタマイズ可能なサマリーを取得するをご覧ください。
+- [2023-09-22 Generative AI App Builder release notes  |  Google Cloud](https://cloud.google.com/generative-ai-app-builder/docs/release-notes#September_22_2023)
+  - Vertex AI Search（エンタープライズ検索）：サードパーティデータコネクタ
+    - Vertex AI Search のデータストアを設定して、Jira、Confluence、または Salesforce からのデータと同期することができます。
+    - この機能はプライベートプレビューです。この機能を試すには、Google アカウント チームにお問い合わせください。
+    - サードパーティのデータへの接続設定の詳細については、エンタープライズ検索データストアの作成を参照してください。

@@ -1,6 +1,11 @@
 # Amazon Textract
 
-## アップデート
+## article
+
+- [2023-09-08 Amazon TextractとAmazon OpenSearchでスマートなドキュメント検索インデックスを実装する](https://aws.amazon.com/jp/blogs/machine-learning/implement-smart-document-search-index-with-amazon-textract-and-amazon-opensearch/)
+  - これは想像がつくのでいいや
+
+## update
 
 - [2023-05-15 AnalyzeDocument APIで利用可能なQueries機能の品質強化を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/05/amazon-textract-updates-queries-analyze-document-api/)
   - 保険証書、保険金支払い宣言書、賃貸契約書、ペイオフ明細書、公共料金請求書など、新たに14種類の文書におけるデータ抽出の精度が向上

@@ -8,6 +8,11 @@
   - AWS Inferentia1 デバイスには 4 つの NeuronCore-v1 が含まれ、各 AWS Inferentia2 デバイスには 2 つの NeuronCore-v2 が含まれる
   - AWS Neuron SDK を使用すると、各 NeuronCore を並列に使用できる
   - Inf2 は、Inf1 と比較してコアの数は少ないですが、Inf1よりも4倍大きいスループットと10倍小さいレイテンシを提供することが可能
+- [2023-09-08 Amazon Rekognition、Amazon SageMaker JumpStart、およびAmazon OpenSearch Serviceを使用した記事のセマンティック画像検索](https://aws.amazon.com/jp/blogs/machine-learning/semantic-image-search-for-articles-using-amazon-rekognition-amazon-sagemaker-foundation-models-and-amazon-opensearch-service/)
+  - Rekognitionを使用して画像からメタデータを抽出するプロセスをStep FunctionsやLambdaで構築
+  - メタデータをテキストとして埋め込みベクトルを作成する、モデルはJumpStartにあるGPT-J 6B Embeddingを使用
+  - これをk-NN ベクトルとしてOpenSearch Service のインデックスに保存、一部はメタデータのまま保存
+  - 要約モデルには、AI21 Labs Summarizeモデルを使用し、およそ10,000語を処理できるため多くのテキストは一度に要約できる
 
 ## updates
 

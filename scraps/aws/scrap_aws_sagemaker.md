@@ -9,6 +9,14 @@
   - Flan T5-XXLを使用
 - [2023-07-26 SageMaker JumpStartでStable Diffusion XLを使用する](https://aws.amazon.com/jp/blogs/machine-learning/use-stable-diffusion-xl-with-amazon-sagemaker-jumpstart-in-amazon-sagemaker-studio/)
 - [2023-08-18 SageMakerのノートブックインスタンスを時間になったら起動・停止して、アイドル状態が続いたら停止させてみた | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-notebook-scheduled-start-stop/)
+- [2023-09-07 Ray のRLlibライブラリを使用して、Amazon SageMaker上で履歴データのみを使用して最適な制御ポリシーを見つけるエンドツーエンドのソリューションを構築](https://aws.amazon.com/jp/blogs/machine-learning/optimize-equipment-performance-with-historical-data-ray-and-amazon-sagemaker/)
+  - PLCなどを用いた強化学習の事例
+- [2023-09-07 SageMaker Pipelinesで機械学習ワークフローを構築するためのベストプラクティスとデザインパターン](https://aws.amazon.com/jp/blogs/machine-learning/best-practices-and-design-patterns-for-building-machine-learning-workflows-with-amazon-sagemaker-pipelines/)
+- [2023-09-08 基盤モデル(FM)と大規模言語モデル(LLM)におけるMLOpsアーキテクチャの紹介](https://aws.amazon.com/jp/blogs/news/fmops-llmops-operationalize-generative-ai-and-differences-with-mlops/)
+  - 原文は9/1に公開されたもので、MLOpsの方を読んでないと付いていくのは難しそう
+    - [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/mlops-foundation-roadmap-for-enterprises-with-amazon-sagemaker-jp/)
+  - データにML要素が入ってきている、MLOps以外にアプリケーションを組み込む側の話が入ってきている点もポイントか
+  - Bedrockがカバーしたい範囲についても理解できる
 
 ## Update
 
@@ -38,3 +46,7 @@
   - fine-tuningにかかる時間なども記載されており、70Bで最大8時間程度の計測結果がある
 - [2023-09-06 Amazon SageMaker JumpStartを使用したGenerative AIとRAGによる安全なエンタープライズアプリケーションの構築](https://aws.amazon.com/jp/blogs/machine-learning/build-a-secure-enterprise-application-with-generative-ai-and-rag-using-amazon-sagemaker-jumpstart/)
   - RAGにOpenSearchを使うアーキテクチャ例
+- [2023-09-07 Amazon SageMakerが新しいクイックスタジオセットアップを提供](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/amazon-sagemaker-quick-studio-setup-experience/)
+  - 新しいクイックセットアップを使用すると、個々のユーザー向けにデフォルトのプリセットで SageMaker Studio を数分で作成
+  - 元々あったクイックスタートは消えて本当にワンクリックでできてしまうようになった(-_-;)
+  - [Amazon SageMaker simplifies the Amazon SageMaker Studio setup for individual users | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/amazon-sagemaker-simplifies-the-amazon-sagemaker-studio-setup-for-individual-users/)

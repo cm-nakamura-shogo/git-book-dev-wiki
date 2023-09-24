@@ -162,3 +162,7 @@ git for-each-ref --sort=-committerdate refs/remotes/origin --format='%(authordat
 git rebase -> force-with-leaseの流れが良いらしい？
 
 - [https://twitter.com/chizu_potato/status/1634454907326717953?s=12&t=0nszgXsDXAd-L4WiCutIWg](https://twitter.com/chizu_potato/status/1634454907326717953?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+
+## Windowsでシンボリックリンクを使う
+
+- [Gitへ移行して、シンボリックリンクにはまったお話　（Usersにシンボリックリンク作成権限を付与するまで）](https://took.jp/post-447/)

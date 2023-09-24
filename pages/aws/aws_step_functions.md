@@ -47,3 +47,9 @@ Wait タスクの TimestampPath が過去の時刻場合は即実行されるの
 
 - [2023-02-19 [アップデート] AWS Step FunctionsのAWS SDK Integrationで、35のAWSサービスと1100のAPIアクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-new-35-services-api/)
 - [2023-06-17 AWS Step Functions の AWS SDK Integration で、7つの AWS サービスと 460 以上の API アクションが追加でサポートされました | DevelopersIO](https://dev.classmethod.jp/articles/aws-step-functions-adds-integration-for-7-services/)
+- [2023-09-07 AWS Step Functionsがエラーハンドリングの強化機能を発表](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/aws-step-functions-enhanced-error-handling/)
+  - これによりエラーをより明確に識別し、リトライ戦略の詳細な制御が可能になります。
+  - この強化されたエラーハンドリングにより、Fail状態で詳細なエラーメッセージを構築でき、「ランタイム時のエラー原因」に関する動的情報を含めることができます。
+  - 最大リトライ間隔の設定が可能になり、指数関数的なリトライが所望の時間枠を超えないように制御できます。
+  - また、ジッターの追加により、リトライ間隔にランダム性を導入することで、復旧状況でのステートマシンからのサービス呼び出しによる過負荷を防ぐことが可能になります。
+  - [[アップデート] AWS Step Functions の再試行オプションで最大遅延時間とジッターが使えるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/step-functions-retry-option-jitter/)

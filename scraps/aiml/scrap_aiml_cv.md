@@ -68,3 +68,7 @@
   - Nougat: Neural Optical Understanding for Academic Documents
   - 日本語対応できるかは要検証か
   - Training用のAPIも生えているのでなんとかはできそう
+- [2023-09-08 Efficient Controllable Generation for SDXL with T2I-Adapters](https://huggingface.co/blog/t2i-sdxl-adapters)
+  - ControlNetのボトルネックを解消するT2I-Adapterの紹介
+  - T2I-Adaptersはサイズが小さく、ControlNetsとは異なり、T2I-Adaptersはノイズ除去処理の全過程で一度だけ実行すればよい
+  - それに加えて、T2I-Adapter-SDXLは、SDXLの高品質な世代を継承しつつ、強力なコントロール機能を保持している
