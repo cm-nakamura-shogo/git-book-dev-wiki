@@ -48,3 +48,8 @@
     - リモートモデルとML.GENERATE_TEXT関数を使用してテキストを生成するチュートリアルで、これらの機能をお試しください。
 - [2023-08-30 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#August_30_2023)
   - EXPORT DATAステートメントを使用して、BigQueryデータをBigtableに直接エクスポートできるようになりました。この機能はプレビュー中です。
+- [2023-09-12 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#September_12_2023)
+  - 配列の添え字演算子は、配列内の値をインデックスで直接返すようになりました。これまでは、offset と ordinal だけが使用可能でした。この機能は一般に使用可能です (GA)。
+  - 構造体添え字演算子が追加されました。この演算子を使用すると、インデックス、オフセット、または序数によって STRUCT フィールドにアクセスできます。この機能は一般的に使用できます (GA)。
+- [2023-09-13 BigQuery release notes  |  Google Cloud](https://cloud.google.com/bigquery/docs/release-notes#September_13_2023)
+  - AWS Glueの既存のデータベースと連携する連携データセットをBigQueryで作成できるようになりました。この機能はプレビュー中です。

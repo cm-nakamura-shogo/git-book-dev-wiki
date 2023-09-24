@@ -57,3 +57,11 @@
   - 単にアイテムを推薦するたけでなくユーザー毎にサムネイルを最適化している点などがあり興味深かった
   - part2では新しいLLMを使った手法にも触れられている（微分可能な検索インデックスなど）
 - [2023-09-07 TensorFlowで流体の乱流をシミュレーションする新しいフレームワークの紹介](https://blog.research.google/2023/09/a-novel-computational-fluid-dynamics.html)
+- [2023-09-08 Differentially private median and more – Google Research Blog](https://blog.research.google/2023/09/differentially-private-median-and-more.html)
+  - BPアルゴリズムは難しくてわからん
+- [2023-09-13 音楽とサウンド生成のための「Stable Audio」を発表 — Stability AI Japan](https://ja.stability.ai/blog/stable-audio)
+  - Googleアカウント等でログインすれば使用可能
+  - 処理時間は意外と必要
+- [2023-09-15 オーディオ超解像技術 AudioSR を試す｜はまち](https://note.com/hamachi_jp/n/n3c0c25f1f0a0)
+  - 令和版の帯域拡張
+  - ライセンス的にはCC BY-NC-SA 4.0で商用利用はできない

@@ -44,3 +44,5 @@
 - [Python で DI(Dependency Injection) を実現するフレームワークの Injector を使ってみる | DevelopersIO](https://dev.classmethod.jp/articles/python-injector-launch01/)
 - [【Python】injectorでDIコンテナを実装する - Qiita](https://qiita.com/Jazuma/items/9fa15b36f61f9d1e770c)
 - [Python 3.11で追加されたtomlibを使ってみる | DevelopersIO](https://dev.classmethod.jp/articles/python-3-11-use-tomlib/)
+- [2023-09-06 Pythonの開発環境の3つの観点をおさえよう](https://zenn.dev/os1ma/articles/935f6e653f1052)
+  - Ryeは知らなかった。気になる。

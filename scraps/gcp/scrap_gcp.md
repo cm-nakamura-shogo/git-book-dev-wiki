@@ -1,4 +1,9 @@
 
+## contents
+
+- [2023-09-11 公開論文から学ぶ Google のテクノロジー : パート 3：データベース技術編 | Google Cloud 公式ブログ](https://cloud.google.com/blog/ja/products/gcp/google-technology-through-published-papers-part3/)
+  - シリーズ紹介
+
 ## articles
 
 - [2023-09-04 Cloud SpannerのData Boostを触ってみた | DevelopersIO](https://dev.classmethod.jp/articles/cloud-spanner-data-boost/)

@@ -99,6 +99,8 @@ freeコマンドでは基盤側の情報が採取されることもある。Memo
 - [2023-03-18 [小ネタ]ECSのCPUUtilizationとCPUUtilizedは同じ指標？](https://dev.classmethod.jp/articles/ecs-cpuutilized-vs-cpuutilization/)
 - [2023-05-17 [小ネタ]ECSタスクのタグ付けはタグの伝播元を設定しよう | DevelopersIO](https://dev.classmethod.jp/articles/ecs-using-tags/)
 - [2023-05-08 Amazon ECS Exec(aws ecs execute-command)を便利にするツール「sssh」 | DevelopersIO](https://dev.classmethod.jp/articles/sssh-ecs-exec-tool/)
+- [2023-09-12 Fargate で ECS Exec の SSM エージェントログを取得する方法を教えてください | DevelopersIO](https://dev.classmethod.jp/articles/tsnote-amazon-ecs-exec-ssm-agent-logs-on-fargate/)
+  - タスク定義でコマンドを実行させる設定が記載されている
 
 ## Updates
 

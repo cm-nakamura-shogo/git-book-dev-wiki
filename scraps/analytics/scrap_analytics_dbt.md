@@ -18,3 +18,4 @@
 - [2023.09.10 dbt-athenaを使っているdbtプロジェクトでドキュメントを生成してみる | DevelopersIO](https://dev.classmethod.jp/articles/dbt-athena-document-data-linage/)
 - [2023.09.10 dbt-athenaのHiveテーブル向けのIncremental modelsについて、どのようにデータとGlueテーブルが作成されるのか調べてみた | DevelopersIO](https://dev.classmethod.jp/articles/dbt-athena-hive-table-incremental-models/)
 - [2023.09.11 Digdagからdbtを実行してAthenaにモデルを作成してみた | DevelopersIO](https://dev.classmethod.jp/articles/digdag-dbt-core-run-from-workflows/)
+- [2023-09-12 Digdagからタグごとにdbtのモデルをスケジュール実行してAthenaにデータを作成してみる | DevelopersIO](https://dev.classmethod.jp/articles/digdag-dbt-tag-base-schedule-run-athena-models/)

@@ -13,6 +13,10 @@
   - メタデータをテキストとして埋め込みベクトルを作成する、モデルはJumpStartにあるGPT-J 6B Embeddingを使用
   - これをk-NN ベクトルとしてOpenSearch Service のインデックスに保存、一部はメタデータのまま保存
   - 要約モデルには、AI21 Labs Summarizeモデルを使用し、およそ10,000語を処理できるため多くのテキストは一度に要約できる
+- [2023-09-12 AWS を使用した公益事業用スマートメータリングへのアプリケーション統合 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/application-integration-in-utility-smart-metering-using-aws/)
+  - この辺り検証せないかんのかも
+  - ここなども
+    - [AWS IoTと Kinesis Analyticsを使ったニアリアルタイムデータ収集と加工 - たそらぼ](https://tasotasoso.hatenablog.com/entry/2019/08/02/135115)
 
 ## updates
 

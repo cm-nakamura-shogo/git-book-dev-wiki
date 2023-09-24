@@ -17,6 +17,27 @@
     - [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/mlops-foundation-roadmap-for-enterprises-with-amazon-sagemaker-jp/)
   - データにML要素が入ってきている、MLOps以外にアプリケーションを組み込む側の話が入ってきている点もポイントか
   - Bedrockがカバーしたい範囲についても理解できる
+- [2023-09-11 SageMaker Domainとそれが関連するAmazon Virtual Private Cloud(Amazon VPC)をデプロイするためのTerraformの紹介](https://aws.amazon.com/jp/blogs/machine-learning/amazon-sagemaker-domain-in-vpc-only-mode-to-support-sagemaker-studio-with-auto-shutdown-lifecycle-configuration-and-sagemaker-canvas-with-terraform/)
+  - 今後機会があれば
+- [2023-09-11 Falcon 180B foundation modelがSageMaker JumpStartで使用開始](https://aws.amazon.com/jp/blogs/machine-learning/falcon-180b-foundation-model-from-tii-is-now-available-via-amazon-sagemaker-jumpstart/)
+  - 前共有した通りライセンスが小さいモデルと異なるので注意
+  - デフォルトのインスタンスタイプがml.p4de.24xlargeなので気軽に試すのは難しい
+- [2023-09-12 Amazon SageMakerのHugging FaceでEメール分類による顧客成功管理を加速](https://aws.amazon.com/jp/blogs/machine-learning/accelerate-client-success-management-through-email-classification-with-hugging-face-on-amazon-sagemaker/)
+- [2023-09-12 Amazon Translateでアプリケーションログを翻訳し、シームレスなサポートを実現](https://aws.amazon.com/jp/blogs/machine-learning/unlocking-language-barriers-translate-application-logs-with-amazon-translate-for-seamless-support/)
+- [2023-09-13 Knowledge base for Amazon Bedrockをプレビュー](https://aws.amazon.com/jp/about-aws/whats-new/2023/09/knowledge-base-amazon-bedrock-models-data-sources/)
+  - S3などのデータソースを元にRAGする機能らしく見える
+  - [Preview – Connect Foundation Models to Your Company Data Sources with Agents for Amazon Bedrock | AWS News Blog](https://aws.amazon.com/jp/blogs/aws/preview-connect-foundation-models-to-your-company-data-sources-with-agents-for-amazon-bedrock/)
+- [2023-09-13 Amazon QuickSightのワードクラウドでAmazon Comprehendの分析を可視化する](https://aws.amazon.com/jp/blogs/machine-learning/visualize-an-amazon-comprehend-analysis-with-a-word-cloud-in-amazon-quicksight/)
+- [2023-09-14 Retrieval Augmented GenerationとLangChain Agentを使用した内部情報へのアクセスの簡素化](https://aws.amazon.com/jp/blogs/machine-learning/simplify-access-to-internal-information-using-retrieval-augmented-generation-and-langchain-agents/)
+  - よくあるRAGの構成と何が違うのか分かってない、ComprehendのPII機能かな？
+- [2023-09-14 Amazon Comprehendカスタム分類で分類パイプラインを構築する（前編）](https://aws.amazon.com/jp/blogs/machine-learning/build-a-classification-pipeline-with-amazon-comprehend-custom-classification-part-i/)
+  - スケーラブルなトレーニングパイプラインを作成し、Comprehend Custom Classificationモデルのトレーニングデータを準備する方法
+- [2023-09-15 知っておくとちょっと便利？SageMaker Processingの仕様とProccesorとScriptProcessor | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-processing-proccesor-scriptprocessor/)
+  - ScriptProcessorは便利機能のついたProcessorのラッパーということを説明
+- [2023-09-15  SageMaker JumpStart Foundation Models を使用して、ツールを使用する LLM エージェントを構築し、デプロイする方法](https://aws.amazon.com/jp/blogs/machine-learning/learn-how-to-build-and-deploy-tool-using-llm-agents-using-aws-sagemaker-jumpstart-foundation-models/)
+- [2023-09-16 SageMaker Processingで複数インスタンスを使う | DevelopersIO](https://dev.classmethod.jp/articles/sagemaker-processing-multi-instance/)
+  - 自分がどれか、それ以外のホストとの通信ができるなど記載されている
+  - データの割り振りをS3のprefixで決める方法もある
 
 ## Update
 
@@ -50,3 +71,5 @@
   - 新しいクイックセットアップを使用すると、個々のユーザー向けにデフォルトのプリセットで SageMaker Studio を数分で作成
   - 元々あったクイックスタートは消えて本当にワンクリックでできてしまうようになった(-_-;)
   - [Amazon SageMaker simplifies the Amazon SageMaker Studio setup for individual users | AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/amazon-sagemaker-simplifies-the-amazon-sagemaker-studio-setup-for-individual-users/)
+- [2023-09-14 Amazon SageMakerでPythonコードに@remoteデコレータを付けるだけで、SageMaker トレーニングジョブを実行できるように](https://aws.amazon.com/jp/blogs/machine-learning/fine-tune-falcon-7b-and-other-llms-on-amazon-sagemaker-with-remote-decorator/)
+  - リモートデコレータは、SageMaker Estimators や SageMaker 入力チャンネルを明示的に呼び出すことなく、ネイティブの Python コードを使用してトレーニングジョブを直接トリガ可能

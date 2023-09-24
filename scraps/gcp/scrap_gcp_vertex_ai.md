@@ -1,6 +1,9 @@
 
 ## articles
 
+- [2023-05-19 【論文紹介】Google. 2023. PaLM 2 Technical Report - Speaker Deck](https://speakerdeck.com/chokkan/google-2023-palm2-technical-report)
+  - あまり深いことはやはり書いてない
+  - 340Bという話くらいか。
 - [2023-09-07 そのパラメータの意味は？Vertex AIのGenerative AI Studioで文章生成するときの設定を知ろう | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-palm2-parameter/)
   - Temperature、Top-K、Top-Pの解説
   - Temperatureはそこまで解説されてないが、Top-K、Top-Pはこれを見れば十分
@@ -8,6 +11,9 @@
   - 意外と使いどころが難しそうなのね、調教も難しそう
 - [2023-09-08 大規模言語モデル（LLM）をアプリケーション開発で活用するには？ グーグル・クラウドが基礎から解説 |CodeZine（コードジン）](https://codezine.jp/article/detail/18138)
   - あまり目新しい情報はなかった
+- [2023-09-15 Google CloudのAI/ML開発プラットフォームVertex AIは結局何ができるのか | DevelopersIO](https://dev.classmethod.jp/articles/what-can-vertex-ai-do/)
+  - 完全なるまとめ
+- [2023-09-15 Vertex AIのGenerative AI StudioでVision系を使ってみる | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-imagen-try/)
 
 ## updates
 
