@@ -16,3 +16,13 @@
 - [2023-06-21 フィーチャーフラグを管理するためのOpenFeature | フューチャー技術ブログ](https://future-architect.github.io/articles/20230621a/)
 - [2023-07-18 「社内SlackにChatGPT Botを導入する」というタイトルで登壇しました #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/devio2023-slack-chatgpt/)
   - App Runnerの参考に
+- [2018-05-31 【新機能】AWS ELBのApplication Load Balancer(ALB)の認証機能でWebアプリにGoogle認証を追加する | DevelopersIO](https://dev.classmethod.jp/articles/add-google-authenticate-your-webapp-on-alb/)
+  - 稼働管理の元となっているALBにOpenID Connectによる認証を設定する
+  - いまは、ドメインでしばれるはずで、@classmethod.jp ドメインだけ許可が出来る
+- [2019-12-04 Repositoryによる抽象化の理想と現実/Ideal and reality of abstraction by Repository - Speaker Deck](https://speakerdeck.com/sonatard/ideal-and-reality-of-abstraction-by-repository)
+  - まあ言いたいことはわかる。私も抽象化まではしていないが。
+  - でもDBも所詮APIなのでトランザクションをアプリ側で面倒見るか、DB側の機能を使うかの違いだと思っている
+- [2023-08-29 2023年下半期に他人に勧めたいWeb技術まとめ](https://zenn.dev/nameless_sn/articles/web_dev_for_2023_second-half)
+  - TS使い以外はあまり参考にならなそう
+- [2023-09-04 今さら聞けないログの基本と設計指針 - Qiita](https://qiita.com/tadashiro_ninomiya/items/19c774898c68add6185e)
+  - サービス開発時の参考に

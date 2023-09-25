@@ -23,6 +23,7 @@
   - ただしくは、`multipart/form-data; boundary=----hogehogehoge`が正なので。
   - これはJSの話だが他の言語でもあるかもしれないので注意。
 - [2021-01-17 CSS in JS としてのChakra UI のススメ](https://zenn.dev/remon/articles/8d6f840a1d10e8)
+- [2021-06-07 Contentfulに入門してみた](https://zenn.dev/katoaki/articles/286fd6f97ffdaa)
 - [2021-12-05 Utility-FirstなCSS,UIフレームワークを比較してみた(TailwindCSS, Chakra UI, MUI)](https://zenn.dev/kiyokiyoabc/articles/f688f2cee95f04)
   - Chakra UIとTailwindってケンカするんか？
   - この界隈やっぱよくわからん…
@@ -78,3 +79,5 @@
 - [2023-07-20 Next.jsのいろいろなレンダリング方法を確認する | DevelopersIO](https://dev.classmethod.jp/articles/nextjs-rendering/)
   - かなり詳しくまとまっている
 - [2023-07-26 技術選定の参考にbulletproof-reactを見てみる | DevelopersIO](https://dev.classmethod.jp/articles/bulletproof-react-library-selection/)
+- [2023-01-15 Next.js 13 app directory で記事投稿サイトを作ってみよう](https://zenn.dev/azukiazusa/articles/next-js-app-dir-tutorial)
+  - App Routerの参考
