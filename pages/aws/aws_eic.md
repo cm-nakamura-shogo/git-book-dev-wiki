@@ -6,6 +6,10 @@
 
 ### [EC2 Instance Connect Endpoint と Session Managerの違いをまとめてみた | DevelopersIO](https://dev.classmethod.jp/articles/compare-eic-endpoint-and-session-manager/)
 
+- 「個人的には、可用性重視の場合は、セッションマネージャーを選択し、コスト重視であれば、EIC エンドポイントを選択するのがよいかと思いました。」
+- SSMはVPCエンドポイントポイントの料金が必要だが、EICは無料
+- EICのセッション時間は最大1時間なのもネック
+
 ### [AWS CLIの実装からEC2 Instance Connect Endpointを読み解いてみた | DevelopersIO](https://dev.classmethod.jp/articles/demystifying-ec2-instance-connect-implementation/)
 
 ### [[アップデート]パブリック IP アドレスなしで、EC2インスタンスにSSH接続できる EC2 Instance Connect Endpointがリリースしました | DevelopersIO](https://dev.classmethod.jp/articles/update-ec2-instance-connect-endpoint/)
