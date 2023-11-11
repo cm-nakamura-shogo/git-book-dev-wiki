@@ -1,20 +1,5 @@
 # その他
 
-## book
-
-### [2022-04-08 Pythonからはじめるアルゴリズムトレード (オライリー)](https://www.oreilly.co.jp/books/9784873119793)
-
-### [2021-09-18 実践 時系列データ解析 (オライリー)](https://www.oreilly.co.jp/books/9784873119601)
-
-### [2021-05-20 Pythonで学ぶ音声認識 機械学習実践シリーズ](https://book.impress.co.jp/books/1120101083)
-
-- PDF版あり
-
-### [2019-07-29 計量経済学 (New Liberal Arts Selection)](https://www.amazon.co.jp/dp/4641053855)
-
-- 膨大だが、網羅的で評価が高い
-- 情報ソースは、[twitter](https://twitter.com/s1ok69oo/status/1537288232337022977)にて
-
 ## Web資料
 
 ### [Python で学ぶベイズフィルタとカルマンフィルタ](https://inzkyk.xyz/kalman_filter/preface/)

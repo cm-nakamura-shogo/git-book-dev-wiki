@@ -1,19 +1,5 @@
 # 最適化
 
-## book
-
-### [2023-02-18 ゲームで学ぶ検索アルゴリズム実践入門](https://www.amazon.co.jp/dp/4297133601)
-
-- [u++さんの評価](https://twitter.com/upura0/status/1632027942841913344)
-
-### [2023-01-16 最適輸送の理論とアルゴリズム](https://www.amazon.co.jp/dp/4065305144)
-
-- こちらもtwitterの誰かの著書
-
-### [2022-09-16 競技プログラミングの鉄則](https://www.amazon.co.jp/dp/483997750X)
-
-- 米田さんの本
-
 ### 数理最適化まとめ
 
 1. [60分で学ぶ数理最適化](https://speakerdeck.com/umepon/mathematical-optimization-in-60-minutes)
