@@ -42,6 +42,8 @@
 
 - [2023-01 オブザーバビリティ・エンジニアリング (オライリー)](https://www.amazon.co.jp/dp/4814400128)
 
+- [2023-01 詳解 システム・パフォーマンス 第2版](https://www.oreilly.co.jp/books/9784814400072/)
+
 ### dev-computer-arch
 
 - [2022-07 作って学ぶコンピュータアーキテクチャ —— LLVMとRISC-Vによる低レイヤプログラミングの基礎](https://www.amazon.co.jp/dp/4297129140)

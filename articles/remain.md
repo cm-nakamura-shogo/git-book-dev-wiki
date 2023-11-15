@@ -11,8 +11,9 @@
 
 ### aiml-general
 
-1.  [ViTよりもシンプルで強力な最新画像処理モデル ConvMixer を詳細解説！ | DeepSquare](https://deepsquare.jp/2021/10/convmixer/)
-2.  [目的変数が複数あるときの解析の方針の決め方 | データ化学工学研究室(金子研究室)＠明治大学 理工学部 応用化学科](https://datachemeng.com/post-4470/)
+- [ViTよりもシンプルで強力な最新画像処理モデル ConvMixer を詳細解説！ | DeepSquare](https://deepsquare.jp/2021/10/convmixer/)
+- [目的変数が複数あるときの解析の方針の決め方 | データ化学工学研究室(金子研究室)＠明治大学 理工学部 応用化学科](https://datachemeng.com/post-4470/)
+- [因果フォレスト（Causal Forests）をPythonで実践的に学ぶ（その２）Pythonでの因果フォレストの準備 – セールスアナリティクス](https://www.salesanalytics.co.jp/datascience/datascience186/)
 
 ### aiml-mlops
 
@@ -82,3 +83,43 @@
 ### manage
 
 1.  [チームビルディングの始め方](https://zenn.dev/loglass/articles/6091856864ba53)
+
+
+
+[Comparing the Performance of LLMs: A Deep Dive into Roberta, Llama 2, and Mistral for Disaster Tweets Analysis with Lora](https://huggingface.co/blog/Lora-for-sequence-classification-with-Roberta-Llama-Mistral)
+[Alternating updates for efficient transformers – Google Research Blog](https://blog.research.google/2023/11/alternating-updates-for-efficient.html)
+[Google Colab で Japanese Stable LM Gamma 7B を試す｜npaka](https://note.com/npaka/n/n4f2d6e6c11f7?sub_rt=share_b)
+[日本酒(特別純米酒) 庭のうぐいす だるまラベル 720ml 福岡県 山口酒造: 九州エリアJR西日本｜DISCOVER WEST mall│WESTERポイント利用商品](https://dwmall.westjr.co.jp/shop/g/gJT00044/?gclid=CjwKCAjw-eKpBhAbEiwAqFL0mvZz_BqD3dMXYa1MI3Vy_oeVkxzw5CbglJZ2CtLVekZKrh78apxGuRoCNeQQAvD_BwE)
+[社内コミュニケーションのストレスの一因は「温度感」の違い　人によって異なる“やる気の燃え方”4パターン - ログミーBiz](https://logmi.jp/business/articles/329533)
+[図で分かるgit-mergeの--ff, --no-ff, --squashの違い - アジャイルSEを目指すブログ](https://sinsoku.hatenadiary.org/entry/20111025/1319497900)
+[AWS App Runner VPC - AWS Copilot CLI](https://aws.github.io/copilot-cli/ja/blogs/apprunner-vpc/)
+[なんでも継続](https://practical-scheme.net/docs/cont-j.html)
+[TerraformでRailsを載せるECS Fargate環境とReactを載せるS3環境を作成する #Rails - Qiita](https://qiita.com/hatsu/items/8b30e68ba7252a749fe7)
+[これからはじめるReact実践入門 | SBクリエイティブ](https://www.sbcr.jp/product/4815619480/)
+[AWSのETLコストは9割削減できる、カギはGlueからあのサービスへの置き換え | 日経クロステック（xTECH）](https://xtech.nikkei.com/atcl/nxt/column/18/02622/101900002/)
+[AWS 内で大規模言語モデルを利用できる Amazon Bedrock を使って作る RAG アプリケーション - クックパッド開発者ブログ](https://techlife.cookpad.com/entry/bedrock)
+[レビュー指摘が多い原因がレビュアーにもある事を共有する(#14)｜小島優介](https://note.com/kojimadev/n/nca1236edb002)
+[リーダブルSQL[より良いSQLを書くためのシンプルで実践的なテクニック] #MySQL - Qiita](https://qiita.com/zackey2/items/883616dff71e51bf6563)
+[kaggle LLMコンペ　上位解法まとめ](https://zenn.dev/yume_neko/articles/7347ba6b081e93)
+[コンセプトから学ぶAmazon DynamoDB【GSI篇】 | DevelopersIO](https://dev.classmethod.jp/articles/conceptual-learning-about-dynamodb-gsi/)
+[株式会社 澤井珈琲](https://www.sawaicoffee.co.jp/)
+[世界で闘うプログラミング力を鍛える本 | マイナビブックス](https://book.mynavi.jp/ec/products/detail/id=65354)
+[30分で完全理解するTransformerの世界](https://zenn.dev/zenkigen_tech/articles/2023-01-shimizu)
+[mambaやripのinstallが何故早いのか調べたメモ - Stimulator](https://vaaaaaanquish.hatenablog.com/entry/2023/11/07/180723)
+[CSS Modulesを型安全にする仕組み](https://zenn.dev/cybozu_frontend/articles/2528ad2935be9f)
+[世界で闘うプログラミング力を鍛える本 ~コーディング面接189問とその解法~ | Gayle Laakmann McDowell, 岡田 佑一, 小林 啓倫 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4839960100)
+[Retrieval-based LM (RAG system) ざっくり理解する - Speaker Deck](https://speakerdeck.com/smiyawaki0820/retrieval-based-lm-rag-system-zatukurili-jie-suru)
+[満を持してデビュー！大規模言語モデル(LLM)「tsuzumi」記者会見速報 | NTT STORY | NTT](https://group.ntt/jp/magazine/blog/tsuzumi/)
+[Next.js 14発表。Server Actionsが正式版に、Turbopackはもうすぐ完成、部分的プリレンダリング機能がプレビュー。Next.js Conf 2023 － Publickey](https://www.publickey1.jp/blog/23/nextjs_14server_actionsturbopacknextjs_conf_2023.html)
+[ドメイン駆動設計(DDD) 初心者がドメインサービスについて分かった気になるまでの道のり - RAKUS Developers Blog | ラクス エンジニアブログ](https://tech-blog.rakus.co.jp/entry/20200511/ddd)
+[bensadeh/tailspin: 🌀 A log file highlighter](https://github.com/bensadeh/tailspin)
+[企業技術ブログ: エンジニアの技術ブログコミュニティ](https://hatena.blog/dev)
+[ELYZA、自社独自のLLM開発を支援するプログラムを開始　精度向上の鍵はPost-Training|EnterpriseZine（エンタープライズジン）](https://enterprisezine.jp/news/detail/18100)
+[【Calm2 7b】サイバーエージェントの最新LLMが優秀すぎたので、ChatGPTと比較レビューしてみた | WEEL](https://weel.co.jp/media/cyberagentlm2-7b)
+[【Youri 7B】日本最高峰の精度を叩き出す！学習量2兆トークン超えの最強日本語LLM | WEEL](https://weel.co.jp/media/youri-7b)
+[twitter.com/ogawa_yutaro_22/status/1720028241409569054?s=12&t=0nszgXsDXAd-L4WiCutIWg](https://twitter.com/ogawa_yutaro_22/status/1720028241409569054?s=12&t=0nszgXsDXAd-L4WiCutIWg)
+[FastChat への 新モデルの対応手順｜npaka](https://note.com/npaka/n/n04e5b5d8ef11?rt=email&sub_rt=daily_report_followee_notes#56844ed1-02d1-41eb-b9f1-a0af473aaf91)
+[木内梅酒](https://www.kodawari.cc/product/umesyu.html)
+[JavaScriptビルドツールの整理 各ツールの機能と依存関係](https://zenn.dev/nakaakist/articles/86457bf2908379)
+[dbt Incremental Cookbook. Incremental models are one of the most… | by Aaron Bannin | Medium](https://medium.com/@aaronbannin/dbt-incremental-cookbook-d70331ef879a)
+[ウォンテッドリーにおける推薦システム開発の流れ | Wantedly, Inc.](https://www.wantedly.com/companies/wantedly/post_articles/864502)

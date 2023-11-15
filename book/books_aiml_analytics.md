@@ -12,6 +12,7 @@
   - [日本語版](https://zenn.dev/ttya16/articles/ce89dcab833d32cadb39)
 
 - [2023-07 大規模言語モデル入門：書籍案内｜技術評論社](https://gihyo.jp/book/2023/978-4-297-13633-8)
+
 ### aiml-ir
 
 - [2008-07 Introduction to Information Retrieval](https://www.amazon.co.jp//dp/0521865719)
@@ -69,6 +70,10 @@
 
 ### aiml-general
 
+- [2018-09 Pythonで理解する統計解析の基礎：書籍案内｜技術評論社](https://gihyo.jp/book/2018/978-4-297-10049-0)
+
+- [2019-04 最短コースでわかる　ディープラーニングの数学 | 日経BOOKプラス](https://bookplus.nikkei.com/atcl/catalog/19/273470/)
+
 - [2019-07 計量経済学 (New Liberal Arts Selection)](https://www.amazon.co.jp/dp/4641053855)
   - 膨大だが、網羅的で評価が高い
   - 情報ソースは、[twitter](https://twitter.com/s1ok69oo/status/1537288232337022977)にて
@@ -88,6 +93,8 @@
     - とある事情で機械学習エンジニアとは何ぞや？的なスライドを書いてるんですが
     - なんやかんやで既に「仕事ではじめる機械学習」で良い言語化されてるのでホントいい本
 
+- [2021-06 プログラミングのための数学 | マイナビブックス](https://book.mynavi.jp/ec/products/detail/id=122270)
+
 - [2021-08 Kaggle Grandmasterに学ぶ 機械学習 実践アプローチ](https://www.amazon.co.jp/dp/4839974985)
   - 基礎的で結構良いらしい
 
@@ -99,6 +106,8 @@
     - [https://secon.dev/entry/2023/04/29/180000-kaggle-book-review/](https://secon.dev/entry/2023/04/29/180000-kaggle-book-review/)
   - 比較的短めで、的確かつシンプルに説明しており、包括的に眺めることができる。
   - 機械学習の実務一般で必要な技術やテクニックが数多く載っている
+
+- [2023-12 Human-in-the-Loop機械学習](https://www.kyoritsu-pub.co.jp/book/b10039888.html)
 
 - ホクソエムシリーズ
   - [2023-02 評価指標入門〜データサイエンスとビジネスをつなぐ架け橋](https://www.amazon.co.jp/dp/4297133148)
@@ -140,3 +149,4 @@
 
 - [2023-12 Analytics Engineering with SQL and DBT [Book]](https://www.oreilly.com/library/view/analytics-engineering-with/9781098142377/)
   - オライリーのdbt本
+
