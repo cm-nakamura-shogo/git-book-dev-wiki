@@ -137,10 +137,16 @@
 
 ### analytics
 
+- [2018-10 達人に学ぶSQL徹底指南書 第2版 初級者で終わりたくないあなたへ（ミック）｜翔泳社の本](https://www.shoeisha.co.jp/book/detail/9784798157825)
+
+- [2019-09 わかりみSQL - Kauplan Press - BOOTH](https://booth.pm/ja/items/1576397)
+
 - [2018-04 データ前処理大全](https://www.amazon.co.jp/dp/4774196479)
   - 社内で読書会実施
   - SQL, Python, Rでやる前処理を網羅的に学べる
   - それぞれを極めるには別途書籍を参照する必要はありそう
+
+- [2022-03 スッキリわかるSQL入門 第3版 ドリル256問付き！ - インプレスブックス](https://book.impress.co.jp/books/1121101090)
 
 - [2023-08 データ分析失敗事例集](https://www.kyoritsu-pub.co.jp/book/b10032587.html)
   - 少し社内で話題に
@@ -149,4 +155,3 @@
 
 - [2023-12 Analytics Engineering with SQL and DBT [Book]](https://www.oreilly.com/library/view/analytics-engineering-with/9781098142377/)
   - オライリーのdbt本
-

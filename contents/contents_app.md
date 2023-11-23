@@ -2,18 +2,19 @@
 
 ## Web資料
 
-### [ハーバード大学のコンピュータサイエンスとプログラミング技術コース](https://cs50.jp/)
+- [ハーバード大学のコンピュータサイエンスとプログラミング技術コース](https://cs50.jp/)
 
-### [Google Style Guides | styleguide](https://google.github.io/styleguide)
+- [Google Style Guides | styleguide](https://google.github.io/styleguide)
 
-### [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)
+- [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)
 
 ## 開発スタック
 
-### [GraphQL スターターパック | Prisma + NestJS + Next.JS製 個人ブログサイトをCloud Runで運用しよう](https://zenn.dev/waddy/books/graphql-nestjs-nextjs-bootcamp)
+- [有名企業のエンジニア向け研修資料まとめ #新人プログラマ応援 - Qiita](https://qiita.com/KNR109/items/f3268b311e11d5b821c0)
 
-### [HAKODATE Developer Conference＠函館 でGraphQLの話をしてきました](https://dev.classmethod.jp/articles/hakodate-developer-conference-graphql/)
+- [GraphQL スターターパック | Prisma + NestJS + Next.JS製 個人ブログサイトをCloud Runで運用しよう](https://zenn.dev/waddy/books/graphql-nestjs-nextjs-bootcamp)
 
-### [【保存版】WordPressをGatsby+Contentfulに移行する全工程（2020年2月24日時点） - 筋肉めがね](https://kinnikumegane.com/posts/howtomigratefromwordpresstogatsby/)
+- [HAKODATE Developer Conference＠函館 でGraphQLの話をしてきました](https://dev.classmethod.jp/articles/hakodate-developer-conference-graphql/)
 
-- スタックというよりはGatsbyにContentfulなどいろんなテンプレートがあって便利という話。
+- [【保存版】WordPressをGatsby+Contentfulに移行する全工程（2020年2月24日時点） - 筋肉めがね](https://kinnikumegane.com/posts/howtomigratefromwordpresstogatsby/)
+  - スタックというよりはGatsbyにContentfulなどいろんなテンプレートがあって便利という話。

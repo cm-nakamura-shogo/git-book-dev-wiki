@@ -46,3 +46,7 @@
 - [NumPy221本ノックの本書いた](https://zenn.dev/koshian2/articles/786253ece74408)
 
 - [因果推論100本ノック](https://zenn.dev/s1ok69oo/articles/909ca2e858f43c)
+
+### aiml-finance
+
+- [【ファイナンス機械学習 解説】著者の解説スライドを日本語でまとめてみる（1/10） | Quant College](https://quantcollege.net/%e3%80%90%e3%83%95%e3%82%a1%e3%82%a4%e3%83%8a%e3%83%b3%e3%82%b9%e6%a9%9f%e6%a2%b0%e5%ad%a6%e7%bf%92%e3%80%91%e8%91%97%e8%80%85%e3%81%ae%e8%ac%9b%e7%be%a9%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%89%e3%82%92)
