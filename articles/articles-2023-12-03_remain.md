@@ -1,0 +1,15 @@
+- [クラスメソッド データアナリティクス通信(AWSデータ分析編) – 2023年12月号 | DevelopersIO](https://dev.classmethod.jp/articles/cm-da-news-analytics-202312/)
+- [Vertex AI PipelinesとKubeflow Pipelinesはじめの一歩 | DevelopersIO](https://dev.classmethod.jp/articles/vertex-ai-pipeline-basic-flow-prepare/)
+- [『dbtで始めるデータパイプライン構築〜入門から実践〜』をdbt Core (CLI)で実施する | DevelopersIO](https://dev.classmethod.jp/articles/dbt-zenn-tutorial-use-dbt-core/)
+- [実用化を目指す。最新版画像が読めるAI MiniGPT-v2にマルチセッション対応APIを追加｜めぐチャンネル](https://note.com/ai_meg/n/nc84cee7c58b2)
+- [LLM技術と外部データ活用による検索・回答精度向上手法（ファインチューニング、セマンティック検索、In-Context Learning、RAG）と著作権侵害｜知的財産・IT・人工知能・ベンチャービジネスの法律相談なら【STORIA法律事務所】](https://storialaw.jp/blog/10203)
+- [[Auth0]Next.jsのスタンドアロンモードでAPI GatewayとLambdaのサーバーレス構成でデプロイしてみた | DevelopersIO](https://dev.classmethod.jp/articles/auth0nextjs_standalone_lambda/)
+- [dbtを手軽に試す！Dockerを利用してPostgreSQLと一緒に簡単セットアップ | DevelopersIO](https://dev.classmethod.jp/articles/dbt-easy-setup-with-psql/)
+- [Amazon S3 バケット内オブジェクトの上書きコピー後、タイムスタンプが変更されない方法を教えてください | DevelopersIO](https://dev.classmethod.jp/articles/tsnote-s3-add-object-metadata/)
+- [モダンデータスタック カテゴリ紹介 #2 『Data Workspace/Collaboration』 – Modern Data Stack Categories Overview Advent Calendar 2023 | DevelopersIO](https://dev.classmethod.jp/articles/modern-data-stack-categories-overview-advent-calendar-02-data-workspace-collaboration/)
+- [Open LLM Leaderboard: DROP deep dive](https://huggingface.co/blog/leaderboard-drop-dive)
+- [Unsupervised speech-to-speech translation from monolingual data – Google Research Blog](https://blog.research.google/2023/12/unsupervised-speech-to-speech.html)
+- [[電話予約の無人化]Amazon Connect + GPT-4 Turboで、発話の「時刻と日付」の言い回しをどの程度認識してくれるか調査 – Amazon Connect アドベントカレンダー 2023 | DevelopersIO](https://dev.classmethod.jp/articles/connect-chatgpt-phrasing-time-day/)
+
+- [[小ネタ]polarsのread_csvで全ての列を文字列型として読み込む方法 | DevelopersIO](https://dev.classmethod.jp/articles/polars-read-csv-all-string/)
+  - 有用。２回読み込む必要がない。
