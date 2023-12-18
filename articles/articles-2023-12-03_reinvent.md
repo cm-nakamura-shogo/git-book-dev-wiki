@@ -411,3 +411,4 @@
 - [[ニューリリース]Amazon CloudWatch Application Signals がリリースされました！ #AWSreinvent | DevelopersIO](https://dev.classmethod.jp/articles/amazon-cloudwatch-application-signals-public-preview/)
 - [【オペレーターのAIアシスタント】Amazon Q in Connectの設定と「コンテンツの検索」をやってみた – Amazon Connect アドベントカレンダー 2023 | DevelopersIO](https://dev.classmethod.jp/articles/amazon-q-in-connect-setting-search-content/)
 - [[アップデート]Amazon Redshift がマルチテナントアプリケーションの構築を簡素化するメタデータセキュリティに対応しました #AWSreinvent | DevelopersIO](https://dev.classmethod.jp/articles/new-release-amazon-redshift-metadata-security/)
+- [[プレビュー]Amazon Lexでは、ノーコードで簡単に、RAGのチャットボットを構築できるようになりました #AWSreInvent | DevelopersIO](https://dev.classmethod.jp/articles/amazon-lex-conversational-faq-preview/)
