@@ -19,10 +19,10 @@ Macユーザはbrewとか使ってインストールすればいいようです�
 ## コンテンツ
 
 - MIXIさんの動画とスライド
-    - [Git研修【MIXI 23新卒技術研修】 - YouTube](https://www.youtube.com/watch?v=lWkO8bQ9pSo)
-    - [Git研修【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-git-training)
+  - [Git研修【MIXI 23新卒技術研修】 - YouTube](https://www.youtube.com/watch?v=lWkO8bQ9pSo)
+  - [Git研修【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-git-training)
 - その他
-    - [VScodeだけでGit操作を完結させるのだ～～ッ!!](https://zenn.dev/praha/articles/db1c4bcc4ef48c)
+  - [VScodeだけでGit操作を完結させるのだ～～ッ!!](https://zenn.dev/praha/articles/db1c4bcc4ef48c)
 
 ## 進め方
 

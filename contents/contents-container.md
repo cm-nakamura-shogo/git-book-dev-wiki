@@ -11,17 +11,17 @@ MLチームでもコンテナを使った開発が行われます。
 ## コンテンツ
 
 - MIXIさん
-    - [コンテナ研修【MIXI 23新卒技術研修】 - YouTube](https://www.youtube.com/watch?v=Dk0isJQ6a80)
-    - [コンテナ研修【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-container-training-number-01)
-    - [コンテナ研修（Kubernetes編）【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-container-training-number-02-kubernetes)
+  - [コンテナ研修【MIXI 23新卒技術研修】 - YouTube](https://www.youtube.com/watch?v=Dk0isJQ6a80)
+  - [コンテナ研修【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-container-training-number-01)
+  - [コンテナ研修（Kubernetes編）【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-container-training-number-02-kubernetes)
 - 歴史を抑えたい方
-    - [Docker一強の終焉にあたり、押さえるべきContainer事情](https://zenn.dev/ttnt_1013/articles/f36e251a0cd24e)
+  - [Docker一強の終焉にあたり、押さえるべきContainer事情](https://zenn.dev/ttnt_1013/articles/f36e251a0cd24e)
 - その他
-    - [私家版 Dockerfile Pattern](https://gist.github.com/udzura/1515e20d9d2f0bbf187f)
+  - [私家版 Dockerfile Pattern](https://gist.github.com/udzura/1515e20d9d2f0bbf187f)
 - 推奨図書
-    - [2019-02-18 Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
-        - じょんさんが読んでたやつ。きちんとdocker理解するには推奨図書かも
-    - [Amazon.co.jp: AWSコンテナ設計・構築[本格]入門](https://www.amazon.co.jp/dp/4815607656)
+  - [2019-02 Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
+      - じょんさんが読んでたやつ。きちんとdocker理解するには推奨図書かも
+  - [2021-10 AWSコンテナ設計・構築[本格]入門](https://www.amazon.co.jp/dp/4815607656)
 
 ## 進め方
 

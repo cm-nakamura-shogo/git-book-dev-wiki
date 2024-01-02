@@ -10,28 +10,24 @@
 - [【保存版】WordPressをGatsby+Contentfulに移行する全工程（2020年2月24日時点） - 筋肉めがね](https://kinnikumegane.com/posts/howtomigratefromwordpresstogatsby/)
   - スタックというよりはGatsbyにContentfulなどいろんなテンプレートがあって便利という話。
 - 書籍
-    - [2022-07 作って学ぶコンピュータアーキテクチャ —— LLVMとRISC-Vによる低レイヤプログラミングの基礎](https://www.amazon.co.jp/dp/4297129140)
-      - 低レイヤ出の参考図書
-    - [2022-10 Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識](https://www.amazon.co.jp/dp/B0BG8J5QJ1)
-      - 社内で話題になっていた
-      - 著者自身による紹介
-        - [Linuxカーネル学習の敷居を下げたいという思いを実現した本 「Linuxのしくみ」](https://speakerdeck.com/sat/linuxkaneruxue-xi-nofu-ju-woxia-getaitoiusi-iwoshi-xian-sitaben-linuxnosikumi)
-    - [2022-11 コンピュータの構成と設計　MIPS Edition　第6版](https://www.amazon.co.jp/dp/B0BLTQS81T)
-      - パタヘネと呼ばれているやつ
-    - [2023-01 プログラマーのためのCPU入門](https://www.amazon.co.jp/dp/4908686165)
-      - 書評的には熱い
-        - [プログラマのためのCPU入門 - ぱたへね](https://natsutan.hatenablog.com/entry/2023/02/23/093741)
-      - パタヘネ読んでCPU完全理解した！みたいな人が現実を知るのに良い本
-    - [2019-12-01 マスタリングTCP/IP 第6版](https://www.amazon.co.jp/dp/4274224473)
-        - 新人おすすめ図書に入っていた
-    - [2023-03-27 コンピュータネットワーク　第6版](https://bookplus.nikkei.com/atcl/catalog/23/03/16/00728/)
-        - 分厚く高いがネットワークの聖典？
-        - 宣伝
-            - [https://twitter.com/nonNoise/status/1650135452450713602](https://twitter.com/nonNoise/status/1650135452450713602)
-    - [2022-10-12 情報セキュリティの敗北史](https://www.amazon.co.jp/dp/4826902433)
-        - 概念を先に理解しておくのはとても良さそう。
-        - 書評
-        - [https://note.com/ichi_twnovel/n/nbeb9923a8c94](https://note.com/ichi_twnovel/n/nbeb9923a8c94)
+  - [2019-12 マスタリングTCP/IP 第6版](https://www.amazon.co.jp/dp/4274224473)
+    - 新人おすすめ図書に入っていた
+  - [2022-07 作って学ぶコンピュータアーキテクチャ —— LLVMとRISC-Vによる低レイヤプログラミングの基礎](https://www.amazon.co.jp/dp/4297129140)
+    - 低レイヤ出の参考図書
+  - [2022-10 Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識](https://www.amazon.co.jp/dp/B0BG8J5QJ1)
+    - 社内で話題になっていた
+    - 著者自身による紹介
+      - [Linuxカーネル学習の敷居を下げたいという思いを実現した本 「Linuxのしくみ」](https://speakerdeck.com/sat/linuxkaneruxue-xi-nofu-ju-woxia-getaitoiusi-iwoshi-xian-sitaben-linuxnosikumi)
+  - [2022-11 コンピュータの構成と設計　MIPS Edition　第6版](https://www.amazon.co.jp/dp/B0BLTQS81T)
+    - パタヘネと呼ばれているやつ
+  - [2023-01 プログラマーのためのCPU入門](https://www.amazon.co.jp/dp/4908686165)
+    - 書評的には熱い
+      - [プログラマのためのCPU入門 - ぱたへね](https://natsutan.hatenablog.com/entry/2023/02/23/093741)
+    - パタヘネ読んでCPU完全理解した！みたいな人が現実を知るのに良い本
+  - [2023-03-27 コンピュータネットワーク　第6版](https://bookplus.nikkei.com/atcl/catalog/23/03/16/00728/)
+    - 分厚く高いがネットワークの聖典？
+    - 宣伝
+      - [https://twitter.com/nonNoise/status/1650135452450713602](https://twitter.com/nonNoise/status/1650135452450713602)
 - 競プロ・最適化
   - [2017-02_世界で闘うプログラミング力を鍛える本](https://book.mynavi.jp/ec/products/detail/id=65354)
     - GAFAの面接対策試験本
