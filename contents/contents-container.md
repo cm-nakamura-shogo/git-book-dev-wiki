@@ -19,7 +19,8 @@ MLチームでもコンテナを使った開発が行われます。
 - その他
     - [私家版 Dockerfile Pattern](https://gist.github.com/udzura/1515e20d9d2f0bbf187f)
 - 推奨図書
-    - [Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
+    - [2019-02-18 Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
+        - じょんさんが読んでたやつ。きちんとdocker理解するには推奨図書かも
     - [Amazon.co.jp: AWSコンテナ設計・構築[本格]入門](https://www.amazon.co.jp/dp/4815607656)
 
 ## 進め方

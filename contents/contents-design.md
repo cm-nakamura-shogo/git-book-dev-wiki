@@ -26,10 +26,9 @@
             - かなりよかった。
             - とくに最初の方のアーキテクトとプログラマの違いや、アーキテクトとしてうまくやる方法などについて、学ぶことがたくさんあった。
             - 具体的なアーキテクチャのパタンも知らないやつがいくつかあったので、わからないものに再び遭遇したときに参考にできそう
+        - [「ソフトウェアアーキテクチャの基礎」読書感想](https://zenn.dev/yoshiko/scraps/124fbe6d5b2103)
     - [単体テストの考え方使い方](https://book.mynavi.jp/ec/products/detail/id=134252)
     - [情報セキュリティの敗北史: 脆弱性はどこから来たのか](https://www.amazon.co.jp/dp/4826902433)
-    - [マスタリングTCP/IP―入門編―(第6版)](https://www.amazon.co.jp/dp/4274224473)
-    - [コンピュータネットワーク　第6版 | 日経BOOKプラス](https://bookplus.nikkei.com/atcl/catalog/23/03/16/00728/)
     - [ソフトウェアシステムアーキテクチャ構築の原理 第2版](https://www.amazon.co.jp/dp/B00ZF44J0I/)
     - [2009-07 レガシーコード改善ガイド (Object Oriented SELECTION)](https://www.amazon.co.jp/dp/4798116831/)
     - [2018-08 OSSライセンスの教科書](https://www.amazon.co.jp/dp/4297100355)

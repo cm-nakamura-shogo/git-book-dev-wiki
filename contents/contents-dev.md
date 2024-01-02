@@ -22,6 +22,16 @@
       - 書評的には熱い
         - [プログラマのためのCPU入門 - ぱたへね](https://natsutan.hatenablog.com/entry/2023/02/23/093741)
       - パタヘネ読んでCPU完全理解した！みたいな人が現実を知るのに良い本
+    - [2019-12-01 マスタリングTCP/IP 第6版](https://www.amazon.co.jp/dp/4274224473)
+        - 新人おすすめ図書に入っていた
+    - [2023-03-27 コンピュータネットワーク　第6版](https://bookplus.nikkei.com/atcl/catalog/23/03/16/00728/)
+        - 分厚く高いがネットワークの聖典？
+        - 宣伝
+            - [https://twitter.com/nonNoise/status/1650135452450713602](https://twitter.com/nonNoise/status/1650135452450713602)
+    - [2022-10-12 情報セキュリティの敗北史](https://www.amazon.co.jp/dp/4826902433)
+        - 概念を先に理解しておくのはとても良さそう。
+        - 書評
+        - [https://note.com/ichi_twnovel/n/nbeb9923a8c94](https://note.com/ichi_twnovel/n/nbeb9923a8c94)
 - 競プロ・最適化
   - [2017-02_世界で闘うプログラミング力を鍛える本](https://book.mynavi.jp/ec/products/detail/id=65354)
     - GAFAの面接対策試験本
@@ -32,6 +42,7 @@
     - こちらもtwitterの誰かの著書
   - [2023-02 ゲームで学ぶ探索アルゴリズム実践入門](https://www.amazon.co.jp/dp/4297133601)
     - [u++さんの評価](https://twitter.com/upura0/status/1632027942841913344)
+
 # contents-dev-shell
 
 ## はじめに

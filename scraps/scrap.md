@@ -55,8 +55,6 @@
   - [Xユーザーのえふのじさん: 「インテルのCPU、6～11世代Coreシリーズに重大な脆弱性 / X](https://twitter.com/fnoji/status/1689144445873328128?s=12&t=0nszgXsDXAd-L4WiCutIWg)
   - [バクラクMLチームの技術スタックの変遷 - LayerX エンジニアブログ](https://tech.layerx.co.jp/entry/2023/07/28/184937)
   - [XユーザーのShota Nukumizuさん: 「【おもしろ記事】1000万ユーザに耐えるサーバを作ってみた  / X](https://twitter.com/nameless_sn/status/1693895824017678444?s=12&t=0nszgXsDXAd-L4WiCutIWg)
-  - [O'Reilly Japan - ソフトウェアアーキテクチャの基礎](https://www.oreilly.co.jp//books/9784873119823/)
-  - [「ソフトウェアアーキテクチャの基礎」読書感想](https://zenn.dev/yoshiko/scraps/124fbe6d5b2103)
   - [【Auth0入門】QuickStartで手を動かしながらサクッとAuth0を学んでみた | DevelopersIO](https://dev.classmethod.jp/articles/lets-begin-auth0/)
   - [開発チームリーダーとしてやってきたことのふりかえり #devio2023 | DevelopersIO](https://dev.classmethod.jp/articles/devio2023-reflection-on-what-i-have-done-as-a-development-team-leader/)
   - [運用保守のお仕事について | DevelopersIO](https://dev.classmethod.jp/articles/how-about-mentainance-work/)
@@ -139,23 +137,15 @@
   - [dbtの公式入門ドキュメント『Quickstart for dbt Cloud and Snowflake』を実践してみた #dbt | DevelopersIO](https://dev.classmethod.jp/articles/quickstart-for-dbt-cloud-and-snowflake/)
   - [EC2でAnsible練習環境を作成してみた | DevelopersIO](https://dev.classmethod.jp/articles/deploy-ansible-practice-environment/)
   - [AnsibleでAmazon Linux 2023にdbt-athena環境を構築してみた | DevelopersIO](https://dev.classmethod.jp/articles/ansible-amazon-linux-2023-dbt-athena/)
-  - [dbtとは？｜dbtで始めるデータパイプライン構築〜入門から実践〜](https://zenn.dev/dbt_tokyo/books/537de43829f3a0/viewer/what_dbt)
 - data catalog
   - [AWS Glue Data Catalog を理解する - Qiita](https://qiita.com/c-irei/items/c91272026954837a879c)
   - [とにかくシンプルなデータカタログが欲しい人におすすめな「Select Star」のご紹介 | DevelopersIO](https://dev.classmethod.jp/articles/dive-deep-into-modern-data-saas-about-select-star/)
   - [激熱！1日1製品！最強のデータ系SaaSはどれだ決定戦 アドベントカレンダー2021 | DevelopersIO](https://dev.classmethod.jp/articles/dive-deep-into-modern-data-saas-advent-calendar/)
 
-### book
-
-- [最近o'reillyの『Data Mesh』というデータの分散アーキテクチャに関する本を読みました。](https://mond.how/topics/4zmeukz6fd2jqcn)
-- [会計クイズを解くだけで財務3表がわかる 世界一楽しい決算書の読み方 | 大手町のランダムウォーカー, わかる |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4046043679)
-- [新米PdM目線でおすすめする書籍「プロダクトマネージャーのしごと 第2版」 | DevelopersIO](https://dev.classmethod.jp/articles/product-management-in-practice-review/)
-
 ## rss-ml
 
 - [RO-ViT: Region-aware pre-training for open-vocabulary object detection with vision transformers – Google Research Blog](https://blog.research.google/2023/08/ro-vit-region-aware-pre-training-for.html)
 - [3秒の音声があれば本人そっくりの声で日本語・英語・中国語合成できる「VALL-E X」はやはり脅威。MSが非公開にした技術のOSS版を試して実感した（CloseBox） | テクノエッジ TechnoEdge](https://www.techno-edge.net/article/2023/08/28/1812.html)
-- [Xユーザーのyshr10icさん: 「The Kaggle Workbookの翻訳書出るのね！ The Kaggle Workbook 著名コンテストに学ぶ！競技トップレベルの思考と技術（2023/10/19発売予定） https://t.co/1LufywtEMk」 / X](https://twitter.com/yshr_10ic/status/1696447775721017571?s=12&t=suYC6B2IhN7jv0qU5zDxmQ)
 - [企業による生成AIアプリ構築はどう楽になる？　Google Cloudが開発基盤Vertex AIを強化：Google Cloud Next ’23 - ＠IT](https://atmarkit.itmedia.co.jp/ait/articles/2308/30/news094.html)
 - [ChatGPTにLipsumみたいなダミーテキストを作らせる - Qiita](https://qiita.com/ist-sh-ha/items/b805d4483620ae32da5e)
 - [Introducing ChatGPT Enterprise](https://openai.com/blog/introducing-chatgpt-enterprise)
@@ -190,9 +180,6 @@
 - [後で楽できるTerraformの書き方（※ただし書くときは辛い） - SMARTCAMP Engineer Blog](https://tech.smartcamp.co.jp/entry/easy-terraform-later)
 - [えーっ、最強の乱数シードがあるんですか！？ | 株式会社オープンストリーム](https://www.opst.co.jp/keep_innovating_blog/220105/)
 - [ブリリアントジャークとは？3つの対処法と1.1コミュニケーション - 魔法剣乱れ打ち](https://www.n-links.co.jp/web/nblog/management/brilliant-jerks/)
-- [O'Reilly Japan - 大規模データ管理](https://www.oreilly.co.jp/books/9784814400089/)
-- [データマネジメント知識体系ガイドDMBOK要約・解説｜よしむら＠データマネジメント担当｜note](https://note.com/datamanagement/m/m3f27a63bfe25)
-- [Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考 - 秀和システム あなたの学びをサポート！](https://www.shuwasystem.co.jp/book/b620733.html)
 - [AnsibleでAmazon Linux 2023にdbt-athena環境を構築してみた | DevelopersIO](https://dev.classmethod.jp/articles/ansible-amazon-linux-2023-dbt-athena/)
 - [Github Actions + Terraformを使ったSnowflakeリソース管理のCI/CDパイプラインの構築](https://zenn.dev/t_koreeda/articles/dfc62ed51ef925)
 - [twitter.com/dagster/status/1691502523188916224](https://twitter.com/dagster/status/1691502523188916224)
@@ -322,25 +309,6 @@
 ## CV
 
 - [国立国会図書館（NDL）、OCR処理プログラム「NDLOCR」ver.2を公開 | カレントアウェアネス・ポータル](https://current.ndl.go.jp/car/185098)
-
-## contents
-
-- [画像認識 (機械学習プロフェッショナルシリーズ) | 原田 達也 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4061529129?ref_=cm_sw_r_cp_ud_dp_SCQGEQEVHHVNNF0MZVHC)
-- [ソフトウェア設計のトレードオフと誤りを出版しました | フューチャー技術ブログ](https://future-architect.github.io/articles/20230616a/)
-- [(1) O'Reilly JapanさんはTwitterを使っています: 「8月発行予定の新刊『機械学習システムデザイン ―実運用レベルのアプリケーションを実現する継続的反復プロセス』の情報をAmazonおよび楽天ブックスで公開開始しました！ https://t.co/34M5rjUE2T https://t.co/Okr1GyoR3t」 / Twitter](https://twitter.com/oreilly_japan/status/1673207153258287104)
-- [キーエンス解剖　最強企業のメカニズム | 西岡 杏 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4296200917)
-- [2020-05-11 データマネジメントが30分でわかる本](https://www.amazon.co.jp/dp/B085W4YSZJ)
-- [2023-06-14 ビジネスダッシュボード設計・実装ガイドブック 成果を生み出す](https://www.shoeisha.co.jp/book/detail/9784798177649)
-- [新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング (できるビジネス) | 唐木 元 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4844338722)
-- [Googleを支える技術 ……巨大システムの内側の世界：書籍案内｜技術評論社](https://gihyo.jp/book/2008/978-4-7741-3432-1)
-- [O'Reilly Japan - 初めてのTypeScript](https://www.oreilly.co.jp/books/9784814400362/)
-- [QDくん⚡️AI関連の無料教材紹介さんはTwitterを使っています: 「スキルアップAI社のPython入門講座が期間限定で無料になっている。講義動画の他、スライドpdfやNotebookをDL可 機械学習のためのPython入門講座 https://t.co/tlGZkA89tW ・実行環境の整備 ・Python基礎文法 ・numpy ・pandas ・matplotlib ・seaborn ・データの前処理 ・機械学習モデルの構築と評価 https://t.co/6MyXBaaOkx」 / Twitter](https://twitter.com/developer_quant/status/1662092878502588416)
-- [Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち – 技術書出版と販売のラムダノート](https://www.lambdanote.com/products/engineers-in-voyage)
-- [HIGH OUTPUT MANAGEMENT | 日経BOOKプラス](https://bookplus.nikkei.com/atcl/catalog/17/P55010/)
-- [ばんくし王さんはTwitterを使っています: 「社内でもオススメしたんだが、リファクタリングだとか特定言語の特性を語る時に「プログラマー脳」が良い。どうやって人間がプログラミングというモノを習熟していくのか分かっていると全て不要、否定にならないシーンも増える。チーム応用の話も書いてありオススメです。 https://t.co/tZusxR1QRM」 / Twitter](https://twitter.com/vaaaaanquish/status/1661237308505604097)
-- [Atsushi SakaiさんはTwitterを使っています: 「この本、ちょっと興味あるな: スタッフエンジニア　マネジメントを超えるリーダーシップ | Will Larson, 長谷川 圭, 増井 雄一郎 | 工学 | Kindleストア | Amazon https://t.co/jIHm0X0LmR」 / Twitter](https://twitter.com/atsushi_twi/status/1654093757040697345)
-- [共立出版 アリがと蟻さんはTwitterを使っています: 「こんな本が欲しかった！（ですよね！？）あえて「失敗」事例を広く共有することで、データサイエンティストがやりがちな過ちを防ぎ、ビジネスにおけるデータサイエンティストの価値向上の一助となることを目指し、本書は企画されました。 https://t.co/eH5oj2Ao5z」 / Twitter](https://twitter.com/1738310/status/1666329421966635011)
-
 
 ## aws
 

@@ -1,7 +1,5 @@
 # IaC
 
-## Books
-
 ## Articles
 
 - [2023-04-13 prismatixでのTerraform運用で活用しているツールの紹介](https://dev.classmethod.jp/articles/developersio-day-one-terraform-and-related-tools-utilized-by-prismatix/)

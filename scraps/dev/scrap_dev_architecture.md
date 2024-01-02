@@ -1,9 +1,5 @@
 # アーキテクチャ
 
-## Contents
-
-- [2023年のエンジニア新人研修の講義資料を公開しました - Cybozu Inside Out | サイボウズエンジニアのブログ](https://blog.cybozu.io/entry/2023/07/14/170000)
-
 ## Articles
 
 - [2021-12-21 とってもやさしいGo言語入門](https://zenn.dev/sharefull_blog/articles/1fb628d82ed79b)

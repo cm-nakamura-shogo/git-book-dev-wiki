@@ -20,7 +20,7 @@
       - [https://github.com/ageron/handson-ml](https://github.com/ageron/handson-ml)
       - [https://github.com/ageron/handson-ml2](https://github.com/ageron/handson-ml2)
       - [https://github.com/ageron/handson-ml3](https://github.com/ageron/handson-ml3)
-    - [O'Reilly Japan - Pythonによるデータ分析入門 第3版](https://www.oreilly.co.jp/books/9784814400195/)
+    - [2023-08-12 Pythonによるデータ分析入門 第3版](https://www.oreilly.co.jp/blog/2023/07/40019_python_for_data_analysis_3ed.html)
     - ソシム社シリーズ
         - [2020-05 データ分析のための数理モデル入門 (ソシム社)](https://www.amazon.co.jp/dp/4802612494)
         - [2020-12 分析者のためのデータ解釈学入門 (ソシム社)](https://www.amazon.co.jp/dp/4802612907)
@@ -69,6 +69,12 @@
   - [2022-04 ゼロから作るDeep Learning ❹— 強化学習編](https://www.amazon.co.jp/dp/4873119758)
     - [書籍](https://www.amazon.co.jp/dp/4873119758)
     - [コード](https://github.com/oreilly-japan/deep-learning-from-scratch-4)
+- バイオインフォ
+  - [2023-03-31 Pythonで実践 生命科学データの機械学習](https://www.amazon.co.jp/dp/4758122636)
+    - バイオ系の人は必読書なのかも
+    - 宣伝
+      - [https://twitter.com/biomedicalhacks/status/1639147337112260608](https://twitter.com/biomedicalhacks/status/1639147337112260608)
+  - [ゲノム科学研究に必要とされる事前知識 - Laboratory for Bioinformatics ResearchLaboratory for Bioinformatics Research](https://bit.riken.jp/%E3%82%B2%E3%83%8E%E3%83%A0%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%A8%E3%81%95%E3%82%8C%E3%82%8B%E4%BA%8B%E5%89%8D%E7%9F%A5%E8%AD%98/)
 - その他
     - [Winning solutions of kaggle competitions](https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions)
         - 過去のコンペのソリューションまとめ

@@ -1,10 +1,5 @@
 # AIML
 
-## contents
-
-- [2023-09-06 Pythonによる時系列分析 ―予測モデル構築と企業事例](https://twitter.com/karaage0703/status/1699425086980161865)
-  - からあげさんが良いと言っている
-
 ## articles
 
 - [2023-04-17 1次元の時系列をFFT等を使い2次元にmapするTimeNetを提案](https://arxiv.org/abs/2210.02186)

@@ -29,8 +29,9 @@ VSCodeのページで示した記事通りにすればセットアップ済み�
     - [2023年度「Pythonプログラミング入門」 | Pythonプログラミング入門](https://utokyo-ipp.github.io/course/)
 - 書籍
     - [エキスパートPythonプログラミング改訂3版](https://tatsu-zine.com/books/expert-python-programming-3ed)
-    - [ロバストPython](https://www.oreilly.co.jp/books/9784814400171/)
-    - [O'Reilly Japan - ハイパフォーマンスPython 第2版](https://www.oreilly.co.jp/books/9784873119908/)
+    - [2023-03-25 ロバストPython](https://www.oreilly.co.jp//books/9784814400171/)
+        - [読書メモ](../book/2023-03-25_robust-python.md)
+    - [2023-04-14 ハイパフォーマンスPython 第2版](https://www.oreilly.co.jp/blog/2023/03/1990_high_performance_python_2e.html)
 - その他
     - [Python：メインページ - リファレンス メモ](https://cercopes-z.com/Python/index.html)
     - [Awesome Fastapi (mjhea0/awesome-fastapi) Overview - Track Awesome List](https://www.trackawesomelist.com/mjhea0/awesome-fastapi/readme/)

@@ -9,3 +9,5 @@
   - [4. 馬場さんのサイト"Logics of Blue"](https://logics-of-blue.com/tag/%e6%99%82%e7%b3%bb%e5%88%97%e5%88%86%e6%9e%90/)
 
 - [実践 時系列データ解析 (オライリー)](https://www.oreilly.co.jp/books/9784873119601)
+- [Pythonによる時系列分析 ―予測モデル構築と企業事例](https://twitter.com/karaage0703/status/1699425086980161865)
+  - からあげさんが良いと言っている

@@ -28,10 +28,17 @@ DA事業本部の教養的な意味でアナリティクスやデータエンジ
     - [O'Reilly Japan - 大規模データ管理](https://www.oreilly.co.jp/books/9784814400089/)
     - [SQLではじめるデータ分析](https://www.amazon.co.jp/dp/4814400209)
     - [実践Data Scienceシリーズ データ分析のためのデータ可視化入門](https://www.amazon.co.jp/dp/4065164044)
+        - なゆゆお勧めの可視化
+        - よい可視化の根拠がきちんと書いてあるらしい
     - [Analytics Engineering with SQL and dbt [Book]](https://www.oreilly.com/library/view/analytics-engineering-with/9781098142377/)
     - [Data Modeling with Snowflake | Packt](https://www.packtpub.com/product/data-modeling-with-snowflake/9781837634453)
     - [データ分析失敗事例集 - 共立出版](https://www.kyoritsu-pub.co.jp/book/b10032587.html)
         - 少し社内で話題に
+    - [データマネジメント知識体系ガイド 第二版](https://www.amazon.co.jp/dp/4296100491)
+        - いわゆるDMBOK
+    - [データビジュアライゼーションの基礎](https://www.amazon.co.jp/dp/4873119537)
+        - 社内で流れていた
+        - Rなので少しやる気が
 
 - その他
     - [1年前の自分が読みたかった、データエンジニアリング入門 #AdventCalendar2023 - Qiita](https://qiita.com/SoySoySoyB/items/44fda40de0276a83957a)

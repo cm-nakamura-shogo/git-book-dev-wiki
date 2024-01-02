@@ -1,10 +1,5 @@
 # Container
 
-## Books
-
-- [2019-02-18 Docker実践ガイド 第2版 impress top gearシリーズ](https://www.amazon.co.jp/gp/product/B07NDT526Q)
-  - じょんさんが読んでたやつ。きちんとdocker理解するには推奨図書かも
-
 ## Articles
 
 - [2022-12-06 Docker on Lima なツールを色々試してみた](https://developers.freee.co.jp/entry/freee-docker-desktop-alternative)
