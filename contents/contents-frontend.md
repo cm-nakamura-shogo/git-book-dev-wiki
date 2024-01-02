@@ -9,3 +9,4 @@
   - BOOTHで話題になっている
 - [JavaScript Primer](https://jsprimer.net/)
   - JavaScriptの入門コンテンツ
+- [2023-06 初めてのTypeScript](https://www.oreilly.co.jp/books/9784814400362/)

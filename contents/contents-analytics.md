@@ -34,11 +34,18 @@ DA事業本部の教養的な意味でアナリティクスやデータエンジ
     - [Data Modeling with Snowflake | Packt](https://www.packtpub.com/product/data-modeling-with-snowflake/9781837634453)
     - [データ分析失敗事例集 - 共立出版](https://www.kyoritsu-pub.co.jp/book/b10032587.html)
         - 少し社内で話題に
+        - [Xユーザーの共立出版 アリがと蟻さん: 「こんな本が欲しかった！（ですよね！？）あえて「失敗」事例を広く共有することで / X](https://twitter.com/1738310/status/1666329421966635011)
     - [データマネジメント知識体系ガイド 第二版](https://www.amazon.co.jp/dp/4296100491)
         - いわゆるDMBOK
+        - [データマネジメント知識体系ガイドDMBOK要約・解説｜よしむら＠データマネジメント担当｜note](https://note.com/datamanagement/m/m3f27a63bfe25)
     - [データビジュアライゼーションの基礎](https://www.amazon.co.jp/dp/4873119537)
         - 社内で流れていた
         - Rなので少しやる気が
+    - [dbtで始めるデータパイプライン構築〜入門から実践〜](https://zenn.dev/dbt_tokyo/books/537de43829f3a0)
+    - [2020-03 データマネジメントが30分でわかる本](https://www.amazon.co.jp/dp/B085W4YSZJ)
+    - [2022-03 Data Mesh [Book]](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
+      - [最近o'reillyの『Data Mesh』というデータの分散アーキテクチャに関する本を読みました… | Mond](https://mond.how/topics/4zmeukz6fd2jqcn)
+    - [2023-06 ビジネスダッシュボード 設計・実装ガイドブック](https://www.shoeisha.co.jp/book/detail/9784798177649)
 
 - その他
     - [1年前の自分が読みたかった、データエンジニアリング入門 #AdventCalendar2023 - Qiita](https://qiita.com/SoySoySoyB/items/44fda40de0276a83957a)

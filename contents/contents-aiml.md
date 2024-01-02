@@ -126,8 +126,10 @@
   - 比較的短めで、的確かつシンプルに説明しており、包括的に眺めることができる。
   - 機械学習の実務一般で必要な技術やテクニックが数多く載っている
 
-- [2023-12 Human-in-the-Loop機械学習](https://www.kyoritsu-pub.co.jp/book/b10039888.html)
+- [2023-09 機械学習システムデザイン](https://www.oreilly.co.jp/books/9784814400409/)
 
+- [2023-12 Human-in-the-Loop機械学習](https://www.kyoritsu-pub.co.jp/book/b10039888.html)
+- [2023-10 The Kaggle Workbook 著名コンテストに学ぶ！競技トップレベルの思考と技術](https://book.impress.co.jp/books/1123101018)
 ## 進め方
 
 一つ選べと言われれば、「Kaggleで勝つデータ分析の技術」を推します。

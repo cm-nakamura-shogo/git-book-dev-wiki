@@ -94,7 +94,12 @@
     - [2023-05-03 スタッフエンジニア　マネジメントを超えるリーダーシップ](https://www.amazon.co.jp/dp/429607055X)
       - devioの書評
         - [[書評]シニアエンジニアから先のキャリアを考える「スタッフエンジニア マネジメントを超えたリーダーシップ」 | DevelopersIO](https://dev.classmethod.jp/articles/book-review-staff-engineer/)
+      - [XユーザーのAtsushi Sakaiさん: 「この本、ちょっと興味あるな」 / X](https://twitter.com/atsushi_twi/status/1654093757040697345)
     - [2023-09-11 GitLabに学ぶ 世界最先端のリモート組織のつくりかた](https://www.amazon.co.jp/dp/4798179426)
+    - [2015-08 新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング](https://www.amazon.co.jp/dp/4844338722)
+    - [2017-01 HIGH OUTPUT MANAGEMENT | 日経BOOKプラス](https://bookplus.nikkei.com/atcl/catalog/17/P55010/)
+    - [2023-09 プロダクトマネージャーのしごと 第2版](https://www.oreilly.co.jp/books/9784814400430/)
+      - [新米PdM目線でおすすめする書籍「プロダクトマネージャーのしごと 第2版」 | DevelopersIO](https://dev.classmethod.jp/articles/product-management-in-practice-review/)
 - ビジネス
     - [2010-04-16 問題解決プロフェッショナル「思考と技術」 / 齋藤 嘉則【著】 - 紀伊國屋書店ウェブストア｜オンライン書店｜本、雑誌の通販、電子書籍ストア](https://www.kinokuniya.co.jp/f/dsg-01-9784478005538)
     - [2017-11-16 Hit Refresh](https://www.amazon.co.jp/dp/B076Q6M456)
@@ -113,6 +118,8 @@
     - [2021-07-13 ソニー再生　変革を成し遂げた「異端のリーダーシップ」 ](https://www.amazon.co.jp/dp/B098SCY765)
     - [2021-12-24 武器としての戦略フレームワーク](https://www.amazon.co.jp/dp/4534058950)
       - nishibaさん推奨図書
+    - [2022-12 キーエンス解剖　最強企業のメカニズム | 西岡 杏 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4296200917)
+    - [2020-03 会計クイズを解くだけで財務3表がわかる](https://www.amazon.co.jp/dp/4046043679)
 - その他
   - [高いパフォーマンスを発揮する組織 - Amazon ピザ 2 枚チーム | AWS Executive Insights](https://aws.amazon.com/jp/executive-insights/content/amazon-two-pizza-team/)
   - [nishiba氏の考え](https://twitter.com/m_nishiba/status/1680912640250613761)

@@ -13,3 +13,4 @@
 - [O'Reilly Japan - 機械学習による検索ランキング改善ガイド](https://www.oreilly.co.jp/books/9784814400300/)
 - [情報検索100本ノックが公開](https://github.com/ir100/ir100)
   - Python想定。日本語コンテンツ。
+- [2008-03 Googleを支える技術 ……巨大システムの内側の世界：書籍案内｜技術評論社](https://gihyo.jp/book/2008/978-4-7741-3432-1)

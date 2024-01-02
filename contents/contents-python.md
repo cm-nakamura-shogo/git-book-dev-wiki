@@ -29,6 +29,7 @@ VSCodeのページで示した記事通りにすればセットアップ済み�
     - [2023年度「Pythonプログラミング入門」 | Pythonプログラミング入門](https://utokyo-ipp.github.io/course/)
 - 書籍
     - [エキスパートPythonプログラミング改訂3版](https://tatsu-zine.com/books/expert-python-programming-3ed)
+      - [エキスパートPythonプログラミング改訂4版が発売されました | フューチャー技術ブログ](https://future-architect.github.io/articles/20230727a/)
     - [2023-03-25 ロバストPython](https://www.oreilly.co.jp//books/9784814400171/)
         - [読書メモ](../book/2023-03-25_robust-python.md)
     - [2023-04-14 ハイパフォーマンスPython 第2版](https://www.oreilly.co.jp/blog/2023/03/1990_high_performance_python_2e.html)

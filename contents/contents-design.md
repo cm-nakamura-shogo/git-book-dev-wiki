@@ -34,14 +34,18 @@
     - [2018-08 OSSライセンスの教科書](https://www.amazon.co.jp/dp/4297100355)
       - Belugaさんが勧めていた
     - [2019-12 リファクタリング(第2版): 既存のコードを安全に改善する](https://www.amazon.co.jp/dp/4274224546/)
+    - [2020-08 Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち – 技術書出版と販売のラムダノート](https://www.lambdanote.com/products/engineers-in-voyage)
     - [2021-11 Googleのソフトウェアエンジニアリング](https://www.oreilly.co.jp/books/9784873119656/)
       - CADDi輪読会で題材になっていた。
       - ぜひ読みたい。
     - [2022-04 良いコード/悪いコードで学ぶ設計入門](https://www.amazon.co.jp/dp/4297127830)
       - コードのレベルが低いなど、あまり評判が良くないものも散見される
       - なので、これじゃなくても良い気がする
+    - [2023-01 Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考](https://www.shuwasystem.co.jp/book/b620733.html)
     - [2023-01 オブザーバビリティ・エンジニアリング (オライリー)](https://www.amazon.co.jp/dp/4814400128)
     - [2023-01 詳解 システム・パフォーマンス 第2版](https://www.oreilly.co.jp/books/9784814400072/)
+    - [2023-05 ソフトウェア設計のトレードオフと誤り](https://www.oreilly.co.jp//books/9784814400317/)
+      - [ソフトウェア設計のトレードオフと誤りを出版しました | フューチャー技術ブログ](https://future-architect.github.io/articles/20230616a/)
 
 - その他
     - [【日本人エンジニア必携】英語命名規則の決定版 #Python - Qiita](https://qiita.com/hironori_narita/items/4b06db0953053d41c4a0)
