@@ -3,26 +3,27 @@
 このフォルダは学習用の書籍、コンテンツ置き場です。
 
 - [contents-aiml.md](./contents-aiml.md)
-    - [contents-aiml-cv.md](./contents-aiml-cv.md)
-    - [contents-aiml-ir.md](./contents-aiml-ir.md)
-    - [contents-aiml-nlp.md](./contents-aiml-nlp.md)
-    - [contents-aiml-recommend.md](./contents-aiml-recommend.md)
-    - [contents-aiml-timeseries.md](./contents-aiml-timeseries.md)
+  - [contents-aiml-cv.md](./contents-aiml-cv.md)
+  - [contents-aiml-ir.md](./contents-aiml-ir.md)
+  - [contents-aiml-nlp.md](./contents-aiml-nlp.md)
+  - [contents-aiml-recommend.md](./contents-aiml-recommend.md)
+  - [contents-aiml-timeseries.md](./contents-aiml-timeseries.md)
 - [contents-analytics.md](./contents-analytics.md)
 - [contents-aws.md](./contents-aws.md)
 - [contents-container.md](./contents-container.md)
 - [contents-db.md](./contents-db.md)
 - [contents-design.md](./contents-design.md)
 - [contents-dev.md](./contents-dev.md)
+- [contents-frontend.md](./contents-frontend.md)
 - [contents-git.md](./contents-git.md)
 - [contents-manage.md](./contents-manage.md)
+- [contents-math.md](./contents-math.md)
 - [contents-python.md](./contents-python.md)
 
 今後作成するかもなページ
 
 - contents-google.md
 - contents-backend.md
-- contents-frontend.md
 - contents-iac.md
 - contents-tool.md
 
