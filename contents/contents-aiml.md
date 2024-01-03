@@ -48,6 +48,8 @@
     - [2021-01 スパース推定100問 with Python (Joe先生)](https://www.kyoritsu-pub.co.jp/book/b10003298.html)
     - [2021-12 機械学習のためのカーネル100問 with Python (Joe先生)](https://www.kyoritsu-pub.co.jp/book/b10003381.html)
   - ホクソエムシリーズ
+    - [2019-12 効果検証入門 ～正しい比較のための因果推論／計量経済学の基礎](https://gihyo.jp/book/2020/978-4-297-11117-5)
+    - [2021-07 施策デザインのための機械学習入門 〜データ分析技術のビジネス活用における正しい考え方](https://gihyo.jp/book/2021/978-4-297-12224-9)
     - [2023-02 評価指標入門〜データサイエンスとビジネスをつなぐ架け橋](https://www.amazon.co.jp/dp/4297133148)
   - ソシム社シリーズ
     - [2020-05 データ分析のための数理モデル入門 (ソシム社)](https://www.amazon.co.jp/dp/4802612494)
@@ -77,6 +79,8 @@
     - [2024-04 ゼロから作るDeep Learning ❺ ―生成モデル編](https://www.amazon.co.jp/dp/4814400594/)
       - [oreilly-japan/deep-learning-from-scratch-5](https://github.com/oreilly-japan/deep-learning-from-scratch-5)
   - その他書籍
+    - [2014-07 戦略的データサイエンス入門](https://www.oreilly.co.jp/books/9784873116853/)
+      - 効果検証入門よりこっちを読めという話も
     - [2015-02 入門 機械学習による異常検知―Rによる実践ガイド](https://www.amazon.co.jp/dp/4339024910)
       - 異常検知の中では評判がよさそう。Rだが
     - [2018-09 Pythonで理解する統計解析の基礎：書籍案内｜技術評論社](https://gihyo.jp/book/2018/978-4-297-10049-0)
@@ -115,7 +119,6 @@
     - [2023-08 Pythonによるデータ分析入門 第3版](https://www.oreilly.co.jp/blog/2023/07/40019_python_for_data_analysis_3ed.html)
     - [2023-10 The Kaggle Workbook 著名コンテストに学ぶ！競技トップレベルの思考と技術](https://book.impress.co.jp/books/1123101018)
     - [2023-12 Human-in-the-Loop機械学習](https://www.kyoritsu-pub.co.jp/book/b10039888.html)
-
 - 例題
   - [君には今から3時間で機械学習Webアプリを作ってもらうよ](https://zenn.dev/alivelimb/articles/20220528-streamlit-ml-app)
   - [u++さんによるアクセスログ解析](https://speakerdeck.com/upura/tutorial-on-access-log-analysis-by-python)

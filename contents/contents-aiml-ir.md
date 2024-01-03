@@ -2,8 +2,9 @@
 
 ## コンテンツ
 
-- [情報検索100本ノックが公開](https://github.com/ir100/ir100)
-  - Python想定。日本語コンテンツ。
+- Web
+  - [情報検索100本ノックが公開](https://github.com/ir100/ir100)
+    - Python想定。日本語コンテンツ。
 - 書籍
   - [2008-03 Googleを支える技術 ……巨大システムの内側の世界：書籍案内｜技術評論社](https://gihyo.jp/book/2008/978-4-7741-3432-1)
   - [2008-07 Introduction to Information Retrieval](https://www.amazon.co.jp//dp/0521865719)

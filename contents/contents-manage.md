@@ -32,6 +32,8 @@
       - 岩瀬さんのSpeakerDeckで紹介
     - [2023-12 エンジニアが知っておきたい思考の整理術　複雑な情報を【理解する】【伝える】テクニック](https://book.impress.co.jp/books/1122101095)
   - プロジェクトマネジメント
+    - [2014-01 Fearless Change アジャイルに効く アイデアを組織に広めるための48のパターン](https://www.amazon.co.jp/dp/462108786X)
+      - [人生で大切なことは全てFEARLESS CHANGEから学んだ | DevelopersIO](https://dev.classmethod.jp/articles/fearless-change-is-all/)
     - [2020-05 SCRUM BOOT CAMP THE BOOK](https://www.amazon.co.jp/gp/product/B086GBXRN6)
       - nagaseサンの本
     - [2022-11 プロジェクトマネジメントの基本が全部わかる本](https://www.shoeisha.co.jp/book/detail/9784798177410)
@@ -53,6 +55,7 @@
       - Belugaさんが勧めていた
     - [2019-04 スーパーエンジニアへの道　技術リーダーシップの人間学](https://www.amazon.co.jp/dp/B09BDVP5BV)
       - 長南さんオススメ
+    - [2020-10 プロダクトマネジメント ―ビルドトラップを避け顧客に価値を届ける](https://www.oreilly.co.jp//books/9784873119250/)
     - [2021-11 だから僕たちは、組織を変えていける —やる気に満ちた「やさしいチーム」のつくりかた](https://www.amazon.co.jp/dp/4295406252)
       - 伊豫谷さんオススメ
     - [2021-12 問いかけの作法 チームの魅力と才能を引き出す技術](https://www.amazon.co.jp/dp/4799328085)
@@ -107,24 +110,24 @@
     - [2023-09 GitLabに学ぶ 世界最先端のリモート組織のつくりかた](https://www.amazon.co.jp/dp/4798179426)
       - 読書会中
   - ビジネス
-      - [2010-04 問題解決プロフェッショナル「思考と技術」 / 齋藤 嘉則【著】 - 紀伊國屋書店ウェブストア｜オンライン書店｜本、雑誌の通販、電子書籍ストア](https://www.kinokuniya.co.jp/f/dsg-01-9784478005538)
-      - [2017-11 Hit Refresh](https://www.amazon.co.jp/dp/B076Q6M456)
-        - nishibaさん推奨図書
-          - [https://twitter.com/m_nishiba/status/1649938404958941186](https://twitter.com/m_nishiba/status/1649938404958941186)
-      - [2019-09 実践 スタンフォード式 デザイン思考](https://www.amazon.co.jp/dp/4295007323)
-        - nishibaさん推奨図書
-      - [2019-10 無敗営業 「3つの質問」と「4つの力」](https://www.amazon.co.jp/dp/B07YTPMNDM)
-        - たぶん社内で読書会されてる
-      - [2019-12 世界標準の経営理論](https://www.amazon.co.jp/dp/4478109575)
-        - 嵩原さん推奨図書
-      - [2020-10 ハーバード・ビジネス・レビュー デザイン思考の教科書](https://www.amazon.co.jp/dp/4478111510)
-        - nishibaさん推奨図書
-      - [2021-01 インビジブル・カンパニー 「無敵の会社」を作った39パターンのビジネスモデル](https://www.amazon.co.jp/dp/479816786X)
-        - belugaさん推奨図書
-      - [2021-07 ソニー再生　変革を成し遂げた「異端のリーダーシップ」 ](https://www.amazon.co.jp/dp/B098SCY765)
-      - [2021-12 武器としての戦略フレームワーク](https://www.amazon.co.jp/dp/4534058950)
-        - nishibaさん推奨図書
-      - [2022-12 キーエンス解剖　最強企業のメカニズム | 西岡 杏 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4296200917)
+    - [2010-04 問題解決プロフェッショナル「思考と技術」 / 齋藤 嘉則【著】 - 紀伊國屋書店ウェブストア｜オンライン書店｜本、雑誌の通販、電子書籍ストア](https://www.kinokuniya.co.jp/f/dsg-01-9784478005538)
+    - [2017-11 Hit Refresh](https://www.amazon.co.jp/dp/B076Q6M456)
+      - nishibaさん推奨図書
+        - [https://twitter.com/m_nishiba/status/1649938404958941186](https://twitter.com/m_nishiba/status/1649938404958941186)
+    - [2019-09 実践 スタンフォード式 デザイン思考](https://www.amazon.co.jp/dp/4295007323)
+      - nishibaさん推奨図書
+    - [2019-10 無敗営業 「3つの質問」と「4つの力」](https://www.amazon.co.jp/dp/B07YTPMNDM)
+      - たぶん社内で読書会されてる
+    - [2019-12 世界標準の経営理論](https://www.amazon.co.jp/dp/4478109575)
+      - 嵩原さん推奨図書
+    - [2020-10 ハーバード・ビジネス・レビュー デザイン思考の教科書](https://www.amazon.co.jp/dp/4478111510)
+      - nishibaさん推奨図書
+    - [2021-01 インビジブル・カンパニー 「無敵の会社」を作った39パターンのビジネスモデル](https://www.amazon.co.jp/dp/479816786X)
+      - belugaさん推奨図書
+    - [2021-07 ソニー再生　変革を成し遂げた「異端のリーダーシップ」 ](https://www.amazon.co.jp/dp/B098SCY765)
+    - [2021-12 武器としての戦略フレームワーク](https://www.amazon.co.jp/dp/4534058950)
+      - nishibaさん推奨図書
+    - [2022-12 キーエンス解剖　最強企業のメカニズム | 西岡 杏 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4296200917)
 - その他
   - [高いパフォーマンスを発揮する組織 - Amazon ピザ 2 枚チーム | AWS Executive Insights](https://aws.amazon.com/jp/executive-insights/content/amazon-two-pizza-team/)
   - [nishiba氏の考え](https://twitter.com/m_nishiba/status/1680912640250613761)
