@@ -28,6 +28,7 @@
       - 社内での推奨図書
     - [2015-08 新しい文章力の教室 苦手を得意に変えるナタリー式トレーニング](https://www.amazon.co.jp/dp/4844338722)
     - [2018-07 Learn Better ― 頭の使い方が変わり、学びが深まる6つのステップ](https://www.amazon.co.jp/dp/4862762581)
+    - [2021-09 ふつうのエンジニアは「営業」でこそ活躍する](https://www.amazon.co.jp/dp/4297122995)
     - [2021-11 「組織のネコ」という働き方](https://www.amazon.co.jp/dp/4798170232)
       - 岩瀬さんのSpeakerDeckで紹介
     - [2023-12 エンジニアが知っておきたい思考の整理術　複雑な情報を【理解する】【伝える】テクニック](https://book.impress.co.jp/books/1122101095)
@@ -49,6 +50,8 @@
     - [2014-10 ファシリテーションの教科書](https://www.amazon.co.jp/dp/B00P28A5M8)
       - elithのニュースレターから
     - [2017-01 HIGH OUTPUT MANAGEMENT | 日経BOOKプラス](https://bookplus.nikkei.com/atcl/catalog/17/P55010/)
+    - [2017-02 フィードバック入門 耳の痛いことを伝えて部下と職場を立て直す技術](https://www.amazon.co.jp/dp/4569832903)
+      - abeさん情報
     - [2017-05 エラスティックリーダーシップ ― 自己組織化チームの育て方](https://www.oreilly.co.jp/books/9784873118024/)
       - 大澤さんオススメ
     - [2018-02 カイゼン・ジャーニー たった1人からはじめて、「越境」するチームをつくるまで](https://www.amazon.co.jp/dp/4798153346)
@@ -107,7 +110,6 @@
     - [2022-11 「技術書」の読書術](https://www.amazon.co.jp/dp/4798171549)
       - ベースラインとして読んでおきたい
       - [「技術書」の読書術 を読んで個人的に使っていきたいTips - Qiita](https://qiita.com/ryosuke-horie/items/36aca08bd4ff4378b8df)
-    - [2023-09 GitLabに学ぶ 世界最先端のリモート組織のつくりかた](https://www.amazon.co.jp/dp/4798179426)
       - 読書会中
   - ビジネス
     - [2010-04 問題解決プロフェッショナル「思考と技術」 / 齋藤 嘉則【著】 - 紀伊國屋書店ウェブストア｜オンライン書店｜本、雑誌の通販、電子書籍ストア](https://www.kinokuniya.co.jp/f/dsg-01-9784478005538)

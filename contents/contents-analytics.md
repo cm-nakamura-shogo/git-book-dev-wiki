@@ -32,6 +32,7 @@ DA事業本部の教養的な意味でアナリティクスやデータエンジ
     - よい可視化の根拠がきちんと書いてあるらしい
   - [2021-12 実践的データ基盤への処方箋](https://gihyo.jp/book/2021/978-4-297-12445-8)
     - [実践的データ基盤への処方箋読書会](https://www.notion.so/3fb8cff702cf46dc9e600cda2ce9ef13?pvs=21)
+  - [2021-12 DXを成功に導くデータマネジメント](https://www.amazon.co.jp/dp/4798171379)
   - [2021-12 dbtで始めるデータパイプライン構築〜入門から実践〜](https://zenn.dev/dbt_tokyo/books/537de43829f3a0)
   - [2022-03 Data Mesh [Book]](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
     - [最近o'reillyの『Data Mesh』というデータの分散アーキテクチャに関する本を読みました… | Mond](https://mond.how/topics/4zmeukz6fd2jqcn)
