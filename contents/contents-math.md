@@ -16,6 +16,8 @@
 - [ゆっくり機械学習](https://laid-back-scientist.com/)
     - どちらかというと統計とかがまとまっていそう。
 - 書籍
+  - [1994-07 人文・社会科学の統計学 (基礎統計学) | 東京大学教養学部統計学教室 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4130420666/)
+    - アンケート分析のことが書いてあるらしい
   - [2008-12 新物理学シリーズ   統計力学〈１〉](https://www.kinokuniya.co.jp/f/dsg-01-9784563024376)
     - ボルツマン分布系の話は、田崎 晴明さんの統計力学に全てが書いてあるらしい。
   - [2008-12 新物理学シリーズ   統計力学〈２〉](https://www.kinokuniya.co.jp/f/dsg-01-9784563024383)
@@ -30,5 +32,5 @@
     - 社内で流れていた
     - 機械学習の数理を知るための良書らしい
   - [2023-03 世界標準MIT教科書 ストラング:教養の線形代数](https://www.amazon.co.jp/dp/4764906457)
-  - [2023-09-15 【新卒研修資料】基礎統計学 / Basic of statistics - Speaker Deck](https://speakerdeck.com/brainpadpr/basic-of-statistics?slide=27)
+  - [2023-09 【新卒研修資料】基礎統計学 / Basic of statistics - Speaker Deck](https://speakerdeck.com/brainpadpr/basic-of-statistics?slide=27)
     - Sakaiさんが良いと言ってるので良さそう

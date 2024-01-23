@@ -48,6 +48,8 @@ DA事業本部の教養的な意味でアナリティクスやデータエンジ
     - [Xユーザーの共立出版 アリがと蟻さん: 「こんな本が欲しかった！（ですよね！？）あえて「失敗」事例を広く共有することで / X](https://twitter.com/1738310/status/1666329421966635011)
 - その他
     - [1年前の自分が読みたかった、データエンジニアリング入門 #AdventCalendar2023 - Qiita](https://qiita.com/SoySoySoyB/items/44fda40de0276a83957a)
+    - dbt公式レッスン集
+      - [Lessons | dbt Labs](https://www.getdbt.com/dbt-learn/lessons)
 
 ## 進め方
 

@@ -8,6 +8,8 @@
 
 ## コンテンツ
 
+- メモ
+  - [数年間継続している「作業メモ」の話](https://zenn.dev/akase244/articles/e448e7562ec190)
 - CM
   - [12_資料の書き方講座（新入社員向け）.pdf - Google ドライブ](https://drive.google.com/file/d/1yBJZJrDBrIPcaSmoqUTYR7YUkAUYNOgk/view)
   - [12_資料の書き方講座実践編【解答】.pptx - Google スライド](https://docs.google.com/presentation/d/1QOlzgOngdGBn8KS9ISMPEZCbwSA1COWx/edit#slide=id.p1)

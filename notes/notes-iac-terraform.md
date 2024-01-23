@@ -301,6 +301,8 @@ variableは`variables.tf`に、outputは`outputs.tf`にそれぞれ記載する�
 
 以下も参考にされてください。
 
+- module入門
+    - [terraform_module_ Beginner - Speaker Deck](https://speakerdeck.com/yonasou/terraform-module-beginner)
 - [[Terraform]Moduleを作ると環境毎のデプロイが便利 | DevelopersIO](https://dev.classmethod.jp/articles/terraform-deploy-module/)
 - [後で楽できるTerraformの書き方（※ただし書くときは辛い） - SMARTCAMP Engineer Blog](https://tech.smartcamp.co.jp/entry/easy-terraform-later)
 

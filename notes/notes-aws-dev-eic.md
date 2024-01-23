@@ -9,6 +9,8 @@
 - 「個人的には、可用性重視の場合は、セッションマネージャーを選択し、コスト重視であれば、EIC エンドポイントを選択するのがよいかと思いました。」
 - SSMはVPCエンドポイントポイントの料金が必要だが、EICは無料
 - EICのセッション時間は最大1時間なのもネック
+- 1つのVPCに１つのEIC エンドポイントしか作成できないため、EICのエンドポイントがあるサブネットにAZ障害が起きると使えない
+  - これはデフォルトクォータの話をしているので誤りかも？
 
 ### [AWS CLIの実装からEC2 Instance Connect Endpointを読み解いてみた | DevelopersIO](https://dev.classmethod.jp/articles/demystifying-ec2-instance-connect-implementation/)
 
@@ -16,6 +18,9 @@
 
 ### [EC2 Instance Connect エンドポイント登場！パブリックIPのないEC2にSSH・RDPできるようになりました | DevelopersIO](https://dev.classmethod.jp/articles/ec2-instance-connect-endpoint-private-access/)
 
+- 鍵交換はしておく必要がある点はSSMと変わらないかも
+- EICの場合、VPC内にエンドポイントを作成すれば、そこから通信可能なリソースにたいして、EC2へSSHしたりポートフォワードしてRDPしたり、RDBにアクセスしたりできます。
+  - これはエージェントとか不要なのか？平井さんの記事と少し矛盾しているので検証が必要
 - 西野さんまとめ
   - EC2向けのアウトバウンドトラフィック（TCP 22）を許可するSG必要 ※インバウンドは閉じておｋ
   - サブネットを指定して作成

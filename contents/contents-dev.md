@@ -38,3 +38,6 @@
       - こちらもtwitterの誰かの著書
     - [2023-02 ゲームで学ぶ探索アルゴリズム実践入門](https://www.amazon.co.jp/dp/4297133601)
       - [u++さんの評価](https://twitter.com/upura0/status/1632027942841913344)
+  - エディタ
+    - [実践Vim　思考のスピードで編集しよう！ (アスキー書籍)](https://www.amazon.co.jp/dp/B00HWLJI3U)
+    - [Amazon.co.jp: ［改訂新版］Emacs実践入門](https://www.amazon.co.jp/dp/B07JHF9QXJ/)
