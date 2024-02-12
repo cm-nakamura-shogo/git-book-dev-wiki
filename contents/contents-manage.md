@@ -49,6 +49,7 @@
       - なゆゆオススメ
     - [2006-01 最高のリーダー、マネジャーがいつも考えているたったひとつのこと](https://www.amazon.co.jp/dp/4532312639)
       - ハマコーさんオススメ
+    - [2013-12 ピープルウェア](https://www.amazon.co.jp/dp/4822285243)
     - [2014-10 ファシリテーションの教科書](https://www.amazon.co.jp/dp/B00P28A5M8)
       - elithのニュースレターから
     - [2017-01 HIGH OUTPUT MANAGEMENT | 日経BOOKプラス](https://bookplus.nikkei.com/atcl/catalog/17/P55010/)

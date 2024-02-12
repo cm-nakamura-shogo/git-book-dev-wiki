@@ -19,6 +19,8 @@ SQLはチーム、DA事業本部でPythonと並んでメインで使われる言
   - [データベース研修（SQL演習編）【MIXI 23新卒技術研修】 - Speaker Deck](https://speakerdeck.com/mixi_engineers/2023-database-training-02-sql)
   - [mixigroup/2023BeginnerTrainingDataBasePublic](https://github.com/mixigroup/2023BeginnerTrainingDataBasePublic)
 - 書籍
+  - [2006-04 楽々ERDレッスン | 羽生 章洋 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4798110663)
+    - DBの論理設計がわかる本（Immutable Data Modelの記事で参照されていた）
   - [2012-03 達人に学ぶDB設計 徹底指南書](https://www.amazon.co.jp/dp/B00EE1XPAI)
     - 菊池さん推奨図書
   - [2013-01 SQLアンチパターン](https://www.oreilly.co.jp/books/9784873115894/)

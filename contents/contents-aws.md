@@ -43,6 +43,7 @@
       - [はじまりは神本『AWS Cookbook』との邂逅　元アンチCDKの私が「CDK、できる…」と思った理由 - ログミーTech](https://logmi.jp/tech/articles/326643)
   - [2023-01 AWSで実現するモダンアプリケーション入門](https://www.amazon.co.jp/dp/4297133261)
     - hamakoさんが書評かいてたやつ
+  - [2023-03 AWSコスト最適化ガイドブック](https://www.amazon.co.jp/dp/B0BYC5H9G8)
 
 ## 共通で使うサービス
 

@@ -27,6 +27,7 @@
     - CADDi輪読会で題材になっていた。
     - 買った。読了済み。
     - [読書メモ](./2020-02-13_bottom-up-ddd.md)
+  - [2020-04 個人開発をはじめよう！クリエイター25人の実践エピソード](https://www.amazon.co.jp/dp/B086DBQC8L)
   - [2020-08 Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち – 技術書出版と販売のラムダノート](https://www.lambdanote.com/products/engineers-in-voyage)
   - [2021-11 Googleのソフトウェアエンジニアリング](https://www.oreilly.co.jp/books/9784873119656/)
     - CADDi輪読会で題材になっていた。
@@ -48,6 +49,9 @@
   - [2023-01 Good Code, Bad Code ～持続可能な開発のためのソフトウェアエンジニア的思考](https://www.shuwasystem.co.jp/book/b620733.html)
   - [2023-01 オブザーバビリティ・エンジニアリング (オライリー)](https://www.amazon.co.jp/dp/4814400128)
   - [2023-01 詳解 システム・パフォーマンス 第2版](https://www.oreilly.co.jp/books/9784814400072/)
+  - [2023-02 プログラマー脳 ～優れたプログラマーになるための認知科学に基づくアプローチ - 秀和システム あなたの学びをサポート！](https://www.shuwasystem.co.jp/book/9784798068534.html)
+    - [「プログラマー脳」の本の感想と賛辞 〜 意味波と具象と抽象と](https://zenn.dev/339/articles/83caa21b9ad736)
+    - [Xユーザーのばんくし王さん / X](https://twitter.com/vaaaaanquish/status/1661237308505604097)
   - [2023-05 ソフトウェア設計のトレードオフと誤り](https://www.oreilly.co.jp//books/9784814400317/)
     - [ソフトウェア設計のトレードオフと誤りを出版しました | フューチャー技術ブログ](https://future-architect.github.io/articles/20230616a/)
 - その他

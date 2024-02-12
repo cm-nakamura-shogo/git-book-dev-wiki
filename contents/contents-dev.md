@@ -6,6 +6,7 @@
   - [ハーバード大学のコンピュータサイエンスとプログラミング技術コース](https://cs50.jp/)
   - [Google Style Guides | styleguide](https://google.github.io/styleguide)
   - [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)-
+  - [駆け出し時代の自分に読ませたかった技術書18選　遠回りをしまくった自分に送りたい](https://zenn.dev/mesi/articles/671a08cabb4dfe)
 - 書籍
   - ネットワーク
     - [2010-04 Webを支える技術](https://gihyo.jp/book/2010/978-4-7741-4204-3)
@@ -28,6 +29,7 @@
       - 書評的には熱い
         - [プログラマのためのCPU入門 - ぱたへね](https://natsutan.hatenablog.com/entry/2023/02/23/093741)
       - パタヘネ読んでCPU完全理解した！みたいな人が現実を知るのに良い本
+    - [2024-02 Linuxサーバー構築標準教科書 ダウンロード LinuCレベル2対応 | Linux技術者認定試験 リナック | LPI-Japan](https://linuc.org/textbooks/server/)
   - 競プロ・最適化
     - [2017-02_世界で闘うプログラミング力を鍛える本](https://book.mynavi.jp/ec/products/detail/id=65354)
       - GAFAの面接対策試験本

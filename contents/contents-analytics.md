@@ -42,10 +42,13 @@ DA事業本部の教養的な意味でアナリティクスやデータエンジ
   - [2022-12 大規模データ管理](https://www.oreilly.co.jp/books/9784814400089/)
   - [2023-05 Data Modeling with Snowflake](https://www.amazon.co.jp/dp/1837634459)
   - [2023-12 Analytics Engineering with SQL and dbt [Book]](https://www.oreilly.com/library/view/analytics-engineering-with/9781098142377/)
+    - 以下によれば微妙？
+      - [https://twitter.com/diggy__k/status/1751599487263646011](https://twitter.com/diggy__k/status/1751599487263646011)
   - [2023-06 ビジネスダッシュボード 設計・実装ガイドブック](https://www.shoeisha.co.jp/book/detail/9784798177649)
   - [2023-08 データ分析失敗事例集 - 共立出版](https://www.kyoritsu-pub.co.jp/book/b10032587.html)
     - 少し社内で話題に
     - [Xユーザーの共立出版 アリがと蟻さん: 「こんな本が欲しかった！（ですよね！？）あえて「失敗」事例を広く共有することで / X](https://twitter.com/1738310/status/1666329421966635011)
+  - [2024-03 データエンジニアリングの基礎](https://www.amazon.co.jp/dp/4814400659)
 - その他
     - [1年前の自分が読みたかった、データエンジニアリング入門 #AdventCalendar2023 - Qiita](https://qiita.com/SoySoySoyB/items/44fda40de0276a83957a)
     - dbt公式レッスン集
