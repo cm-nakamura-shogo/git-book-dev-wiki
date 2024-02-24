@@ -1,0 +1,2 @@
+- [マリオカートのER図について考える #SQL - Qiita](https://qiita.com/assu_ming/items/9d80320e6f778d83c61f)
+  - DB設計の参考になる

@@ -1,0 +1,3 @@
+- [2024年のPythonプログラミング - Uzabase for Engineers](https://tech.uzabase.com/entry/2024/02/02/120601)
+  - dictのマージや型の書き方のバージョンごとの移り変わり、引用符の使い分けが不要に、など知らないこと結構書いてありました
+  - LoguruやClickもいいな

@@ -31,6 +31,9 @@
     - ディメンジョンにタイムスタンプを持たせることも必要（じゃないといつから変わったかファクトテーブルから逆引きしないといけない）
     - Type3以降はあまり一般的ではないみたい
 
+- [2022/09/24 Data Vault 2.0 輪読会に参加しました - /home/by-natures/dev*](https://bynatures.hatenadiary.jp/entry/2022/09/24/175202)
+  - Data Vaultの参考として
+
 ## さがらさんのまとめ
 
 ディメンショナルモデリング勉強手順
@@ -88,6 +91,9 @@
       - 分かりづらいとのこと(kenさん)
     - [Amazon | Star Schema: The Complete Reference | Adamson, Christopher | Data Warehousing](https://www.amazon.co.jp/dp/0071744320)
       - 具体例があって、上のキンボールさんの本より良いとのこと(kenさん)
+
+- [ディメンショナルモデリングに入門しよう！Snowflakeとdbt Cloudで「Building a Kimball dimensional model with dbt」をやってみた | DevelopersIO](https://dev.classmethod.jp/articles/building-a-kimball-dimensional-model-with-snowflake-and-dbt/)
+  - モデリングの理解に有用か
 
 ## ぺいさんのその他
 
