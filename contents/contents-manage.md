@@ -25,6 +25,7 @@
   - [サイボウズの アジャイル・クオリティ / Agile Quality at Cybozu - Speaker Deck](https://speakerdeck.com/cybozuinsideout/agile-quality-at-cybozu-d7bb959e-864c-465d-ae71-9747c4fc6f9a)
 - 書籍
   - メンバー向け
+    - [2011-04 入門 考える技術・書く技術――日本人のロジカルシンキング実践法 | 山崎 康司 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4478014582)
     - [2011-05 入社１年目の教科書](https://www.diamond.co.jp/book/9784478015421.html)
     - [2014-07 コンサル一年目が学ぶこと](https://www.amazon.co.jp/dp/B00MA671WW)
       - 社内での推奨図書
@@ -80,6 +81,7 @@
       - [XユーザーのAtsushi Sakaiさん: 「この本、ちょっと興味あるな」 / X](https://twitter.com/atsushi_twi/status/1654093757040697345)
     - [2023-09 プロダクトマネージャーのしごと 第2版](https://www.oreilly.co.jp/books/9784814400430/)
       - [新米PdM目線でおすすめする書籍「プロダクトマネージャーのしごと 第2版」 | DevelopersIO](https://dev.classmethod.jp/articles/product-management-in-practice-review/)
+    - [2024-02 罰ゲーム化する管理職 バグだらけの職場の修正法 (インターナショナル新書)](https://www.amazon.co.jp/dp/4797681349)
   - 組織
     - [2001-07 イノベーションのジレンマ 増補改訂版](https://www.amazon.co.jp/dp/4798100234)
       - 岩瀬さんのSpeakerDeckで紹介

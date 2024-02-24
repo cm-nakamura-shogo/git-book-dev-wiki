@@ -7,6 +7,9 @@
   - [Google Style Guides | styleguide](https://google.github.io/styleguide)
   - [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)-
   - [駆け出し時代の自分に読ませたかった技術書18選　遠回りをしまくった自分に送りたい](https://zenn.dev/mesi/articles/671a08cabb4dfe)
+  - [3 Minutes Networking](https://www5e.biglobe.ne.jp/aji/3min/index.html)
+    - 書籍版 : [[改訂新版] 3分間ネットワーク基礎講座 | 網野 衛二 |本 | 通販 | Amazon](https://www.amazon.co.jp/dp/4774143731)
+  - [ネットワークエンジニアとして](https://www.infraexpert.com/)
 - 書籍
   - ネットワーク
     - [2010-04 Webを支える技術](https://gihyo.jp/book/2010/978-4-7741-4204-3)

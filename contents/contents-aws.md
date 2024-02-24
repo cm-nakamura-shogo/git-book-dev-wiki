@@ -44,6 +44,7 @@
   - [2023-01 AWSで実現するモダンアプリケーション入門](https://www.amazon.co.jp/dp/4297133261)
     - hamakoさんが書評かいてたやつ
   - [2023-03 AWSコスト最適化ガイドブック](https://www.amazon.co.jp/dp/B0BYC5H9G8)
+  - [2023-04 AWS運用入門 押さえておきたいAWSの基本と運用ノウハウ](https://www.amazon.co.jp/dp/4815615497)
 
 ## 共通で使うサービス
 
