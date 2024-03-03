@@ -202,6 +202,7 @@
     - [Blackbelt                   ](pages/exam/aws_certified_005_sap_blackbelt.md)
     - [SAPノート                   ](pages/exam/aws_certified_006_sap_note.md)
     - [DOP対策                     ](pages/exam/aws_dop.md)
+    - [DAS対策                     ](pages/exam/aws_das.md)
   - Google Cloud
     - [ACE対策ノート               ](pages/exam/gcp_ace_note.md)
     - [PCD対策ノート               ](pages/exam/gcp_pcd_note.md)
